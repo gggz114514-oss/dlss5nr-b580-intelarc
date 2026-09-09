@@ -1,0 +1,67 @@
+{
+  "provenance": {
+    "report_id": "results/reset-executor-v1/validation.json",
+    "status": "historical",
+    "original_report_sha256": "f357d071fa66967223fa13f44f7b7962adba440ea743c299298b0b0e71ad655d",
+    "original_report_bytes": 3381,
+    "excerpt_path": "evidence/excerpts/07.json",
+    "excerpt_fields": [
+      "scope",
+      "gpu",
+      "cases",
+      "complete_migration"
+    ],
+    "raw_arrays_public": false
+  },
+  "excerpt": {
+    "scope": "RGB -> native scalar table front -> all original blocks -> RGB; B580 only; no captured features; fixed input256/pad320/reset/default controls",
+    "gpu": "Intel(R) Arc(TM) B580 Graphics",
+    "cases": [
+      {
+        "case": "gradient",
+        "seed": 0,
+        "input_sha256": "1151c30e6864cac12d18775fbc788547a63b4b4af5a7b991632524fa1110fc7c",
+        "byte_equal": true,
+        "bytes": 786432,
+        "mismatches": 0,
+        "native_sha256": "b6f184981851fb930fada5d1a8560c7ebd29a1ae27fa72f432391a45d786a1f2",
+        "b580_sha256": "b6f184981851fb930fada5d1a8560c7ebd29a1ae27fa72f432391a45d786a1f2",
+        "seconds": 17.939456599997357
+      },
+      {
+        "case": "checker",
+        "seed": 0,
+        "input_sha256": "d9fe4c3af2f8d56ec27d4141f5ecc7b20c31e394a751076fc0ca256a38fbd305",
+        "byte_equal": true,
+        "bytes": 786432,
+        "mismatches": 0,
+        "native_sha256": "a496a6a4854cdccb99e254b33ad3a4102c011f19f797fe422525b71b048f3a4d",
+        "b580_sha256": "a496a6a4854cdccb99e254b33ad3a4102c011f19f797fe422525b71b048f3a4d",
+        "seconds": 17.198347600002307
+      },
+      {
+        "case": "gray",
+        "seed": 0,
+        "input_sha256": "5e8384ae6788184fb9379a27716ffc5a2d5906f381f5d9f4da8bd2cd2c54e343",
+        "byte_equal": true,
+        "bytes": 786432,
+        "mismatches": 0,
+        "native_sha256": "ec8f409dbdda1d0b28efd123bfefe0f8657794b7890571ac75311f04459e9757",
+        "b580_sha256": "ec8f409dbdda1d0b28efd123bfefe0f8657794b7890571ac75311f04459e9757",
+        "seconds": 16.96317409999756
+      },
+      {
+        "case": "apex-crop",
+        "seed": 17,
+        "input_sha256": "bfe2f619dab7b1f24f56df8204697bdcb53f113c0488f41bcdcbf4fa7c192999",
+        "byte_equal": true,
+        "bytes": 786432,
+        "mismatches": 0,
+        "native_sha256": "135d7fee241b0fbdc05ce317a775ed1fdb9637962f448afda494127af4bbfa4d",
+        "b580_sha256": "135d7fee241b0fbdc05ce317a775ed1fdb9637962f448afda494127af4bbfa4d",
+        "seconds": 16.913219900001423
+      }
+    ],
+    "complete_migration": false
+  }
+}

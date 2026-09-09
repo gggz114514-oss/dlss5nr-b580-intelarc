@@ -1,0 +1,85 @@
+{
+  "provenance": {
+    "report_id": "video-fixture-diversity-correction-v1.json",
+    "status": "historical-correction",
+    "original_report_sha256": "433e8a84f7bf6b78e0c4746e57083ce82c8b0daa64f932f77676877938958822",
+    "original_report_bytes": 2874,
+    "excerpt_path": "evidence/excerpts/13.json",
+    "excerpt_fields": [
+      "correction",
+      "cases"
+    ],
+    "raw_arrays_public": false
+  },
+  "excerpt": {
+    "correction": "setpts=PTS-STARTPTS plus fps_mode=passthrough and per-fixture content diversity assertion",
+    "cases": [
+      {
+        "input_manifest": "<local-path omitted>",
+        "manifest_sha256": "2af573e11e90e8406d00e04a77e933c28866b17c028fe73927424e9d84e4b2b7",
+        "frame_range": [
+          0,
+          12
+        ],
+        "declared_frames": 12,
+        "unique_image_contents": 1,
+        "adjacent_video_coverage_valid": false
+      },
+      {
+        "input_manifest": "<local-path omitted>",
+        "manifest_sha256": "2af573e11e90e8406d00e04a77e933c28866b17c028fe73927424e9d84e4b2b7",
+        "frame_range": [
+          12,
+          24
+        ],
+        "declared_frames": 12,
+        "unique_image_contents": 1,
+        "adjacent_video_coverage_valid": false
+      },
+      {
+        "input_manifest": "<local-path omitted>",
+        "manifest_sha256": "b4d9e0922ee3032e0f3d328a6f6b3c8894cdeac9cfd30ccb23d9c7dc6a542f73",
+        "frame_range": [
+          0,
+          3
+        ],
+        "declared_frames": 3,
+        "unique_image_contents": 1,
+        "adjacent_video_coverage_valid": false
+      },
+      {
+        "input_manifest": "<local-path omitted>",
+        "manifest_sha256": "301eb456532461e0efdc78537d1a8f2d5136784186115e34ec9c0ae5884a1150",
+        "frame_range": [
+          0,
+          3
+        ],
+        "declared_frames": 3,
+        "unique_image_contents": 1,
+        "adjacent_video_coverage_valid": false
+      },
+      {
+        "input_manifest": "<local-path omitted>",
+        "manifest_sha256": "64e573cc3a8f4698d3b0744c519358ad4a597ce01c66d8f6aff011cb3e7e8833",
+        "frame_range": [
+          0,
+          12
+        ],
+        "declared_frames": 12,
+        "unique_image_contents": 1,
+        "adjacent_video_coverage_valid": false
+      },
+      {
+        "input_manifest": "<local-path omitted>",
+        "manifest_sha256": "6dd1cda5501b89901254f5925c6a2049cfedc4d9a8138b4b2ad1b282158a936b",
+        "frame_range": [
+          0,
+          12
+        ],
+        "declared_frames": 12,
+        "unique_image_contents": 1,
+        "adjacent_video_coverage_valid": false
+      }
+    ]
+  }
+}

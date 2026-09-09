@@ -1,0 +1,43 @@
+{
+  "provenance": {
+    "report_id": "results/reset-executor-v1/visual-validation.json",
+    "status": "historical",
+    "original_report_sha256": "974b62f0fcf7d67a34f81f8223163a52bc04e98c2d6180bf01bd4719efcf9e8c",
+    "original_report_bytes": 2327,
+    "excerpt_path": "evidence/excerpts/08.json",
+    "excerpt_fields": [
+      "scope",
+      "files_verified",
+      "cases",
+      "complete_migration"
+    ],
+    "raw_arrays_public": false
+  },
+  "excerpt": {
+    "scope": "Fresh unscaled video crops, independent seeds, RGB-only B580 executor vs original CUDA kernels; no captured feature inputs",
+    "files_verified": 1544,
+    "cases": [
+      {
+        "case": "portrait",
+        "seed": 305419896,
+        "byte_equal": true,
+        "mismatches": 0,
+        "bytes": 786432,
+        "b580_sha256": "23b974b567b43fe2aa199c6c7cf7190a06d6769ab51833bcae84c8161e5bf9bd",
+        "native_sha256": "23b974b567b43fe2aa199c6c7cf7190a06d6769ab51833bcae84c8161e5bf9bd",
+        "seconds": 19.865596600000572
+      },
+      {
+        "case": "car",
+        "seed": 4294967295,
+        "byte_equal": true,
+        "mismatches": 0,
+        "bytes": 786432,
+        "b580_sha256": "8d2bf09adb94c888e68e5d08a1f038f9498ccb1160b5fbe3c7b95c4c4ec3d65f",
+        "native_sha256": "8d2bf09adb94c888e68e5d08a1f038f9498ccb1160b5fbe3c7b95c4c4ec3d65f",
+        "seconds": 17.459100499996566
+      }
+    ],
+    "complete_migration": false
+  }
+}

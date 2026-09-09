@@ -1,0 +1,710 @@
+{
+  "schema": 1,
+  "exact_local_commit": "7355848c4b8952fb5e383fe29d3e2fb3cdd00b1d",
+  "fast_local_commit": "f62ecd34eeecdeb0098d9cd8953b6f2644c658ae",
+  "backend_files": 35,
+  "fast_module_files": 50,
+  "files": [
+    {
+      "path": "backend/nr_backend/__init__.py",
+      "source": "exact/backend/nr_backend/__init__.py",
+      "sha256": "b204ddf407fd6210e4d88c95beb66f4afc6272ed0556d2632832e2eb49c2bbc5",
+      "bytes": 1396,
+      "byte_identical": true
+    },
+    {
+      "path": "backend/nr_backend/attention.py",
+      "source": "exact/backend/nr_backend/attention.py",
+      "sha256": "dbdf6440272e85d0f24d63a859f47831bb353ed8a9364ca74c1b796fb2ad729e",
+      "bytes": 9312,
+      "byte_identical": true
+    },
+    {
+      "path": "backend/nr_backend/c32_block.py",
+      "source": "exact/backend/nr_backend/c32_block.py",
+      "sha256": "6083c1c3dbd2b01900524c927a4bf872486cec8ef72f6c2c103ce11636ac5e0f",
+      "bytes": 2964,
+      "byte_identical": true
+    },
+    {
+      "path": "backend/nr_backend/controlled_temporal.py",
+      "source": "exact/backend/nr_backend/controlled_temporal.py",
+      "sha256": "68c01b39069de34f1be81717adc5666a29ff9dd469948dace9f1992138357beb",
+      "bytes": 8144,
+      "byte_identical": true
+    },
+    {
+      "path": "backend/nr_backend/decoder.py",
+      "source": "exact/backend/nr_backend/decoder.py",
+      "sha256": "a851e67007ff1d07c7e3377a5fb5eabba33dee11e61f030b36eac75cead3ff03",
+      "bytes": 4336,
+      "byte_identical": true
+    },
+    {
+      "path": "backend/nr_backend/execution.py",
+      "source": "exact/backend/nr_backend/execution.py",
+      "sha256": "8fbfe06ff6bcd94011da4ec4038a9735ada672dd90df2ff793417344fd045462",
+      "bytes": 1167,
+      "byte_identical": true
+    },
+    {
+      "path": "backend/nr_backend/executor.py",
+      "source": "exact/backend/nr_backend/executor.py",
+      "sha256": "ea9c3a757c4172b31b47b1288c97bfa2d75bb08620e07ab0bdc6f933bbcb3f24",
+      "bytes": 5581,
+      "byte_identical": true
+    },
+    {
+      "path": "backend/nr_backend/exposure.py",
+      "source": "exact/backend/nr_backend/exposure.py",
+      "sha256": "3528f52cc027af480570917a58e2dd57c083dc432a822c475286f03730238673",
+      "bytes": 1247,
+      "byte_identical": true
+    },
+    {
+      "path": "backend/nr_backend/front.py",
+      "source": "exact/backend/nr_backend/front.py",
+      "sha256": "d52cc097c9894345e6177bf17385f9d8ca3b0522d70d00667813e365a9b1ab2b",
+      "bytes": 6284,
+      "byte_identical": true
+    },
+    {
+      "path": "backend/nr_backend/intensity_temporal.py",
+      "source": "exact/backend/nr_backend/intensity_temporal.py",
+      "sha256": "105cf1777821c3b9947f4261c528afd9eef1f8cd0b351ae83b6493841c6404fc",
+      "bytes": 2237,
+      "byte_identical": true
+    },
+    {
+      "path": "backend/nr_backend/live_temporal.py",
+      "source": "exact/backend/nr_backend/live_temporal.py",
+      "sha256": "8ee4454329dd3e6958990b1611588f92ab23581cd49bea7123600a547321fd2d",
+      "bytes": 2710,
+      "byte_identical": true
+    },
+    {
+      "path": "backend/nr_backend/local_temporal.py",
+      "source": "exact/backend/nr_backend/local_temporal.py",
+      "sha256": "1c0cc8436a812833eef23c5c197a5f8a7532ab3d785a3f86445d06e769bc7978",
+      "bytes": 1599,
+      "byte_identical": true
+    },
+    {
+      "path": "backend/nr_backend/multihead_block.py",
+      "source": "exact/backend/nr_backend/multihead_block.py",
+      "sha256": "f5fcd992b236f322699dd5086f9ca025382b71d1afe08a766f6967842ce7b23f",
+      "bytes": 7677,
+      "byte_identical": true
+    },
+    {
+      "path": "backend/nr_backend/noise.py",
+      "source": "exact/backend/nr_backend/noise.py",
+      "sha256": "1bfdfbdcd883aa2e8db35fae52b158f541d6f094de66282c1ca81175b8500707",
+      "bytes": 1975,
+      "byte_identical": true
+    },
+    {
+      "path": "backend/nr_backend/post.py",
+      "source": "exact/backend/nr_backend/post.py",
+      "sha256": "a8c4551e6816ae57233c55929091b660b37ad23dc2f2afce33e3cede2e67cc04",
+      "bytes": 4597,
+      "byte_identical": true
+    },
+    {
+      "path": "backend/nr_backend/pre_block.py",
+      "source": "exact/backend/nr_backend/pre_block.py",
+      "sha256": "06fc9e27fec003f126b0cba9a83ab8233b641c4f374e6867648538184a287fe9",
+      "bytes": 3002,
+      "byte_identical": true
+    },
+    {
+      "path": "backend/nr_backend/pre_mlp.py",
+      "source": "exact/backend/nr_backend/pre_mlp.py",
+      "sha256": "0a7c96897076c4225eb24f54eae7f7a6f40627a456fe6491fa731151dc7a9648",
+      "bytes": 4854,
+      "byte_identical": true
+    },
+    {
+      "path": "backend/nr_backend/reciprocal.py",
+      "source": "exact/backend/nr_backend/reciprocal.py",
+      "sha256": "b150d33db7b3fcde300fef118bf2a1d874dd8fe510e40d2941d30a43ae6aee28",
+      "bytes": 2500,
+      "byte_identical": true
+    },
+    {
+      "path": "backend/nr_backend/sampling.py",
+      "source": "exact/backend/nr_backend/sampling.py",
+      "sha256": "e95228c1743bdb5013d3c3b68cbb85fae315c6deeb913b6c4a057c76d2ed89f8",
+      "bytes": 8802,
+      "byte_identical": true
+    },
+    {
+      "path": "backend/nr_backend/sigmoid.py",
+      "source": "exact/backend/nr_backend/sigmoid.py",
+      "sha256": "567bed0fc4d908a941db4fea03d3b019b37a5db16279e82baec594cc84282d2c",
+      "bytes": 1280,
+      "byte_identical": true
+    },
+    {
+      "path": "backend/nr_backend/split_block.py",
+      "source": "exact/backend/nr_backend/split_block.py",
+      "sha256": "aa74edd66b323ad12ce1d9e4425b7baee8ad93823bd8ec864d6f32e638c5c49c",
+      "bytes": 4271,
+      "byte_identical": true
+    },
+    {
+      "path": "backend/nr_backend/style.py",
+      "source": "exact/backend/nr_backend/style.py",
+      "sha256": "e7f30be3fa1face787049588d0a00245da33ea80d81aa47c9607aced8692d17a",
+      "bytes": 10732,
+      "byte_identical": true
+    },
+    {
+      "path": "backend/nr_backend/styled_temporal.py",
+      "source": "exact/backend/nr_backend/styled_temporal.py",
+      "sha256": "ef7d09ae01a603146251d86a755b905cc3eb547cd24112790794d702ea2c798b",
+      "bytes": 2775,
+      "byte_identical": true
+    },
+    {
+      "path": "backend/nr_backend/temporal.py",
+      "source": "exact/backend/nr_backend/temporal.py",
+      "sha256": "35c1c1d5c1475ac0e3385dfa76f0e1020109a376a1d233a64e6c2a1036ca1828",
+      "bytes": 8160,
+      "byte_identical": true
+    },
+    {
+      "path": "backend/nr_backend/tensor_math.py",
+      "source": "exact/backend/nr_backend/tensor_math.py",
+      "sha256": "75835d42a26f462952f1ae3e911d54e300b163f9ce5b4392e35033b2e0667f04",
+      "bytes": 10605,
+      "byte_identical": true
+    },
+    {
+      "path": "backend/nr_backend/triton_attention_exp.py",
+      "source": "exact/backend/nr_backend/triton_attention_exp.py",
+      "sha256": "5ec5eb86a3d26ffb48899307c3dac2b1f8ee1603ad99946f3945f4c3db18d7dd",
+      "bytes": 2130,
+      "byte_identical": true
+    },
+    {
+      "path": "backend/nr_backend/triton_attention_normalize.py",
+      "source": "exact/backend/nr_backend/triton_attention_normalize.py",
+      "sha256": "9a7a91f13d485392b8b3b4045600cd15633903532266c058cda7e50c1ab439cc",
+      "bytes": 3241,
+      "byte_identical": true
+    },
+    {
+      "path": "backend/nr_backend/triton_attention_weights.py",
+      "source": "exact/backend/nr_backend/triton_attention_weights.py",
+      "sha256": "2bff6b4fe6b80425887c655ae695af032ee82fbd3ac3d848a14beff433e11213",
+      "bytes": 3502,
+      "byte_identical": true
+    },
+    {
+      "path": "backend/nr_backend/triton_cubic_fp8.py",
+      "source": "exact/backend/nr_backend/triton_cubic_fp8.py",
+      "sha256": "a07ff170676e4fde75ebe8ecf7b89ccebb0cfa1335cc01f3321c68e784439b35",
+      "bytes": 2124,
+      "byte_identical": true
+    },
+    {
+      "path": "backend/nr_backend/triton_fp8.py",
+      "source": "exact/backend/nr_backend/triton_fp8.py",
+      "sha256": "7858160bba3f4c135fa53f097e406b904e5493e88cb4cdc6a7f3a95f0fac4cae",
+      "bytes": 1743,
+      "byte_identical": true
+    },
+    {
+      "path": "backend/nr_backend/triton_half_fma.py",
+      "source": "exact/backend/nr_backend/triton_half_fma.py",
+      "sha256": "ab97f3b30565c338b1d2e838cb0b921eb52f6420cddfb00b4fcd6d7413aae764",
+      "bytes": 2476,
+      "byte_identical": true
+    },
+    {
+      "path": "backend/nr_backend/triton_math.py",
+      "source": "exact/backend/nr_backend/triton_math.py",
+      "sha256": "1cc5a1e0a031362b3990de23eb34ff3aeec18b458dbe5eef05d841d4af1c401a",
+      "bytes": 8010,
+      "byte_identical": true
+    },
+    {
+      "path": "backend/nr_backend/ui.py",
+      "source": "exact/backend/nr_backend/ui.py",
+      "sha256": "dcb08e58e7a9105a00fff291eddd274cbee3dbd403d19d79373e15a2eccb016f",
+      "bytes": 2308,
+      "byte_identical": true
+    },
+    {
+      "path": "backend/nr_backend/vit_block.py",
+      "source": "exact/backend/nr_backend/vit_block.py",
+      "sha256": "d6d7c30208ffe94990eb60d47e882d0945d94316fb842891616d6c1d390e1b4d",
+      "bytes": 5165,
+      "byte_identical": true
+    },
+    {
+      "path": "backend/nr_backend/weights.py",
+      "source": "exact/backend/nr_backend/weights.py",
+      "sha256": "54297a9a436378545e6545254531d30ee02c989059e74dfa302a301c650946cf",
+      "bytes": 1255,
+      "byte_identical": true
+    },
+    {
+      "path": "reference/native-replay/pre_replay.cpp",
+      "source": "exact/reference/native-replay/pre_replay.cpp",
+      "sha256": "7bb11e5591543a0839648f691d0c146647de0a06dc0a250397d1e395736e41bc",
+      "bytes": 8942,
+      "byte_identical": true
+    },
+    {
+      "path": "reference/native-replay/c32_replay.cpp",
+      "source": "exact/reference/native-replay/c32_replay.cpp",
+      "sha256": "dc5c86a34c006fdeabb3c8e521ee546b569dcd51e4cbe88698fecf9ea710821c",
+      "bytes": 4945,
+      "byte_identical": true
+    },
+    {
+      "path": "reference/native-replay/c64_replay.cpp",
+      "source": "exact/reference/native-replay/c64_replay.cpp",
+      "sha256": "4616d9bade9a6b1f20aede628c03bbdb9cde42e6a270f5214c6eb59317f5d543",
+      "bytes": 5017,
+      "byte_identical": true
+    },
+    {
+      "path": "reference/native-replay/c128_replay.cpp",
+      "source": "exact/reference/native-replay/c128_replay.cpp",
+      "sha256": "7640c9d13a3c6e56f1061a52255877c3cb00d490bec1eeb0ec763dc264d0e01b",
+      "bytes": 5122,
+      "byte_identical": true
+    },
+    {
+      "path": "reference/native-replay/c256_replay.cpp",
+      "source": "exact/reference/native-replay/c256_replay.cpp",
+      "sha256": "cfc431acdbc542f0fb3e81ffc3f87e09cb49ee05c1d5a2c06b86a69c95f95669",
+      "bytes": 5232,
+      "byte_identical": true
+    },
+    {
+      "path": "reference/native-replay/c512_replay.cpp",
+      "source": "exact/reference/native-replay/c512_replay.cpp",
+      "sha256": "b4e31229edb4031048aa559238f28a1b4d1bac1a4fb3369b414af817bf3d4db6",
+      "bytes": 4014,
+      "byte_identical": true
+    },
+    {
+      "path": "reference/native-replay/vit_replay.cpp",
+      "source": "exact/reference/native-replay/vit_replay.cpp",
+      "sha256": "8215774cb8214f9c0bc5c351f1d5db6ab60613f60eac411f3d7e593c9f83257d",
+      "bytes": 4247,
+      "byte_identical": true
+    },
+    {
+      "path": "reference/native-replay/decoder_replay.cpp",
+      "source": "exact/reference/native-replay/decoder_replay.cpp",
+      "sha256": "d97036c584c613eeb932602b3fa2454ee21648fb95c8f73d83ec1a2893606da5",
+      "bytes": 3685,
+      "byte_identical": true
+    },
+    {
+      "path": "reference/native-replay/post_replay.cpp",
+      "source": "exact/reference/native-replay/post_replay.cpp",
+      "sha256": "a26e396d579a9ce2dd59bc77b6616b6101f462bb234848213700fce2e9bf6552",
+      "bytes": 5320,
+      "byte_identical": true
+    },
+    {
+      "path": "reference/native-replay/half_math.cpp",
+      "source": "exact/reference/native-replay/half_math.cpp",
+      "sha256": "2e8757cf6163ad56ea9fd09c98a9ebfc3b4ba5c4cbb172b19a301cbd9c4bff6f",
+      "bytes": 2392,
+      "byte_identical": true
+    },
+    {
+      "path": "reference/native-replay/noise_lut.cpp",
+      "source": "exact/reference/native-replay/noise_lut.cpp",
+      "sha256": "9a7943f0d29897aad845ec90c61b19557617e7b728ff070f4f37c12b364a1424",
+      "bytes": 2390,
+      "byte_identical": true
+    },
+    {
+      "path": "reference/native-replay/mufu_queries.cpp",
+      "source": "exact/reference/native-replay/mufu_queries.cpp",
+      "sha256": "36a2d1f9014c2e3114cec7d52c53c2f5dca3ba7a149e58682623f11e2cb7bbf1",
+      "bytes": 2748,
+      "byte_identical": true
+    },
+    {
+      "path": "reference/native-replay/sigmoid.cpp",
+      "source": "exact/reference/native-replay/sigmoid.cpp",
+      "sha256": "90a0b1452ba4e0547218f77ff635d1eae30ba3376247b8a291ece8d2bbd5bd6d",
+      "bytes": 2365,
+      "byte_identical": true
+    },
+    {
+      "path": "reference/native-trace/nr_nvapi_trace.cpp",
+      "source": "exact/reference/native-trace/nr_nvapi_trace.cpp",
+      "sha256": "78e66bb42764dbfdc9288e24dbe85b5cf6ad04a95e1d4c3b9e22b77db22b03d6",
+      "bytes": 16271,
+      "byte_identical": true
+    },
+    {
+      "path": "reference/native_front_capture.py",
+      "source": "exact/reference/native_front_capture.py",
+      "sha256": "bfa0c9f67d604aa50366537fd9673c557895c13c47b518d7dd90b6161b7a30f5",
+      "bytes": 9627,
+      "byte_identical": true
+    },
+    {
+      "path": "snapshots/fast-kernels/batched_branched_mlp_v1.py",
+      "source": "fast/experimental/batched_branched_mlp_v1.py",
+      "sha256": "441b8e71a4a967024c61617f41ff95c9b28ace09103f0bcd0f579d9a1cd433ea",
+      "bytes": 6077,
+      "byte_identical": true
+    },
+    {
+      "path": "snapshots/fast-kernels/batched_branched_mlp_v2.py",
+      "source": "fast/experimental/batched_branched_mlp_v2.py",
+      "sha256": "077ee397b477b7bbe63b9bf35169d08f57659cd9fb965498509c9a2d31f11207",
+      "bytes": 932,
+      "byte_identical": true
+    },
+    {
+      "path": "snapshots/fast-kernels/c32_chunk_layout_v2.py",
+      "source": "fast/experimental/c32_chunk_layout_v2.py",
+      "sha256": "c27cb5aaec1733050fc01dc879ccd8abf586f0c314f1b51cb8b62629d0695e95",
+      "bytes": 2737,
+      "byte_identical": true
+    },
+    {
+      "path": "snapshots/fast-kernels/capture_body_v1.py",
+      "source": "fast/experimental/capture_body_v1.py",
+      "sha256": "2f7fa28dd66a43cd20d0edaee28d09aaac034fe90b3865080ffc065d7397dfbb",
+      "bytes": 3623,
+      "byte_identical": true
+    },
+    {
+      "path": "snapshots/fast-kernels/cubic_lut_constant_v1.py",
+      "source": "fast/experimental/cubic_lut_constant_v1.py",
+      "sha256": "6026082edae895ef0ec1389afc678cdf92beace981682a7fdc8cca679c196058",
+      "bytes": 2222,
+      "byte_identical": true
+    },
+    {
+      "path": "snapshots/fast-kernels/fast_matrices_v3.py",
+      "source": "fast/experimental/fast_matrices_v3.py",
+      "sha256": "6b80bbf2a509d5351fd5f503867f72d4fc723c319439e61cb2e590136bd46a06",
+      "bytes": 7378,
+      "byte_identical": true
+    },
+    {
+      "path": "snapshots/fast-kernels/fused_activation_int8_v1.py",
+      "source": "fast/experimental/fused_activation_int8_v1.py",
+      "sha256": "54486d4e5810613a9a15eea1b6a405702423e68895cb87279f3fc904d082e390",
+      "bytes": 2762,
+      "byte_identical": true
+    },
+    {
+      "path": "snapshots/fast-kernels/fused_branched_mlp_v1.py",
+      "source": "fast/experimental/fused_branched_mlp_v1.py",
+      "sha256": "f18e1ce187ffa42379998f49854110737d2df94c145717df4e1c0cf171972e6c",
+      "bytes": 3528,
+      "byte_identical": true
+    },
+    {
+      "path": "snapshots/fast-kernels/fused_branched_pairs_v1.py",
+      "source": "fast/experimental/fused_branched_pairs_v1.py",
+      "sha256": "0eeee74e7c832f1c6e1294f12e8c91289c8f4cb3132db8c5bd2013391e437a57",
+      "bytes": 2369,
+      "byte_identical": true
+    },
+    {
+      "path": "snapshots/fast-kernels/fused_c32_mlp_lut_v1.py",
+      "source": "fast/experimental/fused_c32_mlp_lut_v1.py",
+      "sha256": "62e0277e6b8a09a932985233e90eec14838f7ed7a3053b37ab8a847ebf59af94",
+      "bytes": 3770,
+      "byte_identical": true
+    },
+    {
+      "path": "snapshots/fast-kernels/fused_c32_mlp_v1.py",
+      "source": "fast/experimental/fused_c32_mlp_v1.py",
+      "sha256": "0f9807f9e8783c4a854377853abd4b95b8054c16254d0c60de05e03bad281804",
+      "bytes": 4217,
+      "byte_identical": true
+    },
+    {
+      "path": "snapshots/fast-kernels/fused_c32_projection_native_half_v1.py",
+      "source": "fast/experimental/fused_c32_projection_native_half_v1.py",
+      "sha256": "8310f1512bef10cbe3fe70f76c18772caf6806b1f1d3d322aa87c81ca586004f",
+      "bytes": 6015,
+      "byte_identical": true
+    },
+    {
+      "path": "snapshots/fast-kernels/fused_c32_projection_pack_v1.py",
+      "source": "fast/experimental/fused_c32_projection_pack_v1.py",
+      "sha256": "53b94ea2071f4c35b8e120b3858f18bc4acd6544b326acfcb8f8deab906893dd",
+      "bytes": 5913,
+      "byte_identical": true
+    },
+    {
+      "path": "snapshots/fast-kernels/fused_c32_qkv_scatter_v2.py",
+      "source": "fast/experimental/fused_c32_qkv_scatter_v2.py",
+      "sha256": "59fd6b729066a81c916f3f80d4fea1666fb7109ff6581cd01be68cd64312b059",
+      "bytes": 4748,
+      "byte_identical": true
+    },
+    {
+      "path": "snapshots/fast-kernels/fused_cached_matrices_v1.py",
+      "source": "fast/experimental/fused_cached_matrices_v1.py",
+      "sha256": "550a2022258d45c5ea89fdd3dcd25fa1d63fe242db723db3ae87a860cbfc1597",
+      "bytes": 1827,
+      "byte_identical": true
+    },
+    {
+      "path": "snapshots/fast-kernels/fused_cached_matrices_v2.py",
+      "source": "fast/experimental/fused_cached_matrices_v2.py",
+      "sha256": "e7c3bc99a4fcef0659a3250e9e60667937aa0135670a4cbac45e20769c8eea80",
+      "bytes": 1924,
+      "byte_identical": true
+    },
+    {
+      "path": "snapshots/fast-kernels/fused_dynamic_front_v1.py",
+      "source": "fast/experimental/fused_dynamic_front_v1.py",
+      "sha256": "37813197c7326041866b059d6874358914cac297700345f9ed4ab3db5209b552",
+      "bytes": 6423,
+      "byte_identical": true
+    },
+    {
+      "path": "snapshots/fast-kernels/fused_head_layout_v1.py",
+      "source": "fast/experimental/fused_head_layout_v1.py",
+      "sha256": "bdb21e2f496c7d43aef5a5af21c3599cb79008e68b4a31e64e1058c0381eff2d",
+      "bytes": 1959,
+      "byte_identical": true
+    },
+    {
+      "path": "snapshots/fast-kernels/fused_mlp_pair_v1.py",
+      "source": "fast/experimental/fused_mlp_pair_v1.py",
+      "sha256": "e4b0a34c1450f62c534a8208862fe32feea79c6291acc8bc03450006aadf01c4",
+      "bytes": 2316,
+      "byte_identical": true
+    },
+    {
+      "path": "snapshots/fast-kernels/fused_qkv_pack_native_half_v1.py",
+      "source": "fast/experimental/fused_qkv_pack_native_half_v1.py",
+      "sha256": "989a01ed29d1d61c251a7d0b65361d69d5a30793640a3ee4baffa8eba30a7849",
+      "bytes": 4662,
+      "byte_identical": true
+    },
+    {
+      "path": "snapshots/fast-kernels/fused_qkv_pack_v1.py",
+      "source": "fast/experimental/fused_qkv_pack_v1.py",
+      "sha256": "54affa972d35f43c452adf6da3ad8ac19355ffe6db37fc6e927a52d6f76b0450",
+      "bytes": 4560,
+      "byte_identical": true
+    },
+    {
+      "path": "snapshots/fast-kernels/fused_split_ffwd_v1.py",
+      "source": "fast/experimental/fused_split_ffwd_v1.py",
+      "sha256": "b22c2c02cc5bb388cf5ff3a9108f59c427e43e2dbac9da58d3d149fe5cc6d9aa",
+      "bytes": 3941,
+      "byte_identical": true
+    },
+    {
+      "path": "snapshots/fast-kernels/fused_split_ffwd_v2.py",
+      "source": "fast/experimental/fused_split_ffwd_v2.py",
+      "sha256": "4b90dbf02f7cba8523433b3d228e8a916b88826da3a48bac0c13acfef377373a",
+      "bytes": 1065,
+      "byte_identical": true
+    },
+    {
+      "path": "snapshots/fast-kernels/fused_swin_core_native_half_v1.py",
+      "source": "fast/experimental/fused_swin_core_native_half_v1.py",
+      "sha256": "9d42dc06d0d22564a37cc8f98882e5206e156ea108de0eb621845f0e90ab3a05",
+      "bytes": 4321,
+      "byte_identical": true
+    },
+    {
+      "path": "snapshots/fast-kernels/fused_swin_core_v2.py",
+      "source": "fast/experimental/fused_swin_core_v2.py",
+      "sha256": "aee5bc46a60104ad07523e27087b178ebb08c88d7adcfe0da26db8daf69d9298",
+      "bytes": 4219,
+      "byte_identical": true
+    },
+    {
+      "path": "snapshots/fast-kernels/fused_swin_heads_native_half_v1.py",
+      "source": "fast/experimental/fused_swin_heads_native_half_v1.py",
+      "sha256": "cbf05d3431180f3f74f416c2a16ca55ad0814995551b3d2f26e9fdedc68520e7",
+      "bytes": 2246,
+      "byte_identical": true
+    },
+    {
+      "path": "snapshots/fast-kernels/fused_swin_heads_v1.py",
+      "source": "fast/experimental/fused_swin_heads_v1.py",
+      "sha256": "e6e2ebe4561d0f672f8c32e63b304b58b3dc301cb78ba23ac50d31b0ec363c89",
+      "bytes": 2155,
+      "byte_identical": true
+    },
+    {
+      "path": "snapshots/fast-kernels/fused_swin_native_half_v1.py",
+      "source": "fast/experimental/fused_swin_native_half_v1.py",
+      "sha256": "d6312d04fce4ad266ed91c9b2bd5a5ff0d7d2c75e04589727e01d1c637206c20",
+      "bytes": 1539,
+      "byte_identical": true
+    },
+    {
+      "path": "snapshots/fast-kernels/fused_vit_projection_v1.py",
+      "source": "fast/experimental/fused_vit_projection_v1.py",
+      "sha256": "344e8b77ff8e0cbc3c5fe77e62e736340c96d908764afe8ebfa91bfde3bdc276",
+      "bytes": 3936,
+      "byte_identical": true
+    },
+    {
+      "path": "snapshots/fast-kernels/fused_vit_projection_v2.py",
+      "source": "fast/experimental/fused_vit_projection_v2.py",
+      "sha256": "f617c6c8ba328fe4f511445b4456e9cc717e302594ef5b7cecf1b8c93e196392",
+      "bytes": 3415,
+      "byte_identical": true
+    },
+    {
+      "path": "snapshots/fast-kernels/fused_vit_projection_v3.py",
+      "source": "fast/experimental/fused_vit_projection_v3.py",
+      "sha256": "e236e8c849c5eb3234865c221a0b065d25f284fbf330d739c1ca9754236ac479",
+      "bytes": 1006,
+      "byte_identical": true
+    },
+    {
+      "path": "snapshots/fast-kernels/graph_front_v1.py",
+      "source": "fast/experimental/graph_front_v1.py",
+      "sha256": "d2b8a5f3cb913b71c836e8c2dc0a19cb34b0dbacf6a83851010d11a5a172f5de",
+      "bytes": 5302,
+      "byte_identical": true
+    },
+    {
+      "path": "snapshots/fast-kernels/graph_front_v2.py",
+      "source": "fast/experimental/graph_front_v2.py",
+      "sha256": "09471129801447263272c596708d4ce0d5b1e059621db35afab7490df6055725",
+      "bytes": 674,
+      "byte_identical": true
+    },
+    {
+      "path": "snapshots/fast-kernels/graph_front_v3.py",
+      "source": "fast/experimental/graph_front_v3.py",
+      "sha256": "bacf2c8acb00356c79d82b48c73954cf559254fec9d18ab6cca01663f1f05c25",
+      "bytes": 1460,
+      "byte_identical": true
+    },
+    {
+      "path": "snapshots/fast-kernels/graph_front_v4.py",
+      "source": "fast/experimental/graph_front_v4.py",
+      "sha256": "bdd8ed34ee979608f445eb82e2094c8b1b04c3ed288ee5038949c1c52872ca5e",
+      "bytes": 3408,
+      "byte_identical": true
+    },
+    {
+      "path": "snapshots/fast-kernels/graph_front_v5.py",
+      "source": "fast/experimental/graph_front_v5.py",
+      "sha256": "8887facb3d98f91f6a068206698283b2865d895cbe7cdae366b0455939f3a6ec",
+      "bytes": 2806,
+      "byte_identical": true
+    },
+    {
+      "path": "snapshots/fast-kernels/graph_front_v6.py",
+      "source": "fast/experimental/graph_front_v6.py",
+      "sha256": "3cf46091d2a44457975a95670aa317d6205e0ec9db4c5bc5acf4e70c9af7a052",
+      "bytes": 389,
+      "byte_identical": true
+    },
+    {
+      "path": "snapshots/fast-kernels/graph_history_warp_v1.py",
+      "source": "fast/experimental/graph_history_warp_v1.py",
+      "sha256": "8d09af40d2b94f6de119b192da3f8f25ead63394573793105b07a0e741a5752c",
+      "bytes": 4497,
+      "byte_identical": true
+    },
+    {
+      "path": "snapshots/fast-kernels/graph_history_warp_v2.py",
+      "source": "fast/experimental/graph_history_warp_v2.py",
+      "sha256": "f69fd9aa691985a19cf2ee7b1990068956292b53db84a86cc05fa2245fbe754c",
+      "bytes": 1184,
+      "byte_identical": true
+    },
+    {
+      "path": "snapshots/fast-kernels/native_half_attention_fma_v1.py",
+      "source": "fast/experimental/native_half_attention_fma_v1.py",
+      "sha256": "5d37caf41f58a97da1e7c5a0c67601b5500f8dfed08e6128008130849e590691",
+      "bytes": 496,
+      "byte_identical": true
+    },
+    {
+      "path": "snapshots/fast-kernels/native_half_head_layout_v1.py",
+      "source": "fast/experimental/native_half_head_layout_v1.py",
+      "sha256": "227515fa109ab1d47c9c0df0e64380877ed5f4bc504f7ba3ce4171a5ec9f36c2",
+      "bytes": 2719,
+      "byte_identical": true
+    },
+    {
+      "path": "snapshots/fast-kernels/projected_head_layout_v1.py",
+      "source": "fast/experimental/projected_head_layout_v1.py",
+      "sha256": "bd663bfd573f38ce113edc778fa998513fb6968378f86d96e59433dfb3c8179b",
+      "bytes": 287,
+      "byte_identical": true
+    },
+    {
+      "path": "snapshots/fast-kernels/qkv_head_layout_v1.py",
+      "source": "fast/experimental/qkv_head_layout_v1.py",
+      "sha256": "549cca70c993d8fb62bdbfbf3b0ab90d42d7710390e7824aab8353b5b688599e",
+      "bytes": 1979,
+      "byte_identical": true
+    },
+    {
+      "path": "snapshots/fast-kernels/residual_scale_v1.py",
+      "source": "fast/experimental/residual_scale_v1.py",
+      "sha256": "abd19fa2f418ad2dbdea164be2b45df5c0c9ace2a1ef3ea9895ddabce55e4262",
+      "bytes": 8250,
+      "byte_identical": true
+    },
+    {
+      "path": "snapshots/fast-kernels/static_weight_cache_v1.py",
+      "source": "fast/experimental/static_weight_cache_v1.py",
+      "sha256": "cddb51c57b7c4413478d75adade1c27aac73b7fa19eefd5e4867adc64e0f3981",
+      "bytes": 3379,
+      "byte_identical": true
+    },
+    {
+      "path": "snapshots/fast-kernels/static_weight_cache_v2.py",
+      "source": "fast/experimental/static_weight_cache_v2.py",
+      "sha256": "5a198b4f67201d8844a73abbd697e60799c3b6b03d4fd1dc298e7fe93725d825",
+      "bytes": 2170,
+      "byte_identical": true
+    },
+    {
+      "path": "snapshots/fast-kernels/strided_batched_v1.py",
+      "source": "fast/experimental/strided_batched_v1.py",
+      "sha256": "c7e922c5514a678c2e258ad9a322ad163cb9b1d7dd118a7424342fb4ec483eaf",
+      "bytes": 3412,
+      "byte_identical": true
+    },
+    {
+      "path": "snapshots/fast-kernels/strided_batched_v2.py",
+      "source": "fast/experimental/strided_batched_v2.py",
+      "sha256": "bce3a3e437b2feab00891c4cc98276fdb036cf8c88a575bb4947fcf5974675fc",
+      "bytes": 684,
+      "byte_identical": true
+    },
+    {
+      "path": "snapshots/fast-kernels/swin_scheduling_v1.py",
+      "source": "fast/experimental/swin_scheduling_v1.py",
+      "sha256": "bdc8f3db6ad2688bf7d7135ead0cfb94f217105bd8e507c6cd47be8e9a7a428e",
+      "bytes": 2740,
+      "byte_identical": true
+    },
+    {
+      "path": "snapshots/fast-kernels/window_layout_v1.py",
+      "source": "fast/experimental/window_layout_v1.py",
+      "sha256": "b344016a9ef2cd5fe33def2a070ecbcc1b3ab403fccf9e82604b5e555cba3346",
+      "bytes": 5998,
+      "byte_identical": true
+    }
+  ],
+  "checkpoint_original_sha256": "a4614658ed381e3c1895cee84d2754dbb07aaa0680a40508563ee163998ea1fb"
+}

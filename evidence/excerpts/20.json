@@ -1,0 +1,28 @@
+{
+  "provenance": {
+    "report_id": "results/native-half-long1080-v1/saved-audit-v1.json",
+    "status": "current-fast",
+    "original_report_sha256": "61560c3593f778fe004ec907463ca5e8d4c1812b156ef776eb2dbcc147fea733",
+    "original_report_bytes": 824,
+    "excerpt_path": "evidence/excerpts/20.json",
+    "excerpt_fields": [
+      "passed",
+      "report_sha256",
+      "auditor_sha256",
+      "frames_verified",
+      "unique_arrays_reread",
+      "no_additional_visual_review_required_for_identical_output",
+      "limitation"
+    ],
+    "raw_arrays_public": false
+  },
+  "excerpt": {
+    "passed": true,
+    "report_sha256": "c515d7b3b8f13362226b3f8a5b29ad3c92ee405eff2f6c10f3e7afc21304c5b4",
+    "auditor_sha256": "60013e1f4f0f9bdaadfc6fa3b96b015e1561f694e1167b3bbda9decaf0b20f67",
+    "frames_verified": 390,
+    "unique_arrays_reread": 780,
+    "no_additional_visual_review_required_for_identical_output": true,
+    "limitation": "Authenticate390 candidate outputs against the approved NR256 receipt.\n\nReread complete saved low tensors and motion arrays; compare saved full-composite\nhashes and state records. Full composite comparisons happened in the GPU run.\nThis audit does not independently execute the model or reconstruct full outputs.\n"
+  }
+}

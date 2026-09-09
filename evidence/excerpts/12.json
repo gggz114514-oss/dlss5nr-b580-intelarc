@@ -1,0 +1,1973 @@
+{
+  "provenance": {
+    "report_id": "results/texture-full-basis-v1/coordinate-precision-probe-v1.json",
+    "status": "historical",
+    "original_report_sha256": "60d90af729672a861a27ad7142ba2e93edfbd9315b5ce985fab6abe3c73b4928",
+    "original_report_bytes": 48745,
+    "excerpt_path": "evidence/excerpts/12.json",
+    "excerpt_fields": [
+      "measurements"
+    ],
+    "raw_arrays_public": false
+  },
+  "excerpt": {
+    "measurements": [
+      {
+        "axis": 0,
+        "extent": 864,
+        "candidates": [
+          {
+            "rule": "fixed_fraction_21_floor",
+            "final_rounding": "up",
+            "mismatches": 0,
+            "max_abs": 0
+          },
+          {
+            "rule": "fixed_fraction_21_floor",
+            "final_rounding": "even",
+            "mismatches": 391,
+            "max_abs": 1
+          },
+          {
+            "rule": "float_significand_21_floor",
+            "final_rounding": "up",
+            "mismatches": 3610,
+            "max_abs": 1
+          },
+          {
+            "rule": "float_significand_21_floor",
+            "final_rounding": "even",
+            "mismatches": 3890,
+            "max_abs": 1
+          },
+          {
+            "rule": "fixed_fraction_22_floor",
+            "final_rounding": "up",
+            "mismatches": 5801,
+            "max_abs": 1
+          },
+          {
+            "rule": "fixed_fraction_22_floor",
+            "final_rounding": "even",
+            "mismatches": 5974,
+            "max_abs": 1
+          },
+          {
+            "rule": "float_significand_22_floor",
+            "final_rounding": "up",
+            "mismatches": 7355,
+            "max_abs": 1
+          },
+          {
+            "rule": "float_significand_22_floor",
+            "final_rounding": "even",
+            "mismatches": 7481,
+            "max_abs": 1
+          },
+          {
+            "rule": "float_significand_20_floor",
+            "final_rounding": "up",
+            "mismatches": 7989,
+            "max_abs": 1
+          },
+          {
+            "rule": "fixed_fraction_23_floor",
+            "final_rounding": "up",
+            "mismatches": 8251,
+            "max_abs": 1
+          },
+          {
+            "rule": "fixed_fraction_23_floor",
+            "final_rounding": "even",
+            "mismatches": 8364,
+            "max_abs": 1
+          },
+          {
+            "rule": "float_significand_20_floor",
+            "final_rounding": "even",
+            "mismatches": 8564,
+            "max_abs": 1
+          },
+          {
+            "rule": "float_significand_23_floor",
+            "final_rounding": "up",
+            "mismatches": 9255,
+            "max_abs": 1
+          },
+          {
+            "rule": "float_significand_23_floor",
+            "final_rounding": "even",
+            "mismatches": 9346,
+            "max_abs": 1
+          },
+          {
+            "rule": "fixed_fraction_24_floor",
+            "final_rounding": "up",
+            "mismatches": 9764,
+            "max_abs": 1
+          },
+          {
+            "rule": "fixed_fraction_24_floor",
+            "final_rounding": "even",
+            "mismatches": 9845,
+            "max_abs": 1
+          },
+          {
+            "rule": "float_significand_22_even",
+            "final_rounding": "up",
+            "mismatches": 10266,
+            "max_abs": 1
+          },
+          {
+            "rule": "float_significand_22_even",
+            "final_rounding": "even",
+            "mismatches": 10298,
+            "max_abs": 1
+          },
+          {
+            "rule": "fixed_fraction_22_even",
+            "final_rounding": "up",
+            "mismatches": 10326,
+            "max_abs": 1
+          },
+          {
+            "rule": "fixed_fraction_22_even",
+            "final_rounding": "even",
+            "mismatches": 10348,
+            "max_abs": 1
+          },
+          {
+            "rule": "fixed_fraction_23_even",
+            "final_rounding": "up",
+            "mismatches": 10354,
+            "max_abs": 1
+          },
+          {
+            "rule": "float_significand_21_even",
+            "final_rounding": "up",
+            "mismatches": 10394,
+            "max_abs": 1
+          },
+          {
+            "rule": "fixed_fraction_23_even",
+            "final_rounding": "even",
+            "mismatches": 10405,
+            "max_abs": 1
+          },
+          {
+            "rule": "float_significand_23_even",
+            "final_rounding": "up",
+            "mismatches": 10410,
+            "max_abs": 1
+          },
+          {
+            "rule": "float_significand_21_even",
+            "final_rounding": "even",
+            "mismatches": 10415,
+            "max_abs": 1
+          },
+          {
+            "rule": "fixed_fraction_24_even",
+            "final_rounding": "up",
+            "mismatches": 10448,
+            "max_abs": 1
+          },
+          {
+            "rule": "float_significand_23_even",
+            "final_rounding": "even",
+            "mismatches": 10460,
+            "max_abs": 1
+          },
+          {
+            "rule": "float_significand_24_up",
+            "final_rounding": "up",
+            "mismatches": 10480,
+            "max_abs": 1
+          },
+          {
+            "rule": "float_significand_24_even",
+            "final_rounding": "up",
+            "mismatches": 10480,
+            "max_abs": 1
+          },
+          {
+            "rule": "float_significand_24_floor",
+            "final_rounding": "up",
+            "mismatches": 10480,
+            "max_abs": 1
+          },
+          {
+            "rule": "fixed_fraction_24_even",
+            "final_rounding": "even",
+            "mismatches": 10507,
+            "max_abs": 1
+          },
+          {
+            "rule": "fixed_fraction_21_even",
+            "final_rounding": "even",
+            "mismatches": 10526,
+            "max_abs": 1
+          },
+          {
+            "rule": "fixed_fraction_21_even",
+            "final_rounding": "up",
+            "mismatches": 10530,
+            "max_abs": 1
+          },
+          {
+            "rule": "float_significand_24_up",
+            "final_rounding": "even",
+            "mismatches": 10538,
+            "max_abs": 1
+          },
+          {
+            "rule": "float_significand_24_even",
+            "final_rounding": "even",
+            "mismatches": 10538,
+            "max_abs": 1
+          },
+          {
+            "rule": "float_significand_24_floor",
+            "final_rounding": "even",
+            "mismatches": 10538,
+            "max_abs": 1
+          },
+          {
+            "rule": "fixed_fraction_24_up",
+            "final_rounding": "up",
+            "mismatches": 10825,
+            "max_abs": 1
+          },
+          {
+            "rule": "fixed_fraction_24_up",
+            "final_rounding": "even",
+            "mismatches": 10875,
+            "max_abs": 1
+          },
+          {
+            "rule": "fixed_fraction_22_up",
+            "final_rounding": "even",
+            "mismatches": 11313,
+            "max_abs": 1
+          },
+          {
+            "rule": "fixed_fraction_22_up",
+            "final_rounding": "up",
+            "mismatches": 11315,
+            "max_abs": 1
+          },
+          {
+            "rule": "float_significand_20_even",
+            "final_rounding": "even",
+            "mismatches": 11410,
+            "max_abs": 1
+          },
+          {
+            "rule": "float_significand_22_up",
+            "final_rounding": "up",
+            "mismatches": 11415,
+            "max_abs": 1
+          },
+          {
+            "rule": "float_significand_22_up",
+            "final_rounding": "even",
+            "mismatches": 11419,
+            "max_abs": 1
+          },
+          {
+            "rule": "float_significand_21_up",
+            "final_rounding": "even",
+            "mismatches": 11433,
+            "max_abs": 1
+          },
+          {
+            "rule": "float_significand_20_even",
+            "final_rounding": "up",
+            "mismatches": 11441,
+            "max_abs": 1
+          },
+          {
+            "rule": "float_significand_21_up",
+            "final_rounding": "up",
+            "mismatches": 11456,
+            "max_abs": 1
+          },
+          {
+            "rule": "fixed_fraction_21_up",
+            "final_rounding": "even",
+            "mismatches": 11488,
+            "max_abs": 1
+          },
+          {
+            "rule": "fixed_fraction_21_up",
+            "final_rounding": "up",
+            "mismatches": 11538,
+            "max_abs": 1
+          },
+          {
+            "rule": "fixed_fraction_23_up",
+            "final_rounding": "up",
+            "mismatches": 11541,
+            "max_abs": 1
+          },
+          {
+            "rule": "fixed_fraction_23_up",
+            "final_rounding": "even",
+            "mismatches": 11567,
+            "max_abs": 1
+          },
+          {
+            "rule": "float_significand_23_up",
+            "final_rounding": "up",
+            "mismatches": 11612,
+            "max_abs": 1
+          },
+          {
+            "rule": "float_significand_23_up",
+            "final_rounding": "even",
+            "mismatches": 11629,
+            "max_abs": 1
+          },
+          {
+            "rule": "float_significand_20_up",
+            "final_rounding": "even",
+            "mismatches": 11662,
+            "max_abs": 1
+          },
+          {
+            "rule": "float_significand_20_up",
+            "final_rounding": "up",
+            "mismatches": 11738,
+            "max_abs": 1
+          },
+          {
+            "rule": "fixed_fraction_20_floor",
+            "final_rounding": "up",
+            "mismatches": 11816,
+            "max_abs": 1
+          },
+          {
+            "rule": "fixed_fraction_20_even",
+            "final_rounding": "even",
+            "mismatches": 12006,
+            "max_abs": 1
+          },
+          {
+            "rule": "fixed_fraction_20_up",
+            "final_rounding": "even",
+            "mismatches": 12015,
+            "max_abs": 1
+          },
+          {
+            "rule": "fixed_fraction_20_even",
+            "final_rounding": "up",
+            "mismatches": 12096,
+            "max_abs": 1
+          },
+          {
+            "rule": "fixed_fraction_20_up",
+            "final_rounding": "up",
+            "mismatches": 12145,
+            "max_abs": 1
+          },
+          {
+            "rule": "fixed_fraction_20_floor",
+            "final_rounding": "even",
+            "mismatches": 12691,
+            "max_abs": 1
+          },
+          {
+            "rule": "float_significand_19_even",
+            "final_rounding": "even",
+            "mismatches": 18032,
+            "max_abs": 1
+          },
+          {
+            "rule": "float_significand_19_up",
+            "final_rounding": "even",
+            "mismatches": 18035,
+            "max_abs": 1
+          },
+          {
+            "rule": "float_significand_19_even",
+            "final_rounding": "up",
+            "mismatches": 18095,
+            "max_abs": 1
+          },
+          {
+            "rule": "float_significand_19_up",
+            "final_rounding": "up",
+            "mismatches": 18104,
+            "max_abs": 1
+          },
+          {
+            "rule": "float_significand_19_floor",
+            "final_rounding": "up",
+            "mismatches": 22104,
+            "max_abs": 1
+          },
+          {
+            "rule": "float_significand_19_floor",
+            "final_rounding": "even",
+            "mismatches": 23282,
+            "max_abs": 1
+          },
+          {
+            "rule": "fixed_fraction_19_even",
+            "final_rounding": "even",
+            "mismatches": 23791,
+            "max_abs": 1
+          },
+          {
+            "rule": "fixed_fraction_19_up",
+            "final_rounding": "even",
+            "mismatches": 23809,
+            "max_abs": 1
+          },
+          {
+            "rule": "fixed_fraction_19_even",
+            "final_rounding": "up",
+            "mismatches": 23827,
+            "max_abs": 1
+          },
+          {
+            "rule": "fixed_fraction_19_up",
+            "final_rounding": "up",
+            "mismatches": 23859,
+            "max_abs": 1
+          },
+          {
+            "rule": "float_significand_18_even",
+            "final_rounding": "even",
+            "mismatches": 34138,
+            "max_abs": 1
+          },
+          {
+            "rule": "float_significand_18_even",
+            "final_rounding": "up",
+            "mismatches": 34183,
+            "max_abs": 1
+          },
+          {
+            "rule": "float_significand_18_up",
+            "final_rounding": "even",
+            "mismatches": 34238,
+            "max_abs": 1
+          },
+          {
+            "rule": "float_significand_18_up",
+            "final_rounding": "up",
+            "mismatches": 34328,
+            "max_abs": 1
+          },
+          {
+            "rule": "fixed_fraction_19_floor",
+            "final_rounding": "up",
+            "mismatches": 35295,
+            "max_abs": 1
+          },
+          {
+            "rule": "fixed_fraction_19_floor",
+            "final_rounding": "even",
+            "mismatches": 37030,
+            "max_abs": 1
+          },
+          {
+            "rule": "fixed_fraction_18_even",
+            "final_rounding": "even",
+            "mismatches": 48892,
+            "max_abs": 1
+          },
+          {
+            "rule": "fixed_fraction_18_even",
+            "final_rounding": "up",
+            "mismatches": 48957,
+            "max_abs": 1
+          },
+          {
+            "rule": "fixed_fraction_18_up",
+            "final_rounding": "even",
+            "mismatches": 48981,
+            "max_abs": 1
+          },
+          {
+            "rule": "fixed_fraction_18_up",
+            "final_rounding": "up",
+            "mismatches": 49097,
+            "max_abs": 1
+          },
+          {
+            "rule": "float_significand_18_floor",
+            "final_rounding": "up",
+            "mismatches": 52871,
+            "max_abs": 1
+          },
+          {
+            "rule": "float_significand_18_floor",
+            "final_rounding": "even",
+            "mismatches": 55281,
+            "max_abs": 1
+          },
+          {
+            "rule": "float_significand_17_even",
+            "final_rounding": "up",
+            "mismatches": 66385,
+            "max_abs": 1
+          },
+          {
+            "rule": "float_significand_17_even",
+            "final_rounding": "even",
+            "mismatches": 66398,
+            "max_abs": 1
+          },
+          {
+            "rule": "float_significand_17_up",
+            "final_rounding": "even",
+            "mismatches": 66463,
+            "max_abs": 1
+          },
+          {
+            "rule": "float_significand_17_up",
+            "final_rounding": "up",
+            "mismatches": 66487,
+            "max_abs": 1
+          },
+          {
+            "rule": "fixed_fraction_18_floor",
+            "final_rounding": "up",
+            "mismatches": 81951,
+            "max_abs": 1
+          },
+          {
+            "rule": "fixed_fraction_18_floor",
+            "final_rounding": "even",
+            "mismatches": 85527,
+            "max_abs": 1
+          },
+          {
+            "rule": "fixed_fraction_17_even",
+            "final_rounding": "up",
+            "mismatches": 97423,
+            "max_abs": 1
+          },
+          {
+            "rule": "fixed_fraction_17_even",
+            "final_rounding": "even",
+            "mismatches": 97461,
+            "max_abs": 1
+          },
+          {
+            "rule": "fixed_fraction_17_up",
+            "final_rounding": "up",
+            "mismatches": 97530,
+            "max_abs": 1
+          },
+          {
+            "rule": "fixed_fraction_17_up",
+            "final_rounding": "even",
+            "mismatches": 97537,
+            "max_abs": 1
+          },
+          {
+            "rule": "fixed_fraction_18_up",
+            "final_rounding": "floor",
+            "mismatches": 99855,
+            "max_abs": 1
+          },
+          {
+            "rule": "fixed_fraction_18_even",
+            "final_rounding": "floor",
+            "mismatches": 100954,
+            "max_abs": 1
+          },
+          {
+            "rule": "float_significand_18_up",
+            "final_rounding": "floor",
+            "mismatches": 101096,
+            "max_abs": 1
+          },
+          {
+            "rule": "fixed_fraction_19_up",
+            "final_rounding": "floor",
+            "mismatches": 101361,
+            "max_abs": 1
+          },
+          {
+            "rule": "fixed_fraction_19_even",
+            "final_rounding": "floor",
+            "mismatches": 101683,
+            "max_abs": 1
+          },
+          {
+            "rule": "float_significand_19_up",
+            "final_rounding": "floor",
+            "mismatches": 101900,
+            "max_abs": 1
+          },
+          {
+            "rule": "float_significand_19_even",
+            "final_rounding": "floor",
+            "mismatches": 101992,
+            "max_abs": 1
+          },
+          {
+            "rule": "float_significand_18_even",
+            "final_rounding": "floor",
+            "mismatches": 102206,
+            "max_abs": 1
+          },
+          {
+            "rule": "fixed_fraction_20_up",
+            "final_rounding": "floor",
+            "mismatches": 102522,
+            "max_abs": 1
+          },
+          {
+            "rule": "float_significand_20_up",
+            "final_rounding": "floor",
+            "mismatches": 102855,
+            "max_abs": 1
+          },
+          {
+            "rule": "float_significand_17_floor",
+            "final_rounding": "up",
+            "mismatches": 102912,
+            "max_abs": 2
+          },
+          {
+            "rule": "fixed_fraction_21_up",
+            "final_rounding": "floor",
+            "mismatches": 102988,
+            "max_abs": 1
+          },
+          {
+            "rule": "float_significand_21_up",
+            "final_rounding": "floor",
+            "mismatches": 103242,
+            "max_abs": 1
+          },
+          {
+            "rule": "fixed_fraction_22_up",
+            "final_rounding": "floor",
+            "mismatches": 103261,
+            "max_abs": 1
+          },
+          {
+            "rule": "float_significand_22_up",
+            "final_rounding": "floor",
+            "mismatches": 103409,
+            "max_abs": 1
+          },
+          {
+            "rule": "fixed_fraction_20_even",
+            "final_rounding": "floor",
+            "mismatches": 103429,
+            "max_abs": 1
+          },
+          {
+            "rule": "fixed_fraction_23_up",
+            "final_rounding": "floor",
+            "mismatches": 103545,
+            "max_abs": 1
+          },
+          {
+            "rule": "float_significand_23_up",
+            "final_rounding": "floor",
+            "mismatches": 103622,
+            "max_abs": 1
+          },
+          {
+            "rule": "float_significand_20_even",
+            "final_rounding": "floor",
+            "mismatches": 103903,
+            "max_abs": 1
+          },
+          {
+            "rule": "fixed_fraction_21_even",
+            "final_rounding": "floor",
+            "mismatches": 104064,
+            "max_abs": 1
+          },
+          {
+            "rule": "fixed_fraction_22_even",
+            "final_rounding": "floor",
+            "mismatches": 104269,
+            "max_abs": 1
+          },
+          {
+            "rule": "fixed_fraction_24_up",
+            "final_rounding": "floor",
+            "mismatches": 104285,
+            "max_abs": 1
+          },
+          {
+            "rule": "fixed_fraction_23_even",
+            "final_rounding": "floor",
+            "mismatches": 104323,
+            "max_abs": 1
+          },
+          {
+            "rule": "float_significand_21_even",
+            "final_rounding": "floor",
+            "mismatches": 104338,
+            "max_abs": 1
+          },
+          {
+            "rule": "float_significand_22_even",
+            "final_rounding": "floor",
+            "mismatches": 104346,
+            "max_abs": 1
+          },
+          {
+            "rule": "float_significand_23_even",
+            "final_rounding": "floor",
+            "mismatches": 104359,
+            "max_abs": 1
+          },
+          {
+            "rule": "fixed_fraction_24_even",
+            "final_rounding": "floor",
+            "mismatches": 104393,
+            "max_abs": 1
+          },
+          {
+            "rule": "float_significand_24_up",
+            "final_rounding": "floor",
+            "mismatches": 104394,
+            "max_abs": 1
+          },
+          {
+            "rule": "float_significand_24_even",
+            "final_rounding": "floor",
+            "mismatches": 104394,
+            "max_abs": 1
+          },
+          {
+            "rule": "float_significand_24_floor",
+            "final_rounding": "floor",
+            "mismatches": 104394,
+            "max_abs": 1
+          },
+          {
+            "rule": "fixed_fraction_24_floor",
+            "final_rounding": "floor",
+            "mismatches": 104592,
+            "max_abs": 1
+          },
+          {
+            "rule": "float_significand_23_floor",
+            "final_rounding": "floor",
+            "mismatches": 105139,
+            "max_abs": 1
+          },
+          {
+            "rule": "fixed_fraction_23_floor",
+            "final_rounding": "floor",
+            "mismatches": 105765,
+            "max_abs": 1
+          },
+          {
+            "rule": "float_significand_17_floor",
+            "final_rounding": "even",
+            "mismatches": 106324,
+            "max_abs": 2
+          },
+          {
+            "rule": "float_significand_22_floor",
+            "final_rounding": "floor",
+            "mismatches": 106920,
+            "max_abs": 1
+          },
+          {
+            "rule": "fixed_fraction_22_floor",
+            "final_rounding": "floor",
+            "mismatches": 108719,
+            "max_abs": 1
+          },
+          {
+            "rule": "float_significand_17_up",
+            "final_rounding": "floor",
+            "mismatches": 108871,
+            "max_abs": 2
+          },
+          {
+            "rule": "float_significand_17_even",
+            "final_rounding": "floor",
+            "mismatches": 109427,
+            "max_abs": 2
+          },
+          {
+            "rule": "float_significand_21_floor",
+            "final_rounding": "floor",
+            "mismatches": 110708,
+            "max_abs": 1
+          },
+          {
+            "rule": "fixed_fraction_21_floor",
+            "final_rounding": "floor",
+            "mismatches": 114371,
+            "max_abs": 1
+          },
+          {
+            "rule": "float_significand_16_even",
+            "final_rounding": "up",
+            "mismatches": 114388,
+            "max_abs": 2
+          },
+          {
+            "rule": "float_significand_16_up",
+            "final_rounding": "up",
+            "mismatches": 114423,
+            "max_abs": 2
+          },
+          {
+            "rule": "float_significand_16_even",
+            "final_rounding": "even",
+            "mismatches": 114545,
+            "max_abs": 2
+          },
+          {
+            "rule": "float_significand_16_up",
+            "final_rounding": "even",
+            "mismatches": 114571,
+            "max_abs": 2
+          },
+          {
+            "rule": "fixed_fraction_17_up",
+            "final_rounding": "floor",
+            "mismatches": 116567,
+            "max_abs": 2
+          },
+          {
+            "rule": "fixed_fraction_17_even",
+            "final_rounding": "floor",
+            "mismatches": 116950,
+            "max_abs": 2
+          },
+          {
+            "rule": "float_significand_20_floor",
+            "final_rounding": "floor",
+            "mismatches": 118804,
+            "max_abs": 1
+          },
+          {
+            "rule": "fixed_fraction_20_floor",
+            "final_rounding": "floor",
+            "mismatches": 126657,
+            "max_abs": 1
+          },
+          {
+            "rule": "float_significand_19_floor",
+            "final_rounding": "floor",
+            "mismatches": 134818,
+            "max_abs": 1
+          },
+          {
+            "rule": "float_significand_16_up",
+            "final_rounding": "floor",
+            "mismatches": 136176,
+            "max_abs": 2
+          },
+          {
+            "rule": "float_significand_16_even",
+            "final_rounding": "floor",
+            "mismatches": 136296,
+            "max_abs": 2
+          },
+          {
+            "rule": "float_significand_16_floor",
+            "final_rounding": "up",
+            "mismatches": 145312,
+            "max_abs": 4
+          },
+          {
+            "rule": "float_significand_16_floor",
+            "final_rounding": "even",
+            "mismatches": 149248,
+            "max_abs": 4
+          },
+          {
+            "rule": "fixed_fraction_19_floor",
+            "final_rounding": "floor",
+            "mismatches": 149872,
+            "max_abs": 1
+          },
+          {
+            "rule": "fixed_fraction_17_floor",
+            "final_rounding": "up",
+            "mismatches": 150437,
+            "max_abs": 2
+          },
+          {
+            "rule": "fixed_fraction_17_floor",
+            "final_rounding": "even",
+            "mismatches": 154842,
+            "max_abs": 2
+          },
+          {
+            "rule": "fixed_fraction_16_up",
+            "final_rounding": "up",
+            "mismatches": 159934,
+            "max_abs": 2
+          },
+          {
+            "rule": "fixed_fraction_16_even",
+            "final_rounding": "up",
+            "mismatches": 159934,
+            "max_abs": 2
+          },
+          {
+            "rule": "fixed_fraction_16_up",
+            "final_rounding": "even",
+            "mismatches": 160285,
+            "max_abs": 2
+          },
+          {
+            "rule": "fixed_fraction_16_even",
+            "final_rounding": "even",
+            "mismatches": 160285,
+            "max_abs": 2
+          },
+          {
+            "rule": "float_significand_18_floor",
+            "final_rounding": "floor",
+            "mismatches": 161321,
+            "max_abs": 2
+          },
+          {
+            "rule": "fixed_fraction_16_up",
+            "final_rounding": "floor",
+            "mismatches": 161829,
+            "max_abs": 2
+          },
+          {
+            "rule": "fixed_fraction_16_even",
+            "final_rounding": "floor",
+            "mismatches": 161829,
+            "max_abs": 2
+          },
+          {
+            "rule": "float_significand_17_floor",
+            "final_rounding": "floor",
+            "mismatches": 184108,
+            "max_abs": 3
+          },
+          {
+            "rule": "fixed_fraction_18_floor",
+            "final_rounding": "floor",
+            "mismatches": 186463,
+            "max_abs": 2
+          },
+          {
+            "rule": "fixed_fraction_16_floor",
+            "final_rounding": "up",
+            "mismatches": 186584,
+            "max_abs": 4
+          },
+          {
+            "rule": "fixed_fraction_16_floor",
+            "final_rounding": "even",
+            "mismatches": 191033,
+            "max_abs": 4
+          },
+          {
+            "rule": "float_significand_16_floor",
+            "final_rounding": "floor",
+            "mismatches": 200251,
+            "max_abs": 4
+          },
+          {
+            "rule": "fixed_fraction_17_floor",
+            "final_rounding": "floor",
+            "mismatches": 206431,
+            "max_abs": 3
+          },
+          {
+            "rule": "fixed_fraction_16_floor",
+            "final_rounding": "floor",
+            "mismatches": 216100,
+            "max_abs": 4
+          }
+        ]
+      },
+      {
+        "axis": 1,
+        "extent": 480,
+        "candidates": [
+          {
+            "rule": "fixed_fraction_21_floor",
+            "final_rounding": "up",
+            "mismatches": 0,
+            "max_abs": 0
+          },
+          {
+            "rule": "fixed_fraction_21_floor",
+            "final_rounding": "even",
+            "mismatches": 426,
+            "max_abs": 1
+          },
+          {
+            "rule": "float_significand_21_floor",
+            "final_rounding": "up",
+            "mismatches": 1974,
+            "max_abs": 1
+          },
+          {
+            "rule": "float_significand_21_floor",
+            "final_rounding": "even",
+            "mismatches": 2279,
+            "max_abs": 1
+          },
+          {
+            "rule": "fixed_fraction_22_floor",
+            "final_rounding": "up",
+            "mismatches": 3008,
+            "max_abs": 1
+          },
+          {
+            "rule": "fixed_fraction_22_floor",
+            "final_rounding": "even",
+            "mismatches": 3248,
+            "max_abs": 1
+          },
+          {
+            "rule": "float_significand_22_floor",
+            "final_rounding": "up",
+            "mismatches": 4171,
+            "max_abs": 1
+          },
+          {
+            "rule": "float_significand_20_floor",
+            "final_rounding": "up",
+            "mismatches": 4274,
+            "max_abs": 1
+          },
+          {
+            "rule": "float_significand_22_floor",
+            "final_rounding": "even",
+            "mismatches": 4340,
+            "max_abs": 1
+          },
+          {
+            "rule": "fixed_fraction_23_floor",
+            "final_rounding": "up",
+            "mismatches": 4858,
+            "max_abs": 1
+          },
+          {
+            "rule": "float_significand_20_floor",
+            "final_rounding": "even",
+            "mismatches": 4911,
+            "max_abs": 1
+          },
+          {
+            "rule": "fixed_fraction_23_floor",
+            "final_rounding": "even",
+            "mismatches": 4959,
+            "max_abs": 1
+          },
+          {
+            "rule": "float_significand_23_floor",
+            "final_rounding": "up",
+            "mismatches": 5557,
+            "max_abs": 1
+          },
+          {
+            "rule": "float_significand_23_floor",
+            "final_rounding": "even",
+            "mismatches": 5605,
+            "max_abs": 1
+          },
+          {
+            "rule": "fixed_fraction_24_floor",
+            "final_rounding": "up",
+            "mismatches": 5864,
+            "max_abs": 1
+          },
+          {
+            "rule": "fixed_fraction_24_floor",
+            "final_rounding": "even",
+            "mismatches": 5907,
+            "max_abs": 1
+          },
+          {
+            "rule": "float_significand_21_even",
+            "final_rounding": "up",
+            "mismatches": 5910,
+            "max_abs": 1
+          },
+          {
+            "rule": "float_significand_21_even",
+            "final_rounding": "even",
+            "mismatches": 5996,
+            "max_abs": 1
+          },
+          {
+            "rule": "fixed_fraction_21_even",
+            "final_rounding": "up",
+            "mismatches": 6011,
+            "max_abs": 1
+          },
+          {
+            "rule": "fixed_fraction_21_even",
+            "final_rounding": "even",
+            "mismatches": 6076,
+            "max_abs": 1
+          },
+          {
+            "rule": "fixed_fraction_22_even",
+            "final_rounding": "up",
+            "mismatches": 6111,
+            "max_abs": 1
+          },
+          {
+            "rule": "float_significand_22_even",
+            "final_rounding": "up",
+            "mismatches": 6113,
+            "max_abs": 1
+          },
+          {
+            "rule": "float_significand_22_even",
+            "final_rounding": "even",
+            "mismatches": 6141,
+            "max_abs": 1
+          },
+          {
+            "rule": "fixed_fraction_22_even",
+            "final_rounding": "even",
+            "mismatches": 6149,
+            "max_abs": 1
+          },
+          {
+            "rule": "fixed_fraction_20_floor",
+            "final_rounding": "up",
+            "mismatches": 6162,
+            "max_abs": 1
+          },
+          {
+            "rule": "float_significand_23_even",
+            "final_rounding": "up",
+            "mismatches": 6165,
+            "max_abs": 1
+          },
+          {
+            "rule": "float_significand_23_even",
+            "final_rounding": "even",
+            "mismatches": 6178,
+            "max_abs": 1
+          },
+          {
+            "rule": "fixed_fraction_23_even",
+            "final_rounding": "up",
+            "mismatches": 6182,
+            "max_abs": 1
+          },
+          {
+            "rule": "fixed_fraction_23_even",
+            "final_rounding": "even",
+            "mismatches": 6207,
+            "max_abs": 1
+          },
+          {
+            "rule": "float_significand_24_up",
+            "final_rounding": "up",
+            "mismatches": 6216,
+            "max_abs": 1
+          },
+          {
+            "rule": "float_significand_24_even",
+            "final_rounding": "up",
+            "mismatches": 6216,
+            "max_abs": 1
+          },
+          {
+            "rule": "float_significand_24_floor",
+            "final_rounding": "up",
+            "mismatches": 6216,
+            "max_abs": 1
+          },
+          {
+            "rule": "float_significand_24_up",
+            "final_rounding": "even",
+            "mismatches": 6233,
+            "max_abs": 1
+          },
+          {
+            "rule": "float_significand_24_even",
+            "final_rounding": "even",
+            "mismatches": 6233,
+            "max_abs": 1
+          },
+          {
+            "rule": "float_significand_24_floor",
+            "final_rounding": "even",
+            "mismatches": 6233,
+            "max_abs": 1
+          },
+          {
+            "rule": "fixed_fraction_24_even",
+            "final_rounding": "up",
+            "mismatches": 6265,
+            "max_abs": 1
+          },
+          {
+            "rule": "fixed_fraction_24_even",
+            "final_rounding": "even",
+            "mismatches": 6287,
+            "max_abs": 1
+          },
+          {
+            "rule": "fixed_fraction_24_up",
+            "final_rounding": "up",
+            "mismatches": 6406,
+            "max_abs": 1
+          },
+          {
+            "rule": "fixed_fraction_24_up",
+            "final_rounding": "even",
+            "mismatches": 6416,
+            "max_abs": 1
+          },
+          {
+            "rule": "float_significand_21_up",
+            "final_rounding": "up",
+            "mismatches": 6526,
+            "max_abs": 1
+          },
+          {
+            "rule": "float_significand_21_up",
+            "final_rounding": "even",
+            "mismatches": 6567,
+            "max_abs": 1
+          },
+          {
+            "rule": "fixed_fraction_21_up",
+            "final_rounding": "up",
+            "mismatches": 6611,
+            "max_abs": 1
+          },
+          {
+            "rule": "fixed_fraction_21_up",
+            "final_rounding": "even",
+            "mismatches": 6643,
+            "max_abs": 1
+          },
+          {
+            "rule": "fixed_fraction_22_up",
+            "final_rounding": "even",
+            "mismatches": 6678,
+            "max_abs": 1
+          },
+          {
+            "rule": "float_significand_22_up",
+            "final_rounding": "even",
+            "mismatches": 6682,
+            "max_abs": 1
+          },
+          {
+            "rule": "fixed_fraction_22_up",
+            "final_rounding": "up",
+            "mismatches": 6686,
+            "max_abs": 1
+          },
+          {
+            "rule": "float_significand_22_up",
+            "final_rounding": "up",
+            "mismatches": 6703,
+            "max_abs": 1
+          },
+          {
+            "rule": "float_significand_23_up",
+            "final_rounding": "even",
+            "mismatches": 6733,
+            "max_abs": 1
+          },
+          {
+            "rule": "float_significand_23_up",
+            "final_rounding": "up",
+            "mismatches": 6751,
+            "max_abs": 1
+          },
+          {
+            "rule": "fixed_fraction_23_up",
+            "final_rounding": "even",
+            "mismatches": 6770,
+            "max_abs": 1
+          },
+          {
+            "rule": "fixed_fraction_23_up",
+            "final_rounding": "up",
+            "mismatches": 6782,
+            "max_abs": 1
+          },
+          {
+            "rule": "float_significand_20_even",
+            "final_rounding": "up",
+            "mismatches": 6906,
+            "max_abs": 1
+          },
+          {
+            "rule": "float_significand_20_even",
+            "final_rounding": "even",
+            "mismatches": 6965,
+            "max_abs": 1
+          },
+          {
+            "rule": "float_significand_20_up",
+            "final_rounding": "up",
+            "mismatches": 7065,
+            "max_abs": 1
+          },
+          {
+            "rule": "fixed_fraction_20_floor",
+            "final_rounding": "even",
+            "mismatches": 7076,
+            "max_abs": 1
+          },
+          {
+            "rule": "float_significand_20_up",
+            "final_rounding": "even",
+            "mismatches": 7080,
+            "max_abs": 1
+          },
+          {
+            "rule": "fixed_fraction_20_even",
+            "final_rounding": "up",
+            "mismatches": 7161,
+            "max_abs": 1
+          },
+          {
+            "rule": "fixed_fraction_20_up",
+            "final_rounding": "up",
+            "mismatches": 7190,
+            "max_abs": 1
+          },
+          {
+            "rule": "fixed_fraction_20_up",
+            "final_rounding": "even",
+            "mismatches": 7197,
+            "max_abs": 1
+          },
+          {
+            "rule": "fixed_fraction_20_even",
+            "final_rounding": "even",
+            "mismatches": 7215,
+            "max_abs": 1
+          },
+          {
+            "rule": "float_significand_19_even",
+            "final_rounding": "up",
+            "mismatches": 10332,
+            "max_abs": 1
+          },
+          {
+            "rule": "float_significand_19_even",
+            "final_rounding": "even",
+            "mismatches": 10381,
+            "max_abs": 1
+          },
+          {
+            "rule": "float_significand_19_up",
+            "final_rounding": "up",
+            "mismatches": 10405,
+            "max_abs": 1
+          },
+          {
+            "rule": "float_significand_19_up",
+            "final_rounding": "even",
+            "mismatches": 10426,
+            "max_abs": 1
+          },
+          {
+            "rule": "float_significand_19_floor",
+            "final_rounding": "up",
+            "mismatches": 11911,
+            "max_abs": 1
+          },
+          {
+            "rule": "float_significand_19_floor",
+            "final_rounding": "even",
+            "mismatches": 13169,
+            "max_abs": 1
+          },
+          {
+            "rule": "fixed_fraction_19_even",
+            "final_rounding": "up",
+            "mismatches": 13349,
+            "max_abs": 1
+          },
+          {
+            "rule": "fixed_fraction_19_even",
+            "final_rounding": "even",
+            "mismatches": 13374,
+            "max_abs": 1
+          },
+          {
+            "rule": "fixed_fraction_19_up",
+            "final_rounding": "up",
+            "mismatches": 13385,
+            "max_abs": 1
+          },
+          {
+            "rule": "fixed_fraction_19_up",
+            "final_rounding": "even",
+            "mismatches": 13385,
+            "max_abs": 1
+          },
+          {
+            "rule": "float_significand_18_even",
+            "final_rounding": "up",
+            "mismatches": 18406,
+            "max_abs": 1
+          },
+          {
+            "rule": "float_significand_18_even",
+            "final_rounding": "even",
+            "mismatches": 18444,
+            "max_abs": 1
+          },
+          {
+            "rule": "float_significand_18_up",
+            "final_rounding": "up",
+            "mismatches": 18485,
+            "max_abs": 1
+          },
+          {
+            "rule": "float_significand_18_up",
+            "final_rounding": "even",
+            "mismatches": 18496,
+            "max_abs": 1
+          },
+          {
+            "rule": "fixed_fraction_19_floor",
+            "final_rounding": "up",
+            "mismatches": 18698,
+            "max_abs": 1
+          },
+          {
+            "rule": "fixed_fraction_19_floor",
+            "final_rounding": "even",
+            "mismatches": 20506,
+            "max_abs": 1
+          },
+          {
+            "rule": "fixed_fraction_18_even",
+            "final_rounding": "up",
+            "mismatches": 25827,
+            "max_abs": 1
+          },
+          {
+            "rule": "fixed_fraction_18_even",
+            "final_rounding": "even",
+            "mismatches": 25872,
+            "max_abs": 1
+          },
+          {
+            "rule": "fixed_fraction_18_up",
+            "final_rounding": "up",
+            "mismatches": 25887,
+            "max_abs": 1
+          },
+          {
+            "rule": "fixed_fraction_18_up",
+            "final_rounding": "even",
+            "mismatches": 25903,
+            "max_abs": 1
+          },
+          {
+            "rule": "float_significand_18_floor",
+            "final_rounding": "up",
+            "mismatches": 28691,
+            "max_abs": 1
+          },
+          {
+            "rule": "float_significand_18_floor",
+            "final_rounding": "even",
+            "mismatches": 31171,
+            "max_abs": 1
+          },
+          {
+            "rule": "float_significand_17_even",
+            "final_rounding": "up",
+            "mismatches": 35378,
+            "max_abs": 1
+          },
+          {
+            "rule": "float_significand_17_up",
+            "final_rounding": "up",
+            "mismatches": 35407,
+            "max_abs": 1
+          },
+          {
+            "rule": "float_significand_17_even",
+            "final_rounding": "even",
+            "mismatches": 35430,
+            "max_abs": 1
+          },
+          {
+            "rule": "float_significand_17_up",
+            "final_rounding": "even",
+            "mismatches": 35432,
+            "max_abs": 1
+          },
+          {
+            "rule": "fixed_fraction_18_floor",
+            "final_rounding": "up",
+            "mismatches": 43840,
+            "max_abs": 1
+          },
+          {
+            "rule": "fixed_fraction_18_floor",
+            "final_rounding": "even",
+            "mismatches": 47420,
+            "max_abs": 1
+          },
+          {
+            "rule": "fixed_fraction_17_even",
+            "final_rounding": "up",
+            "mismatches": 50908,
+            "max_abs": 1
+          },
+          {
+            "rule": "fixed_fraction_17_up",
+            "final_rounding": "up",
+            "mismatches": 50939,
+            "max_abs": 1
+          },
+          {
+            "rule": "fixed_fraction_17_up",
+            "final_rounding": "even",
+            "mismatches": 50963,
+            "max_abs": 1
+          },
+          {
+            "rule": "fixed_fraction_17_even",
+            "final_rounding": "even",
+            "mismatches": 50963,
+            "max_abs": 1
+          },
+          {
+            "rule": "float_significand_17_floor",
+            "final_rounding": "up",
+            "mismatches": 62817,
+            "max_abs": 1
+          },
+          {
+            "rule": "float_significand_17_floor",
+            "final_rounding": "even",
+            "mismatches": 67769,
+            "max_abs": 1
+          },
+          {
+            "rule": "float_significand_16_even",
+            "final_rounding": "up",
+            "mismatches": 73665,
+            "max_abs": 1
+          },
+          {
+            "rule": "float_significand_16_up",
+            "final_rounding": "up",
+            "mismatches": 73703,
+            "max_abs": 1
+          },
+          {
+            "rule": "float_significand_16_even",
+            "final_rounding": "even",
+            "mismatches": 73753,
+            "max_abs": 1
+          },
+          {
+            "rule": "float_significand_16_up",
+            "final_rounding": "even",
+            "mismatches": 73766,
+            "max_abs": 1
+          },
+          {
+            "rule": "fixed_fraction_17_floor",
+            "final_rounding": "up",
+            "mismatches": 93793,
+            "max_abs": 1
+          },
+          {
+            "rule": "fixed_fraction_17_floor",
+            "final_rounding": "even",
+            "mismatches": 100969,
+            "max_abs": 1
+          },
+          {
+            "rule": "fixed_fraction_17_up",
+            "final_rounding": "floor",
+            "mismatches": 101056,
+            "max_abs": 1
+          },
+          {
+            "rule": "fixed_fraction_17_even",
+            "final_rounding": "floor",
+            "mismatches": 101449,
+            "max_abs": 1
+          },
+          {
+            "rule": "float_significand_17_up",
+            "final_rounding": "floor",
+            "mismatches": 103232,
+            "max_abs": 1
+          },
+          {
+            "rule": "float_significand_17_even",
+            "final_rounding": "floor",
+            "mismatches": 103641,
+            "max_abs": 1
+          },
+          {
+            "rule": "fixed_fraction_18_up",
+            "final_rounding": "floor",
+            "mismatches": 104623,
+            "max_abs": 1
+          },
+          {
+            "rule": "fixed_fraction_18_even",
+            "final_rounding": "floor",
+            "mismatches": 105026,
+            "max_abs": 1
+          },
+          {
+            "rule": "float_significand_18_up",
+            "final_rounding": "floor",
+            "mismatches": 105735,
+            "max_abs": 1
+          },
+          {
+            "rule": "float_significand_18_even",
+            "final_rounding": "floor",
+            "mismatches": 106146,
+            "max_abs": 1
+          },
+          {
+            "rule": "fixed_fraction_19_up",
+            "final_rounding": "floor",
+            "mismatches": 106443,
+            "max_abs": 1
+          },
+          {
+            "rule": "fixed_fraction_19_even",
+            "final_rounding": "floor",
+            "mismatches": 106834,
+            "max_abs": 1
+          },
+          {
+            "rule": "float_significand_19_up",
+            "final_rounding": "floor",
+            "mismatches": 106995,
+            "max_abs": 1
+          },
+          {
+            "rule": "fixed_fraction_20_up",
+            "final_rounding": "floor",
+            "mismatches": 107150,
+            "max_abs": 1
+          },
+          {
+            "rule": "float_significand_20_up",
+            "final_rounding": "floor",
+            "mismatches": 107317,
+            "max_abs": 1
+          },
+          {
+            "rule": "float_significand_19_even",
+            "final_rounding": "floor",
+            "mismatches": 107378,
+            "max_abs": 1
+          },
+          {
+            "rule": "fixed_fraction_20_even",
+            "final_rounding": "floor",
+            "mismatches": 107667,
+            "max_abs": 1
+          },
+          {
+            "rule": "fixed_fraction_21_up",
+            "final_rounding": "floor",
+            "mismatches": 107683,
+            "max_abs": 1
+          },
+          {
+            "rule": "float_significand_20_even",
+            "final_rounding": "floor",
+            "mismatches": 107888,
+            "max_abs": 1
+          },
+          {
+            "rule": "float_significand_21_up",
+            "final_rounding": "floor",
+            "mismatches": 108002,
+            "max_abs": 1
+          },
+          {
+            "rule": "fixed_fraction_22_up",
+            "final_rounding": "floor",
+            "mismatches": 108069,
+            "max_abs": 1
+          },
+          {
+            "rule": "float_significand_23_up",
+            "final_rounding": "floor",
+            "mismatches": 108120,
+            "max_abs": 1
+          },
+          {
+            "rule": "fixed_fraction_16_even",
+            "final_rounding": "up",
+            "mismatches": 108124,
+            "max_abs": 1
+          },
+          {
+            "rule": "float_significand_22_up",
+            "final_rounding": "floor",
+            "mismatches": 108140,
+            "max_abs": 1
+          },
+          {
+            "rule": "fixed_fraction_23_up",
+            "final_rounding": "floor",
+            "mismatches": 108156,
+            "max_abs": 1
+          },
+          {
+            "rule": "fixed_fraction_16_even",
+            "final_rounding": "even",
+            "mismatches": 108171,
+            "max_abs": 1
+          },
+          {
+            "rule": "fixed_fraction_16_up",
+            "final_rounding": "up",
+            "mismatches": 108179,
+            "max_abs": 1
+          },
+          {
+            "rule": "fixed_fraction_16_up",
+            "final_rounding": "even",
+            "mismatches": 108200,
+            "max_abs": 1
+          },
+          {
+            "rule": "fixed_fraction_21_even",
+            "final_rounding": "floor",
+            "mismatches": 108288,
+            "max_abs": 1
+          },
+          {
+            "rule": "fixed_fraction_24_up",
+            "final_rounding": "floor",
+            "mismatches": 108578,
+            "max_abs": 1
+          },
+          {
+            "rule": "fixed_fraction_22_even",
+            "final_rounding": "floor",
+            "mismatches": 108624,
+            "max_abs": 1
+          },
+          {
+            "rule": "float_significand_21_even",
+            "final_rounding": "floor",
+            "mismatches": 108626,
+            "max_abs": 1
+          },
+          {
+            "rule": "float_significand_22_even",
+            "final_rounding": "floor",
+            "mismatches": 108667,
+            "max_abs": 1
+          },
+          {
+            "rule": "float_significand_24_up",
+            "final_rounding": "floor",
+            "mismatches": 108685,
+            "max_abs": 1
+          },
+          {
+            "rule": "float_significand_24_even",
+            "final_rounding": "floor",
+            "mismatches": 108685,
+            "max_abs": 1
+          },
+          {
+            "rule": "float_significand_24_floor",
+            "final_rounding": "floor",
+            "mismatches": 108685,
+            "max_abs": 1
+          },
+          {
+            "rule": "float_significand_23_even",
+            "final_rounding": "floor",
+            "mismatches": 108701,
+            "max_abs": 1
+          },
+          {
+            "rule": "fixed_fraction_24_even",
+            "final_rounding": "floor",
+            "mismatches": 108704,
+            "max_abs": 1
+          },
+          {
+            "rule": "fixed_fraction_23_even",
+            "final_rounding": "floor",
+            "mismatches": 108717,
+            "max_abs": 1
+          },
+          {
+            "rule": "fixed_fraction_24_floor",
+            "final_rounding": "floor",
+            "mismatches": 108981,
+            "max_abs": 1
+          },
+          {
+            "rule": "float_significand_23_floor",
+            "final_rounding": "floor",
+            "mismatches": 109302,
+            "max_abs": 1
+          },
+          {
+            "rule": "fixed_fraction_23_floor",
+            "final_rounding": "floor",
+            "mismatches": 109802,
+            "max_abs": 1
+          },
+          {
+            "rule": "float_significand_22_floor",
+            "final_rounding": "floor",
+            "mismatches": 110392,
+            "max_abs": 1
+          },
+          {
+            "rule": "float_significand_16_floor",
+            "final_rounding": "up",
+            "mismatches": 111272,
+            "max_abs": 2
+          },
+          {
+            "rule": "fixed_fraction_22_floor",
+            "final_rounding": "floor",
+            "mismatches": 111362,
+            "max_abs": 1
+          },
+          {
+            "rule": "float_significand_21_floor",
+            "final_rounding": "floor",
+            "mismatches": 112492,
+            "max_abs": 1
+          },
+          {
+            "rule": "float_significand_16_up",
+            "final_rounding": "floor",
+            "mismatches": 113110,
+            "max_abs": 2
+          },
+          {
+            "rule": "float_significand_16_even",
+            "final_rounding": "floor",
+            "mismatches": 113277,
+            "max_abs": 2
+          },
+          {
+            "rule": "fixed_fraction_21_floor",
+            "final_rounding": "floor",
+            "mismatches": 114640,
+            "max_abs": 1
+          },
+          {
+            "rule": "float_significand_20_floor",
+            "final_rounding": "floor",
+            "mismatches": 116927,
+            "max_abs": 1
+          },
+          {
+            "rule": "float_significand_16_floor",
+            "final_rounding": "even",
+            "mismatches": 117814,
+            "max_abs": 2
+          },
+          {
+            "rule": "fixed_fraction_20_floor",
+            "final_rounding": "floor",
+            "mismatches": 120707,
+            "max_abs": 1
+          },
+          {
+            "rule": "fixed_fraction_16_up",
+            "final_rounding": "floor",
+            "mismatches": 121532,
+            "max_abs": 2
+          },
+          {
+            "rule": "fixed_fraction_16_even",
+            "final_rounding": "floor",
+            "mismatches": 121644,
+            "max_abs": 2
+          },
+          {
+            "rule": "float_significand_19_floor",
+            "final_rounding": "floor",
+            "mismatches": 125460,
+            "max_abs": 1
+          },
+          {
+            "rule": "fixed_fraction_19_floor",
+            "final_rounding": "floor",
+            "mismatches": 133209,
+            "max_abs": 1
+          },
+          {
+            "rule": "float_significand_18_floor",
+            "final_rounding": "floor",
+            "mismatches": 142586,
+            "max_abs": 1
+          },
+          {
+            "rule": "fixed_fraction_16_floor",
+            "final_rounding": "up",
+            "mismatches": 156112,
+            "max_abs": 2
+          },
+          {
+            "rule": "fixed_fraction_18_floor",
+            "final_rounding": "floor",
+            "mismatches": 158229,
+            "max_abs": 1
+          },
+          {
+            "rule": "fixed_fraction_16_floor",
+            "final_rounding": "even",
+            "mismatches": 164182,
+            "max_abs": 2
+          },
+          {
+            "rule": "float_significand_17_floor",
+            "final_rounding": "floor",
+            "mismatches": 166810,
+            "max_abs": 2
+          },
+          {
+            "rule": "float_significand_16_floor",
+            "final_rounding": "floor",
+            "mismatches": 187077,
+            "max_abs": 3
+          },
+          {
+            "rule": "fixed_fraction_17_floor",
+            "final_rounding": "floor",
+            "mismatches": 189319,
+            "max_abs": 2
+          },
+          {
+            "rule": "fixed_fraction_16_floor",
+            "final_rounding": "floor",
+            "mismatches": 206636,
+            "max_abs": 3
+          }
+        ]
+      }
+    ]
+  }
+}

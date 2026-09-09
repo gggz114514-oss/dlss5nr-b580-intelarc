@@ -1,0 +1,26 @@
+{
+  "platform": "Windows x64",
+  "target_gpu": "Intel Arc B580",
+  "reference_gpu": "NVIDIA RTX4060 Laptop",
+  "reference_driver": "616.86",
+  "python_packages": {
+    "dpcpp-cpp-rt": "2026.0.0",
+    "intel-sycl-rt": "2026.0.0",
+    "mkl": "2026.0.0",
+    "numpy": "2.3.2",
+    "onemkl-license": "2026.0.0",
+    "onemkl-sycl-blas": "2026.0.0",
+    "onemkl-sycl-dft": "2026.0.0",
+    "onemkl-sycl-lapack": "2026.0.0",
+    "onemkl-sycl-rng": "2026.0.0",
+    "onemkl-sycl-sparse": "2026.0.0",
+    "pytorch-triton-xpu": "3.3.0",
+    "rotary-embedding-torch": "0.9.1",
+    "torch": "2.13.0+xpu",
+    "torchaudio": "2.11.0+xpu",
+    "torchsde": "0.2.6",
+    "torchvision": "0.28.0+xpu",
+    "triton-xpu": "3.7.2"
+  },
+  "scope": "Installed package metadata of the measured workstation; not a dependency installer or broad compatibility guarantee."
+}

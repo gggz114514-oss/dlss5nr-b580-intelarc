@@ -1,0 +1,18 @@
+{
+  "provenance": {
+    "report_id": "motion-range-stage-full-audit-v1.json",
+    "status": "historical",
+    "original_report_sha256": "4d3d234989831047d51e642adc99bcecb4003afa5179c5838f7df02dce95ecbc",
+    "original_report_bytes": 17826,
+    "excerpt_path": "evidence/excerpts/15.json",
+    "excerpt_fields": [
+      "all_byte_equal",
+      "complete_migration"
+    ],
+    "raw_arrays_public": false
+  },
+  "excerpt": {
+    "all_byte_equal": true,
+    "complete_migration": false
+  }
+}

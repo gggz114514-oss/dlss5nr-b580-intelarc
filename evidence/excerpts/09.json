@@ -1,0 +1,35 @@
+{
+  "provenance": {
+    "report_id": "half-fma-validation.json",
+    "status": "historical",
+    "original_report_sha256": "4beb75c7a19310f926d92432fc1ebf2edb913fa822b12a147109d42c86bbcaa5",
+    "original_report_bytes": 520,
+    "excerpt_path": "evidence/excerpts/09.json",
+    "excerpt_fields": [
+      "cases",
+      "oracle",
+      "devices",
+      "source_sha256"
+    ],
+    "raw_arrays_public": false
+  },
+  "excerpt": {
+    "cases": 24007,
+    "oracle": "Python arbitrary-precision integer products/addition at 2**-48; one ties-to-even half rounding",
+    "devices": {
+      "cpu": {
+        "mismatches": 0,
+        "first_failures": [],
+        "chunked_cases": 1080315,
+        "chunked_mismatches": 0
+      },
+      "xpu": {
+        "mismatches": 0,
+        "first_failures": [],
+        "chunked_cases": 1080315,
+        "chunked_mismatches": 0
+      }
+    },
+    "source_sha256": "28f641cfdf3ede5a713f3062a486ce97957cccbe0eb255f4942137032d2b362f"
+  }
+}

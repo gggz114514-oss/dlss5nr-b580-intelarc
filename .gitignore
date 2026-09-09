@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+.venv/
+assets/
+model-assets/
+local-runs/
+*.dll
+*.exe
+*.cubin
+*.bin
+*.npy
+*.npyz
+*.mp4
+*.png
+*.zip

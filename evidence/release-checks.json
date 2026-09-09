@@ -1,0 +1,27 @@
+{
+  "scope": "Publication preparation checks, not a new full NR run",
+  "source_files_byte_identical": 100,
+  "exact_backend_files": 35,
+  "historical_buffer_comparison_records_checked": [
+    {
+      "excerpt": "04",
+      "complete_buffer_comparisons": 496
+    },
+    {
+      "excerpt": "05",
+      "complete_buffer_comparisons": 960
+    },
+    {
+      "excerpt": "06",
+      "complete_buffer_comparisons": 1408
+    }
+  ],
+  "current_exact_stage_frames": 55,
+  "current_exact_main_frames": 13,
+  "asset_free_fma_witness": "passed: 37.53125 versus FP32-then-half 37.5",
+  "current_published_half_fma_cpu_cases": 24007,
+  "current_published_half_fma_cpu_mismatches": 0,
+  "full_model_via_new_public_cli_tested": false,
+  "private_assets_included": false,
+  "passed": true
+}

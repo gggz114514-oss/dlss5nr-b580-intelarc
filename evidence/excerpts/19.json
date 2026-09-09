@@ -1,0 +1,94 @@
+{
+  "provenance": {
+    "report_id": "results/nr256-native-parity-v1/saved-audit-v1.json",
+    "status": "current-fast",
+    "original_report_sha256": "ff4a80efe629c90af2cbf10d25043bf26f96d8b79169dc4edb81571d01eacbec",
+    "original_report_bytes": 2679,
+    "excerpt_path": "evidence/excerpts/19.json",
+    "excerpt_fields": [
+      "passed",
+      "report_sha256",
+      "auditor_sha256",
+      "complete_output_receipts",
+      "summary",
+      "body_diagnostic",
+      "b580_over_4060_complete_host_ratio",
+      "native_equivalence_claim_for_fast_mode",
+      "limitation"
+    ],
+    "raw_arrays_public": false
+  },
+  "excerpt": {
+    "passed": true,
+    "report_sha256": "5008dfcf5316aabe984e1e30d1db1c933bb3536c5e4a54a3020390c4845ff007",
+    "auditor_sha256": "23ce9cf913dfeac7e68172675f07a82f5d1edf8e12e2462ce344f7d125376448",
+    "complete_output_receipts": 720,
+    "summary": {
+      "previous": {
+        "reset": {
+          "mean_host_ms": 18.805072222959197,
+          "median_host_ms": 18.71494998340495,
+          "round_mean_host_ms": [
+            18.764766668512795,
+            18.802974999804672,
+            18.847475000560127
+          ]
+        },
+        "temporal": {
+          "mean_host_ms": 22.695921110668376,
+          "median_host_ms": 22.67079999728594,
+          "round_mean_host_ms": [
+            22.667778330893878,
+            22.678778333647642,
+            22.741206667463604
+          ]
+        }
+      },
+      "native_half": {
+        "reset": {
+          "mean_host_ms": 18.259090554460677,
+          "median_host_ms": 18.174750002799556,
+          "round_mean_host_ms": [
+            18.261593330438092,
+            18.28400499750084,
+            18.231673335443094
+          ]
+        },
+        "temporal": {
+          "mean_host_ms": 22.14360166803494,
+          "median_host_ms": 22.099400011938997,
+          "round_mean_host_ms": [
+            22.142346666563146,
+            22.120161667407956,
+            22.168296670133714
+          ]
+        }
+      }
+    },
+    "body_diagnostic": {
+      "previous": {
+        "reset": {
+          "event_interval_ms": 16.9233072,
+          "host_ms": 17.095229992992245
+        },
+        "temporal": {
+          "event_interval_ms": 16.9108959,
+          "host_ms": 17.093940000631846
+        }
+      },
+      "native_half": {
+        "reset": {
+          "event_interval_ms": 16.3497815,
+          "host_ms": 16.53516999213025
+        },
+        "temporal": {
+          "event_interval_ms": 16.442411399999997,
+          "host_ms": 16.622670003562234
+        }
+      }
+    },
+    "b580_over_4060_complete_host_ratio": 6.208241793970251,
+    "native_equivalence_claim_for_fast_mode": false,
+    "limitation": "Audit the saved same-scope NR256 timing and complete-output receipts.\n\nReread the saved reset tensor and native input/motion/output arrays. Every timed\ncandidate output was compared in full during the GPU run; this CPU audit checks\nall resulting hashes and state records, not an independent model arithmetic\nreplay. Device body event intervals include scheduling and are not busy time or\na complete NR GPU timing suitable for a cross-device speed ratio.\n"
+  }
+}

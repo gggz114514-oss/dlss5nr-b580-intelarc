@@ -1,0 +1,22 @@
+{
+  "provenance": {
+    "report_id": "results/reset-full-1920x1080-v3/validation.json",
+    "status": "historical",
+    "original_report_sha256": "63c4cb9402bf6860f08ebc621ef1f6dcec611b37f8e0a3eaafdf730eaad0ec13",
+    "original_report_bytes": 2307,
+    "excerpt_path": "evidence/excerpts/10.json",
+    "excerpt_fields": [
+      "byte_equal",
+      "bytes",
+      "native_sha256",
+      "complete_migration"
+    ],
+    "raw_arrays_public": false
+  },
+  "excerpt": {
+    "byte_equal": true,
+    "bytes": 24883200,
+    "native_sha256": "11d5cb9879ad69922ae20b57165f44d07d11206b8456cff085f2ea18bf657aed",
+    "complete_migration": false
+  }
+}

@@ -1,0 +1,123 @@
+{
+  "provenance": {
+    "report_id": "experimental/native-half-attention-v1/validation.json",
+    "status": "current-fast",
+    "original_report_sha256": "4ee4b5efa75fb8a78310e2824b1631980568c7dd7f128ab8fc8055d635507a1b",
+    "original_report_bytes": 924998,
+    "excerpt_path": "evidence/excerpts/18.json",
+    "excerpt_fields": [
+      "scope",
+      "passed",
+      "body",
+      "complete_migration"
+    ],
+    "raw_arrays_public": false
+  },
+  "excerpt": {
+    "scope": "Validate and time native-half FMA inside current C32 and multihead attention.\n\nComplete captured operands, special encodings, all52 real multihead modules and\nthe current NR256 body are compared with their frozen previous implementation.\nBody ablations keep all other kernels and FP16 precision unchanged. Primitive\nand body replay timings include completion and pool-external output copies.\n",
+    "passed": true,
+    "body": [
+      {
+        "name": "previous",
+        "byte_equal": true,
+        "dispatch": {
+          "backend": "triton",
+          "dense": 1129,
+          "batched": 936,
+          "fp8": 1037,
+          "cubic_fp8": 344,
+          "attention_normalize_c32": 152,
+          "attention_exp_swin": 460,
+          "attention_weights": 460,
+          "attention_exp_vit": 8,
+          "attention_row_sum64": 8,
+          "half_fma": 6
+        },
+        "layout_calls": {
+          "c32": 10,
+          "c32_chunk_pack": 16,
+          "c32_projection_pack": 10,
+          "multi": 52,
+          "batched_heads": 448,
+          "qkv_pack": 52
+        }
+      },
+      {
+        "name": "normalize",
+        "byte_equal": true,
+        "dispatch": {
+          "backend": "triton",
+          "dense": 1129,
+          "batched": 936,
+          "fp8": 1037,
+          "cubic_fp8": 344,
+          "attention_normalize_c32": 152,
+          "attention_exp_swin": 460,
+          "attention_weights": 460,
+          "attention_exp_vit": 8,
+          "attention_row_sum64": 8,
+          "half_fma": 6
+        },
+        "layout_calls": {
+          "c32": 10,
+          "c32_chunk_pack": 16,
+          "c32_projection_pack": 10,
+          "multi": 52,
+          "batched_heads": 448,
+          "qkv_pack": 52
+        }
+      },
+      {
+        "name": "swin",
+        "byte_equal": true,
+        "dispatch": {
+          "backend": "triton",
+          "dense": 1129,
+          "batched": 936,
+          "fp8": 1037,
+          "cubic_fp8": 344,
+          "attention_normalize_c32": 152,
+          "attention_exp_swin": 460,
+          "attention_weights": 460,
+          "attention_exp_vit": 8,
+          "attention_row_sum64": 8,
+          "half_fma": 6
+        },
+        "layout_calls": {
+          "c32": 10,
+          "c32_chunk_pack": 16,
+          "c32_projection_pack": 10,
+          "multi": 52,
+          "batched_heads": 448,
+          "qkv_pack": 52
+        }
+      },
+      {
+        "name": "both",
+        "byte_equal": true,
+        "dispatch": {
+          "backend": "triton",
+          "dense": 1129,
+          "batched": 936,
+          "fp8": 1037,
+          "cubic_fp8": 344,
+          "attention_normalize_c32": 152,
+          "attention_exp_swin": 460,
+          "attention_weights": 460,
+          "attention_exp_vit": 8,
+          "attention_row_sum64": 8,
+          "half_fma": 6
+        },
+        "layout_calls": {
+          "c32": 10,
+          "c32_chunk_pack": 16,
+          "c32_projection_pack": 10,
+          "multi": 52,
+          "batched_heads": 448,
+          "qkv_pack": 52
+        }
+      }
+    ],
+    "complete_migration": false
+  }
+}

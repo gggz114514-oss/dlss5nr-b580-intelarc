@@ -1,0 +1,302 @@
+{
+  "schema": 1,
+  "reference": "Fixed SF-v2 RTX4060 Laptop, driver616.86",
+  "limitation": "Excerpts and hash commitments, not public raw tensors or independent reproduction. Historical and current scopes are separate.",
+  "reports": [
+    {
+      "report_id": "results/pre-mlp-evidence-verification.json",
+      "status": "historical",
+      "original_report_sha256": "49cd3726e051073af5cc5458a9627e99fe9b3147be108b43edc8b1d2a3734e1a",
+      "original_report_bytes": 835,
+      "excerpt_path": "evidence/excerpts/01.json",
+      "excerpt_fields": [
+        "independent_replay",
+        "holdout_files",
+        "rounding"
+      ],
+      "raw_arrays_public": false,
+      "excerpt_sha256": "704dc04412289734802c754549c968c6386903ba6a3a209a09a59991ebae1f50"
+    },
+    {
+      "report_id": "results/pre-holdouts-v1/pre-outputs-validation.json",
+      "status": "historical",
+      "original_report_sha256": "92fb8460402f30dbb4aa3b6fa7df9ce9a3c94f9a8b7cac52d9baa6e83e3917c4",
+      "original_report_bytes": 5396,
+      "excerpt_path": "evidence/excerpts/02.json",
+      "excerpt_fields": [
+        "scope",
+        "cases"
+      ],
+      "raw_arrays_public": false,
+      "excerpt_sha256": "5cb7776004d40159764323e8987ab938f625c54a114e2e2fa896c72cd326d151"
+    },
+    {
+      "report_id": "results/c64-holdouts-v1/pre-c32-c64-chain-validation.json",
+      "status": "historical",
+      "original_report_sha256": "710f2697c525e38342063bb8ab49dae45ded2d610ad086cf6dfbe2e3394712c5",
+      "original_report_bytes": 30618,
+      "excerpt_path": "evidence/excerpts/03.json",
+      "excerpt_fields": [
+        "scope",
+        "holdout_hashes_verified",
+        "cases"
+      ],
+      "raw_arrays_public": false,
+      "excerpt_sha256": "8650cd49651ee1108d53b0c38466aa3281b2b215446e403e6b978fb4e4aa02d3"
+    },
+    {
+      "report_id": "results/c512-holdouts-v2/encoder-prefix-validation.json",
+      "status": "historical",
+      "original_report_sha256": "1530d62d32569c822022c9f51a768b3a86c85b4070f65471ab0d21b551250974",
+      "original_report_bytes": 157609,
+      "excerpt_path": "evidence/excerpts/04.json",
+      "excerpt_fields": [
+        "scope",
+        "cases"
+      ],
+      "raw_arrays_public": false,
+      "excerpt_sha256": "999b517f67e6de1e36339260ebcc768917449c9f416aa488a7e42646dc6208d9"
+    },
+    {
+      "report_id": "results/vit-holdouts-v2/encoder-prefix-validation.json",
+      "status": "historical",
+      "original_report_sha256": "f4e00b39d1046f95468df9ef3a663ee2c00b22c5213f4ed1d1095411e5677d5b",
+      "original_report_bytes": 303899,
+      "excerpt_path": "evidence/excerpts/05.json",
+      "excerpt_fields": [
+        "scope",
+        "cases"
+      ],
+      "raw_arrays_public": false,
+      "excerpt_sha256": "712227859e6127d056a53f403c700463df7af75c6bcf9bac04bcb974a506477f"
+    },
+    {
+      "report_id": "results/post-holdouts-v1/encoder-prefix-validation.json",
+      "status": "historical",
+      "original_report_sha256": "c7558c9136c1d24edc8b565285a09279b5e71b86818e9fc05da3bef85f1919a1",
+      "original_report_bytes": 447259,
+      "excerpt_path": "evidence/excerpts/06.json",
+      "excerpt_fields": [
+        "scope",
+        "cases"
+      ],
+      "raw_arrays_public": false,
+      "excerpt_sha256": "5692fae0a331835cea7822b5e92e41a716b75f10b36d6fe50bb0de9c8b862c0b"
+    },
+    {
+      "report_id": "results/reset-executor-v1/validation.json",
+      "status": "historical",
+      "original_report_sha256": "f357d071fa66967223fa13f44f7b7962adba440ea743c299298b0b0e71ad655d",
+      "original_report_bytes": 3381,
+      "excerpt_path": "evidence/excerpts/07.json",
+      "excerpt_fields": [
+        "scope",
+        "gpu",
+        "cases",
+        "complete_migration"
+      ],
+      "raw_arrays_public": false,
+      "excerpt_sha256": "9ab0796152817590bcee295df9076d4e4988d31da7df8ce7e3513e356441bfd2"
+    },
+    {
+      "report_id": "results/reset-executor-v1/visual-validation.json",
+      "status": "historical",
+      "original_report_sha256": "974b62f0fcf7d67a34f81f8223163a52bc04e98c2d6180bf01bd4719efcf9e8c",
+      "original_report_bytes": 2327,
+      "excerpt_path": "evidence/excerpts/08.json",
+      "excerpt_fields": [
+        "scope",
+        "files_verified",
+        "cases",
+        "complete_migration"
+      ],
+      "raw_arrays_public": false,
+      "excerpt_sha256": "e01dbdb4f9749330631885e07621f6653880be4f82d8d47d95b1a6fdb0010d7c"
+    },
+    {
+      "report_id": "half-fma-validation.json",
+      "status": "historical",
+      "original_report_sha256": "4beb75c7a19310f926d92432fc1ebf2edb913fa822b12a147109d42c86bbcaa5",
+      "original_report_bytes": 520,
+      "excerpt_path": "evidence/excerpts/09.json",
+      "excerpt_fields": [
+        "cases",
+        "oracle",
+        "devices",
+        "source_sha256"
+      ],
+      "raw_arrays_public": false,
+      "excerpt_sha256": "e16de397aaeb20eb515edd7c90187d413f2125611cdf92cbf9a281c63e75b638"
+    },
+    {
+      "report_id": "results/reset-full-1920x1080-v3/validation.json",
+      "status": "historical",
+      "original_report_sha256": "63c4cb9402bf6860f08ebc621ef1f6dcec611b37f8e0a3eaafdf730eaad0ec13",
+      "original_report_bytes": 2307,
+      "excerpt_path": "evidence/excerpts/10.json",
+      "excerpt_fields": [
+        "byte_equal",
+        "bytes",
+        "native_sha256",
+        "complete_migration"
+      ],
+      "raw_arrays_public": false,
+      "excerpt_sha256": "2fa0e5cac767ac4fc38cfc3a30550cc44efe97444ddcbbb4bc1e31605e0bc34e"
+    },
+    {
+      "report_id": "results/motion-tex-v1/texture-validation-v3.json",
+      "status": "historical",
+      "original_report_sha256": "cdd427ae600bcecadfad188df096d78439de135b0133f7897a3a16ca8752fd00",
+      "original_report_bytes": 61075,
+      "excerpt_path": "evidence/excerpts/11.json",
+      "excerpt_fields": [
+        "measurements"
+      ],
+      "raw_arrays_public": false,
+      "excerpt_sha256": "da029a112d56fbffad80459f1c9dddcbd244bf9b90781cbfe96edffb5b47f085"
+    },
+    {
+      "report_id": "results/texture-full-basis-v1/coordinate-precision-probe-v1.json",
+      "status": "historical",
+      "original_report_sha256": "60d90af729672a861a27ad7142ba2e93edfbd9315b5ce985fab6abe3c73b4928",
+      "original_report_bytes": 48745,
+      "excerpt_path": "evidence/excerpts/12.json",
+      "excerpt_fields": [
+        "measurements"
+      ],
+      "raw_arrays_public": false,
+      "excerpt_sha256": "87e5534dbb4b80acabf3704fdfb4dc327790210d0f7435aec37639d564f3a1e2"
+    },
+    {
+      "report_id": "video-fixture-diversity-correction-v1.json",
+      "status": "historical-correction",
+      "original_report_sha256": "433e8a84f7bf6b78e0c4746e57083ce82c8b0daa64f932f77676877938958822",
+      "original_report_bytes": 2874,
+      "excerpt_path": "evidence/excerpts/13.json",
+      "excerpt_fields": [
+        "correction",
+        "cases"
+      ],
+      "raw_arrays_public": false,
+      "excerpt_sha256": "2a66dfb9b639c73cf54305776b96046fd08bda79af423c76fd04b9f6f2a6150a"
+    },
+    {
+      "report_id": "real-flow-864x480-full-audit-v2.json",
+      "status": "historical",
+      "original_report_sha256": "f110a95a13c8f8719aacd9b8bdfcb11781718d10d7a6991ac7ce5ce00dfee573",
+      "original_report_bytes": 9254,
+      "excerpt_path": "evidence/excerpts/14.json",
+      "excerpt_fields": [
+        "scope",
+        "frames",
+        "comparisons",
+        "bytes_compared",
+        "complete_migration"
+      ],
+      "raw_arrays_public": false,
+      "excerpt_sha256": "feab2b28546d3d02a58446308257c3542a60547686de22b82fade1757eaef110"
+    },
+    {
+      "report_id": "motion-range-stage-full-audit-v1.json",
+      "status": "historical",
+      "original_report_sha256": "4d3d234989831047d51e642adc99bcecb4003afa5179c5838f7df02dce95ecbc",
+      "original_report_bytes": 17826,
+      "excerpt_path": "evidence/excerpts/15.json",
+      "excerpt_fields": [
+        "all_byte_equal",
+        "complete_migration"
+      ],
+      "raw_arrays_public": false,
+      "excerpt_sha256": "d342882c09e50abc8fabd73f5341d4256b29cad9b00851c6c1952326be3d1867"
+    },
+    {
+      "report_id": "experimental/attention-weights-stage-v1/full-regression-saved-audit-v1.json",
+      "status": "current-exact",
+      "original_report_sha256": "f45a5abd6456dc4f630786f75e0244a494071342dbafca164c68c4cd05a0912f",
+      "original_report_bytes": 95453,
+      "excerpt_path": "evidence/excerpts/16.json",
+      "excerpt_fields": [
+        "audit_script_sha256",
+        "suite_sha256",
+        "staged_sources",
+        "full_frame_comparisons",
+        "all_byte_equal",
+        "persisted_rgb_and_private_reread_equal",
+        "uses_int8_or_xmx",
+        "complete_migration"
+      ],
+      "raw_arrays_public": false,
+      "excerpt_sha256": "171317245c60fa43e00911341cac907c648a0ae7c8177ef5badb16f6fe6909ca"
+    },
+    {
+      "report_id": "experimental/attention-weights-stage-v1/main-864x480-saved-audit-v1.json",
+      "status": "current-exact",
+      "original_report_sha256": "e43be6da904087300b7d2e7859661cefd7d2f635eba4904b0d3951b4eda4da93",
+      "original_report_bytes": 63621,
+      "excerpt_path": "evidence/excerpts/17.json",
+      "excerpt_fields": [
+        "scope",
+        "audit_script_sha256",
+        "frames",
+        "complete_migration"
+      ],
+      "raw_arrays_public": false,
+      "excerpt_sha256": "711ba6542c4681c83feb0d7a94af8d52a3a7810ae3fe1d1974b2dcbb3d46fa61"
+    },
+    {
+      "report_id": "experimental/native-half-attention-v1/validation.json",
+      "status": "current-fast",
+      "original_report_sha256": "4ee4b5efa75fb8a78310e2824b1631980568c7dd7f128ab8fc8055d635507a1b",
+      "original_report_bytes": 924998,
+      "excerpt_path": "evidence/excerpts/18.json",
+      "excerpt_fields": [
+        "scope",
+        "passed",
+        "body",
+        "complete_migration"
+      ],
+      "raw_arrays_public": false,
+      "excerpt_sha256": "dfead5fd8d55766c07c8ee0199c20e4c1d74ea3f1143563d04155f4cd8f981b1"
+    },
+    {
+      "report_id": "results/nr256-native-parity-v1/saved-audit-v1.json",
+      "status": "current-fast",
+      "original_report_sha256": "ff4a80efe629c90af2cbf10d25043bf26f96d8b79169dc4edb81571d01eacbec",
+      "original_report_bytes": 2679,
+      "excerpt_path": "evidence/excerpts/19.json",
+      "excerpt_fields": [
+        "passed",
+        "report_sha256",
+        "auditor_sha256",
+        "complete_output_receipts",
+        "summary",
+        "body_diagnostic",
+        "b580_over_4060_complete_host_ratio",
+        "native_equivalence_claim_for_fast_mode",
+        "limitation"
+      ],
+      "raw_arrays_public": false,
+      "excerpt_sha256": "b2339afefd045f3f77efc56d1ab713e628bb04955c4a2d458bba9c2b9a6b751b"
+    },
+    {
+      "report_id": "results/native-half-long1080-v1/saved-audit-v1.json",
+      "status": "current-fast",
+      "original_report_sha256": "61560c3593f778fe004ec907463ca5e8d4c1812b156ef776eb2dbcc147fea733",
+      "original_report_bytes": 824,
+      "excerpt_path": "evidence/excerpts/20.json",
+      "excerpt_fields": [
+        "passed",
+        "report_sha256",
+        "auditor_sha256",
+        "frames_verified",
+        "unique_arrays_reread",
+        "no_additional_visual_review_required_for_identical_output",
+        "limitation"
+      ],
+      "raw_arrays_public": false,
+      "excerpt_sha256": "e4e2b8440c811d79b6694fcfc3321d32c6b48419d7cfdcec064513cd2a61f20b"
+    }
+  ],
+  "current_exact_stage_comparisons": 55,
+  "complete_migration": false
+}

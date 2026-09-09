@@ -1,0 +1,51 @@
+{
+  "provenance": {
+    "report_id": "results/pre-mlp-evidence-verification.json",
+    "status": "historical",
+    "original_report_sha256": "49cd3726e051073af5cc5458a9627e99fe9b3147be108b43edc8b1d2a3734e1a",
+    "original_report_bytes": 835,
+    "excerpt_path": "evidence/excerpts/01.json",
+    "excerpt_fields": [
+      "independent_replay",
+      "holdout_files",
+      "rounding"
+    ],
+    "raw_arrays_public": false
+  },
+  "excerpt": {
+    "independent_replay": {
+      "pre_skip.raw": {
+        "byte_equal": true,
+        "bytes": 3276800,
+        "sha256": "ae940bce1d23edacac45271031d01f1350af38edcd31e534e29b2fb8ab682edb"
+      },
+      "pre_down_candidate.raw": {
+        "byte_equal": true,
+        "bytes": 819200,
+        "sha256": "452ee704c0629baa2bd1f2c62e1541be4eab88257726615075cb66501c244634"
+      }
+    },
+    "holdout_files": {
+      "mlp1-holdouts-v2": {
+        "hashed_files_verified": 27,
+        "source_inputs_byte_equal": true
+      },
+      "mlpout-holdouts-v1": {
+        "hashed_files_verified": 27,
+        "source_inputs_byte_equal": true
+      }
+    },
+    "rounding": {
+      "cpu": {
+        "values": 163489,
+        "mismatches": 0,
+        "seed": 34091
+      },
+      "xpu": {
+        "values": 163489,
+        "mismatches": 0,
+        "seed": 34091
+      }
+    }
+  }
+}
