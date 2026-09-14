@@ -1,5 +1,7 @@
 # 代码、参考与资产来源
 
+2026-09-14新增快照沿用下述来源与资产边界；没有重新授权第三方材料。新文件身份单列于`evidence/source-manifest-2026-09-14.json`，新实验摘录单列于`evidence/fullsize-2026-09-14.json`。NR256缩放路线保留为画面变化很大的实验，原尺寸快速算术并非NVIDIA原生字节等价实现。
+
 ## 社区起点
 
 - [taowen/dlss5-as-inpainting](https://github.com/taowen/dlss5-as-inpainting/tree/f8e18d366c5610bc5a51d562356655ac0885e21f)，固定提交`f8e18d366c5610bc5a51d562356655ac0885e21f`：权重解析、部分71块语义图、调用与逆向研究线索。上游明确区分原生carrier、不完整语义图和蒸馏PortableModel。
