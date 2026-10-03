@@ -1,0 +1,33 @@
+{
+  "schema": "current720-reviewed-composed-pins-v1",
+  "front_dependencies": {
+    "fused_c32_projection_native_half_v1": {
+      "relative_path": "experimental/fp8_unround_overlay/modules/fused_c32_projection_native_half_v1.py",
+      "sha256": "9201797394ef75a841b724015397aa33a886628ce425172c68bf9d38b454e798",
+      "reason": "Reviewed frozen Swin P09 dispatch with original fallback"
+    },
+    "nr_game_controlled_model": {
+      "relative_path": "game/nr_game_controlled_model.py",
+      "sha256": "fdb266e1116b886d8eebc56dab7a37b18cd1c5b69a4cb71fb87e369c579966c4",
+      "reason": "Reviewed Main Front/history producer composition"
+    },
+    "implementation_hooks_720_v1": {
+      "relative_path": "game/implementation_hooks_720_v1.py",
+      "sha256": "40c69d787f10b269d41648a12f537971817e5e57ea22917234e07898a4de96b0",
+      "reason": "Actual Main hook or sealed history destination broker"
+    },
+    "audit_graph_prepare_720_v1": {
+      "relative_path": "game/audit_graph_prepare_720_v1.py",
+      "sha256": "3413c8436bcfa4b098a8feb74c8a3d22a96b3abb67a3a20982146f8663c2fd21",
+      "reason": "Actual Main hook or sealed history destination broker"
+    }
+  },
+  "owned_kernels_replaced": false,
+  "merged_ready_sha256": {
+    "swin-mlp": "08ca1722f0151ab083d48d7d4607e5c2de69457386660a60a585ca66a531f6de",
+    "c512-vit": "e42cce265f73d632c2006ca11b73983cd5ad63174caf7ef085f71f9c85cbca36",
+    "front-decoder-post": "48e39566c3828934e1b223e12ea26e65c98e60d4c4348de8f58e154027d2038c",
+    "native-bridge": "9f3081412558569b4bf3a8a709a4cc69748dd49dd14aafbc1ba58077a4cf9931",
+    "history-host-graph": "7e197eeed7022b25e8e0354e0a2e7ac0067778b9850f96f7dc1e3d9ed3ffabb9"
+  }
+}

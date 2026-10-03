@@ -1,0 +1,2011 @@
+{
+  "schema": "amd_resolution_compilation_evidence_v1",
+  "created_utc": "2026-10-03T12:35:11.492Z",
+  "request": "固定AMD提交是否每更换输入分辨率都要编译；有界构建与尺寸调用链分析",
+  "source_identity": {
+    "commit": "9ec741522d267c4d2365af53081716fb2943068a",
+    "origin": "https://github.com/lmxxf/dlss5-on-amd-9070xt-porting.git",
+    "reviewed_files": [
+      {
+        "relative_path": "hip/build-modules.ps1",
+        "absolute_path": "${EXPERIMENTS_E}/cyberpunk-opt/amd-20261003-current720-reanalysis/upstream/hip/build-modules.ps1",
+        "bytes": 16100,
+        "sha256": "91df5ab02296a38c73b42c74fbc71282d89838b03e54fbb9ad9469efb78c1ecf",
+        "git_blob_oid": "918227ff46e5c57e3516da990381af70e532dc0e",
+        "git_blob_sha256": "9d5d4940ed330e69cc0c7a740edebbff08cde00be0dd661adff1d81066d18640",
+        "commit_match": "CRLF_only",
+        "line_count": 128
+      },
+      {
+        "relative_path": "hip/rtc_compile.cpp",
+        "absolute_path": "${EXPERIMENTS_E}/cyberpunk-opt/amd-20261003-current720-reanalysis/upstream/hip/rtc_compile.cpp",
+        "bytes": 7549,
+        "sha256": "434e02669070411b95d8c04e2893e0e2dace9cd057fd9b658fb375b9943eb67e",
+        "git_blob_oid": "ee404e37b9b1a3960f9b96df24395e0721eacae9",
+        "git_blob_sha256": "d68333a323be330fa81d54fda16deff220c4eeddc66fa633785dc7fe9eca6cbe",
+        "commit_match": "CRLF_only",
+        "line_count": 32
+      },
+      {
+        "relative_path": "hip/wave_owned_mh.inc",
+        "absolute_path": "${EXPERIMENTS_E}/cyberpunk-opt/amd-20261003-current720-reanalysis/upstream/hip/wave_owned_mh.inc",
+        "bytes": 49089,
+        "sha256": "45c8394c6de531eed591b00270a34fd720aca8d4320d8035391851e7456433e0",
+        "git_blob_oid": "46cf1f2a1b2e45fff4f683da781476c7269dc67a",
+        "git_blob_sha256": "19ffc746d56801da14f6e8832cf419ebdfb6e57aab10de751c6ceefa0c5bea5f",
+        "commit_match": "CRLF_only",
+        "line_count": 862
+      },
+      {
+        "relative_path": "hip/wave_owned_attention_exports.inc",
+        "absolute_path": "${EXPERIMENTS_E}/cyberpunk-opt/amd-20261003-current720-reanalysis/upstream/hip/wave_owned_attention_exports.inc",
+        "bytes": 598,
+        "sha256": "f19a4b73d057a262bde0e5c7b49cdb71c5b15c065685c6fa98e0be1ed370f101",
+        "git_blob_oid": "325c5fc5c2c261fe509d4047e8a5e84042bbf1cc",
+        "git_blob_sha256": "d15ba397a18178d05aa723a515da9090614fd3cc81a50e9815cf9c100abb3f65",
+        "commit_match": "CRLF_only",
+        "line_count": 4
+      },
+      {
+        "relative_path": "hip/multihead_fast_padded.hip",
+        "absolute_path": "${EXPERIMENTS_E}/cyberpunk-opt/amd-20261003-current720-reanalysis/upstream/hip/multihead_fast_padded.hip",
+        "bytes": 110143,
+        "sha256": "a6a0eb63bdcf36399c4d541872eeb6a85840c662b1922d420e4f6624ca4a687e",
+        "git_blob_oid": "0be66d64dc662675dd96262966e5e0cb1eaf6425",
+        "git_blob_sha256": "73bc650fd7f9686565a8b5ee09b595b394ed0eeea9944aa9933044ffd93b9c1c",
+        "commit_match": "CRLF_only",
+        "line_count": 1111
+      },
+      {
+        "relative_path": "hip/deep_fast.hip",
+        "absolute_path": "${EXPERIMENTS_E}/cyberpunk-opt/amd-20261003-current720-reanalysis/upstream/hip/deep_fast.hip",
+        "bytes": 104633,
+        "sha256": "1b1bb2fdce5573e164662d32052e987e3761559f27aef561ad0836693e26ee5e",
+        "git_blob_oid": "c3b8bf815961ddf5761bbb1e1bcbf7c27a5d300b",
+        "git_blob_sha256": "6b43d0bf9d345dd6de90453fa0903c84a25021b2602819e286326bd4b8c4b93d",
+        "commit_match": "CRLF_only",
+        "line_count": 1074
+      },
+      {
+        "relative_path": "Development/HIP/hip_api.h",
+        "absolute_path": "${EXPERIMENTS_E}/cyberpunk-opt/amd-20261003-current720-reanalysis/upstream/Development/HIP/hip_api.h",
+        "bytes": 9364,
+        "sha256": "a1e852ca5b8472a9905a1708fedd45e2d6824f1001f4048294cfa500a66533af",
+        "git_blob_oid": "796a262cafa6b054e644f55c47dbe36dd8ceffa5",
+        "git_blob_sha256": "45c46c8ed6633c0094817f6392049bbf01eb355d55c9fd8c3d11fdff90e9b519",
+        "commit_match": "CRLF_only",
+        "line_count": 81
+      },
+      {
+        "relative_path": "Development/HIP/hip_d3d12_bridge.h",
+        "absolute_path": "${EXPERIMENTS_E}/cyberpunk-opt/amd-20261003-current720-reanalysis/upstream/Development/HIP/hip_d3d12_bridge.h",
+        "bytes": 38468,
+        "sha256": "303afb3805b1444f6e8287763eefb2ac2092060c08a6063d05ed6a57017669f5",
+        "git_blob_oid": "8fbc85176ebc92c86b7970fdaf628eecc27f5457",
+        "git_blob_sha256": "58702273b602445dfec3eed60dba912af7cfdf1c82b690548379db7c6bcfe3d3",
+        "commit_match": "CRLF_only",
+        "line_count": 405
+      },
+      {
+        "relative_path": "Development/HIP/hip_reference_network.h",
+        "absolute_path": "${EXPERIMENTS_E}/cyberpunk-opt/amd-20261003-current720-reanalysis/upstream/Development/HIP/hip_reference_network.h",
+        "bytes": 142159,
+        "sha256": "8ecc64e3e20e6533250228b9033831ca0e7582d6f7ec2923df8cb089421da0e7",
+        "git_blob_oid": "aac801efcf96aa90f436c615194efcbc8a0f5a70",
+        "git_blob_sha256": "d681b500e9285f2a3b90bbe3f121437cde0060a40499edfc42dd973955f5b7c6",
+        "commit_match": "CRLF_only",
+        "line_count": 803
+      },
+      {
+        "relative_path": "Development/HIP/reference_network.cpp",
+        "absolute_path": "${EXPERIMENTS_E}/cyberpunk-opt/amd-20261003-current720-reanalysis/upstream/Development/HIP/reference_network.cpp",
+        "bytes": 8790,
+        "sha256": "9f0e183f43f485dd92190f062c1fe12667ad652a31483404113034d3ae3f505c",
+        "git_blob_oid": "3d9bbda16d162fdb6105a430afa6b62c2f72f750",
+        "git_blob_sha256": "6564de5203603bd2c48fa30da86531bfea86959ac9411865fd4754f9ee8e4a0d",
+        "commit_match": "CRLF_only",
+        "line_count": 12
+      },
+      {
+        "relative_path": "Development/HIP/device_network.cpp",
+        "absolute_path": "${EXPERIMENTS_E}/cyberpunk-opt/amd-20261003-current720-reanalysis/upstream/Development/HIP/device_network.cpp",
+        "bytes": 1750,
+        "sha256": "d8642b986f162ae8ce4848f96ae11a04a9d3c4f97d7ddf40edba3cc5803e768b",
+        "git_blob_oid": "5c4616576e2c8bbb14dc6db80aaa65449bc9e770",
+        "git_blob_sha256": "ddc54ce544742076f914f7ac1f7dbbeb4766a8a585b7b797407ffaadd0a68ed7",
+        "commit_match": "CRLF_only",
+        "line_count": 12
+      },
+      {
+        "relative_path": "Development/HIP/bridge_network.cpp",
+        "absolute_path": "${EXPERIMENTS_E}/cyberpunk-opt/amd-20261003-current720-reanalysis/upstream/Development/HIP/bridge_network.cpp",
+        "bytes": 3773,
+        "sha256": "39fb8eb927034c1de8bb99a1e9c32829f1c5e89bf4778eae0442677f6b3ad55d",
+        "git_blob_oid": "56553dfc9aabae43ae6710d954c09c5a40399d5d",
+        "git_blob_sha256": "182c8a16c0ac3bb86be883357324b896ae95e421fffc758c9da6cd328ab8bd3e",
+        "commit_match": "CRLF_only",
+        "line_count": 11
+      },
+      {
+        "relative_path": "src/native_network_geometry.h",
+        "absolute_path": "${EXPERIMENTS_E}/cyberpunk-opt/amd-20261003-current720-reanalysis/upstream/src/native_network_geometry.h",
+        "bytes": 10469,
+        "sha256": "d1ba58b2c358b1d701d2c2033a01fb9c4bddd4d3dcbf2e84a727cf87b0ab3f24",
+        "git_blob_oid": "2067ebd7e4eab9b548571d32d4322ad03e34ca47",
+        "git_blob_sha256": "11366ba9558345ff52dae429928c00fd48c3756bf871d6c16422d7b5bf068921",
+        "commit_match": "CRLF_only",
+        "line_count": 109
+      },
+      {
+        "relative_path": "src/native_input_geometry.h",
+        "absolute_path": "${EXPERIMENTS_E}/cyberpunk-opt/amd-20261003-current720-reanalysis/upstream/src/native_input_geometry.h",
+        "bytes": 2871,
+        "sha256": "e720101488f05e83af6d7dd5b88f2c16bb5b5483fcfde041e5d0f7ca85c3b64e",
+        "git_blob_oid": "20db8428adae1504c70f32461a750158f1124dbe",
+        "git_blob_sha256": "6558b9e23b44524b76791a6381db19818be8b41413f978595cc1d5ba9bb128b0",
+        "commit_match": "CRLF_only",
+        "line_count": 38
+      },
+      {
+        "relative_path": "src/native_pre_upscale.h",
+        "absolute_path": "${EXPERIMENTS_E}/cyberpunk-opt/amd-20261003-current720-reanalysis/upstream/src/native_pre_upscale.h",
+        "bytes": 28191,
+        "sha256": "ff026496588d9babadc9a4c0ce5e27f3f8598dae7e81865fabef3ffcb9bdf3db",
+        "git_blob_oid": "4c736a56f344047b82b7138b107c221d01370468",
+        "git_blob_sha256": "c7607af2dbfa2047854f4b44ed0fd6637780ee4587784ca2f6737c9214d729be",
+        "commit_match": "CRLF_only",
+        "line_count": 275
+      },
+      {
+        "relative_path": "src/native_game_oneshot.h",
+        "absolute_path": "${EXPERIMENTS_E}/cyberpunk-opt/amd-20261003-current720-reanalysis/upstream/src/native_game_oneshot.h",
+        "bytes": 18302,
+        "sha256": "9cc9b46239ae5b9ff7e66369eefba7aaddf1ca418b961b95bb7ae02243438194",
+        "git_blob_oid": "5d355192c3ab83826c61db5df1e9ecb813b6ad60",
+        "git_blob_sha256": "ad4299d93beba9679acb79612e61ae531f82d752c04d1cf295a87a1c085300fb",
+        "commit_match": "CRLF_only",
+        "line_count": 205
+      },
+      {
+        "relative_path": "src/native_game_frame.h",
+        "absolute_path": "${EXPERIMENTS_E}/cyberpunk-opt/amd-20261003-current720-reanalysis/upstream/src/native_game_frame.h",
+        "bytes": 47926,
+        "sha256": "445da8353fd44fde237234e18c271558bbd23954907a2bb867d7a45dd27453e5",
+        "git_blob_oid": "a3d6c019b2bba92b2502d0ac6a6c772f87dec3be",
+        "git_blob_sha256": "991a1ccd13fa89758ce39dde2f6620950351ed095e1d072144e36cd235ca838b",
+        "commit_match": "CRLF_only",
+        "line_count": 417
+      },
+      {
+        "relative_path": "src/native_hip_network.h",
+        "absolute_path": "${EXPERIMENTS_E}/cyberpunk-opt/amd-20261003-current720-reanalysis/upstream/src/native_hip_network.h",
+        "bytes": 9798,
+        "sha256": "750df8d2a715188aedd5590c61b7895669b34f3e213410193625c5d455830d7a",
+        "git_blob_oid": "935319c06c80f4f9b62965974757800a0b3e61f9",
+        "git_blob_sha256": "023e69e0bee1e0ac63a535cafd895054f158819d87c4c157e634799797ace335",
+        "commit_match": "CRLF_only",
+        "line_count": 57
+      },
+      {
+        "relative_path": "src/native_game_codec.h",
+        "absolute_path": "${EXPERIMENTS_E}/cyberpunk-opt/amd-20261003-current720-reanalysis/upstream/src/native_game_codec.h",
+        "bytes": 23070,
+        "sha256": "882dcbf4f37a6b11729d84a1492231d68b50a5865028861af35a4f1c3eef9a56",
+        "git_blob_oid": "ed714f9de301671ffa5a832d7f745acfb11045f5",
+        "git_blob_sha256": "4497783e5f7ac39fed43113484a03798c01a5e269c078fdd4adad9e4ba9a65af",
+        "commit_match": "CRLF_only",
+        "line_count": 171
+      },
+      {
+        "relative_path": "src/native_game_rgb_input.h",
+        "absolute_path": "${EXPERIMENTS_E}/cyberpunk-opt/amd-20261003-current720-reanalysis/upstream/src/native_game_rgb_input.h",
+        "bytes": 7390,
+        "sha256": "3ca462c398931057270abcfe56aa8e0995e43a28cd1cd47d091158f3c1beeebf",
+        "git_blob_oid": "552ba2d9c6cac918a7c33161a2fcb7deae8c3466",
+        "git_blob_sha256": "3ae01a907dd8a5288c1ec7185efc2b111169ac76f1aacfd06f58783517a7d8a0",
+        "commit_match": "CRLF_only",
+        "line_count": 72
+      },
+      {
+        "relative_path": "src/native_shader_cache.h",
+        "absolute_path": "${EXPERIMENTS_E}/cyberpunk-opt/amd-20261003-current720-reanalysis/upstream/src/native_shader_cache.h",
+        "bytes": 6733,
+        "sha256": "07520bd5042a2f22ef4ab8b6a29a914137a272845ef138328b8678b980c13234",
+        "git_blob_oid": "f1bc8a7935e760c76ba6d38ddd1a867c110ad9cb",
+        "git_blob_sha256": "2f6c0cb74c25b9471cc7364e15a41e891a06930c88706ad370213d1669445426",
+        "commit_match": "CRLF_only",
+        "line_count": 87
+      },
+      {
+        "relative_path": "src/LmxxfNrRuntime.cpp",
+        "absolute_path": "${EXPERIMENTS_E}/cyberpunk-opt/amd-20261003-current720-reanalysis/upstream/src/LmxxfNrRuntime.cpp",
+        "bytes": 85268,
+        "sha256": "1ae22a3bb98e8368371acd227030f71693360dbbb13540a148a06d938ce77d41",
+        "git_blob_oid": "6959b13e95dc4e800c438c1ea73ce2079025020c",
+        "git_blob_sha256": "edd896e9aa996f78022ee716b9b1c579ab57a4d6c64f26869efefb4f6bad8efc",
+        "commit_match": "CRLF_only",
+        "line_count": 1820
+      },
+      {
+        "relative_path": "src/native_actual_network70.h",
+        "absolute_path": "${EXPERIMENTS_E}/cyberpunk-opt/amd-20261003-current720-reanalysis/upstream/src/native_actual_network70.h",
+        "bytes": 22586,
+        "sha256": "f077c8c897587e9cb2dce8224c90488d0f708f15b857572fb4bbc1d58d8ad43c",
+        "git_blob_oid": "3aad08133be6124a706fdfbfc361abafa85f07fd",
+        "git_blob_sha256": "fc5b0490c9d438f027e6e196e6c0f0e375b5118d1bcedf53d1f5205e9033b2f6",
+        "commit_match": "CRLF_only",
+        "line_count": 190
+      },
+      {
+        "relative_path": "src/native_c64_shift.h",
+        "absolute_path": "${EXPERIMENTS_E}/cyberpunk-opt/amd-20261003-current720-reanalysis/upstream/src/native_c64_shift.h",
+        "bytes": 8148,
+        "sha256": "91deef20ecb10ffec9b8053a089c4b5a8790e6c592dd3af25d9c301c26802912",
+        "git_blob_oid": "f7407a6109900aa60ae9428a5c4f2dc96925c6ee",
+        "git_blob_sha256": "1eb6f4de4d580f2ec16d9421f3aac19529a125d4bf4c5913a123b7f4cb917369",
+        "commit_match": "CRLF_only",
+        "line_count": 53
+      },
+      {
+        "relative_path": "src/native_vit_gather.h",
+        "absolute_path": "${EXPERIMENTS_E}/cyberpunk-opt/amd-20261003-current720-reanalysis/upstream/src/native_vit_gather.h",
+        "bytes": 4901,
+        "sha256": "b725adf174d27e862e15fdba69944b15bc411fb9446442bfff4cea7dcec363bb",
+        "git_blob_oid": "b4ee018ccdf4d00bea40b027481a7f4a87f3b8e3",
+        "git_blob_sha256": "40b95755d0a025cc8a4dc51a89f810feb6115e7b7eec47c7a5e570c79a89ad90",
+        "commit_match": "CRLF_only",
+        "line_count": 36
+      },
+      {
+        "relative_path": "src/native_vit_linear.h",
+        "absolute_path": "${EXPERIMENTS_E}/cyberpunk-opt/amd-20261003-current720-reanalysis/upstream/src/native_vit_linear.h",
+        "bytes": 23383,
+        "sha256": "9fdb6f6c012eff17518686609b3adb38c8347eaf59378e47a8a13c207b967588",
+        "git_blob_oid": "a0a034606d4f6f36c14c1887eb8c616776cc0212",
+        "git_blob_sha256": "e9d99274891ab332b0045de6b28e326ebd3b3c9f39295ced63ba07e55e285063",
+        "commit_match": "CRLF_only",
+        "line_count": 130
+      },
+      {
+        "relative_path": "src/d3d12_native_network70_test.cpp",
+        "absolute_path": "${EXPERIMENTS_E}/cyberpunk-opt/amd-20261003-current720-reanalysis/upstream/src/d3d12_native_network70_test.cpp",
+        "bytes": 13075,
+        "sha256": "544bc9081a035da5a9c3b985af82d2c985f7a6555ebb34e43b6abcc173f1874c",
+        "git_blob_oid": "e3e324f8cde025114208baec2ce0200724b1182a",
+        "git_blob_sha256": "070225327225b1c652dcd27395990e420e7c08f8a041f40e0f6b35b664a4b943",
+        "commit_match": "CRLF_only",
+        "line_count": 104
+      },
+      {
+        "relative_path": "shaders/native_codec_encode.hlsl",
+        "absolute_path": "${EXPERIMENTS_E}/cyberpunk-opt/amd-20261003-current720-reanalysis/upstream/shaders/native_codec_encode.hlsl",
+        "bytes": 3982,
+        "sha256": "e7075b753c70676a28bd7f87734a0a9fb89c034d36e6f8f081f1dee0bceadbf9",
+        "git_blob_oid": "8567172cf2b2057793efbef1efa137b9cd28b07f",
+        "git_blob_sha256": "237332c83235cba639053fd1b6d7030c75c699936449efc43a4a36243d78c2f9",
+        "commit_match": "CRLF_only",
+        "line_count": 97
+      },
+      {
+        "relative_path": "shaders/native_game_rgb_input.hlsl",
+        "absolute_path": "${EXPERIMENTS_E}/cyberpunk-opt/amd-20261003-current720-reanalysis/upstream/shaders/native_game_rgb_input.hlsl",
+        "bytes": 1292,
+        "sha256": "53ee00b83580390b05d2f554a7090aad9218def7b851398a274633918b280995",
+        "git_blob_oid": "1b1ccbaf38496a0154c5253834febeebd8de24d5",
+        "git_blob_sha256": "a9283bb7e710cec7b6115602c7135a6ca590c43dc32b40193f19b02977de80e0",
+        "commit_match": "CRLF_only",
+        "line_count": 26
+      },
+      {
+        "relative_path": "scripts/build-addon.sh",
+        "absolute_path": "${EXPERIMENTS_E}/cyberpunk-opt/amd-20261003-current720-reanalysis/upstream/scripts/build-addon.sh",
+        "bytes": 2735,
+        "sha256": "aeefec4ac6cc06ddda1149dc634d3fad22c18dd072b3193b5bf55b0683366ed9",
+        "git_blob_oid": "7be1e42cf9524c7b759f57c74b181143d2d3939f",
+        "git_blob_sha256": "d065015fff91e0a6670e1bd3cf173cdc87107533bbdf4a10752f2c8e0f344add",
+        "commit_match": "CRLF_only",
+        "line_count": 43
+      },
+      {
+        "relative_path": "scripts/build-runtime.sh",
+        "absolute_path": "${EXPERIMENTS_E}/cyberpunk-opt/amd-20261003-current720-reanalysis/upstream/scripts/build-runtime.sh",
+        "bytes": 624,
+        "sha256": "22720c9317daaa93532c600cad27d416f5001bca1d92130ed629fc4cd3f099e5",
+        "git_blob_oid": "22df793746566a9101818fbf65f7a4c7edcab260",
+        "git_blob_sha256": "0c20db6542d27420f3077dd17c46da1d81bdde2246544ae036eebd2f9546f486",
+        "commit_match": "CRLF_only",
+        "line_count": 9
+      },
+      {
+        "relative_path": "scripts/build-runtime.cmd",
+        "absolute_path": "${EXPERIMENTS_E}/cyberpunk-opt/amd-20261003-current720-reanalysis/upstream/scripts/build-runtime.cmd",
+        "bytes": 741,
+        "sha256": "8636ac9a2ffdb75713c5a66178833283037a7d72c0240907e154da88c01f692c",
+        "git_blob_oid": "350a4918185e887be224cf3d9c5995a324727723",
+        "git_blob_sha256": "33b645f8c718055625bcea1766bbe1bd62ce5b8abbb124881a75571474de88b3",
+        "commit_match": "CRLF_only",
+        "line_count": 18
+      },
+      {
+        "relative_path": "scripts/build-bench.sh",
+        "absolute_path": "${EXPERIMENTS_E}/cyberpunk-opt/amd-20261003-current720-reanalysis/upstream/scripts/build-bench.sh",
+        "bytes": 443,
+        "sha256": "d500155fb81ce57a42d6c367efbe3daaa55f746e9bfa0c17160d5fa6e1a71c1b",
+        "git_blob_oid": "5b9b78b606c20e414eae4cd7538104bad6ee22b4",
+        "git_blob_sha256": "f64395ceb707fa3889e461274d43b6048829c0e793664120a8fdd0149c48de8c",
+        "commit_match": "CRLF_only",
+        "line_count": 7
+      },
+      {
+        "relative_path": "scripts/compile-shaders.ps1",
+        "absolute_path": "${EXPERIMENTS_E}/cyberpunk-opt/amd-20261003-current720-reanalysis/upstream/scripts/compile-shaders.ps1",
+        "bytes": 1598,
+        "sha256": "aa68432d3274760513c20c36fbbbb393dd928a0c463977216110323b98b4a4a3",
+        "git_blob_oid": "1b892da3b3e2640076f4a5947a7e063f09ae436b",
+        "git_blob_sha256": "1b4e48f8278c18c5c675812d4d408d9098d27ded6c63ee3c82d357c303a39de9",
+        "commit_match": "CRLF_only",
+        "line_count": 16
+      },
+      {
+        "relative_path": "scripts/hip-game-flags.txt",
+        "absolute_path": "${EXPERIMENTS_E}/cyberpunk-opt/amd-20261003-current720-reanalysis/upstream/scripts/hip-game-flags.txt",
+        "bytes": 41850,
+        "sha256": "4388ac041739849ece604ce3415adb22516e855bbfb0fd274ad863544e4a4a53",
+        "git_blob_oid": "f9902cfcba516772429dcf951eaa20e615d899a3",
+        "git_blob_sha256": "e2ebf0031c91a9b20c4c469e38082d7949059dc9046516818cdc19f3b8c393c4",
+        "commit_match": "CRLF_only",
+        "line_count": 471
+      },
+      {
+        "relative_path": "scripts/hip-magpie-flags.txt",
+        "absolute_path": "${EXPERIMENTS_E}/cyberpunk-opt/amd-20261003-current720-reanalysis/upstream/scripts/hip-magpie-flags.txt",
+        "bytes": 41545,
+        "sha256": "f8acb30bf4acd2e1322a43ccf1a3475ed0c0a60d6347287fafb17bd1e7fe81ea",
+        "git_blob_oid": "cdb5c285a8c810c9ea6b80a9f18fd3c81622f4e1",
+        "git_blob_sha256": "38023b72cfc2c8b3410c3e18d98402bdd51a123ff10da26528c5405e0903a7ba",
+        "commit_match": "CRLF_only",
+        "line_count": 469
+      },
+      {
+        "relative_path": "scripts/hip-re9-flags.txt",
+        "absolute_path": "${EXPERIMENTS_E}/cyberpunk-opt/amd-20261003-current720-reanalysis/upstream/scripts/hip-re9-flags.txt",
+        "bytes": 44293,
+        "sha256": "302b1e8273b53921926d0fe927ce865a08ac4db52e3c8b77f8735805800c2349",
+        "git_blob_oid": "867a2a474f4dc64380677bc01a6aa04d5b510740",
+        "git_blob_sha256": "6309fee59eeed73f305b32225c0f5e6265c7e4dbde67271823883c4965f323e6",
+        "commit_match": "CRLF_only",
+        "line_count": 434
+      },
+      {
+        "relative_path": "scripts/CONFIGURATION.md",
+        "absolute_path": "${EXPERIMENTS_E}/cyberpunk-opt/amd-20261003-current720-reanalysis/upstream/scripts/CONFIGURATION.md",
+        "bytes": 23595,
+        "sha256": "ebb40ba77556db57bb7894bd372704b9c38e75280612a971bda7dff080645b2d",
+        "git_blob_oid": "99cb25dfb7de876e15acdd8041993aba02e7df2c",
+        "git_blob_sha256": "2b4cdd3d84d3021d9f1fcb9c5d0bcc567c39eae1cf0630c4a1fad6e52267b01f",
+        "commit_match": "CRLF_only",
+        "line_count": 71
+      },
+      {
+        "relative_path": "Development/tools/llvm-fork/compile-modules.py",
+        "absolute_path": null,
+        "acquisition": "local_git_blob_only_worktree_path_absent",
+        "bytes": 6902,
+        "sha256": "6dc46fc8eb8a38ad40633764ec6227a1ca4b84f8bd743bf17bd0ff10dcb75482",
+        "git_blob_oid": "e7bf7d35d81c785aca093dda75f836a5cb821788",
+        "git_blob_sha256": "6dc46fc8eb8a38ad40633764ec6227a1ca4b84f8bd743bf17bd0ff10dcb75482",
+        "commit_match": "exact_git_object",
+        "line_count": 119
+      }
+    ],
+    "recipe_modules": [
+      "c32_prefix_reference",
+      "multihead-reference",
+      "deep_reference",
+      "boundary_reference",
+      "c32_wmma",
+      "multihead-wmma",
+      "deep_wmma",
+      "wave-pointwise",
+      "c32_tiled",
+      "multihead-tiled",
+      "c32_fast",
+      "c32_fast_attention",
+      "boundary-fast",
+      "c32_fused_attention",
+      "c32_fused_ffn_attention",
+      "c32_fused_ffn_attention-packed",
+      "prefix_fast",
+      "multihead-fast",
+      "multihead-fast-padded-wave",
+      "multihead_fused_attention",
+      "deep_fast",
+      "deep_fast-packed",
+      "multihead-fast-packed",
+      "multihead-fast-padded-wave-packed",
+      "c32-wave1",
+      "c32-wave1-rtz",
+      "c64-wave2",
+      "c32-wave1-fast",
+      "c64-wave2-fast",
+      "c512-m32-mh",
+      "c512-m32-deep",
+      "vit-stream",
+      "vit-wide-deep",
+      "swin-persistent"
+    ],
+    "recipe_module_count": 34,
+    "runtime_compiler_search": {
+      "pattern": "\\b(hiprtc\\w*|amd_comgr\\w*|hipcc|clang\\w*|CreateProcess\\w*|system|_popen|popen)\\b",
+      "files_scanned": 59,
+      "file_list": [
+        "Development/HIP/hip_api.h",
+        "Development/HIP/hip_d3d12_bridge.h",
+        "Development/HIP/hip_reference_network.h",
+        "src/d3d12_native_game_rgb_test.cpp",
+        "src/d3d12_native_network70_test.cpp",
+        "src/LmxxfNrRuntime.cpp",
+        "src/LmxxfProductionOptions.h",
+        "src/native_actual_decoder69.h",
+        "src/native_actual_network70.h",
+        "src/native_block_skip.h",
+        "src/native_c32_ds.h",
+        "src/native_c32_stage.h",
+        "src/native_c64.h",
+        "src/native_c64_shift.h",
+        "src/native_config_layers.h",
+        "src/native_decoder_tail69.h",
+        "src/native_device_identity.h",
+        "src/native_format_convert.h",
+        "src/native_format_fallback.h",
+        "src/native_frame_input_check.h",
+        "src/native_frame_stats.h",
+        "src/native_game_codec.h",
+        "src/native_game_frame.h",
+        "src/native_game_oneshot.h",
+        "src/native_game_rgb_input.h",
+        "src/native_game_submission.h",
+        "src/native_hip_env_options.h",
+        "src/native_hip_network.h",
+        "src/native_hot_flags.h",
+        "src/native_input_geometry.h",
+        "src/native_lab_paths.h",
+        "src/native_matrix_workspace.h",
+        "src/native_network_geometry.h",
+        "src/native_network_timestamps.h",
+        "src/native_pinned_resource.h",
+        "src/native_post70.h",
+        "src/native_pre_upscale.h",
+        "src/native_preblock_runtime.h",
+        "src/native_pso.h",
+        "src/native_resident_table.h",
+        "src/native_rgb_reflect.h",
+        "src/native_rgb_texture.h",
+        "src/native_runtime_shifts.h",
+        "src/native_shader_cache.h",
+        "src/native_snapshot_gate.h",
+        "src/native_split.h",
+        "src/native_split_window.h",
+        "src/native_submission_order_probe.cpp",
+        "src/native_submitted_readback.h",
+        "src/native_temporal_coordinates.h",
+        "src/native_temporal_feed.h",
+        "src/native_temporal_sample.h",
+        "src/native_text_overlay.h",
+        "src/native_vit_attention.h",
+        "src/native_vit_block.h",
+        "src/native_vit_gather.h",
+        "src/native_vit_linear.h",
+        "src/native_vit_qkv.h",
+        "src/native_vram_log.h"
+      ],
+      "hits": [
+        {
+          "file": "src/native_hot_flags.h",
+          "line": 63,
+          "text": "    A DLSS5_MULTI_PASS system environment variable wins over every file: stderr line, files still written. The hot reload above",
+          "classification": "comment_no_compiler_call"
+        },
+        {
+          "file": "src/native_pinned_resource.h",
+          "line": 5,
+          "text": "// system memory; a demoted network buffer is read over PCIe every frame and halves the frame rate. High priority makes the",
+          "classification": "comment_no_compiler_call"
+        }
+      ],
+      "scope": "Physical src .h/.cpp files plus actual HIP API/bridge/network headers; keyword comments are retained explicitly.",
+      "call_search_pattern": "\\b(?:hiprtc\\w*|amd_comgr\\w*|hipcc|clang\\w*|CreateProcess\\w*|system|_popen|popen)\\s*\\(",
+      "call_hits": [],
+      "source_pins": [
+        {
+          "file": "Development/HIP/hip_api.h",
+          "sha256": "a1e852ca5b8472a9905a1708fedd45e2d6824f1001f4048294cfa500a66533af",
+          "git_blob_oid": "796a262cafa6b054e644f55c47dbe36dd8ceffa5"
+        },
+        {
+          "file": "Development/HIP/hip_d3d12_bridge.h",
+          "sha256": "303afb3805b1444f6e8287763eefb2ac2092060c08a6063d05ed6a57017669f5",
+          "git_blob_oid": "8fbc85176ebc92c86b7970fdaf628eecc27f5457"
+        },
+        {
+          "file": "Development/HIP/hip_reference_network.h",
+          "sha256": "8ecc64e3e20e6533250228b9033831ca0e7582d6f7ec2923df8cb089421da0e7",
+          "git_blob_oid": "aac801efcf96aa90f436c615194efcbc8a0f5a70"
+        },
+        {
+          "file": "src/d3d12_native_game_rgb_test.cpp",
+          "sha256": "61948d084c0f1882410c34876f303233b296f3b0dbe411bc1b9f31cfeac46ab0",
+          "git_blob_oid": "8a671a0f76606bfe5c2ba52efab10ef0376664e1"
+        },
+        {
+          "file": "src/d3d12_native_network70_test.cpp",
+          "sha256": "544bc9081a035da5a9c3b985af82d2c985f7a6555ebb34e43b6abcc173f1874c",
+          "git_blob_oid": "e3e324f8cde025114208baec2ce0200724b1182a"
+        },
+        {
+          "file": "src/LmxxfNrRuntime.cpp",
+          "sha256": "1ae22a3bb98e8368371acd227030f71693360dbbb13540a148a06d938ce77d41",
+          "git_blob_oid": "6959b13e95dc4e800c438c1ea73ce2079025020c"
+        },
+        {
+          "file": "src/LmxxfProductionOptions.h",
+          "sha256": "eebaf5ab3d30f68dd7eeb5e6dd9036f6a48b195c6110ca880c1a81211c8f532c",
+          "git_blob_oid": "ea0d14d3cf56c2da2569ceada9995450c2de1f7e"
+        },
+        {
+          "file": "src/native_actual_decoder69.h",
+          "sha256": "70ebc0d428d3faa7e0cccf0b67e2904c45938b63203a21d84bae1cff5f1f8acd",
+          "git_blob_oid": "b89e75ebabca341cd7a3bbd2bcb2ee37d90064be"
+        },
+        {
+          "file": "src/native_actual_network70.h",
+          "sha256": "f077c8c897587e9cb2dce8224c90488d0f708f15b857572fb4bbc1d58d8ad43c",
+          "git_blob_oid": "3aad08133be6124a706fdfbfc361abafa85f07fd"
+        },
+        {
+          "file": "src/native_block_skip.h",
+          "sha256": "258df2db302f2f4b1b718f2722afcc65ca1db04b013135e38619076191138025",
+          "git_blob_oid": "4f64285fd224faf6ca73a06c95c8d10a657e0451"
+        },
+        {
+          "file": "src/native_c32_ds.h",
+          "sha256": "93227745e22456ee2ccad877b7ba28271f3416e024f3c7faea59de9463747c46",
+          "git_blob_oid": "90b11902184f60a984dbecbeeeefa2cf26f4d3d8"
+        },
+        {
+          "file": "src/native_c32_stage.h",
+          "sha256": "057e6e9f1e6ede1a54683a82f12681f34f0b082854e5f39f54e03216c20423e5",
+          "git_blob_oid": "cab6284fcd1d325f03bc2959b5ddf0248ac28333"
+        },
+        {
+          "file": "src/native_c64.h",
+          "sha256": "356fdb2d8c19d06a33f7703a99c5a717f9c22efafaa1abcd74066fa9609d48c1",
+          "git_blob_oid": "231d11afb1d6cbeb6893aa82edf1dc385561fcd6"
+        },
+        {
+          "file": "src/native_c64_shift.h",
+          "sha256": "91deef20ecb10ffec9b8053a089c4b5a8790e6c592dd3af25d9c301c26802912",
+          "git_blob_oid": "f7407a6109900aa60ae9428a5c4f2dc96925c6ee"
+        },
+        {
+          "file": "src/native_config_layers.h",
+          "sha256": "b998c20f554c0e1b9b6bf2f4e87349e9216ed4a77d1ffb9d31844a99f57bc298",
+          "git_blob_oid": "df1b5cd25e256773cb7076e2cec6fb1c2a689049"
+        },
+        {
+          "file": "src/native_decoder_tail69.h",
+          "sha256": "8253b9efe1506e21c0ecd7f83ab359531f3699bed13c744556444e6146bc1de8",
+          "git_blob_oid": "d8f6ebf272946f2ed1af94d3c9c7106de76f4388"
+        },
+        {
+          "file": "src/native_device_identity.h",
+          "sha256": "4fd4d6e58bcebbff110befde58c63fd2322abcfe084f89a6a35233a846eaaa1f",
+          "git_blob_oid": "6721262feb43a0e189e9efc5db591291b25d9a5d"
+        },
+        {
+          "file": "src/native_format_convert.h",
+          "sha256": "5e31fcf0dbaf13ec329a0923265a3ad8e8964a87d93524aef153879516e32c9b",
+          "git_blob_oid": "fae7e5413646d4eb85cf0c4daf951eb772172e26"
+        },
+        {
+          "file": "src/native_format_fallback.h",
+          "sha256": "0f8df7b8f6363edc1183813c8122762118ba0879d1e2272b8abb5be8f03f334a",
+          "git_blob_oid": "c92d6d3caf241415664ca038f24101e26c70229b"
+        },
+        {
+          "file": "src/native_frame_input_check.h",
+          "sha256": "615d614bef76e47b143755addb7f701e4e05f11b601c0fa3090cfa47939971f5",
+          "git_blob_oid": "f11d4c3c682b8ce459f36ac5619bfbdd76529a9e"
+        },
+        {
+          "file": "src/native_frame_stats.h",
+          "sha256": "5c9be9cebfccf025e522a0c29a112c647fdc1d4887bc195186b17ee2709c8734",
+          "git_blob_oid": "94c4b844bce7a7daee78988cdcaab4160b73c0a7"
+        },
+        {
+          "file": "src/native_game_codec.h",
+          "sha256": "882dcbf4f37a6b11729d84a1492231d68b50a5865028861af35a4f1c3eef9a56",
+          "git_blob_oid": "ed714f9de301671ffa5a832d7f745acfb11045f5"
+        },
+        {
+          "file": "src/native_game_frame.h",
+          "sha256": "445da8353fd44fde237234e18c271558bbd23954907a2bb867d7a45dd27453e5",
+          "git_blob_oid": "a3d6c019b2bba92b2502d0ac6a6c772f87dec3be"
+        },
+        {
+          "file": "src/native_game_oneshot.h",
+          "sha256": "9cc9b46239ae5b9ff7e66369eefba7aaddf1ca418b961b95bb7ae02243438194",
+          "git_blob_oid": "5d355192c3ab83826c61db5df1e9ecb813b6ad60"
+        },
+        {
+          "file": "src/native_game_rgb_input.h",
+          "sha256": "3ca462c398931057270abcfe56aa8e0995e43a28cd1cd47d091158f3c1beeebf",
+          "git_blob_oid": "552ba2d9c6cac918a7c33161a2fcb7deae8c3466"
+        },
+        {
+          "file": "src/native_game_submission.h",
+          "sha256": "974ebd456be9325b53081c232426b47127b41a956c634af4a7f71eebfd71bac3",
+          "git_blob_oid": "c3d17c1344907654467336e630f9c6bb697099cb"
+        },
+        {
+          "file": "src/native_hip_env_options.h",
+          "sha256": "df2beacd59aa40af06eb51236c4aa3278bd241fae70054f9282cb0eff764d839",
+          "git_blob_oid": "e5b98dc070494a1bc7a9a12530adccf59b01d765"
+        },
+        {
+          "file": "src/native_hip_network.h",
+          "sha256": "750df8d2a715188aedd5590c61b7895669b34f3e213410193625c5d455830d7a",
+          "git_blob_oid": "935319c06c80f4f9b62965974757800a0b3e61f9"
+        },
+        {
+          "file": "src/native_hot_flags.h",
+          "sha256": "ea324176d24d1edee6352541ee955cd2f9bba5017a28cb16bff9f4877e5f6edf",
+          "git_blob_oid": "19e5187011e60192a18b225e25109c3f258468d5"
+        },
+        {
+          "file": "src/native_input_geometry.h",
+          "sha256": "e720101488f05e83af6d7dd5b88f2c16bb5b5483fcfde041e5d0f7ca85c3b64e",
+          "git_blob_oid": "20db8428adae1504c70f32461a750158f1124dbe"
+        },
+        {
+          "file": "src/native_lab_paths.h",
+          "sha256": "b3c2955a065989323a2b7316d3f93294e7368581ba8606f347a01c5a20b16d30",
+          "git_blob_oid": "722fa887ad79cd5dfe8b0a4e65d9e37e0369f67b"
+        },
+        {
+          "file": "src/native_matrix_workspace.h",
+          "sha256": "9556cfe09bcc9daf344e5600e7d0654a253880a16d25c53d7f56e61f4b8a83c4",
+          "git_blob_oid": "506930a12c6351f602b9a2a58a2815c4cf627485"
+        },
+        {
+          "file": "src/native_network_geometry.h",
+          "sha256": "d1ba58b2c358b1d701d2c2033a01fb9c4bddd4d3dcbf2e84a727cf87b0ab3f24",
+          "git_blob_oid": "2067ebd7e4eab9b548571d32d4322ad03e34ca47"
+        },
+        {
+          "file": "src/native_network_timestamps.h",
+          "sha256": "fc4fab4990080074f2415d09679e00ea145f37022cde1c6080185c505a4faf7d",
+          "git_blob_oid": "0d8984d4363915b23d5e485f994bb205a6d2180f"
+        },
+        {
+          "file": "src/native_pinned_resource.h",
+          "sha256": "d28f54c76a078a02904af291ad1a78316737f72db0020a89065e490194cfc0ea",
+          "git_blob_oid": "153dd4bd08647232e77c3482ed9405ee9d471a5d"
+        },
+        {
+          "file": "src/native_post70.h",
+          "sha256": "f1cd4ed99a27ec161a60ea57567039377c9b8239a1aec54e7f18bc18079f6482",
+          "git_blob_oid": "ff829c59bb400a119d3e5ec38a2c753aaea75467"
+        },
+        {
+          "file": "src/native_pre_upscale.h",
+          "sha256": "ff026496588d9babadc9a4c0ce5e27f3f8598dae7e81865fabef3ffcb9bdf3db",
+          "git_blob_oid": "4c736a56f344047b82b7138b107c221d01370468"
+        },
+        {
+          "file": "src/native_preblock_runtime.h",
+          "sha256": "8191948535cba6848eed6090c94cd883186fa44bbe20cb3344e1691b8efd057a",
+          "git_blob_oid": "04e7f431892169fd74262be2db7e170cfa8db9cd"
+        },
+        {
+          "file": "src/native_pso.h",
+          "sha256": "3691b4000dceba5aa25ae8b1bd77c1c1fc3099371c528043f61504a29adbe40e",
+          "git_blob_oid": "97ccbf2b874f76784f3eacb05356cbf80868808b"
+        },
+        {
+          "file": "src/native_resident_table.h",
+          "sha256": "b8b788a79c7b01198fe2c5510f9b93d5133d88b3a22378aafe848280b456a295",
+          "git_blob_oid": "8caa7f3125b6ca75130901ba91036e536983c263"
+        },
+        {
+          "file": "src/native_rgb_reflect.h",
+          "sha256": "46bb3a24df5992a53c76ba2b61a2b8ecd6a52ed57d28e3229ef001301ac76be5",
+          "git_blob_oid": "17e6cfe505ac98d5b2fccae3b95ac2c107966913"
+        },
+        {
+          "file": "src/native_rgb_texture.h",
+          "sha256": "591725d38ccf49fc7eb2176868a58d4d5c338f2a5acb2a8f37b753a4d9c4ba01",
+          "git_blob_oid": "b3a93aa16e88b40ae784e7adafe2d1a18108a581"
+        },
+        {
+          "file": "src/native_runtime_shifts.h",
+          "sha256": "654b46f2ee38b2d663401a651241ce7ea2f14b821900035a7ea8838efbb6a32d",
+          "git_blob_oid": "99c15976dc7d1a4d4501c18975380e2ff53e59e0"
+        },
+        {
+          "file": "src/native_shader_cache.h",
+          "sha256": "07520bd5042a2f22ef4ab8b6a29a914137a272845ef138328b8678b980c13234",
+          "git_blob_oid": "f1bc8a7935e760c76ba6d38ddd1a867c110ad9cb"
+        },
+        {
+          "file": "src/native_snapshot_gate.h",
+          "sha256": "880ca6f68d5ac84854ae4a0d97bd7549aec59632dbbe55eabf732dd02cbe1878",
+          "git_blob_oid": "a462d00efe6ecf7fed9d78efd6a14a3f1c33d484"
+        },
+        {
+          "file": "src/native_split.h",
+          "sha256": "ae08c421efa3ab0c1c24ee0723660896bf2b0917bb25f74fcdd86df3fb6d4d01",
+          "git_blob_oid": "b642bd0d4a41a3a1461185b91f556ccef59d0825"
+        },
+        {
+          "file": "src/native_split_window.h",
+          "sha256": "b0bd7db3aef54149607c8a5525200b88c06077d885765041b51799b10d45027d",
+          "git_blob_oid": "31249ad852e37b31c43bbef616e47eb8ea3f3fdd"
+        },
+        {
+          "file": "src/native_submission_order_probe.cpp",
+          "sha256": "004bcd1f8e630971552221677a201bac3877aeb0744860ecd896a1c4b618ee34",
+          "git_blob_oid": "3f9409b1e10e4c17a712ddea687b633c673911c8"
+        },
+        {
+          "file": "src/native_submitted_readback.h",
+          "sha256": "98a79675df2a84a643974d7df5f9455b2d6d32cf76d47e1b86f0fade32b8400c",
+          "git_blob_oid": "d788bf4cc33fff3117c1a2a1c60282d742cebb1a"
+        },
+        {
+          "file": "src/native_temporal_coordinates.h",
+          "sha256": "aafea90be5f3fc48d1487afd380322c5bc9fca533fd3ae96fce2d09854442906",
+          "git_blob_oid": "b726b51c303619af3e49a1a1e5fa0341005a35b8"
+        },
+        {
+          "file": "src/native_temporal_feed.h",
+          "sha256": "7bf3cd3ae4335eb2fa4b0d2fac0089b36a3e4bffd42f1a5aa6915413adec2a35",
+          "git_blob_oid": "db02162ee2b1b3bdcfdfc5dca51d5e5893ff4cfe"
+        },
+        {
+          "file": "src/native_temporal_sample.h",
+          "sha256": "7b56165714d16011142b0789d3d531ab156128e1b54ea38a5858966e6c92c9da",
+          "git_blob_oid": "f92a6c61b00d474082226733eee852a819d49c54"
+        },
+        {
+          "file": "src/native_text_overlay.h",
+          "sha256": "c60b849230c83b96c8e6b1bf31b10854f5efaba74eee8ab7dc1eec9a05f536bf",
+          "git_blob_oid": "29b165b833027a8afbebcfc48b3d556730bdd683"
+        },
+        {
+          "file": "src/native_vit_attention.h",
+          "sha256": "6a97ae71046a194e335049098aca9c9dfba49fb4f47c65a92a7fe53c0435d221",
+          "git_blob_oid": "6081734ce433b3c2d3d2a9d5d282b7ff3baa58e0"
+        },
+        {
+          "file": "src/native_vit_block.h",
+          "sha256": "ad5af136c0c6ff9518c88456a7a11a361181233ba2d4a99076703126f1523b78",
+          "git_blob_oid": "4d03d1f1e7e45b19bb2b6b10f18dd60cba7a0eba"
+        },
+        {
+          "file": "src/native_vit_gather.h",
+          "sha256": "b725adf174d27e862e15fdba69944b15bc411fb9446442bfff4cea7dcec363bb",
+          "git_blob_oid": "b4ee018ccdf4d00bea40b027481a7f4a87f3b8e3"
+        },
+        {
+          "file": "src/native_vit_linear.h",
+          "sha256": "9fdb6f6c012eff17518686609b3adb38c8347eaf59378e47a8a13c207b967588",
+          "git_blob_oid": "a0a034606d4f6f36c14c1887eb8c616776cc0212"
+        },
+        {
+          "file": "src/native_vit_qkv.h",
+          "sha256": "fc1679c1d52517ab4ff53225c63ae25500967fe9022be8eefc4d95ae0e6fd39d",
+          "git_blob_oid": "33063fd5de5bc34167a90030fc4a578cea8fa1c2"
+        },
+        {
+          "file": "src/native_vram_log.h",
+          "sha256": "96290ed274c124c4d5d4c26ea0881ce3af8679da829d06fb4933ccfffb306cda",
+          "git_blob_oid": "c287b03f9762726c72d6ba06473ba1ea31333a2e"
+        }
+      ]
+    },
+    "linux_prebuild_script_tracked_at_commit": true,
+    "linux_prebuild_script_worktree_file_present": false,
+    "checkout": "${EXPERIMENTS_E}/cyberpunk-opt/amd-20261003-current720-reanalysis/upstream",
+    "scope_note": "源代码构建配方与host路径；没有核验AMD发布包/本机安装二进制。工作树行内容与指定Git blob一致，仅CRLF差异。"
+  },
+  "write_scope": "${WORKSPACE}/cyberpunk-b580-nr-opt/artifacts/b580-full-implementation-v1-20261003/reviews/amd-resolution-compilation-v1",
+  "method": {
+    "read_only_source_analysis": true,
+    "executed_tools": [
+      "rg/read-only file reads",
+      "git --no-optional-locks rev-parse/config/ls-tree/cat-file/show",
+      "stdlib Python for identity and report self-check",
+      "JavaScript for integer formula evaluation"
+    ],
+    "source_imports": false,
+    "compiler_executed": false,
+    "torch_imported": false,
+    "triton_imported": false,
+    "gpu_executed": false,
+    "model_executed": false,
+    "game_executed": false,
+    "clone_or_production_changed": false,
+    "other_workers_or_gpu_locks_polled": false
+  },
+  "verdict": {
+    "per_input_resolution_hip_source_compile_required": false,
+    "qualification": "标准配方已有所需kernel entry、同一架构/数值/通道合同、几何满足对应host和kernel准入时。外围HLSL cache miss可独立编译。",
+    "build_unit": "architecture × kernel recipe; width/height/stride/tokens are host and kernel runtime parameters",
+    "fixed_tiers_share_modules": true,
+    "free_dynamic_geometry_exists_at_commit": true,
+    "free_dynamic_geometry_default_on": false,
+    "unbounded_arbitrary_geometry_supported": false,
+    "gpu_or_game_validation": "not performed; geometry and lifecycle behavior is code inference",
+    "evidence_refs": [
+      "build_arch",
+      "build_recipe",
+      "build_emit",
+      "channels",
+      "vit_heads",
+      "net_admission",
+      "net_modules",
+      "free_geometry",
+      "input_shader_compile",
+      "shader_cache"
+    ]
+  },
+  "specialization_dimensions": [
+    {
+      "axis": "GPU architecture",
+      "compile_time": true,
+      "filename_dimension": "gfx1200/gfx1201 directory",
+      "runtime_selection": "D3D12Bridge::Create strips gcnArchName feature suffix, selects architecture directory; no source compile",
+      "refs": [
+        "build_arch",
+        "bridge_arch"
+      ]
+    },
+    {
+      "axis": "precision/rounding/layout/tile",
+      "compile_time": true,
+      "macro_examples": [
+        "HIP_ISA_HALF 1",
+        "HIP_PREPACKED_WEIGHTS 1",
+        "HIP_FP8_SAT_MODE 3",
+        "HIP_VIT_ATTN_NATIVE_HALF 1",
+        "CW_FAST_NUM 3",
+        "W2_FAST_NUM 3",
+        "HIP_C32_RTZ_ISA 2"
+      ],
+      "filename_examples": [
+        "deep_fast-packed.hsaco",
+        "c32-wave1-fast.hsaco",
+        "c32-wave1-rtz.hsaco"
+      ],
+      "refs": [
+        "build_recipe",
+        "build_emit",
+        "net_modules"
+      ]
+    },
+    {
+      "axis": "channel/head network structure",
+      "compile_time": "specialized C64/C128/C256 template exports coexist with runtime-channel kernels; fixed network blocks/ViT32heads",
+      "parameters_not_image_shape": [
+        "MH heads=channels/32",
+        "ViT heads=32, features=1024, head_dim=32"
+      ],
+      "refs": [
+        "channels",
+        "heads",
+        "vit_heads"
+      ]
+    },
+    {
+      "axis": "image width/height/work stride/tokens",
+      "compile_time": "not default HIP recipe generation axes",
+      "runtime_arguments": [
+        "w",
+        "h",
+        "ww",
+        "hh",
+        "sx",
+        "sy",
+        "tokens",
+        "decoder iw/ih/ow/oh"
+      ],
+      "filename_contains_image_resolution": false,
+      "exception": "dimension can select already-precompiled entry/RTZ variant; free RGB HLSL padded height is a macro",
+      "refs": [
+        "channels",
+        "net_dimensions",
+        "vit_exports",
+        "net_modules",
+        "input_shader_compile"
+      ]
+    },
+    {
+      "axis": "weight values",
+      "compile_time": false,
+      "runtime": "read .f32 → CPU pack/layout conversion → upload, cache keyed by filename/layout in Network instance",
+      "refs": [
+        "weights"
+      ]
+    }
+  ],
+  "build_recipe_summary": {
+    "module_count_per_architecture": 34,
+    "default_architectures": [
+      "gfx1200",
+      "gfx1201"
+    ],
+    "potential_full_default_output_files": 68,
+    "meaning": "static recipe count, not a build run or installed-module count",
+    "naming": "<target>/<module>.hsaco; single-target PowerShell invocation outputs that target in OutputDir directly",
+    "normal_compiler": "rtc_compile.exe ... comgr <target>",
+    "optional_build_routes": [
+      "offline hiprtc mode in rtc_compile.cpp; normal recipe selects COMGR",
+      "-RowOpts may copy prebuilt LLVM23 module; compile-modules.py invokes clang/ld.lld offline"
+    ],
+    "host_builds": "one addon --hip / one Runtime dll; W/H not build arguments",
+    "refs": [
+      "build_arch",
+      "build_recipe",
+      "build_emit",
+      "build_compiler",
+      "build_llvm",
+      "build_host",
+      "build_host_cmd",
+      "build_runtime"
+    ]
+  },
+  "actual_call_chains": [
+    {
+      "route": "regular HIP pre-upscale",
+      "entry": "NativePreUpscale::Process",
+      "chain": [
+        "NativeGameOneShot::OnSubmitted",
+        "NativeGameOneShot::Initialize",
+        "NativeGameFrame::Create",
+        "NativeResolveNetworkGeometry",
+        "NativeGameCodec::Create / NativeGameRgbInput::Create",
+        "NativeHipNetwork::Create",
+        "hip_reference::D3D12Bridge::Create",
+        "hip_reference::Network::Network / Network::Enqueue / Network::RunGraph"
+      ],
+      "conditions": [
+        "addon built with DLSS5_USE_HIP",
+        "Mode()==1; accepted source geometry/format; oneshot not bypassed"
+      ],
+      "tracked_template": {
+        "DLSS5_NETWORK_HEIGHT": "auto",
+        "DLSS5_NETWORK_FREE_RES": 0,
+        "DLSS5_PRE_UPSCALE": 1,
+        "DLSS5_HIP_GRAPH": 0
+      },
+      "temporal": "OnSubmitted forces reset=true, so regular prototype does not sample actual motion/history",
+      "resize": "ResetForNewSession deletes frame; next submission starts background init; load existing hsaco, size resource reuse/allocation and first-use weight pack; conditional HLSL compilation",
+      "refs": [
+        "regular_entry",
+        "regular_create",
+        "regular_reset",
+        "frame_create",
+        "hip_host",
+        "bridge_arch",
+        "regular_defaults",
+        "regular_graph_default"
+      ]
+    },
+    {
+      "route": "standalone LmxxfNrRuntime",
+      "entry": "PrepareFrame",
+      "chain": [
+        "NativeResolveNetworkGeometry(info->color_width,color_height)",
+        "RuntimeOptions(processingW,processingH)",
+        "D3D12Bridge::Create",
+        "codec chain preparation; resize drains and tears down old chain"
+      ],
+      "conditions": [
+        "queue/device/modules validated",
+        "graph must stay off"
+      ],
+      "geometry_default": "sets HEIGHT=auto if unset; free still has priority",
+      "refs": [
+        "runtime_prepare",
+        "runtime_resize"
+      ]
+    },
+    {
+      "route": "offline HIP reference_network",
+      "entry": "main",
+      "geometry": "explicit enum CLI --720(1280x768), --900(1600x1024 historical), --960(1600x960), --1080(1920x1152); default Options512x512; no generic width/height CLI",
+      "modules": "same kernel modules; fixture ABI/CLI restrict geometry despite dynamic core support",
+      "refs": [
+        "offline_hip",
+        "net_admission"
+      ]
+    },
+    {
+      "route": "old native DX12 fixture",
+      "entry": "d3d12_native_network70_test.cpp::wmain / NativeActualNetwork70::Create",
+      "geometry": "hardcoded 1920x1080 external and1920x1152 oracle; old gather64/240/400/640; linear has further whitelist",
+      "free_route_supported": false,
+      "compilation": "runtime D3DCompileFromFile / HLSL bytecode loads; separate historical offline dxc script",
+      "refs": [
+        "offline_native",
+        "legacy_gather",
+        "legacy_linear",
+        "legacy_shader_compile",
+        "offline_dxc",
+        "free_config_scope"
+      ]
+    }
+  ],
+  "compile_stage_distinction": [
+    {
+      "stage": "HIP source compile/link",
+      "when": "offline build only in traced chain",
+      "api": "COMGR actions / optional hiprtc / Clang+LLD",
+      "per_image_shape": false,
+      "refs": [
+        "build_compiler",
+        "build_llvm",
+        "build_emit"
+      ]
+    },
+    {
+      "stage": "HIP module selection/load",
+      "when": "Network construction including resize recreation",
+      "api": "Api::LoadModule reads hsaco → hipModuleLoadData",
+      "per_image_shape": "may reload or select existing variant; does not regenerate HIP source",
+      "refs": [
+        "api_load",
+        "net_modules",
+        "bridge_arch"
+      ]
+    },
+    {
+      "stage": "CPU weight packing/upload",
+      "when": "first use in new Network object",
+      "per_image_shape": "network recreation can repeat packing although keys are file/layout, not W/H",
+      "is_source_compilation": false,
+      "refs": [
+        "weights"
+      ]
+    },
+    {
+      "stage": "resource size/allocation/reuse",
+      "when": "new geometry",
+      "api": "buffer sizes derived from processing pixels; shared resource path may reuse pooled assets",
+      "is_source_compilation": false,
+      "refs": [
+        "bridge_arch",
+        "codec_geometry"
+      ]
+    },
+    {
+      "stage": "graph warm/capture/instantiate/replay",
+      "when": "opt.graph; template graph0, Runtime requires off",
+      "is_source_compilation": false,
+      "refs": [
+        "graphs",
+        "regular_graph_default",
+        "runtime_prepare"
+      ]
+    },
+    {
+      "stage": "peripheral HLSL compile",
+      "when": "CompileNativeShader cache miss; free RGB padded height macro can make new key",
+      "api": "D3DCompile/D3DCompileFromFile cs_5_1; cached bytecode hit skips compile",
+      "network_hip_source_compilation": false,
+      "refs": [
+        "input_shader_compile",
+        "shader_cache"
+      ]
+    },
+    {
+      "stage": "driver module/PSO internal preparation",
+      "when": "unknown; source exposes module load/PSO creation but not driver implementation",
+      "observed": false,
+      "is_per_resolution_model_source_compile": "not established; do not label lazy load/link or driver preparation as model source recompile",
+      "refs": [
+        "api_load",
+        "input_shader_compile"
+      ]
+    }
+  ],
+  "geometry_rules": {
+    "normal_auto": {
+      "selection": "Near compares w*10<=tierW*11 and h*10<=tierH*11;720 first,900 next,1080 last",
+      "fixed_planes": [
+        {
+          "height_flag": "720",
+          "valid": [
+            1280,
+            720
+          ],
+          "processing": [
+            1280,
+            768
+          ]
+        },
+        {
+          "height_flag": "900/900s",
+          "valid": [
+            1600,
+            900
+          ],
+          "processing": [
+            1600,
+            960
+          ]
+        },
+        {
+          "height_flag": "1080",
+          "valid": [
+            1920,
+            1080
+          ],
+          "processing": [
+            1920,
+            1152
+          ]
+        }
+      ],
+      "legacy_or_optional": [
+        "900w->1600x1024",
+        "1088/1080_ROWS1088->1920x1088"
+      ],
+      "unset_height_without_template": "1080 (or optional1088); cannot infer auto from unconfigured source default",
+      "adaptation": "centered aspect fit, rounded integer viewport, bilinear sampling, viewport outside zeroed; decoder external output retains original input W/H",
+      "normal_input_limit": {
+        "max_width": 2560,
+        "max_height": 1080,
+        "max_pixels": 2073600
+      },
+      "refs": [
+        "fixed_geometry",
+        "resolve_geometry",
+        "input_geometry",
+        "codec_fit",
+        "codec_geometry"
+      ]
+    },
+    "free": {
+      "flag": "DLSS5_NETWORK_FREE_RES=1",
+      "default": 0,
+      "scope": "HIP addon/Runtime only",
+      "priority": "NativeResolveNetworkGeometry takes FreeFits before reading HEIGHT",
+      "external_min_axis": 320,
+      "external_and_processing_max_axis": 8192,
+      "processing_max_pixels": 8355840,
+      "pad_multiple": 64,
+      "double_256_rule": "if both padded dimensions divisible by256, add64 width by default",
+      "height_exception": "1088 padded rows becomes1152",
+      "valid": "paddedWidth × externalInputHeight",
+      "processing": "paddedWidth × paddedHeight",
+      "vit": "ceil each processing axis/64 to multiple4;1600x960/1024 preserves25x16",
+      "mirroring": "external1:1 at top-left; encoder reflects right columns; RGB reflects bottom rows",
+      "outside_free_fits": "falls back to fixed selection; NativeAdmitLargeInput includes FREE_RES, so actual host further limits external axes to16384; not unlimited",
+      "diagnostic_overrides": "FREE_PAD requires multiples64,>=input, within single mirror; EXTRA=w|h|0 changes extra axis",
+      "same_as_fixed_guarantee": "geometry same for1600x900/1920x1080 under default flags; no independent output validation; free1280x720 differs",
+      "refs": [
+        "free_geometry",
+        "resolve_geometry",
+        "input_geometry",
+        "codec_fit",
+        "rgb_padding",
+        "free_config_scope"
+      ]
+    },
+    "examples": [
+      {
+        "input": [
+          1280,
+          720
+        ],
+        "evaluation": "CPU integer formula evaluation, not execution of upstream C++/GPU",
+        "fixed_auto": {
+          "tier_height": 720,
+          "valid": [
+            1280,
+            720
+          ],
+          "processing": [
+            1280,
+            768
+          ],
+          "fit": [
+            1280,
+            720
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "vit_grid": [
+            20,
+            12
+          ],
+          "hip_source_compile_required_for_geometry": false
+        },
+        "free_default": {
+          "free_fits": true,
+          "valid": [
+            1344,
+            720
+          ],
+          "processing": [
+            1344,
+            768
+          ],
+          "fit": [
+            1280,
+            720
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "vit_grid": [
+            24,
+            12
+          ],
+          "hip_source_compile_required_for_geometry": false,
+          "per_height_hlsl_cache_key": true
+        }
+      },
+      {
+        "input": [
+          1600,
+          900
+        ],
+        "evaluation": "CPU integer formula evaluation, not execution of upstream C++/GPU",
+        "fixed_auto": {
+          "tier_height": 900,
+          "valid": [
+            1600,
+            900
+          ],
+          "processing": [
+            1600,
+            960
+          ],
+          "fit": [
+            1600,
+            900
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "vit_grid": [
+            25,
+            16
+          ],
+          "hip_source_compile_required_for_geometry": false
+        },
+        "free_default": {
+          "free_fits": true,
+          "valid": [
+            1600,
+            900
+          ],
+          "processing": [
+            1600,
+            960
+          ],
+          "fit": [
+            1600,
+            900
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "vit_grid": [
+            25,
+            16
+          ],
+          "hip_source_compile_required_for_geometry": false,
+          "per_height_hlsl_cache_key": true
+        }
+      },
+      {
+        "input": [
+          1920,
+          1080
+        ],
+        "evaluation": "CPU integer formula evaluation, not execution of upstream C++/GPU",
+        "fixed_auto": {
+          "tier_height": 1080,
+          "valid": [
+            1920,
+            1080
+          ],
+          "processing": [
+            1920,
+            1152
+          ],
+          "fit": [
+            1920,
+            1080
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "vit_grid": [
+            32,
+            20
+          ],
+          "hip_source_compile_required_for_geometry": false
+        },
+        "free_default": {
+          "free_fits": true,
+          "valid": [
+            1920,
+            1080
+          ],
+          "processing": [
+            1920,
+            1152
+          ],
+          "fit": [
+            1920,
+            1080
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "vit_grid": [
+            32,
+            20
+          ],
+          "hip_source_compile_required_for_geometry": false,
+          "per_height_hlsl_cache_key": true
+        }
+      },
+      {
+        "input": [
+          854,
+          480
+        ],
+        "evaluation": "CPU integer formula evaluation, not execution of upstream C++/GPU",
+        "fixed_auto": {
+          "tier_height": 720,
+          "valid": [
+            1280,
+            720
+          ],
+          "processing": [
+            1280,
+            768
+          ],
+          "fit": [
+            1280,
+            719
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "vit_grid": [
+            20,
+            12
+          ],
+          "hip_source_compile_required_for_geometry": false
+        },
+        "free_default": {
+          "free_fits": true,
+          "valid": [
+            896,
+            480
+          ],
+          "processing": [
+            896,
+            512
+          ],
+          "fit": [
+            854,
+            480
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "vit_grid": [
+            16,
+            8
+          ],
+          "hip_source_compile_required_for_geometry": false,
+          "per_height_hlsl_cache_key": true
+        }
+      },
+      {
+        "input": [
+          960,
+          540
+        ],
+        "evaluation": "CPU integer formula evaluation, not execution of upstream C++/GPU",
+        "fixed_auto": {
+          "tier_height": 720,
+          "valid": [
+            1280,
+            720
+          ],
+          "processing": [
+            1280,
+            768
+          ],
+          "fit": [
+            1280,
+            720
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "vit_grid": [
+            20,
+            12
+          ],
+          "hip_source_compile_required_for_geometry": false
+        },
+        "free_default": {
+          "free_fits": true,
+          "valid": [
+            960,
+            540
+          ],
+          "processing": [
+            960,
+            576
+          ],
+          "fit": [
+            960,
+            540
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "vit_grid": [
+            16,
+            12
+          ],
+          "hip_source_compile_required_for_geometry": false,
+          "per_height_hlsl_cache_key": true
+        }
+      }
+    ]
+  },
+  "new_shape_decisions": [
+    {
+      "requested": "854x480 external input",
+      "free": true,
+      "processing": [
+        896,
+        512
+      ],
+      "vit_grid": [
+        16,
+        8
+      ],
+      "new_hip_module_build_required": false,
+      "change": "enable existing FREE_RES at network initialization",
+      "gpu_qualified": false,
+      "refs": [
+        "free_geometry",
+        "input_geometry",
+        "net_admission",
+        "net_vit_dispatch"
+      ]
+    },
+    {
+      "requested": "960x540 external input",
+      "free": true,
+      "processing": [
+        960,
+        576
+      ],
+      "vit_grid": [
+        16,
+        12
+      ],
+      "new_hip_module_build_required": false,
+      "change": "enable existing FREE_RES at network initialization",
+      "gpu_qualified": false,
+      "refs": [
+        "free_geometry",
+        "input_geometry",
+        "net_admission",
+        "net_vit_dispatch"
+      ]
+    },
+    {
+      "requested": "NETWORK_HEIGHT=480/540 named fixed preset",
+      "supported": false,
+      "condition": "fixed tier parser route; free valid input bypasses HEIGHT parsing",
+      "required": "change C++ geometry/flag/consumer contracts and rebuild host; HIP rebuild not implied merely by W/H if existing runtime kernel family can accept new aligned geometry",
+      "refs": [
+        "resolve_geometry",
+        "input_geometry",
+        "net_admission"
+      ]
+    },
+    {
+      "requested": "exact unpadded854x480/960x540 processing W/H",
+      "supported": false,
+      "reason": "not multiples64; direct Network geometry admission fails (not a recognized tier)",
+      "required": "source algorithm/guard/tail-layout changes and rebuild/requalification, or use current pad rule",
+      "refs": [
+        "net_admission",
+        "free_geometry"
+      ]
+    }
+  ],
+  "borrowable_design": {
+    "inference": true,
+    "items": [
+      "AOT finite kernels per architecture/numeric/layout/channel/head/tile; runtime W/H/stride/tokens and bounded tail handling",
+      "dispatch/entry variants inside same modules; avoid putting image size in module filename or standard build-loop axes",
+      "geometry-specific resource and graph preparation are separate cache lifecycles from compiled kernels",
+      "weights cached by source/layout rather than treating values as per-shape generated code",
+      "replace peripheral HLSL geometry macros with runtime constants if ABI/quality/capture contracts permit"
+    ],
+    "not_automatic": [
+      "our existing shape-constexpr kernels would need implementation changes, not only configuration",
+      "retain guards and motion/history/control/format contracts",
+      "validate affected numeric outputs and each admitted geometry on GPU before qualification"
+    ],
+    "measured_performance_gain": null
+  },
+  "unknowns": [
+    "No GPU/game execution: actual resize stability, new854/960 quality and timings are unmeasured.",
+    "No installed AMD package binary pin verification: presence of latest optional entry in any deployed package not asserted.",
+    "Driver internals (first module load/PSO finalization) not available in this source audit.",
+    "Current B580 sources/manifests/guards were not changed; no compatibility or speed gain for ours claimed."
+  ],
+  "source_refs": [
+    {
+      "id": "build_arch",
+      "file": "hip/build-modules.ps1",
+      "line_start": 1,
+      "line_end": 10,
+      "symbol": "param",
+      "github_blob_url": "https://github.com/lmxxf/dlss5-on-amd-9070xt-porting/blob/9ec741522d267c4d2365af53081716fb2943068a/hip/build-modules.ps1#L1-L10",
+      "note": "默认 gfx1200/gfx1201；没有输入 W/H 参数。"
+    },
+    {
+      "id": "build_recipe",
+      "file": "hip/build-modules.ps1",
+      "line_start": 38,
+      "line_end": 75,
+      "symbol": "$modules",
+      "github_blob_url": "https://github.com/lmxxf/dlss5-on-amd-9070xt-porting/blob/9ec741522d267c4d2365af53081716fb2943068a/hip/build-modules.ps1#L38-L75",
+      "note": "实际34个配方；文件按kernel/数值/布局变体命名，没有按720/900/1080网络各生成整套。"
+    },
+    {
+      "id": "build_emit",
+      "file": "hip/build-modules.ps1",
+      "line_start": 77,
+      "line_end": 116,
+      "symbol": "foreach target/module",
+      "github_blob_url": "https://github.com/lmxxf/dlss5-on-amd-9070xt-porting/blob/9ec741522d267c4d2365af53081716fb2943068a/hip/build-modules.ps1#L77-L116",
+      "note": "HIP_ISA_HALF、packed/row宏；产物<target>/<name>.hsaco；默认离线COMGR，RowOpts可复制LLVM23预构建。"
+    },
+    {
+      "id": "build_compiler",
+      "file": "hip/rtc_compile.cpp",
+      "line_start": 19,
+      "line_end": 32,
+      "symbol": "rtc / comgr / main",
+      "github_blob_url": "https://github.com/lmxxf/dlss5-on-amd-9070xt-porting/blob/9ec741522d267c4d2365af53081716fb2943068a/hip/rtc_compile.cpp#L19-L32",
+      "note": "离线工具可调用hiprtc；配方指定comgr执行编译/链接。"
+    },
+    {
+      "id": "build_llvm",
+      "file": "Development/tools/llvm-fork/compile-modules.py",
+      "line_start": 79,
+      "line_end": 107,
+      "symbol": "compile_one",
+      "github_blob_url": "https://github.com/lmxxf/dlss5-on-amd-9070xt-porting/blob/9ec741522d267c4d2365af53081716fb2943068a/Development/tools/llvm-fork/compile-modules.py#L79-L107",
+      "note": "离线Clang设备编译及LLD链接；按target/name，无宽高循环；只读本地git blob，因为worktree缺该路径。"
+    },
+    {
+      "id": "build_host",
+      "file": "scripts/build-addon.sh",
+      "line_start": 11,
+      "line_end": 15,
+      "symbol": "probe_defines",
+      "github_blob_url": "https://github.com/lmxxf/dlss5-on-amd-9070xt-porting/blob/9ec741522d267c4d2365af53081716fb2943068a/scripts/build-addon.sh#L11-L15",
+      "note": "--hip编进DLSS5_USE_HIP；不是每个分辨率编一个addon。"
+    },
+    {
+      "id": "build_host_cmd",
+      "file": "scripts/build-addon.sh",
+      "line_start": 38,
+      "line_end": 41,
+      "symbol": "probe_cxx invocation",
+      "github_blob_url": "https://github.com/lmxxf/dlss5-on-amd-9070xt-porting/blob/9ec741522d267c4d2365af53081716fb2943068a/scripts/build-addon.sh#L38-L41",
+      "note": "固定C++插件构建，无W/H宏。"
+    },
+    {
+      "id": "build_runtime",
+      "file": "scripts/build-runtime.sh",
+      "line_start": 4,
+      "line_end": 9,
+      "symbol": "CXX invocation",
+      "github_blob_url": "https://github.com/lmxxf/dlss5-on-amd-9070xt-porting/blob/9ec741522d267c4d2365af53081716fb2943068a/scripts/build-runtime.sh#L4-L9",
+      "note": "固定LmxxfNrRuntime.dll构建，无输入宽高宏。"
+    },
+    {
+      "id": "channels",
+      "file": "hip/wave_owned_mh.inc",
+      "line_start": 770,
+      "line_end": 783,
+      "symbol": "W2_KERNEL",
+      "github_blob_url": "https://github.com/lmxxf/dlss5-on-amd-9070xt-porting/blob/9ec741522d267c4d2365af53081716fb2943068a/hip/wave_owned_mh.inc#L770-L783",
+      "note": "C64/C128/C256与BI/BO为编译实例，w/h/ww/hh/sx/sy/post为运行参数。"
+    },
+    {
+      "id": "heads",
+      "file": "hip/multihead_fast_padded.hip",
+      "line_start": 297,
+      "line_end": 312,
+      "symbol": "mh qkv/attention kernels",
+      "github_blob_url": "https://github.com/lmxxf/dlss5-on-amd-9070xt-porting/blob/9ec741522d267c4d2365af53081716fb2943068a/hip/multihead_fast_padded.hip#L297-L312",
+      "note": "MH头数由channels/32；同一模块提供多个通道路径。"
+    },
+    {
+      "id": "vit_heads",
+      "file": "hip/deep_fast.hip",
+      "line_start": 362,
+      "line_end": 381,
+      "symbol": "vit_attention_fused_body",
+      "github_blob_url": "https://github.com/lmxxf/dlss5-on-amd-9070xt-porting/blob/9ec741522d267c4d2365af53081716fb2943068a/hip/deep_fast.hip#L362-L381",
+      "note": "ViT固定32头、1024特征，tokens运行参数，key<tokens分块循环；MAXT名称不能直接当硬上限。"
+    },
+    {
+      "id": "vit_exports",
+      "file": "hip/deep_fast.hip",
+      "line_start": 410,
+      "line_end": 415,
+      "symbol": "vit_attention_fused_{256,400,640}",
+      "github_blob_url": "https://github.com/lmxxf/dlss5-on-amd-9070xt-porting/blob/9ec741522d267c4d2365af53081716fb2943068a/hip/deep_fast.hip#L410-L415",
+      "note": "几个预编译entry同在deep模块内，不是各分辨率模型模块。"
+    },
+    {
+      "id": "net_admission",
+      "file": "Development/HIP/hip_reference_network.h",
+      "line_start": 159,
+      "line_end": 167,
+      "symbol": "TierGeometry / FreeGeometry",
+      "github_blob_url": "https://github.com/lmxxf/dlss5-on-amd-9070xt-porting/blob/9ec741522d267c4d2365af53081716fb2943068a/Development/HIP/hip_reference_network.h#L159-L167",
+      "note": "固定tier及非tier的64倍数320..8192；free_geometry取消640 token host上限。"
+    },
+    {
+      "id": "net_modules",
+      "file": "Development/HIP/hip_reference_network.h",
+      "line_start": 657,
+      "line_end": 681,
+      "symbol": "Network::Network",
+      "github_blob_url": "https://github.com/lmxxf/dlss5-on-amd-9070xt-porting/blob/9ec741522d267c4d2365af53081716fb2943068a/Development/HIP/hip_reference_network.h#L657-L681",
+      "note": "保存W/H，准入后加载现有模块；1080 RTZ仅选择已存在c32-wave1-rtz。"
+    },
+    {
+      "id": "net_vit_dispatch",
+      "file": "Development/HIP/hip_reference_network.h",
+      "line_start": 620,
+      "line_end": 628,
+      "symbol": "Network::Vit",
+      "github_blob_url": "https://github.com/lmxxf/dlss5-on-amd-9070xt-porting/blob/9ec741522d267c4d2365af53081716fb2943068a/Development/HIP/hip_reference_network.h#L620-L628",
+      "note": "n%16；非free n>640受限；按n选择预编译attention entry。"
+    },
+    {
+      "id": "net_dimensions",
+      "file": "Development/HIP/hip_reference_network.h",
+      "line_start": 707,
+      "line_end": 713,
+      "symbol": "Network::RunGraph",
+      "github_blob_url": "https://github.com/lmxxf/dlss5-on-amd-9070xt-porting/blob/9ec741522d267c4d2365af53081716fb2943068a/Development/HIP/hip_reference_network.h#L707-L713",
+      "note": "逐层运行W/32 H/32，freegrid轴向向上取4，tokens随输入几何。"
+    },
+    {
+      "id": "weights",
+      "file": "Development/HIP/hip_reference_network.h",
+      "line_start": 256,
+      "line_end": 278,
+      "symbol": "Weight / PackedMhWeight",
+      "github_blob_url": "https://github.com/lmxxf/dlss5-on-amd-9070xt-porting/blob/9ec741522d267c4d2365af53081716fb2943068a/Development/HIP/hip_reference_network.h#L256-L278",
+      "note": "读.f32并按文件/布局cache，在CPU打包后上传；不是编译weights进代码。"
+    },
+    {
+      "id": "graphs",
+      "file": "Development/HIP/hip_reference_network.h",
+      "line_start": 749,
+      "line_end": 767,
+      "symbol": "Network::Enqueue",
+      "github_blob_url": "https://github.com/lmxxf/dlss5-on-amd-9070xt-porting/blob/9ec741522d267c4d2365af53081716fb2943068a/Development/HIP/hip_reference_network.h#L749-L767",
+      "note": "先warm，然后Capture/Instantiate，再Replay；重建graph不是源码编译。"
+    },
+    {
+      "id": "api_load",
+      "file": "Development/HIP/hip_api.h",
+      "line_start": 35,
+      "line_end": 77,
+      "symbol": "Api / Api::LoadModule",
+      "github_blob_url": "https://github.com/lmxxf/dlss5-on-amd-9070xt-porting/blob/9ec741522d267c4d2365af53081716fb2943068a/Development/HIP/hip_api.h#L35-L77",
+      "note": "运行时HIP API无RTC，读hsaco bytes->hipModuleLoadData；图API另按需加载。"
+    },
+    {
+      "id": "bridge_arch",
+      "file": "Development/HIP/hip_d3d12_bridge.h",
+      "line_start": 195,
+      "line_end": 214,
+      "symbol": "D3D12Bridge::Create",
+      "github_blob_url": "https://github.com/lmxxf/dlss5-on-amd-9070xt-porting/blob/9ec741522d267c4d2365af53081716fb2943068a/Development/HIP/hip_d3d12_bridge.h#L195-L214",
+      "note": "匹配D3D adapter，取gcnArchName选择arch子目录；pixels决定共享buffer大小。"
+    },
+    {
+      "id": "hip_host",
+      "file": "src/native_hip_network.h",
+      "line_start": 14,
+      "line_end": 21,
+      "symbol": "NativeHipNetwork::Create",
+      "github_blob_url": "https://github.com/lmxxf/dlss5-on-amd-9070xt-porting/blob/9ec741522d267c4d2365af53081716fb2943068a/src/native_hip_network.h#L14-L21",
+      "note": "processing W/H进入Options，modules目录及数值flag进入bridge。"
+    },
+    {
+      "id": "fixed_geometry",
+      "file": "src/native_network_geometry.h",
+      "line_start": 14,
+      "line_end": 30,
+      "symbol": "FromHeight / Near",
+      "github_blob_url": "https://github.com/lmxxf/dlss5-on-amd-9070xt-porting/blob/9ec741522d267c4d2365af53081716fb2943068a/src/native_network_geometry.h#L14-L30",
+      "note": "720->1280x768；900->1600x960；1080->1920x1152；旧900w/可选1088；auto实际10%容限。"
+    },
+    {
+      "id": "free_geometry",
+      "file": "src/native_network_geometry.h",
+      "line_start": 43,
+      "line_end": 64,
+      "symbol": "FreePad / FreeProcessing / FreeFits / Free",
+      "github_blob_url": "https://github.com/lmxxf/dlss5-on-amd-9070xt-porting/blob/9ec741522d267c4d2365af53081716fb2943068a/src/native_network_geometry.h#L43-L64",
+      "note": "64补边，320下限，8192轴上限，3840*2176像素上限；256双轴额外步长；1088->1152；ViT轴取4。"
+    },
+    {
+      "id": "resolve_geometry",
+      "file": "src/native_network_geometry.h",
+      "line_start": 79,
+      "line_end": 109,
+      "symbol": "NativeResolveNetworkGeometry / NativeNetworkHeightFlag",
+      "github_blob_url": "https://github.com/lmxxf/dlss5-on-amd-9070xt-porting/blob/9ec741522d267c4d2365af53081716fb2943068a/src/native_network_geometry.h#L79-L109",
+      "note": "FREE默认0，优先于HEIGHT；free不fit退tier；HEIGHT没有480/540项，unset默认1080。"
+    },
+    {
+      "id": "input_geometry",
+      "file": "src/native_input_geometry.h",
+      "line_start": 19,
+      "line_end": 37,
+      "symbol": "Supported / Make / RowPitch",
+      "github_blob_url": "https://github.com/lmxxf/dlss5-on-amd-9070xt-porting/blob/9ec741522d267c4d2365af53081716fb2943068a/src/native_input_geometry.h#L19-L37",
+      "note": "普通有限输入aspectfit居中，free顶左1:1；行距运行计算。"
+    },
+    {
+      "id": "codec_geometry",
+      "file": "src/native_game_codec.h",
+      "line_start": 61,
+      "line_end": 97,
+      "symbol": "NativeGameCodec::Create",
+      "github_blob_url": "https://github.com/lmxxf/dlss5-on-amd-9070xt-porting/blob/9ec741522d267c4d2365af53081716fb2943068a/src/native_game_codec.h#L61-L97",
+      "note": "创建network/input/输出geometry，codec按宏用CompileNativeShader，输出恢复外部输入尺寸。"
+    },
+    {
+      "id": "codec_fit",
+      "file": "shaders/native_codec_encode.hlsl",
+      "line_start": 40,
+      "line_end": 63,
+      "symbol": "ReadFitted / main",
+      "github_blob_url": "https://github.com/lmxxf/dlss5-on-amd-9070xt-porting/blob/9ec741522d267c4d2365af53081716fb2943068a/shaders/native_codec_encode.hlsl#L40-L63",
+      "note": "普通bilinear fit和viewport外清零；free右列镜像。"
+    },
+    {
+      "id": "rgb_padding",
+      "file": "shaders/native_game_rgb_input.hlsl",
+      "line_start": 10,
+      "line_end": 25,
+      "symbol": "main",
+      "github_blob_url": "https://github.com/lmxxf/dlss5-on-amd-9070xt-porting/blob/9ec741522d267c4d2365af53081716fb2943068a/shaders/native_game_rgb_input.hlsl#L10-L25",
+      "note": "从texture取W/H，底行镜像；free paddedH由宏传入。"
+    },
+    {
+      "id": "regular_defaults",
+      "file": "scripts/hip-game-flags.txt",
+      "line_start": 318,
+      "line_end": 326,
+      "symbol": "tracked configuration",
+      "github_blob_url": "https://github.com/lmxxf/dlss5-on-amd-9070xt-porting/blob/9ec741522d267c4d2365af53081716fb2943068a/scripts/hip-game-flags.txt#L318-L326",
+      "note": "HEIGHT=auto、FREE_RES=0。"
+    },
+    {
+      "id": "regular_entry",
+      "file": "src/native_pre_upscale.h",
+      "line_start": 204,
+      "line_end": 226,
+      "symbol": "NativePreUpscale::Process",
+      "github_blob_url": "https://github.com/lmxxf/dlss5-on-amd-9070xt-porting/blob/9ec741522d267c4d2365af53081716fb2943068a/src/native_pre_upscale.h#L204-L226",
+      "note": "render几何变更Reset；OnSubmitted强制reset=true；返回相同render尺寸给FSR。"
+    },
+    {
+      "id": "regular_create",
+      "file": "src/native_game_oneshot.h",
+      "line_start": 50,
+      "line_end": 81,
+      "symbol": "NativeGameOneShot::Initialize",
+      "github_blob_url": "https://github.com/lmxxf/dlss5-on-amd-9070xt-porting/blob/9ec741522d267c4d2365af53081716fb2943068a/src/native_game_oneshot.h#L50-L81",
+      "note": "后台应用真实flags、创建NativeGameFrame。"
+    },
+    {
+      "id": "regular_reset",
+      "file": "src/native_game_oneshot.h",
+      "line_start": 133,
+      "line_end": 165,
+      "symbol": "ResetForNewSession / OnSubmitted",
+      "github_blob_url": "https://github.com/lmxxf/dlss5-on-amd-9070xt-porting/blob/9ec741522d267c4d2365af53081716fb2943068a/src/native_game_oneshot.h#L133-L165",
+      "note": "几何改变delete frame，下一submitted帧重新初始化，无编译器调用。"
+    },
+    {
+      "id": "frame_create",
+      "file": "src/native_game_frame.h",
+      "line_start": 172,
+      "line_end": 227,
+      "symbol": "NativeGameFrame::Create",
+      "github_blob_url": "https://github.com/lmxxf/dlss5-on-amd-9070xt-porting/blob/9ec741522d267c4d2365af53081716fb2943068a/src/native_game_frame.h#L172-L227",
+      "note": "Resolve->codec/input->#ifdef HIP network桥；非HIP为旧NativeActualNetwork70。"
+    },
+    {
+      "id": "regular_graph_default",
+      "file": "scripts/hip-game-flags.txt",
+      "line_start": 413,
+      "line_end": 413,
+      "symbol": "tracked configuration",
+      "github_blob_url": "https://github.com/lmxxf/dlss5-on-amd-9070xt-porting/blob/9ec741522d267c4d2365af53081716fb2943068a/scripts/hip-game-flags.txt#L413",
+      "note": "HIP_GRAPH=0；切尺寸不必然Capture。"
+    },
+    {
+      "id": "free_config_scope",
+      "file": "scripts/CONFIGURATION.md",
+      "line_start": 61,
+      "line_end": 61,
+      "symbol": "DLSS5_NETWORK_FREE_RES documentation",
+      "github_blob_url": "https://github.com/lmxxf/dlss5-on-amd-9070xt-porting/blob/9ec741522d267c4d2365af53081716fb2943068a/scripts/CONFIGURATION.md#L61",
+      "note": "free仅HIP addon与RE9；读取于网络创建，配置不等于每帧热更新。"
+    },
+    {
+      "id": "input_shader_compile",
+      "file": "src/native_game_rgb_input.h",
+      "line_start": 43,
+      "line_end": 46,
+      "symbol": "NativeGameRgbInput::Create",
+      "github_blob_url": "https://github.com/lmxxf/dlss5-on-amd-9070xt-porting/blob/9ec741522d267c4d2365af53081716fb2943068a/src/native_game_rgb_input.h#L43-L46",
+      "note": "free路径NATIVE_RGB_PROCESSING_HEIGHT=processing_height进入HLSL cache键。"
+    },
+    {
+      "id": "shader_cache",
+      "file": "src/native_shader_cache.h",
+      "line_start": 32,
+      "line_end": 85,
+      "symbol": "CompileNativeShader",
+      "github_blob_url": "https://github.com/lmxxf/dlss5-on-amd-9070xt-porting/blob/9ec741522d267c4d2365af53081716fb2943068a/src/native_shader_cache.h#L32-L85",
+      "note": "源码+entry+宏+include cache；内存/磁盘命中不编译；miss D3DCompile(cs_5_1)，未知include fallback D3DCompileFromFile。"
+    },
+    {
+      "id": "runtime_prepare",
+      "file": "src/LmxxfNrRuntime.cpp",
+      "line_start": 981,
+      "line_end": 1003,
+      "symbol": "PrepareFrame",
+      "github_blob_url": "https://github.com/lmxxf/dlss5-on-amd-9070xt-porting/blob/9ec741522d267c4d2365af53081716fb2943068a/src/LmxxfNrRuntime.cpp#L981-L1003",
+      "note": "缺省HEIGHT=auto，真实color几何Resolved，懒创建bridge；此API明确graph必须off。"
+    },
+    {
+      "id": "runtime_resize",
+      "file": "src/LmxxfNrRuntime.cpp",
+      "line_start": 1140,
+      "line_end": 1202,
+      "symbol": "PrepareFrame geometry recreate",
+      "github_blob_url": "https://github.com/lmxxf/dlss5-on-amd-9070xt-porting/blob/9ec741522d267c4d2365af53081716fb2943068a/src/LmxxfNrRuntime.cpp#L1140-L1202",
+      "note": "drain+TeardownCodecChain；新geometry创建桥和codec资源，不调用HIP源码编译器。"
+    },
+    {
+      "id": "offline_hip",
+      "file": "Development/HIP/reference_network.cpp",
+      "line_start": 7,
+      "line_end": 11,
+      "symbol": "main",
+      "github_blob_url": "https://github.com/lmxxf/dlss5-on-amd-9070xt-porting/blob/9ec741522d267c4d2365af53081716fb2943068a/Development/HIP/reference_network.cpp#L7-L11",
+      "note": "CLI枚举--720/--900(旧1024)/--960/--1080；没通用--width/height，自带固定fixture route。"
+    },
+    {
+      "id": "offline_native",
+      "file": "src/d3d12_native_network70_test.cpp",
+      "line_start": 29,
+      "line_end": 59,
+      "symbol": "wmain",
+      "github_blob_url": "https://github.com/lmxxf/dlss5-on-amd-9070xt-porting/blob/9ec741522d267c4d2365af53081716fb2943068a/src/d3d12_native_network70_test.cpp#L29-L59",
+      "note": "旧DX12native fixture硬编码1920x1080输入/1920x1152 oracle。"
+    },
+    {
+      "id": "legacy_gather",
+      "file": "src/native_vit_gather.h",
+      "line_start": 29,
+      "line_end": 29,
+      "symbol": "NativeVitGather::Create",
+      "github_blob_url": "https://github.com/lmxxf/dlss5-on-amd-9070xt-porting/blob/9ec741522d267c4d2365af53081716fb2943068a/src/native_vit_gather.h#L29",
+      "note": "旧DX12gather支持64/240/400/640 tokens，不能假设free通用。"
+    },
+    {
+      "id": "legacy_linear",
+      "file": "src/native_vit_linear.h",
+      "line_start": 21,
+      "line_end": 30,
+      "symbol": "NativeVitLinear::Create",
+      "github_blob_url": "https://github.com/lmxxf/dlss5-on-amd-9070xt-porting/blob/9ec741522d267c4d2365af53081716fb2943068a/src/native_vit_linear.h#L21-L30",
+      "note": "旧DX12ViT/decoder有显式shape whitelist，128/192 tokens不能只改cfg。"
+    },
+    {
+      "id": "legacy_shader_compile",
+      "file": "src/native_c64_shift.h",
+      "line_start": 40,
+      "line_end": 42,
+      "symbol": "NativeC64Shift::Create",
+      "github_blob_url": "https://github.com/lmxxf/dlss5-on-amd-9070xt-porting/blob/9ec741522d267c4d2365af53081716fb2943068a/src/native_c64_shift.h#L40-L42",
+      "note": "旧DX12网络直接D3DCompileFromFile，非HIP AOT路径。"
+    },
+    {
+      "id": "offline_dxc",
+      "file": "scripts/compile-shaders.ps1",
+      "line_start": 1,
+      "line_end": 16,
+      "symbol": "script",
+      "github_blob_url": "https://github.com/lmxxf/dlss5-on-amd-9070xt-porting/blob/9ec741522d267c4d2365af53081716fb2943068a/scripts/compile-shaders.ps1#L1-L16",
+      "note": "另一路离线DX12 Shader Model6.10 dxc CompileOnly；不是普通HIP游戏切档的调用。"
+    }
+  ],
+  "cpu_self_check": {
+    "source_pin_verified": true,
+    "physical_sources": 38,
+    "physical_matches": "all CRLF-only differences to pinned Git blobs",
+    "git_blob_only_sources": 1,
+    "recipe_rows_counted": 34,
+    "source_ref_line_bounds_validated": true,
+    "formula_examples_count": 5,
+    "json_schema_and_output_hash_verification": "passed",
+    "checked_at_utc": "2026-10-03T12:38:35.908975+00:00",
+    "checks": {
+      "fixed_commit_and_sources": "passed",
+      "runtime_search_source_pins": "passed",
+      "source_ref_urls_and_line_bounds": "passed",
+      "report_citations_and_absolute_file_link": "passed",
+      "recipe_row_count": "passed",
+      "independent_integer_formula_examples": "passed",
+      "exclusive_output_scope_no_reparse_points": "passed"
+    },
+    "runtime_search_pins_verified": 59,
+    "report_citation_count": 35,
+    "gpu_executed": false,
+    "model_or_compiler_executed": false,
+    "scope_note": "Source/static-provenance self-check only. No C++/HIP/Shader program was compiled or executed."
+  },
+  "report_file": "REPORT.md",
+  "report_sha256": "38b800a6505e1df42441f0cf37b59616b605bacc7f4d15b71b01e75587af429d"
+}

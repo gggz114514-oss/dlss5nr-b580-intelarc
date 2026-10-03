@@ -1,0 +1,180 @@
+{
+  "schema": "nr-public-gpu-reproduction-receipt-v1",
+  "status": "completed_public_synthetic_offline",
+  "gpu_executed": true,
+  "scope": "fixed-seed synthetic offline current720 execution; not private-media or game qualification",
+  "source": {
+    "current_source_manifest_sha256": "300c800581be650ea019529b6c41f76e7adfe71410b0f4eea19511f6c6503166",
+    "current_source_files": 571,
+    "r18_registry_sha256": "a3c202f03e6f0e954367c266b26e4d45d05ce4bbff18f060a671c2d8cbe058a2",
+    "r18_source_files": 260,
+    "gpu_reproduction_source_sha256": "0607d9906afe0a10f65065f997b286793196bf190bc3dacb99af6c23c3892620"
+  },
+  "environment": {
+    "device": "Intel Arc B580",
+    "python": "3.13.11",
+    "torch": "2.13.0+xpu",
+    "triton": "3.8.0",
+    "oneapi_runtime": "20.1.0",
+    "intel_display_driver": "32.0.101.8974",
+    "unified_runtime_driver": "1.15.39183+1"
+  },
+  "assets": {
+    "manifest_sha256": "29d575983a7b6d3454ec8455c7a156bca2ef7e70fbd997902649effec813be2b",
+    "files": 527,
+    "bytes": 1911922809,
+    "profile_arrays": 56
+  },
+  "controls": {
+    "width": 1280,
+    "height": 720,
+    "fixed_frames": 13,
+    "seed": 20261003,
+    "scenario": "synthetic fixed-seed SDR gradients + noise + pixel motion"
+  },
+  "accepted_current_3repeat": {
+    "completed": true,
+    "precompile_seconds": 617.1786271,
+    "readonly_seconds": 31.4956121,
+    "frames": 13,
+    "cycles": 5,
+    "capture_routes": 2,
+    "initial_replay_routes": 11,
+    "graph_entries": 2,
+    "graph_replays": 78,
+    "output_finite": 13,
+    "history_finite": 13,
+    "same_arm_phase_arrays_byte_identical": true,
+    "retirement_verified": true,
+    "actual_diskonly_keys": 137,
+    "readonly_write_attempts": 0,
+    "cache_inventory_unchanged": true,
+    "full_process_xpu_ms": {
+      "samples": 39,
+      "mean": 45.33026576923077,
+      "median": 45.258854
+    },
+    "raw_body_xpu_ms": {
+      "samples": 50,
+      "mean": 39.07745624,
+      "median": 39.09231749999999
+    }
+  },
+  "paired_fdp_repeats1": {
+    "completed": true,
+    "status": "OFFLINE_PAIR_COMPLETE_QUALITY_GAME_UNQUALIFIED",
+    "arms": {
+      "accepted_baseline": {
+        "precompile_seconds": 637.1292539,
+        "readonly_seconds": 29.8472203,
+        "completed": true,
+        "gpu_executed": true,
+        "failures": 0,
+        "frames": 13,
+        "output_finite": 13,
+        "history_finite": 13,
+        "initial_capture_routes": 2,
+        "initial_replay_routes": 11,
+        "graph_entries": 2,
+        "graph_replays": 52,
+        "retirement_verified": true,
+        "same_arm_phase_arrays_byte_identical": true,
+        "actual_keys": 139,
+        "diskonly_hits": 139,
+        "readonly_write_attempts": 0,
+        "cache_inventory_unchanged": true,
+        "full_process_xpu_ms": {
+          "samples": 13,
+          "mean": 47.580809230769226,
+          "median": 46.456666
+        },
+        "raw_body_xpu_ms": {
+          "samples": 50,
+          "mean": 40.06668956,
+          "median": 40.095729
+        },
+        "verified_seed_files": 1918
+      },
+      "audit_impl_fdp_all": {
+        "precompile_seconds": 698.0857895,
+        "readonly_seconds": 27.8305875,
+        "completed": true,
+        "gpu_executed": true,
+        "failures": 0,
+        "frames": 13,
+        "output_finite": 13,
+        "history_finite": 13,
+        "initial_capture_routes": 2,
+        "initial_replay_routes": 11,
+        "graph_entries": 2,
+        "graph_replays": 52,
+        "retirement_verified": true,
+        "same_arm_phase_arrays_byte_identical": true,
+        "actual_keys": 161,
+        "diskonly_hits": 161,
+        "readonly_write_attempts": 0,
+        "cache_inventory_unchanged": true,
+        "full_process_xpu_ms": {
+          "samples": 13,
+          "mean": 44.671582615384615,
+          "median": 44.334271
+        },
+        "raw_body_xpu_ms": {
+          "samples": 50,
+          "mean": 38.28353234,
+          "median": 38.273229
+        },
+        "verified_seed_files": 1918
+      }
+    },
+    "paired_finite": true,
+    "candidate_byte_identical_to_baseline": false,
+    "history_byte_identical_to_baseline": false,
+    "quality_threshold_applied": false,
+    "mean_mae": 0.0002585152419883641,
+    "worst_frame_mae": 0.00030657895185329297,
+    "maximum_absolute_error": 0.0047607421875,
+    "mean_psnr_db": 68.5732393819876,
+    "minimum_psnr_db": 67.67343646558183,
+    "full_process_xpu_delta_ms": -2.909226615384611,
+    "full_process_samples_per_arm": 13,
+    "raw_body_xpu_delta_ms": -1.7831572199999997,
+    "raw_body_samples_per_arm": 50,
+    "performance_qualified": false
+  },
+  "initial_serializer_failure": {
+    "actual_gpu_precompile_executed": true,
+    "saved_13_frames_and_histories": true,
+    "failed_receipt_complete": false,
+    "error": "strict durable serializer rejected TorchVersion at final result write",
+    "failure_log_sha256": "0ecee4bd1becc65a403630980b41dd52fe98d598eb8e510514e8fd6f142cb982",
+    "repair": "cast torch.__version__ to built-in str at capture; serializer remains strict",
+    "fallback_gpu_executed_false_means_no_execution": false
+  },
+  "checks": {
+    "cpu_tests": "13/13 passed, no tensor libraries imported by CPU suite",
+    "source_validation": "571/571 current source files passed",
+    "asset_validation": "527 files and 56 profile arrays passed",
+    "readonly_cache_writes": 0,
+    "same_arm_precompile_readonly_identity": true,
+    "game_started": false,
+    "game_fps": null,
+    "private_video": false,
+    "human_visual_review": false,
+    "quality_threshold_applied": false,
+    "arrays_included": false,
+    "absolute_private_paths_included": false
+  },
+  "evidence_sha256": {
+    "accepted_precompile_result": "d93c8b304ab685709fae4686b9e3a993c61dde0426fd4f6bfbbe8d953ec30af2",
+    "accepted_readonly_result": "29d1fb7206d5d43d08ca2caaca0c780a2955460998fff31013af6b14caeff096",
+    "paired_run_result": "8038755cd6d029c2704d7afe48b52015020c797b268d75133f2b62b00dd4b0be",
+    "paired_summary": "63d864d7386dcacb0e9bef242b5508784086da504cd03a50f2f3745fa5f1c46e",
+    "paired_baseline_precompile_result": "74ea305df2419ef0d1dbb58dc61474184070c8b890b3b279d6c227ee9de52f3b",
+    "paired_baseline_readonly_result": "9de2ce45b79cd1eb7986dd1e257f3442ac6fe3fb66ae6632de2e23370c2855f5",
+    "fdp_precompile_result": "bba0a548b5a320d12a9b0289e5eb5f5a87bc94dc64203959ad85e1eccde4ebd9",
+    "fdp_readonly_result": "eb8c4540db835dcbe300c200df046ccd2ae0f2720b4f2355fc0062f7ad1ecaaa",
+    "verified_cache_seed_manifest": "73734d29575d75975c8d8a5706fb7c9f98440e6ac9de792d970ccd8d40ecb09a"
+  },
+  "failure_receipt_flag_note": "The initial fallback receipt reported GPU_executed=false because result serialization failed; GPU precompile had actually run and produced the preserved 13-frame outputs and history."
+}

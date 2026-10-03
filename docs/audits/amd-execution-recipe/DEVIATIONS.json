@@ -1,0 +1,3440 @@
+{
+  "schema": "amd-execution-recipe-v1",
+  "status": "READY_CPU_ANALYSIS",
+  "date": "2026-10-03",
+  "scope": {
+    "write_set": [
+      "${WORKSPACE}/cyberpunk-b580-nr-opt/artifacts/b580-full-implementation-v1-20261003/reviews/amd-execution-recipe-v1/C32_C64_C128_RECIPE.md",
+      "${WORKSPACE}/cyberpunk-b580-nr-opt/artifacts/b580-full-implementation-v1-20261003/reviews/amd-execution-recipe-v1/DEVIATIONS.json"
+    ],
+    "current_game_alias": "720p C512+K8/all6, user-confirmed",
+    "swin_source_of_truth": "PHASE2-r18.json arms.accepted_baseline",
+    "current_G_read": false,
+    "current_G_changed": false,
+    "Main_source_changed": false,
+    "new_kernels": 0,
+    "GPU_executed": false,
+    "Torch_Triton_imported": false,
+    "compiled": false,
+    "uploaded": false,
+    "deleted": false
+  },
+  "qualification": "CPU source/AST/metadata/layout verification only; not GPU qualification; actual only Luna.",
+  "evidence": {
+    "amd_head": "9ec741522d267c4d2365af53081716fb2943068a",
+    "amd_root": "${EXPERIMENTS_E}\\cyberpunk-opt\\amd-20261003-current720-reanalysis\\upstream",
+    "intel_source_root": "${WORKSPACE}\\cyberpunk-b580-nr-opt\\artifacts\\b580-full-implementation-v1-20261003\\phase2-complete\\revisions\\r18\\source",
+    "manifest_path": "${WORKSPACE}\\cyberpunk-b580-nr-opt\\artifacts\\b580-full-implementation-v1-20261003\\phase2-complete\\PHASE2-r18.json",
+    "manifest_sha256": "699ee05cf1008610a4772dfeebe6398d7099c7c1ed141cbbaa91967da0a05f7f",
+    "main_receipt_path": "${WORKSPACE}\\cyberpunk-b580-nr-opt\\artifacts\\b580-full-implementation-v1-20261003\\R18_SWIN_THROUGHPUT_MAIN_REVIEW.json",
+    "main_receipt_sha256": "abcfcac9a02e6b9593ebb8c9dad8b2ca8587d6edd872081a5e6e90bf75f10b6f",
+    "accepted_baseline": {
+      "controlled": true,
+      "graph_capture_policy": "all",
+      "combo_modes": [
+        480,
+        540,
+        720
+      ],
+      "c512_qkv_library_720": true,
+      "native_k8_720": true,
+      "decoder_gather_unround_720": true,
+      "c32_hidden_native_720": true,
+      "c512_probability_unround_720": true,
+      "c128_pairwise_720": true,
+      "c128_dual_qkv_720": false,
+      "c64_attention_project_720": true,
+      "c128_attention_project_720": true,
+      "numeric_cleanup_720": {
+        "branch_accum_families": [
+          "c128"
+        ],
+        "history_value": "fp32_fractional",
+        "front_noise": "native_both"
+      },
+      "implementation_hooks_720": [
+        {
+          "module": "audit_history_host_720_v1",
+          "kwargs": {
+            "component_front_input": false,
+            "direct_compiled_launch": false,
+            "drop_normalized": false,
+            "fused_near": false,
+            "input_summary": false,
+            "pixel_rgb": false,
+            "receipt_capacity": 64,
+            "release_geometry_indices": false,
+            "release_retired_refs": false,
+            "reuse_buffers": false
+          },
+          "stage": "before_numeric",
+          "call": "installed"
+        }
+      ]
+    },
+    "profile_constructors": {
+      "audit_impl_swin_c64_serial_720_v3": {
+        "controlled": true,
+        "graph_capture_policy": "all",
+        "combo_modes": [
+          480,
+          540,
+          720
+        ],
+        "c512_qkv_library_720": true,
+        "native_k8_720": true,
+        "decoder_gather_unround_720": true,
+        "c32_hidden_native_720": true,
+        "c512_probability_unround_720": true,
+        "c128_pairwise_720": true,
+        "c128_dual_qkv_720": false,
+        "c64_attention_project_720": true,
+        "c128_attention_project_720": true,
+        "numeric_cleanup_720": {
+          "branch_accum_families": [
+            "c128",
+            "c256",
+            "c64"
+          ],
+          "history_value": "fp32_fractional",
+          "front_noise": "native_both"
+        },
+        "implementation_hooks_720": [
+          {
+            "module": "audit_history_host_720_v1",
+            "kwargs": {
+              "component_front_input": false,
+              "direct_compiled_launch": false,
+              "drop_normalized": false,
+              "fused_near": false,
+              "input_summary": false,
+              "pixel_rgb": false,
+              "receipt_capacity": 64,
+              "release_geometry_indices": false,
+              "release_retired_refs": false,
+              "reuse_buffers": false
+            },
+            "stage": "before_numeric",
+            "call": "installed"
+          },
+          {
+            "module": "audit_swin_720_v1",
+            "kwargs": {
+              "attention_families": [
+                32,
+                64,
+                128,
+                256
+              ],
+              "crop_queries": true,
+              "denominator": "fp32",
+              "first_decoder32": true,
+              "fuse_pad": true,
+              "mlp_wide": true,
+              "prefer_bm32": true,
+              "qk_norm": "fp32",
+              "qkv_wide": true,
+              "serial_c64_mlp": true,
+              "split_c256_tail": false,
+              "wide_score": true,
+              "wide_value": true
+            },
+            "stage": "before_numeric",
+            "call": "installed"
+          }
+        ]
+      },
+      "audit_impl_swin_c256_split_tail_720_v3": {
+        "controlled": true,
+        "graph_capture_policy": "all",
+        "combo_modes": [
+          480,
+          540,
+          720
+        ],
+        "c512_qkv_library_720": true,
+        "native_k8_720": true,
+        "decoder_gather_unround_720": true,
+        "c32_hidden_native_720": true,
+        "c512_probability_unround_720": true,
+        "c128_pairwise_720": true,
+        "c128_dual_qkv_720": false,
+        "c64_attention_project_720": true,
+        "c128_attention_project_720": true,
+        "numeric_cleanup_720": {
+          "branch_accum_families": [
+            "c128",
+            "c256",
+            "c64"
+          ],
+          "history_value": "fp32_fractional",
+          "front_noise": "native_both"
+        },
+        "implementation_hooks_720": [
+          {
+            "module": "audit_history_host_720_v1",
+            "kwargs": {
+              "component_front_input": false,
+              "direct_compiled_launch": false,
+              "drop_normalized": false,
+              "fused_near": false,
+              "input_summary": false,
+              "pixel_rgb": false,
+              "receipt_capacity": 64,
+              "release_geometry_indices": false,
+              "release_retired_refs": false,
+              "reuse_buffers": false
+            },
+            "stage": "before_numeric",
+            "call": "installed"
+          },
+          {
+            "module": "audit_swin_720_v1",
+            "kwargs": {
+              "attention_families": [
+                32,
+                64,
+                128,
+                256
+              ],
+              "crop_queries": true,
+              "denominator": "fp32",
+              "first_decoder32": true,
+              "fuse_pad": true,
+              "mlp_wide": true,
+              "prefer_bm32": true,
+              "qk_norm": "fp32",
+              "qkv_wide": true,
+              "serial_c64_mlp": false,
+              "split_c256_tail": true,
+              "wide_score": true,
+              "wide_value": true
+            },
+            "stage": "before_numeric",
+            "call": "installed"
+          }
+        ]
+      },
+      "audit_impl_swin_c64_serial_c256_split_720_v3": {
+        "controlled": true,
+        "graph_capture_policy": "all",
+        "combo_modes": [
+          480,
+          540,
+          720
+        ],
+        "c512_qkv_library_720": true,
+        "native_k8_720": true,
+        "decoder_gather_unround_720": true,
+        "c32_hidden_native_720": true,
+        "c512_probability_unround_720": true,
+        "c128_pairwise_720": true,
+        "c128_dual_qkv_720": false,
+        "c64_attention_project_720": true,
+        "c128_attention_project_720": true,
+        "numeric_cleanup_720": {
+          "branch_accum_families": [
+            "c128",
+            "c256",
+            "c64"
+          ],
+          "history_value": "fp32_fractional",
+          "front_noise": "native_both"
+        },
+        "implementation_hooks_720": [
+          {
+            "module": "audit_history_host_720_v1",
+            "kwargs": {
+              "component_front_input": false,
+              "direct_compiled_launch": false,
+              "drop_normalized": false,
+              "fused_near": false,
+              "input_summary": false,
+              "pixel_rgb": false,
+              "receipt_capacity": 64,
+              "release_geometry_indices": false,
+              "release_retired_refs": false,
+              "reuse_buffers": false
+            },
+            "stage": "before_numeric",
+            "call": "installed"
+          },
+          {
+            "module": "audit_swin_720_v1",
+            "kwargs": {
+              "attention_families": [
+                32,
+                64,
+                128,
+                256
+              ],
+              "crop_queries": true,
+              "denominator": "fp32",
+              "first_decoder32": true,
+              "fuse_pad": true,
+              "mlp_wide": true,
+              "prefer_bm32": true,
+              "qk_norm": "fp32",
+              "qkv_wide": true,
+              "serial_c64_mlp": true,
+              "split_c256_tail": true,
+              "wide_score": true,
+              "wide_value": true
+            },
+            "stage": "before_numeric",
+            "call": "installed"
+          }
+        ]
+      }
+    },
+    "amd_sources": [
+      {
+        "id": "hip/wave_owned_c32.inc",
+        "path": "${EXPERIMENTS_E}\\cyberpunk-opt\\amd-20261003-current720-reanalysis\\upstream\\hip\\wave_owned_c32.inc",
+        "sha256": "f9dc97b8392f50948543f6e670f8908728dad79024b284a9c0b40bed3377056f",
+        "git_blob_sha256": "d00bb301fcfce94463fa96c058dfb028a75a3c235aeb6d63be0cbd68c57540db",
+        "git_content_match_ignoring_crlf": true,
+        "lines": 566
+      },
+      {
+        "id": "hip/wave_owned_mh.inc",
+        "path": "${EXPERIMENTS_E}\\cyberpunk-opt\\amd-20261003-current720-reanalysis\\upstream\\hip\\wave_owned_mh.inc",
+        "sha256": "45c8394c6de531eed591b00270a34fd720aca8d4320d8035391851e7456433e0",
+        "git_blob_sha256": "19ffc746d56801da14f6e8832cf419ebdfb6e57aab10de751c6ceefa0c5bea5f",
+        "git_content_match_ignoring_crlf": true,
+        "lines": 862
+      },
+      {
+        "id": "hip/build-modules.ps1",
+        "path": "${EXPERIMENTS_E}\\cyberpunk-opt\\amd-20261003-current720-reanalysis\\upstream\\hip\\build-modules.ps1",
+        "sha256": "91df5ab02296a38c73b42c74fbc71282d89838b03e54fbb9ad9469efb78c1ecf",
+        "git_blob_sha256": "9d5d4940ed330e69cc0c7a740edebbff08cde00be0dd661adff1d81066d18640",
+        "git_content_match_ignoring_crlf": true,
+        "lines": 128
+      },
+      {
+        "id": "Development/HIP/packed_weights.h",
+        "path": "${EXPERIMENTS_E}\\cyberpunk-opt\\amd-20261003-current720-reanalysis\\upstream\\Development\\HIP\\packed_weights.h",
+        "sha256": "7e864a06b4b6703f9b5ccaaba386c450769aed1604f0eb77ac6f36c42f36a0d9",
+        "git_blob_sha256": "a0d375ab0a7b64714459105481a1eb36b26d50dbeb9676c9017c88c4ad605466",
+        "git_content_match_ignoring_crlf": true,
+        "lines": 83
+      },
+      {
+        "id": "Development/HIP/hip_reference_network.h",
+        "path": "${EXPERIMENTS_E}\\cyberpunk-opt\\amd-20261003-current720-reanalysis\\upstream\\Development\\HIP\\hip_reference_network.h",
+        "sha256": "8ecc64e3e20e6533250228b9033831ca0e7582d6f7ec2923df8cb089421da0e7",
+        "git_blob_sha256": "d681b500e9285f2a3b90bbe3f121437cde0060a40499edfc42dd973955f5b7c6",
+        "git_content_match_ignoring_crlf": true,
+        "lines": 803
+      },
+      {
+        "id": "Development/results/c32-wave-phase-20260926/README.md",
+        "path": "${EXPERIMENTS_E}\\cyberpunk-opt\\amd-20261003-current720-reanalysis\\upstream\\Development\\results\\c32-wave-phase-20260926\\README.md",
+        "sha256": "93737a752cc41fa5e575bdb547ff0d2de1231a9d9cd7c108b4575bca7dda859a",
+        "git_blob_sha256": "37ef5f8c565deac361653ff38daf291f94b187e68e001bc6cc40a91a29bd6019",
+        "git_content_match_ignoring_crlf": true,
+        "lines": 51
+      },
+      {
+        "id": "Development/results/c64-block-fused-20260927/README.md",
+        "path": "${EXPERIMENTS_E}\\cyberpunk-opt\\amd-20261003-current720-reanalysis\\upstream\\Development\\results\\c64-block-fused-20260927\\README.md",
+        "sha256": "f2117d57982224149846157ab240c47a507ab8b835a9bf321a5ae18e06e50efd",
+        "git_blob_sha256": "6ae723f1667b3b78390d4050e0ef12af18bf4fee299a242a5925213266c2846b",
+        "git_content_match_ignoring_crlf": true,
+        "lines": 53
+      },
+      {
+        "id": "Development/results/pack8-20260927/README.md",
+        "path": "${EXPERIMENTS_E}\\cyberpunk-opt\\amd-20261003-current720-reanalysis\\upstream\\Development\\results\\pack8-20260927\\README.md",
+        "sha256": "b8a15cb7f32a6ed80a080a8589f1f975fb8af8c53a58235aafae782a23ab604e",
+        "git_blob_sha256": "8948be35815b8851bf7e57415fecbab18545a4883fdc02dabab075a4c5b23650",
+        "git_content_match_ignoring_crlf": true,
+        "lines": 26
+      },
+      {
+        "id": "Development/results/hoist-loads-20260930/README.md",
+        "path": "${EXPERIMENTS_E}\\cyberpunk-opt\\amd-20261003-current720-reanalysis\\upstream\\Development\\results\\hoist-loads-20260930\\README.md",
+        "sha256": "b6cc57d0422d061233b0edd60ac78ffa4c2296efb8869e42e3e60c863e9fdbd9",
+        "git_blob_sha256": "8e7b7380331993cc4a9af550ee59c84e571a0494409bc1b61fe60fb4cc4574af",
+        "git_content_match_ignoring_crlf": true,
+        "lines": 45
+      },
+      {
+        "id": "Development/results/w16-c64-c128-20260930/README.md",
+        "path": "${EXPERIMENTS_E}\\cyberpunk-opt\\amd-20261003-current720-reanalysis\\upstream\\Development\\results\\w16-c64-c128-20260930\\README.md",
+        "sha256": "b5135a917d25233c794962018ec32b9cc46ea44b1222ec44a6d235c68facd4a9",
+        "git_blob_sha256": "b497c393635daf6464e7dd3fe6c3c5135d67cdf9e75ceb45e62c5a418e706592",
+        "git_content_match_ignoring_crlf": true,
+        "lines": 34
+      },
+      {
+        "id": "Development/results/launch-occupancy-20260923/README.md",
+        "path": "${EXPERIMENTS_E}\\cyberpunk-opt\\amd-20261003-current720-reanalysis\\upstream\\Development\\results\\launch-occupancy-20260923\\README.md",
+        "sha256": "ff3f85dbc7e93b87809dd6d3525c4ad42931c8f155aacd66aae0473128a17fc9",
+        "git_blob_sha256": "f0640aa3be843a035077e276564541e56049f84444dc0502df952c299fcd23ea",
+        "git_content_match_ignoring_crlf": true,
+        "lines": 45
+      }
+    ],
+    "intel_sources": [
+      {
+        "id": "three_structure_combo_v1.py",
+        "relative_path": "game/three_structure_combo_v1.py",
+        "path": "${WORKSPACE}\\cyberpunk-b580-nr-opt\\artifacts\\b580-full-implementation-v1-20261003\\phase2-complete\\revisions\\r18\\source\\game\\three_structure_combo_v1.py",
+        "sha256": "26bb35571cad1e0f79da11186be7b28071c4830028b902d22af912a2fd5b4808",
+        "manifest_match": true,
+        "lines": 174
+      },
+      {
+        "id": "c32_hidden_native_720_v1.py",
+        "relative_path": "game/c32_hidden_native_720_v1.py",
+        "path": "${WORKSPACE}\\cyberpunk-b580-nr-opt\\artifacts\\b580-full-implementation-v1-20261003\\phase2-complete\\revisions\\r18\\source\\game\\c32_hidden_native_720_v1.py",
+        "sha256": "72c555f2da9c07abb1a49cde0d9ba81e800d686479e0061e8581c040caa53b10",
+        "manifest_match": true,
+        "lines": 224
+      },
+      {
+        "id": "c32_repeated_tail_fusion_v1.py",
+        "relative_path": "game/c32_repeated_tail_fusion_v1.py",
+        "path": "${WORKSPACE}\\cyberpunk-b580-nr-opt\\artifacts\\b580-full-implementation-v1-20261003\\phase2-complete\\revisions\\r18\\source\\game\\c32_repeated_tail_fusion_v1.py",
+        "sha256": "5b7cccc51d80ad877bc9e127713875d46e6969d7f056a1f9b2ddc93255b047ca",
+        "manifest_match": true,
+        "lines": 93
+      },
+      {
+        "id": "c64_qkv_direct_pack_v2.py",
+        "relative_path": "game/c64_qkv_direct_pack_v2.py",
+        "path": "${WORKSPACE}\\cyberpunk-b580-nr-opt\\artifacts\\b580-full-implementation-v1-20261003\\phase2-complete\\revisions\\r18\\source\\game\\c64_qkv_direct_pack_v2.py",
+        "sha256": "1710714076ca6a2f6a92741cf7e0901f069188c528ac4a6c9d94d23f9ca2242e",
+        "manifest_match": true,
+        "lines": 169
+      },
+      {
+        "id": "c128_qkv_direct_pack_one_v1.py",
+        "relative_path": "game/c128_qkv_direct_pack_one_v1.py",
+        "path": "${WORKSPACE}\\cyberpunk-b580-nr-opt\\artifacts\\b580-full-implementation-v1-20261003\\phase2-complete\\revisions\\r18\\source\\game\\c128_qkv_direct_pack_one_v1.py",
+        "sha256": "c740f326f59b21709483dfbfdfeb3aa7160c0c04f36db420958671e0ff647f96",
+        "manifest_match": true,
+        "lines": 172
+      },
+      {
+        "id": "c64_attention_project_fused_720_v1.py",
+        "relative_path": "game/c64_attention_project_fused_720_v1.py",
+        "path": "${WORKSPACE}\\cyberpunk-b580-nr-opt\\artifacts\\b580-full-implementation-v1-20261003\\phase2-complete\\revisions\\r18\\source\\game\\c64_attention_project_fused_720_v1.py",
+        "sha256": "25a9d390a08739100217b661e93fde46da22a0cc0f1729628801f0badce8e2b6",
+        "manifest_match": true,
+        "lines": 97
+      },
+      {
+        "id": "c128_attention_project_fused_720_v1.py",
+        "relative_path": "game/c128_attention_project_fused_720_v1.py",
+        "path": "${WORKSPACE}\\cyberpunk-b580-nr-opt\\artifacts\\b580-full-implementation-v1-20261003\\phase2-complete\\revisions\\r18\\source\\game\\c128_attention_project_fused_720_v1.py",
+        "sha256": "6d3b039d105b3313c3e4fc9a26ee09712744bae96e966a706efbb1256f6e4a27",
+        "manifest_match": true,
+        "lines": 99
+      },
+      {
+        "id": "branched_mlp_pairwise_720_v1.py",
+        "relative_path": "game/branched_mlp_pairwise_720_v1.py",
+        "path": "${WORKSPACE}\\cyberpunk-b580-nr-opt\\artifacts\\b580-full-implementation-v1-20261003\\phase2-complete\\revisions\\r18\\source\\game\\branched_mlp_pairwise_720_v1.py",
+        "sha256": "3ba35f667b29a9d42600efbd1e358161062debc0f1a220fe95acae1a7238cd97",
+        "manifest_match": true,
+        "lines": 281
+      },
+      {
+        "id": "branch_accum_native_720_v1.py",
+        "relative_path": "game/branch_accum_native_720_v1.py",
+        "path": "${WORKSPACE}\\cyberpunk-b580-nr-opt\\artifacts\\b580-full-implementation-v1-20261003\\phase2-complete\\revisions\\r18\\source\\game\\branch_accum_native_720_v1.py",
+        "sha256": "0bd46daa2bc916248e2ed63416417c10650eb89305ddbbb5e039e74efb27e861",
+        "manifest_match": true,
+        "lines": 764
+      },
+      {
+        "id": "branch_accum_native_720_kernel_v1.py",
+        "relative_path": "game/branch_accum_native_720_kernel_v1.py",
+        "path": "${WORKSPACE}\\cyberpunk-b580-nr-opt\\artifacts\\b580-full-implementation-v1-20261003\\phase2-complete\\revisions\\r18\\source\\game\\branch_accum_native_720_kernel_v1.py",
+        "sha256": "8aaab22c50dee2b26f8738e0117ffb192b0e1ceb94a3cb8081c7dda35c494b16",
+        "manifest_match": true,
+        "lines": 30
+      },
+      {
+        "id": "audit_swin_720_kernels_v1.py",
+        "relative_path": "game/audit_swin_720_kernels_v1.py",
+        "path": "${WORKSPACE}\\cyberpunk-b580-nr-opt\\artifacts\\b580-full-implementation-v1-20261003\\phase2-complete\\revisions\\r18\\source\\game\\audit_swin_720_kernels_v1.py",
+        "sha256": "201528637b4819cb6de6d1e3ead458aa7999ffbbf085afc4c32e36cf7c864a2a",
+        "manifest_match": true,
+        "lines": 452
+      },
+      {
+        "id": "audit_swin_720_v1.py",
+        "relative_path": "game/audit_swin_720_v1.py",
+        "path": "${WORKSPACE}\\cyberpunk-b580-nr-opt\\artifacts\\b580-full-implementation-v1-20261003\\phase2-complete\\revisions\\r18\\source\\game\\audit_swin_720_v1.py",
+        "sha256": "618f184fa4a10a34972c65cfb9f6f5a434e05382e70a58d1bbbe6596e22b03d3",
+        "manifest_match": true,
+        "lines": 1139
+      },
+      {
+        "id": "post_attention_k8_combined_v1.py",
+        "relative_path": "game/post_attention_k8_combined_v1.py",
+        "path": "${WORKSPACE}\\cyberpunk-b580-nr-opt\\artifacts\\b580-full-implementation-v1-20261003\\phase2-complete\\revisions\\r18\\source\\game\\post_attention_k8_combined_v1.py",
+        "sha256": "8444a14eda43e1b5ea2409a28c1066ab60b1e8a1684bc522fa0908a5e52aec4c",
+        "manifest_match": true,
+        "lines": 94
+      },
+      {
+        "id": "native_cubic_c32_v1.py",
+        "relative_path": "experimental/fp8_unround_overlay/modules/native_cubic_c32_v1.py",
+        "path": "${WORKSPACE}\\cyberpunk-b580-nr-opt\\artifacts\\b580-full-implementation-v1-20261003\\phase2-complete\\revisions\\r18\\source\\experimental\\fp8_unround_overlay\\modules\\native_cubic_c32_v1.py",
+        "sha256": "a39eabcd4fa7d9409811706576958575b277e144f666ae8eb00cf83a8be8df04",
+        "manifest_match": true,
+        "lines": 85
+      },
+      {
+        "id": "batched_branched_mlp_v1.py",
+        "relative_path": "experimental/fp8_unround_overlay/modules/batched_branched_mlp_v1.py",
+        "path": "${WORKSPACE}\\cyberpunk-b580-nr-opt\\artifacts\\b580-full-implementation-v1-20261003\\phase2-complete\\revisions\\r18\\source\\experimental\\fp8_unround_overlay\\modules\\batched_branched_mlp_v1.py",
+        "sha256": "4ecfc24bfc7cf9488953265cfd1a82ce42d5bd138c0674a4abf02ac8f776f6af",
+        "manifest_match": true,
+        "lines": 121
+      },
+      {
+        "id": "native_cubic_adapters_v1.py",
+        "relative_path": "experimental/fp8_unround_overlay/modules/native_cubic_adapters_v1.py",
+        "path": "${WORKSPACE}\\cyberpunk-b580-nr-opt\\artifacts\\b580-full-implementation-v1-20261003\\phase2-complete\\revisions\\r18\\source\\experimental\\fp8_unround_overlay\\modules\\native_cubic_adapters_v1.py",
+        "sha256": "756a0a6978401dbe24aedc250296aab7b3265d9be0911aa61818ec5f58ded348",
+        "manifest_match": true,
+        "lines": 73
+      },
+      {
+        "id": "fused_c32_projection_native_half_v1.py",
+        "relative_path": "experimental/fp8_unround_overlay/modules/fused_c32_projection_native_half_v1.py",
+        "path": "${WORKSPACE}\\cyberpunk-b580-nr-opt\\artifacts\\b580-full-implementation-v1-20261003\\phase2-complete\\revisions\\r18\\source\\experimental\\fp8_unround_overlay\\modules\\fused_c32_projection_native_half_v1.py",
+        "sha256": "9201797394ef75a841b724015397aa33a886628ce425172c68bf9d38b454e798",
+        "manifest_match": true,
+        "lines": 121
+      },
+      {
+        "id": "post_attention_fusion_v1.py",
+        "relative_path": "game/post_attention_fusion_v1.py",
+        "path": "${WORKSPACE}\\cyberpunk-b580-nr-opt\\artifacts\\b580-full-implementation-v1-20261003\\phase2-complete\\revisions\\r18\\source\\game\\post_attention_fusion_v1.py",
+        "sha256": "39c4d3ba7f92e9dbcfa281fc85dd2a4909fc4a7162994abdb6d93cbce6ac03d2",
+        "manifest_match": true,
+        "lines": 131
+      },
+      {
+        "id": "fused_swin_core_native_half_v1.py",
+        "relative_path": "experimental/fp8_unround_overlay/modules/fused_swin_core_native_half_v1.py",
+        "path": "${WORKSPACE}\\cyberpunk-b580-nr-opt\\artifacts\\b580-full-implementation-v1-20261003\\phase2-complete\\revisions\\r18\\source\\experimental\\fp8_unround_overlay\\modules\\fused_swin_core_native_half_v1.py",
+        "sha256": "8cb85569804301c1348a320d0aff0c18dcc3831ef7b5a5cb870f23dbf1f0c0f3",
+        "manifest_match": true,
+        "lines": 94
+      }
+    ],
+    "runs": [
+      {
+        "candidate": "audit_impl_swin_c64_serial_720_v3",
+        "candidate_adopted": false,
+        "arms": {
+          "accepted_baseline": {
+            "result_path": "${EXPERIMENTS_E}\\cyberpunk-opt\\b580-full-implementation-v1-20261003\\luna\\phase2\\attempt-37-r18-e-swin-c64-serial\\accepted_baseline\\measurement\\readonly\\RESULT.json",
+            "sha256": "0c7052e412c2791e80a522400d7210ca7d76b0fe16ebacad34bf9982b4db4abf",
+            "full_ms": 46.019511282051276,
+            "raw_ms": 40.0454094,
+            "full_sample_count": 39,
+            "raw_sample_count": 50,
+            "compiled_catalog": [
+              {
+                "kernel_hash": "7cfed67f6991451ed22c281826a37556df93d2d5b1d093617227ad7deca19dcb",
+                "module": "batched_branched_mlp_v1",
+                "function": "_project",
+                "constants": {
+                  "C": 128,
+                  "BM": 16,
+                  "BN": 64
+                },
+                "options": {
+                  "num_warps": 4,
+                  "num_stages": 1,
+                  "grf_mode": "default"
+                }
+              },
+              {
+                "kernel_hash": "7cc3ddf685c0a3ba1645b75e98d6a12340c8067f9292473a81a7eddf479828c2",
+                "module": "c64_attention_project_fused_720_v1",
+                "function": "_fused",
+                "constants": {
+                  "BM": 32,
+                  "ROUND_WEIGHTS": false
+                },
+                "options": {
+                  "num_warps": 4,
+                  "num_stages": 1,
+                  "grf_mode": "default"
+                }
+              },
+              {
+                "kernel_hash": "47d6a7d5dfeec40ecbde5b168006d6121adfafb9fa4b3ac6a6af3488384ed72a",
+                "module": "c128_attention_project_fused_720_v1",
+                "function": "_fused",
+                "constants": {
+                  "BM": 16,
+                  "ROUND_WEIGHTS": false
+                },
+                "options": {
+                  "num_warps": 4,
+                  "num_stages": 1,
+                  "grf_mode": "default"
+                }
+              },
+              {
+                "kernel_hash": "fc6212e060ac9d664a28c461ae40a11b898d85d6ce25ecf584d12d3abf1c96ca",
+                "module": "native_cubic_c32_v1",
+                "function": "_kernel",
+                "constants": {
+                  "BM": 32,
+                  "ROUND_ACTIVATION": false
+                },
+                "options": {
+                  "num_warps": 4,
+                  "num_stages": 1,
+                  "grf_mode": "default"
+                }
+              },
+              {
+                "kernel_hash": "78992e78c23e9534eea618646126130c2aaf3d1eb41df285e9719dc6bf20090d",
+                "module": "fused_c32_projection_native_half_v1",
+                "function": "_kernel",
+                "constants": {
+                  "ROUND_QKV": false,
+                  "BM": 32
+                },
+                "options": {
+                  "num_warps": 4,
+                  "num_stages": 1,
+                  "grf_mode": "default"
+                }
+              },
+              {
+                "kernel_hash": "38795c38eadd2d0ea4d8c854aee071a20261589e0684ec466d7be803b0a4d266",
+                "module": "post_attention_fusion_v1",
+                "function": "_attention_project",
+                "constants": {},
+                "options": {
+                  "num_warps": 4,
+                  "num_stages": 1,
+                  "grf_mode": "default"
+                }
+              },
+              {
+                "kernel_hash": "6574f265fed5ddbedf2cef5e8a096604086e073b13be73bab7dbfe5f5b9a6637",
+                "module": "batched_branched_mlp_v1",
+                "function": "_pairs",
+                "constants": {
+                  "C": 64,
+                  "BM": 32,
+                  "ROUND_REDUCED": false
+                },
+                "options": {
+                  "num_warps": 4,
+                  "num_stages": 2,
+                  "grf_mode": "default"
+                }
+              },
+              {
+                "kernel_hash": "43db221f9ff591a05afbebb5ebb8aa45881e3149b8af468b8a638e216b064166",
+                "module": "batched_branched_mlp_v1",
+                "function": "_project",
+                "constants": {
+                  "C": 64,
+                  "BM": 16,
+                  "BN": 64
+                },
+                "options": {
+                  "num_warps": 4,
+                  "num_stages": 1,
+                  "grf_mode": "default"
+                }
+              },
+              {
+                "kernel_hash": "cea54a279358cece4b729e0c3256c4cd1fbba0a05d4c58d9b7c6c0eb3ce44cf8",
+                "module": "c64_qkv_direct_pack_v2",
+                "function": "_qkv_direct_pack",
+                "constants": {
+                  "BM": 16,
+                  "BN": 32,
+                  "BK": 32,
+                  "ROUND_QKV": false
+                },
+                "options": {
+                  "num_warps": 4,
+                  "num_stages": 2,
+                  "grf_mode": "default"
+                }
+              },
+              {
+                "kernel_hash": "4241c4fa7741c035f7aaa22918b9c63817053d0df10f6cc1f04e07fa52c3c368",
+                "module": "c128_qkv_direct_pack_one_v1",
+                "function": "_direct_pack",
+                "constants": {
+                  "BM": 16,
+                  "BN": 32,
+                  "BK": 32,
+                  "ROUND_QKV": false
+                },
+                "options": {
+                  "num_warps": 4,
+                  "num_stages": 2,
+                  "grf_mode": "default"
+                }
+              },
+              {
+                "kernel_hash": "6f20ba3af684604684abd37d0e8cf58c84882995c77d4cda5bad1d7ec2c5959e",
+                "module": "batched_branched_mlp_v1",
+                "function": "_pairs",
+                "constants": {
+                  "C": 256,
+                  "BM": 16,
+                  "ROUND_REDUCED": false
+                },
+                "options": {
+                  "num_warps": 4,
+                  "num_stages": 1,
+                  "grf_mode": "default"
+                }
+              },
+              {
+                "kernel_hash": "243b39a034c3451b2b6db557eca1578ad61b669380279990eb13292c9d6395da",
+                "module": "batched_branched_mlp_v1",
+                "function": "_project",
+                "constants": {
+                  "C": 256,
+                  "BM": 16,
+                  "BN": 64
+                },
+                "options": {
+                  "num_warps": 4,
+                  "num_stages": 1,
+                  "grf_mode": "default"
+                }
+              }
+            ],
+            "catalog_limit": "Compiler key presence alone is not executed-per-kernel proof; source mode/dispatcher and guarded owner resource bindings determine current routes."
+          },
+          "audit_impl_swin_c64_serial_720_v3": {
+            "result_path": "${EXPERIMENTS_E}\\cyberpunk-opt\\b580-full-implementation-v1-20261003\\luna\\phase2\\attempt-37-r18-e-swin-c64-serial\\audit_impl_swin_c64_serial_720_v3\\measurement\\readonly\\RESULT.json",
+            "sha256": "2adfe83fa840779596e0a0d4f9a1741cec46f680221c6dd334273d92bef08e19",
+            "full_ms": 50.23719553846154,
+            "raw_ms": 43.05776146,
+            "full_sample_count": 39,
+            "raw_sample_count": 50,
+            "swin_sites": 44,
+            "calls_unique": [
+              6
+            ],
+            "captures_unique": [
+              2
+            ],
+            "roles": [
+              {
+                "role": "('qkv', (32, 384, 640, 0, 0))",
+                "kernel_hash": "b67e25ae98d306340d8cd0e9b7eb522413183638a365184472d4b1be417792ce",
+                "binary_kind": "spv",
+                "binary_sha256": "abdf22315c309821284cd4e25206ee026a1698c67f35315599c8a83c1131b7f6",
+                "spills": 0,
+                "registers": 0,
+                "shared_bytes": 6144,
+                "grid": [
+                  7680,
+                  2
+                ],
+                "launch_options": {
+                  "num_warps": 4,
+                  "num_stages": 2,
+                  "enable_fp_fusion": false
+                },
+                "source_kernel": "audit_swin_720_kernels_v1._qkv",
+                "constants": {
+                  "BM": 32,
+                  "NORM_FP32": true,
+                  "WIDE_N": true,
+                  "M": 245760,
+                  "WP": 640,
+                  "C": 32
+                }
+              },
+              {
+                "role": "('tail', (32, 384, 640, 0, 0))",
+                "kernel_hash": "68eebb7cc9b3fa95098488e71f95622a04ec85efc7a3a738683748f5d055a0b7",
+                "binary_kind": "spv",
+                "binary_sha256": "2c5c5fae45b9c241ac313a187a4382949c67d6bc50c133ffeb0b3205bd508410",
+                "spills": 0,
+                "registers": 256,
+                "shared_bytes": 4096,
+                "grid": [
+                  2,
+                  3840,
+                  1
+                ],
+                "launch_options": {
+                  "num_warps": 4,
+                  "num_stages": 1,
+                  "enable_fp_fusion": false
+                },
+                "source_kernel": "audit_swin_720_kernels_v1._attention_project",
+                "constants": {
+                  "WP": 640,
+                  "H": 384,
+                  "W": 640,
+                  "SY": 0,
+                  "SX": 0,
+                  "C": 32,
+                  "BM": 32,
+                  "BN": 32,
+                  "DENOM_FP32": true,
+                  "WIDE_SCORE": true,
+                  "WIDE_VALUE": true,
+                  "CROP_QUERIES": true,
+                  "HP": 384
+                }
+              },
+              {
+                "role": "('qkv', (64, 192, 320, 0, 0))",
+                "kernel_hash": "1775c1c86a6f327366a7220516fca80976d915880cef7a34f20043d46c579ead",
+                "binary_kind": "spv",
+                "binary_sha256": "af8c065e97bbecfec5f7e13304c46daae55361f91d33ea5bf06f84b62e4c8b04",
+                "spills": 0,
+                "registers": 0,
+                "shared_bytes": 5120,
+                "grid": [
+                  3840,
+                  3
+                ],
+                "launch_options": {
+                  "num_warps": 4,
+                  "num_stages": 2,
+                  "enable_fp_fusion": false
+                },
+                "source_kernel": "audit_swin_720_kernels_v1._qkv",
+                "constants": {
+                  "BM": 16,
+                  "NORM_FP32": true,
+                  "WIDE_N": true,
+                  "M": 61440,
+                  "WP": 320,
+                  "C": 64
+                }
+              },
+              {
+                "role": "('tail', (64, 192, 320, 0, 0))",
+                "kernel_hash": "0267cff719ef02844ff48c1516fd738e7ed618827900ffcec37863dae0c31fca",
+                "binary_kind": "spv",
+                "binary_sha256": "c92c8a34fb767e556ca9797a67e6ebcbcd503682e7d176c1458a5b4aa4791288",
+                "spills": 0,
+                "registers": 256,
+                "shared_bytes": 4096,
+                "grid": [
+                  4,
+                  960,
+                  1
+                ],
+                "launch_options": {
+                  "num_warps": 4,
+                  "num_stages": 1,
+                  "enable_fp_fusion": false
+                },
+                "source_kernel": "audit_swin_720_kernels_v1._attention_project",
+                "constants": {
+                  "WP": 320,
+                  "H": 192,
+                  "W": 320,
+                  "SY": 0,
+                  "SX": 0,
+                  "C": 64,
+                  "BM": 16,
+                  "BN": 64,
+                  "DENOM_FP32": true,
+                  "WIDE_SCORE": true,
+                  "WIDE_VALUE": true,
+                  "CROP_QUERIES": true,
+                  "HP": 192
+                }
+              },
+              {
+                "role": "('qkv', (128, 96, 160, 0, 0))",
+                "kernel_hash": "dbe817284db923fb27635fa86891445764b52a7f8a45bac1ff17998e9f9eddf1",
+                "binary_kind": "spv",
+                "binary_sha256": "3bc2fb23cd4171ce9c5bc5c6746f51920cf3dc50913eeae8626db96eb2ee63d3",
+                "spills": 0,
+                "registers": 0,
+                "shared_bytes": 5120,
+                "grid": [
+                  960,
+                  6
+                ],
+                "launch_options": {
+                  "num_warps": 4,
+                  "num_stages": 2,
+                  "enable_fp_fusion": false
+                },
+                "source_kernel": "audit_swin_720_kernels_v1._qkv",
+                "constants": {
+                  "BM": 16,
+                  "NORM_FP32": true,
+                  "WIDE_N": true,
+                  "M": 15360,
+                  "WP": 160,
+                  "C": 128
+                }
+              },
+              {
+                "role": "('tail', (128, 96, 160, 0, 0))",
+                "kernel_hash": "ca587366f3f99af073b779850fa7f3c620d612b13376b0d7791f3bbd248e28c3",
+                "binary_kind": "spv",
+                "binary_sha256": "e6f10c5ea8fc99d96152bf826446b8529fd5d4091b616695bd01b03237276ed8",
+                "spills": 0,
+                "registers": 256,
+                "shared_bytes": 8192,
+                "grid": [
+                  4,
+                  240,
+                  1
+                ],
+                "launch_options": {
+                  "num_warps": 4,
+                  "num_stages": 1,
+                  "enable_fp_fusion": false
+                },
+                "source_kernel": "audit_swin_720_kernels_v1._attention_project",
+                "constants": {
+                  "WP": 160,
+                  "H": 96,
+                  "W": 160,
+                  "SY": 0,
+                  "SX": 0,
+                  "C": 128,
+                  "BM": 16,
+                  "BN": 128,
+                  "DENOM_FP32": true,
+                  "WIDE_SCORE": true,
+                  "WIDE_VALUE": true,
+                  "CROP_QUERIES": true,
+                  "HP": 96
+                }
+              },
+              {
+                "role": "('qkv', (256, 48, 80, 0, 0))",
+                "kernel_hash": "028e31c1a1b94bd375ebc1dd4af94a0ae4f1f23448fa2b5d83880beed92fb67c",
+                "binary_kind": "spv",
+                "binary_sha256": "7115242fb4c4f0192e2c29d87d8cb7f2d541fe5e35a65366b363c2c8de5935fe",
+                "spills": 0,
+                "registers": 0,
+                "shared_bytes": 6144,
+                "grid": [
+                  120,
+                  12
+                ],
+                "launch_options": {
+                  "num_warps": 4,
+                  "num_stages": 2,
+                  "enable_fp_fusion": false
+                },
+                "source_kernel": "audit_swin_720_kernels_v1._qkv",
+                "constants": {
+                  "BM": 32,
+                  "NORM_FP32": true,
+                  "WIDE_N": true,
+                  "M": 3840,
+                  "WP": 80,
+                  "C": 256
+                }
+              },
+              {
+                "role": "('tail', (256, 48, 80, 0, 0))",
+                "kernel_hash": "5ab78ca12a63ed981351e1b52dca3f26e5acb4e3781a2a0abbb114f9d3e27664",
+                "binary_kind": "spv",
+                "binary_sha256": "ac533f5f3691c24dd6e8114419894ffd2297a1d5c5a5ecd14f22af521fa4456f",
+                "spills": 0,
+                "registers": 256,
+                "shared_bytes": 8192,
+                "grid": [
+                  4,
+                  60,
+                  2
+                ],
+                "launch_options": {
+                  "num_warps": 4,
+                  "num_stages": 1,
+                  "enable_fp_fusion": false
+                },
+                "source_kernel": "audit_swin_720_kernels_v1._attention_project",
+                "constants": {
+                  "WP": 80,
+                  "H": 48,
+                  "W": 80,
+                  "SY": 0,
+                  "SX": 0,
+                  "C": 256,
+                  "BM": 16,
+                  "BN": 128,
+                  "DENOM_FP32": true,
+                  "WIDE_SCORE": true,
+                  "WIDE_VALUE": true,
+                  "CROP_QUERIES": true,
+                  "HP": 48
+                }
+              }
+            ],
+            "latents": [
+              {
+                "role": "192x320x64:latent",
+                "kernel_hash": "6c38a34a8dc5233babbceab2be10353e80cd4cd9f00082d40794d4013008fc7c",
+                "binary_sha256": "bd1860e95393a50de01c5ff59370e1ca642084f3745961a4eed0471b4cfa655f",
+                "spills": 0,
+                "registers": 256,
+                "shared_bytes": 2048,
+                "grid": [
+                  1920,
+                  1
+                ],
+                "launch_options": {
+                  "num_warps": 4,
+                  "num_stages": 1,
+                  "enable_fp_fusion": false
+                },
+                "selected_pair_bm": 32,
+                "selected_pair_num_warps": 4,
+                "serial_c64_mlp": true,
+                "input_shape": [
+                  192,
+                  320,
+                  64
+                ],
+                "latent_shape": [
+                  2,
+                  61440,
+                  32
+                ],
+                "selection": {
+                  "selected": [
+                    32,
+                    4
+                  ],
+                  "launch_options": {
+                    "num_warps": 4,
+                    "num_stages": 1,
+                    "enable_fp_fusion": false
+                  },
+                  "qualification": "zero_spill",
+                  "attempts": [
+                    {
+                      "config": [
+                        32,
+                        4
+                      ],
+                      "grid": [
+                        1920,
+                        1
+                      ],
+                      "launch_options": {
+                        "num_warps": 4,
+                        "num_stages": 1,
+                        "enable_fp_fusion": false
+                      },
+                      "constants": [
+                        61440,
+                        64,
+                        32,
+                        false,
+                        192,
+                        320,
+                        320,
+                        0,
+                        0,
+                        true
+                      ],
+                      "status": "selected_zero_spill",
+                      "kernel_hash": "6c38a34a8dc5233babbceab2be10353e80cd4cd9f00082d40794d4013008fc7c",
+                      "spills": 0,
+                      "spills_type": "builtins.int",
+                      "spills_repr": "0",
+                      "registers": 256,
+                      "shared_bytes": 2048,
+                      "compiler_metadata": {
+                        "build_flags": " -cl-intel-256-GRF-per-thread",
+                        "num_warps": 4,
+                        "num_stages": 1,
+                        "threads_per_warp": 16
+                      },
+                      "binary_kind": "spv",
+                      "binary_sha256": "bd1860e95393a50de01c5ff59370e1ca642084f3745961a4eed0471b4cfa655f",
+                      "binary_bytes": 55768
+                    }
+                  ]
+                },
+                "attempts": null
+              },
+              {
+                "role": "96x160x128:latent",
+                "kernel_hash": "72165292dd512bc56d505844d5faf0ef02084723819be7f5c6f52eb7290f155e",
+                "binary_sha256": "779cf8e16fb6a21ff4b742cde9d979645d1db1eaf99f48064c7f469a902409ee",
+                "spills": 0,
+                "registers": 256,
+                "shared_bytes": 2048,
+                "grid": [
+                  480,
+                  2
+                ],
+                "launch_options": {
+                  "num_warps": 4,
+                  "num_stages": 1,
+                  "enable_fp_fusion": false
+                },
+                "selected_pair_bm": 32,
+                "selected_pair_num_warps": 4,
+                "serial_c64_mlp": true,
+                "input_shape": [
+                  96,
+                  160,
+                  128
+                ],
+                "latent_shape": [
+                  4,
+                  15360,
+                  32
+                ],
+                "selection": {
+                  "selected": [
+                    32,
+                    4
+                  ],
+                  "launch_options": {
+                    "num_warps": 4,
+                    "num_stages": 1,
+                    "enable_fp_fusion": false
+                  },
+                  "qualification": "zero_spill",
+                  "attempts": [
+                    {
+                      "config": [
+                        32,
+                        4
+                      ],
+                      "grid": [
+                        480,
+                        2
+                      ],
+                      "launch_options": {
+                        "num_warps": 4,
+                        "num_stages": 1,
+                        "enable_fp_fusion": false
+                      },
+                      "constants": [
+                        15360,
+                        128,
+                        32,
+                        false,
+                        96,
+                        160,
+                        160,
+                        0,
+                        0,
+                        true
+                      ],
+                      "status": "selected_zero_spill",
+                      "kernel_hash": "72165292dd512bc56d505844d5faf0ef02084723819be7f5c6f52eb7290f155e",
+                      "spills": 0,
+                      "spills_type": "builtins.int",
+                      "spills_repr": "0",
+                      "registers": 256,
+                      "shared_bytes": 2048,
+                      "compiler_metadata": {
+                        "build_flags": " -cl-intel-256-GRF-per-thread",
+                        "num_warps": 4,
+                        "num_stages": 1,
+                        "threads_per_warp": 16
+                      },
+                      "binary_kind": "spv",
+                      "binary_sha256": "779cf8e16fb6a21ff4b742cde9d979645d1db1eaf99f48064c7f469a902409ee",
+                      "binary_bytes": 31376
+                    }
+                  ]
+                },
+                "attempts": null
+              },
+              {
+                "role": "48x80x256:latent",
+                "kernel_hash": "4ed82220d8c22f2167a49942834f37477c0a05f8c5c93fd07abd6189a6740eb4",
+                "binary_sha256": "0ead182210c1148b631bfcbe22ba6838e2537309e12d76e9e8f4b9836e463d5d",
+                "spills": 0,
+                "registers": 256,
+                "shared_bytes": 1024,
+                "grid": [
+                  240,
+                  4
+                ],
+                "launch_options": {
+                  "num_warps": 4,
+                  "num_stages": 1,
+                  "enable_fp_fusion": false
+                },
+                "selected_pair_bm": 16,
+                "selected_pair_num_warps": 4,
+                "serial_c64_mlp": true,
+                "input_shape": [
+                  48,
+                  80,
+                  256
+                ],
+                "latent_shape": [
+                  8,
+                  3840,
+                  32
+                ],
+                "selection": {
+                  "selected": [
+                    16,
+                    4
+                  ],
+                  "launch_options": {
+                    "num_warps": 4,
+                    "num_stages": 1,
+                    "enable_fp_fusion": false
+                  },
+                  "qualification": "zero_spill",
+                  "attempts": [
+                    {
+                      "config": [
+                        16,
+                        4
+                      ],
+                      "grid": [
+                        240,
+                        4
+                      ],
+                      "launch_options": {
+                        "num_warps": 4,
+                        "num_stages": 1,
+                        "enable_fp_fusion": false
+                      },
+                      "constants": [
+                        3840,
+                        256,
+                        16,
+                        false,
+                        48,
+                        80,
+                        80,
+                        0,
+                        0,
+                        true
+                      ],
+                      "status": "selected_zero_spill",
+                      "kernel_hash": "4ed82220d8c22f2167a49942834f37477c0a05f8c5c93fd07abd6189a6740eb4",
+                      "spills": 0,
+                      "spills_type": "builtins.int",
+                      "spills_repr": "0",
+                      "registers": 256,
+                      "shared_bytes": 1024,
+                      "compiler_metadata": {
+                        "build_flags": " -cl-intel-256-GRF-per-thread",
+                        "num_warps": 4,
+                        "num_stages": 1,
+                        "threads_per_warp": 16
+                      },
+                      "binary_kind": "spv",
+                      "binary_sha256": "0ead182210c1148b631bfcbe22ba6838e2537309e12d76e9e8f4b9836e463d5d",
+                      "binary_bytes": 43616
+                    }
+                  ]
+                },
+                "attempts": null
+              }
+            ],
+            "swin_counter_labels": 176
+          }
+        },
+        "delta_full_ms": 4.217684256410266,
+        "delta_raw_ms": 3.012352060000005
+      },
+      {
+        "candidate": "audit_impl_swin_c256_split_tail_720_v3",
+        "candidate_adopted": false,
+        "arms": {
+          "accepted_baseline": {
+            "result_path": "${EXPERIMENTS_E}\\cyberpunk-opt\\b580-full-implementation-v1-20261003\\luna\\phase2\\attempt-38b-r18-e-swin-c256-split\\accepted_baseline\\measurement\\readonly\\RESULT.json",
+            "sha256": "6f53daaffe91ba8cb867ac4b6dd4cde6ed94f9bebe78bdc3c7d9f83452a99fab",
+            "full_ms": 45.04729961538462,
+            "raw_ms": 38.474086480000004,
+            "full_sample_count": 39,
+            "raw_sample_count": 50,
+            "compiled_catalog": [
+              {
+                "kernel_hash": "7cfed67f6991451ed22c281826a37556df93d2d5b1d093617227ad7deca19dcb",
+                "module": "batched_branched_mlp_v1",
+                "function": "_project",
+                "constants": {
+                  "C": 128,
+                  "BM": 16,
+                  "BN": 64
+                },
+                "options": {
+                  "num_warps": 4,
+                  "num_stages": 1,
+                  "grf_mode": "default"
+                }
+              },
+              {
+                "kernel_hash": "7cc3ddf685c0a3ba1645b75e98d6a12340c8067f9292473a81a7eddf479828c2",
+                "module": "c64_attention_project_fused_720_v1",
+                "function": "_fused",
+                "constants": {
+                  "BM": 32,
+                  "ROUND_WEIGHTS": false
+                },
+                "options": {
+                  "num_warps": 4,
+                  "num_stages": 1,
+                  "grf_mode": "default"
+                }
+              },
+              {
+                "kernel_hash": "47d6a7d5dfeec40ecbde5b168006d6121adfafb9fa4b3ac6a6af3488384ed72a",
+                "module": "c128_attention_project_fused_720_v1",
+                "function": "_fused",
+                "constants": {
+                  "BM": 16,
+                  "ROUND_WEIGHTS": false
+                },
+                "options": {
+                  "num_warps": 4,
+                  "num_stages": 1,
+                  "grf_mode": "default"
+                }
+              },
+              {
+                "kernel_hash": "fc6212e060ac9d664a28c461ae40a11b898d85d6ce25ecf584d12d3abf1c96ca",
+                "module": "native_cubic_c32_v1",
+                "function": "_kernel",
+                "constants": {
+                  "BM": 32,
+                  "ROUND_ACTIVATION": false
+                },
+                "options": {
+                  "num_warps": 4,
+                  "num_stages": 1,
+                  "grf_mode": "default"
+                }
+              },
+              {
+                "kernel_hash": "78992e78c23e9534eea618646126130c2aaf3d1eb41df285e9719dc6bf20090d",
+                "module": "fused_c32_projection_native_half_v1",
+                "function": "_kernel",
+                "constants": {
+                  "ROUND_QKV": false,
+                  "BM": 32
+                },
+                "options": {
+                  "num_warps": 4,
+                  "num_stages": 1,
+                  "grf_mode": "default"
+                }
+              },
+              {
+                "kernel_hash": "38795c38eadd2d0ea4d8c854aee071a20261589e0684ec466d7be803b0a4d266",
+                "module": "post_attention_fusion_v1",
+                "function": "_attention_project",
+                "constants": {},
+                "options": {
+                  "num_warps": 4,
+                  "num_stages": 1,
+                  "grf_mode": "default"
+                }
+              },
+              {
+                "kernel_hash": "6574f265fed5ddbedf2cef5e8a096604086e073b13be73bab7dbfe5f5b9a6637",
+                "module": "batched_branched_mlp_v1",
+                "function": "_pairs",
+                "constants": {
+                  "C": 64,
+                  "BM": 32,
+                  "ROUND_REDUCED": false
+                },
+                "options": {
+                  "num_warps": 4,
+                  "num_stages": 2,
+                  "grf_mode": "default"
+                }
+              },
+              {
+                "kernel_hash": "43db221f9ff591a05afbebb5ebb8aa45881e3149b8af468b8a638e216b064166",
+                "module": "batched_branched_mlp_v1",
+                "function": "_project",
+                "constants": {
+                  "C": 64,
+                  "BM": 16,
+                  "BN": 64
+                },
+                "options": {
+                  "num_warps": 4,
+                  "num_stages": 1,
+                  "grf_mode": "default"
+                }
+              },
+              {
+                "kernel_hash": "cea54a279358cece4b729e0c3256c4cd1fbba0a05d4c58d9b7c6c0eb3ce44cf8",
+                "module": "c64_qkv_direct_pack_v2",
+                "function": "_qkv_direct_pack",
+                "constants": {
+                  "BM": 16,
+                  "BN": 32,
+                  "BK": 32,
+                  "ROUND_QKV": false
+                },
+                "options": {
+                  "num_warps": 4,
+                  "num_stages": 2,
+                  "grf_mode": "default"
+                }
+              },
+              {
+                "kernel_hash": "4241c4fa7741c035f7aaa22918b9c63817053d0df10f6cc1f04e07fa52c3c368",
+                "module": "c128_qkv_direct_pack_one_v1",
+                "function": "_direct_pack",
+                "constants": {
+                  "BM": 16,
+                  "BN": 32,
+                  "BK": 32,
+                  "ROUND_QKV": false
+                },
+                "options": {
+                  "num_warps": 4,
+                  "num_stages": 2,
+                  "grf_mode": "default"
+                }
+              },
+              {
+                "kernel_hash": "6f20ba3af684604684abd37d0e8cf58c84882995c77d4cda5bad1d7ec2c5959e",
+                "module": "batched_branched_mlp_v1",
+                "function": "_pairs",
+                "constants": {
+                  "C": 256,
+                  "BM": 16,
+                  "ROUND_REDUCED": false
+                },
+                "options": {
+                  "num_warps": 4,
+                  "num_stages": 1,
+                  "grf_mode": "default"
+                }
+              },
+              {
+                "kernel_hash": "243b39a034c3451b2b6db557eca1578ad61b669380279990eb13292c9d6395da",
+                "module": "batched_branched_mlp_v1",
+                "function": "_project",
+                "constants": {
+                  "C": 256,
+                  "BM": 16,
+                  "BN": 64
+                },
+                "options": {
+                  "num_warps": 4,
+                  "num_stages": 1,
+                  "grf_mode": "default"
+                }
+              }
+            ],
+            "catalog_limit": "Compiler key presence alone is not executed-per-kernel proof; source mode/dispatcher and guarded owner resource bindings determine current routes."
+          },
+          "audit_impl_swin_c256_split_tail_720_v3": {
+            "result_path": "${EXPERIMENTS_E}\\cyberpunk-opt\\b580-full-implementation-v1-20261003\\luna\\phase2\\attempt-38b-r18-e-swin-c256-split\\audit_impl_swin_c256_split_tail_720_v3\\measurement\\readonly\\RESULT.json",
+            "sha256": "24266eed541f582732754236a89399fa4f2109fdc37688156ab5e70d63c2d6a8",
+            "full_ms": 54.86360438461538,
+            "raw_ms": 47.94036668,
+            "full_sample_count": 39,
+            "raw_sample_count": 50,
+            "swin_sites": 44,
+            "calls_unique": [
+              6
+            ],
+            "captures_unique": [
+              2
+            ],
+            "roles": [
+              {
+                "role": "('qkv', (32, 384, 640, 0, 0))",
+                "kernel_hash": "b67e25ae98d306340d8cd0e9b7eb522413183638a365184472d4b1be417792ce",
+                "binary_kind": "spv",
+                "binary_sha256": "abdf22315c309821284cd4e25206ee026a1698c67f35315599c8a83c1131b7f6",
+                "spills": 0,
+                "registers": 0,
+                "shared_bytes": 6144,
+                "grid": [
+                  7680,
+                  2
+                ],
+                "launch_options": {
+                  "num_warps": 4,
+                  "num_stages": 2,
+                  "enable_fp_fusion": false
+                },
+                "source_kernel": "audit_swin_720_kernels_v1._qkv",
+                "constants": {
+                  "BM": 32,
+                  "NORM_FP32": true,
+                  "WIDE_N": true,
+                  "M": 245760,
+                  "WP": 640,
+                  "C": 32
+                }
+              },
+              {
+                "role": "('tail', (32, 384, 640, 0, 0))",
+                "kernel_hash": "68eebb7cc9b3fa95098488e71f95622a04ec85efc7a3a738683748f5d055a0b7",
+                "binary_kind": "spv",
+                "binary_sha256": "2c5c5fae45b9c241ac313a187a4382949c67d6bc50c133ffeb0b3205bd508410",
+                "spills": 0,
+                "registers": 256,
+                "shared_bytes": 4096,
+                "grid": [
+                  2,
+                  3840,
+                  1
+                ],
+                "launch_options": {
+                  "num_warps": 4,
+                  "num_stages": 1,
+                  "enable_fp_fusion": false
+                },
+                "source_kernel": "audit_swin_720_kernels_v1._attention_project",
+                "constants": {
+                  "WP": 640,
+                  "H": 384,
+                  "W": 640,
+                  "SY": 0,
+                  "SX": 0,
+                  "C": 32,
+                  "BM": 32,
+                  "BN": 32,
+                  "DENOM_FP32": true,
+                  "WIDE_SCORE": true,
+                  "WIDE_VALUE": true,
+                  "CROP_QUERIES": true,
+                  "HP": 384
+                }
+              },
+              {
+                "role": "('qkv', (64, 192, 320, 0, 0))",
+                "kernel_hash": "1775c1c86a6f327366a7220516fca80976d915880cef7a34f20043d46c579ead",
+                "binary_kind": "spv",
+                "binary_sha256": "af8c065e97bbecfec5f7e13304c46daae55361f91d33ea5bf06f84b62e4c8b04",
+                "spills": 0,
+                "registers": 0,
+                "shared_bytes": 5120,
+                "grid": [
+                  3840,
+                  3
+                ],
+                "launch_options": {
+                  "num_warps": 4,
+                  "num_stages": 2,
+                  "enable_fp_fusion": false
+                },
+                "source_kernel": "audit_swin_720_kernels_v1._qkv",
+                "constants": {
+                  "BM": 16,
+                  "NORM_FP32": true,
+                  "WIDE_N": true,
+                  "M": 61440,
+                  "WP": 320,
+                  "C": 64
+                }
+              },
+              {
+                "role": "('tail', (64, 192, 320, 0, 0))",
+                "kernel_hash": "0267cff719ef02844ff48c1516fd738e7ed618827900ffcec37863dae0c31fca",
+                "binary_kind": "spv",
+                "binary_sha256": "c92c8a34fb767e556ca9797a67e6ebcbcd503682e7d176c1458a5b4aa4791288",
+                "spills": 0,
+                "registers": 256,
+                "shared_bytes": 4096,
+                "grid": [
+                  4,
+                  960,
+                  1
+                ],
+                "launch_options": {
+                  "num_warps": 4,
+                  "num_stages": 1,
+                  "enable_fp_fusion": false
+                },
+                "source_kernel": "audit_swin_720_kernels_v1._attention_project",
+                "constants": {
+                  "WP": 320,
+                  "H": 192,
+                  "W": 320,
+                  "SY": 0,
+                  "SX": 0,
+                  "C": 64,
+                  "BM": 16,
+                  "BN": 64,
+                  "DENOM_FP32": true,
+                  "WIDE_SCORE": true,
+                  "WIDE_VALUE": true,
+                  "CROP_QUERIES": true,
+                  "HP": 192
+                }
+              },
+              {
+                "role": "('qkv', (128, 96, 160, 0, 0))",
+                "kernel_hash": "dbe817284db923fb27635fa86891445764b52a7f8a45bac1ff17998e9f9eddf1",
+                "binary_kind": "spv",
+                "binary_sha256": "3bc2fb23cd4171ce9c5bc5c6746f51920cf3dc50913eeae8626db96eb2ee63d3",
+                "spills": 0,
+                "registers": 0,
+                "shared_bytes": 5120,
+                "grid": [
+                  960,
+                  6
+                ],
+                "launch_options": {
+                  "num_warps": 4,
+                  "num_stages": 2,
+                  "enable_fp_fusion": false
+                },
+                "source_kernel": "audit_swin_720_kernels_v1._qkv",
+                "constants": {
+                  "BM": 16,
+                  "NORM_FP32": true,
+                  "WIDE_N": true,
+                  "M": 15360,
+                  "WP": 160,
+                  "C": 128
+                }
+              },
+              {
+                "role": "('tail', (128, 96, 160, 0, 0))",
+                "kernel_hash": "ca587366f3f99af073b779850fa7f3c620d612b13376b0d7791f3bbd248e28c3",
+                "binary_kind": "spv",
+                "binary_sha256": "e6f10c5ea8fc99d96152bf826446b8529fd5d4091b616695bd01b03237276ed8",
+                "spills": 0,
+                "registers": 256,
+                "shared_bytes": 8192,
+                "grid": [
+                  4,
+                  240,
+                  1
+                ],
+                "launch_options": {
+                  "num_warps": 4,
+                  "num_stages": 1,
+                  "enable_fp_fusion": false
+                },
+                "source_kernel": "audit_swin_720_kernels_v1._attention_project",
+                "constants": {
+                  "WP": 160,
+                  "H": 96,
+                  "W": 160,
+                  "SY": 0,
+                  "SX": 0,
+                  "C": 128,
+                  "BM": 16,
+                  "BN": 128,
+                  "DENOM_FP32": true,
+                  "WIDE_SCORE": true,
+                  "WIDE_VALUE": true,
+                  "CROP_QUERIES": true,
+                  "HP": 96
+                }
+              },
+              {
+                "role": "('qkv', (256, 48, 80, 0, 0))",
+                "kernel_hash": "028e31c1a1b94bd375ebc1dd4af94a0ae4f1f23448fa2b5d83880beed92fb67c",
+                "binary_kind": "spv",
+                "binary_sha256": "7115242fb4c4f0192e2c29d87d8cb7f2d541fe5e35a65366b363c2c8de5935fe",
+                "spills": 0,
+                "registers": 0,
+                "shared_bytes": 6144,
+                "grid": [
+                  120,
+                  12
+                ],
+                "launch_options": {
+                  "num_warps": 4,
+                  "num_stages": 2,
+                  "enable_fp_fusion": false
+                },
+                "source_kernel": "audit_swin_720_kernels_v1._qkv",
+                "constants": {
+                  "BM": 32,
+                  "NORM_FP32": true,
+                  "WIDE_N": true,
+                  "M": 3840,
+                  "WP": 80,
+                  "C": 256
+                }
+              },
+              {
+                "role": "('attend', (256, 48, 80, 0, 0))",
+                "kernel_hash": "ddb40c146599be36993ecf363ba80f669b23b443b4744741334fdb04c8804896",
+                "binary_kind": "spv",
+                "binary_sha256": "8fc55a378f1de131d7784f2574f0c3dc3e3edee9c8fc1f754f036b5bf3e1dd86",
+                "spills": 0,
+                "registers": 0,
+                "shared_bytes": 4096,
+                "grid": [
+                  2,
+                  60,
+                  8
+                ],
+                "launch_options": {
+                  "num_warps": 4,
+                  "num_stages": 1,
+                  "enable_fp_fusion": false
+                },
+                "source_kernel": "audit_swin_720_kernels_v1._attention_heads",
+                "constants": {
+                  "SY": 0,
+                  "SX": 0,
+                  "C": 256,
+                  "BM": 32,
+                  "DENOM_FP32": true,
+                  "WIDE_SCORE": true,
+                  "WIDE_VALUE": true,
+                  "CROP_QUERIES": true,
+                  "HP": 48,
+                  "WP": 80,
+                  "H": 48,
+                  "W": 80
+                }
+              },
+              {
+                "role": "('tail', (256, 48, 80, 0, 0))",
+                "kernel_hash": "cddf80e389fbc917fbfd54d05fd5f309a3778f93bea982caa275605549fa3057",
+                "binary_kind": "spv",
+                "binary_sha256": "f00f10cff1ae11ec2eda4d154b5e8238e2bcbf7a65e4fabcef03f82ef7945fc8",
+                "spills": 0,
+                "registers": 256,
+                "shared_bytes": 10240,
+                "grid": [
+                  2,
+                  60,
+                  2
+                ],
+                "launch_options": {
+                  "num_warps": 4,
+                  "num_stages": 1,
+                  "enable_fp_fusion": false
+                },
+                "source_kernel": "audit_swin_720_kernels_v1._project_heads",
+                "constants": {
+                  "SY": 0,
+                  "SX": 0,
+                  "C": 256,
+                  "BM": 32,
+                  "BN": 128,
+                  "CROP_QUERIES": true,
+                  "HP": 48,
+                  "WP": 80,
+                  "H": 48,
+                  "W": 80
+                }
+              }
+            ],
+            "latents": [
+              {
+                "role": "192x320x64:latent",
+                "kernel_hash": "66efaaf025065269ed76051501992774958ee6d4391651b4a93df185488a5ed0",
+                "binary_sha256": "3079baadefd192c2e3919c607a42b218e8dbc6623bf4210435175a57725f5720",
+                "spills": 0,
+                "registers": 256,
+                "shared_bytes": 512,
+                "grid": [
+                  7680,
+                  1
+                ],
+                "launch_options": {
+                  "num_warps": 8,
+                  "num_stages": 1,
+                  "enable_fp_fusion": false
+                },
+                "selected_pair_bm": 8,
+                "selected_pair_num_warps": 8,
+                "serial_c64_mlp": false,
+                "input_shape": [
+                  192,
+                  320,
+                  64
+                ],
+                "latent_shape": [
+                  2,
+                  61440,
+                  32
+                ],
+                "selection": {
+                  "selected": [
+                    8,
+                    8
+                  ],
+                  "launch_options": {
+                    "num_warps": 8,
+                    "num_stages": 1,
+                    "enable_fp_fusion": false
+                  },
+                  "qualification": "zero_spill",
+                  "attempts": [
+                    {
+                      "config": [
+                        32,
+                        4
+                      ],
+                      "grid": [
+                        1920,
+                        1
+                      ],
+                      "launch_options": {
+                        "num_warps": 4,
+                        "num_stages": 1,
+                        "enable_fp_fusion": false
+                      },
+                      "constants": [
+                        61440,
+                        64,
+                        32,
+                        false,
+                        192,
+                        320,
+                        320,
+                        0,
+                        0,
+                        false
+                      ],
+                      "status": "rejected_known_positive_spills",
+                      "kernel_hash": "d4c746ff39b2ebc7b9e936f1e549086c6856ff5610000e40df8cb4e9469e77d7",
+                      "spills": 832,
+                      "spills_type": "builtins.int",
+                      "spills_repr": "832",
+                      "registers": 256,
+                      "shared_bytes": 2048,
+                      "compiler_metadata": {
+                        "build_flags": " -cl-intel-256-GRF-per-thread",
+                        "num_warps": 4,
+                        "num_stages": 1,
+                        "threads_per_warp": 16
+                      },
+                      "binary_kind": "spv",
+                      "binary_sha256": "d1c23950ba111a3ec90879d5fbecf1c7fa9a41e7e1732dbfd47c511b364d68fe",
+                      "binary_bytes": 44124
+                    },
+                    {
+                      "config": [
+                        16,
+                        4
+                      ],
+                      "grid": [
+                        3840,
+                        1
+                      ],
+                      "launch_options": {
+                        "num_warps": 4,
+                        "num_stages": 1,
+                        "enable_fp_fusion": false
+                      },
+                      "constants": [
+                        61440,
+                        64,
+                        16,
+                        false,
+                        192,
+                        320,
+                        320,
+                        0,
+                        0,
+                        false
+                      ],
+                      "status": "rejected_known_positive_spills",
+                      "kernel_hash": "4add31a1e725b73c1f11f3da02fddf575240f329d5950b74a7773ff52b7f20bc",
+                      "spills": 320,
+                      "spills_type": "builtins.int",
+                      "spills_repr": "320",
+                      "registers": 256,
+                      "shared_bytes": 1024,
+                      "compiler_metadata": {
+                        "build_flags": " -cl-intel-256-GRF-per-thread",
+                        "num_warps": 4,
+                        "num_stages": 1,
+                        "threads_per_warp": 16
+                      },
+                      "binary_kind": "spv",
+                      "binary_sha256": "119880408b84ed79f95fe9c83d96d59c80bb3c7f31b8be6204318f7184ce35d1",
+                      "binary_bytes": 43588
+                    },
+                    {
+                      "config": [
+                        8,
+                        4
+                      ],
+                      "grid": [
+                        7680,
+                        1
+                      ],
+                      "launch_options": {
+                        "num_warps": 4,
+                        "num_stages": 1,
+                        "enable_fp_fusion": false
+                      },
+                      "constants": [
+                        61440,
+                        64,
+                        8,
+                        false,
+                        192,
+                        320,
+                        320,
+                        0,
+                        0,
+                        false
+                      ],
+                      "status": "rejected_known_positive_spills",
+                      "kernel_hash": "f87caadc628888be893c18038c8ebf1802b8bd217716b74ddba753ad63302b58",
+                      "spills": 384,
+                      "spills_type": "builtins.int",
+                      "spills_repr": "384",
+                      "registers": 256,
+                      "shared_bytes": 512,
+                      "compiler_metadata": {
+                        "build_flags": " -cl-intel-256-GRF-per-thread",
+                        "num_warps": 4,
+                        "num_stages": 1,
+                        "threads_per_warp": 16
+                      },
+                      "binary_kind": "spv",
+                      "binary_sha256": "90d1cb95633165414f0e91b743c2c300606a75f04e9a711160e6aa42637f92d8",
+                      "binary_bytes": 43024
+                    },
+                    {
+                      "config": [
+                        8,
+                        8
+                      ],
+                      "grid": [
+                        7680,
+                        1
+                      ],
+                      "launch_options": {
+                        "num_warps": 8,
+                        "num_stages": 1,
+                        "enable_fp_fusion": false
+                      },
+                      "constants": [
+                        61440,
+                        64,
+                        8,
+                        false,
+                        192,
+                        320,
+                        320,
+                        0,
+                        0,
+                        false
+                      ],
+                      "status": "selected_zero_spill",
+                      "kernel_hash": "66efaaf025065269ed76051501992774958ee6d4391651b4a93df185488a5ed0",
+                      "spills": 0,
+                      "spills_type": "builtins.int",
+                      "spills_repr": "0",
+                      "registers": 256,
+                      "shared_bytes": 512,
+                      "compiler_metadata": {
+                        "build_flags": " -cl-intel-256-GRF-per-thread",
+                        "num_warps": 8,
+                        "num_stages": 1,
+                        "threads_per_warp": 16
+                      },
+                      "binary_kind": "spv",
+                      "binary_sha256": "3079baadefd192c2e3919c607a42b218e8dbc6623bf4210435175a57725f5720",
+                      "binary_bytes": 42820
+                    }
+                  ]
+                },
+                "attempts": null
+              },
+              {
+                "role": "96x160x128:latent",
+                "kernel_hash": "59cbf4bf01c50c2bb4517801e340467a39b01f2bdc8f12f15a6fda1c083289de",
+                "binary_sha256": "779cf8e16fb6a21ff4b742cde9d979645d1db1eaf99f48064c7f469a902409ee",
+                "spills": 0,
+                "registers": 256,
+                "shared_bytes": 2048,
+                "grid": [
+                  480,
+                  2
+                ],
+                "launch_options": {
+                  "num_warps": 4,
+                  "num_stages": 1,
+                  "enable_fp_fusion": false
+                },
+                "selected_pair_bm": 32,
+                "selected_pair_num_warps": 4,
+                "serial_c64_mlp": false,
+                "input_shape": [
+                  96,
+                  160,
+                  128
+                ],
+                "latent_shape": [
+                  4,
+                  15360,
+                  32
+                ],
+                "selection": {
+                  "selected": [
+                    32,
+                    4
+                  ],
+                  "launch_options": {
+                    "num_warps": 4,
+                    "num_stages": 1,
+                    "enable_fp_fusion": false
+                  },
+                  "qualification": "zero_spill",
+                  "attempts": [
+                    {
+                      "config": [
+                        32,
+                        4
+                      ],
+                      "grid": [
+                        480,
+                        2
+                      ],
+                      "launch_options": {
+                        "num_warps": 4,
+                        "num_stages": 1,
+                        "enable_fp_fusion": false
+                      },
+                      "constants": [
+                        15360,
+                        128,
+                        32,
+                        false,
+                        96,
+                        160,
+                        160,
+                        0,
+                        0,
+                        false
+                      ],
+                      "status": "selected_zero_spill",
+                      "kernel_hash": "59cbf4bf01c50c2bb4517801e340467a39b01f2bdc8f12f15a6fda1c083289de",
+                      "spills": 0,
+                      "spills_type": "builtins.int",
+                      "spills_repr": "0",
+                      "registers": 256,
+                      "shared_bytes": 2048,
+                      "compiler_metadata": {
+                        "build_flags": " -cl-intel-256-GRF-per-thread",
+                        "num_warps": 4,
+                        "num_stages": 1,
+                        "threads_per_warp": 16
+                      },
+                      "binary_kind": "spv",
+                      "binary_sha256": "779cf8e16fb6a21ff4b742cde9d979645d1db1eaf99f48064c7f469a902409ee",
+                      "binary_bytes": 31376
+                    }
+                  ]
+                },
+                "attempts": null
+              },
+              {
+                "role": "48x80x256:latent",
+                "kernel_hash": "47e9e6f02ae59c2003b32fdc8f96d89fd72eeda6509552af6efc007a4020bb7f",
+                "binary_sha256": "0ead182210c1148b631bfcbe22ba6838e2537309e12d76e9e8f4b9836e463d5d",
+                "spills": 0,
+                "registers": 256,
+                "shared_bytes": 1024,
+                "grid": [
+                  240,
+                  4
+                ],
+                "launch_options": {
+                  "num_warps": 4,
+                  "num_stages": 1,
+                  "enable_fp_fusion": false
+                },
+                "selected_pair_bm": 16,
+                "selected_pair_num_warps": 4,
+                "serial_c64_mlp": false,
+                "input_shape": [
+                  48,
+                  80,
+                  256
+                ],
+                "latent_shape": [
+                  8,
+                  3840,
+                  32
+                ],
+                "selection": {
+                  "selected": [
+                    16,
+                    4
+                  ],
+                  "launch_options": {
+                    "num_warps": 4,
+                    "num_stages": 1,
+                    "enable_fp_fusion": false
+                  },
+                  "qualification": "zero_spill",
+                  "attempts": [
+                    {
+                      "config": [
+                        16,
+                        4
+                      ],
+                      "grid": [
+                        240,
+                        4
+                      ],
+                      "launch_options": {
+                        "num_warps": 4,
+                        "num_stages": 1,
+                        "enable_fp_fusion": false
+                      },
+                      "constants": [
+                        3840,
+                        256,
+                        16,
+                        false,
+                        48,
+                        80,
+                        80,
+                        0,
+                        0,
+                        false
+                      ],
+                      "status": "selected_zero_spill",
+                      "kernel_hash": "47e9e6f02ae59c2003b32fdc8f96d89fd72eeda6509552af6efc007a4020bb7f",
+                      "spills": 0,
+                      "spills_type": "builtins.int",
+                      "spills_repr": "0",
+                      "registers": 256,
+                      "shared_bytes": 1024,
+                      "compiler_metadata": {
+                        "build_flags": " -cl-intel-256-GRF-per-thread",
+                        "num_warps": 4,
+                        "num_stages": 1,
+                        "threads_per_warp": 16
+                      },
+                      "binary_kind": "spv",
+                      "binary_sha256": "0ead182210c1148b631bfcbe22ba6838e2537309e12d76e9e8f4b9836e463d5d",
+                      "binary_bytes": 43616
+                    }
+                  ]
+                },
+                "attempts": null
+              }
+            ],
+            "swin_counter_labels": 192
+          }
+        },
+        "delta_full_ms": 9.816304769230761,
+        "delta_raw_ms": 9.466280199999993
+      },
+      {
+        "candidate": "audit_impl_swin_c64_serial_c256_split_720_v3",
+        "candidate_adopted": false,
+        "arms": {
+          "accepted_baseline": {
+            "result_path": "${EXPERIMENTS_E}\\cyberpunk-opt\\b580-full-implementation-v1-20261003\\luna\\phase2\\attempt-39-r18-e-swin-combined\\accepted_baseline\\measurement\\readonly\\RESULT.json",
+            "sha256": "29fc7ddf56e86c98ec3de01ca668d8f9b7eaf83d0429bddacb5655425ae305d1",
+            "full_ms": 46.57891297435897,
+            "raw_ms": 40.18540934,
+            "full_sample_count": 39,
+            "raw_sample_count": 50,
+            "compiled_catalog": [
+              {
+                "kernel_hash": "7cfed67f6991451ed22c281826a37556df93d2d5b1d093617227ad7deca19dcb",
+                "module": "batched_branched_mlp_v1",
+                "function": "_project",
+                "constants": {
+                  "C": 128,
+                  "BM": 16,
+                  "BN": 64
+                },
+                "options": {
+                  "num_warps": 4,
+                  "num_stages": 1,
+                  "grf_mode": "default"
+                }
+              },
+              {
+                "kernel_hash": "7cc3ddf685c0a3ba1645b75e98d6a12340c8067f9292473a81a7eddf479828c2",
+                "module": "c64_attention_project_fused_720_v1",
+                "function": "_fused",
+                "constants": {
+                  "BM": 32,
+                  "ROUND_WEIGHTS": false
+                },
+                "options": {
+                  "num_warps": 4,
+                  "num_stages": 1,
+                  "grf_mode": "default"
+                }
+              },
+              {
+                "kernel_hash": "47d6a7d5dfeec40ecbde5b168006d6121adfafb9fa4b3ac6a6af3488384ed72a",
+                "module": "c128_attention_project_fused_720_v1",
+                "function": "_fused",
+                "constants": {
+                  "BM": 16,
+                  "ROUND_WEIGHTS": false
+                },
+                "options": {
+                  "num_warps": 4,
+                  "num_stages": 1,
+                  "grf_mode": "default"
+                }
+              },
+              {
+                "kernel_hash": "fc6212e060ac9d664a28c461ae40a11b898d85d6ce25ecf584d12d3abf1c96ca",
+                "module": "native_cubic_c32_v1",
+                "function": "_kernel",
+                "constants": {
+                  "BM": 32,
+                  "ROUND_ACTIVATION": false
+                },
+                "options": {
+                  "num_warps": 4,
+                  "num_stages": 1,
+                  "grf_mode": "default"
+                }
+              },
+              {
+                "kernel_hash": "78992e78c23e9534eea618646126130c2aaf3d1eb41df285e9719dc6bf20090d",
+                "module": "fused_c32_projection_native_half_v1",
+                "function": "_kernel",
+                "constants": {
+                  "ROUND_QKV": false,
+                  "BM": 32
+                },
+                "options": {
+                  "num_warps": 4,
+                  "num_stages": 1,
+                  "grf_mode": "default"
+                }
+              },
+              {
+                "kernel_hash": "38795c38eadd2d0ea4d8c854aee071a20261589e0684ec466d7be803b0a4d266",
+                "module": "post_attention_fusion_v1",
+                "function": "_attention_project",
+                "constants": {},
+                "options": {
+                  "num_warps": 4,
+                  "num_stages": 1,
+                  "grf_mode": "default"
+                }
+              },
+              {
+                "kernel_hash": "6574f265fed5ddbedf2cef5e8a096604086e073b13be73bab7dbfe5f5b9a6637",
+                "module": "batched_branched_mlp_v1",
+                "function": "_pairs",
+                "constants": {
+                  "C": 64,
+                  "BM": 32,
+                  "ROUND_REDUCED": false
+                },
+                "options": {
+                  "num_warps": 4,
+                  "num_stages": 2,
+                  "grf_mode": "default"
+                }
+              },
+              {
+                "kernel_hash": "43db221f9ff591a05afbebb5ebb8aa45881e3149b8af468b8a638e216b064166",
+                "module": "batched_branched_mlp_v1",
+                "function": "_project",
+                "constants": {
+                  "C": 64,
+                  "BM": 16,
+                  "BN": 64
+                },
+                "options": {
+                  "num_warps": 4,
+                  "num_stages": 1,
+                  "grf_mode": "default"
+                }
+              },
+              {
+                "kernel_hash": "cea54a279358cece4b729e0c3256c4cd1fbba0a05d4c58d9b7c6c0eb3ce44cf8",
+                "module": "c64_qkv_direct_pack_v2",
+                "function": "_qkv_direct_pack",
+                "constants": {
+                  "BM": 16,
+                  "BN": 32,
+                  "BK": 32,
+                  "ROUND_QKV": false
+                },
+                "options": {
+                  "num_warps": 4,
+                  "num_stages": 2,
+                  "grf_mode": "default"
+                }
+              },
+              {
+                "kernel_hash": "4241c4fa7741c035f7aaa22918b9c63817053d0df10f6cc1f04e07fa52c3c368",
+                "module": "c128_qkv_direct_pack_one_v1",
+                "function": "_direct_pack",
+                "constants": {
+                  "BM": 16,
+                  "BN": 32,
+                  "BK": 32,
+                  "ROUND_QKV": false
+                },
+                "options": {
+                  "num_warps": 4,
+                  "num_stages": 2,
+                  "grf_mode": "default"
+                }
+              },
+              {
+                "kernel_hash": "6f20ba3af684604684abd37d0e8cf58c84882995c77d4cda5bad1d7ec2c5959e",
+                "module": "batched_branched_mlp_v1",
+                "function": "_pairs",
+                "constants": {
+                  "C": 256,
+                  "BM": 16,
+                  "ROUND_REDUCED": false
+                },
+                "options": {
+                  "num_warps": 4,
+                  "num_stages": 1,
+                  "grf_mode": "default"
+                }
+              },
+              {
+                "kernel_hash": "243b39a034c3451b2b6db557eca1578ad61b669380279990eb13292c9d6395da",
+                "module": "batched_branched_mlp_v1",
+                "function": "_project",
+                "constants": {
+                  "C": 256,
+                  "BM": 16,
+                  "BN": 64
+                },
+                "options": {
+                  "num_warps": 4,
+                  "num_stages": 1,
+                  "grf_mode": "default"
+                }
+              }
+            ],
+            "catalog_limit": "Compiler key presence alone is not executed-per-kernel proof; source mode/dispatcher and guarded owner resource bindings determine current routes."
+          },
+          "audit_impl_swin_c64_serial_c256_split_720_v3": {
+            "result_path": "${EXPERIMENTS_E}\\cyberpunk-opt\\b580-full-implementation-v1-20261003\\luna\\phase2\\attempt-39-r18-e-swin-combined\\audit_impl_swin_c64_serial_c256_split_720_v3\\measurement\\readonly\\RESULT.json",
+            "sha256": "7da84633ccdbf32d0fef361e751f99c1751e219ff1d96703bbf9b3de35ca41f0",
+            "full_ms": 50.30588146153846,
+            "raw_ms": 43.23702186,
+            "full_sample_count": 39,
+            "raw_sample_count": 50,
+            "swin_sites": 44,
+            "calls_unique": [
+              6
+            ],
+            "captures_unique": [
+              2
+            ],
+            "roles": [
+              {
+                "role": "('qkv', (32, 384, 640, 0, 0))",
+                "kernel_hash": "b67e25ae98d306340d8cd0e9b7eb522413183638a365184472d4b1be417792ce",
+                "binary_kind": "spv",
+                "binary_sha256": "abdf22315c309821284cd4e25206ee026a1698c67f35315599c8a83c1131b7f6",
+                "spills": 0,
+                "registers": 0,
+                "shared_bytes": 6144,
+                "grid": [
+                  7680,
+                  2
+                ],
+                "launch_options": {
+                  "num_warps": 4,
+                  "num_stages": 2,
+                  "enable_fp_fusion": false
+                },
+                "source_kernel": "audit_swin_720_kernels_v1._qkv",
+                "constants": {
+                  "BM": 32,
+                  "NORM_FP32": true,
+                  "WIDE_N": true,
+                  "M": 245760,
+                  "WP": 640,
+                  "C": 32
+                }
+              },
+              {
+                "role": "('tail', (32, 384, 640, 0, 0))",
+                "kernel_hash": "68eebb7cc9b3fa95098488e71f95622a04ec85efc7a3a738683748f5d055a0b7",
+                "binary_kind": "spv",
+                "binary_sha256": "2c5c5fae45b9c241ac313a187a4382949c67d6bc50c133ffeb0b3205bd508410",
+                "spills": 0,
+                "registers": 256,
+                "shared_bytes": 4096,
+                "grid": [
+                  2,
+                  3840,
+                  1
+                ],
+                "launch_options": {
+                  "num_warps": 4,
+                  "num_stages": 1,
+                  "enable_fp_fusion": false
+                },
+                "source_kernel": "audit_swin_720_kernels_v1._attention_project",
+                "constants": {
+                  "WP": 640,
+                  "H": 384,
+                  "W": 640,
+                  "SY": 0,
+                  "SX": 0,
+                  "C": 32,
+                  "BM": 32,
+                  "BN": 32,
+                  "DENOM_FP32": true,
+                  "WIDE_SCORE": true,
+                  "WIDE_VALUE": true,
+                  "CROP_QUERIES": true,
+                  "HP": 384
+                }
+              },
+              {
+                "role": "('qkv', (64, 192, 320, 0, 0))",
+                "kernel_hash": "1775c1c86a6f327366a7220516fca80976d915880cef7a34f20043d46c579ead",
+                "binary_kind": "spv",
+                "binary_sha256": "af8c065e97bbecfec5f7e13304c46daae55361f91d33ea5bf06f84b62e4c8b04",
+                "spills": 0,
+                "registers": 0,
+                "shared_bytes": 5120,
+                "grid": [
+                  3840,
+                  3
+                ],
+                "launch_options": {
+                  "num_warps": 4,
+                  "num_stages": 2,
+                  "enable_fp_fusion": false
+                },
+                "source_kernel": "audit_swin_720_kernels_v1._qkv",
+                "constants": {
+                  "BM": 16,
+                  "NORM_FP32": true,
+                  "WIDE_N": true,
+                  "M": 61440,
+                  "WP": 320,
+                  "C": 64
+                }
+              },
+              {
+                "role": "('tail', (64, 192, 320, 0, 0))",
+                "kernel_hash": "0267cff719ef02844ff48c1516fd738e7ed618827900ffcec37863dae0c31fca",
+                "binary_kind": "spv",
+                "binary_sha256": "c92c8a34fb767e556ca9797a67e6ebcbcd503682e7d176c1458a5b4aa4791288",
+                "spills": 0,
+                "registers": 256,
+                "shared_bytes": 4096,
+                "grid": [
+                  4,
+                  960,
+                  1
+                ],
+                "launch_options": {
+                  "num_warps": 4,
+                  "num_stages": 1,
+                  "enable_fp_fusion": false
+                },
+                "source_kernel": "audit_swin_720_kernels_v1._attention_project",
+                "constants": {
+                  "WP": 320,
+                  "H": 192,
+                  "W": 320,
+                  "SY": 0,
+                  "SX": 0,
+                  "C": 64,
+                  "BM": 16,
+                  "BN": 64,
+                  "DENOM_FP32": true,
+                  "WIDE_SCORE": true,
+                  "WIDE_VALUE": true,
+                  "CROP_QUERIES": true,
+                  "HP": 192
+                }
+              },
+              {
+                "role": "('qkv', (128, 96, 160, 0, 0))",
+                "kernel_hash": "dbe817284db923fb27635fa86891445764b52a7f8a45bac1ff17998e9f9eddf1",
+                "binary_kind": "spv",
+                "binary_sha256": "3bc2fb23cd4171ce9c5bc5c6746f51920cf3dc50913eeae8626db96eb2ee63d3",
+                "spills": 0,
+                "registers": 0,
+                "shared_bytes": 5120,
+                "grid": [
+                  960,
+                  6
+                ],
+                "launch_options": {
+                  "num_warps": 4,
+                  "num_stages": 2,
+                  "enable_fp_fusion": false
+                },
+                "source_kernel": "audit_swin_720_kernels_v1._qkv",
+                "constants": {
+                  "BM": 16,
+                  "NORM_FP32": true,
+                  "WIDE_N": true,
+                  "M": 15360,
+                  "WP": 160,
+                  "C": 128
+                }
+              },
+              {
+                "role": "('tail', (128, 96, 160, 0, 0))",
+                "kernel_hash": "ca587366f3f99af073b779850fa7f3c620d612b13376b0d7791f3bbd248e28c3",
+                "binary_kind": "spv",
+                "binary_sha256": "e6f10c5ea8fc99d96152bf826446b8529fd5d4091b616695bd01b03237276ed8",
+                "spills": 0,
+                "registers": 256,
+                "shared_bytes": 8192,
+                "grid": [
+                  4,
+                  240,
+                  1
+                ],
+                "launch_options": {
+                  "num_warps": 4,
+                  "num_stages": 1,
+                  "enable_fp_fusion": false
+                },
+                "source_kernel": "audit_swin_720_kernels_v1._attention_project",
+                "constants": {
+                  "WP": 160,
+                  "H": 96,
+                  "W": 160,
+                  "SY": 0,
+                  "SX": 0,
+                  "C": 128,
+                  "BM": 16,
+                  "BN": 128,
+                  "DENOM_FP32": true,
+                  "WIDE_SCORE": true,
+                  "WIDE_VALUE": true,
+                  "CROP_QUERIES": true,
+                  "HP": 96
+                }
+              },
+              {
+                "role": "('qkv', (256, 48, 80, 0, 0))",
+                "kernel_hash": "028e31c1a1b94bd375ebc1dd4af94a0ae4f1f23448fa2b5d83880beed92fb67c",
+                "binary_kind": "spv",
+                "binary_sha256": "7115242fb4c4f0192e2c29d87d8cb7f2d541fe5e35a65366b363c2c8de5935fe",
+                "spills": 0,
+                "registers": 0,
+                "shared_bytes": 6144,
+                "grid": [
+                  120,
+                  12
+                ],
+                "launch_options": {
+                  "num_warps": 4,
+                  "num_stages": 2,
+                  "enable_fp_fusion": false
+                },
+                "source_kernel": "audit_swin_720_kernels_v1._qkv",
+                "constants": {
+                  "BM": 32,
+                  "NORM_FP32": true,
+                  "WIDE_N": true,
+                  "M": 3840,
+                  "WP": 80,
+                  "C": 256
+                }
+              },
+              {
+                "role": "('attend', (256, 48, 80, 0, 0))",
+                "kernel_hash": "ddb40c146599be36993ecf363ba80f669b23b443b4744741334fdb04c8804896",
+                "binary_kind": "spv",
+                "binary_sha256": "8fc55a378f1de131d7784f2574f0c3dc3e3edee9c8fc1f754f036b5bf3e1dd86",
+                "spills": 0,
+                "registers": 0,
+                "shared_bytes": 4096,
+                "grid": [
+                  2,
+                  60,
+                  8
+                ],
+                "launch_options": {
+                  "num_warps": 4,
+                  "num_stages": 1,
+                  "enable_fp_fusion": false
+                },
+                "source_kernel": "audit_swin_720_kernels_v1._attention_heads",
+                "constants": {
+                  "SY": 0,
+                  "SX": 0,
+                  "C": 256,
+                  "BM": 32,
+                  "DENOM_FP32": true,
+                  "WIDE_SCORE": true,
+                  "WIDE_VALUE": true,
+                  "CROP_QUERIES": true,
+                  "HP": 48,
+                  "WP": 80,
+                  "H": 48,
+                  "W": 80
+                }
+              },
+              {
+                "role": "('tail', (256, 48, 80, 0, 0))",
+                "kernel_hash": "cddf80e389fbc917fbfd54d05fd5f309a3778f93bea982caa275605549fa3057",
+                "binary_kind": "spv",
+                "binary_sha256": "f00f10cff1ae11ec2eda4d154b5e8238e2bcbf7a65e4fabcef03f82ef7945fc8",
+                "spills": 0,
+                "registers": 256,
+                "shared_bytes": 10240,
+                "grid": [
+                  2,
+                  60,
+                  2
+                ],
+                "launch_options": {
+                  "num_warps": 4,
+                  "num_stages": 1,
+                  "enable_fp_fusion": false
+                },
+                "source_kernel": "audit_swin_720_kernels_v1._project_heads",
+                "constants": {
+                  "SY": 0,
+                  "SX": 0,
+                  "C": 256,
+                  "BM": 32,
+                  "BN": 128,
+                  "CROP_QUERIES": true,
+                  "HP": 48,
+                  "WP": 80,
+                  "H": 48,
+                  "W": 80
+                }
+              }
+            ],
+            "latents": [
+              {
+                "role": "192x320x64:latent",
+                "kernel_hash": "6c38a34a8dc5233babbceab2be10353e80cd4cd9f00082d40794d4013008fc7c",
+                "binary_sha256": "bd1860e95393a50de01c5ff59370e1ca642084f3745961a4eed0471b4cfa655f",
+                "spills": 0,
+                "registers": 256,
+                "shared_bytes": 2048,
+                "grid": [
+                  1920,
+                  1
+                ],
+                "launch_options": {
+                  "num_warps": 4,
+                  "num_stages": 1,
+                  "enable_fp_fusion": false
+                },
+                "selected_pair_bm": 32,
+                "selected_pair_num_warps": 4,
+                "serial_c64_mlp": true,
+                "input_shape": [
+                  192,
+                  320,
+                  64
+                ],
+                "latent_shape": [
+                  2,
+                  61440,
+                  32
+                ],
+                "selection": {
+                  "selected": [
+                    32,
+                    4
+                  ],
+                  "launch_options": {
+                    "num_warps": 4,
+                    "num_stages": 1,
+                    "enable_fp_fusion": false
+                  },
+                  "qualification": "zero_spill",
+                  "attempts": [
+                    {
+                      "config": [
+                        32,
+                        4
+                      ],
+                      "grid": [
+                        1920,
+                        1
+                      ],
+                      "launch_options": {
+                        "num_warps": 4,
+                        "num_stages": 1,
+                        "enable_fp_fusion": false
+                      },
+                      "constants": [
+                        61440,
+                        64,
+                        32,
+                        false,
+                        192,
+                        320,
+                        320,
+                        0,
+                        0,
+                        true
+                      ],
+                      "status": "selected_zero_spill",
+                      "kernel_hash": "6c38a34a8dc5233babbceab2be10353e80cd4cd9f00082d40794d4013008fc7c",
+                      "spills": 0,
+                      "spills_type": "builtins.int",
+                      "spills_repr": "0",
+                      "registers": 256,
+                      "shared_bytes": 2048,
+                      "compiler_metadata": {
+                        "build_flags": " -cl-intel-256-GRF-per-thread",
+                        "num_warps": 4,
+                        "num_stages": 1,
+                        "threads_per_warp": 16
+                      },
+                      "binary_kind": "spv",
+                      "binary_sha256": "bd1860e95393a50de01c5ff59370e1ca642084f3745961a4eed0471b4cfa655f",
+                      "binary_bytes": 55768
+                    }
+                  ]
+                },
+                "attempts": null
+              },
+              {
+                "role": "96x160x128:latent",
+                "kernel_hash": "72165292dd512bc56d505844d5faf0ef02084723819be7f5c6f52eb7290f155e",
+                "binary_sha256": "779cf8e16fb6a21ff4b742cde9d979645d1db1eaf99f48064c7f469a902409ee",
+                "spills": 0,
+                "registers": 256,
+                "shared_bytes": 2048,
+                "grid": [
+                  480,
+                  2
+                ],
+                "launch_options": {
+                  "num_warps": 4,
+                  "num_stages": 1,
+                  "enable_fp_fusion": false
+                },
+                "selected_pair_bm": 32,
+                "selected_pair_num_warps": 4,
+                "serial_c64_mlp": true,
+                "input_shape": [
+                  96,
+                  160,
+                  128
+                ],
+                "latent_shape": [
+                  4,
+                  15360,
+                  32
+                ],
+                "selection": {
+                  "selected": [
+                    32,
+                    4
+                  ],
+                  "launch_options": {
+                    "num_warps": 4,
+                    "num_stages": 1,
+                    "enable_fp_fusion": false
+                  },
+                  "qualification": "zero_spill",
+                  "attempts": [
+                    {
+                      "config": [
+                        32,
+                        4
+                      ],
+                      "grid": [
+                        480,
+                        2
+                      ],
+                      "launch_options": {
+                        "num_warps": 4,
+                        "num_stages": 1,
+                        "enable_fp_fusion": false
+                      },
+                      "constants": [
+                        15360,
+                        128,
+                        32,
+                        false,
+                        96,
+                        160,
+                        160,
+                        0,
+                        0,
+                        true
+                      ],
+                      "status": "selected_zero_spill",
+                      "kernel_hash": "72165292dd512bc56d505844d5faf0ef02084723819be7f5c6f52eb7290f155e",
+                      "spills": 0,
+                      "spills_type": "builtins.int",
+                      "spills_repr": "0",
+                      "registers": 256,
+                      "shared_bytes": 2048,
+                      "compiler_metadata": {
+                        "build_flags": " -cl-intel-256-GRF-per-thread",
+                        "num_warps": 4,
+                        "num_stages": 1,
+                        "threads_per_warp": 16
+                      },
+                      "binary_kind": "spv",
+                      "binary_sha256": "779cf8e16fb6a21ff4b742cde9d979645d1db1eaf99f48064c7f469a902409ee",
+                      "binary_bytes": 31376
+                    }
+                  ]
+                },
+                "attempts": null
+              },
+              {
+                "role": "48x80x256:latent",
+                "kernel_hash": "4ed82220d8c22f2167a49942834f37477c0a05f8c5c93fd07abd6189a6740eb4",
+                "binary_sha256": "0ead182210c1148b631bfcbe22ba6838e2537309e12d76e9e8f4b9836e463d5d",
+                "spills": 0,
+                "registers": 256,
+                "shared_bytes": 1024,
+                "grid": [
+                  240,
+                  4
+                ],
+                "launch_options": {
+                  "num_warps": 4,
+                  "num_stages": 1,
+                  "enable_fp_fusion": false
+                },
+                "selected_pair_bm": 16,
+                "selected_pair_num_warps": 4,
+                "serial_c64_mlp": true,
+                "input_shape": [
+                  48,
+                  80,
+                  256
+                ],
+                "latent_shape": [
+                  8,
+                  3840,
+                  32
+                ],
+                "selection": {
+                  "selected": [
+                    16,
+                    4
+                  ],
+                  "launch_options": {
+                    "num_warps": 4,
+                    "num_stages": 1,
+                    "enable_fp_fusion": false
+                  },
+                  "qualification": "zero_spill",
+                  "attempts": [
+                    {
+                      "config": [
+                        16,
+                        4
+                      ],
+                      "grid": [
+                        240,
+                        4
+                      ],
+                      "launch_options": {
+                        "num_warps": 4,
+                        "num_stages": 1,
+                        "enable_fp_fusion": false
+                      },
+                      "constants": [
+                        3840,
+                        256,
+                        16,
+                        false,
+                        48,
+                        80,
+                        80,
+                        0,
+                        0,
+                        true
+                      ],
+                      "status": "selected_zero_spill",
+                      "kernel_hash": "4ed82220d8c22f2167a49942834f37477c0a05f8c5c93fd07abd6189a6740eb4",
+                      "spills": 0,
+                      "spills_type": "builtins.int",
+                      "spills_repr": "0",
+                      "registers": 256,
+                      "shared_bytes": 1024,
+                      "compiler_metadata": {
+                        "build_flags": " -cl-intel-256-GRF-per-thread",
+                        "num_warps": 4,
+                        "num_stages": 1,
+                        "threads_per_warp": 16
+                      },
+                      "binary_kind": "spv",
+                      "binary_sha256": "0ead182210c1148b631bfcbe22ba6838e2537309e12d76e9e8f4b9836e463d5d",
+                      "binary_bytes": 43616
+                    }
+                  ]
+                },
+                "attempts": null
+              }
+            ],
+            "swin_counter_labels": 192
+          }
+        },
+        "delta_full_ms": 3.726968487179491,
+        "delta_raw_ms": 3.051612519999999
+      }
+    ]
+  },
+  "baseline_compiler_metadata_catalog": [
+    {
+      "module": "batched_branched_mlp_v1",
+      "function": "_project",
+      "kernel_hash": "7cfed67f6991451ed22c281826a37556df93d2d5b1d093617227ad7deca19dcb",
+      "constants": {
+        "M": 15360,
+        "C": 128,
+        "BM": 16,
+        "BN": 64
+      },
+      "metadata_path": "${EXPERIMENTS_E}\\cyberpunk-opt\\b580-full-implementation-v1-20261003\\luna\\phase2\\shared-cache\\PT7NM73JSFCR5URMFAMCNI3VK3PZHUWVWHIJGYLSE6WX33FBTXFQ\\_project.json",
+      "metadata_sha256": "bea67c826b37970726f52f6f4addfa560b1142fed4c318191ec46ea982eb4396",
+      "threads_per_warp": 16,
+      "num_warps": 4,
+      "workgroup_threads": 64,
+      "num_stages": 1,
+      "shared_bytes": 5120,
+      "build_flags": ""
+    },
+    {
+      "module": "c64_attention_project_fused_720_v1",
+      "function": "_fused",
+      "kernel_hash": "7cc3ddf685c0a3ba1645b75e98d6a12340c8067f9292473a81a7eddf479828c2",
+      "constants": {
+        "WP": 320,
+        "H": 192,
+        "WIDTH": 320,
+        "SY": 0,
+        "SX": 0,
+        "BM": 32,
+        "ROUND_WEIGHTS": false,
+        "HP": 192
+      },
+      "metadata_path": "${EXPERIMENTS_E}\\cyberpunk-opt\\b580-full-implementation-v1-20261003\\luna\\phase2\\shared-cache\\PTB535UFYCR3UFSFW5PJRVVBENAMQBT7SKJEOOUBU7W56R4YFDBA\\_fused.json",
+      "metadata_sha256": "f6d782996b9ba9dff762b08e877e5d75506f1ee0786ba77f222fbfa415a7135f",
+      "threads_per_warp": 16,
+      "num_warps": 4,
+      "workgroup_threads": 64,
+      "num_stages": 1,
+      "shared_bytes": 4096,
+      "build_flags": ""
+    },
+    {
+      "module": "c128_attention_project_fused_720_v1",
+      "function": "_fused",
+      "kernel_hash": "47d6a7d5dfeec40ecbde5b168006d6121adfafb9fa4b3ac6a6af3488384ed72a",
+      "constants": {
+        "WP": 160,
+        "H": 96,
+        "WIDTH": 160,
+        "SY": 0,
+        "SX": 0,
+        "BM": 16,
+        "ROUND_WEIGHTS": false,
+        "HP": 96
+      },
+      "metadata_path": "${EXPERIMENTS_E}\\cyberpunk-opt\\b580-full-implementation-v1-20261003\\luna\\phase2\\shared-cache\\I7LKPVO753CA5S66LMLIABWWCINN7L5Z7JFTVRVGV42IQOCO24VA\\_fused.json",
+      "metadata_sha256": "a273f88c61a922c5c71e3bd140b669299f2312687a108484beff9633ce675070",
+      "threads_per_warp": 16,
+      "num_warps": 4,
+      "workgroup_threads": 64,
+      "num_stages": 1,
+      "shared_bytes": 4096,
+      "build_flags": ""
+    },
+    {
+      "module": "native_cubic_c32_v1",
+      "function": "_kernel",
+      "kernel_hash": "fc6212e060ac9d664a28c461ae40a11b898d85d6ce25ecf584d12d3abf1c96ca",
+      "constants": {
+        "M": 983040,
+        "BM": 32,
+        "ROUND_ACTIVATION": false
+      },
+      "metadata_path": "${EXPERIMENTS_E}\\cyberpunk-opt\\b580-full-implementation-v1-20261003\\luna\\phase2\\shared-cache\\7RRBFYDAVSOWMSRIYRQ24QFBDOEY3BOWZYS6Z5ME2EWTVPY4S3FA\\_kernel.json",
+      "metadata_sha256": "dbc9448474ad065bfb03118a1df31ebf1c19ef6406589c9dbb6e117af880e49d",
+      "threads_per_warp": 16,
+      "num_warps": 4,
+      "workgroup_threads": 64,
+      "num_stages": 1,
+      "shared_bytes": 2048,
+      "build_flags": ""
+    },
+    {
+      "module": "fused_c32_projection_native_half_v1",
+      "function": "_kernel",
+      "kernel_hash": "78992e78c23e9534eea618646126130c2aaf3d1eb41df285e9719dc6bf20090d",
+      "constants": {
+        "ROUND_QKV": false,
+        "W": 1280,
+        "COLS": 160,
+        "BM": 32
+      },
+      "metadata_path": "${EXPERIMENTS_E}\\cyberpunk-opt\\b580-full-implementation-v1-20261003\\luna\\phase2\\shared-cache\\PCMS46GCH2KTJ3VGDBSGCJQTBQVK6PI6WQO7FBPJOGO4NPZABEGQ\\_kernel.json",
+      "metadata_sha256": "247a77d10df1111db585c491b2250961a6ca413dfa36296f937b09cee6ad5b95",
+      "threads_per_warp": 16,
+      "num_warps": 4,
+      "workgroup_threads": 64,
+      "num_stages": 1,
+      "shared_bytes": 2048,
+      "build_flags": ""
+    },
+    {
+      "module": "post_attention_fusion_v1",
+      "function": "_attention_project",
+      "kernel_hash": "38795c38eadd2d0ea4d8c854aee071a20261589e0684ec466d7be803b0a4d266",
+      "constants": {
+        "W": 1280,
+        "SY": 0,
+        "SX": 0,
+        "ROUND_ATTENDED": false,
+        "H": 768
+      },
+      "metadata_path": "${EXPERIMENTS_E}\\cyberpunk-opt\\b580-full-implementation-v1-20261003\\luna\\phase2\\shared-cache\\HB4VYOHK3UWQ5JGYZBKK5YDRUIBGCWE6A2COYRTNPPUAHMFE2JTA\\_attention_project.json",
+      "metadata_sha256": "08f9c40df7df9433d951378b96abfc747fcdd40ed5b55a1cdfa9361ec0b7896e",
+      "threads_per_warp": 16,
+      "num_warps": 4,
+      "workgroup_threads": 64,
+      "num_stages": 1,
+      "shared_bytes": 2048,
+      "build_flags": ""
+    },
+    {
+      "module": "batched_branched_mlp_v1",
+      "function": "_pairs",
+      "kernel_hash": "6574f265fed5ddbedf2cef5e8a096604086e073b13be73bab7dbfe5f5b9a6637",
+      "constants": {
+        "M": 61440,
+        "C": 64,
+        "BM": 32,
+        "ROUND_REDUCED": false
+      },
+      "metadata_path": "${EXPERIMENTS_E}\\cyberpunk-opt\\b580-full-implementation-v1-20261003\\luna\\phase2\\shared-cache\\MV2PEZP62XO35XZM55PIUCLGAQEG4BZ3CO7HHOVX3P7F6W42MY3Q\\_pairs.json",
+      "metadata_sha256": "9301fd4cdff01e25d860ee04bb9d62ad3f013c24989b7114e4a5d2ec4325a515",
+      "threads_per_warp": 16,
+      "num_warps": 4,
+      "workgroup_threads": 64,
+      "num_stages": 2,
+      "shared_bytes": 2048,
+      "build_flags": ""
+    },
+    {
+      "module": "batched_branched_mlp_v1",
+      "function": "_project",
+      "kernel_hash": "43db221f9ff591a05afbebb5ebb8aa45881e3149b8af468b8a638e216b064166",
+      "constants": {
+        "M": 61440,
+        "C": 64,
+        "BM": 16,
+        "BN": 64
+      },
+      "metadata_path": "${EXPERIMENTS_E}\\cyberpunk-opt\\b580-full-implementation-v1-20261003\\luna\\phase2\\shared-cache\\IPNSEH476WI2AWX35O26XOFKIWEB4MKJXCXUNC4KMOHCC2YGIFTA\\_project.json",
+      "metadata_sha256": "dada9f212c9c21d4a39de49290972a2c15c457cc2216056dc5dc4855b7d9e34d",
+      "threads_per_warp": 16,
+      "num_warps": 4,
+      "workgroup_threads": 64,
+      "num_stages": 1,
+      "shared_bytes": 5120,
+      "build_flags": ""
+    },
+    {
+      "module": "c64_qkv_direct_pack_v2",
+      "function": "_qkv_direct_pack",
+      "kernel_hash": "cea54a279358cece4b729e0c3256c4cd1fbba0a05d4c58d9b7c6c0eb3ce44cf8",
+      "constants": {
+        "BM": 16,
+        "BN": 32,
+        "BK": 32,
+        "ROUND_QKV": false,
+        "COUNT": 61440,
+        "WIDTH": 320,
+        "WINDOWS_PER_HEAD": 960
+      },
+      "metadata_path": "${EXPERIMENTS_E}\\cyberpunk-opt\\b580-full-implementation-v1-20261003\\luna\\phase2\\shared-cache\\Z2SUUJ4TLDHM4S3STYGDEVWEZUP3XIFALVGFRWNXY3AOWPHEJT4A\\_qkv_direct_pack.json",
+      "metadata_sha256": "dfe6d95741d2ebd10d3f718bf5ff3b6214ad106cb30264a23ea7cb961d0e3ad2",
+      "threads_per_warp": 16,
+      "num_warps": 4,
+      "workgroup_threads": 64,
+      "num_stages": 2,
+      "shared_bytes": 1024,
+      "build_flags": ""
+    },
+    {
+      "module": "c128_qkv_direct_pack_one_v1",
+      "function": "_direct_pack",
+      "kernel_hash": "4241c4fa7741c035f7aaa22918b9c63817053d0df10f6cc1f04e07fa52c3c368",
+      "constants": {
+        "BM": 16,
+        "BN": 32,
+        "BK": 32,
+        "ROUND_QKV": false,
+        "COUNT": 15360,
+        "WIDTH": 160,
+        "WINDOWS_PER_HEAD": 240
+      },
+      "metadata_path": "${EXPERIMENTS_E}\\cyberpunk-opt\\b580-full-implementation-v1-20261003\\luna\\phase2\\shared-cache\\IJA4J6TXIHADL55KUIURROOGHALQKPIN6EHWZQPQJYD7UUWDYNUA\\_direct_pack.json",
+      "metadata_sha256": "1f0020e5cc58d6589af4e765fecc08c684130b888ae486f4c7825f0ccc6f33c8",
+      "threads_per_warp": 16,
+      "num_warps": 4,
+      "workgroup_threads": 64,
+      "num_stages": 2,
+      "shared_bytes": 1024,
+      "build_flags": ""
+    },
+    {
+      "module": "batched_branched_mlp_v1",
+      "function": "_pairs",
+      "kernel_hash": "6f20ba3af684604684abd37d0e8cf58c84882995c77d4cda5bad1d7ec2c5959e",
+      "constants": {
+        "M": 3840,
+        "C": 256,
+        "BM": 16,
+        "ROUND_REDUCED": false
+      },
+      "metadata_path": "${EXPERIMENTS_E}\\cyberpunk-opt\\b580-full-implementation-v1-20261003\\luna\\phase2\\shared-cache\\N4QLUOXWQRQENBFL2N6Q5DHVRSCIQKMVY56UZWS3VUOX5QWFSWPA\\_pairs.json",
+      "metadata_sha256": "d5507b8a2f19b1ff034750b1dced08fcb2fbeba52181bbb36d8b7300a1a19a4a",
+      "threads_per_warp": 16,
+      "num_warps": 4,
+      "workgroup_threads": 64,
+      "num_stages": 1,
+      "shared_bytes": 1024,
+      "build_flags": ""
+    },
+    {
+      "module": "batched_branched_mlp_v1",
+      "function": "_project",
+      "kernel_hash": "243b39a034c3451b2b6db557eca1578ad61b669380279990eb13292c9d6395da",
+      "constants": {
+        "M": 3840,
+        "C": 256,
+        "BM": 16,
+        "BN": 64
+      },
+      "metadata_path": "${EXPERIMENTS_E}\\cyberpunk-opt\\b580-full-implementation-v1-20261003\\luna\\phase2\\shared-cache\\EQ5TTIBUYNCRWK3NWVL6ZIKXRLLBWZUTQATZTEHLCMUSZHLDSXNA\\_project.json",
+      "metadata_sha256": "a77f1a1dc4c76be7fc07f5fee15a8c387845175cdcb2b460bbb3e39fc9629a1f",
+      "threads_per_warp": 16,
+      "num_warps": 4,
+      "workgroup_threads": 64,
+      "num_stages": 1,
+      "shared_bytes": 5120,
+      "build_flags": ""
+    }
+  ],
+  "catalog_limit": "Cache compiler metadata corroborates SG16/configurations; existence does not itself prove actual execution. Candidate role resources are selected real binaries and original capture counters.",
+  "deviations": [
+    {
+      "id": "D01",
+      "topic": "wave/window/head ownership",
+      "status": "source_verified",
+      "amd": "WG owns window; wave32 owns full head/all four QT.",
+      "intel_current": "64-thread programs; branch/head assigned by program dimension or serial loop, not one SG/head.",
+      "conversion": "C64/C128 proposal two SG16/head, two QT/SG; actual lane ABI still needs native layout validation."
+    },
+    {
+      "id": "D02",
+      "topic": "four-QT A/W reuse",
+      "status": "source_verified",
+      "amd": "B4/T2: A[4] reused for two hidden tiles, each W reused across four QT.",
+      "r18": "Wide N64 shared branches/serial branch flow is a different reuse axis.",
+      "known_read_request_comparison": {
+        "c64_r15_shared_X_C_per_row": 2,
+        "c64_r18_serial_X_C_per_row": 4,
+        "c64_accepted_single_branch_X_C_per_row": 8
+      },
+      "unknown": "Actual cache/DRAM and per-stage benefit."
+    },
+    {
+      "id": "D03",
+      "topic": "fragment-native weights",
+      "status": "source_verified",
+      "amd": "Host pure byte permutation matches w2_weight contiguous 8-byte operand.",
+      "intel_current": "FP16 row-major weights and compiler fragment lowering.",
+      "conversion": "Cold pure FP16 permutation to verified Intel DPAS B ABI; preserve full K and structural weight guards."
+    },
+    {
+      "id": "D04",
+      "topic": "rolling/live fragments",
+      "status": "source_verified_with_budget",
+      "amd": "C32 hidden16 rolling; C64/C128 B4/T2 accumulator baseline 128 logical DWORD/lane.",
+      "conversion": "SG16 direct B4/T2 accumulator baseline 256 DWORD/lane; two SG/head B2 and controlled N16 rolling.",
+      "unknown": "Logical DWORD/lane is not physical GRF allocation/occupancy."
+    },
+    {
+      "id": "D05",
+      "topic": "QKV input sharing and V orientation",
+      "status": "source_verified",
+      "amd": "C64/C128 Q/K/V one K loop, A reused across six N16 accumulators, V computed directly as B operand.",
+      "r18": "Adjacent N32 family segments combined into N64; C32 fourth segment correctly masked but matrix work padded; global FP16 QKV retained.",
+      "intel_current": "Direct pack already fuses norm and packing; separate family programs remain.",
+      "conversion": "Preserve current half norm/Q scale; no AMD FP8/math substitution."
+    },
+    {
+      "id": "D06",
+      "topic": "C64 query tile/KV repetition",
+      "status": "runtime_and_source_verified",
+      "intel_current": {
+        "BM": 32,
+        "query_programs_per_window": 2
+      },
+      "r18": {
+        "BM": 16,
+        "query_programs_per_window": 4
+      },
+      "known": "Each program reads complete head K/V; logical requests/query programs double.",
+      "unknown": "Actual DRAM increment, cache hits, and latency share."
+    },
+    {
+      "id": "D07",
+      "topic": "C128 live width and SLM",
+      "status": "metadata_and_source_verified",
+      "intel_current": {
+        "BM": 16,
+        "related_attention_cache_shared_bytes": 4096
+      },
+      "r18": {
+        "BM": 16,
+        "tail_shared_bytes": 8192
+      },
+      "unknown": "More resident fragments/shared memory does not by itself establish measured occupancy loss."
+    },
+    {
+      "id": "D08",
+      "topic": "LDS phase lifetime/barrier",
+      "status": "source_verified",
+      "amd": {
+        "c64_LDS_bytes": 8192,
+        "c128_LDS_bytes": 16384,
+        "core_WG_barriers": 4
+      },
+      "conversion": "Shared FP16 KV requires publication and end-reader barrier before AV alias, six WG barriers in proposed paired-SG design.",
+      "unsafe": "Do not overwrite KV while another SG reads or return a cropped query before WG barriers."
+    },
+    {
+      "id": "D09",
+      "topic": "PACK8/vector writes",
+      "status": "source_and_historical_record_verified",
+      "amd": "Packed FP8 conversions, byte output and RTZ pair helpers; historical gains with guarded arithmetic.",
+      "conversion": "Reuse wide read/write organization at FP16 byte size; do not restore deleted quantization or AMD MODE/clamp semantics.",
+      "unknown": "Intel vectorization/throughput must be measured; AMD W16_SMALL was not adopted."
+    },
+    {
+      "id": "D10",
+      "topic": "prefetch schedule",
+      "status": "source_verified_negative_boundary",
+      "amd": "No explicit async multistage queue in the two includes. Active load hoist, independent QT chains, fragment reuse, compiler fences and restricted unrolling.",
+      "conversion": "Optional two-slot next-K preloads are a new bounded Intel diagnostic, not a copied successful async pipeline.",
+      "unknown": "Actual native load/wait overlap and benefit."
+    },
+    {
+      "id": "D11",
+      "topic": "global boundary and C256 split",
+      "status": "source_and_counter_verified",
+      "r18": "LATENT, MLP, QKV global FP16 boundaries remain; split adds real ATT boundary and 16 attend launches versus r18 fused.",
+      "amd": "C64/C128 exchange contract/feature/AV within LDS.",
+      "reference_limit": "Accepted C256 already had intermediate boundaries; costs cannot be transferred between baseline and r15 reference.",
+      "unknown": "Per-stage raw time and actual bandwidth."
+    },
+    {
+      "id": "D12",
+      "topic": "zero spill qualification vs throughput",
+      "status": "runtime_verified_with_unknowns",
+      "known": "All selected resources have zero spill; serial C64 admits BM32/w4; shared C64 rejects larger tiles with actual positive spills.",
+      "unknown": "Residency, native DPAS issue efficiency, cache, clocks; metadata registers=0 is not zero usage."
+    },
+    {
+      "id": "D13",
+      "topic": "actual first decoder/post route",
+      "status": "source_verified",
+      "intel_current": "Real decoder gather callback cold binding remains separate from post body; native K8 RGB/history crop boundary is retained.",
+      "conversion": "Any future grouped owner must preserve callee/weight/stream/frame/history ownership and real compiled-resource receipts."
+    },
+    {
+      "id": "D14",
+      "topic": "composition/measurement interpretation",
+      "status": "manifest_and_receipt_verified",
+      "known": "Three profiles enable broad Swin and c64/c256 BranchAccum; baseline does not. Full and raw regressions are observed whole-arm results.",
+      "unknown": "A-only/B-only per-stage causal effect; full minus raw is not CPU-exclusive time."
+    }
+  ],
+  "resource_budget": {
+    "scope": "logical tensor bytes/DWORD; no compiled new kernel or GPU allocation proof",
+    "amd": {
+      "c32_LDS": 4096,
+      "c64_LDS": 8192,
+      "c128_LDS": 16384,
+      "core_multihead_barriers": 4
+    },
+    "intel_proposed": {
+      "c32": {
+        "SGs": 1,
+        "threads": 16,
+        "SLM_bytes": 16384
+      },
+      "c64": {
+        "SGs": 4,
+        "threads": 64,
+        "SLM_bytes": 24576
+      },
+      "c128": {
+        "SGs": 8,
+        "threads": 128,
+        "SLM_bytes": 49152
+      },
+      "multihead_barriers": 6,
+      "additional_two_slot_weight_bytes": {
+        "c32": 4096,
+        "c64": 8192,
+        "c128": 16384
+      },
+      "B4_T2_accumulator_DWORD_per_SG16_lane": 256,
+      "B2_T2_accumulator_DWORD_per_SG16_lane": 128,
+      "B2_N16_rolling_main_accumulator_DWORD_per_lane": 96,
+      "B2_N16_rolling_first_half_hidden_DWORD_per_lane": 16,
+      "rough_A_W_DWORD_per_lane": 48,
+      "rough_peak_before_address_temporaries": 160,
+      "optional_next_K_DWORD_per_lane": 48
+    },
+    "limits": "GPU limits, actual GRF allocation, bank conflict and occupancy unverified. Shared KV arena may alias AV only after final-reader WG barrier."
+  },
+  "cpu_verification": {
+    "status": "PASS",
+    "scope": "source/AST/metadata/layout CPU only; not GPU qualification; actual only Luna",
+    "checks": [
+      {
+        "name": "actual_fragment_host_pack_and_w2_weight_bijection",
+        "status": "PASS",
+        "cases": 12,
+        "detail": "C64/C128 expand/contract/project; original and W16 pure byte permutations. No GPU numeric claim."
+      },
+      {
+        "name": "actual_amd_lane_qt_lds_full_window_coverage",
+        "status": "PASS",
+        "cases": 3,
+        "detail": "32 lanes, rc=lane&15, gr=lane>>4; two ci fragments per head. All 64 tokens/32 channels covered exactly once."
+      },
+      {
+        "name": "proposed_sg16_pair_token_partition",
+        "status": "PASS",
+        "cases": 2,
+        "detail": "Proposal layout only: two SG/head, each two QT, all 64 keys retained; native DPAS lane ABI unqualified."
+      },
+      {
+        "name": "actual_recipe_and_core_barrier_lifetime",
+        "status": "PASS",
+        "cases": 8,
+        "detail": "Six active flags, W16_SMALL absent, four core WG barriers; no asynchronous prefetch claimed."
+      },
+      {
+        "name": "actual_r18_default_off_and_baseline_composition",
+        "status": "PASS",
+        "cases": 3,
+        "detail": "Options serial/split defaults False; installed passes kwargs to Options; accepted_baseline does not install Swin hook."
+      },
+      {
+        "name": "actual_r18_selected_grids_full_key_and_capture_roles",
+        "status": "PASS",
+        "cases": 26,
+        "detail": "Three original RESULT snapshots; 44 sites each; 176 or 192 real role counters, selected grids match actual constants; cold capture values two."
+      },
+      {
+        "name": "actual_selected_c64_sg16_spv_and_matrix_intrinsic",
+        "status": "PASS",
+        "cases": 3,
+        "detail": "SG16 and matrix intrinsic verified from existing LLIR; SPV matches original selected hash. No native ISA occupancy or DPAS issue rate claim."
+      },
+      {
+        "name": "port_budget_algebra_and_alias_lifetime",
+        "status": "PASS",
+        "cases": 5,
+        "detail": "Logical bytes/DWORD, not physical GRF allocation; hold AV until final KV readers reach barrier before aliasing."
+      }
+    ],
+    "total_cases": 62,
+    "counters": [
+      {
+        "candidate": "audit_impl_swin_c64_serial_720_v3",
+        "sites": 44,
+        "counter_labels": 176,
+        "call_values": [
+          6
+        ],
+        "capture_values": [
+          2
+        ]
+      },
+      {
+        "candidate": "audit_impl_swin_c256_split_tail_720_v3",
+        "sites": 44,
+        "counter_labels": 192,
+        "call_values": [
+          6
+        ],
+        "capture_values": [
+          2
+        ]
+      },
+      {
+        "candidate": "audit_impl_swin_c64_serial_c256_split_720_v3",
+        "sites": 44,
+        "counter_labels": 192,
+        "call_values": [
+          6
+        ],
+        "capture_values": [
+          2
+        ]
+      }
+    ],
+    "actual_llir": {
+      "path": "${EXPERIMENTS_E}\\cyberpunk-opt\\b580-full-implementation-v1-20261003\\luna\\phase2\\shared-cache\\NQ4KGSUNYURTXK545KZL4EBVH2AM2TGZ6AAIFVAHSTKACMAI7R6A\\_mlp_pairs.llir",
+      "sha256": "f9b166f954a73faec7abf09b3bcfd81ff389b086dbff8700f80069037dd6bc38",
+      "spv_path": "${EXPERIMENTS_E}\\cyberpunk-opt\\b580-full-implementation-v1-20261003\\luna\\phase2\\shared-cache\\NQ4KGSUNYURTXK545KZL4EBVH2AM2TGZ6AAIFVAHSTKACMAI7R6A\\_mlp_pairs.spv",
+      "spv_sha256": "bd1860e95393a50de01c5ff59370e1ca642084f3745961a4eed0471b4cfa655f",
+      "subgroup_size": 16,
+      "workgroup_threads": 64
+    },
+    "budgets": {
+      "c32_slm_bytes": 16384,
+      "c64_slm_bytes": 24576,
+      "c128_slm_bytes": 49152
+    },
+    "forbidden_imports": []
+  },
+  "unknowns": [
+    "Native DPAS M/N/K lane ABI and complete instruction schedule",
+    "Actual GRF allocation/resident WG/occupancy",
+    "Per-stage GPU time and load/wait overlap",
+    "Cache hit rate, DRAM traffic, SLM bank conflicts",
+    "Clock/power contribution",
+    "Throughput and quality of proposed SG16 conversion"
+  ],
+  "next_validation_scope": "Future bounded same-revision ablation under Luna; no new experiment performed by this analysis.",
+  "artifact_before_state": {
+    "C32_C64_C128_RECIPE.md": "ABSENT/new task-owned file",
+    "DEVIATIONS.json": "ABSENT/new task-owned file"
+  }
+}

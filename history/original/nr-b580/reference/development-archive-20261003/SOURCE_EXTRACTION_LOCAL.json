@@ -1,0 +1,15 @@
+{
+  "source_count": 709,
+  "current_source_count": 449,
+  "frozen_r18_count": 260,
+  "excluded_frozen_regenerable_bytecode": [
+    "game/__pycache__/implementation_capture_roles_720_v1.cpython-312.pyc"
+  ],
+  "bytes": 5076831,
+  "stage": "E:\\ComfyUI-aki-v3-IntelArc_20260722\\nr-b580\\reference\\development-archive-20261003\\release-staging",
+  "runtime_read_only": "G:\\SteamLibrary\\steamapps\\common\\Resident Evil Village BIOHAZARD VILLAGE\\nr-runtime",
+  "private_implementation_copy_attempted": false,
+  "weights_copied": false,
+  "GPU_executed": false,
+  "game_writes": 0
+}

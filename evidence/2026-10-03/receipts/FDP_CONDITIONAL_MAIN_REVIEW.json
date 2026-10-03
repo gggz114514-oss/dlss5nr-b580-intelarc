@@ -1,0 +1,355 @@
+{
+  "schema": "current720-main-fdp-conditional-result-v1",
+  "rows": [
+    {
+      "style": 1,
+      "controls": "local_tone=1.0, full strength, same source/controls",
+      "baseline": {
+        "result": {
+          "path": "${EXPERIMENTS_E}\\cyberpunk-opt\\b580-full-implementation-v1-20261003\\luna\\phase2\\attempt-16b-r9-e-style1\\condition_style1_curve_baseline\\measurement\\readonly\\RESULT.json",
+          "sha256": "0a64db3f194568bc10c0331de81caad48f589136130147d9fc4f3a760fb75559",
+          "bytes": 4827770
+        },
+        "same_arm_bytes": {
+          "path": "${EXPERIMENTS_E}\\cyberpunk-opt\\b580-full-implementation-v1-20261003\\luna\\phase2\\attempt-16b-r9-e-style1\\condition_style1_curve_baseline\\SAME_ARM_BYTES.json",
+          "sha256": "a87e8ba4d132502dc5a6d25b0d39f702193466728bdd16df9d47a310b8aa037e",
+          "bytes": 18793
+        },
+        "array_cleanup": {
+          "path": "${EXPERIMENTS_E}\\cyberpunk-opt\\b580-full-implementation-v1-20261003\\luna\\phase2\\attempt-16b-r9-e-style1\\condition_style1_curve_baseline\\CLEANUP.json",
+          "sha256": "1b121a04bbba1a1aea6d0b51d5a3e161d1be8ada2c1472b4a412e9cd90b163b7",
+          "bytes": 31103
+        },
+        "whole_modes": {
+          "count": 39,
+          "samples_ms": [
+            51.867188,
+            52.97625,
+            52.127917,
+            55.944739999999996,
+            52.880677,
+            52.383176999999996,
+            52.202709,
+            51.890572999999996,
+            52.605624999999996,
+            52.665155999999996,
+            52.893333,
+            53.377865,
+            53.668124999999996,
+            51.546718999999996,
+            53.285,
+            53.297343999999995,
+            52.649062,
+            52.217813,
+            52.427864,
+            52.114270999999995,
+            52.742917,
+            52.85151,
+            53.017708,
+            52.984271,
+            52.267604,
+            53.586875,
+            52.105,
+            52.147344,
+            52.460260999999996,
+            51.771874999999994,
+            52.568281,
+            53.406926999999996,
+            54.006665999999996,
+            52.785416999999995,
+            53.045207999999995,
+            53.054322,
+            54.32599,
+            53.20599,
+            52.609165999999995
+          ],
+          "mean_ms": 52.81960871794872,
+          "p50_ms": 52.742917,
+          "p95_ms": 54.32599
+        },
+        "body_mean_ms": 39.15937708,
+        "cache_hits": 139
+      },
+      "candidate": {
+        "result": {
+          "path": "${EXPERIMENTS_E}\\cyberpunk-opt\\b580-full-implementation-v1-20261003\\luna\\phase2\\attempt-16b-r9-e-style1\\condition_style1_curve_audit_impl_fdp_all\\measurement\\readonly\\RESULT.json",
+          "sha256": "b3d0ab060ca8ef0b8bf2801fadee4ae5f4a516f015ddfb6af295de607a96631c",
+          "bytes": 6345874
+        },
+        "same_arm_bytes": {
+          "path": "${EXPERIMENTS_E}\\cyberpunk-opt\\b580-full-implementation-v1-20261003\\luna\\phase2\\attempt-16b-r9-e-style1\\condition_style1_curve_audit_impl_fdp_all\\SAME_ARM_BYTES.json",
+          "sha256": "0a237d02f6c7f6631ad7bdac4d4ac561f56b7e5ec8867499d9bc893781fca335",
+          "bytes": 18823
+        },
+        "array_cleanup": {
+          "path": "${EXPERIMENTS_E}\\cyberpunk-opt\\b580-full-implementation-v1-20261003\\luna\\phase2\\attempt-16b-r9-e-style1\\condition_style1_curve_audit_impl_fdp_all\\CLEANUP.json",
+          "sha256": "3dc772086eeb4d39975bf098226bbb14b0e9682b783940c14b6be1d2641b2901",
+          "bytes": 44805
+        },
+        "whole_modes": {
+          "count": 39,
+          "samples_ms": [
+            44.505834,
+            45.036353999999996,
+            44.835313,
+            45.886719,
+            44.617604,
+            44.841615,
+            44.884271,
+            44.917031,
+            45.045625,
+            45.194843,
+            43.96224,
+            48.176978999999996,
+            44.391041,
+            43.980624999999996,
+            44.828021,
+            44.782083,
+            44.97974,
+            44.359635,
+            44.424844,
+            44.12276,
+            44.129114,
+            44.69375,
+            44.22651,
+            44.648801999999996,
+            44.605885,
+            44.394375,
+            44.770365,
+            44.014531999999996,
+            44.392343,
+            44.419896,
+            44.272708,
+            44.717292,
+            44.810781,
+            44.278749999999995,
+            44.686146,
+            44.732499999999995,
+            44.458386,
+            44.518177,
+            44.525625
+          ],
+          "mean_ms": 44.69407984615384,
+          "p50_ms": 44.617604,
+          "p95_ms": 45.886719
+        },
+        "body_mean_ms": 37.499087519999996,
+        "cache_hits": 161
+      },
+      "quality": {
+        "output": {
+          "finite": true,
+          "all_byte_identical": false,
+          "mae": 6.772290041638362e-05,
+          "max_abs_error": 0.002685546875,
+          "mse": 1.4080324894936141e-08,
+          "psnr_peak_1_db": 78.5138732399717,
+          "psnr_zero_error": false,
+          "changed_pixels": 11953831,
+          "changed_values": 33832518
+        },
+        "history": {
+          "finite": true,
+          "all_byte_identical": false,
+          "mae": 6.179067682994906e-05,
+          "max_abs_error": 0.003173828125,
+          "mse": 1.3026642276772868e-08,
+          "psnr_peak_1_db": 78.8516751280544,
+          "psnr_zero_error": false,
+          "changed_pixels": 11955168,
+          "changed_values": 33828346
+        }
+      },
+      "gain_ms": 8.12552887179487,
+      "cycle_deltas_ms": [
+        7.783681999999999,
+        8.216370307692307,
+        8.376534307692307
+      ],
+      "report": {
+        "path": "${EXPERIMENTS_E}\\cyberpunk-opt\\b580-full-implementation-v1-20261003\\luna\\phase2\\attempt-16b-r9-e-style1\\RESULTS.json",
+        "sha256": "db01b8dc7ff69d4a09ab6df3bb6204f38d5e7137f19a5ac366e69023d94952d0"
+      },
+      "independent_repeat_pending": true,
+      "user_visual_review": false,
+      "game_gain_ms": null
+    },
+    {
+      "style": 2,
+      "controls": "local_tone=1.0, full strength, same source/controls",
+      "baseline": {
+        "result": {
+          "path": "${EXPERIMENTS_E}\\cyberpunk-opt\\b580-full-implementation-v1-20261003\\luna\\phase2\\attempt-17-r9-e-style2\\condition_style2_curve_baseline\\measurement\\readonly\\RESULT.json",
+          "sha256": "ff4f0c7c6f228d73430711f69f079b74c376dcd2764b61622393b150dde78879",
+          "bytes": 4827649
+        },
+        "same_arm_bytes": {
+          "path": "${EXPERIMENTS_E}\\cyberpunk-opt\\b580-full-implementation-v1-20261003\\luna\\phase2\\attempt-17-r9-e-style2\\condition_style2_curve_baseline\\SAME_ARM_BYTES.json",
+          "sha256": "2ed9b66e363d65bf7b1af2ec3267b82a4be244ebcc9f757bf71cd9dc268d08c3",
+          "bytes": 18791
+        },
+        "array_cleanup": {
+          "path": "${EXPERIMENTS_E}\\cyberpunk-opt\\b580-full-implementation-v1-20261003\\luna\\phase2\\attempt-17-r9-e-style2\\condition_style2_curve_baseline\\CLEANUP.json",
+          "sha256": "7741379ee975c04a13704f80ec1192de5873b11014a8ddf42e17ae215432d48c",
+          "bytes": 31038
+        },
+        "whole_modes": {
+          "count": 39,
+          "samples_ms": [
+            52.506927,
+            52.085104,
+            52.402969,
+            52.895416,
+            52.756771,
+            52.328542,
+            52.924948,
+            52.805104,
+            52.965104,
+            53.666301999999995,
+            53.073437999999996,
+            52.857448,
+            53.158542,
+            51.931979,
+            53.138594,
+            57.431459,
+            53.913698,
+            52.890415999999995,
+            54.025625,
+            53.826563,
+            53.208698,
+            54.278906,
+            54.393802,
+            52.920365,
+            53.496198,
+            52.7425,
+            51.759791,
+            52.576719,
+            53.072188,
+            52.656042,
+            52.731041999999995,
+            53.324374999999996,
+            53.367604,
+            54.181301999999995,
+            53.070156,
+            53.113229,
+            52.901509999999995,
+            53.613906,
+            52.863594
+          ],
+          "mean_ms": 53.17581733333333,
+          "p50_ms": 52.965104,
+          "p95_ms": 54.393802
+        },
+        "body_mean_ms": 40.04027604,
+        "cache_hits": 139
+      },
+      "candidate": {
+        "result": {
+          "path": "${EXPERIMENTS_E}\\cyberpunk-opt\\b580-full-implementation-v1-20261003\\luna\\phase2\\attempt-17-r9-e-style2\\condition_style2_curve_audit_impl_fdp_all\\measurement\\readonly\\RESULT.json",
+          "sha256": "3be3f3c7892a4a2cad5eb951a714c5e1f0f889af28eafbe0223f26ab05ad8934",
+          "bytes": 6346096
+        },
+        "same_arm_bytes": {
+          "path": "${EXPERIMENTS_E}\\cyberpunk-opt\\b580-full-implementation-v1-20261003\\luna\\phase2\\attempt-17-r9-e-style2\\condition_style2_curve_audit_impl_fdp_all\\SAME_ARM_BYTES.json",
+          "sha256": "430c5ee41101ab085799ea48e4db69b9897688c1127e7de4ed6cafd629897b12",
+          "bytes": 18821
+        },
+        "array_cleanup": {
+          "path": "${EXPERIMENTS_E}\\cyberpunk-opt\\b580-full-implementation-v1-20261003\\luna\\phase2\\attempt-17-r9-e-style2\\condition_style2_curve_audit_impl_fdp_all\\CLEANUP.json",
+          "sha256": "bde9f2cf5d44ef9468726d31921345f900215ff53c9e6d4e27500bd4dd340bd7",
+          "bytes": 44714
+        },
+        "whole_modes": {
+          "count": 39,
+          "samples_ms": [
+            45.067499999999995,
+            44.931093,
+            44.907239999999994,
+            46.226459,
+            45.673594,
+            44.759479999999996,
+            45.330365,
+            45.407239,
+            44.966094,
+            44.982552,
+            44.806615,
+            44.905677,
+            45.03375,
+            44.434635,
+            44.494479,
+            44.956458,
+            44.684531,
+            45.166979,
+            45.759009999999996,
+            44.956927,
+            44.994634999999995,
+            46.445937,
+            45.001354,
+            45.374114999999996,
+            44.822708999999996,
+            44.601769999999995,
+            44.941770999999996,
+            44.89776,
+            45.710885999999995,
+            44.982552,
+            45.591353999999995,
+            48.642134999999996,
+            44.741146,
+            44.978854,
+            45.103594,
+            45.597395999999996,
+            45.109583,
+            44.566823,
+            44.531303
+          ],
+          "mean_ms": 45.18170138461539,
+          "p50_ms": 44.982552,
+          "p95_ms": 46.445937
+        },
+        "body_mean_ms": 37.743183439999996,
+        "cache_hits": 161
+      },
+      "quality": {
+        "output": {
+          "finite": true,
+          "all_byte_identical": false,
+          "mae": 6.929818502172265e-05,
+          "max_abs_error": 0.004638671875,
+          "mse": 1.5920607059671375e-08,
+          "psnr_peak_1_db": 77.98040376445147,
+          "psnr_zero_error": false,
+          "changed_pixels": 11960943,
+          "changed_values": 33979789
+        },
+        "history": {
+          "finite": true,
+          "all_byte_identical": false,
+          "mae": 7.006670302410274e-05,
+          "max_abs_error": 0.0048828125,
+          "mse": 1.6774877509446643e-08,
+          "psnr_peak_1_db": 77.75340642375997,
+          "psnr_zero_error": false,
+          "changed_pixels": 11962356,
+          "changed_values": 33936443
+        }
+      },
+      "gain_ms": 7.9941159487179485,
+      "cycle_deltas_ms": [
+        7.648381307692308,
+        8.654251076923078,
+        7.679715461538461
+      ],
+      "report": {
+        "path": "${EXPERIMENTS_E}\\cyberpunk-opt\\b580-full-implementation-v1-20261003\\luna\\phase2\\attempt-17-r9-e-style2\\RESULTS.json",
+        "sha256": "f3009066b4edda35f0d62dfdce856a6cf74ae3087d9fa465082cba3f63fcbc06"
+      },
+      "independent_repeat_pending": true,
+      "user_visual_review": false,
+      "game_gain_ms": null
+    }
+  ],
+  "evidence_scope": "fixed13 full Fullsize modes XPU event timing; game/bridge excluded",
+  "GPU_executed_by_this_script": false,
+  "game_writes": 0,
+  "cannot_add_to_standard_style_gain": true
+}

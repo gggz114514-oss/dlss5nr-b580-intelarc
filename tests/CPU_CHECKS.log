@@ -1,0 +1,20 @@
+test_actual_child_lifecycle_fields_and_raw_counter_filter (__main__.CPURegressions.test_actual_child_lifecycle_fields_and_raw_counter_filter) ... ok
+test_actual_plan_method_positive_and_missing_asset_cpu_only (__main__.CPURegressions.test_actual_plan_method_positive_and_missing_asset_cpu_only) ... ok
+test_actual_user_source_commands_positive_and_bad_sha (__main__.CPURegressions.test_actual_user_source_commands_positive_and_bad_sha) ... ok
+test_cache_receipt_roundtrip_constants_target_and_drift (__main__.CPURegressions.test_cache_receipt_roundtrip_constants_target_and_drift) ... ok
+test_export_collect_from_relative_runtime_without_tensor_import (__main__.CPURegressions.test_export_collect_from_relative_runtime_without_tensor_import) ... ok
+test_fake_child_failure_stops_zero_new_launch (__main__.CPURegressions.test_fake_child_failure_stops_zero_new_launch) ... ok
+test_hash_inventory_missing_extra_alias_and_digest (__main__.CPURegressions.test_hash_inventory_missing_extra_alias_and_digest) ... ok
+test_npy_payload_shape_finite_order_rgb_contract (__main__.CPURegressions.test_npy_payload_shape_finite_order_rgb_contract) ... ok
+test_path_json_control_and_baseline_omission_rejections (__main__.CPURegressions.test_path_json_control_and_baseline_omission_rejections) ... ok
+test_profile_rebinding_preserves_payload_and_rejects_missing_absolute (__main__.CPURegressions.test_profile_rebinding_preserves_payload_and_rejects_missing_absolute) ... ok
+test_r18_published_inventory_and_actual_numeric_identity (__main__.CPURegressions.test_r18_published_inventory_and_actual_numeric_identity) ... ok
+test_success_and_slow_performance_do_not_require_one_ms_cutoff (__main__.CPURegressions.test_success_and_slow_performance_do_not_require_one_ms_cutoff) ... ok
+test_user_cli_help_and_negative_plan_no_gpu (__main__.CPURegressions.test_user_cli_help_and_negative_plan_no_gpu) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 3.698s
+
+OK
+CPU fixture scratch: <external CPU fixture scratch>
+{"schema": "nr-release-cpu-tests-v1", "tests_run": 13, "failures": 0, "errors": 0, "passed": true, "GPU_executed": false, "Tensor_libraries_imported": false, "retained_fixture_directory": "<external CPU fixture scratch>"}

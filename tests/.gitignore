@@ -1,0 +1,4 @@
+/_cpu_work/
+/_scratch/
+__pycache__/
+*.pyc

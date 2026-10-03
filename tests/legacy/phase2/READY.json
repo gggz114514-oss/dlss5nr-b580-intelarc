@@ -1,0 +1,178 @@
+{
+  "schema": "b580-phase2-runner-ready-v1",
+  "status": "CPU_READY_FOR_LUNA_SERIAL_QUALIFICATION_GPU_UNEXECUTED",
+  "runner_revision": 1,
+  "previous_READY": null,
+  "created_utc": "2026-10-03T09:56:09.657677+00:00",
+  "files": {
+    "artifact_cleanup.py": "32dac74dc070a55af9b19c1c52d6e5fb203f81c8a435475016665035c5676cf2",
+    "BASE_DIAGNOSTICS_READY.json": "62eada5ea7a1c5806952a1510baf7d570256cd5d3fe454cb269f06e12b61ddfc",
+    "BASE_E_READY.json": "1f1a8455610a054ffd87080be9e7dd2d51293f276519b91599468814f723d909",
+    "BASE_PROVENANCE.json": "c01216933e71de94b5f6a39aa279df7abeac65d8a24f76789503ca8492eabda0",
+    "BASE_RUNNER3_READY.json": "45b511eb8d53a272a1645f70b630077a7690131f8e616dcd4674e04b8a054cb3",
+    "cache_policy.py": "36e01e47995a3b462f4779eb083046641ce385a8af8401cf9b0de4c6c9ee83a6",
+    "cache_seed.py": "278a732b185b58e95e863a92350273243d916811ff6973f6710c021421933295",
+    "cpu_checks.py": "1ba3e3fbab29c46320b9e1f803cdfd7add8c2a36c24bd2b4cd3ae5ca436b1f67",
+    "cpu_comparison/CPU_RUNTIME.json": "52bf530a7ad6ecc78cc473a69f6bc6912af17a2aa33fe943ebaa5fa3cc4e9358",
+    "cpu_comparison/metrics_common.py": "6cfb44e1baf533815961be0b53e722f865ac264b62e9cf090ea059fa20bf3501",
+    "cpu_comparison/metrics_cpu_api.py": "df689e4c2a3bcd9fe44ab4a85770e344d39437a83c9fac5262841a185fdab866",
+    "cpu_comparison/metrics_cpu_worker.py": "84f0677353b055915e4bc5c1197d4f29121707fce1fa5d107428e52b382b8106",
+    "cpu_comparison/metrics_vectorized.py": "ae38b0663318e8b9fa72808fae4d8703a83ed3ea317ba1faa189e36b57844779",
+    "cpu_failure_tests.py": "87306308ca78abbda16df509a711afe1fb86cf36ae05ba2a5ff5dab3adc84e5c",
+    "cpu_tests.py": "5fac90bfaae2b5e600a57186fa4f3acd9ad69b76c643406aecbabd9923006e5e",
+    "D_RUNNER_READY.json": "f22ac6c0dcafe47c1d634dbcefd5cc35e3fc9c4ddf12e507846aafd8fc6a0cc9",
+    "evidence.py": "b5916f4024a0729cce2fc73541cd8b208ce62b59d3695045264f2ce52326a52a",
+    "failure_evidence.py": "73b582ffa36ce5c25718c55625fa4cdee64e17de4c40f58990161573125d3bf0",
+    "failure_policy.py": "d7b980d34aaac9deba6629addc6ba4004993f7a761172b409bf7b8fdf3ff02f6",
+    "freeze_ready_cpu.py": "24cd434b83904f5ed58540afc5c6f66fd08d2a0fe863f39b17db55b415e47441",
+    "freeze_runner4_candidate_cpu.py": "a32ba52a56466cd343c1d2c7c4fde8c2fdb9f5e47b5797f3a81d9b507fd6d3a0",
+    "gpu_worker.py": "2b12f28669cc5619f16c3f859d84594c1ce2534bc5b15449b0eff54ea94a226d",
+    "IMPLEMENTATION.md": "c7f25aa0d90e6f0a591c823db87dd83af1d8f11d7c5aef713836d469149ba76b",
+    "metrics.py": "2d7d23f6720a4f4776c0d91949e97b6006889d2b44b3c4868faa0f2ec1cf0e26",
+    "metrics_streaming_reference.py": "9b9cb0dfabd966f8cd3b946e358d44bca7a6a1f7a04dee4e33480b7df3ee5068",
+    "metrics_subprocess.py": "5ec470fcfeb5f9518f01c21e4175728f90198123480fd8860728aacfdb325c7d",
+    "module_sources.py": "935c553bb91f859af40380ac4e04d285ac044113cbb807bca7cb7d7587a11232",
+    "phase2_child.py": "db54949e9d65d03e859a4af7d30d226aa2981889e75d0797b54dd059a4a05f10",
+    "phase2_runner.py": "2490e13a4d971a2b63c7099cdf99a82eee1371de411011063e1e234f0bab6677",
+    "prepare_runner4_copy_cpu.py": "360e746a97a1409b0bb5f2333f0c1f36f0959535579ede7c2bd41353be8fa4e4",
+    "process_policy.py": "79374a35939ddb29b158efbfa0d2f7f79d4c82a23019a0bc46a78e181cd6281e",
+    "REPORT.md": "a8fad38a3ceda7afc00e9bf079dc5e78e027d217225446520f49a234942e3c5d",
+    "runner4_cpu_probe.py": "f6b682e7ad7cab2c51b4d7e1d73dc733b342cf2916f3a18dda3ee23cb33b0f77",
+    "runner4_cpu_tests.py": "71bc109e07cd6eb62473a62860b6b660da1f9f176077ada1020a31e597a8324c",
+    "runner_common.py": "b9ee3e756855c95e582608cf1b7ff5836464d3d86ec6708e0dc4444f5c18008e",
+    "worker_support.py": "c382acf9c761c59dba80c9b010d3f8dc1aae30b3b238aa1666e83e2041255ff4"
+  },
+  "source_manifest_sha256": "79cba6cc273df82edbfb0d633a74572ffda96efe90cfb6706b4c56a826f48e3f",
+  "target_manifest": {
+    "path": "E:\\ComfyUI-aki-v3-IntelArc_20260722\\cyberpunk-b580-nr-opt\\artifacts\\b580-full-implementation-v1-20261003\\phase2-complete\\PHASE2-r15.json",
+    "sha256": "303b5ce21c938b681616622801644290db7dd11fb038b781ce27ff9d4f6e4d78",
+    "bytes": 343847
+  },
+  "target_manifest_revision": 15,
+  "target_source_root": "E:\\ComfyUI-aki-v3-IntelArc_20260722\\cyberpunk-b580-nr-opt\\artifacts\\b580-full-implementation-v1-20261003\\phase2-complete\\revisions\\r15\\source",
+  "target_source_manifest_sha256": "8dd2d608cb6e3758b778b833260e1c217b9e8e38486b9a9e35755398967796e7",
+  "source_file_count": 260,
+  "source_python_count": 252,
+  "arm_count": 105,
+  "priority_count": 30,
+  "source_revisions": "Main phase2-complete/source or phase2-complete/revisions/rN/source; immutable archive SHA required",
+  "cpu_checks": {
+    "path": "E:\\Codex-NR-Experiments\\cyberpunk-opt\\b580-full-implementation-v1-20261003\\luna\\phase2\\cpu\\CPU_CHECKS-r15-E-parallel-main.json",
+    "sha256": "871a1d2392cb41088b3b5f5a54adf0b106cc339365a98dacfa5894fceb1bf184",
+    "bytes": 104941
+  },
+  "read_only_dependencies": [
+    {
+      "path": "E:\\ComfyUI-aki-v3-IntelArc_20260722\\cyberpunk-b580-nr-opt\\artifacts\\vit-current-provider-gpu-runner-v4-20261002\\FREEZE.json",
+      "sha256": "98f4389d7942c219d43cd6073b2dbef288260694d08dbea01b7fd7f05556acea",
+      "bytes": 69296
+    },
+    {
+      "path": "E:\\ComfyUI-aki-v3-IntelArc_20260722\\cyberpunk-b580-nr-opt\\artifacts\\vit-current-provider-gpu-runner-v4-20261002\\SOURCE_PINS.json",
+      "sha256": "c973ffdff807d31348a5ff07083def022f0e3ce8c9cb8e21c3813060c9c122ec",
+      "bytes": 580627
+    },
+    {
+      "path": "E:\\ComfyUI-aki-v3-IntelArc_20260722\\cyberpunk-b580-nr-opt\\artifacts\\vit-current-provider-gpu-runner-v4-20261002\\FIXTURE_MANIFEST.json",
+      "sha256": "dd3d0c9b43f20ccda9cd769a738fe2c95ef2bf9243c8c9f09fc42447ee8f1a8f",
+      "bytes": 25490
+    },
+    {
+      "path": "E:\\ComfyUI-aki-v3-IntelArc_20260722\\cyberpunk-b580-nr-opt\\artifacts\\vit-current-provider-gpu-runner-v4-20261002\\runner_common.py",
+      "sha256": "e88197dfb04ecf8b420f47bb552fafa1660f4b659a902a034f4f8abfdbfa9101",
+      "bytes": 15503
+    }
+  ],
+  "main_cpu_script_pins": {
+    "cpu_checks.py": "ce126a76d3540e3eded0cdcaf36e29ec695da3d40227cb6f3fce2cd8c352b495",
+    "cpu_registry_checks.py": "f804dc6fed16061417da20238eb38ca5a4dfdb68919937c57c22f88fc14b4ee6",
+    "cpu_capture_role_checks.py": "bbf2c9f731bf6cb2f39da2e7977f810f946e636ba675ac370c18e31ccb167d94",
+    "cpu_native_protocol_checks.py": "969c9724a41977950d2b1938e9966ca4dff2e1fc3f1c218d110d2461297daafc",
+    "cpu_session_protocol_checks.py": "dbc014bd34c4089269eeff908bc8e77bc35a82ca56c99c0c5583c0b34e9dbedb",
+    "freeze_complete_cpu.py": "859c12e15cab3d81e86ce50965600decadd11167800542663ab58272f41f076a",
+    "freeze_numeric_cpu.py": "705e4fdce59ef1874da819af03c6e98b16a3306039324a31e61efc4ba30deaa3",
+    "prepare_cpu.py": "381401e1e38e11bf9c56d2ef1aee8ff2a3a2a328bb109245575b06485705db7e",
+    "merge_cpu.py": "bc146ab3bcaede40809d1d8fa60da710d5d0ffa5d1a8952640e32d5845654adb",
+    "build_checkbox_payload_cpu.py": "fec009d7043fc2d4696f0e143b025b611252f0335078addac7dee343d7d1640d",
+    "apply_branch_patch_cpu.py": "d7210c0f218d0037d18bd6667942eaab9840ac81350201dbfd77ddf1aa0f078f"
+  },
+  "workload": {
+    "fixed_frames": 13,
+    "captures": 2,
+    "replays": 11,
+    "raw_events": 50,
+    "warmup_cycles": 2,
+    "measured_cycles": 3,
+    "frames_per_cycle": 13,
+    "height": 720,
+    "width": 1280,
+    "history_warp": "fused",
+    "graph_replay": true,
+    "variant": "unrounded",
+    "controls": {
+      "style": 0,
+      "intensity": 1.0,
+      "local_tone": 1.0,
+      "local_structure": 1.0,
+      "auto_mask": false,
+      "skin_structure": null
+    }
+  },
+  "CLI": {
+    "core": "phase2_runner.py --manifest --arm/--arms/--priority-only --output-root --shared-cache",
+    "default_order": "priority_order + remaining_order, baseline first",
+    "GPU_opt_in": "--execute-gpu; Luna only"
+  },
+  "cache_seed_root": "D:\\Codex-NR-Experiments\\cyberpunk-opt\\b580-full-implementation-v1-20261003\\luna\\phase1\\attempt-03-shared-cache\\shared-cache",
+  "cache_policy": "byte-validated copy only; never mutate PHASE1; compile missing actual keys; fresh same-arm DiskOnly denies writes",
+  "cleanup_policy": "verified exact task-owned array paths/SHA; after same-arm bytes and baseline error comparison; keep baseline13 outputs/history and candidate13 outputs",
+  "timing_policy": "full modes fixed13 + warm2/measure3 identical13; raw graph-body50 separate; readback/persistence outside events; no game FPS",
+  "failure_policy": {
+    "any_exception": "STOP_RUN_NO_FURTHER_LAUNCH",
+    "categories": [
+      "ADMISSION_FAILURE",
+      "CACHE_FAILURE",
+      "CHILD_FAILURE",
+      "COMPILE_FAILURE",
+      "INTERRUPTED",
+      "NUMERIC_FAILURE",
+      "PROCESS_FAILURE",
+      "RETIREMENT_FAILURE",
+      "ROLE_FAILURE",
+      "RUNNER_FAILURE",
+      "SOURCE_FAILURE"
+    ],
+    "successful_skip_reason_codes": [
+      "LOW_STRENGTH_REQUIRES_REAL_ADAPTER_NATIVE_HARNESS"
+    ],
+    "skip_only_before_launch": true,
+    "source_failure_never_skips": true,
+    "failed_child_exit_zero_is_fatal": true,
+    "failed_owners_and_original_stacks_preserved": true,
+    "slower_qualified_performance_result_can_continue": true,
+    "CPU_fake_child_launch_audit_tests": 8,
+    "CPU_fake_tests_are_not_GPU_qualification": true
+  },
+  "repeat_policy": "none by default; bounded B-C-C-B only explicitly selected after Main screen",
+  "numeric_identity_policy": "child identity is the unchanged NumericCleanupOptions base; suite identity independently appends frozen parse_hooks/hooks_identity for selected constructor specs",
+  "graph_counter_policy": "fixed13 routes capture2/replay11; warm2+measure3 replay65; frame replay routes76; frozen GraphFront raw counter78 includes its2 capture-frame graph replay calls; preserve both",
+  "saved_r4_result_evidence_recheck": null,
+  "GPU_executed": false,
+  "Torch_executed": false,
+  "GPU_launch_authorized_for_this_CPU_worker": false,
+  "separate_qualification": [
+    "native bridge real HDR harness",
+    "style1/2 and low strength controls",
+    "game Present and quality"
+  ],
+  "pending": [
+    "style1/2 and low-strength actual dispatch qualification",
+    "P17 real adapter cold token/native harness",
+    "native bridge HDR and game Present/quality",
+    "future controls use frozen NRControls; LiveControls is absent from r1 source and no game frontend is imported",
+    "unknown Python needs Main stable PID/creation/executable/command SHA CPU authorization receipt"
+  ],
+  "phase1_writes": 0,
+  "game_or_runtime_writes": 0,
+  "output_root": "E:\\Codex-NR-Experiments\\cyberpunk-opt\\b580-full-implementation-v1-20261003\\luna\\phase2"
+}

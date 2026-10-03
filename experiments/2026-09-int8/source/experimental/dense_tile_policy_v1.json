@@ -1,0 +1,319 @@
+{
+  "scope": "Opt-in measured real480 dense geometry table; no inference-time tuning",
+  "sources": {
+    "D:\\Codex-NR-Experiments\\nr-b580\\reference\\experimental\\dense-tiles-fp16_xmx-v1\\validation.json": "754dc167501f811694a749495d8e703e74e3b8aefd98493224af8d6fda2727f0",
+    "D:\\Codex-NR-Experiments\\nr-b580\\reference\\experimental\\dense-tiles-int8_fused_v2-v1\\validation.json": "a201d9ff14c66b9159b2a544c7f0876addb5086aa235dd38542b14c984dcc748"
+  },
+  "modes": {
+    "fp16_xmx": {
+      "32768x32x128:initial=False": {
+        "tile": [
+          32,
+          64,
+          32,
+          4
+        ],
+        "fused": false
+      },
+      "32768x32x96:initial=False": {
+        "tile": [
+          64,
+          64,
+          32,
+          4
+        ],
+        "fused": false
+      },
+      "768x512x1536:initial=False": {
+        "tile": [
+          32,
+          128,
+          32,
+          4
+        ],
+        "fused": false
+      },
+      "128x1024x4096:initial=False": {
+        "tile": [
+          32,
+          128,
+          32,
+          4
+        ],
+        "fused": false
+      },
+      "448x512x512:initial=True": {
+        "tile": [
+          16,
+          64,
+          32,
+          4
+        ],
+        "fused": false
+      },
+      "512x512x1536:initial=False": {
+        "tile": [
+          32,
+          64,
+          32,
+          4
+        ],
+        "fused": false
+      },
+      "128x512x3072:initial=False": {
+        "tile": [
+          32,
+          128,
+          32,
+          4
+        ],
+        "fused": false
+      },
+      "2560x256x128:initial=False": {
+        "tile": [
+          32,
+          64,
+          32,
+          4
+        ],
+        "fused": false
+      },
+      "2048x256x128:initial=False": {
+        "tile": [
+          32,
+          64,
+          32,
+          4
+        ],
+        "fused": false
+      },
+      "2560x256x768:initial=False": {
+        "tile": [
+          32,
+          128,
+          32,
+          4
+        ],
+        "fused": false
+      },
+      "1792x256x128:initial=False": {
+        "tile": [
+          32,
+          64,
+          32,
+          4
+        ],
+        "fused": false
+      },
+      "2240x256x768:initial=False": {
+        "tile": [
+          32,
+          128,
+          32,
+          4
+        ],
+        "fused": false
+      },
+      "2048x256x768:initial=False": {
+        "tile": [
+          32,
+          64,
+          32,
+          4
+        ],
+        "fused": false
+      },
+      "8064x128x128:initial=False": {
+        "tile": [
+          32,
+          64,
+          32,
+          4
+        ],
+        "fused": false
+      },
+      "7680x128x128:initial=False": {
+        "tile": [
+          32,
+          64,
+          32,
+          4
+        ],
+        "fused": false
+      },
+      "7168x128x128:initial=False": {
+        "tile": [
+          32,
+          64,
+          32,
+          4
+        ],
+        "fused": false
+      },
+      "1792x256x768:initial=False": {
+        "tile": [
+          32,
+          64,
+          32,
+          4
+        ],
+        "fused": false
+      },
+      "8640x128x384:initial=False": {
+        "tile": [
+          32,
+          64,
+          32,
+          4
+        ],
+        "fused": false
+      },
+      "8064x128x384:initial=False": {
+        "tile": [
+          32,
+          128,
+          32,
+          4
+        ],
+        "fused": false
+      }
+    },
+    "int8_fused_v2": {
+      "32768x32x128:initial=False": {
+        "tile": [
+          32,
+          128,
+          0,
+          4
+        ],
+        "fused": true
+      },
+      "32768x32x96:initial=False": {
+        "tile": [
+          32,
+          128,
+          0,
+          4
+        ],
+        "fused": true
+      },
+      "768x512x1536:initial=False": {
+        "tile": [
+          64,
+          64,
+          32,
+          4
+        ],
+        "fused": false
+      },
+      "128x1024x4096:initial=False": {
+        "tile": [
+          64,
+          64,
+          32,
+          4
+        ],
+        "fused": false
+      },
+      "448x512x512:initial=True": {
+        "tile": [
+          32,
+          32,
+          32,
+          4
+        ],
+        "fused": false
+      },
+      "512x512x1536:initial=False": {
+        "tile": [
+          64,
+          64,
+          32,
+          4
+        ],
+        "fused": false
+      },
+      "128x1024x1024:initial=False": {
+        "tile": [
+          32,
+          32,
+          32,
+          4
+        ],
+        "fused": false
+      },
+      "128x512x3072:initial=False": {
+        "tile": [
+          64,
+          64,
+          32,
+          4
+        ],
+        "fused": false
+      },
+      "2560x256x768:initial=False": {
+        "tile": [
+          64,
+          64,
+          32,
+          4
+        ],
+        "fused": false
+      },
+      "448x512x512:initial=False": {
+        "tile": [
+          32,
+          32,
+          32,
+          4
+        ],
+        "fused": false
+      },
+      "2240x256x768:initial=False": {
+        "tile": [
+          64,
+          64,
+          32,
+          4
+        ],
+        "fused": false
+      },
+      "2048x256x768:initial=False": {
+        "tile": [
+          64,
+          64,
+          32,
+          4
+        ],
+        "fused": false
+      },
+      "1792x256x768:initial=False": {
+        "tile": [
+          64,
+          64,
+          32,
+          4
+        ],
+        "fused": false
+      },
+      "8640x128x384:initial=False": {
+        "tile": [
+          64,
+          64,
+          32,
+          4
+        ],
+        "fused": false
+      },
+      "8064x128x384:initial=False": {
+        "tile": [
+          64,
+          64,
+          32,
+          4
+        ],
+        "fused": false
+      }
+    }
+  }
+}

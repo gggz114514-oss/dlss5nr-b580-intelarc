@@ -1,0 +1,144 @@
+{
+  "schema": "runner4-private-copy-provenance-v1",
+  "base_runner3_READY": {
+    "path": "E:\\ComfyUI-aki-v3-IntelArc_20260722\\cyberpunk-b580-nr-opt\\artifacts\\b580-full-implementation-v1-20261003\\luna\\phase2\\READY.json",
+    "sha256": "45b511eb8d53a272a1645f70b630077a7690131f8e616dcd4674e04b8a054cb3",
+    "bytes": 11902
+  },
+  "runner3_files": {
+    "artifact_cleanup.py": {
+      "path": "E:\\ComfyUI-aki-v3-IntelArc_20260722\\cyberpunk-b580-nr-opt\\artifacts\\b580-full-implementation-v1-20261003\\luna\\phase2-runner3-archive\\45b511eb8d53a272a1645f70b630077a7690131f8e616dcd4674e04b8a054cb3\\artifact_cleanup.py",
+      "sha256": "32dac74dc070a55af9b19c1c52d6e5fb203f81c8a435475016665035c5676cf2",
+      "bytes": 4424
+    },
+    "cache_policy.py": {
+      "path": "E:\\ComfyUI-aki-v3-IntelArc_20260722\\cyberpunk-b580-nr-opt\\artifacts\\b580-full-implementation-v1-20261003\\luna\\phase2-runner3-archive\\45b511eb8d53a272a1645f70b630077a7690131f8e616dcd4674e04b8a054cb3\\cache_policy.py",
+      "sha256": "6fbd73e3051094c392c598c5a5f44b2f27b2cde389d61d944949c7a9fcfcff3d",
+      "bytes": 15528
+    },
+    "cache_seed.py": {
+      "path": "E:\\ComfyUI-aki-v3-IntelArc_20260722\\cyberpunk-b580-nr-opt\\artifacts\\b580-full-implementation-v1-20261003\\luna\\phase2-runner3-archive\\45b511eb8d53a272a1645f70b630077a7690131f8e616dcd4674e04b8a054cb3\\cache_seed.py",
+      "sha256": "7c48a9b1124c75ea9b72a93d1ee4aaf0fd4e3937c0785e406078f1b37fef52c0",
+      "bytes": 7886
+    },
+    "cpu_checks.py": {
+      "path": "E:\\ComfyUI-aki-v3-IntelArc_20260722\\cyberpunk-b580-nr-opt\\artifacts\\b580-full-implementation-v1-20261003\\luna\\phase2-runner3-archive\\45b511eb8d53a272a1645f70b630077a7690131f8e616dcd4674e04b8a054cb3\\cpu_checks.py",
+      "sha256": "2d419b6d6870568539194e5596d5e65c95cb856e447094e05e5c0a57e43707fe",
+      "bytes": 8154
+    },
+    "cpu_failure_tests.py": {
+      "path": "E:\\ComfyUI-aki-v3-IntelArc_20260722\\cyberpunk-b580-nr-opt\\artifacts\\b580-full-implementation-v1-20261003\\luna\\phase2-runner3-archive\\45b511eb8d53a272a1645f70b630077a7690131f8e616dcd4674e04b8a054cb3\\cpu_failure_tests.py",
+      "sha256": "ef92d8b2bd6fbc496d9781e26acf608c233a6a14968ec71c6c51903a72f702ca",
+      "bytes": 13620
+    },
+    "cpu_tests.py": {
+      "path": "E:\\ComfyUI-aki-v3-IntelArc_20260722\\cyberpunk-b580-nr-opt\\artifacts\\b580-full-implementation-v1-20261003\\luna\\phase2-runner3-archive\\45b511eb8d53a272a1645f70b630077a7690131f8e616dcd4674e04b8a054cb3\\cpu_tests.py",
+      "sha256": "a58e51a8cf7643c3f8ce687bbea9991ae9c8a5c1274976fa66b3bc0f22919f5f",
+      "bytes": 23222
+    },
+    "evidence.py": {
+      "path": "E:\\ComfyUI-aki-v3-IntelArc_20260722\\cyberpunk-b580-nr-opt\\artifacts\\b580-full-implementation-v1-20261003\\luna\\phase2-runner3-archive\\45b511eb8d53a272a1645f70b630077a7690131f8e616dcd4674e04b8a054cb3\\evidence.py",
+      "sha256": "c82280688778e39986ab4423be7a66ad593523123a01158148093cb7a2d93e29",
+      "bytes": 20591
+    },
+    "failure_policy.py": {
+      "path": "E:\\ComfyUI-aki-v3-IntelArc_20260722\\cyberpunk-b580-nr-opt\\artifacts\\b580-full-implementation-v1-20261003\\luna\\phase2-runner3-archive\\45b511eb8d53a272a1645f70b630077a7690131f8e616dcd4674e04b8a054cb3\\failure_policy.py",
+      "sha256": "d7b980d34aaac9deba6629addc6ba4004993f7a761172b409bf7b8fdf3ff02f6",
+      "bytes": 4735
+    },
+    "freeze_ready_cpu.py": {
+      "path": "E:\\ComfyUI-aki-v3-IntelArc_20260722\\cyberpunk-b580-nr-opt\\artifacts\\b580-full-implementation-v1-20261003\\luna\\phase2-runner3-archive\\45b511eb8d53a272a1645f70b630077a7690131f8e616dcd4674e04b8a054cb3\\freeze_ready_cpu.py",
+      "sha256": "24cd434b83904f5ed58540afc5c6f66fd08d2a0fe863f39b17db55b415e47441",
+      "bytes": 6610
+    },
+    "gpu_worker.py": {
+      "path": "E:\\ComfyUI-aki-v3-IntelArc_20260722\\cyberpunk-b580-nr-opt\\artifacts\\b580-full-implementation-v1-20261003\\luna\\phase2-runner3-archive\\45b511eb8d53a272a1645f70b630077a7690131f8e616dcd4674e04b8a054cb3\\gpu_worker.py",
+      "sha256": "2708450d12ab27e5e7854bbc40c045f9d1e50ffdb8581cbacdc65fb65027164b",
+      "bytes": 27353
+    },
+    "metrics.py": {
+      "path": "E:\\ComfyUI-aki-v3-IntelArc_20260722\\cyberpunk-b580-nr-opt\\artifacts\\b580-full-implementation-v1-20261003\\luna\\phase2-runner3-archive\\45b511eb8d53a272a1645f70b630077a7690131f8e616dcd4674e04b8a054cb3\\metrics.py",
+      "sha256": "9b9cb0dfabd966f8cd3b946e358d44bca7a6a1f7a04dee4e33480b7df3ee5068",
+      "bytes": 5187
+    },
+    "module_sources.py": {
+      "path": "E:\\ComfyUI-aki-v3-IntelArc_20260722\\cyberpunk-b580-nr-opt\\artifacts\\b580-full-implementation-v1-20261003\\luna\\phase2-runner3-archive\\45b511eb8d53a272a1645f70b630077a7690131f8e616dcd4674e04b8a054cb3\\module_sources.py",
+      "sha256": "935c553bb91f859af40380ac4e04d285ac044113cbb807bca7cb7d7587a11232",
+      "bytes": 3617
+    },
+    "phase2_child.py": {
+      "path": "E:\\ComfyUI-aki-v3-IntelArc_20260722\\cyberpunk-b580-nr-opt\\artifacts\\b580-full-implementation-v1-20261003\\luna\\phase2-runner3-archive\\45b511eb8d53a272a1645f70b630077a7690131f8e616dcd4674e04b8a054cb3\\phase2_child.py",
+      "sha256": "db54949e9d65d03e859a4af7d30d226aa2981889e75d0797b54dd059a4a05f10",
+      "bytes": 1424
+    },
+    "phase2_runner.py": {
+      "path": "E:\\ComfyUI-aki-v3-IntelArc_20260722\\cyberpunk-b580-nr-opt\\artifacts\\b580-full-implementation-v1-20261003\\luna\\phase2-runner3-archive\\45b511eb8d53a272a1645f70b630077a7690131f8e616dcd4674e04b8a054cb3\\phase2_runner.py",
+      "sha256": "555e014bc345c2ed951c64b3b685c74e47a0d9c1df08e653e1054d5fe530d8ca",
+      "bytes": 33328
+    },
+    "process_policy.py": {
+      "path": "E:\\ComfyUI-aki-v3-IntelArc_20260722\\cyberpunk-b580-nr-opt\\artifacts\\b580-full-implementation-v1-20261003\\luna\\phase2-runner3-archive\\45b511eb8d53a272a1645f70b630077a7690131f8e616dcd4674e04b8a054cb3\\process_policy.py",
+      "sha256": "8066b0f5c6b68d7c3bb6136b3024a91b104611cb2d3d210398b07d0a6b7bfa9c",
+      "bytes": 5278
+    },
+    "REPORT.md": {
+      "path": "E:\\ComfyUI-aki-v3-IntelArc_20260722\\cyberpunk-b580-nr-opt\\artifacts\\b580-full-implementation-v1-20261003\\luna\\phase2-runner3-archive\\45b511eb8d53a272a1645f70b630077a7690131f8e616dcd4674e04b8a054cb3\\REPORT.md",
+      "sha256": "f2a6961eec1d42b2aefb013f1ed036447064286d0202bfd4744d3c40260e3ba2",
+      "bytes": 5180
+    },
+    "runner_common.py": {
+      "path": "E:\\ComfyUI-aki-v3-IntelArc_20260722\\cyberpunk-b580-nr-opt\\artifacts\\b580-full-implementation-v1-20261003\\luna\\phase2-runner3-archive\\45b511eb8d53a272a1645f70b630077a7690131f8e616dcd4674e04b8a054cb3\\runner_common.py",
+      "sha256": "9aa1e2964e3ffd8e6d0e50a5961b40509a59575e33e0ed875b5e959d206488b3",
+      "bytes": 20559
+    },
+    "worker_support.py": {
+      "path": "E:\\ComfyUI-aki-v3-IntelArc_20260722\\cyberpunk-b580-nr-opt\\artifacts\\b580-full-implementation-v1-20261003\\luna\\phase2-runner3-archive\\45b511eb8d53a272a1645f70b630077a7690131f8e616dcd4674e04b8a054cb3\\worker_support.py",
+      "sha256": "c382acf9c761c59dba80c9b010d3f8dc1aae30b3b238aa1666e83e2041255ff4",
+      "bytes": 6422
+    }
+  },
+  "comparison_READY": {
+    "path": "E:\\ComfyUI-aki-v3-IntelArc_20260722\\cyberpunk-b580-nr-opt\\artifacts\\b580-full-implementation-v1-20261003\\reviews\\metrics-vectorized\\READY.json",
+    "sha256": "a1e8343d0d610f4c00bea5b758da9f14ccacf480876431b0ca786b154a7892f8",
+    "bytes": 15477
+  },
+  "comparison_snapshot": {
+    "path": "E:\\ComfyUI-aki-v3-IntelArc_20260722\\cyberpunk-b580-nr-opt\\artifacts\\b580-full-implementation-v1-20261003\\reviews\\metrics-vectorized\\stage1\\SNAPSHOT.json",
+    "sha256": "2be1df6b09682224786d2767ad9e0e77b136a4ccaa213b0ab61006f0ade0faaa",
+    "bytes": 5364
+  },
+  "comparison_asset_copies": {
+    "metrics_common.py": {
+      "path": "E:\\ComfyUI-aki-v3-IntelArc_20260722\\cyberpunk-b580-nr-opt\\artifacts\\b580-full-implementation-v1-20261003\\reviews\\metrics-vectorized\\runner4-candidate\\cpu_comparison\\metrics_common.py",
+      "sha256": "6cfb44e1baf533815961be0b53e722f865ac264b62e9cf090ea059fa20bf3501",
+      "bytes": 2067
+    },
+    "metrics_vectorized.py": {
+      "path": "E:\\ComfyUI-aki-v3-IntelArc_20260722\\cyberpunk-b580-nr-opt\\artifacts\\b580-full-implementation-v1-20261003\\reviews\\metrics-vectorized\\runner4-candidate\\cpu_comparison\\metrics_vectorized.py",
+      "sha256": "ae38b0663318e8b9fa72808fae4d8703a83ed3ea317ba1faa189e36b57844779",
+      "bytes": 6971
+    },
+    "metrics_cpu_api.py": {
+      "path": "E:\\ComfyUI-aki-v3-IntelArc_20260722\\cyberpunk-b580-nr-opt\\artifacts\\b580-full-implementation-v1-20261003\\reviews\\metrics-vectorized\\runner4-candidate\\cpu_comparison\\metrics_cpu_api.py",
+      "sha256": "df689e4c2a3bcd9fe44ab4a85770e344d39437a83c9fac5262841a185fdab866",
+      "bytes": 2886
+    },
+    "metrics_cpu_worker.py": {
+      "path": "E:\\ComfyUI-aki-v3-IntelArc_20260722\\cyberpunk-b580-nr-opt\\artifacts\\b580-full-implementation-v1-20261003\\reviews\\metrics-vectorized\\runner4-candidate\\cpu_comparison\\metrics_cpu_worker.py",
+      "sha256": "84f0677353b055915e4bc5c1197d4f29121707fce1fa5d107428e52b382b8106",
+      "bytes": 2250
+    },
+    "CPU_RUNTIME.json": {
+      "path": "E:\\ComfyUI-aki-v3-IntelArc_20260722\\cyberpunk-b580-nr-opt\\artifacts\\b580-full-implementation-v1-20261003\\reviews\\metrics-vectorized\\runner4-candidate\\cpu_comparison\\CPU_RUNTIME.json",
+      "sha256": "52bf530a7ad6ecc78cc473a69f6bc6912af17a2aa33fe943ebaa5fa3cc4e9358",
+      "bytes": 1068
+    }
+  },
+  "target_manifest": {
+    "path": "E:\\ComfyUI-aki-v3-IntelArc_20260722\\cyberpunk-b580-nr-opt\\artifacts\\b580-full-implementation-v1-20261003\\phase2-complete\\PHASE2-r4.json",
+    "sha256": "ea32381a4bf5ffc31d47fa6f05055411d48fc5c2da7032c5dc288287de456cca",
+    "bytes": 269650
+  },
+  "GPU_executed": false,
+  "writes": "Only runner4-candidate source"
+}

@@ -1,0 +1,820 @@
+{
+  "schema": "amd-current720-reanalysis-plan-v1",
+  "report_language": "zh-CN",
+  "date_local": "2026-10-03",
+  "role": "独立只读代码审查和具体移植指导；Main负责实现/测试，Luna唯一串行GPU",
+  "gpu_executed": false,
+  "development_source_modified": false,
+  "game_modified": false,
+  "published": false,
+  "write_scope": "${WORKSPACE}/cyberpunk-b580-nr-opt/artifacts/b580-full-implementation-v1-20261003/reviews/amd-20261003-current720-reanalysis",
+  "upstream": {
+    "repository": "https://github.com/lmxxf/dlss5-on-amd-9070xt-porting",
+    "default_branch": "main",
+    "sha": "9ec741522d267c4d2365af53081716fb2943068a",
+    "retrieved_utc": "2026-10-03T10:51:59.2758481Z",
+    "head_author_date": "2026-10-03T14:50:14+08:00",
+    "history_start": "7ef24e7c1498bce59738277e174249866608c4ed",
+    "clone": "${EXPERIMENTS_E}/cyberpunk-opt/amd-20261003-current720-reanalysis/upstream",
+    "cloning": "blob:none + 非cone sparse + detached fixed SHA；没有下载weights/大binary",
+    "github_release_objects": 0,
+    "packaged_release": "README 0.39 (2026-10-01)，tag/网盘包，未下载",
+    "yesterday_window_utc": [
+      "2026-10-01T16:00:00Z",
+      "2026-10-02T16:00:00Z"
+    ]
+  },
+  "ninety_fps": {
+    "verdict": "可核查作者归档确立1080档网络约9.5～10ms及可移植结构；完整游戏Present约90fps尚无相应原始证据",
+    "independently_rerun": false,
+    "verified_archived_summaries": [
+      {
+        "source": "https://github.com/lmxxf/dlss5-on-amd-9070xt-porting/blob/9ec741522d267c4d2365af53081716fb2943068a/Development/results/next-candidate-20261002/full-N.txt",
+        "metric": "offline complete network replay mean ms, not Present",
+        "before_ms": 10.0255,
+        "after_ms": 9.8439,
+        "p99_before_ms": 10.347,
+        "p99_after_ms": 10.143,
+        "full_per_frame_arrays_available": false
+      },
+      {
+        "source": "https://github.com/lmxxf/dlss5-on-amd-9070xt-porting/blob/9ec741522d267c4d2365af53081716fb2943068a/Development/results/next-candidate-20261002/wall.txt",
+        "metric": "1152 candidate wall_med / HIP span_med",
+        "wall_med_ms": [
+          9.988,
+          10.014
+        ],
+        "hip_span_med_ms": [
+          9.46,
+          9.464
+        ]
+      },
+      {
+        "source": "https://github.com/lmxxf/dlss5-on-amd-9070xt-porting/blob/9ec741522d267c4d2365af53081716fb2943068a/Development/results/day-summary-20261001.md",
+        "metric": "1080(1152) HIP span ms",
+        "before_ms": 10.05,
+        "after_ms_range": [
+          9.5,
+          9.56
+        ]
+      }
+    ],
+    "network_1080": {
+      "normal": [
+        1920,
+        1152
+      ],
+      "optional_lossy": [
+        1920,
+        1088
+      ],
+      "vit_tokens": 640
+    },
+    "caveats": [
+      "upscale前输入可自动选900档，display分辨率不等于network尺寸",
+      "10-02 release recipe默认skip42,43,46，regular AE on；10-03最新默认all71+FAST_NUMERIC=1",
+      "pre-upscale reset=true；RE9 caps history=0",
+      "Magpie optional FG；90传闻缺FG开关与Present日志",
+      "HDR/exposure/完整游戏渲染负载未形成90fps归档合同",
+      "OVERLAP one-frame-behind是opt-in语义变化；不能拿去替代当前帧"
+    ],
+    "latest_all_on_author_report": {
+      "full_blocks_fastnumeric_1088_ms": 9.29,
+      "motion_with_adaptive_ms": 8.54,
+      "level": "作者叙述，未本次独立重跑"
+    }
+  },
+  "comparison": {
+    "authoritative_manifest": "${WORKSPACE}/cyberpunk-b580-nr-opt/artifacts/b580-full-implementation-v1-20261003/phase2-complete/PHASE2-r15.json",
+    "manifest_sha256": "303b5ce21c938b681616622801644290db7dd11fb038b781ce27ff9d4f6e4d78",
+    "constructor_json_pointer": "/arms/accepted_baseline/constructor",
+    "immutable_source": "${WORKSPACE}/cyberpunk-b580-nr-opt/artifacts/b580-full-implementation-v1-20261003/phase2-complete/revisions/r15/source",
+    "asset_scope_manifest": "${WORKSPACE}/cyberpunk-b580-nr-opt/artifacts/b580-full-implementation-v1-20261003/PHASE1.json",
+    "math": "現役C512+K8+all6+去FP8模拟舍入+numeric_cleanup C128 FP32 branch/fractional history/native_both front",
+    "actual_game_user_rtss_ms": [
+      55,
+      60
+    ],
+    "accepted_720_input": [
+      1280,
+      720
+    ],
+    "internal": [
+      1280,
+      768
+    ],
+    "c512_valid_hwc": [
+      24,
+      40,
+      512
+    ],
+    "vit_shape": [
+      240,
+      1024
+    ],
+    "preserve": [
+      "真实history",
+      "真实motion",
+      "controls/style/localtone/localstructure/intensity",
+      "fullK",
+      "所有帧",
+      "1280×720输出",
+      "当前GPU Block/DIS选择",
+      "图重放",
+      "texture reuse",
+      "GPU fence handoff"
+    ],
+    "already_implemented": [
+      "single concat1536 C512 torch.mm",
+      "C512 INT8 _groups expand/cubic/reduce",
+      "ViT真实INT8 DPAS/独立行量化",
+      "decoder gather unround",
+      "nativeK8",
+      "C32 hidden native",
+      "C512 probability unround",
+      "C128 pairwise + FP32 branch",
+      "C32/C64/C128 attention-project",
+      "真实history/noise/control",
+      "graph replay/texture/fence"
+    ],
+    "candidate_sources_are_not_runtime_evidence": true,
+    "allow_numeric_changes": true,
+    "old_half_split_boundaries_are_permanent_requirement": false
+  },
+  "source_paths_are_proposed_main_workcopy_changes_only": true,
+  "ranking": [
+    "N1",
+    "N2",
+    "N3",
+    "N4",
+    "N5",
+    "N6"
+  ],
+  "budgets_note": "范围是本次static推导的立项预算，含零且可能负收益；未经GPU校准，非下限/承诺，不可相加/换算游戏fps。",
+  "candidates": [
+    {
+      "id": "N1",
+      "priority": 1,
+      "title": "C512 valid-raster library QKV + 全窗口pack",
+      "novelty": "相对accepted新增；旧compact prototype被FullsizeSession排除，不能当现役",
+      "complexity": "中低",
+      "engineering_gain_budget_ms": [
+        0,
+        0.8
+      ],
+      "accepted_sites": [
+        {
+          "file": "${WORKSPACE}/cyberpunk-b580-nr-opt/artifacts/b580-full-implementation-v1-20261003/phase2-complete/revisions/r15/source/game/fullsize_session_v1.py",
+          "function": "c512",
+          "line": 111
+        },
+        {
+          "file": "${WORKSPACE}/cyberpunk-b580-nr-opt/artifacts/b580-full-implementation-v1-20261003/phase2-complete/revisions/r15/source/game/fullsize_session_v1.py",
+          "function": "installed (exclude compact_queries)",
+          "line": 148
+        },
+        {
+          "file": "${WORKSPACE}/cyberpunk-b580-nr-opt/artifacts/b580-full-implementation-v1-20261003/phase2-complete/revisions/r15/source/game/c512_window_projection_game_v1.py",
+          "function": "replacement",
+          "line": 99
+        },
+        {
+          "file": "${WORKSPACE}/cyberpunk-b580-nr-opt/artifacts/b580-full-implementation-v1-20261003/phase2-complete/revisions/r15/source/game/c512_qkv_library_16_v1.py",
+          "function": "dense",
+          "line": 37
+        }
+      ],
+      "amd": [
+        {
+          "file": "hip/c512_qkv_attention_compact.inc",
+          "function": "c5c_body",
+          "line": 96,
+          "blob_url": "https://github.com/lmxxf/dlss5-on-amd-9070xt-porting/blob/9ec741522d267c4d2365af53081716fb2943068a/hip/c512_qkv_attention_compact.inc#L96",
+          "commit_url": "https://github.com/lmxxf/dlss5-on-amd-9070xt-porting/commit/9880d03016e08e5032cc743d7271b9afbfba1455"
+        }
+      ],
+      "proposed_files": [
+        "game/compact_c512_qkv_pack_720_v1.py (new workcopy)",
+        "game/fullsize_session_v1.py",
+        "game/c512_window_projection_game_v1.py",
+        "game/c512_qkv_library_16_v1.py"
+      ],
+      "interface": {
+        "input": "MLP[24,40,512] contiguous FP16、W[512,1536]、scale/pixel_order/shift",
+        "gemm": "torch.mm(MLP.view(960,512),W)",
+        "producer": "Z[960,16,3,32]",
+        "consumer": "Q,K,V[16,HP/8,WP/8,64,32]与原native_heads/projection接口"
+      },
+      "layout": "valid raster Z -> shift-aware window/head/token-order gather；invalid生成当前pad→mm→norm的零位语义，不删除keys",
+      "thread_dpas": "保持library GEMM；pack SG16 tile16 tokens×32 channels；不新造fullBN1536 Triton矩阵核",
+      "work_change": {
+        "qkv_padded_rows_before": 19712,
+        "qkv_valid_rows_after": 15360,
+        "rows_eliminated": 4352,
+        "macs_eliminated": 3422552064,
+        "flops_eliminated": 6845104128,
+        "qkv_mac_reduction_percent": 22.08,
+        "ffn_reduction": 0,
+        "attention_key_count": 64
+      },
+      "traffic_change": {
+        "qkv_output_and_pack_read_saved_mib": 25.5,
+        "pad_input_extra_mib_each_write_read": 4.25,
+        "final_window_buffers_unchanged": true,
+        "note": "logical requests，非DRAM measurement"
+      },
+      "risks": [
+        "库M改动可能换GEMM算法和归约/occupancy",
+        "零向量normalize/NaN/signzero边界",
+        "encoder last block pooling/crop必须保持",
+        "不把既有FFN valid960再次计收益"
+      ],
+      "luna_minimum": {
+        "executor": "Luna，仅在Main后续授权的独占串行GPU窗口；本审查未执行",
+        "candidate_toggle": "compact_c512_qkv_valid_720",
+        "actual_site_counts": {
+          "C512 encoder": 8,
+          "C512 decoder": 8
+        },
+        "baseline": "PHASE2-r15.json arms.accepted_baseline.constructor；固定height720，不装audit_swin/ffn回退臂",
+        "frames": "PHASE1的13标准帧、原history/motion/control/fullK，所有帧逐一process，保留reset契约",
+        "correctness": "完整13color/private history；首轮旧边界用于隔离结构收益，不设永久byte-identity门。用户fast已授权数值变化：记录finite/max/RMS及运动/历史画质；保留fullK/motion/history/control/全部帧，不加FP8模拟舍入。",
+        "timing": "先ABBA四槽；candidate出现正向完整帧信号后BAAB一次；同一完整序列，cold compile和读回不在body；process与raw GPU均报原数组/统计",
+        "accept": "相对accepted的任何可重复正收益，无1ms门；无完整帧重复收益即停止扩大；没有游戏帧率或用户视觉采用结论",
+        "extra_evidence": [
+          "mm M=960证据，按shift分配padded19712→valid15360",
+          "13outputs+private history",
+          "pack zero与64key完整性"
+        ]
+      },
+      "native_fast_math_followup": "C512 library已有完整K512。结构收益通过后可另测native norm/概率分母，不加入FP8模拟舍入；完整native encoder候选未纳入accepted。",
+      "initial_half_boundary_policy": "结构首轮隔离收益用；非永久逐位/4060要求，用户fast允许数值变化"
+    },
+    {
+      "id": "N2",
+      "priority": 2,
+      "title": "ViT完整head-major QKV + stream64 exponent/PV/denominator + P4 projection",
+      "novelty": "相对accepted新增；与正在合并的ViT FFN修复独立，复用未默认安装head skeleton",
+      "complexity": "中高",
+      "engineering_gain_budget_ms": [
+        0,
+        1.5
+      ],
+      "accepted_sites": [
+        {
+          "file": "${WORKSPACE}/cyberpunk-b580-nr-opt/artifacts/b580-full-implementation-v1-20261003/phase2-complete/revisions/r15/source/game/fullsize_session_v1.py",
+          "function": "vforward",
+          "line": 131
+        },
+        {
+          "file": "${WORKSPACE}/cyberpunk-b580-nr-opt/artifacts/b580-full-implementation-v1-20261003/phase2-complete/revisions/r15/source/experimental/fp8_unround_overlay/nr_backend/vit_block.py",
+          "function": "vit_attention",
+          "line": 32
+        },
+        {
+          "file": "${WORKSPACE}/cyberpunk-b580-nr-opt/artifacts/b580-full-implementation-v1-20261003/phase2-complete/revisions/r15/source/game/vit_head_dataflow_720_v1.py",
+          "function": "forward_from_mlp (candidate)",
+          "line": 149
+        },
+        {
+          "file": "${WORKSPACE}/cyberpunk-b580-nr-opt/artifacts/b580-full-implementation-v1-20261003/phase2-complete/revisions/r15/source/experimental/fp8_unround_overlay/modules/fused_vit_projection_v3.py",
+          "function": "FusedVitProjection.apply",
+          "line": 14
+        }
+      ],
+      "amd": [
+        {
+          "file": "hip/vit_stream.inc",
+          "function": "vit_stream_qkv_frag_hin_w5",
+          "line": 90,
+          "blob_url": "https://github.com/lmxxf/dlss5-on-amd-9070xt-porting/blob/9ec741522d267c4d2365af53081716fb2943068a/hip/vit_stream.inc#L90",
+          "commit_url": "https://github.com/lmxxf/dlss5-on-amd-9070xt-porting/commit/e22d15a242d661de76f28ca44452ec8aefe51ac2"
+        },
+        {
+          "file": "hip/deep_fast.hip",
+          "function": "vit_attention_fused_body",
+          "line": 363,
+          "blob_url": "https://github.com/lmxxf/dlss5-on-amd-9070xt-porting/blob/9ec741522d267c4d2365af53081716fb2943068a/hip/deep_fast.hip#L363",
+          "commit_url": null
+        }
+      ],
+      "proposed_files": [
+        "game/vit_tail_stream64_720_v1.py (new workcopy)",
+        "game/vit_head_dataflow_720_v1.py",
+        "game/fullsize_session_v1.py",
+        "game/implementation_hooks_720_v1.py (bounded optional hook)"
+      ],
+      "interface": {
+        "input": "module/MLP[240,1024]",
+        "q": "[32,240,32] FP16",
+        "kv": "[32,256,32] FP16 (16 padding keys)",
+        "attended": "[32,240,32] head-major",
+        "output": "[240,1024] FP16"
+      },
+      "layout": "2×K512独立half QKV积+half add+norm直写头布局；attention不输出score/exp；projection直接按head加载",
+      "thread_dpas": "QKV BM16/64或128线程，2–4 token tiles共享W；attention(head,query16/32)64线程，4×key64，FP16 DPAS；P4投影BM16 BN32/64",
+      "numeric_contract": [
+        "两个K512分别FP32acc→half再half sum",
+        "模型special exponent bit map，非softmax",
+        "64key原顺序树与half累积分母",
+        "16 padded exp(0)必须先贡献再half减1.34375",
+        "PV K32顺序/accumulate保持",
+        "projection4×K256独立round、part0 residual、顺序half merge"
+      ],
+      "work_change": {
+        "matrix_mac_change": 0,
+        "vit_tokens": 240,
+        "key_count_with_padding": 256,
+        "ffn_changed": false
+      },
+      "traffic_change": {
+        "score_exponent_mib_per_block": 3.75,
+        "minimum_score_exp_boundary_saved_mib_per_block": 18.75,
+        "minimum_eight_blocks_saved_mib": 150,
+        "additional_two_qkv_product_write_merge_read_mib_per_block": 5.625,
+        "note": "logical lower bound，实际cache/DPAS/SLM未测，不把此前已融合FFN scratch算入",
+        "projection_current": "已有parts+merge两核和partial[4,240,1024]，不把4数学分区算成4launch；新增为head-major消费/partial消除"
+      },
+      "existing_to_reuse": [
+        "vit_head_dataflow_720_v1._qkv_head_major",
+        "vit_head_dataflow_720_v1._project_head_major",
+        "现役norm/exp/NaN helpers"
+      ],
+      "risks": [
+        "单CTA long serial K链/SLM压力",
+        "ordered half分母和padding纠偏容易被普通FlashAttention改坏",
+        "不要默认audit_vit_native_dataflow fullK数值开关",
+        "head-major旧骨架仍vit_attention物化E，简单打开该开关不等于本项"
+      ],
+      "luna_minimum": {
+        "executor": "Luna，仅在Main后续授权的独占串行GPU窗口；本审查未执行",
+        "candidate_toggle": "vit_tail_stream64_720",
+        "actual_site_counts": {
+          "ViT": 8
+        },
+        "baseline": "PHASE2-r15.json arms.accepted_baseline.constructor；固定height720，不装audit_swin/ffn回退臂",
+        "frames": "PHASE1的13标准帧、原history/motion/control/fullK，所有帧逐一process，保留reset契约",
+        "correctness": "完整13color/private history；首轮旧边界用于隔离结构收益，不设永久byte-identity门。用户fast已授权数值变化：记录finite/max/RMS及运动/历史画质；保留fullK/motion/history/control/全部帧，不加FP8模拟舍入。",
+        "timing": "先ABBA四槽；candidate出现正向完整帧信号后BAAB一次；同一完整序列，cold compile和读回不在body；process与raw GPU均报原数组/统计",
+        "accept": "相对accepted的任何可重复正收益，无1ms门；无完整帧重复收益即停止扩大；没有游戏帧率或用户视觉采用结论",
+        "extra_evidence": [
+          "先只stream attention完整帧臂，再whole tail完整帧臂",
+          "graph/body中score/exp无global输出",
+          "QKV/P4边界和pad16检查",
+          "Main新FFN可另外作配对，主对照仍accepted"
+        ]
+      },
+      "native_fast_math_followup": "两个K512/P4 half边界只用于隔离结构。之后允许完整K1024单累加QKV/projection及native norm/exponent/FP32 denominator；audit_vit_native_dataflow.forward:161已有开关，vit_projection_single_accum._project:22已有单累加，两者未纳入accepted。",
+      "initial_half_boundary_policy": "结构首轮隔离收益用；非永久逐位/4060要求，用户fast允许数值变化",
+      "numeric_contract_phase": "first structural isolation only; full-K native fast allowed afterwards"
+    },
+    {
+      "id": "N3",
+      "priority": 3,
+      "title": "C32完整64-token窗口resident block",
+      "novelty": "相对accepted新增；现役仅QKV-pack与attention-project分阶段融合，MLP仍global boundary",
+      "complexity": "高",
+      "engineering_gain_budget_ms": [
+        0,
+        2.5
+      ],
+      "accepted_sites": [
+        {
+          "file": "${WORKSPACE}/cyberpunk-b580-nr-opt/artifacts/b580-full-implementation-v1-20261003/phase2-complete/revisions/r15/source/game/c32_repeated_tail_fusion_v1.py",
+          "function": "fused_forward_unquantized",
+          "line": 34
+        },
+        {
+          "file": "${WORKSPACE}/cyberpunk-b580-nr-opt/artifacts/b580-full-implementation-v1-20261003/phase2-complete/revisions/r15/source/game/c32_hidden_native_720_v1.py",
+          "function": "installed",
+          "line": 122
+        }
+      ],
+      "amd": [
+        {
+          "file": "hip/wave_owned_c32.inc",
+          "function": "cw_body",
+          "line": 206,
+          "blob_url": "https://github.com/lmxxf/dlss5-on-amd-9070xt-porting/blob/9ec741522d267c4d2365af53081716fb2943068a/hip/wave_owned_c32.inc#L206",
+          "commit_url": "https://github.com/lmxxf/dlss5-on-amd-9070xt-porting/commit/6784ec0741d1efcef6206ebb0b827b66aa9f34a5"
+        }
+      ],
+      "proposed_files": [
+        "game/c32_window_resident_720_v1.py (new workcopy)",
+        "game/c32_repeated_tail_fusion_v1.py",
+        "game/three_structure_combo_v1.py"
+      ],
+      "interface": {
+        "inputs": "HWC half/MLP expand-contract/QKV weights/bias/output weight/skip/shift/pixel_order",
+        "ownership": "one WG owns64 window tokens",
+        "output": "现役HWC FP16 crop output"
+      },
+      "layout": "shift-aware direct gather->rolling MLP->SLM residual->QKVnorm/KV SLM->query16/32 AV->projection->HWC store",
+      "thread_dpas": "64threads=4SG16初版，与128threads比较；N16/32及query16/32滚动FP16 DPAS；保留K和所有half/cubic点；跨SG必须barrier",
+      "work_change": {
+        "matrix_mac_change": 0,
+        "all_keys_preserved": 64,
+        "phase1_sites": 7,
+        "phase2_special_decoder66": "仅第一阶段重复正收益后、与Main FDP/gather协调",
+        "front_post_changed": false
+      },
+      "traffic_change": {
+        "minimum_logical_saved_bytes_formula": "16*M*C",
+        "m_valid": 245760,
+        "c": 32,
+        "saved_mib_per_ordinary_block": 120,
+        "seven_blocks_saved_mib": 840,
+        "already_fused_hidden_not_counted": true
+      },
+      "scratch": {
+        "residual_mib_per_window": 0.00390625,
+        "qkv_kib_per_window": 12,
+        "total_base_slm_kib": 16,
+        "weight_prefetch_extra": true,
+        "hidden128_full_unroll": false
+      },
+      "risks": [
+        "register/SLM occupancy可反超流量收益",
+        "4SG不能照搬AMD单wave无barrier",
+        "padding MLP及全部keys的数值语义",
+        "不能让FDP decoder66双执行"
+      ],
+      "luna_minimum": {
+        "executor": "Luna，仅在Main后续授权的独占串行GPU窗口；本审查未执行",
+        "candidate_toggle": "c32_window_resident_ordinary7_720",
+        "actual_site_counts": {
+          "ordinary C32": 7
+        },
+        "baseline": "PHASE2-r15.json arms.accepted_baseline.constructor；固定height720，不装audit_swin/ffn回退臂",
+        "frames": "PHASE1的13标准帧、原history/motion/control/fullK，所有帧逐一process，保留reset契约",
+        "correctness": "完整13color/private history；首轮旧边界用于隔离结构收益，不设永久byte-identity门。用户fast已授权数值变化：记录finite/max/RMS及运动/历史画质；保留fullK/motion/history/control/全部帧，不加FP8模拟舍入。",
+        "timing": "先ABBA四槽；candidate出现正向完整帧信号后BAAB一次；同一完整序列，cold compile和读回不在body；process与raw GPU均报原数组/统计",
+        "accept": "相对accepted的任何可重复正收益，无1ms门；无完整帧重复收益即停止扩大；没有游戏帧率或用户视觉采用结论",
+        "extra_evidence": [
+          "7个site全部命中，native hidden保持",
+          "MLP/QKV global边界确实消失",
+          "只合理BM16/32与64/128thread小范围筛选",
+          "full13 histories"
+        ]
+      },
+      "native_fast_math_followup": "C32结构通过后可独立测native cubic/norm/分母减少half拆分；audit_swin kernels已有FP32 norm/weights选项，未采纳为现役；fullK/真实输入保持。",
+      "initial_half_boundary_policy": "结构首轮隔离收益用；非永久逐位/4060要求，用户fast允许数值变化"
+    },
+    {
+      "id": "N4",
+      "priority": 4,
+      "title": "C64/C128 QKV共用A + 可选V consumer布局",
+      "novelty": "相对accepted新增；direct-pack已有，family CTA输入重复仍在；c128_dual=false，可选loader引用的dual模块不在immutable source，未据此声称有已资格dual实现",
+      "complexity": "中",
+      "engineering_gain_budget_ms": [
+        0,
+        0.6
+      ],
+      "accepted_sites": [
+        {
+          "file": "${WORKSPACE}/cyberpunk-b580-nr-opt/artifacts/b580-full-implementation-v1-20261003/phase2-complete/revisions/r15/source/game/c64_qkv_direct_pack_v2.py",
+          "function": "_qkv_direct_pack",
+          "line": 31
+        },
+        {
+          "file": "${WORKSPACE}/cyberpunk-b580-nr-opt/artifacts/b580-full-implementation-v1-20261003/phase2-complete/revisions/r15/source/game/c128_qkv_direct_pack_one_v1.py",
+          "function": "_direct_pack",
+          "line": 30
+        },
+        {
+          "file": "${WORKSPACE}/cyberpunk-b580-nr-opt/artifacts/b580-full-implementation-v1-20261003/phase2-complete/revisions/r15/source/game/c128_qkv_direct_pack_all_v1.py",
+          "function": "direct_pack/grid",
+          "line": 63
+        },
+        {
+          "file": "${WORKSPACE}/cyberpunk-b580-nr-opt/artifacts/b580-full-implementation-v1-20261003/phase2-complete/revisions/r15/source/game/c64_attention_project_fused_720_v1.py",
+          "function": "_fused",
+          "line": 19
+        }
+      ],
+      "amd": [
+        {
+          "file": "hip/wave_owned_mh.inc",
+          "function": "swin_wave2_body W2_QKV_FUSE",
+          "line": 563,
+          "blob_url": "https://github.com/lmxxf/dlss5-on-amd-9070xt-porting/blob/9ec741522d267c4d2365af53081716fb2943068a/hip/wave_owned_mh.inc#L563",
+          "commit_url": "https://github.com/lmxxf/dlss5-on-amd-9070xt-porting/commit/96efbc3db4bf89698cf09b75dbf8f67ab77160e7"
+        }
+      ],
+      "proposed_files": [
+        "game/qkv_shared_a_720_v1.py (new workcopy)",
+        "game/c64_qkv_direct_pack_all_v1.py",
+        "game/c128_qkv_direct_pack_all_v1.py",
+        "game/c64_attention_project_fused_720_v1.py (only optional phase2)",
+        "game/c128_attention_project_fused_720_v1.py (only optional phase2)"
+      ],
+      "interface": {
+        "kernel": "_qkv3(X,W,scale,inverse,Q,K,V,M,Wp,C,BM=16)",
+        "phase1_output": "原[head,HP/8,WP/8,64,32] Q/K/V",
+        "phase2_optional_v": "[head,window,32 channels,64tokens]，consumer同步改strides与metadata"
+      },
+      "thread_dpas": "64threads4SG、BM16 N32；same A perK32 feeds3 independentFP32 acc；norm尾延后；prefetch2阶段；C128可QK/独V资源对照",
+      "work_change": {
+        "matrix_mac_change": 0,
+        "a_requests_per_head_before": 3,
+        "a_requests_per_head_after": 1,
+        "raw_z_already_eliminated": true,
+        "c256_excluded": true
+      },
+      "traffic_change": {
+        "logical_saved_formula": "4*M*C*heads bytes perblock",
+        "unpadded_c64_eight_c128_twelve_mib": 600,
+        "qkv_w_and_output_requests_unchanged": true,
+        "phase2_gain_requires_isa_confirmation": true
+      },
+      "risks": [
+        "live3acc occupancy",
+        "cache让logical600MiB省不了同等DRAM",
+        "新V旧consumer不匹配",
+        "不要重新做现役attention-project融合"
+      ],
+      "luna_minimum": {
+        "executor": "Luna，仅在Main后续授权的独占串行GPU窗口；本审查未执行",
+        "candidate_toggle": "qkv_shared_a_c64_then_c128_720",
+        "actual_site_counts": {
+          "C64": 8,
+          "C128": 12
+        },
+        "baseline": "PHASE2-r15.json arms.accepted_baseline.constructor；固定height720，不装audit_swin/ffn回退臂",
+        "frames": "PHASE1的13标准帧、原history/motion/control/fullK，所有帧逐一process，保留reset契约",
+        "correctness": "完整13color/private history；首轮旧边界用于隔离结构收益，不设永久byte-identity门。用户fast已授权数值变化：记录finite/max/RMS及运动/历史画质；保留fullK/motion/history/control/全部帧，不加FP8模拟舍入。",
+        "timing": "先ABBA四槽；candidate出现正向完整帧信号后BAAB一次；同一完整序列，cold compile和读回不在body；process与raw GPU均报原数组/统计",
+        "accept": "相对accepted的任何可重复正收益，无1ms门；无完整帧重复收益即停止扩大；没有游戏帧率或用户视觉采用结论",
+        "extra_evidence": [
+          "分两完整帧臂；tail kernel phase1保持",
+          "ISA实际A共用，不只源码tl.load减少",
+          "phase2在phase1有重复正收益且layoutconvert存在后测"
+        ]
+      },
+      "native_fast_math_followup": "C64/C128结构通过后允许native FP32 norm/概率分母与完整K累积；audit_swin._normalize:183/_weights_native:250已有候选，未成为accepted；不重新FP8模拟舍入。",
+      "initial_half_boundary_policy": "结构首轮隔离收益用；非永久逐位/4060要求，用户fast允许数值变化"
+    },
+    {
+      "id": "N5",
+      "priority": 5,
+      "title": "MLP4个token tile共享W，保持已接受pairwise/branch accumulate",
+      "novelty": "相对accepted新增；与Main gatedC64/BM8修退化分开",
+      "complexity": "中高",
+      "engineering_gain_budget_ms": [
+        0,
+        0.6
+      ],
+      "accepted_sites": [
+        {
+          "file": "${WORKSPACE}/cyberpunk-b580-nr-opt/artifacts/b580-full-implementation-v1-20261003/phase2-complete/revisions/r15/source/experimental/fp8_unround_overlay/modules/batched_branched_mlp_v1.py",
+          "function": "_pairs",
+          "line": 22
+        },
+        {
+          "file": "${WORKSPACE}/cyberpunk-b580-nr-opt/artifacts/b580-full-implementation-v1-20261003/phase2-complete/revisions/r15/source/game/branched_mlp_pairwise_720_v1.py",
+          "function": "_pairs_pairwise",
+          "line": 35
+        },
+        {
+          "file": "${WORKSPACE}/cyberpunk-b580-nr-opt/artifacts/b580-full-implementation-v1-20261003/phase2-complete/revisions/r15/source/game/branch_accum_native_720_kernel_v1.py",
+          "function": "_project_fp32",
+          "line": 11
+        }
+      ],
+      "amd": [
+        {
+          "file": "hip/wave_owned_mh.inc",
+          "function": "W2_FFN_QT_BATCH",
+          "line": 418,
+          "blob_url": "https://github.com/lmxxf/dlss5-on-amd-9070xt-porting/blob/9ec741522d267c4d2365af53081716fb2943068a/hip/wave_owned_mh.inc#L418",
+          "commit_url": "https://github.com/lmxxf/dlss5-on-amd-9070xt-porting/commit/b37aa5b48231928d514b0542685640836bd1385d"
+        }
+      ],
+      "proposed_files": [
+        "game/mlp_weight_group4_720_v1.py (new workcopy)",
+        "game/branched_mlp_pairwise_720_v1.py",
+        "experimental/fp8_unround_overlay/modules/batched_branched_mlp_v1.py (workcopy wrapper only)"
+      ],
+      "interface": {
+        "input": "原features/expand/reduce/cubic policy",
+        "output": "原LATENT[branch,M,32]",
+        "project": "原accepted project，C128 FP32跨branch保持"
+      },
+      "layout": "(branch,rowgroup64)WG；4SG各16真实行，SLM双缓冲同K32/N32W；C128维持pairwise，不展开hidden128",
+      "thread_dpas": "64threads4SG16，各自A/acc，W一次协作load后共享；part0..3和reduce顺序不变",
+      "work_change": {
+        "matrix_mac_change": 0,
+        "x_and_latent_requests_unchanged": true,
+        "ideal_w_requests_fraction": 0.25,
+        "slm_and_barriers_added": true
+      },
+      "traffic_change": {
+        "before_per_branch_per16rows": "C*128*2 expand bytes +128*32*2 reduce bytes",
+        "after_group4": "相同W一组读供4tile，尾组另算",
+        "physical_cache_benefit_unknown": true
+      },
+      "risks": [
+        "W原先已L2/L1命中",
+        "Intel跨SG SLM比AMDwave内更贵",
+        "不要把C128 FP32projection退回旧half merge",
+        "不与Main C64gate恢复重复归因"
+      ],
+      "luna_minimum": {
+        "executor": "Luna，仅在Main后续授权的独占串行GPU窗口；本审查未执行",
+        "candidate_toggle": "mlp_weight_group4_c128_then_c64_720",
+        "actual_site_counts": {
+          "C128": 12,
+          "C64": 8
+        },
+        "baseline": "PHASE2-r15.json arms.accepted_baseline.constructor；固定height720，不装audit_swin/ffn回退臂",
+        "frames": "PHASE1的13标准帧、原history/motion/control/fullK，所有帧逐一process，保留reset契约",
+        "correctness": "完整13color/private history；首轮旧边界用于隔离结构收益，不设永久byte-identity门。用户fast已授权数值变化：记录finite/max/RMS及运动/历史画质；保留fullK/motion/history/control/全部帧，不加FP8模拟舍入。",
+        "timing": "先ABBA四槽；candidate出现正向完整帧信号后BAAB一次；同一完整序列，cold compile和读回不在body；process与raw GPU均报原数组/统计",
+        "accept": "相对accepted的任何可重复正收益，无1ms门；无完整帧重复收益即停止扩大；没有游戏帧率或用户视觉采用结论",
+        "extra_evidence": [
+          "先C128完整帧，再C64",
+          "project kernel/hash保持",
+          "ISA W/global load数量和新增SLM/barrier资源",
+          "新C64gate合并后仍保留accepted配对"
+        ]
+      },
+      "native_fast_math_followup": "C128 FP32跨branch已现役，不计新增；branch_accum_native有C64/C256开关，当前constructor仅c128。结构通过后其他家族可另测完整分支单累加/native cubic。",
+      "initial_half_boundary_policy": "结构首轮隔离收益用；非永久逐位/4060要求，用户fast允许数值变化"
+    },
+    {
+      "id": "N6",
+      "priority": 6,
+      "title": "C256 window-stage persistent ready queue，小范围GPU依赖实验",
+      "novelty": "相对accepted新增；graph replay已有，只探GPU全层依赖尾巴",
+      "complexity": "很高",
+      "engineering_gain_budget_ms": [
+        0,
+        0.25
+      ],
+      "status": "后置，N1–N5之后；没有现成Intel完整device-body可直接开启",
+      "accepted_sites": [
+        {
+          "file": "${WORKSPACE}/cyberpunk-b580-nr-opt/artifacts/b580-full-implementation-v1-20261003/phase2-complete/revisions/r15/source/game/c256_qkv_direct_pack_one_v1.py",
+          "function": "_direct_pack/direct_pack",
+          "line": 30
+        },
+        {
+          "file": "${WORKSPACE}/cyberpunk-b580-nr-opt/artifacts/b580-full-implementation-v1-20261003/phase2-complete/revisions/r15/source/game/three_structure_combo_v1.py",
+          "function": "installed",
+          "line": 23
+        }
+      ],
+      "amd": [
+        {
+          "file": "hip/swin_persistent.inc",
+          "function": "sp_run_body",
+          "line": 38,
+          "blob_url": "https://github.com/lmxxf/dlss5-on-amd-9070xt-porting/blob/9ec741522d267c4d2365af53081716fb2943068a/hip/swin_persistent.inc#L38",
+          "commit_url": "https://github.com/lmxxf/dlss5-on-amd-9070xt-porting/commit/3767f49a70fe57e6805673d5f2a62c72ffa723ea"
+        },
+        {
+          "file": "hip/swin_persistent.inc",
+          "function": "sp_global_group_sync",
+          "line": 14,
+          "blob_url": "https://github.com/lmxxf/dlss5-on-amd-9070xt-porting/blob/9ec741522d267c4d2365af53081716fb2943068a/hip/swin_persistent.inc#L14",
+          "commit_url": null
+        }
+      ],
+      "proposed_files": [
+        "game/c256_window_queue_720_v1.py (new workcopy)",
+        "game/three_structure_combo_v1.py",
+        "game/implementation_hooks_720_v1.py"
+      ],
+      "interface": {
+        "input": "queue/counts/nodes/layer input-output/weights/status/epoch",
+        "job": "layer,stage,window；每窗最多4上层依赖",
+        "phase1": "两普通C256块的完整帧臂",
+        "possible_phase2": "encoder16–21/decoder49–54六块链，仅phase1有GPU正收益"
+      },
+      "layout": "保留所有layer/stage global缓冲和原前段/split-tail；不是C256巨WG全融合",
+      "thread_dpas": "按已资格device stage body资源分工；ready task only，无未就绪spin占满WG；所有SG写完后WG fence/barrier+device release，consumer acquire",
+      "work_change": {
+        "matrix_mac_change": 0,
+        "layer_traffic_saved": 0,
+        "queue_atomic_traffic_added": true,
+        "only_target": "缩短GPU依赖尾巴/dispatch边界"
+      },
+      "recovery": [
+        "同一epoch任务完成后才reset counts",
+        "timeout/status导致整帧fail或安全fallback",
+        "不读上一帧history/output伪装完成",
+        "ready队列不能让consumer堵住所有producer驻留位"
+      ],
+      "risks": [
+        "本地图已经削CPUlaunch尾巴",
+        "AMD1080仅0.064ms，C64/C128失败",
+        "共享thread/body调度适配成本高",
+        "capture counters不是physical launch"
+      ],
+      "luna_minimum": {
+        "executor": "Luna，仅在Main后续授权的独占串行GPU窗口；本审查未执行",
+        "candidate_toggle": "c256_queue_two_blocks_720",
+        "actual_site_counts": {
+          "C256 ordinary": 2
+        },
+        "baseline": "PHASE2-r15.json arms.accepted_baseline.constructor；固定height720，不装audit_swin/ffn回退臂",
+        "frames": "PHASE1的13标准帧、原history/motion/control/fullK，所有帧逐一process，保留reset契约",
+        "correctness": "完整13color/private history；首轮旧边界用于隔离结构收益，不设永久byte-identity门。用户fast已授权数值变化：记录finite/max/RMS及运动/历史画质；保留fullK/motion/history/control/全部帧，不加FP8模拟舍入。",
+        "timing": "先ABBA四槽；candidate出现正向完整帧信号后BAAB一次；同一完整序列，cold compile和读回不在body；process与raw GPU均报原数组/统计",
+        "accept": "相对accepted的任何可重复正收益，无1ms门；无完整帧重复收益即停止扩大；没有游戏帧率或用户视觉采用结论",
+        "extra_evidence": [
+          "rawGPU必须重复改善，不能只CPU计数少",
+          "多个epoch/reset和一次timeout/poison",
+          "未通过即不扩6块"
+        ]
+      },
+      "native_fast_math_followup": "队列只隔离GPU依赖收益，无坚持旧half拆分的数值要求；之后可换已资格native fast device body，数学和queue收益分别报告，history/motion/control/epoch不变。",
+      "initial_half_boundary_policy": "结构首轮隔离收益用；非永久逐位/4060要求，用户fast允许数值变化"
+    }
+  ],
+  "repaired_r15_not_incremental": [
+    {
+      "id": "R1",
+      "status": "用户最新指令：开发代理已修，Main合并ViT K64/行量化一次",
+      "evidence_site": {
+        "file": "${WORKSPACE}/cyberpunk-b580-nr-opt/artifacts/b580-full-implementation-v1-20261003/phase2-complete/revisions/r15/source/game/audit_int8_ffn_complete_720_v1.py",
+        "function": "_vit_expand_entry",
+        "line": 31
+      },
+      "prior_problem": "按64个N tile重复rowmax/quant；P1串行4096 contract",
+      "prior_full_process_ms": [
+        45.9366574,
+        55.1216721
+      ],
+      "prior_raw_gpu_ms": [
+        39.77902608,
+        47.37558748
+      ],
+      "classification": "恢复未采纳r15退化，不是相对现役新增，真实INT8 DPAS已存在",
+      "latest_user_update": "Main已修第33项unsupported JIT In→or；r18冻结交Luna；本报告收尾时新修复未测速。R1保留历史退化描述，不另派工作。"
+    },
+    {
+      "id": "R2",
+      "status": "用户最新指令：开发代理已修，Main合并split-tail/gatedC64",
+      "evidence_site": {
+        "file": "${WORKSPACE}/cyberpunk-b580-nr-opt/artifacts/b580-full-implementation-v1-20261003/phase2-complete/revisions/r15/source/game/audit_swin_720_kernels_v1.py",
+        "function": "_attention_project",
+        "line": 268
+      },
+      "prior_problem": "C256 actualBN128导致attention重算2次；C64资源不佳",
+      "prior_full_process_ms": [
+        46.0071689,
+        54.6308974
+      ],
+      "prior_raw_gpu_ms": [
+        39.4995385,
+        47.5168354
+      ],
+      "classification": "恢复未采纳r15退化，不是相对现役新增"
+    }
+  ],
+  "existing_positive_not_new_discovery": {
+    "name": "FDP",
+    "repeated_complete_process_ms": [
+      45.4101743,
+      43.6103879
+    ],
+    "gain_ms": 1.7997863,
+    "level": "本地既有两轮完整帧归档",
+    "game_installed": false,
+    "note": "Main继续，未本次GPU运行；不能与N3特殊decoder消费者双计"
+  },
+  "gates": {
+    "zero_spill": {
+      "source": {
+        "file": "${WORKSPACE}/cyberpunk-b580-nr-opt/artifacts/b580-full-implementation-v1-20261003/phase2-complete/revisions/r15/source/experimental/fp8_unround_overlay/modules/spill_preflight_v1.py",
+        "function": "select",
+        "line": 1
+      },
+      "behavior": "first zero-spill config immediately wins，不按性能挑；audit_swin preflight/launch拒spills",
+      "implication": "限制搜索空间，但没有有spill更快的证明；可冷端独立fast experiment允许少量spills并fullframe测",
+      "do_not_claim": "zero spill保证occupancy/快"
+    },
+    "byte_identity": "不是永久采用门。旧K512/P4等half边界仅作结构首轮对照，用户fast明确允许数值变化；后续native fullK/norm/exponent/denominator单独配对，完整时序质量和重复收益验收。",
+    "audit_cpu": "存在frame-context validation，无权重SHA每帧重算必要证据；rawGPU回退不能归CPU；不建议删真实history/control guard",
+    "gain_threshold_ms": null,
+    "physical_launch_counter": "graph capture逻辑计数不能解释GPU kernel数量，须实际capture/IR"
+  },
+  "excluded_lossy_from_kernel_gains": [
+    "降低输入或裁画布包括1088",
+    "skip blocks",
+    "ViT跨帧近似reuse",
+    "one-frame-behind OVERLAP",
+    "FG",
+    "unrounded half再次FP8/byte压缩"
+  ],
+  "final_required_artifacts": [
+    "REPORT.md",
+    "PLAN.json",
+    "UPSTREAM_METADATA.json",
+    "EVIDENCE.json",
+    "VERIFICATION.json"
+  ],
+  "numeric_fast_classification": "完整K单累加/原生norm-exponent-分母允许，数学变化收益另列，不错报纯布局收益；不重新加入FP8模拟舍入。",
+  "no_new_work_in_this_batch": "仅完成N1–N6报告/PLAN/验证；未新增GPU或source开发。"
+}

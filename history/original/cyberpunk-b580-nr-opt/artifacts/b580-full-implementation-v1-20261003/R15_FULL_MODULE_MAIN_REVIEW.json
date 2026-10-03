@@ -1,0 +1,434 @@
+{
+  "schema": "current720-main-r15-qualified-parts-v1",
+  "rows": [
+    {
+      "attempt": "attempt-26-r13-e-c512-encoder",
+      "arm": "audit_impl_c512_encoder_complete_720_v2",
+      "result": {
+        "path": "E:\\Codex-NR-Experiments\\cyberpunk-opt\\b580-full-implementation-v1-20261003\\luna\\phase2\\attempt-26-r13-e-c512-encoder\\RESULTS.json",
+        "sha256": "e5cb8aaeebe02fd3c94732473300beccbf919a2983a66b6a90d4a393c656a052"
+      },
+      "arms": {
+        "accepted_baseline": {
+          "result": {
+            "path": "E:\\Codex-NR-Experiments\\cyberpunk-opt\\b580-full-implementation-v1-20261003\\luna\\phase2\\attempt-26-r13-e-c512-encoder\\accepted_baseline\\measurement\\readonly\\RESULT.json",
+            "sha256": "0357a894ad00e402cbba53d81a6f94e7b572563c7c761b957383c3c8082b385a",
+            "bytes": 5038112
+          },
+          "precompile": {
+            "path": "E:\\Codex-NR-Experiments\\cyberpunk-opt\\b580-full-implementation-v1-20261003\\luna\\phase2\\attempt-26-r13-e-c512-encoder\\accepted_baseline\\precompile\\RESULT.json",
+            "sha256": "3e7780d52e2bef533270201008b922f8066cad1eed1fdb6092ef7586b7c89409",
+            "bytes": 5035433
+          },
+          "mean_ms": 46.32488784615384,
+          "p95_ms": 48.264739,
+          "raw_body_mean_ms": 39.85237494
+        },
+        "audit_impl_c512_encoder_complete_720_v2": {
+          "result": {
+            "path": "E:\\Codex-NR-Experiments\\cyberpunk-opt\\b580-full-implementation-v1-20261003\\luna\\phase2\\attempt-26-r13-e-c512-encoder\\audit_impl_c512_encoder_complete_720_v2\\measurement\\readonly\\RESULT.json",
+            "sha256": "f3e16d18cf065e158c1f720ffd59305c7df09529adfd966b9c9d000f95738da9",
+            "bytes": 7997055
+          },
+          "precompile": {
+            "path": "E:\\Codex-NR-Experiments\\cyberpunk-opt\\b580-full-implementation-v1-20261003\\luna\\phase2\\attempt-26-r13-e-c512-encoder\\audit_impl_c512_encoder_complete_720_v2\\precompile\\RESULT.json",
+            "sha256": "0b8070aca7367cc7394b13e2f01cc4465ff528181b64f6abb4f29d523049c23c",
+            "bytes": 7994349
+          },
+          "mean_ms": 47.749572589743586,
+          "p95_ms": 48.380885,
+          "raw_body_mean_ms": 40.47266774,
+          "compile_memory_observations": [],
+          "parallel_batches": []
+        }
+      },
+      "gain_ms": -1.4246847435897434,
+      "cycle_deltas_ms": [
+        -1.1835336153846152,
+        -1.5805327692307687,
+        -1.5099878461538458
+      ],
+      "screening_interval_ms": [
+        -1.6692511531637397,
+        -1.180118334015747
+      ],
+      "quality": {
+        "output": {
+          "finite": true,
+          "all_byte_identical": false,
+          "mae": 4.5676551950946876e-05,
+          "max_abs_error": 0.003173828125,
+          "mse": 1.0022956444961299e-08,
+          "psnr_peak_1_db": 79.99004156876973,
+          "psnr_zero_error": false,
+          "changed_pixels": 11939304,
+          "changed_values": 33129414
+        },
+        "history": {
+          "finite": true,
+          "all_byte_identical": false,
+          "mae": 4.567999404853746e-05,
+          "max_abs_error": 0.003173828125,
+          "mse": 1.0023031714294346e-08,
+          "psnr_peak_1_db": 79.99000895470677,
+          "psnr_zero_error": false,
+          "changed_pixels": 11939396,
+          "changed_values": 33194561
+        }
+      },
+      "status": "QUALIFIED_OFFLINE_SLOWER_DO_NOT_ADOPT",
+      "body_delta_ms": 0.6202928000000014,
+      "exclusive_CPU_conversion_cost_ms": null,
+      "game_gain_ms": null,
+      "user_visual_review": false,
+      "limitation": "Full-process and independent body timings are not exclusive CPU/format-conversion timers"
+    },
+    {
+      "attempt": "attempt-27-r13-e-history-failure-diagnostics",
+      "arm": "audit_impl_history_screened_launch",
+      "result": {
+        "path": "E:\\Codex-NR-Experiments\\cyberpunk-opt\\b580-full-implementation-v1-20261003\\luna\\phase2\\attempt-27-r13-e-history-failure-diagnostics\\RESULTS.json",
+        "sha256": "f3ad5fd6378d4b9073d005295b983ca002343b3fcd10a146af051d100ff7a749"
+      },
+      "arms": {
+        "accepted_baseline": {
+          "result": {
+            "path": "E:\\Codex-NR-Experiments\\cyberpunk-opt\\b580-full-implementation-v1-20261003\\luna\\phase2\\attempt-27-r13-e-history-failure-diagnostics\\accepted_baseline\\measurement\\readonly\\RESULT.json",
+            "sha256": "f9e166fe50e1f0880990ddb2076aa9fa841830005532a4253ab3626f30bb842a",
+            "bytes": 5038474
+          },
+          "precompile": {
+            "path": "E:\\Codex-NR-Experiments\\cyberpunk-opt\\b580-full-implementation-v1-20261003\\luna\\phase2\\attempt-27-r13-e-history-failure-diagnostics\\accepted_baseline\\precompile\\RESULT.json",
+            "sha256": "eed656bb6391d3af4d6b2428545eee389dc547d01db4c753ff4afd22ddce86a5",
+            "bytes": 5035841
+          },
+          "mean_ms": 46.268915538461535,
+          "p95_ms": 47.018907,
+          "raw_body_mean_ms": 40.080278039999996
+        },
+        "audit_impl_history_screened_launch": {
+          "result": {
+            "path": "E:\\Codex-NR-Experiments\\cyberpunk-opt\\b580-full-implementation-v1-20261003\\luna\\phase2\\attempt-27-r13-e-history-failure-diagnostics\\audit_impl_history_screened_launch\\measurement\\readonly\\RESULT.json",
+            "sha256": "a766a61a1aadb0d4b2ba2fc029aa516b6af2503ed0df40792801a49b7c1a5f95",
+            "bytes": 5039382
+          },
+          "precompile": {
+            "path": "E:\\Codex-NR-Experiments\\cyberpunk-opt\\b580-full-implementation-v1-20261003\\luna\\phase2\\attempt-27-r13-e-history-failure-diagnostics\\audit_impl_history_screened_launch\\precompile\\RESULT.json",
+            "sha256": "79a17babe632ca4ec9cb17ab7de1a79679d1e793154b0d9a2c698b477e30f680",
+            "bytes": 5036575
+          },
+          "mean_ms": 46.41848430769231,
+          "p95_ms": 47.558958,
+          "raw_body_mean_ms": 39.79184374,
+          "compile_memory_observations": [],
+          "parallel_batches": []
+        }
+      },
+      "gain_ms": -0.1495687692307685,
+      "cycle_deltas_ms": [
+        -0.5288743846153833,
+        0.4151479999999999,
+        -0.33497992307692215
+      ],
+      "screening_interval_ms": [
+        -0.7252741772786115,
+        0.4261366388170746
+      ],
+      "quality": {
+        "output": {
+          "finite": true,
+          "all_byte_identical": true,
+          "mae": 0.0,
+          "max_abs_error": 0.0,
+          "mse": 0.0,
+          "psnr_peak_1_db": null,
+          "psnr_zero_error": true,
+          "changed_pixels": 0,
+          "changed_values": 0
+        },
+        "history": {
+          "finite": true,
+          "all_byte_identical": true,
+          "mae": 0.0,
+          "max_abs_error": 0.0,
+          "mse": 0.0,
+          "psnr_peak_1_db": null,
+          "psnr_zero_error": true,
+          "changed_pixels": 0,
+          "changed_values": 0
+        }
+      },
+      "status": "QUALIFIED_OFFLINE_NO_REPEATABLE_GAIN_YET",
+      "body_delta_ms": -0.2884342999999987,
+      "exclusive_CPU_conversion_cost_ms": null,
+      "game_gain_ms": null,
+      "user_visual_review": false,
+      "limitation": "Full-process and independent body timings are not exclusive CPU/format-conversion timers"
+    },
+    {
+      "attempt": "attempt-29-r15-e-swin-full",
+      "arm": "audit_impl_swin_all",
+      "result": {
+        "path": "E:\\Codex-NR-Experiments\\cyberpunk-opt\\b580-full-implementation-v1-20261003\\luna\\phase2\\attempt-29-r15-e-swin-full\\RESULTS.json",
+        "sha256": "f3541332ab46b4d816e45a1630a395702c61c771ed9f739e08067d151791711b"
+      },
+      "arms": {
+        "accepted_baseline": {
+          "result": {
+            "path": "E:\\Codex-NR-Experiments\\cyberpunk-opt\\b580-full-implementation-v1-20261003\\luna\\phase2\\attempt-29-r15-e-swin-full\\accepted_baseline\\measurement\\readonly\\RESULT.json",
+            "sha256": "bc21f506e9b610b9d3145a0c8d5dac150a35e8dec67a756d9d87bee6f11c27b8",
+            "bytes": 5039602
+          },
+          "precompile": {
+            "path": "E:\\Codex-NR-Experiments\\cyberpunk-opt\\b580-full-implementation-v1-20261003\\luna\\phase2\\attempt-29-r15-e-swin-full\\accepted_baseline\\precompile\\RESULT.json",
+            "sha256": "dca96393905ec34860fdbc46e4e6fda534ffda8cbe47af68928ed5bdc76c503a",
+            "bytes": 5036662
+          },
+          "mean_ms": 46.007168897435896,
+          "p95_ms": 47.674896,
+          "raw_body_mean_ms": 39.499538539999996
+        },
+        "audit_impl_swin_all": {
+          "result": {
+            "path": "E:\\Codex-NR-Experiments\\cyberpunk-opt\\b580-full-implementation-v1-20261003\\luna\\phase2\\attempt-29-r15-e-swin-full\\audit_impl_swin_all\\measurement\\readonly\\RESULT.json",
+            "sha256": "c036274a8ab04c4f059ea3577046d46b62339652bbc457e5536b20cdbdf12973",
+            "bytes": 9840467
+          },
+          "precompile": {
+            "path": "E:\\Codex-NR-Experiments\\cyberpunk-opt\\b580-full-implementation-v1-20261003\\luna\\phase2\\attempt-29-r15-e-swin-full\\audit_impl_swin_all\\precompile\\RESULT.json",
+            "sha256": "6ac1219899826f056ea66d9e92c5ea60a4107884b5ccf793315738dff58d4f23",
+            "bytes": 10067268
+          },
+          "mean_ms": 54.630897410256416,
+          "p95_ms": 55.635884999999995,
+          "raw_body_mean_ms": 47.5168354,
+          "compile_memory_observations": [
+            {
+              "initial": {
+                "total_physical_bytes": 51314561024,
+                "available_physical_bytes": 36090392576,
+                "process_private_bytes": 4541849600,
+                "process_rss_bytes": 1055924224,
+                "process_peak_rss_bytes": 3795574784
+              },
+              "peak_process_private_bytes": 4550680576,
+              "peak_process_rss_bytes": 1064165376,
+              "peak_private_growth_bytes": 8830976,
+              "min_available_physical_bytes": 36082806784,
+              "samples": 76,
+              "growth_budget_bytes": 34359738368,
+              "system_reserve_bytes": 8589934592,
+              "violation": null,
+              "coverage": "process private/RSS + system physical availability; descendant private peaks unknown",
+              "hard_peak_guarantee": false
+            },
+            {
+              "initial": {
+                "total_physical_bytes": 51314561024,
+                "available_physical_bytes": 36210114560,
+                "process_private_bytes": 4314398720,
+                "process_rss_bytes": 941395968,
+                "process_peak_rss_bytes": 3795574784
+              },
+              "peak_process_private_bytes": 4392976384,
+              "peak_process_rss_bytes": 981549056,
+              "peak_private_growth_bytes": 78577664,
+              "min_available_physical_bytes": 36136947712,
+              "samples": 100,
+              "growth_budget_bytes": 34359738368,
+              "system_reserve_bytes": 8589934592,
+              "violation": null,
+              "coverage": "process private/RSS + system physical availability; descendant private peaks unknown",
+              "hard_peak_guarantee": false
+            }
+          ],
+          "parallel_batches": [
+            {
+              "label": "swin.branch_accum",
+              "requested_workers": 8,
+              "status": "CPU_COMPILE_COMPLETE_PENDING_SERIAL_GPU_ADMISSION"
+            },
+            {
+              "label": "swin.before_numeric",
+              "requested_workers": 8,
+              "status": "CPU_COMPILE_COMPLETE_PENDING_SERIAL_GPU_ADMISSION"
+            }
+          ],
+          "actual_capture_stages": 132,
+          "first_decoder32_tail_capture_calls": 2
+        }
+      },
+      "gain_ms": -8.623728512820513,
+      "cycle_deltas_ms": [
+        -8.399587461538463,
+        -8.681181538461537,
+        -8.790416538461537
+      ],
+      "screening_interval_ms": [
+        -8.856573180524448,
+        -8.390883845116578
+      ],
+      "quality": {
+        "output": {
+          "finite": true,
+          "all_byte_identical": false,
+          "mae": 4.525572946427809e-05,
+          "max_abs_error": 0.0048828125,
+          "mse": 8.86786888348638e-09,
+          "psnr_peak_1_db": 80.52180736802399,
+          "psnr_zero_error": false,
+          "changed_pixels": 11938725,
+          "changed_values": 33165958
+        },
+        "history": {
+          "finite": true,
+          "all_byte_identical": false,
+          "mae": 4.525927768222871e-05,
+          "max_abs_error": 0.0048828125,
+          "mse": 8.867953223553262e-09,
+          "psnr_peak_1_db": 80.52176606356633,
+          "psnr_zero_error": false,
+          "changed_pixels": 11938817,
+          "changed_values": 33231926
+        }
+      },
+      "status": "QUALIFIED_OFFLINE_SLOWER_DO_NOT_ADOPT",
+      "body_delta_ms": 8.017296860000002,
+      "exclusive_CPU_conversion_cost_ms": null,
+      "game_gain_ms": null,
+      "user_visual_review": false,
+      "limitation": "Full-process and independent body timings are not exclusive CPU/format-conversion timers"
+    },
+    {
+      "attempt": "attempt-30-r15-e-vit-ffn",
+      "arm": "audit_impl_vit_ffn_complete_720_v2",
+      "result": {
+        "path": "E:\\Codex-NR-Experiments\\cyberpunk-opt\\b580-full-implementation-v1-20261003\\luna\\phase2\\attempt-30-r15-e-vit-ffn\\RESULTS.json",
+        "sha256": "43dfe26c26b9b70909dce6ec6f26988f4b1ec3b42f7b9f3d48da20af065ca902"
+      },
+      "arms": {
+        "accepted_baseline": {
+          "result": {
+            "path": "E:\\Codex-NR-Experiments\\cyberpunk-opt\\b580-full-implementation-v1-20261003\\luna\\phase2\\attempt-30-r15-e-vit-ffn\\accepted_baseline\\measurement\\readonly\\RESULT.json",
+            "sha256": "f802fd29d10c56a50649e2bdf9d623c9638642f5eedbb084822ab9df90f433ed",
+            "bytes": 5039519
+          },
+          "precompile": {
+            "path": "E:\\Codex-NR-Experiments\\cyberpunk-opt\\b580-full-implementation-v1-20261003\\luna\\phase2\\attempt-30-r15-e-vit-ffn\\accepted_baseline\\precompile\\RESULT.json",
+            "sha256": "653ac5c0fa88fd6e6fdb5099f0b623c345d1e299aa6dc55e040788e87252d641",
+            "bytes": 5036673
+          },
+          "mean_ms": 45.93665735897436,
+          "p95_ms": 46.540886,
+          "raw_body_mean_ms": 39.77902608
+        },
+        "audit_impl_vit_ffn_complete_720_v2": {
+          "result": {
+            "path": "E:\\Codex-NR-Experiments\\cyberpunk-opt\\b580-full-implementation-v1-20261003\\luna\\phase2\\attempt-30-r15-e-vit-ffn\\audit_impl_vit_ffn_complete_720_v2\\measurement\\readonly\\RESULT.json",
+            "sha256": "4210723a4d46fb6780ba846e43f7ee8b48b815d72a09980266ac72dc35dddf87",
+            "bytes": 5165522
+          },
+          "precompile": {
+            "path": "E:\\Codex-NR-Experiments\\cyberpunk-opt\\b580-full-implementation-v1-20261003\\luna\\phase2\\attempt-30-r15-e-vit-ffn\\audit_impl_vit_ffn_complete_720_v2\\precompile\\RESULT.json",
+            "sha256": "944a28650de500858946b7793a5348d7c4547abc32da0ae57bad63db2d56aecd",
+            "bytes": 5206650
+          },
+          "mean_ms": 55.1216721025641,
+          "p95_ms": 57.330988999999995,
+          "raw_body_mean_ms": 47.37558747999999,
+          "compile_memory_observations": [
+            {
+              "initial": {
+                "total_physical_bytes": 51314561024,
+                "available_physical_bytes": 36212215808,
+                "process_private_bytes": 3744055296,
+                "process_rss_bytes": 801787904,
+                "process_peak_rss_bytes": 5966815232
+              },
+              "peak_process_private_bytes": 3762020352,
+              "peak_process_rss_bytes": 805883904,
+              "peak_private_growth_bytes": 17965056,
+              "min_available_physical_bytes": 36209709056,
+              "samples": 24,
+              "growth_budget_bytes": 34359738368,
+              "system_reserve_bytes": 8589934592,
+              "violation": null,
+              "coverage": "process private/RSS + system physical availability; descendant private peaks unknown",
+              "hard_peak_guarantee": false
+            }
+          ],
+          "parallel_batches": [
+            {
+              "label": "c512_and_vit.ffn",
+              "requested_workers": 8,
+              "status": "CPU_COMPILE_COMPLETE_PENDING_SERIAL_GPU_ADMISSION"
+            }
+          ]
+        }
+      },
+      "gain_ms": -9.185014743589745,
+      "cycle_deltas_ms": [
+        -8.758341153846153,
+        -9.73486,
+        -9.061843076923079
+      ],
+      "screening_interval_ms": [
+        -9.762105965524363,
+        -8.607923521655128
+      ],
+      "quality": {
+        "output": {
+          "finite": true,
+          "all_byte_identical": true,
+          "mae": 0.0,
+          "max_abs_error": 0.0,
+          "mse": 0.0,
+          "psnr_peak_1_db": null,
+          "psnr_zero_error": true,
+          "changed_pixels": 0,
+          "changed_values": 0
+        },
+        "history": {
+          "finite": true,
+          "all_byte_identical": true,
+          "mae": 0.0,
+          "max_abs_error": 0.0,
+          "mse": 0.0,
+          "psnr_peak_1_db": null,
+          "psnr_zero_error": true,
+          "changed_pixels": 0,
+          "changed_values": 0
+        }
+      },
+      "status": "QUALIFIED_OFFLINE_SLOWER_DO_NOT_ADOPT",
+      "body_delta_ms": 7.596561399999992,
+      "exclusive_CPU_conversion_cost_ms": null,
+      "game_gain_ms": null,
+      "user_visual_review": false,
+      "limitation": "Full-process and independent body timings are not exclusive CPU/format-conversion timers"
+    }
+  ],
+  "history_mismatch_cause": "UNKNOWN; attempt27 strict check passed without reproducing earlier failure",
+  "attempt28": {
+    "status": "REPORT_AND_RESOURCE_ADMISSION_FAILURE_NOT_A_SPEED_VERDICT",
+    "original_report": {
+      "path": "E:\\Codex-NR-Experiments\\cyberpunk-opt\\b580-full-implementation-v1-20261003\\luna\\phase2\\attempt-28-r14-e-swin-retained-post\\RESULTS.json",
+      "sha256": "922e61280f908dfc7f56135e82cd28ea640e1d06722d258732e943a0709ad884"
+    },
+    "root_cause": "Selected binary checking recursively included unselected compile trials; tuple map keys then broke report serialization",
+    "fixes": {
+      "path": "E:\\Codex-NR-Experiments\\cyberpunk-opt\\b580-full-implementation-v1-20261003\\luna\\phase2\\cpu\\MAIN_DURABLE_REPORTS_CPU.json",
+      "sha256": "fc4fe02432845baf667e9d7b6047f3dc02d6d4da2c95f5a3360e7b9b5188f255"
+    }
+  },
+  "source_manifest": {
+    "path": "E:\\ComfyUI-aki-v3-IntelArc_20260722\\cyberpunk-b580-nr-opt\\artifacts\\b580-full-implementation-v1-20261003\\phase2-complete\\PHASE2-r15.json",
+    "sha256": "303b5ce21c938b681616622801644290db7dd11fb038b781ce27ff9d4f6e4d78"
+  },
+  "runner": {
+    "path": "E:\\ComfyUI-aki-v3-IntelArc_20260722\\cyberpunk-b580-nr-opt\\artifacts\\b580-full-implementation-v1-20261003\\luna\\phase2-e-parallel\\READY.json",
+    "sha256": "8044f7280347414d07a942ba7675bf44fa85b9b6404395c7d66bdd820cedec9d"
+  },
+  "GPU_executed_by_this_script": false,
+  "actual_game_writes": 0
+}

@@ -1,0 +1,9 @@
+{
+  "schema": 1,
+  "domain_count": 65536,
+  "input": "all IEEE binary16 bit patterns",
+  "output": "native FP32 sigmoid: FMUL.FTZ -1.4426950216293334961, MUFU.EX2, FADD.FTZ 1, MUFU.RCP",
+  "files": {"sigmoid.f32.bin": "394394a5258bad437495d68076be75d8413fa0ed5b752400e3947c332437b850"},
+  "reference": "reference/results/sigmoid-v1/run.json",
+  "contains_image_or_model_activations": false
+}

@@ -1,0 +1,123 @@
+{
+  "schema": "nr-public-final-review-collection-v1",
+  "files": [
+    {
+      "path": "docs/audits/amd-kernel-implementation/KERNEL_DIFF.md",
+      "original_sha256": "19a6f094c989842b5a3b46f39ff12ce19979142d977d9d6d85d126d103a57c71",
+      "published_sha256": "8314e538d017a65d2d7402213212fa01102e6ac3ac1f2d352939eb204809cc9d",
+      "bytes": 167375,
+      "source_id": "KERNEL_DIFF.md",
+      "derived": true,
+      "transformation": "Public path aliases and existing repository source links; original retained locally"
+    },
+    {
+      "path": "docs/audits/amd-kernel-implementation/KERNEL_INVENTORY.json",
+      "original_sha256": "8d485020bce74904f9b719bd9b90fca05a9b6383ccc4fefce735f818f8e7c1a7",
+      "published_sha256": "b1907549e0f3c1f45bb22fd6349e60ab65f09749fbe3dc01ad280e98b5045811",
+      "bytes": 2312979,
+      "source_id": "KERNEL_INVENTORY.json",
+      "derived": true,
+      "transformation": "Public path aliases and existing repository source links; original retained locally"
+    },
+    {
+      "path": "docs/audits/amd-kernel-implementation/COVERAGE.json",
+      "original_sha256": "545f7f3e579c1ded081a4ed21043ea168548e7cce5e2fe88c61df4bfe7dfa5ab",
+      "published_sha256": "796a9e13ce260c480a72ecea1a80fd3d5ec2b12782730aec0c3d15fe195c8c25",
+      "bytes": 12039,
+      "source_id": "COVERAGE.json",
+      "derived": true,
+      "transformation": "Public path aliases and existing repository source links; original retained locally"
+    },
+    {
+      "path": "docs/audits/amd-kernel-implementation/extract_inventory.py",
+      "original_sha256": "9bcfbf239714051f3baf87220cd5eeebe3ef5dd1b764d1bbbfe3008b2f4a7966",
+      "published_sha256": "ccc2b2292a2ab3e0d2b56a63fc2e207d83a0c36ae7f48aeee65ea45b33d28171",
+      "bytes": 79076,
+      "source_id": "extract_inventory.py",
+      "derived": true,
+      "transformation": "Public path aliases and existing repository source links; original retained locally"
+    },
+    {
+      "path": "docs/audits/amd-kernel-implementation/FULL_MODULE_PORTING.md",
+      "original_sha256": "19215ef9de9f0a45958d4711f117c056bdbf126f9c1d3bd0df9a304a58266006",
+      "published_sha256": "f6000e8455151d93d5fa8eb59d2cceb7043feb3abac0f114ae2900a403058725",
+      "bytes": 33241,
+      "source_id": "FULL_MODULE_PORTING.md",
+      "derived": true,
+      "transformation": "Public path aliases and existing repository source links; original retained locally"
+    },
+    {
+      "path": "docs/audits/amd-execution-recipe/C32_C64_C128_RECIPE.md",
+      "original_sha256": "456b6bb3b4276aa865ec33dfe95a18216e0fc2862a317869e689ea02e70dc820",
+      "published_sha256": "bf445471c14a93b3757a841ffabd9e074d778c8f7e66f4fcae7d9f60eb4972fb",
+      "bytes": 21203,
+      "source_id": "C32_C64_C128_RECIPE.md",
+      "derived": true,
+      "transformation": "Public path aliases and existing repository source links; original retained locally"
+    },
+    {
+      "path": "docs/audits/amd-execution-recipe/DEVIATIONS.json",
+      "original_sha256": "9780c8d61ccefabac87415e5da9d90a9150e28baa1fe2ddf1132214bcb62ac1f",
+      "published_sha256": "bede4f472cb1e4a98cb5b691bc867fc232ab1ea5ef00babf117d56809201e127",
+      "bytes": 130786,
+      "source_id": "DEVIATIONS.json",
+      "derived": true,
+      "transformation": "Public path aliases and existing repository source links; original retained locally"
+    },
+    {
+      "path": "docs/audits/amd-execution-recipe/CPU_LAYOUT_CHECKS.py",
+      "original_sha256": "3518ad70edffbb706246eabe4935792393ef02104afb87d8c59b50bef384fb25",
+      "published_sha256": "c92d8b61e74c28ada438ad2512f9455dc2162cbc8807c77580c7de4db4e20738",
+      "bytes": 8066,
+      "source_id": "CPU_LAYOUT_CHECKS.py",
+      "derived": true,
+      "transformation": "Public path aliases and existing repository source links; original retained locally"
+    },
+    {
+      "path": "evidence/2026-10-03/public-review/FINAL_CLOSED_RECEIPT.json",
+      "original_sha256": "72d909d3b3a6728cc41809cc71fb4e2ea3dab3410608eb7353959db9bdb6b2e7",
+      "published_sha256": "72d909d3b3a6728cc41809cc71fb4e2ea3dab3410608eb7353959db9bdb6b2e7",
+      "bytes": 2987,
+      "source_id": "FINAL_CLOSED_RECEIPT.json",
+      "derived": false,
+      "transformation": "Public path aliases and existing repository source links; original retained locally"
+    },
+    {
+      "path": "evidence/2026-10-03/public-review/FINAL_CLOSED_RECEIPT.md",
+      "original_sha256": "9208721c4d53df077026ca16b4161ead6482a1f1535da9bb354ad5382e75d9b8",
+      "published_sha256": "9208721c4d53df077026ca16b4161ead6482a1f1535da9bb354ad5382e75d9b8",
+      "bytes": 928,
+      "source_id": "FINAL_CLOSED_RECEIPT.md",
+      "derived": false,
+      "transformation": "Public path aliases and existing repository source links; original retained locally"
+    },
+    {
+      "path": "evidence/2026-10-03/reproduction/BRIDGE_BUILD_REVIEW_V2.json",
+      "original_sha256": "09fb9e2770b2247166b896b4454e0085562d26479c31bb488d1cbaac26e9218b",
+      "published_sha256": "a5292b6d12baaef0bedc12907210678be67dc340f892245ac90f96228aaab4ed",
+      "bytes": 4422,
+      "source_id": "BRIDGE_BUILD_REVIEW_V2.json",
+      "derived": true,
+      "transformation": "Public path aliases and existing repository source links; original retained locally"
+    },
+    {
+      "path": "evidence/2026-10-03/reproduction/BRIDGE_BUILD_REVIEW_V2_PUBLIC.json",
+      "original_sha256": "5cf2778b4f0bb393524d5e0d5661b30515dfba55df099fab45b97150aff3dadd",
+      "published_sha256": "5cf2778b4f0bb393524d5e0d5661b30515dfba55df099fab45b97150aff3dadd",
+      "bytes": 2799,
+      "source_id": "BRIDGE_BUILD_REVIEW_V2_PUBLIC.json",
+      "derived": false,
+      "transformation": "Public path aliases and existing repository source links; original retained locally"
+    },
+    {
+      "path": "evidence/2026-10-03/reproduction/BRIDGE_BUILD_REVIEW_V2.md",
+      "original_sha256": "e5f65ca0210f5eaee605a5b8dfe708003ba2eaddc54b541088251b71c6776c84",
+      "published_sha256": "678b8e46a3cca70c249ba7e50fe2e5d1d53805eee92f9efe724951b9a64281ea",
+      "bytes": 1734,
+      "source_id": "BRIDGE_BUILD_REVIEW_V2.md",
+      "derived": true,
+      "transformation": "Public path aliases and existing repository source links; original retained locally"
+    }
+  ],
+  "GPU_executed": false
+}

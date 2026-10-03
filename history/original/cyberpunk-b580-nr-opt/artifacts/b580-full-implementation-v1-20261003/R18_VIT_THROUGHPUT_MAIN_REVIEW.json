@@ -1,0 +1,135 @@
+{
+  "schema": "main-r18-vit-throughput-results-v1",
+  "rows": [
+    {
+      "result": {
+        "path": "E:\\Codex-NR-Experiments\\cyberpunk-opt\\b580-full-implementation-v1-20261003\\luna\\phase2\\attempt-35-r18-e-vit-rowonce-p4\\RESULTS.json",
+        "sha256": "4901def2a34d5daf49b2d91c9b54a64de64524ea5d7b1d9c7163aab6e51764b7"
+      },
+      "candidate": "audit_impl_vit_ffn_rowonce_bk64_p4_720_v1",
+      "arms": {
+        "accepted_baseline": {
+          "result": {
+            "path": "E:\\Codex-NR-Experiments\\cyberpunk-opt\\b580-full-implementation-v1-20261003\\luna\\phase2\\attempt-35-r18-e-vit-rowonce-p4\\accepted_baseline\\measurement\\readonly\\RESULT.json",
+            "sha256": "577bba204e365c93f6f61f3578362c73661fadc8902430bd6502bf01e3d9c781",
+            "bytes": 5041723
+          },
+          "same_arm": {
+            "path": "E:\\Codex-NR-Experiments\\cyberpunk-opt\\b580-full-implementation-v1-20261003\\luna\\phase2\\attempt-35-r18-e-vit-rowonce-p4\\accepted_baseline\\SAME_ARM_BYTES.json",
+            "sha256": "48932b69677a65e115a0747d5b24a311002d5b1053021fa429edf0974618b73a",
+            "bytes": 18767
+          },
+          "cleanup": {
+            "path": "E:\\Codex-NR-Experiments\\cyberpunk-opt\\b580-full-implementation-v1-20261003\\luna\\phase2\\attempt-35-r18-e-vit-rowonce-p4\\accepted_baseline\\CLEANUP.json",
+            "sha256": "115c2406025ddea22415b86128141cc3142999b0f0d456c19da7aa8865cb89c2",
+            "bytes": 30713
+          },
+          "mean_ms": 45.64935233333333,
+          "p95_ms": 46.862969,
+          "raw_body_mean_ms": 39.23719164
+        },
+        "audit_impl_vit_ffn_rowonce_bk64_p4_720_v1": {
+          "result": {
+            "path": "E:\\Codex-NR-Experiments\\cyberpunk-opt\\b580-full-implementation-v1-20261003\\luna\\phase2\\attempt-35-r18-e-vit-rowonce-p4\\audit_impl_vit_ffn_rowonce_bk64_p4_720_v1\\measurement\\readonly\\RESULT.json",
+            "sha256": "1e8aee78dbbabbe254be8046c41db00f5a626f4e13b67f25dbb90d838003151e",
+            "bytes": 5224374
+          },
+          "same_arm": {
+            "path": "E:\\Codex-NR-Experiments\\cyberpunk-opt\\b580-full-implementation-v1-20261003\\luna\\phase2\\attempt-35-r18-e-vit-rowonce-p4\\audit_impl_vit_ffn_rowonce_bk64_p4_720_v1\\SAME_ARM_BYTES.json",
+            "sha256": "69c15ee6f78d2129b8b715396410328f73955bea5cda16bd3005aea5304089ce",
+            "bytes": 18839
+          },
+          "cleanup": {
+            "path": "E:\\Codex-NR-Experiments\\cyberpunk-opt\\b580-full-implementation-v1-20261003\\luna\\phase2\\attempt-35-r18-e-vit-rowonce-p4\\audit_impl_vit_ffn_rowonce_bk64_p4_720_v1\\CLEANUP.json",
+            "sha256": "1cdd25eabcf04b4ee4fca8129bcb0e3328234e56cd42ea7f05e9301e11c1e25c",
+            "bytes": 45533
+          },
+          "mean_ms": 46.54224092307692,
+          "p95_ms": 47.52552,
+          "raw_body_mean_ms": 39.16643548
+        }
+      },
+      "gain_ms": -0.8928885897435895,
+      "cycle_deltas_ms": [
+        -0.694050461538462,
+        -1.0134133076923069,
+        -0.9712019999999998
+      ],
+      "screening_interval_ms": [
+        -1.0932146557638414,
+        -0.6925625237233377
+      ],
+      "output_history_byte_identity": true,
+      "candidate_adopted": false,
+      "exclusive_CPU_conversion_ms": null,
+      "interpretation": "Single bracket qualification; full process slower, tiny independent raw-body difference is not a demonstrated useful whole-frame gain"
+    },
+    {
+      "result": {
+        "path": "E:\\Codex-NR-Experiments\\cyberpunk-opt\\b580-full-implementation-v1-20261003\\luna\\phase2\\attempt-36-r18-e-vit-rowonce-full\\RESULTS.json",
+        "sha256": "c756c4e0dcebfbbadd71031e4b5f13a6d968422a9bd296ee73f8cabc9979682c"
+      },
+      "candidate": "audit_impl_vit_ffn_rowonce_bk64_full_720_v1",
+      "arms": {
+        "accepted_baseline": {
+          "result": {
+            "path": "E:\\Codex-NR-Experiments\\cyberpunk-opt\\b580-full-implementation-v1-20261003\\luna\\phase2\\attempt-36-r18-e-vit-rowonce-full\\accepted_baseline\\measurement\\readonly\\RESULT.json",
+            "sha256": "b8e77a41133b0ac603d7bf64b768f377324e2aa75a527f80d59066df38f4ce3f",
+            "bytes": 5046057
+          },
+          "same_arm": {
+            "path": "E:\\Codex-NR-Experiments\\cyberpunk-opt\\b580-full-implementation-v1-20261003\\luna\\phase2\\attempt-36-r18-e-vit-rowonce-full\\accepted_baseline\\SAME_ARM_BYTES.json",
+            "sha256": "f3c5d278a69a812667a207f8a1c6b9f867745fec0cf3b77de03d97db01d10a40",
+            "bytes": 18771
+          },
+          "cleanup": {
+            "path": "E:\\Codex-NR-Experiments\\cyberpunk-opt\\b580-full-implementation-v1-20261003\\luna\\phase2\\attempt-36-r18-e-vit-rowonce-full\\accepted_baseline\\CLEANUP.json",
+            "sha256": "f97b1969cfa81d911914b6c42d265b48b371157cf1857a9133406e1b626bd236",
+            "bytes": 30843
+          },
+          "mean_ms": 45.45319317948718,
+          "p95_ms": 46.196197999999995,
+          "raw_body_mean_ms": 39.229543719999995
+        },
+        "audit_impl_vit_ffn_rowonce_bk64_full_720_v1": {
+          "result": {
+            "path": "E:\\Codex-NR-Experiments\\cyberpunk-opt\\b580-full-implementation-v1-20261003\\luna\\phase2\\attempt-36-r18-e-vit-rowonce-full\\audit_impl_vit_ffn_rowonce_bk64_full_720_v1\\measurement\\readonly\\RESULT.json",
+            "sha256": "7a56f2c5cb1863c1a64c1a6f4d33c698a015fe243f70f10d7b48e63ab6b3f5a7",
+            "bytes": 5208747
+          },
+          "same_arm": {
+            "path": "E:\\Codex-NR-Experiments\\cyberpunk-opt\\b580-full-implementation-v1-20261003\\luna\\phase2\\attempt-36-r18-e-vit-rowonce-full\\audit_impl_vit_ffn_rowonce_bk64_full_720_v1\\SAME_ARM_BYTES.json",
+            "sha256": "568e0a1fb2dd4c8b98147d5b2fdf6a1986864c0722642c44b69f5ec56096add9",
+            "bytes": 18849
+          },
+          "cleanup": {
+            "path": "E:\\Codex-NR-Experiments\\cyberpunk-opt\\b580-full-implementation-v1-20261003\\luna\\phase2\\attempt-36-r18-e-vit-rowonce-full\\audit_impl_vit_ffn_rowonce_bk64_full_720_v1\\CLEANUP.json",
+            "sha256": "1dc66814ca950355768a9647f40c00610a7f364e98934f17bc79070e3f17dd08",
+            "bytes": 45897
+          },
+          "mean_ms": 46.45624592307692,
+          "p95_ms": 46.930104,
+          "raw_body_mean_ms": 39.17574688
+        }
+      },
+      "gain_ms": -1.0030527435897434,
+      "cycle_deltas_ms": [
+        -1.0104484615384608,
+        -0.891097846153846,
+        -1.1076119230769232
+      ],
+      "screening_interval_ms": [
+        -1.1282757918380366,
+        -0.8778296953414502
+      ],
+      "output_history_byte_identity": true,
+      "candidate_adopted": false,
+      "exclusive_CPU_conversion_ms": null,
+      "interpretation": "Single bracket qualification; full process slower, tiny independent raw-body difference is not a demonstrated useful whole-frame gain"
+    }
+  ],
+  "status": "OFFLINE_BYTE_IDENTICAL_NO_DEMONSTRATED_FULL_FRAME_GAIN_NOT_ADOPTED",
+  "no_4060_rounding_added": true,
+  "GPU_executed_by_Main": false,
+  "game_writes": 0
+}

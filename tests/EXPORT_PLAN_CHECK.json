@@ -1,0 +1,11 @@
+{
+  "schema": "nr-release-export-plan-cpu-check-v1",
+  "returncode": 0,
+  "GPU_executed": false,
+  "files_written_to_bundle": false,
+  "file_count": 527,
+  "total_bytes": 1911922809,
+  "source_profile_sha256": "336086117e4e24423a486265dcf9f08803bef1a5c4610954d179d3cfeeed3588",
+  "derived_template_sha256": "9524ca678703755dc7b31873a3117d01af5f41db54fa4c4fbbbe19bd1a64668e",
+  "error": null
+}

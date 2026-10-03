@@ -1,0 +1,206 @@
+{
+  "schema": "main-r16-hot-same-source-review-v1",
+  "rows": [
+    {
+      "result": {
+        "path": "${EXPERIMENTS_E}\\cyberpunk-opt\\b580-full-implementation-v1-20261003\\luna\\phase2\\attempt-31-r16-e-c512-ffn-hot\\RESULTS.json",
+        "sha256": "9c59155e6dfc6a2789cf3f3b0b8f9fdee1642327b4276549758e2fd1522dfa6d"
+      },
+      "candidate": "audit_impl_c512_ffn_hot_admission_720_v3",
+      "baseline": "audit_impl_c512_ffn_hot_control_720_v3",
+      "arms": {
+        "audit_impl_c512_ffn_hot_control_720_v3": {
+          "result": {
+            "path": "${EXPERIMENTS_E}\\cyberpunk-opt\\b580-full-implementation-v1-20261003\\luna\\phase2\\attempt-31-r16-e-c512-ffn-hot\\audit_impl_c512_ffn_hot_control_720_v3\\measurement\\readonly\\RESULT.json",
+            "sha256": "a8f9fb9a945ada7ae8a1313aa74656e206fe6d6ac4d00da3ed82f6e7db703974",
+            "bytes": 5275448
+          },
+          "same_arm": {
+            "path": "${EXPERIMENTS_E}\\cyberpunk-opt\\b580-full-implementation-v1-20261003\\luna\\phase2\\attempt-31-r16-e-c512-ffn-hot\\audit_impl_c512_ffn_hot_control_720_v3\\SAME_ARM_BYTES.json",
+            "sha256": "dec19f1789b0690a20a33e215c119d191a136cafdbcd400971ada7ce2e09adf0",
+            "bytes": 18826
+          },
+          "cleanup": {
+            "path": "${EXPERIMENTS_E}\\cyberpunk-opt\\b580-full-implementation-v1-20261003\\luna\\phase2\\attempt-31-r16-e-c512-ffn-hot\\audit_impl_c512_ffn_hot_control_720_v3\\CLEANUP.json",
+            "sha256": "cf4f32c5b7244f802c30594dbeee0b352ee12c741cc3720f223b6fc9d3fd9a61",
+            "bytes": 31948
+          },
+          "mean_ms": 47.47538461538461,
+          "p95_ms": 48.461563,
+          "raw_body_mean_ms": 39.9518219,
+          "replay_admission": {
+            "enabled": false,
+            "sealed": false,
+            "counts": {
+              "live_checks": 0,
+              "frame_full_checks": 0,
+              "cold_boundary_checks": 0,
+              "invalidations": 0
+            },
+            "boundaries": [],
+            "all_binding_rows": 4,
+            "unique_JIT_bindings": 0,
+            "weights_checked": "full every execution-scope entry; never exempt on replay",
+            "GPU_overhead_exclusive_ms": null
+          }
+        },
+        "audit_impl_c512_ffn_hot_admission_720_v3": {
+          "result": {
+            "path": "${EXPERIMENTS_E}\\cyberpunk-opt\\b580-full-implementation-v1-20261003\\luna\\phase2\\attempt-31-r16-e-c512-ffn-hot\\audit_impl_c512_ffn_hot_admission_720_v3\\measurement\\readonly\\RESULT.json",
+            "sha256": "c9dd8e631555cbdd39cdcab1e67efc416d65bf4b66bd9939102cde8ba9f24e6d",
+            "bytes": 5275756
+          },
+          "same_arm": {
+            "path": "${EXPERIMENTS_E}\\cyberpunk-opt\\b580-full-implementation-v1-20261003\\luna\\phase2\\attempt-31-r16-e-c512-ffn-hot\\audit_impl_c512_ffn_hot_admission_720_v3\\SAME_ARM_BYTES.json",
+            "sha256": "f52c62c2f6862fcb38f1c5785f6675eca75e5d2fc23fd44a570672174da7be0a",
+            "bytes": 18832
+          },
+          "cleanup": {
+            "path": "${EXPERIMENTS_E}\\cyberpunk-opt\\b580-full-implementation-v1-20261003\\luna\\phase2\\attempt-31-r16-e-c512-ffn-hot\\audit_impl_c512_ffn_hot_admission_720_v3\\CLEANUP.json",
+            "sha256": "ef66c391a7937e4fe9c105fca2bd16406fc273ddb93e5e830975367aebbf3ce2",
+            "bytes": 45260
+          },
+          "mean_ms": 47.0487407948718,
+          "p95_ms": 48.145938,
+          "raw_body_mean_ms": 40.0330667,
+          "replay_admission": {
+            "enabled": true,
+            "sealed": true,
+            "counts": {
+              "live_checks": 84,
+              "frame_full_checks": 78,
+              "cold_boundary_checks": 4,
+              "invalidations": 0
+            },
+            "boundaries": [
+              "construct",
+              "preflight",
+              "capture",
+              "capture"
+            ],
+            "all_binding_rows": 4,
+            "unique_JIT_bindings": 4,
+            "weights_checked": "full every execution-scope entry; never exempt on replay",
+            "GPU_overhead_exclusive_ms": null
+          }
+        }
+      },
+      "gain_ms": 0.42664382051282085,
+      "cycle_deltas_ms": [
+        0.6034693076923066,
+        -0.09923484615384454,
+        0.7756970000000004
+      ],
+      "screening_interval_ms": [
+        -0.10855318189624935,
+        0.9618408229218911
+      ],
+      "numerical_byte_identity": true,
+      "exclusive_CPU_conversion_ms": null,
+      "status": "SAME_SOURCE_OFFLINE_PASS_SMALL_MIXED_CYCLE_GAIN_NOT_GAME_ADOPTED",
+      "scope": "Matching unadopted complete module; not a new accepted-baseline or game speed claim"
+    },
+    {
+      "result": {
+        "path": "${EXPERIMENTS_E}\\cyberpunk-opt\\b580-full-implementation-v1-20261003\\luna\\phase2\\attempt-32-r16-e-c512-encoder-hot\\RESULTS.json",
+        "sha256": "39bf74bea8c4325f59e2b965f86026f8cad72e3ccde18080494d50c0f7b2161a"
+      },
+      "candidate": "audit_impl_c512_encoder_hot_admission_720_v3",
+      "baseline": "audit_impl_c512_encoder_hot_control_720_v3",
+      "arms": {
+        "audit_impl_c512_encoder_hot_control_720_v3": {
+          "result": {
+            "path": "${EXPERIMENTS_E}\\cyberpunk-opt\\b580-full-implementation-v1-20261003\\luna\\phase2\\attempt-32-r16-e-c512-encoder-hot\\audit_impl_c512_encoder_hot_control_720_v3\\measurement\\readonly\\RESULT.json",
+            "sha256": "65be923ce5aaa0ca5534b9e18b8c30e42e96cee228b98b702d545046bf82ff04",
+            "bytes": 8000794
+          },
+          "same_arm": {
+            "path": "${EXPERIMENTS_E}\\cyberpunk-opt\\b580-full-implementation-v1-20261003\\luna\\phase2\\attempt-32-r16-e-c512-encoder-hot\\audit_impl_c512_encoder_hot_control_720_v3\\SAME_ARM_BYTES.json",
+            "sha256": "801c9fe286d30e11955654f85aacfe12ed449496b6a85532d55b2452af7af579",
+            "bytes": 18846
+          },
+          "cleanup": {
+            "path": "${EXPERIMENTS_E}\\cyberpunk-opt\\b580-full-implementation-v1-20261003\\luna\\phase2\\attempt-32-r16-e-c512-encoder-hot\\audit_impl_c512_encoder_hot_control_720_v3\\CLEANUP.json",
+            "sha256": "eb54d9fc55404c121dbc5376599fc614605e9047088d3da5053bfb5ce216e769",
+            "bytes": 32468
+          },
+          "mean_ms": 47.07652779487179,
+          "p95_ms": 47.979375,
+          "raw_body_mean_ms": 39.57625834,
+          "replay_admission": {
+            "enabled": false,
+            "sealed": false,
+            "counts": {
+              "live_checks": 0,
+              "frame_full_checks": 0,
+              "cold_boundary_checks": 0,
+              "invalidations": 0
+            },
+            "boundaries": [],
+            "all_binding_rows": 26,
+            "unique_JIT_bindings": 0,
+            "weights_checked": "full every execution-scope entry; never exempt on replay",
+            "GPU_overhead_exclusive_ms": null
+          }
+        },
+        "audit_impl_c512_encoder_hot_admission_720_v3": {
+          "result": {
+            "path": "${EXPERIMENTS_E}\\cyberpunk-opt\\b580-full-implementation-v1-20261003\\luna\\phase2\\attempt-32-r16-e-c512-encoder-hot\\audit_impl_c512_encoder_hot_admission_720_v3\\measurement\\readonly\\RESULT.json",
+            "sha256": "ec60954a3a016d8e0e3ee03c60af9a2e8cceb43a0fc259abcae5f13f0dc08006",
+            "bytes": 8001079
+          },
+          "same_arm": {
+            "path": "${EXPERIMENTS_E}\\cyberpunk-opt\\b580-full-implementation-v1-20261003\\luna\\phase2\\attempt-32-r16-e-c512-encoder-hot\\audit_impl_c512_encoder_hot_admission_720_v3\\SAME_ARM_BYTES.json",
+            "sha256": "cd38bd487677ea1207bbaa4aad834bca4e16f9c9acae3ad5a61862f9b83bf322",
+            "bytes": 18852
+          },
+          "cleanup": {
+            "path": "${EXPERIMENTS_E}\\cyberpunk-opt\\b580-full-implementation-v1-20261003\\luna\\phase2\\attempt-32-r16-e-c512-encoder-hot\\audit_impl_c512_encoder_hot_admission_720_v3\\CLEANUP.json",
+            "sha256": "c6271ce25443013937d08441143793a630ad9551b986a05dd00f3e7c3dd09c13",
+            "bytes": 45988
+          },
+          "mean_ms": 46.69590687179487,
+          "p95_ms": 48.111094,
+          "raw_body_mean_ms": 39.8326864,
+          "replay_admission": {
+            "enabled": true,
+            "sealed": true,
+            "counts": {
+              "live_checks": 84,
+              "frame_full_checks": 78,
+              "cold_boundary_checks": 4,
+              "invalidations": 0
+            },
+            "boundaries": [
+              "construct",
+              "preflight",
+              "capture",
+              "capture"
+            ],
+            "all_binding_rows": 26,
+            "unique_JIT_bindings": 7,
+            "weights_checked": "full every execution-scope entry; never exempt on replay",
+            "GPU_overhead_exclusive_ms": null
+          }
+        }
+      },
+      "gain_ms": 0.3806209230769224,
+      "cycle_deltas_ms": [
+        0.5393831538461543,
+        -0.005340846153847368,
+        0.6078204615384604
+      ],
+      "screening_interval_ms": [
+        -0.007358082801578458,
+        0.7685999289554233
+      ],
+      "numerical_byte_identity": true,
+      "exclusive_CPU_conversion_ms": null,
+      "status": "SAME_SOURCE_OFFLINE_PASS_SMALL_MIXED_CYCLE_GAIN_NOT_GAME_ADOPTED",
+      "scope": "Matching unadopted complete module; not a new accepted-baseline or game speed claim"
+    }
+  ],
+  "GPU_executed_by_Main": false,
+  "game_deployed": false,
+  "game_gain_ms": null
+}

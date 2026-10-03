@@ -1,0 +1,82 @@
+{
+  "schema": "nr-public-derivations-v1",
+  "files": [
+    {
+      "path": "docs/history/EXPERIMENT_INDEX.json",
+      "original_public_sha256": "7ccb8e459dc43ec4c470e1a9df2f0ada806042bd92b6fa2e60fb8da6971d1377",
+      "published_sha256": "8dddf330bcf1bef50c0462d4c76c8964952717a648277b77748a4fd9ce83e434",
+      "bytes": 2617195,
+      "reason": "Reference host/user paths parameterized or redacted; original kept locally"
+    },
+    {
+      "path": "history/original/nr-b580/README.md",
+      "original_public_sha256": "fade395f9a0b5f46410684d918236dfb33ffc0969e9baa11deef3769ab9a79fd",
+      "published_sha256": "a5358d99b0e002f88be998dac64e2794c6ffa389aef9df5486acd434a69d9312",
+      "bytes": 34099,
+      "reason": "Reference host/user paths parameterized or redacted; original kept locally"
+    },
+    {
+      "path": "history/original/nr-b580/reference/a_recheck_v1/a_recheck_v1.py",
+      "original_public_sha256": "a8a254b7bf7109d6655c494a89fa7acb487e70ba5f372798f081570d2f5b63fa",
+      "published_sha256": "53b70f081252f8f4d6ec9a6f1bdc9ec21179be8706338125f46c9a352e30bbfa",
+      "bytes": 14472,
+      "reason": "Reference host/user paths parameterized or redacted; original kept locally"
+    },
+    {
+      "path": "history/original/nr-b580/reference/a_recheck_v1/RESULT.md",
+      "original_public_sha256": "9e6f4cb6518db3b397b2bf49ef31f04edb9b47df981aa6065e8ee54c806895b4",
+      "published_sha256": "f101691f210606d3b9a41562ad39f4468220d4db260c9587cffdad482e86327c",
+      "bytes": 10664,
+      "reason": "Reference host/user paths parameterized or redacted; original kept locally"
+    },
+    {
+      "path": "history/original/nr-b580/reference/Invoke-InteractiveSmoke.ps1",
+      "original_public_sha256": "f2d1e27dc15ddfb1667fdc16e6d360b0be4d260ec951b29318c40fac22574766",
+      "published_sha256": "1cd31d292a49f07fa8a0448ee9bb30dbe8edf35b6591325772c6ed33c1b5703e",
+      "bytes": 2973,
+      "reason": "Reference host/user paths parameterized or redacted; original kept locally"
+    },
+    {
+      "path": "history/original/nr-b580/reference/Invoke-Reference.ps1",
+      "original_public_sha256": "a3cb154683becf600e27dab508526e69da095200e8599641dbffeff6d8ab3436",
+      "published_sha256": "37a5d7809b146e6270e9c6d5d15beebba2afc999aa667e300ed286c784a02423",
+      "bytes": 3723,
+      "reason": "Reference host/user paths parameterized or redacted; original kept locally"
+    },
+    {
+      "path": "history/original/nr-b580-int8/experimental/C32_CUBIC_LUT_STATUS.md",
+      "original_public_sha256": "964e3e254b1184d94e3c0884813af6db6dcb4588bb9a0517a60e81eef1cfd0d3",
+      "published_sha256": "c5ea6638d087e3e609cb2c1c49c0cad6d84aaaeb6eb0952b8350ba9a3568c2d6",
+      "bytes": 5765,
+      "reason": "Reference host/user paths parameterized or redacted; original kept locally"
+    },
+    {
+      "path": "history/original/nr-b580-int8/experimental/VIT_PROJECTION_STATUS.md",
+      "original_public_sha256": "ecc05e85a9842e8a6fbec8d7fde78c98b5d4f9346b51af1b8ed5e41ae7451694",
+      "published_sha256": "263f09ae08a07aae3f1f0c1917be05d7ba0c288abff65de2354d8d1eb0d5efed",
+      "bytes": 6905,
+      "reason": "Reference host/user paths parameterized or redacted; original kept locally"
+    },
+    {
+      "path": "history/original/nr-b580/README.md",
+      "original_public_sha256": "a5358d99b0e002f88be998dac64e2794c6ffa389aef9df5486acd434a69d9312",
+      "published_sha256": "ae4b20c954df0d083009dcc43e53693f959e7694ed89fdcf9dae312b02c2dea4",
+      "bytes": 33770,
+      "reason": "Explicit reference host/user/key/known-host parameters; host fingerprint and client address redacted; original kept locally"
+    },
+    {
+      "path": "history/original/nr-b580/reference/Invoke-Reference.ps1",
+      "original_public_sha256": "37a5d7809b146e6270e9c6d5d15beebba2afc999aa667e300ed286c784a02423",
+      "published_sha256": "e771c28568f60e6203a02eb0dc449822c6b9126db5e50783065fd856ebe62a71",
+      "bytes": 3941,
+      "reason": "Explicit reference host/user/key/known-host parameters; host fingerprint and client address redacted; original kept locally"
+    },
+    {
+      "path": "history/original/nr-b580/README.md",
+      "original_public_sha256": "ae4b20c954df0d083009dcc43e53693f959e7694ed89fdcf9dae312b02c2dea4",
+      "published_sha256": "63ccc841857a253896fb98150def5a0ac457313e94e185d6ae1787cff325c6b5",
+      "bytes": 33800,
+      "reason": "Remaining reference interactive session username redacted; original kept locally"
+    }
+  ]
+}

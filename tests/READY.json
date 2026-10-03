@@ -1,0 +1,157 @@
+{
+  "GPU_executed": true,
+  "Tensor_libraries_imported": false,
+  "asset_export_plan": "EXPORT_PLAN_CHECK.json",
+  "cpu_checks": {
+    "file": "CPU_CHECKS.json",
+    "passed": true,
+    "tests_run": 13,
+    "returncode": 0,
+    "tensor_libraries_imported": false,
+    "sha256": "f59b25e291b282260eb974d49023e09dda8e5ce35797c02779a47a32f3a23e41"
+  },
+  "excluded": [
+    "_cpu_work/",
+    "_scratch/",
+    "__pycache__/",
+    "legacy/ (Main-owned)"
+  ],
+  "files": [
+    {
+      "bytes": 42,
+      "relative_path": ".gitignore",
+      "sha256": "b563bbbd22286aa60abf5a16d5d3fc2655b2ce39811ace8a5bbd7b2392892447"
+    },
+    {
+      "bytes": 255,
+      "relative_path": "CPU_CHECKS.json",
+      "sha256": "f59b25e291b282260eb974d49023e09dda8e5ce35797c02779a47a32f3a23e41"
+    },
+    {
+      "bytes": 2278,
+      "relative_path": "CPU_CHECKS.log",
+      "sha256": "25d765ac2263a8af8fd9f530aa24f49044dc19ec0cda9169f475eb93e4d44df3"
+    },
+    {
+      "bytes": 404,
+      "relative_path": "EXPORT_PLAN_CHECK.json",
+      "sha256": "9eecb9dec9dca7c3d4f8b1baac7bacc13dba9c5a2a4fad4616c7c08b99269941"
+    },
+    {
+      "bytes": 2972,
+      "relative_path": "PREPARATION.md",
+      "sha256": "5df242d1d9c78bba40201b90e0e5044a38ff2d18b59c5f0610e27f6f74afa1a4"
+    },
+    {
+      "bytes": 9847,
+      "relative_path": "README.md",
+      "sha256": "a72ad5fefc71996d3ba997158cc33f9e204233da784159b9a2fb774f03306eea"
+    },
+    {
+      "bytes": 3316,
+      "relative_path": "REPORT.md",
+      "sha256": "439d29eea7b77c3d4cb3373b0387cee8608ad7d8a77ea6cabff43b523fbc261a"
+    },
+    {
+      "bytes": 17867,
+      "relative_path": "cpu_tests.py",
+      "sha256": "50df4b3b6b48fd2fa2f1335df7816d7bf41ee669c45a8be21341ced752679b7c"
+    },
+    {
+      "bytes": 5291,
+      "relative_path": "export_assets.py",
+      "sha256": "9656def479bfe39988c136dc451b12a46a04e942fc3fd43125960442b2dc1ff8"
+    },
+    {
+      "bytes": 31534,
+      "relative_path": "gpu_reproduction.py",
+      "sha256": "0607d9906afe0a10f65065f997b286793196bf190bc3dacb99af6c23c3892620"
+    },
+    {
+      "bytes": 12844,
+      "relative_path": "portable_runtime.py",
+      "sha256": "5e56b7eb44ccbb87e1772c1f5e48cfd65a9755540d3fd85ee9626e90d4cd19a3"
+    },
+    {
+      "bytes": 375020,
+      "relative_path": "registry/r18.json",
+      "sha256": "a3c202f03e6f0e954367c266b26e4d45d05ce4bbff18f060a671c2d8cbe058a2"
+    },
+    {
+      "bytes": 14052,
+      "relative_path": "release_contracts.py",
+      "sha256": "aa316f5a404484baf560b936038dfbd611dab13bfa125a8c270126839c4cab15"
+    },
+    {
+      "bytes": 5909,
+      "relative_path": "reproduction_cache.py",
+      "sha256": "544676b88a85cf1ba5076a087b57a5d916664877751a411aa858275c347d6ae9"
+    },
+    {
+      "bytes": 14515,
+      "relative_path": "run_current.py",
+      "sha256": "c9139c798b896a2484a49cdd50d2b24f5ecba8495dc368200b8c4958e297b38c"
+    },
+    {
+      "bytes": 3884,
+      "relative_path": "run_historical.py",
+      "sha256": "24b8f2d96f249d54ed8e2e9af501d1529503e67a851c95146d4acd6a1ca95ea0"
+    },
+    {
+      "bytes": 483,
+      "relative_path": "runtime_support/SOURCE_PINS.json",
+      "sha256": "b1f5c3c8c8ee590951e9a161c394f53c4059cebc4f4c195c31e78cf2eaa8212b"
+    },
+    {
+      "bytes": 2895,
+      "relative_path": "runtime_support/fast_cached_runtime_v1.py",
+      "sha256": "099d3aa0ce08d0ea44e960d0a6dbfb618bdf4db82218edb41b009be1f2c8f1f9"
+    },
+    {
+      "bytes": 2692,
+      "relative_path": "runtime_support/portable_cache.py",
+      "sha256": "ded302f54505ad822f348ea82048a361bfa6fec833c1835902b07260cfa45db2"
+    },
+    {
+      "bytes": 2202,
+      "relative_path": "runtime_support/runtime_environment.py",
+      "sha256": "2ff6f699e35c6d355d3bed403e186e2c6cc17784908c0c477600761f877df293"
+    },
+    {
+      "bytes": 3523,
+      "relative_path": "validate_current.py",
+      "sha256": "ce6132d52ca5541239581758b68f1e69f9b15a8333bd86556a7310f2bff57f99"
+    }
+  ],
+  "handoff": "REPORT.md",
+  "payload_manifest_sha256": "487e138b72257085bd34d91096e7655b0b22b4b586c75537eb7d7aae841680bc",
+  "schema": "nr-release-tests-ready-v1",
+  "sealed_utc": "2026-10-03T14:57:37Z",
+  "source_references": {
+    "current": {
+      "files": 571,
+      "manifest": "evidence/2026-10-03/current-source-manifest.json",
+      "manifest_sha256": "300c800581be650ea019529b6c41f76e7adfe71410b0f4eea19511f6c6503166"
+    },
+    "r18": {
+      "files": 260,
+      "manifest": "tests/registry/r18.json",
+      "manifest_sha256": "a3c202f03e6f0e954367c266b26e4d45d05ce4bbff18f060a671c2d8cbe058a2",
+      "source_manifest_sha256": "e44dcda24d077895ebda089288f5026b4e1c7d96628805e33c036830ea1173a7"
+    },
+    "public_gpu_reproduction": {
+      "receipt": "evidence/2026-10-03/public-review/PUBLIC_GPU_REPRODUCTION_RECEIPT.json",
+      "receipt_sha256": "5db2e89c76134701ee8a0f9f1784ad5b591f054da2433d8f40c9d67e7ae17813",
+      "gpu_reproduction_source_sha256": "0607d9906afe0a10f65065f997b286793196bf190bc3dacb99af6c23c3892620"
+    }
+  },
+  "status": "GPU_REPRODUCTION_COMPLETED_PUBLIC_SYNTHETIC",
+  "validation_pending": [],
+  "writes_stopped_after_seal": true,
+  "scope_limits": [
+    "synthetic offline input only",
+    "no private face-video or human visual review",
+    "no NVIDIA/4060 byte-identity qualification",
+    "no native game bridge or game FPS qualification"
+  ]
+}

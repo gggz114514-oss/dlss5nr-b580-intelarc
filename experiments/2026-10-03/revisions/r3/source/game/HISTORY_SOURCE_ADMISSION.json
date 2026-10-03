@@ -1,0 +1,29 @@
+{
+  "schema": "history720-cold-source-admission-v1",
+  "roles": {
+    "temporal": {
+      "module": "nr_backend.temporal",
+      "relative_path": "experimental/fp8_unround_overlay/nr_backend/temporal.py",
+      "sha256": "c01085e4ee9e8bcb1885302baddcb739aefeaac23e5a1b5b0b776917acab5f48",
+      "purpose": "native validated motion summary and component front interface, exact fallback unchanged"
+    },
+    "model": {
+      "module": "nr_game_controlled_model",
+      "relative_path": "game/nr_game_controlled_model.py",
+      "sha256": "fdb266e1116b886d8eebc56dab7a37b18cd1c5b69a4cb71fb87e369c579966c4",
+      "purpose": "actual model frame summary, cold raw graph control and parameter-lane admission; Main also authenticates the one-use Front control receipt"
+    },
+    "graph_v1": {
+      "module": "graph_front_v1",
+      "relative_path": "experimental/fp8_unround_overlay/modules/graph_front_v1.py",
+      "sha256": "da15bb0556ab76ff4b6cc109aaac9127a2d5a258b5b5d352bd5263c1c619ce57",
+      "purpose": "skip only self-identity copies for sealed prepared history destinations"
+    },
+    "controlled_temporal": {
+      "module": "nr_backend.controlled_temporal",
+      "relative_path": "experimental/fp8_unround_overlay/nr_backend/controlled_temporal.py",
+      "purpose": "original control/motion/depth contracts with authenticated summary SDR admission",
+      "sha256": "efd5c65fcb38f9499c1f53bf672e66fa975aeb1fe4911f6d19b8d0ff0b4c42c3"
+    }
+  }
+}

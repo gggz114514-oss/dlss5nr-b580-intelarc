@@ -1,0 +1,326 @@
+{
+  "schema": "accepted720-kernel-coverage-v1",
+  "count_unit": "review row = selected callable/producer-consumer role; not physical kernel launches",
+  "counts": {
+    "review_rows": 119,
+    "by_stage": {
+      "front": 2,
+      "history": 6,
+      "pre": 4,
+      "C32": 4,
+      "post": 9,
+      "decoder32": 8,
+      "C64": 5,
+      "C128": 5,
+      "C256": 6,
+      "pool": 11,
+      "C512": 9,
+      "C512-encoder": 3,
+      "C512-decoder": 1,
+      "ViT-FFN": 4,
+      "ViT-attention": 12,
+      "ViT-projection": 2,
+      "decoder": 3,
+      "decoder512": 1,
+      "decoder256": 2,
+      "decoder128": 2,
+      "decoder64": 2,
+      "graph": 3,
+      "geometry": 3,
+      "control": 3,
+      "model-external bridge": 9
+    },
+    "by_kind": {
+      "triton_kernel": 72,
+      "torch_data_or_ALU": 35,
+      "library_GEMM": 1,
+      "host_control": 1,
+      "conditional_triton_kernel": 1,
+      "native_GPU_command_or_shader": 9
+    },
+    "by_evidence": {
+      "runtime_hash_and_calls": 5,
+      "static_main_chain": 33,
+      "conditional_unobserved": 3,
+      "capture_route_static_kernel_resolution": 67,
+      "capture_provider_calls_library_internals_unknown": 1,
+      "static_path_no_individual_dispatch_receipt": 1,
+      "accepted_bridge_source_only_not_offline_model_capture": 9
+    },
+    "distinct_static_current_triton_callable_definitions": 43,
+    "main_model_block_sites": 71,
+    "compiler_bindings": 139,
+    "bindings_associated_to_review_rows": 132,
+    "unassigned_bindings": 7,
+    "verified_source_files": 261,
+    "wrapper_or_conditional_function_expansions": 155,
+    "syntactic_calls_expanded": 1845,
+    "individual_physical_dispatch_events_available": 0,
+    "library_internal_kernels_verified": 0
+  },
+  "source_verification_is_not_execution_count": true,
+  "runtime": {
+    "fixed13_frames": 13,
+    "routes": {
+      "capture": 2,
+      "replay": 11
+    },
+    "fractional_history": 12,
+    "near_integer_history": 0,
+    "front_reset": 1,
+    "front_history": 12,
+    "fixed13_body_replay_counter": 13,
+    "whole_process_graph_route_counts": {
+      "entries": 2,
+      "replays": 78,
+      "frame_capture_routes": 2,
+      "frame_replay_routes": 76,
+      "expected": {
+        "entries": 2,
+        "capture_routes": 2,
+        "replay_routes": 76,
+        "warm_frames": 65,
+        "graph_replay_counter": 78
+      },
+      "actual_route_trace": [
+        {
+          "cycle": "fixed13",
+          "captures": 2,
+          "replays": 11
+        },
+        {
+          "cycle": "warmup",
+          "index": 0,
+          "captures": 0,
+          "replays": 13
+        },
+        {
+          "cycle": "warmup",
+          "index": 1,
+          "captures": 0,
+          "replays": 13
+        },
+        {
+          "cycle": "measured",
+          "index": 0,
+          "captures": 0,
+          "replays": 13
+        },
+        {
+          "cycle": "measured",
+          "index": 1,
+          "captures": 0,
+          "replays": 13
+        },
+        {
+          "cycle": "measured",
+          "index": 2,
+          "captures": 0,
+          "replays": 13
+        }
+      ],
+      "counter_semantics": "GraphFront.forward counts replay on every process frame, including capture frames; rawbody50 is separate"
+    },
+    "rawbody_events": 50,
+    "combo_capture_gate": {
+      "c64_all_eight": true,
+      "c32_all_seven": true,
+      "post_k8": true,
+      "post_attention": true,
+      "post_contiguous_k8": true,
+      "c128_all_twelve": true,
+      "c256_all_sixteen": true,
+      "pre_attention_tail": true,
+      "c512_decoder_all_eight": true,
+      "post_entry": true,
+      "c512_library_all_sixteen": true,
+      "native_k8_pre_post": true,
+      "c32_hidden_native_ten": true,
+      "c512_probability_all_sixteen": true,
+      "c128_pairwise_twelve": true,
+      "c64_attention_project_eight": true,
+      "c128_attention_project_twelve": true
+    },
+    "conditional_coverage": {
+      "style": 0,
+      "style1_dispatch": "unexecuted",
+      "style2_dispatch": "unexecuted",
+      "low_strength": "requires separate real adapter harness",
+      "per_scope_zero_dispatch_sites": {
+        "before_numeric": {
+          "audit_history_host_720_v1": []
+        },
+        "after_numeric": {}
+      },
+      "scope": "compilation/resources can be screened without dispatch; zero sites receive no numerical qualification"
+    },
+    "provider_status": {
+      "selected_modules": [
+        "audit_history_host_720_v1"
+      ],
+      "replacement_gates_passed": true,
+      "captured_roles": [],
+      "providers": []
+    },
+    "cache_binding_count_only": 139
+  },
+  "unassigned_compiler_bindings": [
+    {
+      "compiler_key": "7cfed67f6991451ed22c281826a37556df93d2d5b1d093617227ad7deca19dcb",
+      "source": {
+        "path": "${WORKSPACE}\\cyberpunk-b580-nr-opt\\artifacts\\b580-full-implementation-v1-20261003\\phase2-complete\\revisions\\r18\\source\\experimental\\fp8_unround_overlay\\modules\\batched_branched_mlp_v1.py",
+        "sha256": "4ecfc24bfc7cf9488953265cfd1a82ce42d5bd138c0674a4abf02ac8f776f6af",
+        "module": "batched_branched_mlp_v1",
+        "qualname": "_project",
+        "source_hash": "5eec0d5710246d3f8441b5def24848c6593458746ab054c6c04eb552a7e1ecdd"
+      },
+      "constants": {
+        "M": 15360,
+        "C": 128,
+        "BM": 16,
+        "BN": 64
+      },
+      "evidence": "binding_only_unobserved_or_spare"
+    },
+    {
+      "compiler_key": "b653b9dc985663b266e96cffc9cea561f8dbf84bf7b605aeffff651c33e1eeea",
+      "source": {
+        "path": "${WORKSPACE}\\cyberpunk-b580-nr-opt\\artifacts\\b580-full-implementation-v1-20261003\\phase2-complete\\revisions\\r18\\source\\experimental\\fp8_unround_overlay\\modules\\batched_branched_mlp_v1.py",
+        "sha256": "4ecfc24bfc7cf9488953265cfd1a82ce42d5bd138c0674a4abf02ac8f776f6af",
+        "module": "batched_branched_mlp_v1",
+        "qualname": "_project",
+        "source_hash": "5eec0d5710246d3f8441b5def24848c6593458746ab054c6c04eb552a7e1ecdd"
+      },
+      "constants": {
+        "M": 17472,
+        "C": 128,
+        "BM": 16,
+        "BN": 64
+      },
+      "evidence": "binding_only_unobserved_or_spare"
+    },
+    {
+      "compiler_key": "694ef621db923fbc740c13faf78b7dc7121607ea01fe4ab3845030afc61bda85",
+      "source": {
+        "path": "${WORKSPACE}\\cyberpunk-b580-nr-opt\\artifacts\\b580-full-implementation-v1-20261003\\phase2-complete\\revisions\\r18\\source\\experimental\\fp8_unround_overlay\\modules\\batched_branched_mlp_v1.py",
+        "sha256": "4ecfc24bfc7cf9488953265cfd1a82ce42d5bd138c0674a4abf02ac8f776f6af",
+        "module": "batched_branched_mlp_v1",
+        "qualname": "_project",
+        "source_hash": "5eec0d5710246d3f8441b5def24848c6593458746ab054c6c04eb552a7e1ecdd"
+      },
+      "constants": {
+        "M": 16128,
+        "C": 128,
+        "BM": 16,
+        "BN": 64
+      },
+      "evidence": "binding_only_unobserved_or_spare"
+    },
+    {
+      "compiler_key": "1bad81301b1fb2e94b3bcdf7810c1801fc47bc1b33f655ae1fa501cfb6155cc0",
+      "source": {
+        "path": "${WORKSPACE}\\cyberpunk-b580-nr-opt\\artifacts\\b580-full-implementation-v1-20261003\\phase2-complete\\revisions\\r18\\source\\experimental\\fp8_unround_overlay\\modules\\batched_branched_mlp_v1.py",
+        "sha256": "4ecfc24bfc7cf9488953265cfd1a82ce42d5bd138c0674a4abf02ac8f776f6af",
+        "module": "batched_branched_mlp_v1",
+        "qualname": "_project",
+        "source_hash": "5eec0d5710246d3f8441b5def24848c6593458746ab054c6c04eb552a7e1ecdd"
+      },
+      "constants": {
+        "M": 16640,
+        "C": 128,
+        "BM": 16,
+        "BN": 64
+      },
+      "evidence": "binding_only_unobserved_or_spare"
+    },
+    {
+      "compiler_key": "232e8c4981e133a6bf2a73e9c50c2d8e26670f0b719712320056cb37ea2269f8",
+      "source": {
+        "path": "${WORKSPACE}\\cyberpunk-b580-nr-opt\\artifacts\\b580-full-implementation-v1-20261003\\phase2-complete\\revisions\\r18\\source\\game\\history_numeric_suite_720_v1_kernel.py",
+        "sha256": "347210a90159ff6eb58a6cf86691a424eadc0f64ff79889655dc47dc8a40897e",
+        "module": "history_numeric_suite_720_v1_kernel",
+        "qualname": "_five_tap",
+        "source_hash": "35d2b8b2828ac239da7b8b1ec16304150cd86fbd01cccb69e72dba29e647fe0d"
+      },
+      "constants": {
+        "H": 720,
+        "W": 1280,
+        "DEBUG": true,
+        "BLOCK": 64,
+        "VALUE_FP32": true,
+        "NATIVE": false,
+        "DIRECT": false,
+        "WRITE_NORMALIZED": true
+      },
+      "evidence": "binding_only_unobserved_or_spare"
+    },
+    {
+      "compiler_key": "8cda866794313d31fae0687150a5c11a67effce91fcb5790edb9ef3076f241e2",
+      "source": {
+        "path": "${WORKSPACE}\\cyberpunk-b580-nr-opt\\artifacts\\b580-full-implementation-v1-20261003\\phase2-complete\\revisions\\r18\\source\\game\\front_noise_native_720_kernel_v1.py",
+        "sha256": "1bfe6393b9258046388d4556deebb97b97fdd2e77e003af27b20d7ae82f4d6be",
+        "module": "front_noise_native_720_kernel_v1",
+        "qualname": "front",
+        "source_hash": "5a06ad6f750e0c0b9d73d4a9bce2974146b41a96e0f5720904a7ed54271697b4"
+      },
+      "constants": {
+        "H": 720,
+        "W": 1280,
+        "PH": 768,
+        "PW": 1280,
+        "TEMPORAL": true,
+        "HISTORY_COMPONENTS": true,
+        "NATIVE_RADIUS": true,
+        "NATIVE_TRIG": true,
+        "B": 128
+      },
+      "evidence": "binding_only_unobserved_or_spare"
+    },
+    {
+      "compiler_key": "5169614a18382ab403ebca072322866277928bcac034e058dc06315e9bcc5876",
+      "source": {
+        "path": "${WORKSPACE}\\cyberpunk-b580-nr-opt\\artifacts\\b580-full-implementation-v1-20261003\\phase2-complete\\revisions\\r18\\source\\game\\front_noise_native_720_kernel_v1.py",
+        "sha256": "1bfe6393b9258046388d4556deebb97b97fdd2e77e003af27b20d7ae82f4d6be",
+        "module": "front_noise_native_720_kernel_v1",
+        "qualname": "front",
+        "source_hash": "5a06ad6f750e0c0b9d73d4a9bce2974146b41a96e0f5720904a7ed54271697b4"
+      },
+      "constants": {
+        "H": 720,
+        "W": 1280,
+        "PH": 768,
+        "PW": 1280,
+        "TEMPORAL": true,
+        "HISTORY_COMPONENTS": true,
+        "NATIVE_RADIUS": true,
+        "NATIVE_TRIG": true,
+        "B": 128
+      },
+      "evidence": "binding_only_unobserved_or_spare"
+    }
+  ],
+  "unknowns": [
+    "No per-dispatch GPU trace in RESULT: capture provider gates plus source select kernels, not a physical launch census.",
+    "torch.mm/ATen copy/pad/ALU/reduction internal GPU kernels, library algorithm/tile and ISA remain unknown.",
+    "No per-kernel elapsed time / DRAM bytes / occupancy / spill-to-bandwidth relationship measured in this review.",
+    "near-integer history, fp16-motion spare, high-seed, nondefault style/low-strength/auto-mask/skin paths not observed by fixed13.",
+    "Default control-lane fills have source evidence; native producer receipt/fill physical counts not individually instrumented.",
+    "External bridge source pins match accepted canonical receipt, but offline RESULT game_or_API_calls=false excludes bridge dispatch/Present.",
+    "AMD fixed source mapping is analogous structure; no identical math/hardware work-equivalence or independent GPU reproduction.",
+    "Conditional syntactic expansion includes inactive branches; does not promote every AST call to the active inventory.",
+    "Triton tl.dot operand types are source evidence; only referenced INT8 DPAS IR receipts prove compiled matrix layout, not all kernel ISA."
+  ],
+  "acceptance": "Complete explicitly selected main model call-chain static inventory plus declared conditional/interop/library boundaries; no claimed 100% dynamic coverage",
+  "validation": {
+    "manifest_hash": true,
+    "result_hash": true,
+    "r15_r18_constructor_identical": true,
+    "source_pins_all_match": true,
+    "accepted_shared_native_cpp_pin_match": true,
+    "all_local_and_AMD_links_resolve": true,
+    "GPU_executed_by_extractor": false,
+    "imported_project_modules": false,
+    "source_or_game_written": false,
+    "G_writes": false
+  }
+}

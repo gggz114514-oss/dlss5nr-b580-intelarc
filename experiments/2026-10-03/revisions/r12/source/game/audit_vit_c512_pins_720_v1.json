@@ -1,0 +1,27 @@
+{
+  "schema": "owned-current720-pins-v2",
+  "modules": {
+    "audit_vit_c512_720_v1": "24cb39d29392e447af3753e8b0410bf5ddafc737d7dfb0c74f10cc027793ca32",
+    "audit_c512_maps_720_v1": "ad3a7c043b4b72ff6740e0186253b45737d5c86ffff11a5920666139334439dc",
+    "audit_vit_native_dataflow_720_v1": "ee6dc78998085907b8bccb32f65bd9b01fbddefa6de24593abb5513915eabcc5",
+    "audit_c512_query_encoder_720_v1": "e5c544db99f76cd52d741ba444ada5ead709b749083a323d3c77e80faf8a0931",
+    "audit_int8_ffn_complete_720_v1": "51752997174dbb499589012e9a452384c2f525cff2bad03bf60aec878d2a83de",
+    "audit_vit_c512_scope_720_v1": "4572173554cfe2a2cea97d2c09cf38fcc905c2be3f175b5df04e2ea42e4352ba",
+    "vit_native_fma_720_v1": "bba9060775904ce6b5de40478054abf755f1009d6e5956946fbb8f712812fde1",
+    "vit_numeric_suite_720_v1_kernels": "c540997ce70ca75b7bff17304946e811fa409ea94bd999fc0ecd0811022eb95a",
+    "c512_int8_ffn_rows_v1": "2fdfa2c0a6160b5b31cc240740299366c1448fb7fb32ff5a39958e38257096bb",
+    "int8_ffn_segment_rows_v1": "1d15f014ef5c17805cd2a5ee0146b520aad876022aec61138df647f9243bfd20",
+    "rows_scopes_v1": "877c2a1df684e105b547fbba987a541bbe3590799ae526bb763ca0708668cba0",
+    "fused_qkv_pack_native_half_v1": "781b3e59eb695da0f0f994f2a1ef8aa01da70c45a68056afc4629592d7c70d63",
+    "fused_swin_core_native_half_v1": "8cb85569804301c1348a320d0aff0c18dcc3831ef7b5a5cb870f23dbf1f0c0f3",
+    "native_half_attention_fma_v1": "5d37caf41f58a97da1e7c5a0c67601b5500f8dfed08e6128008130849e590691",
+    "c512_window_projection_v1": "4dc8b03d2e0cbd135596cf19b53769671cb74c9e0c159cc83d733455a2b394e6",
+    "int8_ffn_segment_gpu_v1": "82ee900dba50758671362a3993bc6c8ace39c28d773169404d851d775e42cfce",
+    "nr_backend.triton_attention_exp": "5ec5eb86a3d26ffb48899307c3dac2b1f8ee1603ad99946f3945f4c3db18d7dd",
+    "nr_backend.triton_attention_normalize": "9a7a91f13d485392b8b3b4045600cd15633903532266c058cda7e50c1ab439cc",
+    "nr_backend.triton_attention_weights": "0e75817665d55a8cafd342b5f6d81c20b6a3ac5dc0cd2592327fd1467273fa97",
+    "nr_backend.triton_cubic_fp8": "12127e4103e29dbd5670ab19a1405e2b77a53c09f6d39796d082694a1dd424eb"
+  },
+  "source_kind": "immutable owned candidate plus actual borrowed math helpers",
+  "shared_entry_pins": "main freeze/signature owner; no overrides of owned kernel bytes"
+}

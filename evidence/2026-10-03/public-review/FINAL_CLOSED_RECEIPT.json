@@ -1,0 +1,79 @@
+{
+  "schema": "nr-release-final-closed-small-receipt-v1",
+  "status": "CLOSED",
+  "completed_utc": "2026-10-03T14:09:03.248135+00:00",
+  "scope": "Only one staged README and its identity/derivation records; closes previously identified privacy items",
+  "reviewed_file": {
+    "path": "history/original/nr-b580/README.md",
+    "bytes": 33800,
+    "original_sha256": "fade395f9a0b5f46410684d918236dfb33ffc0969e9baa11deef3769ab9a79fd",
+    "published_sha256": "63ccc841857a253896fb98150def5a0ac457313e94e185d6ae1787cff325c6b5",
+    "byte_identical": false,
+    "checks": [
+      {
+        "line": 166,
+        "reference_user_present": true
+      },
+      {
+        "line": 235,
+        "reference_user_present": true
+      },
+      {
+        "line": 253,
+        "reference_user_present": true
+      }
+    ],
+    "whole_file_prior_privacy_patterns_passed": [
+      "prior_username",
+      "personal_key_names",
+      "private_ipv4",
+      "actual_host_fingerprint",
+      "personal_user_path",
+      "private_key_body"
+    ]
+  },
+  "remaining_privacy_items": [],
+  "history_manifest": {
+    "path": "evidence/2026-10-03/history-collection-manifest.json",
+    "sha256": "36d1c576f43e77c5edb9b93d23ad03a772b1e0fa9f7b72cee1bab049d0c6b69c",
+    "only_target_row_checked": true,
+    "target_hash_and_bytes_match": true
+  },
+  "public_derivations": {
+    "path": "evidence/2026-10-03/public-derivations.json",
+    "sha256": "7a8234c7232daa3ad03d213d7bd1221112c5ce91e2890628aa3f99d62318a04b",
+    "only_target_chain_checked": true,
+    "events": 3,
+    "added_events_since_V2": 1,
+    "original_sha256": "fade395f9a0b5f46410684d918236dfb33ffc0969e9baa11deef3769ab9a79fd",
+    "terminal_sha256": "63ccc841857a253896fb98150def5a0ac457313e94e185d6ae1787cff325c6b5",
+    "all_links_and_terminal_bytes_match": true
+  },
+  "carried_forward": {
+    "receipt": "FINAL_RECEIPT_V2.json",
+    "sha256": "19a94f6eeef2d1824aab671ed180d8f3161f856972d6a96da25804c43596f4fb",
+    "Invoke_Reference": "Four explicit mandatory parameters, character limits and strict hostcheck passed in V2; not re-executed/rechecked",
+    "Magpie": "Previously reviewed existing motion consumption and GPL text scope; no expansion",
+    "current571_and_r18": "Previous identity result carried forward, not rehashed in this narrow review"
+  },
+  "file_manifest": {
+    "owner": "Main",
+    "refresh_after": "Nash/AMD/bridge documentation complete",
+    "intermediate_old_SHA_expected": true,
+    "blocking": false,
+    "not_rechecked": true
+  },
+  "observed_inputs_stable_during_review": true,
+  "operational_limits": {
+    "CPU_only": true,
+    "full_tree_scan": false,
+    "external_assets_read": false,
+    "source_stage_or_G_changed": false,
+    "GPU_model_Torch_Triton_or_compiler_execution": false,
+    "PowerShell_script_executed": false,
+    "delete_or_upload": false
+  },
+  "publication_seal": false,
+  "CPU_selfcheck_passed": true,
+  "report_sha256": "9208721c4d53df077026ca16b4161ead6482a1f1535da9bb354ad5382e75d9b8"
+}

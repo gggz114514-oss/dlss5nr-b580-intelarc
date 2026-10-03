@@ -1,0 +1,10 @@
+{
+  "schema": 1,
+  "integer_domain": [1, 4096],
+  "domain_count": 4096,
+  "output": "Original SM89 MUFU.RCP applied to FP32 integer dimension",
+  "files": {"reciprocal.f32.bin": "672e6b8767c976a003406e4bdd1a903a7c2299da60341645d61969f37d5e21bf"},
+  "source": "reference/reciprocal-dimensions-v1-source.json",
+  "reference": "reference/4060-reciprocal-dimensions-v1.json",
+  "contains_image_or_model_activations": false
+}

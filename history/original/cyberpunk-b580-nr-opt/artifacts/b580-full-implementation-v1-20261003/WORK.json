@@ -1,0 +1,762 @@
+{
+  "schema": "current720-full-implementation-work-v1",
+  "scope": "accepted720 C512+K8; no resolution scaling",
+  "baseline_game_frame_ms": [
+    55,
+    60
+  ],
+  "groups": [
+    "swin-mlp",
+    "c512-vit",
+    "front-decoder-post",
+    "history-host-graph",
+    "native-bridge"
+  ],
+  "data_root": "E:\\Codex-NR-Experiments\\cyberpunk-opt\\b580-full-implementation-v1-20261003",
+  "GPU_owner": "Luna gpt-6-luna xhigh; explicit serialized GO required",
+  "packages": [
+    {
+      "id": "P01",
+      "status": "complete_source_merged_GPU_qualification_pending",
+      "gain_ms": null,
+      "owners": [
+        "c512-vit"
+      ],
+      "merged_ready_sha256": {
+        "c512-vit": "e42cce265f73d632c2006ca11b73983cd5ad63174caf7ef085f71f9c85cbca36"
+      },
+      "numerical_phase1_completed": true
+    },
+    {
+      "id": "P02",
+      "status": "complete_source_merged_GPU_qualification_pending",
+      "gain_ms": null,
+      "owners": [
+        "front-decoder-post"
+      ],
+      "merged_ready_sha256": {
+        "front-decoder-post": "48e39566c3828934e1b223e12ea26e65c98e60d4c4348de8f58e154027d2038c"
+      },
+      "numerical_phase1_completed": true
+    },
+    {
+      "id": "P03",
+      "status": "complete_source_merged_GPU_qualification_pending",
+      "gain_ms": null,
+      "owners": [
+        "front-decoder-post",
+        "c512-vit"
+      ],
+      "merged_ready_sha256": {
+        "front-decoder-post": "48e39566c3828934e1b223e12ea26e65c98e60d4c4348de8f58e154027d2038c",
+        "c512-vit": "e42cce265f73d632c2006ca11b73983cd5ad63174caf7ef085f71f9c85cbca36"
+      },
+      "numerical_phase1_completed": true
+    },
+    {
+      "id": "P04",
+      "status": "complete_source_merged_GPU_qualification_pending",
+      "gain_ms": null,
+      "owners": [
+        "swin-mlp"
+      ],
+      "merged_ready_sha256": {
+        "swin-mlp": "08ca1722f0151ab083d48d7d4607e5c2de69457386660a60a585ca66a531f6de"
+      },
+      "numerical_phase1_completed": true
+    },
+    {
+      "id": "P05",
+      "status": "complete_source_merged_GPU_qualification_pending",
+      "gain_ms": null,
+      "owners": [
+        "history-host-graph"
+      ],
+      "merged_ready_sha256": {
+        "history-host-graph": "7e197eeed7022b25e8e0354e0a2e7ac0067778b9850f96f7dc1e3d9ed3ffabb9"
+      },
+      "numerical_phase1_completed": true
+    },
+    {
+      "id": "P06",
+      "status": "complete_source_merged_GPU_qualification_pending",
+      "gain_ms": null,
+      "owners": [
+        "front-decoder-post"
+      ],
+      "merged_ready_sha256": {
+        "front-decoder-post": "48e39566c3828934e1b223e12ea26e65c98e60d4c4348de8f58e154027d2038c"
+      },
+      "numerical_phase1_completed": true
+    },
+    {
+      "id": "P07",
+      "status": "complete_source_merged_GPU_qualification_pending",
+      "gain_ms": null,
+      "owners": [
+        "swin-mlp"
+      ],
+      "merged_ready_sha256": {
+        "swin-mlp": "08ca1722f0151ab083d48d7d4607e5c2de69457386660a60a585ca66a531f6de"
+      },
+      "numerical_phase1_completed": false
+    },
+    {
+      "id": "P08",
+      "status": "complete_source_merged_GPU_qualification_pending",
+      "gain_ms": null,
+      "owners": [
+        "swin-mlp",
+        "c512-vit"
+      ],
+      "merged_ready_sha256": {
+        "swin-mlp": "08ca1722f0151ab083d48d7d4607e5c2de69457386660a60a585ca66a531f6de",
+        "c512-vit": "e42cce265f73d632c2006ca11b73983cd5ad63174caf7ef085f71f9c85cbca36"
+      },
+      "numerical_phase1_completed": false
+    },
+    {
+      "id": "P09",
+      "status": "complete_source_merged_GPU_qualification_pending",
+      "gain_ms": null,
+      "owners": [
+        "swin-mlp"
+      ],
+      "merged_ready_sha256": {
+        "swin-mlp": "08ca1722f0151ab083d48d7d4607e5c2de69457386660a60a585ca66a531f6de"
+      },
+      "numerical_phase1_completed": false
+    },
+    {
+      "id": "P10",
+      "status": "complete_source_merged_GPU_qualification_pending",
+      "gain_ms": null,
+      "owners": [
+        "front-decoder-post"
+      ],
+      "merged_ready_sha256": {
+        "front-decoder-post": "48e39566c3828934e1b223e12ea26e65c98e60d4c4348de8f58e154027d2038c"
+      },
+      "numerical_phase1_completed": false
+    },
+    {
+      "id": "P11",
+      "status": "complete_source_merged_GPU_qualification_pending",
+      "gain_ms": null,
+      "owners": [
+        "c512-vit"
+      ],
+      "merged_ready_sha256": {
+        "c512-vit": "e42cce265f73d632c2006ca11b73983cd5ad63174caf7ef085f71f9c85cbca36"
+      },
+      "numerical_phase1_completed": false
+    },
+    {
+      "id": "P12",
+      "status": "complete_source_merged_GPU_qualification_pending",
+      "gain_ms": null,
+      "owners": [
+        "c512-vit"
+      ],
+      "merged_ready_sha256": {
+        "c512-vit": "e42cce265f73d632c2006ca11b73983cd5ad63174caf7ef085f71f9c85cbca36"
+      },
+      "numerical_phase1_completed": false
+    },
+    {
+      "id": "P13",
+      "status": "complete_source_merged_GPU_qualification_pending",
+      "gain_ms": null,
+      "owners": [
+        "front-decoder-post"
+      ],
+      "merged_ready_sha256": {
+        "front-decoder-post": "48e39566c3828934e1b223e12ea26e65c98e60d4c4348de8f58e154027d2038c"
+      },
+      "numerical_phase1_completed": false
+    },
+    {
+      "id": "P14",
+      "status": "complete_source_merged_GPU_qualification_pending",
+      "gain_ms": null,
+      "owners": [
+        "front-decoder-post",
+        "history-host-graph",
+        "native-bridge"
+      ],
+      "merged_ready_sha256": {
+        "front-decoder-post": "48e39566c3828934e1b223e12ea26e65c98e60d4c4348de8f58e154027d2038c",
+        "history-host-graph": "7e197eeed7022b25e8e0354e0a2e7ac0067778b9850f96f7dc1e3d9ed3ffabb9",
+        "native-bridge": "9f3081412558569b4bf3a8a709a4cc69748dd49dd14aafbc1ba58077a4cf9931"
+      },
+      "numerical_phase1_completed": false
+    },
+    {
+      "id": "P15",
+      "status": "complete_source_merged_GPU_qualification_pending",
+      "gain_ms": null,
+      "owners": [
+        "history-host-graph",
+        "native-bridge"
+      ],
+      "merged_ready_sha256": {
+        "history-host-graph": "7e197eeed7022b25e8e0354e0a2e7ac0067778b9850f96f7dc1e3d9ed3ffabb9",
+        "native-bridge": "9f3081412558569b4bf3a8a709a4cc69748dd49dd14aafbc1ba58077a4cf9931"
+      },
+      "numerical_phase1_completed": false
+    },
+    {
+      "id": "P16",
+      "status": "complete_source_merged_GPU_qualification_pending",
+      "gain_ms": null,
+      "owners": [
+        "native-bridge"
+      ],
+      "merged_ready_sha256": {
+        "native-bridge": "9f3081412558569b4bf3a8a709a4cc69748dd49dd14aafbc1ba58077a4cf9931"
+      },
+      "numerical_phase1_completed": false
+    },
+    {
+      "id": "P17",
+      "status": "complete_source_merged_GPU_qualification_pending",
+      "gain_ms": null,
+      "owners": [
+        "swin-mlp",
+        "history-host-graph",
+        "native-bridge"
+      ],
+      "merged_ready_sha256": {
+        "swin-mlp": "08ca1722f0151ab083d48d7d4607e5c2de69457386660a60a585ca66a531f6de",
+        "history-host-graph": "7e197eeed7022b25e8e0354e0a2e7ac0067778b9850f96f7dc1e3d9ed3ffabb9",
+        "native-bridge": "9f3081412558569b4bf3a8a709a4cc69748dd49dd14aafbc1ba58077a4cf9931"
+      },
+      "numerical_phase1_completed": false
+    },
+    {
+      "id": "P18",
+      "status": "complete_source_merged_GPU_qualification_pending",
+      "gain_ms": null,
+      "owners": [
+        "front-decoder-post",
+        "history-host-graph"
+      ],
+      "merged_ready_sha256": {
+        "front-decoder-post": "48e39566c3828934e1b223e12ea26e65c98e60d4c4348de8f58e154027d2038c",
+        "history-host-graph": "7e197eeed7022b25e8e0354e0a2e7ac0067778b9850f96f7dc1e3d9ed3ffabb9"
+      },
+      "numerical_phase1_completed": false
+    }
+  ],
+  "phase1": {
+    "status": "PHASE1_ALL_11_ARMS_COMPLETE",
+    "report": {
+      "path": "E:\\ComfyUI-aki-v3-IntelArc_20260722\\cyberpunk-b580-nr-opt\\artifacts\\b580-full-implementation-v1-20261003\\luna\\phase1\\reports\\attempt-05-resumed-qualification\\PHASE1_RESULTS.json",
+      "sha256": "5052fbfe62e870556b664525ac49e9f4f930633778760ebf1f6d4d1613c7cec4"
+    },
+    "measured_scope": "single offline graph-body round, not whole NR or game",
+    "accepted_baseline_graph_p50_ms": 39.4145,
+    "numerical_all_graph_p50_ms": 38.801,
+    "repeatable_game_gain_ms": null
+  },
+  "phase2": {
+    "status": "VIT_QUALIFIED_UNADOPTED_SWIN_SERIAL_GPU_DISPATCHED",
+    "revision": 18,
+    "manifest": {
+      "path": "E:\\ComfyUI-aki-v3-IntelArc_20260722\\cyberpunk-b580-nr-opt\\artifacts\\b580-full-implementation-v1-20261003\\phase2-complete\\PHASE2-r18.json",
+      "sha256": "699ee05cf1008610a4772dfeebe6398d7099c7c1ed141cbbaa91967da0a05f7f",
+      "bytes": 375817
+    },
+    "source_files": 261,
+    "arms": 114,
+    "priority_arms": 30,
+    "r1_failure": "History admission called nonexistent _require_thread. r3 delegates to actual child.validate, which retains thread/fixed-owner/installed-chain checks.",
+    "source_fix": {
+      "path": "E:\\ComfyUI-aki-v3-IntelArc_20260722\\cyberpunk-b580-nr-opt\\artifacts\\b580-full-implementation-v1-20261003\\MAIN_SOURCE_FIX_r3.json",
+      "sha256": "98733ec5556d581147299224ff79ce54ff1028d43d0844c66d16dddb6022fd0c"
+    },
+    "all_modules_GPU_qualified": false,
+    "gain_ms": null,
+    "game_writes": 0,
+    "source_fixes": [
+      {
+        "path": "E:\\ComfyUI-aki-v3-IntelArc_20260722\\cyberpunk-b580-nr-opt\\artifacts\\b580-full-implementation-v1-20261003\\MAIN_SOURCE_FIX_r3.json",
+        "sha256": "98733ec5556d581147299224ff79ce54ff1028d43d0844c66d16dddb6022fd0c"
+      },
+      {
+        "path": "E:\\ComfyUI-aki-v3-IntelArc_20260722\\cyberpunk-b580-nr-opt\\artifacts\\b580-full-implementation-v1-20261003\\MAIN_SOURCE_FIX_r4.json",
+        "sha256": "b77ffaf7450da696228fddcafafa14c04cae997c1f0b134c1ed947ad04fab30b"
+      },
+      {
+        "path": "E:\\ComfyUI-aki-v3-IntelArc_20260722\\cyberpunk-b580-nr-opt\\artifacts\\b580-full-implementation-v1-20261003\\MAIN_SOURCE_FIX_r6.json",
+        "sha256": "fda12db87d32c0a19cbb6ef168604b4ff13a2a8a32850e51a13e133a0f7d1a95"
+      },
+      {
+        "path": "E:\\ComfyUI-aki-v3-IntelArc_20260722\\cyberpunk-b580-nr-opt\\artifacts\\b580-full-implementation-v1-20261003\\MAIN_SOURCE_FIX_r7.json",
+        "sha256": "2312638ba6f89c04e20ee6b06a21c822801df5ef3f9599e85bb7020476a6c00a"
+      },
+      {
+        "path": "E:\\ComfyUI-aki-v3-IntelArc_20260722\\cyberpunk-b580-nr-opt\\artifacts\\b580-full-implementation-v1-20261003\\MAIN_SOURCE_FIX_r8.json",
+        "sha256": "814452e683022c1a4560ecc9cff324c5aefe2bc5894d1b64aad7a4b3c8e2ed3c"
+      },
+      {
+        "path": "E:\\ComfyUI-aki-v3-IntelArc_20260722\\cyberpunk-b580-nr-opt\\artifacts\\b580-full-implementation-v1-20261003\\MAIN_SOURCE_FIX_r9.json",
+        "sha256": "9733bb084dda3c240c643247848f7303ab54d260247a730e1fd553726792cf75"
+      }
+    ],
+    "runner_READY": {
+      "path": "E:\\ComfyUI-aki-v3-IntelArc_20260722\\cyberpunk-b580-nr-opt\\artifacts\\b580-full-implementation-v1-20261003\\luna\\phase2-e\\READY.json",
+      "sha256": "1f1a8455610a054ffd87080be9e7dd2d51293f276519b91599468814f723d909"
+    },
+    "active_output_root": "D:\\Codex-NR-Experiments\\cyberpunk-opt\\b580-full-implementation-v1-20261003\\luna\\phase2\\attempt-10-r8-front-runner4",
+    "conditional_matrix": {
+      "status": "CPU_ready_GPU_pending",
+      "manifest": {
+        "path": "E:\\ComfyUI-aki-v3-IntelArc_20260722\\cyberpunk-b580-nr-opt\\artifacts\\b580-full-implementation-v1-20261003\\phase2-complete\\PHASE2-r9.json",
+        "sha256": "659e96f4f079db63664ac081fd57c20ddf60d87906cf82fd20ced931f52ed125"
+      },
+      "revision": 9,
+      "condition_arms": 20,
+      "source_bytes_equal_to_active_manifest": true
+    },
+    "actual_blockers": [
+      {
+        "group": "swin",
+        "status": "r8_bounded_BM8_warps8_actual_compile_pending",
+        "evidence": "attempt07 real C64 _mlp_pairs BM32/stages1 spill832 and BM16/stages1 spill320; r8 preserves full rows/K/branches and dispatches the actual cold selected object"
+      },
+      {
+        "group": "front",
+        "status": "r9_full_NR_qualified_positive_single_round_repetition_and_game_pending",
+        "evidence": "attempt12 r9 full mean46.715247→44.402886ms, gain2.312361; cycle deltas1.988634/2.033634/2.914816, readonly0writes, output finite; no game gain claim"
+      },
+      {
+        "group": "c512",
+        "status": "fused_FFN_entry_spill7168_CPU_repair_in_progress_unfused_profile_GPU_GO",
+        "evidence": "attempt09 fails in _vit_expand_entry before any measured candidate frame: actual builtins.int spill7168, SPV537992 bytes; attention attempt metadata missing from durable RESULT is separately being repaired"
+      }
+    ],
+    "history_whole_screen": {
+      "manifest_revision": 6,
+      "baseline_mean_ms": 45.907608205128206,
+      "candidate_mean_ms": 45.93022171794871,
+      "gain_ms": -0.02261351282050494,
+      "repeatable_gain_proven": false,
+      "source": "attempt-06-r6-history-front",
+      "GPU_executed": true,
+      "quality_MAE": 3.678224574e-05,
+      "quality_max_abs": 0.00341796875,
+      "game_gain_ms": null
+    },
+    "next_source_revision": 9,
+    "last_completed_output_root": "D:\\Codex-NR-Experiments\\cyberpunk-opt\\b580-full-implementation-v1-20261003\\luna\\phase2\\attempt-12-r9-fdp-runner4",
+    "next_output_root": "E:\\Codex-NR-Experiments\\cyberpunk-opt\\b580-full-implementation-v1-20261003\\luna\\phase2",
+    "storage": {
+      "user_authorized_E": true,
+      "legacy_D_readonly": true,
+      "E_runner_CPU_tests_passed": 46,
+      "E_comparison_CPU_tests_passed": 13,
+      "cache_copied_files": 2331,
+      "cache_copied_MiB": 131.89,
+      "original_D_cache_unchanged": true
+    },
+    "fdp_whole_screen": {
+      "manifest_revision": 9,
+      "baseline_mean_ms": 46.71524712820513,
+      "candidate_mean_ms": 44.40288597435897,
+      "gain_ms": 2.3123611538461533,
+      "cycle_deltas_ms": [
+        1.9886338461538453,
+        2.0336339230769225,
+        2.914815692307692
+      ],
+      "baseline_p95_ms": 47.794427,
+      "candidate_p95_ms": 45.087188,
+      "quality_MAE": 6.588039057729952e-05,
+      "quality_max_abs": 0.004150390625,
+      "source": "attempt-12-r9-fdp-runner4",
+      "GPU_executed": true,
+      "readonly_cache_writes": 0,
+      "independent_repetition_pending": true,
+      "user_visual_review": false,
+      "game_deployed": false,
+      "game_gain_ms": null
+    }
+  },
+  "main_cpu_checks": {
+    "integration_tests_passed": 85,
+    "history_module_tests_passed": 26,
+    "conditional_matrix_tests_passed": 4,
+    "r6_combined_main_tests_passed": 89,
+    "front_binding_regressions_passed": 8,
+    "swin_selection_regressions_passed": 9,
+    "r7_composed_provider_retirement_checks_passed": 15,
+    "r7_combined_main_tests_passed": 112,
+    "r8_composed_provider_retirement_checks_passed": 18,
+    "r8_combined_main_tests_passed": 115,
+    "r8_swin_actual_selection_regressions_passed": 13,
+    "r9_remaining_provider_tests_passed": 14,
+    "r9_remaining_provider_subtests_passed": 119,
+    "r9_combined_main_tests_passed": 115,
+    "GPU_executed": false
+  },
+  "pending_conditions": [
+    "style1/2 curve and linear same-controls pairs",
+    "low strength raw graph actual host warmup",
+    "native R11G11B10/RG16/helper/consumer gates",
+    "game quality/Present"
+  ],
+  "metadata_recovery": {
+    "cause": "PowerShell ConvertFrom-Json rejected pre-existing case-different CPU status keys; invalid null work metadata replaced",
+    "basis": "MERGED.json, immutable PHASE1/PHASE2 receipts and actual passed CPU checks; runtime/source/output evidence unchanged"
+  },
+  "actual_api_review": {
+    "path": "E:\\ComfyUI-aki-v3-IntelArc_20260722\\cyberpunk-b580-nr-opt\\artifacts\\b580-full-implementation-v1-20261003\\reviews\\ACTUAL_API_REVIEW.json",
+    "sha256": "6b89f87313535ddf5e36cd49e7fddabf93528f2f67480a8ef1ed460677b2bb9f"
+  },
+  "test_workflow_gain": {
+    "scope": "CPU comparison only, not NR inference or game",
+    "two_frames_wall_s_before": 3.160797,
+    "two_frames_wall_s_after": 0.21697,
+    "full13_wall_s_before": 19.805,
+    "full13_wall_s_after": 0.918,
+    "reports_exact": true,
+    "runner_CPU_checks_passed": 46,
+    "new_comparison_CPU_checks_passed": 13,
+    "original_runner_archived": true,
+    "game_writes": 0,
+    "NR_gain_ms": null
+  },
+  "legacy_data_root": "D:\\Codex-NR-Experiments\\cyberpunk-opt\\b580-full-implementation-v1-20261003",
+  "current_r10": {
+    "manifest": {
+      "path": "E:\\ComfyUI-aki-v3-IntelArc_20260722\\cyberpunk-b580-nr-opt\\artifacts\\b580-full-implementation-v1-20261003\\phase2-complete\\PHASE2-r10.json",
+      "sha256": "bbdff9b96686f41f00272cb3475f8845c15c775e6370f4d3ec894bf6c5de5c43"
+    },
+    "source_files": 259,
+    "arms": 104,
+    "composed_cpu": {
+      "path": "E:\\Codex-NR-Experiments\\cyberpunk-opt\\b580-full-implementation-v1-20261003\\cpu\\MAIN_COMPOSED_r10-final.json",
+      "sha256": "c55bb7809c5df3630b05e5499688458a32597c9d5afa12fada9eb0c8006a1a49"
+    },
+    "fixes": [
+      "C512 INT8 full-row-scale streaming K32",
+      "actual native-QKV provider frame ownership",
+      "Swin C128 full-K N32 and explicit known-spill diagnostic arm"
+    ],
+    "main_repair_receipts": [
+      {
+        "path": "E:\\ComfyUI-aki-v3-IntelArc_20260722\\cyberpunk-b580-nr-opt\\artifacts\\b580-full-implementation-v1-20261003\\MAIN_C512_FFN_REPAIR_r10.json",
+        "sha256": "a7baba0e41b07a54027bab24869e6ad8a620c535d33fbc9f2d5d6175b65276aa"
+      },
+      {
+        "path": "E:\\ComfyUI-aki-v3-IntelArc_20260722\\cyberpunk-b580-nr-opt\\artifacts\\b580-full-implementation-v1-20261003\\MAIN_OWNERSHIP_SWIN_REPAIR_r10.json",
+        "sha256": "c90bca4d6b4cba827bdfb264022dd96207ac2e784e7acefeb313f6a79ff3633f"
+      },
+      {
+        "path": "E:\\ComfyUI-aki-v3-IntelArc_20260722\\cyberpunk-b580-nr-opt\\artifacts\\b580-full-implementation-v1-20261003\\MAIN_SWIN_DIAGNOSTIC_r10.json",
+        "sha256": "711741a89cd932977758da9c86cc0bce420cb99a3952a324a6c6eeeced36e5cc"
+      }
+    ],
+    "GPU_state": "Luna serialized explicit GO: attempts19/20/21; conditional diagnostic22",
+    "game_deployed": false,
+    "game_gain_ms": null
+  },
+  "fdp_conditional_results": {
+    "path": "E:\\ComfyUI-aki-v3-IntelArc_20260722\\cyberpunk-b580-nr-opt\\artifacts\\b580-full-implementation-v1-20261003\\FDP_CONDITIONAL_MAIN_REVIEW.json",
+    "sha256": "295db5bea5d254f01a5825c3b308901d556f33614473966daf057ac531190ff6"
+  },
+  "history_screened_launch_failure": {
+    "source": "E attempt18 r9",
+    "error": "Warm sequence differs from matching cold sequence: output",
+    "disposition": "Independent 6.1 Sol max CPU source repair; never marked a speed loss"
+  },
+  "current_r13": {
+    "manifest": {
+      "path": "E:\\ComfyUI-aki-v3-IntelArc_20260722\\cyberpunk-b580-nr-opt\\artifacts\\b580-full-implementation-v1-20261003\\phase2-complete\\PHASE2-r13.json",
+      "sha256": "c4078679e367c790e3e5997c8b8a25304c7b6ef0ce4ce5f8e1615d0701843c0b"
+    },
+    "source_files": 259,
+    "arms": 104,
+    "composed_cpu": {
+      "path": "E:\\Codex-NR-Experiments\\cyberpunk-opt\\b580-full-implementation-v1-20261003\\cpu\\MAIN_COMPOSED_r13-native-route.json",
+      "sha256": "3a336f38dca17f6e275e45e87d8099b20eacff063cb15eac88a7beb59a06ba16"
+    },
+    "actual_route_regression": {
+      "path": "E:\\ComfyUI-aki-v3-IntelArc_20260722\\cyberpunk-b580-nr-opt\\artifacts\\b580-full-implementation-v1-20261003\\MAIN_NATIVE_QKV_ROUTE_CPU_r11.json",
+      "sha256": "fbafab3cb2588b60155540001a8322571508c8ba43a5e1695e0576a83bc0cbdd"
+    },
+    "route_repair": {
+      "path": "E:\\ComfyUI-aki-v3-IntelArc_20260722\\cyberpunk-b580-nr-opt\\artifacts\\b580-full-implementation-v1-20261003\\MAIN_NATIVE_QKV_ROUTE_REPAIR_r13.json",
+      "sha256": "d347dcd4e66702edb3a74a628ac71a5ee48c88648183376308bbfb6fa325e581"
+    },
+    "actual_route_fix": "Replace both complete-consumer and original-attention fused_dot stale aliases; native calls were zero in r10 A",
+    "GPU_state": "Luna queued serial attempts23..26 after Swin21/conditional22",
+    "game_deployed": false,
+    "game_gain_ms": null,
+    "unapproved_intermediate_revisions": [
+      11,
+      12
+    ]
+  },
+  "c512_complete_screen": {
+    "path": "E:\\ComfyUI-aki-v3-IntelArc_20260722\\cyberpunk-b580-nr-opt\\artifacts\\b580-full-implementation-v1-20261003\\C512_COMPLETE_MAIN_REVIEW.json",
+    "sha256": "f6e9570ce02b531869a66db888170d589ad62a080a00c4e26027b457f225666e"
+  },
+  "r13_split_modules": {
+    "path": "E:\\ComfyUI-aki-v3-IntelArc_20260722\\cyberpunk-b580-nr-opt\\artifacts\\b580-full-implementation-v1-20261003\\R13_SPLIT_MODULE_MAIN_REVIEW.json",
+    "sha256": "90ae2072e45dc9996e80d3f46943ba8b0fa1dc30f7fb35a378bb886621c2d56c"
+  },
+  "current_r14": {
+    "manifest": {
+      "path": "E:\\ComfyUI-aki-v3-IntelArc_20260722\\cyberpunk-b580-nr-opt\\artifacts\\b580-full-implementation-v1-20261003\\phase2-complete\\PHASE2-r14.json",
+      "sha256": "2d09cd7fd73b79c915327bb3b54015ca356282965ba8cd1fb6a9c70d59748c40"
+    },
+    "changed_scope": "Separate first_decoder32=False arm; remaining Swin selection/math/zero-spill guards unchanged",
+    "source_route_failure": "Historical: first decoder32 block66 bypassed body.forward through DecoderGather.upsample; distinct from final block70 post/K8. Fixed and actually qualified in r15 attempt29",
+    "CPU": {
+      "path": "E:\\Codex-NR-Experiments\\cyberpunk-opt\\b580-full-implementation-v1-20261003\\cpu\\MAIN_COMPOSED_r14-swin-post-isolation.json",
+      "sha256": "79cf72eeb8df30b10e294710f4d9726c37d349a3cf0e513eb55f5f48efd3750c"
+    },
+    "game_deployed": false
+  },
+  "compilation_policy": {
+    "user_hardware": {
+      "cores": 16,
+      "RAM_GiB": 48
+    },
+    "independent_CPU_kernel_compile_workers": 16,
+    "supported_CPU_compile_workers": 16,
+    "native_CXX_parallel_jobs": 16,
+    "MSBuild_nodes": 16,
+    "GPU_capture_and_tests": "one serialized Luna child",
+    "compiler_growth_budget_GiB": 32,
+    "system_memory_reserve_GiB": 8,
+    "real_parallel_compile_memory_peak": "attempt29 actual observations pinned in R15_FULL_MODULE_MAIN_REVIEW.json",
+    "previous_CPU_compile_workers": 8,
+    "next_child_policy": "B580_CPU_COMPILE_WORKERS=16; task-local env only; active child unchanged",
+    "source_default16_receipt": {
+      "path": "E:\\ComfyUI-aki-v3-IntelArc_20260722\\cyberpunk-b580-nr-opt\\artifacts\\b580-full-implementation-v1-20261003\\MAIN_COMPILE_POLICY_16.json",
+      "sha256": "c839a524b38adec31e3d2b2143b005ad125decc7b4260567ebc642b503ccc821"
+    },
+    "frozen_r15_default_workers": 8,
+    "frozen_r15_explicit_child_env_workers": 16
+  },
+  "current_r15": {
+    "manifest": {
+      "path": "E:\\ComfyUI-aki-v3-IntelArc_20260722\\cyberpunk-b580-nr-opt\\artifacts\\b580-full-implementation-v1-20261003\\phase2-complete\\PHASE2-r15.json",
+      "sha256": "303b5ce21c938b681616622801644290db7dd11fb038b781ce27ff9d4f6e4d78"
+    },
+    "runner_READY": {
+      "path": "E:\\ComfyUI-aki-v3-IntelArc_20260722\\cyberpunk-b580-nr-opt\\artifacts\\b580-full-implementation-v1-20261003\\luna\\phase2-e-parallel\\READY.json",
+      "sha256": "8044f7280347414d07a942ba7675bf44fa85b9b6404395c7d66bdd820cedec9d"
+    },
+    "source_files": 260,
+    "composition": {
+      "path": "E:\\ComfyUI-aki-v3-IntelArc_20260722\\cyberpunk-b580-nr-opt\\artifacts\\b580-full-implementation-v1-20261003\\MAIN_PARALLEL_SWIN_COMPOSITION_r15.json",
+      "sha256": "4b6b43e649a1a01f3b219823a59f38fc3d638300c4963c059a3bc6dfdb756008"
+    },
+    "status": "Swin and ViT complete routes GPU passed, slower; not adopted",
+    "game_deployed": false
+  },
+  "r15_full_modules": {
+    "path": "E:\\ComfyUI-aki-v3-IntelArc_20260722\\cyberpunk-b580-nr-opt\\artifacts\\b580-full-implementation-v1-20261003\\R15_FULL_MODULE_MAIN_REVIEW.json",
+    "sha256": "9a59e914376d3e2cebca89a4466ae17309cf911f9c12e2d1603d7c70da67ceba"
+  },
+  "current_r16": {
+    "schema": "main-r16-frozen-dispatch-v1",
+    "manifest": {
+      "path": "E:\\ComfyUI-aki-v3-IntelArc_20260722\\cyberpunk-b580-nr-opt\\artifacts\\b580-full-implementation-v1-20261003\\phase2-complete\\PHASE2-r16.json",
+      "sha256": "7cdd83933a1cdad49cc8a8bbb61071df45322224fa76a56c2f0afa5bb6dcd78f"
+    },
+    "source_files": 260,
+    "arms": 109,
+    "priority_arms": 30,
+    "CPU": {
+      "path": "E:\\Codex-NR-Experiments\\cyberpunk-opt\\b580-full-implementation-v1-20261003\\luna\\phase2\\cpu\\MAIN_R16_HOT_MANIFEST_CPU.json",
+      "sha256": "4ceb835b86835a4f84d6af53fb263caea5546fbc385e6a06b3b95d7a0342d823"
+    },
+    "preflight": {
+      "path": "E:\\Codex-NR-Experiments\\cyberpunk-opt\\b580-full-implementation-v1-20261003\\luna\\phase2\\cpu\\r16-hot-pair-preflight-01\\CPU_PREFLIGHT.json",
+      "sha256": "d10b3e3debc823414abce91dad3c3c4b22b972ce84a4a9eee64df1c80058d239"
+    },
+    "composition": {
+      "path": "E:\\ComfyUI-aki-v3-IntelArc_20260722\\cyberpunk-b580-nr-opt\\artifacts\\b580-full-implementation-v1-20261003\\MAIN_HOT_ADMISSION_COMPOSITION_r16.json",
+      "sha256": "a1328befe20868d39ef6972f7483ccd4d95ce210a3cadfe015745af36a15bd86"
+    },
+    "serial_attempts": [
+      "attempt-31-r16-e-c512-ffn-hot",
+      "attempt-32-r16-e-c512-encoder-hot"
+    ],
+    "same_source_matching_controls": true,
+    "default_compile_workers": 16,
+    "GPU_results": {
+      "path": "E:\\ComfyUI-aki-v3-IntelArc_20260722\\cyberpunk-b580-nr-opt\\artifacts\\b580-full-implementation-v1-20261003\\R16_HOT_MAIN_REVIEW.json",
+      "sha256": "42051fdd2d6bc35605463435a118ba307fc441909469030bc7318e4999e99005"
+    },
+    "game_deployed": false,
+    "game_gain_ms": null
+  },
+  "native_raw_preflight_failure": {
+    "result": {
+      "path": "E:\\Codex-NR-Experiments\\cyberpunk-opt\\b580-full-implementation-v1-20261003\\reviews\\native-host-r15-e-stage7\\raw\\runs\\raw-prepare-01\\RESULT.json",
+      "sha256": "bee1fccfc46dade6472b3458541ef46813e63713d7fc3fc9a77b88e3825be782"
+    },
+    "root_cause": "Actual adapter eager import reads relative product-v1 config before later host.DATA rebinding",
+    "GPU_executed": false,
+    "model_executed": false,
+    "repair": "Halley fresh raw-stage2 binds and pins actual read-only configuration before adapter import; pending Main review"
+  },
+  "r17_vit_staging": {
+    "path": "E:\\ComfyUI-aki-v3-IntelArc_20260722\\cyberpunk-b580-nr-opt\\artifacts\\b580-full-implementation-v1-20261003\\MAIN_VIT_THROUGHPUT_COMPOSITION_r17.json",
+    "sha256": "c6b23f4310ad15974bfd44640735c4faf842f231b6920efae447c294b16f4045"
+  },
+  "r16_hot_pairs": {
+    "path": "E:\\ComfyUI-aki-v3-IntelArc_20260722\\cyberpunk-b580-nr-opt\\artifacts\\b580-full-implementation-v1-20261003\\R16_HOT_MAIN_REVIEW.json",
+    "sha256": "42051fdd2d6bc35605463435a118ba307fc441909469030bc7318e4999e99005"
+  },
+  "current_r17": {
+    "manifest": {
+      "path": "E:\\ComfyUI-aki-v3-IntelArc_20260722\\cyberpunk-b580-nr-opt\\artifacts\\b580-full-implementation-v1-20261003\\phase2-complete\\PHASE2-r17.json",
+      "sha256": "3a282587c09af76f71ce16cb66bd89e30b49af17875a5d9b51f7b3c3feb0ffb7"
+    },
+    "source_files": 261,
+    "arms": 114,
+    "CPU": {
+      "path": "E:\\Codex-NR-Experiments\\cyberpunk-opt\\b580-full-implementation-v1-20261003\\luna\\phase2\\cpu\\MAIN_R17_THROUGHPUT_MANIFEST_CPU.json",
+      "sha256": "b60478cb5d0120d43ac6d9ef33fbf9ac91f7e8f2721fbae97fcc98c644cf2763"
+    },
+    "preflight": {
+      "path": "E:\\Codex-NR-Experiments\\cyberpunk-opt\\b580-full-implementation-v1-20261003\\luna\\phase2\\cpu\\r17-throughput-preflight-01\\CPU_PREFLIGHT.json",
+      "sha256": "2e3fab64b68fbd49272bfb2ab6218612bf87b9bc831e7fe6a40d1fbf7896526e"
+    },
+    "compositions": [
+      {
+        "path": "E:\\ComfyUI-aki-v3-IntelArc_20260722\\cyberpunk-b580-nr-opt\\artifacts\\b580-full-implementation-v1-20261003\\MAIN_VIT_THROUGHPUT_COMPOSITION_r17.json",
+        "sha256": "c6b23f4310ad15974bfd44640735c4faf842f231b6920efae447c294b16f4045"
+      },
+      {
+        "path": "E:\\ComfyUI-aki-v3-IntelArc_20260722\\cyberpunk-b580-nr-opt\\artifacts\\b580-full-implementation-v1-20261003\\MAIN_SWIN_THROUGHPUT_COMPOSITION_r17.json",
+        "sha256": "46cc7c75897b7b2369d8d1f33849814b1d4e65bdc8dcff893683229731b4db6e"
+      }
+    ],
+    "status": "FROZEN_CPU_READY_VIT_GPU_33_34_QUEUED_SWIN_HOLD",
+    "default_compile_workers": 16,
+    "GPU_executed": false,
+    "game_deployed": false,
+    "failure": {
+      "result": {
+        "path": "E:\\Codex-NR-Experiments\\cyberpunk-opt\\b580-full-implementation-v1-20261003\\luna\\phase2\\attempt-33-r17-e-vit-rowonce-p4\\RESULTS.json",
+        "sha256": "d3865b60e079f8c103d3591a553b8466282a482e8841b0e8127048ea30fd1d31",
+        "bytes": 478898
+      },
+      "stage": "candidate precompile, before capture or measurement",
+      "numerical_or_speed_claim": false,
+      "repair": {
+        "path": "E:\\ComfyUI-aki-v3-IntelArc_20260722\\cyberpunk-b580-nr-opt\\artifacts\\b580-full-implementation-v1-20261003\\MAIN_VIT_JIT_REPAIR_r18.json",
+        "sha256": "49939ed83d6ca80eb8f9385c48838a137a3db29130ea3df5ac5d03d714d861d8",
+        "bytes": 2428
+      }
+    }
+  },
+  "native_raw2_dispatch": {
+    "path": "E:\\ComfyUI-aki-v3-IntelArc_20260722\\cyberpunk-b580-nr-opt\\artifacts\\b580-full-implementation-v1-20261003\\R15_NATIVE_RAW2_MAIN_DISPATCH.json",
+    "sha256": "978e61479a8a886b79553a96f00d43db63abc9faa5cb6ab051e5a7ffde5f84a2"
+  },
+  "current_r18": {
+    "manifest": {
+      "path": "E:\\ComfyUI-aki-v3-IntelArc_20260722\\cyberpunk-b580-nr-opt\\artifacts\\b580-full-implementation-v1-20261003\\phase2-complete\\PHASE2-r18.json",
+      "sha256": "699ee05cf1008610a4772dfeebe6398d7099c7c1ed141cbbaa91967da0a05f7f",
+      "bytes": 375817
+    },
+    "CPU": {
+      "path": "E:\\Codex-NR-Experiments\\cyberpunk-opt\\b580-full-implementation-v1-20261003\\luna\\phase2\\cpu\\MAIN_R18_JIT_REPAIR_CPU.json",
+      "sha256": "7f2d12f28fea4ed313cf7c67b8fb628568bc42f730c6bc1f279f3a1928cfc71e",
+      "bytes": 112694
+    },
+    "dispatch": {
+      "path": "E:\\ComfyUI-aki-v3-IntelArc_20260722\\cyberpunk-b580-nr-opt\\artifacts\\b580-full-implementation-v1-20261003\\R18_MAIN_DISPATCH.json",
+      "sha256": "69eaa1bb32c36bb6428977a71ad9cc720e02be9e62f64ca815e7a8aa7fc08b84",
+      "bytes": 2266
+    },
+    "source_files": 261,
+    "arms": 114,
+    "status": "VIT_QUALIFIED_UNADOPTED_SWIN_SERIAL_GPU_DISPATCHED",
+    "vit_GPU_results": {
+      "path": "E:\\ComfyUI-aki-v3-IntelArc_20260722\\cyberpunk-b580-nr-opt\\artifacts\\b580-full-implementation-v1-20261003\\R18_VIT_THROUGHPUT_MAIN_REVIEW.json",
+      "sha256": "22352d87eac1e52859fff33acdd12fd84a90b8f69c9c601f55666d04a56f1404"
+    },
+    "next_serial_attempts": [
+      37,
+      38,
+      39
+    ]
+  },
+  "native_raw2_review": {
+    "path": "E:\\ComfyUI-aki-v3-IntelArc_20260722\\cyberpunk-b580-nr-opt\\artifacts\\b580-full-implementation-v1-20261003\\NATIVE_RAW2_MAIN_REVIEW.json",
+    "sha256": "0f183c189f7c4bfce61d33179e727ec4da73ee148cc0896e1a19ca3fc83caddb",
+    "bytes": 1425
+  },
+  "amd_latest_research": {
+    "review": {
+      "path": "E:\\ComfyUI-aki-v3-IntelArc_20260722\\cyberpunk-b580-nr-opt\\artifacts\\b580-full-implementation-v1-20261003\\AMD_LATEST_MAIN_REVIEW.json",
+      "sha256": "28e123d151152c8eaf2254334944d00ac2620db73dbc1615a6d790ce16f0b651",
+      "bytes": 2488
+    },
+    "report": {
+      "path": "E:\\ComfyUI-aki-v3-IntelArc_20260722\\cyberpunk-b580-nr-opt\\artifacts\\b580-full-implementation-v1-20261003\\reviews\\amd-20261003-current720-reanalysis\\REPORT.md",
+      "sha256": "e9758964014158bf17ffe99147a89e61dd68294606b9a4fb3d08281ccb845763",
+      "bytes": 53683
+    },
+    "plan": {
+      "path": "E:\\ComfyUI-aki-v3-IntelArc_20260722\\cyberpunk-b580-nr-opt\\artifacts\\b580-full-implementation-v1-20261003\\reviews\\amd-20261003-current720-reanalysis\\PLAN.json",
+      "sha256": "05b3ff102e8d37d5b882acfe94ae9dc9f2d3ce25012f7597ecda567cfa19324f",
+      "bytes": 41808
+    },
+    "status": "RESEARCH_REVIEWED_NEW_MODULE_PLANS_READY",
+    "new_speed_claim": false
+  },
+  "test_progress_summary": {
+    "report": {
+      "path": "E:\\ComfyUI-aki-v3-IntelArc_20260722\\cyberpunk-b580-nr-opt\\artifacts\\b580-full-implementation-v1-20261003\\TEST_PROGRESS_20261003.md",
+      "sha256": "97e24f01214a7c80255405cd7d05f7369b6b0d9370e7de2bab2f32f88dff4653"
+    },
+    "scope": "accepted current720 C512+K8/all6; offline full process; no new game deployment",
+    "packages_status_is_source_inventory_only": true,
+    "complete_GPU_qualification": false,
+    "standard_fdp_confirmed_offline_gain_ms": 1.79978633333333,
+    "fdp_style1_single_bracket_gain_ms": 8.12552887179487,
+    "fdp_style2_single_bracket_gain_ms": 7.9941159487179485,
+    "game_visual_review_pending": true,
+    "game_baseline_ms": [
+      55,
+      60
+    ],
+    "vit_r18_complete_not_adopted": true,
+    "swin_repair_in_progress_attempts": [
+      37,
+      38,
+      39
+    ],
+    "amd_new_six_plans_GPU_tested": false,
+    "per_kernel_AMD_diff_in_progress": true,
+    "GPU_executed_by_Main": false,
+    "game_writes": 0
+  },
+  "r18_swin_review": {
+    "receipt": "E:\\ComfyUI-aki-v3-IntelArc_20260722\\cyberpunk-b580-nr-opt\\artifacts\\b580-full-implementation-v1-20261003\\R18_SWIN_THROUGHPUT_MAIN_REVIEW.json",
+    "candidate_adopted": false,
+    "arms_completed": [
+      37,
+      "38b",
+      39
+    ],
+    "whole_frame_gain_ms": [
+      -4.217684256410266,
+      -9.816304769230761,
+      -3.726968487179491
+    ],
+    "Main_GPU_executed": false,
+    "current_game_changed": false
+  }
+}

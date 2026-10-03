@@ -1,0 +1,7020 @@
+{
+  "schema": "current720-cold-worker-checkbox-v1",
+  "profiles": {
+    "audit_impl_swin_baseline_accepted720": {
+      "label": "局部模块对照",
+      "packages": [],
+      "legacy": [
+        [
+          "c512_qkv_library_720",
+          true
+        ],
+        [
+          "native_k8_720",
+          true
+        ],
+        [
+          "decoder_gather_unround_720",
+          true
+        ],
+        [
+          "c32_hidden_native_720",
+          true
+        ],
+        [
+          "c512_probability_unround_720",
+          true
+        ],
+        [
+          "c128_pairwise_720",
+          true
+        ],
+        [
+          "c128_dual_qkv_720",
+          false
+        ],
+        [
+          "c64_attention_project_720",
+          true
+        ],
+        [
+          "c128_attention_project_720",
+          true
+        ]
+      ],
+      "numeric": [
+        [
+          "branch_accum_families",
+          [
+            "c128"
+          ]
+        ],
+        [
+          "history_value",
+          "fp32_fractional"
+        ],
+        [
+          "front_noise",
+          "native_both"
+        ]
+      ],
+      "hooks": [],
+      "source_group": "swin-mlp",
+      "source_profile": "swin_baseline_accepted720",
+      "pending_validation": true
+    },
+    "audit_impl_swin_p04_c64": {
+      "label": "C64 分支原生累加",
+      "packages": [
+        "P04"
+      ],
+      "legacy": [
+        [
+          "c512_qkv_library_720",
+          true
+        ],
+        [
+          "native_k8_720",
+          true
+        ],
+        [
+          "decoder_gather_unround_720",
+          true
+        ],
+        [
+          "c32_hidden_native_720",
+          true
+        ],
+        [
+          "c512_probability_unround_720",
+          true
+        ],
+        [
+          "c128_pairwise_720",
+          true
+        ],
+        [
+          "c128_dual_qkv_720",
+          false
+        ],
+        [
+          "c64_attention_project_720",
+          true
+        ],
+        [
+          "c128_attention_project_720",
+          true
+        ]
+      ],
+      "numeric": [
+        [
+          "branch_accum_families",
+          [
+            "c64",
+            "c128"
+          ]
+        ],
+        [
+          "history_value",
+          "fp32_fractional"
+        ],
+        [
+          "front_noise",
+          "native_both"
+        ]
+      ],
+      "hooks": [],
+      "source_group": "swin-mlp",
+      "source_profile": "swin_p04_c64",
+      "pending_validation": true
+    },
+    "audit_impl_swin_p04_c256": {
+      "label": "C256 分支原生累加",
+      "packages": [
+        "P04"
+      ],
+      "legacy": [
+        [
+          "c512_qkv_library_720",
+          true
+        ],
+        [
+          "native_k8_720",
+          true
+        ],
+        [
+          "decoder_gather_unround_720",
+          true
+        ],
+        [
+          "c32_hidden_native_720",
+          true
+        ],
+        [
+          "c512_probability_unround_720",
+          true
+        ],
+        [
+          "c128_pairwise_720",
+          true
+        ],
+        [
+          "c128_dual_qkv_720",
+          false
+        ],
+        [
+          "c64_attention_project_720",
+          true
+        ],
+        [
+          "c128_attention_project_720",
+          true
+        ]
+      ],
+      "numeric": [
+        [
+          "branch_accum_families",
+          [
+            "c128",
+            "c256"
+          ]
+        ],
+        [
+          "history_value",
+          "fp32_fractional"
+        ],
+        [
+          "front_noise",
+          "native_both"
+        ]
+      ],
+      "hooks": [],
+      "source_group": "swin-mlp",
+      "source_profile": "swin_p04_c256",
+      "pending_validation": true
+    },
+    "audit_impl_swin_p04_c64_c256": {
+      "label": "C64＋C256 分支原生累加",
+      "packages": [
+        "P04"
+      ],
+      "legacy": [
+        [
+          "c512_qkv_library_720",
+          true
+        ],
+        [
+          "native_k8_720",
+          true
+        ],
+        [
+          "decoder_gather_unround_720",
+          true
+        ],
+        [
+          "c32_hidden_native_720",
+          true
+        ],
+        [
+          "c512_probability_unround_720",
+          true
+        ],
+        [
+          "c128_pairwise_720",
+          true
+        ],
+        [
+          "c128_dual_qkv_720",
+          false
+        ],
+        [
+          "c64_attention_project_720",
+          true
+        ],
+        [
+          "c128_attention_project_720",
+          true
+        ]
+      ],
+      "numeric": [
+        [
+          "branch_accum_families",
+          [
+            "c64",
+            "c128",
+            "c256"
+          ]
+        ],
+        [
+          "history_value",
+          "fp32_fractional"
+        ],
+        [
+          "front_noise",
+          "native_both"
+        ]
+      ],
+      "hooks": [],
+      "source_group": "swin-mlp",
+      "source_profile": "swin_p04_c64_c256",
+      "pending_validation": true
+    },
+    "audit_impl_swin_p07_mlp_wide": {
+      "label": "局部分支共享输入",
+      "packages": [
+        "P07"
+      ],
+      "legacy": [
+        [
+          "c512_qkv_library_720",
+          true
+        ],
+        [
+          "native_k8_720",
+          true
+        ],
+        [
+          "decoder_gather_unround_720",
+          true
+        ],
+        [
+          "c32_hidden_native_720",
+          true
+        ],
+        [
+          "c512_probability_unround_720",
+          true
+        ],
+        [
+          "c128_pairwise_720",
+          true
+        ],
+        [
+          "c128_dual_qkv_720",
+          false
+        ],
+        [
+          "c64_attention_project_720",
+          true
+        ],
+        [
+          "c128_attention_project_720",
+          true
+        ]
+      ],
+      "numeric": [
+        [
+          "branch_accum_families",
+          [
+            "c64",
+            "c128",
+            "c256"
+          ]
+        ],
+        [
+          "history_value",
+          "fp32_fractional"
+        ],
+        [
+          "front_noise",
+          "native_both"
+        ]
+      ],
+      "hooks": [
+        {
+          "module": "audit_swin_720_v1",
+          "call": "installed",
+          "stage": "before_numeric",
+          "kwargs": {
+            "mlp_wide": true,
+            "fuse_pad": false,
+            "qkv_wide": false,
+            "qk_norm": "ordered_half",
+            "denominator": "ordered_half",
+            "wide_score": false,
+            "wide_value": false,
+            "crop_queries": false,
+            "prefer_bm32": false,
+            "attention_families": [],
+            "first_decoder32": false
+          }
+        }
+      ],
+      "source_group": "swin-mlp",
+      "source_profile": "swin_p07_mlp_wide",
+      "pending_validation": true
+    },
+    "audit_impl_swin_p07_qkv_wide": {
+      "label": "局部投影共享输入",
+      "packages": [
+        "P07"
+      ],
+      "legacy": [
+        [
+          "c512_qkv_library_720",
+          true
+        ],
+        [
+          "native_k8_720",
+          true
+        ],
+        [
+          "decoder_gather_unround_720",
+          true
+        ],
+        [
+          "c32_hidden_native_720",
+          true
+        ],
+        [
+          "c512_probability_unround_720",
+          true
+        ],
+        [
+          "c128_pairwise_720",
+          true
+        ],
+        [
+          "c128_dual_qkv_720",
+          false
+        ],
+        [
+          "c64_attention_project_720",
+          true
+        ],
+        [
+          "c128_attention_project_720",
+          true
+        ]
+      ],
+      "numeric": [
+        [
+          "branch_accum_families",
+          [
+            "c128"
+          ]
+        ],
+        [
+          "history_value",
+          "fp32_fractional"
+        ],
+        [
+          "front_noise",
+          "native_both"
+        ]
+      ],
+      "hooks": [
+        {
+          "module": "audit_swin_720_v1",
+          "call": "installed",
+          "stage": "before_numeric",
+          "kwargs": {
+            "mlp_wide": false,
+            "fuse_pad": false,
+            "qkv_wide": true,
+            "qk_norm": "ordered_half",
+            "denominator": "ordered_half",
+            "wide_score": false,
+            "wide_value": false,
+            "crop_queries": false,
+            "prefer_bm32": false,
+            "attention_families": [],
+            "first_decoder32": false
+          }
+        }
+      ],
+      "source_group": "swin-mlp",
+      "source_profile": "swin_p07_qkv_wide",
+      "pending_validation": true
+    },
+    "audit_impl_swin_p08_qk_fp32": {
+      "label": "局部注意力原生归一化",
+      "packages": [
+        "P08",
+        "P32"
+      ],
+      "legacy": [
+        [
+          "c512_qkv_library_720",
+          true
+        ],
+        [
+          "native_k8_720",
+          true
+        ],
+        [
+          "decoder_gather_unround_720",
+          true
+        ],
+        [
+          "c32_hidden_native_720",
+          true
+        ],
+        [
+          "c512_probability_unround_720",
+          true
+        ],
+        [
+          "c128_pairwise_720",
+          true
+        ],
+        [
+          "c128_dual_qkv_720",
+          false
+        ],
+        [
+          "c64_attention_project_720",
+          true
+        ],
+        [
+          "c128_attention_project_720",
+          true
+        ]
+      ],
+      "numeric": [
+        [
+          "branch_accum_families",
+          [
+            "c128"
+          ]
+        ],
+        [
+          "history_value",
+          "fp32_fractional"
+        ],
+        [
+          "front_noise",
+          "native_both"
+        ]
+      ],
+      "hooks": [
+        {
+          "module": "audit_swin_720_v1",
+          "call": "installed",
+          "stage": "before_numeric",
+          "kwargs": {
+            "mlp_wide": false,
+            "fuse_pad": false,
+            "qkv_wide": false,
+            "qk_norm": "fp32",
+            "denominator": "ordered_half",
+            "wide_score": false,
+            "wide_value": false,
+            "crop_queries": false,
+            "prefer_bm32": false,
+            "attention_families": [],
+            "first_decoder32": false
+          }
+        }
+      ],
+      "source_group": "swin-mlp",
+      "source_profile": "swin_p08_qk_fp32",
+      "pending_validation": true
+    },
+    "audit_impl_swin_p08_tail_ordered": {
+      "label": "局部注意力完整尾段",
+      "packages": [
+        "P08"
+      ],
+      "legacy": [
+        [
+          "c512_qkv_library_720",
+          true
+        ],
+        [
+          "native_k8_720",
+          true
+        ],
+        [
+          "decoder_gather_unround_720",
+          true
+        ],
+        [
+          "c32_hidden_native_720",
+          true
+        ],
+        [
+          "c512_probability_unround_720",
+          true
+        ],
+        [
+          "c128_pairwise_720",
+          true
+        ],
+        [
+          "c128_dual_qkv_720",
+          false
+        ],
+        [
+          "c64_attention_project_720",
+          true
+        ],
+        [
+          "c128_attention_project_720",
+          true
+        ]
+      ],
+      "numeric": [
+        [
+          "branch_accum_families",
+          [
+            "c128"
+          ]
+        ],
+        [
+          "history_value",
+          "fp32_fractional"
+        ],
+        [
+          "front_noise",
+          "native_both"
+        ]
+      ],
+      "hooks": [
+        {
+          "module": "audit_swin_720_v1",
+          "call": "installed",
+          "stage": "before_numeric",
+          "kwargs": {
+            "mlp_wide": false,
+            "fuse_pad": false,
+            "qkv_wide": false,
+            "qk_norm": "ordered_half",
+            "denominator": "ordered_half",
+            "wide_score": false,
+            "wide_value": false,
+            "crop_queries": false,
+            "prefer_bm32": false,
+            "attention_families": [
+              32,
+              64,
+              128,
+              256
+            ],
+            "first_decoder32": false
+          }
+        }
+      ],
+      "source_group": "swin-mlp",
+      "source_profile": "swin_p08_tail_ordered",
+      "pending_validation": true
+    },
+    "audit_impl_swin_p08_denominator_fp32": {
+      "label": "局部注意力原生分母",
+      "packages": [
+        "P08",
+        "P32"
+      ],
+      "legacy": [
+        [
+          "c512_qkv_library_720",
+          true
+        ],
+        [
+          "native_k8_720",
+          true
+        ],
+        [
+          "decoder_gather_unround_720",
+          true
+        ],
+        [
+          "c32_hidden_native_720",
+          true
+        ],
+        [
+          "c512_probability_unround_720",
+          true
+        ],
+        [
+          "c128_pairwise_720",
+          true
+        ],
+        [
+          "c128_dual_qkv_720",
+          false
+        ],
+        [
+          "c64_attention_project_720",
+          true
+        ],
+        [
+          "c128_attention_project_720",
+          true
+        ]
+      ],
+      "numeric": [
+        [
+          "branch_accum_families",
+          [
+            "c128"
+          ]
+        ],
+        [
+          "history_value",
+          "fp32_fractional"
+        ],
+        [
+          "front_noise",
+          "native_both"
+        ]
+      ],
+      "hooks": [
+        {
+          "module": "audit_swin_720_v1",
+          "call": "installed",
+          "stage": "before_numeric",
+          "kwargs": {
+            "mlp_wide": false,
+            "fuse_pad": false,
+            "qkv_wide": false,
+            "qk_norm": "ordered_half",
+            "denominator": "fp32",
+            "wide_score": false,
+            "wide_value": false,
+            "crop_queries": false,
+            "prefer_bm32": false,
+            "attention_families": [
+              32,
+              64,
+              128,
+              256
+            ],
+            "first_decoder32": false
+          }
+        }
+      ],
+      "source_group": "swin-mlp",
+      "source_profile": "swin_p08_denominator_fp32",
+      "pending_validation": true
+    },
+    "audit_impl_swin_p08_score_wide": {
+      "label": "局部注意力扩大分块",
+      "packages": [
+        "P08"
+      ],
+      "legacy": [
+        [
+          "c512_qkv_library_720",
+          true
+        ],
+        [
+          "native_k8_720",
+          true
+        ],
+        [
+          "decoder_gather_unround_720",
+          true
+        ],
+        [
+          "c32_hidden_native_720",
+          true
+        ],
+        [
+          "c512_probability_unround_720",
+          true
+        ],
+        [
+          "c128_pairwise_720",
+          true
+        ],
+        [
+          "c128_dual_qkv_720",
+          false
+        ],
+        [
+          "c64_attention_project_720",
+          true
+        ],
+        [
+          "c128_attention_project_720",
+          true
+        ]
+      ],
+      "numeric": [
+        [
+          "branch_accum_families",
+          [
+            "c128"
+          ]
+        ],
+        [
+          "history_value",
+          "fp32_fractional"
+        ],
+        [
+          "front_noise",
+          "native_both"
+        ]
+      ],
+      "hooks": [
+        {
+          "module": "audit_swin_720_v1",
+          "call": "installed",
+          "stage": "before_numeric",
+          "kwargs": {
+            "mlp_wide": false,
+            "fuse_pad": false,
+            "qkv_wide": false,
+            "qk_norm": "ordered_half",
+            "denominator": "ordered_half",
+            "wide_score": true,
+            "wide_value": false,
+            "crop_queries": false,
+            "prefer_bm32": false,
+            "attention_families": [
+              32,
+              64,
+              128,
+              256
+            ],
+            "first_decoder32": false
+          }
+        }
+      ],
+      "source_group": "swin-mlp",
+      "source_profile": "swin_p08_score_wide",
+      "pending_validation": true
+    },
+    "audit_impl_swin_p08_value_wide": {
+      "label": "局部注意力完整值累加",
+      "packages": [
+        "P08"
+      ],
+      "legacy": [
+        [
+          "c512_qkv_library_720",
+          true
+        ],
+        [
+          "native_k8_720",
+          true
+        ],
+        [
+          "decoder_gather_unround_720",
+          true
+        ],
+        [
+          "c32_hidden_native_720",
+          true
+        ],
+        [
+          "c512_probability_unround_720",
+          true
+        ],
+        [
+          "c128_pairwise_720",
+          true
+        ],
+        [
+          "c128_dual_qkv_720",
+          false
+        ],
+        [
+          "c64_attention_project_720",
+          true
+        ],
+        [
+          "c128_attention_project_720",
+          true
+        ]
+      ],
+      "numeric": [
+        [
+          "branch_accum_families",
+          [
+            "c128"
+          ]
+        ],
+        [
+          "history_value",
+          "fp32_fractional"
+        ],
+        [
+          "front_noise",
+          "native_both"
+        ]
+      ],
+      "hooks": [
+        {
+          "module": "audit_swin_720_v1",
+          "call": "installed",
+          "stage": "before_numeric",
+          "kwargs": {
+            "mlp_wide": false,
+            "fuse_pad": false,
+            "qkv_wide": false,
+            "qk_norm": "ordered_half",
+            "denominator": "ordered_half",
+            "wide_score": false,
+            "wide_value": true,
+            "crop_queries": false,
+            "prefer_bm32": false,
+            "attention_families": [
+              32,
+              64,
+              128,
+              256
+            ],
+            "first_decoder32": false
+          }
+        }
+      ],
+      "source_group": "swin-mlp",
+      "source_profile": "swin_p08_value_wide",
+      "pending_validation": true
+    },
+    "audit_impl_swin_p08_c128_bm32": {
+      "label": "C128 注意力扩大分块",
+      "packages": [
+        "P08"
+      ],
+      "legacy": [
+        [
+          "c512_qkv_library_720",
+          true
+        ],
+        [
+          "native_k8_720",
+          true
+        ],
+        [
+          "decoder_gather_unround_720",
+          true
+        ],
+        [
+          "c32_hidden_native_720",
+          true
+        ],
+        [
+          "c512_probability_unround_720",
+          true
+        ],
+        [
+          "c128_pairwise_720",
+          true
+        ],
+        [
+          "c128_dual_qkv_720",
+          false
+        ],
+        [
+          "c64_attention_project_720",
+          true
+        ],
+        [
+          "c128_attention_project_720",
+          true
+        ]
+      ],
+      "numeric": [
+        [
+          "branch_accum_families",
+          [
+            "c128"
+          ]
+        ],
+        [
+          "history_value",
+          "fp32_fractional"
+        ],
+        [
+          "front_noise",
+          "native_both"
+        ]
+      ],
+      "hooks": [
+        {
+          "module": "audit_swin_720_v1",
+          "call": "installed",
+          "stage": "before_numeric",
+          "kwargs": {
+            "mlp_wide": false,
+            "fuse_pad": false,
+            "qkv_wide": false,
+            "qk_norm": "ordered_half",
+            "denominator": "ordered_half",
+            "wide_score": false,
+            "wide_value": false,
+            "crop_queries": false,
+            "prefer_bm32": true,
+            "attention_families": [
+              128
+            ],
+            "first_decoder32": false
+          }
+        }
+      ],
+      "source_group": "swin-mlp",
+      "source_profile": "swin_p08_c128_bm32",
+      "pending_validation": true
+    },
+    "audit_impl_swin_p08_c256_tail": {
+      "label": "C256 注意力完整尾段",
+      "packages": [
+        "P08"
+      ],
+      "legacy": [
+        [
+          "c512_qkv_library_720",
+          true
+        ],
+        [
+          "native_k8_720",
+          true
+        ],
+        [
+          "decoder_gather_unround_720",
+          true
+        ],
+        [
+          "c32_hidden_native_720",
+          true
+        ],
+        [
+          "c512_probability_unround_720",
+          true
+        ],
+        [
+          "c128_pairwise_720",
+          true
+        ],
+        [
+          "c128_dual_qkv_720",
+          false
+        ],
+        [
+          "c64_attention_project_720",
+          true
+        ],
+        [
+          "c128_attention_project_720",
+          true
+        ]
+      ],
+      "numeric": [
+        [
+          "branch_accum_families",
+          [
+            "c128"
+          ]
+        ],
+        [
+          "history_value",
+          "fp32_fractional"
+        ],
+        [
+          "front_noise",
+          "native_both"
+        ]
+      ],
+      "hooks": [
+        {
+          "module": "audit_swin_720_v1",
+          "call": "installed",
+          "stage": "before_numeric",
+          "kwargs": {
+            "mlp_wide": false,
+            "fuse_pad": false,
+            "qkv_wide": false,
+            "qk_norm": "ordered_half",
+            "denominator": "ordered_half",
+            "wide_score": false,
+            "wide_value": false,
+            "crop_queries": false,
+            "prefer_bm32": true,
+            "attention_families": [
+              256
+            ],
+            "first_decoder32": false
+          }
+        }
+      ],
+      "source_group": "swin-mlp",
+      "source_profile": "swin_p08_c256_tail",
+      "pending_validation": true
+    },
+    "audit_impl_swin_p08_query_crop": {
+      "label": "局部注意力仅发布有效查询",
+      "packages": [
+        "P08"
+      ],
+      "legacy": [
+        [
+          "c512_qkv_library_720",
+          true
+        ],
+        [
+          "native_k8_720",
+          true
+        ],
+        [
+          "decoder_gather_unround_720",
+          true
+        ],
+        [
+          "c32_hidden_native_720",
+          true
+        ],
+        [
+          "c512_probability_unround_720",
+          true
+        ],
+        [
+          "c128_pairwise_720",
+          true
+        ],
+        [
+          "c128_dual_qkv_720",
+          false
+        ],
+        [
+          "c64_attention_project_720",
+          true
+        ],
+        [
+          "c128_attention_project_720",
+          true
+        ]
+      ],
+      "numeric": [
+        [
+          "branch_accum_families",
+          [
+            "c128"
+          ]
+        ],
+        [
+          "history_value",
+          "fp32_fractional"
+        ],
+        [
+          "front_noise",
+          "native_both"
+        ]
+      ],
+      "hooks": [
+        {
+          "module": "audit_swin_720_v1",
+          "call": "installed",
+          "stage": "before_numeric",
+          "kwargs": {
+            "mlp_wide": false,
+            "fuse_pad": false,
+            "qkv_wide": false,
+            "qk_norm": "ordered_half",
+            "denominator": "ordered_half",
+            "wide_score": false,
+            "wide_value": false,
+            "crop_queries": true,
+            "prefer_bm32": false,
+            "attention_families": [
+              32,
+              64,
+              128,
+              256
+            ],
+            "first_decoder32": false
+          }
+        }
+      ],
+      "source_group": "swin-mlp",
+      "source_profile": "swin_p08_query_crop",
+      "pending_validation": true
+    },
+    "audit_impl_swin_p09_first_decoder32": {
+      "label": "首个 C32 解码模块改造",
+      "packages": [
+        "P09"
+      ],
+      "legacy": [
+        [
+          "c512_qkv_library_720",
+          true
+        ],
+        [
+          "native_k8_720",
+          true
+        ],
+        [
+          "decoder_gather_unround_720",
+          true
+        ],
+        [
+          "c32_hidden_native_720",
+          true
+        ],
+        [
+          "c512_probability_unround_720",
+          true
+        ],
+        [
+          "c128_pairwise_720",
+          true
+        ],
+        [
+          "c128_dual_qkv_720",
+          false
+        ],
+        [
+          "c64_attention_project_720",
+          true
+        ],
+        [
+          "c128_attention_project_720",
+          true
+        ]
+      ],
+      "numeric": [
+        [
+          "branch_accum_families",
+          [
+            "c128"
+          ]
+        ],
+        [
+          "history_value",
+          "fp32_fractional"
+        ],
+        [
+          "front_noise",
+          "native_both"
+        ]
+      ],
+      "hooks": [
+        {
+          "module": "audit_swin_720_v1",
+          "call": "installed",
+          "stage": "before_numeric",
+          "kwargs": {
+            "mlp_wide": false,
+            "fuse_pad": false,
+            "qkv_wide": false,
+            "qk_norm": "ordered_half",
+            "denominator": "ordered_half",
+            "wide_score": false,
+            "wide_value": false,
+            "crop_queries": false,
+            "prefer_bm32": true,
+            "attention_families": [],
+            "first_decoder32": true
+          }
+        }
+      ],
+      "source_group": "swin-mlp",
+      "source_profile": "swin_p09_first_decoder32",
+      "pending_validation": true
+    },
+    "audit_impl_swin_mlp_window_gather": {
+      "label": "局部分支与窗口加载组合",
+      "packages": [
+        "P04",
+        "P07",
+        "P08",
+        "P09"
+      ],
+      "legacy": [
+        [
+          "c512_qkv_library_720",
+          true
+        ],
+        [
+          "native_k8_720",
+          true
+        ],
+        [
+          "decoder_gather_unround_720",
+          true
+        ],
+        [
+          "c32_hidden_native_720",
+          true
+        ],
+        [
+          "c512_probability_unround_720",
+          true
+        ],
+        [
+          "c128_pairwise_720",
+          true
+        ],
+        [
+          "c128_dual_qkv_720",
+          false
+        ],
+        [
+          "c64_attention_project_720",
+          true
+        ],
+        [
+          "c128_attention_project_720",
+          true
+        ]
+      ],
+      "numeric": [
+        [
+          "branch_accum_families",
+          [
+            "c64",
+            "c128",
+            "c256"
+          ]
+        ],
+        [
+          "history_value",
+          "fp32_fractional"
+        ],
+        [
+          "front_noise",
+          "native_both"
+        ]
+      ],
+      "hooks": [
+        {
+          "module": "audit_swin_720_v1",
+          "call": "installed",
+          "stage": "before_numeric",
+          "kwargs": {
+            "mlp_wide": true,
+            "fuse_pad": true,
+            "qkv_wide": false,
+            "qk_norm": "ordered_half",
+            "denominator": "ordered_half",
+            "wide_score": false,
+            "wide_value": false,
+            "crop_queries": false,
+            "prefer_bm32": true,
+            "attention_families": [
+              32,
+              64,
+              128,
+              256
+            ],
+            "first_decoder32": true
+          }
+        }
+      ],
+      "source_group": "swin-mlp",
+      "source_profile": "swin_mlp_window_gather",
+      "pending_validation": true
+    },
+    "audit_impl_swin_attention_native": {
+      "label": "局部注意力原生计算组合",
+      "packages": [
+        "P07",
+        "P08",
+        "P09"
+      ],
+      "legacy": [
+        [
+          "c512_qkv_library_720",
+          true
+        ],
+        [
+          "native_k8_720",
+          true
+        ],
+        [
+          "decoder_gather_unround_720",
+          true
+        ],
+        [
+          "c32_hidden_native_720",
+          true
+        ],
+        [
+          "c512_probability_unround_720",
+          true
+        ],
+        [
+          "c128_pairwise_720",
+          true
+        ],
+        [
+          "c128_dual_qkv_720",
+          false
+        ],
+        [
+          "c64_attention_project_720",
+          true
+        ],
+        [
+          "c128_attention_project_720",
+          true
+        ]
+      ],
+      "numeric": [
+        [
+          "branch_accum_families",
+          [
+            "c128"
+          ]
+        ],
+        [
+          "history_value",
+          "fp32_fractional"
+        ],
+        [
+          "front_noise",
+          "native_both"
+        ]
+      ],
+      "hooks": [
+        {
+          "module": "audit_swin_720_v1",
+          "call": "installed",
+          "stage": "before_numeric",
+          "kwargs": {
+            "mlp_wide": false,
+            "fuse_pad": false,
+            "qkv_wide": true,
+            "qk_norm": "fp32",
+            "denominator": "fp32",
+            "wide_score": true,
+            "wide_value": true,
+            "crop_queries": true,
+            "prefer_bm32": true,
+            "attention_families": [
+              32,
+              64,
+              128,
+              256
+            ],
+            "first_decoder32": true
+          }
+        }
+      ],
+      "source_group": "swin-mlp",
+      "source_profile": "swin_attention_native",
+      "pending_validation": true
+    },
+    "audit_impl_swin_all": {
+      "label": "局部模块完整组合",
+      "packages": [
+        "P04",
+        "P07",
+        "P08",
+        "P09"
+      ],
+      "legacy": [
+        [
+          "c512_qkv_library_720",
+          true
+        ],
+        [
+          "native_k8_720",
+          true
+        ],
+        [
+          "decoder_gather_unround_720",
+          true
+        ],
+        [
+          "c32_hidden_native_720",
+          true
+        ],
+        [
+          "c512_probability_unround_720",
+          true
+        ],
+        [
+          "c128_pairwise_720",
+          true
+        ],
+        [
+          "c128_dual_qkv_720",
+          false
+        ],
+        [
+          "c64_attention_project_720",
+          true
+        ],
+        [
+          "c128_attention_project_720",
+          true
+        ]
+      ],
+      "numeric": [
+        [
+          "branch_accum_families",
+          [
+            "c64",
+            "c128",
+            "c256"
+          ]
+        ],
+        [
+          "history_value",
+          "fp32_fractional"
+        ],
+        [
+          "front_noise",
+          "native_both"
+        ]
+      ],
+      "hooks": [
+        {
+          "module": "audit_swin_720_v1",
+          "call": "installed",
+          "stage": "before_numeric",
+          "kwargs": {
+            "mlp_wide": true,
+            "fuse_pad": true,
+            "qkv_wide": true,
+            "qk_norm": "fp32",
+            "denominator": "fp32",
+            "wide_score": true,
+            "wide_value": true,
+            "crop_queries": true,
+            "prefer_bm32": true,
+            "attention_families": [
+              32,
+              64,
+              128,
+              256
+            ],
+            "first_decoder32": true
+          }
+        }
+      ],
+      "source_group": "swin-mlp",
+      "source_profile": "swin_all",
+      "pending_validation": true
+    },
+    "audit_impl_c512_vit_native_numeric_720_v1": {
+      "label": "全局注意力原生数值组合（顺序分母）",
+      "packages": [
+        "P01",
+        "P03"
+      ],
+      "legacy": [
+        [
+          "c512_qkv_library_720",
+          true
+        ],
+        [
+          "native_k8_720",
+          true
+        ],
+        [
+          "decoder_gather_unround_720",
+          true
+        ],
+        [
+          "c32_hidden_native_720",
+          true
+        ],
+        [
+          "c512_probability_unround_720",
+          true
+        ],
+        [
+          "c128_pairwise_720",
+          true
+        ],
+        [
+          "c128_dual_qkv_720",
+          false
+        ],
+        [
+          "c64_attention_project_720",
+          true
+        ],
+        [
+          "c128_attention_project_720",
+          true
+        ]
+      ],
+      "numeric": [
+        [
+          "branch_accum_families",
+          [
+            "c128"
+          ]
+        ],
+        [
+          "history_value",
+          "fp32_fractional"
+        ],
+        [
+          "front_noise",
+          "native_both"
+        ],
+        [
+          "vit_qkv_full_k",
+          true
+        ],
+        [
+          "vit_projection_full_k",
+          true
+        ],
+        [
+          "vit_exp_zero_constant",
+          true
+        ],
+        [
+          "vit_denominator",
+          "ordered_fused"
+        ],
+        [
+          "vit_norm_fma",
+          true
+        ],
+        [
+          "vit_exp_fma",
+          true
+        ]
+      ],
+      "hooks": [
+        {
+          "module": "audit_vit_c512_720_v1",
+          "call": "installed",
+          "stage": "before_numeric",
+          "kwargs": {
+            "vit_qkv_full_k": true,
+            "vit_projection_full_k": true,
+            "vit_exp_zero_constant": true,
+            "vit_norm_fma": true,
+            "vit_exp_fma": true,
+            "profile": "numeric",
+            "before_numeric": true,
+            "denominator": "ordered_fused"
+          }
+        }
+      ],
+      "source_group": "c512-vit",
+      "source_profile": "c512-vit-native-numeric-720-v1",
+      "pending_validation": true
+    },
+    "audit_impl_c512_vit_native_numeric_fp32_denominator_720_v1": {
+      "label": "全局注意力原生数值组合（归约分母）",
+      "packages": [
+        "P32"
+      ],
+      "legacy": [
+        [
+          "c512_qkv_library_720",
+          true
+        ],
+        [
+          "native_k8_720",
+          true
+        ],
+        [
+          "decoder_gather_unround_720",
+          true
+        ],
+        [
+          "c32_hidden_native_720",
+          true
+        ],
+        [
+          "c512_probability_unround_720",
+          true
+        ],
+        [
+          "c128_pairwise_720",
+          true
+        ],
+        [
+          "c128_dual_qkv_720",
+          false
+        ],
+        [
+          "c64_attention_project_720",
+          true
+        ],
+        [
+          "c128_attention_project_720",
+          true
+        ]
+      ],
+      "numeric": [
+        [
+          "branch_accum_families",
+          [
+            "c128"
+          ]
+        ],
+        [
+          "history_value",
+          "fp32_fractional"
+        ],
+        [
+          "front_noise",
+          "native_both"
+        ],
+        [
+          "vit_qkv_full_k",
+          true
+        ],
+        [
+          "vit_projection_full_k",
+          true
+        ],
+        [
+          "vit_exp_zero_constant",
+          true
+        ],
+        [
+          "vit_denominator",
+          "fp32_reduction"
+        ],
+        [
+          "vit_norm_fma",
+          true
+        ],
+        [
+          "vit_exp_fma",
+          true
+        ]
+      ],
+      "hooks": [
+        {
+          "module": "audit_vit_c512_720_v1",
+          "call": "installed",
+          "stage": "before_numeric",
+          "kwargs": {
+            "vit_qkv_full_k": true,
+            "vit_projection_full_k": true,
+            "vit_exp_zero_constant": true,
+            "vit_norm_fma": true,
+            "vit_exp_fma": true,
+            "profile": "numeric",
+            "before_numeric": true,
+            "denominator": "fp32_reduction"
+          }
+        }
+      ],
+      "source_group": "c512-vit",
+      "source_profile": "c512-vit-native-numeric-fp32-denominator-720-v1",
+      "pending_validation": true
+    },
+    "audit_impl_c512_vit_qkv_full_k_720_v2": {
+      "label": "全局输入投影完整累加",
+      "packages": [
+        "P03"
+      ],
+      "legacy": [
+        [
+          "c512_qkv_library_720",
+          true
+        ],
+        [
+          "native_k8_720",
+          true
+        ],
+        [
+          "decoder_gather_unround_720",
+          true
+        ],
+        [
+          "c32_hidden_native_720",
+          true
+        ],
+        [
+          "c512_probability_unround_720",
+          true
+        ],
+        [
+          "c128_pairwise_720",
+          true
+        ],
+        [
+          "c128_dual_qkv_720",
+          false
+        ],
+        [
+          "c64_attention_project_720",
+          true
+        ],
+        [
+          "c128_attention_project_720",
+          true
+        ]
+      ],
+      "numeric": [
+        [
+          "branch_accum_families",
+          [
+            "c128"
+          ]
+        ],
+        [
+          "history_value",
+          "fp32_fractional"
+        ],
+        [
+          "front_noise",
+          "native_both"
+        ],
+        [
+          "vit_qkv_full_k",
+          true
+        ]
+      ],
+      "hooks": [
+        {
+          "module": "audit_vit_c512_720_v1",
+          "call": "installed",
+          "stage": "before_numeric",
+          "kwargs": {
+            "vit_qkv_full_k": true,
+            "vit_projection_full_k": false,
+            "vit_exp_zero_constant": false,
+            "vit_norm_fma": false,
+            "vit_exp_fma": false,
+            "profile": "numeric",
+            "before_numeric": true,
+            "denominator": "reference"
+          }
+        }
+      ],
+      "source_group": "c512-vit",
+      "source_profile": "c512-vit-qkv-full-k-720-v2",
+      "pending_validation": true
+    },
+    "audit_impl_c512_vit_projection_full_k_720_v2": {
+      "label": "全局输出投影完整累加",
+      "packages": [
+        "P03"
+      ],
+      "legacy": [
+        [
+          "c512_qkv_library_720",
+          true
+        ],
+        [
+          "native_k8_720",
+          true
+        ],
+        [
+          "decoder_gather_unround_720",
+          true
+        ],
+        [
+          "c32_hidden_native_720",
+          true
+        ],
+        [
+          "c512_probability_unround_720",
+          true
+        ],
+        [
+          "c128_pairwise_720",
+          true
+        ],
+        [
+          "c128_dual_qkv_720",
+          false
+        ],
+        [
+          "c64_attention_project_720",
+          true
+        ],
+        [
+          "c128_attention_project_720",
+          true
+        ]
+      ],
+      "numeric": [
+        [
+          "branch_accum_families",
+          [
+            "c128"
+          ]
+        ],
+        [
+          "history_value",
+          "fp32_fractional"
+        ],
+        [
+          "front_noise",
+          "native_both"
+        ],
+        [
+          "vit_projection_full_k",
+          true
+        ]
+      ],
+      "hooks": [
+        {
+          "module": "audit_vit_c512_720_v1",
+          "call": "installed",
+          "stage": "before_numeric",
+          "kwargs": {
+            "vit_qkv_full_k": false,
+            "vit_projection_full_k": true,
+            "vit_exp_zero_constant": false,
+            "vit_norm_fma": false,
+            "vit_exp_fma": false,
+            "profile": "numeric",
+            "before_numeric": true,
+            "denominator": "reference"
+          }
+        }
+      ],
+      "source_group": "c512-vit",
+      "source_profile": "c512-vit-projection-full-k-720-v2",
+      "pending_validation": true
+    },
+    "audit_impl_c512_vit_native_norm_720_v2": {
+      "label": "全局归一化原生乘加",
+      "packages": [
+        "P01"
+      ],
+      "legacy": [
+        [
+          "c512_qkv_library_720",
+          true
+        ],
+        [
+          "native_k8_720",
+          true
+        ],
+        [
+          "decoder_gather_unround_720",
+          true
+        ],
+        [
+          "c32_hidden_native_720",
+          true
+        ],
+        [
+          "c512_probability_unround_720",
+          true
+        ],
+        [
+          "c128_pairwise_720",
+          true
+        ],
+        [
+          "c128_dual_qkv_720",
+          false
+        ],
+        [
+          "c64_attention_project_720",
+          true
+        ],
+        [
+          "c128_attention_project_720",
+          true
+        ]
+      ],
+      "numeric": [
+        [
+          "branch_accum_families",
+          [
+            "c128"
+          ]
+        ],
+        [
+          "history_value",
+          "fp32_fractional"
+        ],
+        [
+          "front_noise",
+          "native_both"
+        ],
+        [
+          "vit_norm_fma",
+          true
+        ]
+      ],
+      "hooks": [
+        {
+          "module": "audit_vit_c512_720_v1",
+          "call": "installed",
+          "stage": "before_numeric",
+          "kwargs": {
+            "vit_qkv_full_k": false,
+            "vit_projection_full_k": false,
+            "vit_exp_zero_constant": false,
+            "vit_norm_fma": true,
+            "vit_exp_fma": false,
+            "profile": "numeric",
+            "before_numeric": true,
+            "denominator": "reference"
+          }
+        }
+      ],
+      "source_group": "c512-vit",
+      "source_profile": "c512-vit-native-norm-720-v2",
+      "pending_validation": true
+    },
+    "audit_impl_c512_vit_native_exp_720_v2": {
+      "label": "全局指数原生乘加",
+      "packages": [
+        "P01"
+      ],
+      "legacy": [
+        [
+          "c512_qkv_library_720",
+          true
+        ],
+        [
+          "native_k8_720",
+          true
+        ],
+        [
+          "decoder_gather_unround_720",
+          true
+        ],
+        [
+          "c32_hidden_native_720",
+          true
+        ],
+        [
+          "c512_probability_unround_720",
+          true
+        ],
+        [
+          "c128_pairwise_720",
+          true
+        ],
+        [
+          "c128_dual_qkv_720",
+          false
+        ],
+        [
+          "c64_attention_project_720",
+          true
+        ],
+        [
+          "c128_attention_project_720",
+          true
+        ]
+      ],
+      "numeric": [
+        [
+          "branch_accum_families",
+          [
+            "c128"
+          ]
+        ],
+        [
+          "history_value",
+          "fp32_fractional"
+        ],
+        [
+          "front_noise",
+          "native_both"
+        ],
+        [
+          "vit_exp_fma",
+          true
+        ]
+      ],
+      "hooks": [
+        {
+          "module": "audit_vit_c512_720_v1",
+          "call": "installed",
+          "stage": "before_numeric",
+          "kwargs": {
+            "vit_qkv_full_k": false,
+            "vit_projection_full_k": false,
+            "vit_exp_zero_constant": false,
+            "vit_norm_fma": false,
+            "vit_exp_fma": true,
+            "profile": "numeric",
+            "before_numeric": true,
+            "denominator": "reference"
+          }
+        }
+      ],
+      "source_group": "c512-vit",
+      "source_profile": "c512-vit-native-exp-720-v2",
+      "pending_validation": true
+    },
+    "audit_impl_c512_vit_zero_constant_720_v2": {
+      "label": "全局零指数常量复用",
+      "packages": [
+        "P01"
+      ],
+      "legacy": [
+        [
+          "c512_qkv_library_720",
+          true
+        ],
+        [
+          "native_k8_720",
+          true
+        ],
+        [
+          "decoder_gather_unround_720",
+          true
+        ],
+        [
+          "c32_hidden_native_720",
+          true
+        ],
+        [
+          "c512_probability_unround_720",
+          true
+        ],
+        [
+          "c128_pairwise_720",
+          true
+        ],
+        [
+          "c128_dual_qkv_720",
+          false
+        ],
+        [
+          "c64_attention_project_720",
+          true
+        ],
+        [
+          "c128_attention_project_720",
+          true
+        ]
+      ],
+      "numeric": [
+        [
+          "branch_accum_families",
+          [
+            "c128"
+          ]
+        ],
+        [
+          "history_value",
+          "fp32_fractional"
+        ],
+        [
+          "front_noise",
+          "native_both"
+        ],
+        [
+          "vit_exp_zero_constant",
+          true
+        ]
+      ],
+      "hooks": [
+        {
+          "module": "audit_vit_c512_720_v1",
+          "call": "installed",
+          "stage": "before_numeric",
+          "kwargs": {
+            "vit_qkv_full_k": false,
+            "vit_projection_full_k": false,
+            "vit_exp_zero_constant": true,
+            "vit_norm_fma": false,
+            "vit_exp_fma": false,
+            "profile": "numeric",
+            "before_numeric": true,
+            "denominator": "reference"
+          }
+        }
+      ],
+      "source_group": "c512-vit",
+      "source_profile": "c512-vit-zero-constant-720-v2",
+      "pending_validation": true
+    },
+    "audit_impl_c512_vit_denominator_ordered_720_v2": {
+      "label": "全局分母顺序融合",
+      "packages": [
+        "P01"
+      ],
+      "legacy": [
+        [
+          "c512_qkv_library_720",
+          true
+        ],
+        [
+          "native_k8_720",
+          true
+        ],
+        [
+          "decoder_gather_unround_720",
+          true
+        ],
+        [
+          "c32_hidden_native_720",
+          true
+        ],
+        [
+          "c512_probability_unround_720",
+          true
+        ],
+        [
+          "c128_pairwise_720",
+          true
+        ],
+        [
+          "c128_dual_qkv_720",
+          false
+        ],
+        [
+          "c64_attention_project_720",
+          true
+        ],
+        [
+          "c128_attention_project_720",
+          true
+        ]
+      ],
+      "numeric": [
+        [
+          "branch_accum_families",
+          [
+            "c128"
+          ]
+        ],
+        [
+          "history_value",
+          "fp32_fractional"
+        ],
+        [
+          "front_noise",
+          "native_both"
+        ],
+        [
+          "vit_denominator",
+          "ordered_fused"
+        ]
+      ],
+      "hooks": [
+        {
+          "module": "audit_vit_c512_720_v1",
+          "call": "installed",
+          "stage": "before_numeric",
+          "kwargs": {
+            "vit_qkv_full_k": false,
+            "vit_projection_full_k": false,
+            "vit_exp_zero_constant": false,
+            "vit_norm_fma": false,
+            "vit_exp_fma": false,
+            "profile": "numeric",
+            "before_numeric": true,
+            "denominator": "ordered_fused"
+          }
+        }
+      ],
+      "source_group": "c512-vit",
+      "source_profile": "c512-vit-denominator-ordered-720-v2",
+      "pending_validation": true
+    },
+    "audit_impl_c512_vit_denominator_fp32_720_v2": {
+      "label": "全局分母原生归约",
+      "packages": [
+        "P32"
+      ],
+      "legacy": [
+        [
+          "c512_qkv_library_720",
+          true
+        ],
+        [
+          "native_k8_720",
+          true
+        ],
+        [
+          "decoder_gather_unround_720",
+          true
+        ],
+        [
+          "c32_hidden_native_720",
+          true
+        ],
+        [
+          "c512_probability_unround_720",
+          true
+        ],
+        [
+          "c128_pairwise_720",
+          true
+        ],
+        [
+          "c128_dual_qkv_720",
+          false
+        ],
+        [
+          "c64_attention_project_720",
+          true
+        ],
+        [
+          "c128_attention_project_720",
+          true
+        ]
+      ],
+      "numeric": [
+        [
+          "branch_accum_families",
+          [
+            "c128"
+          ]
+        ],
+        [
+          "history_value",
+          "fp32_fractional"
+        ],
+        [
+          "front_noise",
+          "native_both"
+        ],
+        [
+          "vit_denominator",
+          "fp32_reduction"
+        ]
+      ],
+      "hooks": [
+        {
+          "module": "audit_vit_c512_720_v1",
+          "call": "installed",
+          "stage": "before_numeric",
+          "kwargs": {
+            "vit_qkv_full_k": false,
+            "vit_projection_full_k": false,
+            "vit_exp_zero_constant": false,
+            "vit_norm_fma": false,
+            "vit_exp_fma": false,
+            "profile": "numeric",
+            "before_numeric": true,
+            "denominator": "fp32_reduction"
+          }
+        }
+      ],
+      "source_group": "c512-vit",
+      "source_profile": "c512-vit-denominator-fp32-720-v2",
+      "pending_validation": true
+    },
+    "audit_impl_c512_vit_head_dataflow_preserved_720_v2": {
+      "label": "全局注意力布局直通（保留数值）",
+      "packages": [
+        "P01",
+        "P08"
+      ],
+      "legacy": [
+        [
+          "c512_qkv_library_720",
+          true
+        ],
+        [
+          "native_k8_720",
+          true
+        ],
+        [
+          "decoder_gather_unround_720",
+          true
+        ],
+        [
+          "c32_hidden_native_720",
+          true
+        ],
+        [
+          "c512_probability_unround_720",
+          true
+        ],
+        [
+          "c128_pairwise_720",
+          true
+        ],
+        [
+          "c128_dual_qkv_720",
+          false
+        ],
+        [
+          "c64_attention_project_720",
+          true
+        ],
+        [
+          "c128_attention_project_720",
+          true
+        ]
+      ],
+      "numeric": [
+        [
+          "branch_accum_families",
+          [
+            "c128"
+          ]
+        ],
+        [
+          "history_value",
+          "fp32_fractional"
+        ],
+        [
+          "front_noise",
+          "native_both"
+        ]
+      ],
+      "hooks": [
+        {
+          "module": "audit_vit_c512_720_v1",
+          "call": "installed",
+          "stage": "before_numeric",
+          "kwargs": {
+            "profile": "complete",
+            "before_numeric": true,
+            "denominator": "ordered_fused",
+            "vit_qkv_full_k": false,
+            "vit_projection_full_k": false,
+            "vit_exp_zero_constant": true,
+            "vit_norm_fma": false,
+            "vit_exp_fma": false,
+            "c512_qkv_backend": "library",
+            "global_dataflow": true,
+            "local_valid_queries": false,
+            "encoder_direct_projection": false,
+            "encoder_pool_final": false,
+            "use_front_pool_helper": false,
+            "c512_ffn_groups": false,
+            "vit_ffn": false,
+            "vit_fuse_entry": false,
+            "vit_contract_parts": 1,
+            "diagnostics": false,
+            "bm": 32,
+            "bn": 64
+          }
+        }
+      ],
+      "source_group": "c512-vit",
+      "source_profile": "c512-vit-head-dataflow-preserved-720-v2",
+      "pending_validation": true
+    },
+    "audit_impl_c512_vit_head_dataflow_native_720_v2": {
+      "label": "全局注意力布局直通（原生数值）",
+      "packages": [
+        "P01",
+        "P03",
+        "P08"
+      ],
+      "legacy": [
+        [
+          "c512_qkv_library_720",
+          true
+        ],
+        [
+          "native_k8_720",
+          true
+        ],
+        [
+          "decoder_gather_unround_720",
+          true
+        ],
+        [
+          "c32_hidden_native_720",
+          true
+        ],
+        [
+          "c512_probability_unround_720",
+          true
+        ],
+        [
+          "c128_pairwise_720",
+          true
+        ],
+        [
+          "c128_dual_qkv_720",
+          false
+        ],
+        [
+          "c64_attention_project_720",
+          true
+        ],
+        [
+          "c128_attention_project_720",
+          true
+        ]
+      ],
+      "numeric": [
+        [
+          "branch_accum_families",
+          [
+            "c128"
+          ]
+        ],
+        [
+          "history_value",
+          "fp32_fractional"
+        ],
+        [
+          "front_noise",
+          "native_both"
+        ]
+      ],
+      "hooks": [
+        {
+          "module": "audit_vit_c512_720_v1",
+          "call": "installed",
+          "stage": "before_numeric",
+          "kwargs": {
+            "profile": "complete",
+            "before_numeric": true,
+            "denominator": "ordered_fused",
+            "vit_qkv_full_k": true,
+            "vit_projection_full_k": true,
+            "vit_exp_zero_constant": true,
+            "vit_norm_fma": true,
+            "vit_exp_fma": true,
+            "c512_qkv_backend": "library",
+            "global_dataflow": true,
+            "local_valid_queries": false,
+            "encoder_direct_projection": false,
+            "encoder_pool_final": false,
+            "use_front_pool_helper": false,
+            "c512_ffn_groups": false,
+            "vit_ffn": false,
+            "vit_fuse_entry": false,
+            "vit_contract_parts": 1,
+            "diagnostics": false,
+            "bm": 32,
+            "bn": 64
+          }
+        }
+      ],
+      "source_group": "c512-vit",
+      "source_profile": "c512-vit-head-dataflow-native-720-v2",
+      "pending_validation": true
+    },
+    "audit_impl_c512_native_qkv_720_v2": {
+      "label": "C512 原生输入投影",
+      "packages": [
+        "P03"
+      ],
+      "legacy": [
+        [
+          "c512_qkv_library_720",
+          true
+        ],
+        [
+          "native_k8_720",
+          true
+        ],
+        [
+          "decoder_gather_unround_720",
+          true
+        ],
+        [
+          "c32_hidden_native_720",
+          true
+        ],
+        [
+          "c512_probability_unround_720",
+          true
+        ],
+        [
+          "c128_pairwise_720",
+          true
+        ],
+        [
+          "c128_dual_qkv_720",
+          false
+        ],
+        [
+          "c64_attention_project_720",
+          true
+        ],
+        [
+          "c128_attention_project_720",
+          true
+        ]
+      ],
+      "numeric": [
+        [
+          "branch_accum_families",
+          [
+            "c128"
+          ]
+        ],
+        [
+          "history_value",
+          "fp32_fractional"
+        ],
+        [
+          "front_noise",
+          "native_both"
+        ]
+      ],
+      "hooks": [
+        {
+          "module": "audit_vit_c512_720_v1",
+          "call": "installed",
+          "stage": "before_numeric",
+          "kwargs": {
+            "profile": "complete",
+            "before_numeric": true,
+            "denominator": "reference",
+            "vit_qkv_full_k": false,
+            "vit_projection_full_k": false,
+            "vit_exp_zero_constant": false,
+            "vit_norm_fma": false,
+            "vit_exp_fma": false,
+            "c512_qkv_backend": "native_dpas",
+            "global_dataflow": false,
+            "local_valid_queries": false,
+            "encoder_direct_projection": false,
+            "encoder_pool_final": false,
+            "use_front_pool_helper": false,
+            "c512_ffn_groups": false,
+            "vit_ffn": false,
+            "vit_fuse_entry": false,
+            "vit_contract_parts": 1,
+            "diagnostics": false,
+            "bm": 32,
+            "bn": 64
+          }
+        }
+      ],
+      "source_group": "c512-vit",
+      "source_profile": "c512-native-qkv-720-v2",
+      "pending_validation": true
+    },
+    "audit_impl_c512_valid_query_720_v2": {
+      "label": "C512 仅发布有效查询",
+      "packages": [
+        "P08"
+      ],
+      "legacy": [
+        [
+          "c512_qkv_library_720",
+          true
+        ],
+        [
+          "native_k8_720",
+          true
+        ],
+        [
+          "decoder_gather_unround_720",
+          true
+        ],
+        [
+          "c32_hidden_native_720",
+          true
+        ],
+        [
+          "c512_probability_unround_720",
+          true
+        ],
+        [
+          "c128_pairwise_720",
+          true
+        ],
+        [
+          "c128_dual_qkv_720",
+          false
+        ],
+        [
+          "c64_attention_project_720",
+          true
+        ],
+        [
+          "c128_attention_project_720",
+          true
+        ]
+      ],
+      "numeric": [
+        [
+          "branch_accum_families",
+          [
+            "c128"
+          ]
+        ],
+        [
+          "history_value",
+          "fp32_fractional"
+        ],
+        [
+          "front_noise",
+          "native_both"
+        ]
+      ],
+      "hooks": [
+        {
+          "module": "audit_vit_c512_720_v1",
+          "call": "installed",
+          "stage": "before_numeric",
+          "kwargs": {
+            "profile": "complete",
+            "before_numeric": true,
+            "denominator": "reference",
+            "vit_qkv_full_k": false,
+            "vit_projection_full_k": false,
+            "vit_exp_zero_constant": false,
+            "vit_norm_fma": false,
+            "vit_exp_fma": false,
+            "c512_qkv_backend": "library",
+            "global_dataflow": false,
+            "local_valid_queries": true,
+            "encoder_direct_projection": false,
+            "encoder_pool_final": false,
+            "use_front_pool_helper": false,
+            "c512_ffn_groups": false,
+            "vit_ffn": false,
+            "vit_fuse_entry": false,
+            "vit_contract_parts": 1,
+            "diagnostics": false,
+            "bm": 32,
+            "bn": 64
+          }
+        }
+      ],
+      "source_group": "c512-vit",
+      "source_profile": "c512-valid-query-720-v2",
+      "pending_validation": true
+    },
+    "audit_impl_c512_encoder_projection_720_v2": {
+      "label": "C512 编码输出投影直通",
+      "packages": [
+        "P11"
+      ],
+      "legacy": [
+        [
+          "c512_qkv_library_720",
+          true
+        ],
+        [
+          "native_k8_720",
+          true
+        ],
+        [
+          "decoder_gather_unround_720",
+          true
+        ],
+        [
+          "c32_hidden_native_720",
+          true
+        ],
+        [
+          "c512_probability_unround_720",
+          true
+        ],
+        [
+          "c128_pairwise_720",
+          true
+        ],
+        [
+          "c128_dual_qkv_720",
+          false
+        ],
+        [
+          "c64_attention_project_720",
+          true
+        ],
+        [
+          "c128_attention_project_720",
+          true
+        ]
+      ],
+      "numeric": [
+        [
+          "branch_accum_families",
+          [
+            "c128"
+          ]
+        ],
+        [
+          "history_value",
+          "fp32_fractional"
+        ],
+        [
+          "front_noise",
+          "native_both"
+        ]
+      ],
+      "hooks": [
+        {
+          "module": "audit_vit_c512_720_v1",
+          "call": "installed",
+          "stage": "before_numeric",
+          "kwargs": {
+            "profile": "complete",
+            "before_numeric": true,
+            "denominator": "reference",
+            "vit_qkv_full_k": false,
+            "vit_projection_full_k": false,
+            "vit_exp_zero_constant": false,
+            "vit_norm_fma": false,
+            "vit_exp_fma": false,
+            "c512_qkv_backend": "library",
+            "global_dataflow": false,
+            "local_valid_queries": false,
+            "encoder_direct_projection": true,
+            "encoder_pool_final": false,
+            "use_front_pool_helper": false,
+            "c512_ffn_groups": false,
+            "vit_ffn": false,
+            "vit_fuse_entry": false,
+            "vit_contract_parts": 1,
+            "diagnostics": false,
+            "bm": 32,
+            "bn": 64
+          }
+        }
+      ],
+      "source_group": "c512-vit",
+      "source_profile": "c512-encoder-projection-720-v2",
+      "pending_validation": true
+    },
+    "audit_impl_c512_encoder_pool_final_720_v2": {
+      "label": "C512 编码投影融合降采样",
+      "packages": [
+        "P11"
+      ],
+      "legacy": [
+        [
+          "c512_qkv_library_720",
+          true
+        ],
+        [
+          "native_k8_720",
+          true
+        ],
+        [
+          "decoder_gather_unround_720",
+          true
+        ],
+        [
+          "c32_hidden_native_720",
+          true
+        ],
+        [
+          "c512_probability_unround_720",
+          true
+        ],
+        [
+          "c128_pairwise_720",
+          true
+        ],
+        [
+          "c128_dual_qkv_720",
+          false
+        ],
+        [
+          "c64_attention_project_720",
+          true
+        ],
+        [
+          "c128_attention_project_720",
+          true
+        ]
+      ],
+      "numeric": [
+        [
+          "branch_accum_families",
+          [
+            "c128"
+          ]
+        ],
+        [
+          "history_value",
+          "fp32_fractional"
+        ],
+        [
+          "front_noise",
+          "native_both"
+        ]
+      ],
+      "hooks": [
+        {
+          "module": "audit_vit_c512_720_v1",
+          "call": "installed",
+          "stage": "before_numeric",
+          "kwargs": {
+            "profile": "complete",
+            "before_numeric": true,
+            "denominator": "reference",
+            "vit_qkv_full_k": false,
+            "vit_projection_full_k": false,
+            "vit_exp_zero_constant": false,
+            "vit_norm_fma": false,
+            "vit_exp_fma": false,
+            "c512_qkv_backend": "library",
+            "global_dataflow": false,
+            "local_valid_queries": false,
+            "encoder_direct_projection": false,
+            "encoder_pool_final": true,
+            "use_front_pool_helper": false,
+            "c512_ffn_groups": false,
+            "vit_ffn": false,
+            "vit_fuse_entry": false,
+            "vit_contract_parts": 1,
+            "diagnostics": false,
+            "bm": 32,
+            "bn": 64
+          }
+        }
+      ],
+      "source_group": "c512-vit",
+      "source_profile": "c512-encoder-pool-final-720-v2",
+      "pending_validation": true
+    },
+    "audit_impl_c512_encoder_complete_720_v2": {
+      "label": "C512 编码模块完整组合",
+      "packages": [
+        "P08",
+        "P11"
+      ],
+      "legacy": [
+        [
+          "c512_qkv_library_720",
+          true
+        ],
+        [
+          "native_k8_720",
+          true
+        ],
+        [
+          "decoder_gather_unround_720",
+          true
+        ],
+        [
+          "c32_hidden_native_720",
+          true
+        ],
+        [
+          "c512_probability_unround_720",
+          true
+        ],
+        [
+          "c128_pairwise_720",
+          true
+        ],
+        [
+          "c128_dual_qkv_720",
+          false
+        ],
+        [
+          "c64_attention_project_720",
+          true
+        ],
+        [
+          "c128_attention_project_720",
+          true
+        ]
+      ],
+      "numeric": [
+        [
+          "branch_accum_families",
+          [
+            "c128"
+          ]
+        ],
+        [
+          "history_value",
+          "fp32_fractional"
+        ],
+        [
+          "front_noise",
+          "native_both"
+        ]
+      ],
+      "hooks": [
+        {
+          "module": "audit_vit_c512_720_v1",
+          "call": "installed",
+          "stage": "before_numeric",
+          "kwargs": {
+            "profile": "complete",
+            "before_numeric": true,
+            "denominator": "reference",
+            "vit_qkv_full_k": false,
+            "vit_projection_full_k": false,
+            "vit_exp_zero_constant": false,
+            "vit_norm_fma": false,
+            "vit_exp_fma": false,
+            "c512_qkv_backend": "library",
+            "global_dataflow": false,
+            "local_valid_queries": true,
+            "encoder_direct_projection": true,
+            "encoder_pool_final": true,
+            "use_front_pool_helper": false,
+            "c512_ffn_groups": false,
+            "vit_ffn": false,
+            "vit_fuse_entry": false,
+            "vit_contract_parts": 1,
+            "diagnostics": false,
+            "bm": 32,
+            "bn": 64
+          }
+        }
+      ],
+      "source_group": "c512-vit",
+      "source_profile": "c512-encoder-complete-720-v2",
+      "pending_validation": true
+    },
+    "audit_impl_c512_ffn_complete_720_v2": {
+      "label": "C512 连续整数前馈链",
+      "packages": [
+        "P12"
+      ],
+      "legacy": [
+        [
+          "c512_qkv_library_720",
+          true
+        ],
+        [
+          "native_k8_720",
+          true
+        ],
+        [
+          "decoder_gather_unround_720",
+          true
+        ],
+        [
+          "c32_hidden_native_720",
+          true
+        ],
+        [
+          "c512_probability_unround_720",
+          true
+        ],
+        [
+          "c128_pairwise_720",
+          true
+        ],
+        [
+          "c128_dual_qkv_720",
+          false
+        ],
+        [
+          "c64_attention_project_720",
+          true
+        ],
+        [
+          "c128_attention_project_720",
+          true
+        ]
+      ],
+      "numeric": [
+        [
+          "branch_accum_families",
+          [
+            "c128"
+          ]
+        ],
+        [
+          "history_value",
+          "fp32_fractional"
+        ],
+        [
+          "front_noise",
+          "native_both"
+        ]
+      ],
+      "hooks": [
+        {
+          "module": "audit_vit_c512_720_v1",
+          "call": "installed",
+          "stage": "before_numeric",
+          "kwargs": {
+            "profile": "complete",
+            "before_numeric": true,
+            "denominator": "reference",
+            "vit_qkv_full_k": false,
+            "vit_projection_full_k": false,
+            "vit_exp_zero_constant": false,
+            "vit_norm_fma": false,
+            "vit_exp_fma": false,
+            "c512_qkv_backend": "library",
+            "global_dataflow": false,
+            "local_valid_queries": false,
+            "encoder_direct_projection": false,
+            "encoder_pool_final": false,
+            "use_front_pool_helper": false,
+            "c512_ffn_groups": true,
+            "vit_ffn": false,
+            "vit_fuse_entry": false,
+            "vit_contract_parts": 1,
+            "diagnostics": false,
+            "bm": 32,
+            "bn": 64
+          }
+        }
+      ],
+      "source_group": "c512-vit",
+      "source_profile": "c512-ffn-complete-720-v2",
+      "pending_validation": true
+    },
+    "audit_impl_vit_ffn_full_i32_720_v2": {
+      "label": "全局整数前馈完整累加",
+      "packages": [
+        "P12"
+      ],
+      "legacy": [
+        [
+          "c512_qkv_library_720",
+          true
+        ],
+        [
+          "native_k8_720",
+          true
+        ],
+        [
+          "decoder_gather_unround_720",
+          true
+        ],
+        [
+          "c32_hidden_native_720",
+          true
+        ],
+        [
+          "c512_probability_unround_720",
+          true
+        ],
+        [
+          "c128_pairwise_720",
+          true
+        ],
+        [
+          "c128_dual_qkv_720",
+          false
+        ],
+        [
+          "c64_attention_project_720",
+          true
+        ],
+        [
+          "c128_attention_project_720",
+          true
+        ]
+      ],
+      "numeric": [
+        [
+          "branch_accum_families",
+          [
+            "c128"
+          ]
+        ],
+        [
+          "history_value",
+          "fp32_fractional"
+        ],
+        [
+          "front_noise",
+          "native_both"
+        ]
+      ],
+      "hooks": [
+        {
+          "module": "audit_vit_c512_720_v1",
+          "call": "installed",
+          "stage": "before_numeric",
+          "kwargs": {
+            "profile": "complete",
+            "before_numeric": true,
+            "denominator": "reference",
+            "vit_qkv_full_k": false,
+            "vit_projection_full_k": false,
+            "vit_exp_zero_constant": false,
+            "vit_norm_fma": false,
+            "vit_exp_fma": false,
+            "c512_qkv_backend": "library",
+            "global_dataflow": false,
+            "local_valid_queries": false,
+            "encoder_direct_projection": false,
+            "encoder_pool_final": false,
+            "use_front_pool_helper": false,
+            "c512_ffn_groups": false,
+            "vit_ffn": true,
+            "vit_fuse_entry": false,
+            "vit_contract_parts": 1,
+            "diagnostics": false,
+            "bm": 32,
+            "bn": 64
+          }
+        }
+      ],
+      "source_group": "c512-vit",
+      "source_profile": "vit-ffn-full-i32-720-v2",
+      "pending_validation": true
+    },
+    "audit_impl_vit_ffn_entry_expand_720_v2": {
+      "label": "全局整数前馈融合入口",
+      "packages": [
+        "P12"
+      ],
+      "legacy": [
+        [
+          "c512_qkv_library_720",
+          true
+        ],
+        [
+          "native_k8_720",
+          true
+        ],
+        [
+          "decoder_gather_unround_720",
+          true
+        ],
+        [
+          "c32_hidden_native_720",
+          true
+        ],
+        [
+          "c512_probability_unround_720",
+          true
+        ],
+        [
+          "c128_pairwise_720",
+          true
+        ],
+        [
+          "c128_dual_qkv_720",
+          false
+        ],
+        [
+          "c64_attention_project_720",
+          true
+        ],
+        [
+          "c128_attention_project_720",
+          true
+        ]
+      ],
+      "numeric": [
+        [
+          "branch_accum_families",
+          [
+            "c128"
+          ]
+        ],
+        [
+          "history_value",
+          "fp32_fractional"
+        ],
+        [
+          "front_noise",
+          "native_both"
+        ]
+      ],
+      "hooks": [
+        {
+          "module": "audit_vit_c512_720_v1",
+          "call": "installed",
+          "stage": "before_numeric",
+          "kwargs": {
+            "profile": "complete",
+            "before_numeric": true,
+            "denominator": "reference",
+            "vit_qkv_full_k": false,
+            "vit_projection_full_k": false,
+            "vit_exp_zero_constant": false,
+            "vit_norm_fma": false,
+            "vit_exp_fma": false,
+            "c512_qkv_backend": "library",
+            "global_dataflow": false,
+            "local_valid_queries": false,
+            "encoder_direct_projection": false,
+            "encoder_pool_final": false,
+            "use_front_pool_helper": false,
+            "c512_ffn_groups": false,
+            "vit_ffn": true,
+            "vit_fuse_entry": true,
+            "vit_contract_parts": 4,
+            "diagnostics": false,
+            "bm": 32,
+            "bn": 64
+          }
+        }
+      ],
+      "source_group": "c512-vit",
+      "source_profile": "vit-ffn-entry-expand-720-v2",
+      "pending_validation": true
+    },
+    "audit_impl_vit_ffn_complete_720_v2": {
+      "label": "全局整数前馈完整组合",
+      "packages": [
+        "P12"
+      ],
+      "legacy": [
+        [
+          "c512_qkv_library_720",
+          true
+        ],
+        [
+          "native_k8_720",
+          true
+        ],
+        [
+          "decoder_gather_unround_720",
+          true
+        ],
+        [
+          "c32_hidden_native_720",
+          true
+        ],
+        [
+          "c512_probability_unround_720",
+          true
+        ],
+        [
+          "c128_pairwise_720",
+          true
+        ],
+        [
+          "c128_dual_qkv_720",
+          false
+        ],
+        [
+          "c64_attention_project_720",
+          true
+        ],
+        [
+          "c128_attention_project_720",
+          true
+        ]
+      ],
+      "numeric": [
+        [
+          "branch_accum_families",
+          [
+            "c128"
+          ]
+        ],
+        [
+          "history_value",
+          "fp32_fractional"
+        ],
+        [
+          "front_noise",
+          "native_both"
+        ]
+      ],
+      "hooks": [
+        {
+          "module": "audit_vit_c512_720_v1",
+          "call": "installed",
+          "stage": "before_numeric",
+          "kwargs": {
+            "profile": "complete",
+            "before_numeric": true,
+            "denominator": "reference",
+            "vit_qkv_full_k": false,
+            "vit_projection_full_k": false,
+            "vit_exp_zero_constant": false,
+            "vit_norm_fma": false,
+            "vit_exp_fma": false,
+            "c512_qkv_backend": "library",
+            "global_dataflow": false,
+            "local_valid_queries": false,
+            "encoder_direct_projection": false,
+            "encoder_pool_final": false,
+            "use_front_pool_helper": false,
+            "c512_ffn_groups": false,
+            "vit_ffn": true,
+            "vit_fuse_entry": true,
+            "vit_contract_parts": 1,
+            "diagnostics": false,
+            "bm": 32,
+            "bn": 64
+          }
+        }
+      ],
+      "source_group": "c512-vit",
+      "source_profile": "vit-ffn-complete-720-v2",
+      "pending_validation": true
+    },
+    "audit_impl_c512_vit_all_owned_720_v2": {
+      "label": "C512 与全局模块完整组合",
+      "packages": [
+        "P01",
+        "P03",
+        "P08",
+        "P11",
+        "P12"
+      ],
+      "legacy": [
+        [
+          "c512_qkv_library_720",
+          true
+        ],
+        [
+          "native_k8_720",
+          true
+        ],
+        [
+          "decoder_gather_unround_720",
+          true
+        ],
+        [
+          "c32_hidden_native_720",
+          true
+        ],
+        [
+          "c512_probability_unround_720",
+          true
+        ],
+        [
+          "c128_pairwise_720",
+          true
+        ],
+        [
+          "c128_dual_qkv_720",
+          false
+        ],
+        [
+          "c64_attention_project_720",
+          true
+        ],
+        [
+          "c128_attention_project_720",
+          true
+        ]
+      ],
+      "numeric": [
+        [
+          "branch_accum_families",
+          [
+            "c128"
+          ]
+        ],
+        [
+          "history_value",
+          "fp32_fractional"
+        ],
+        [
+          "front_noise",
+          "native_both"
+        ]
+      ],
+      "hooks": [
+        {
+          "module": "audit_vit_c512_720_v1",
+          "call": "installed",
+          "stage": "before_numeric",
+          "kwargs": {
+            "profile": "complete",
+            "before_numeric": true,
+            "denominator": "ordered_fused",
+            "vit_qkv_full_k": true,
+            "vit_projection_full_k": true,
+            "vit_exp_zero_constant": true,
+            "vit_norm_fma": true,
+            "vit_exp_fma": true,
+            "c512_qkv_backend": "library",
+            "global_dataflow": true,
+            "local_valid_queries": true,
+            "encoder_direct_projection": true,
+            "encoder_pool_final": true,
+            "use_front_pool_helper": false,
+            "c512_ffn_groups": true,
+            "vit_ffn": true,
+            "vit_fuse_entry": false,
+            "vit_contract_parts": 1,
+            "diagnostics": false,
+            "bm": 32,
+            "bn": 64
+          }
+        }
+      ],
+      "source_group": "c512-vit",
+      "source_profile": "c512-vit-all-owned-720-v2",
+      "pending_validation": true
+    },
+    "audit_impl_c512_vit_all_owned_fp32_denominator_720_v2": {
+      "label": "C512 与全局模块组合（归约分母）",
+      "packages": [
+        "P32"
+      ],
+      "legacy": [
+        [
+          "c512_qkv_library_720",
+          true
+        ],
+        [
+          "native_k8_720",
+          true
+        ],
+        [
+          "decoder_gather_unround_720",
+          true
+        ],
+        [
+          "c32_hidden_native_720",
+          true
+        ],
+        [
+          "c512_probability_unround_720",
+          true
+        ],
+        [
+          "c128_pairwise_720",
+          true
+        ],
+        [
+          "c128_dual_qkv_720",
+          false
+        ],
+        [
+          "c64_attention_project_720",
+          true
+        ],
+        [
+          "c128_attention_project_720",
+          true
+        ]
+      ],
+      "numeric": [
+        [
+          "branch_accum_families",
+          [
+            "c128"
+          ]
+        ],
+        [
+          "history_value",
+          "fp32_fractional"
+        ],
+        [
+          "front_noise",
+          "native_both"
+        ]
+      ],
+      "hooks": [
+        {
+          "module": "audit_vit_c512_720_v1",
+          "call": "installed",
+          "stage": "before_numeric",
+          "kwargs": {
+            "profile": "complete",
+            "before_numeric": true,
+            "denominator": "fp32_reduction",
+            "vit_qkv_full_k": true,
+            "vit_projection_full_k": true,
+            "vit_exp_zero_constant": true,
+            "vit_norm_fma": true,
+            "vit_exp_fma": true,
+            "c512_qkv_backend": "library",
+            "global_dataflow": true,
+            "local_valid_queries": true,
+            "encoder_direct_projection": true,
+            "encoder_pool_final": true,
+            "use_front_pool_helper": false,
+            "c512_ffn_groups": true,
+            "vit_ffn": true,
+            "vit_fuse_entry": false,
+            "vit_contract_parts": 1,
+            "diagnostics": false,
+            "bm": 32,
+            "bn": 64
+          }
+        }
+      ],
+      "source_group": "c512-vit",
+      "source_profile": "c512-vit-all-owned-fp32-denominator-720-v2",
+      "pending_validation": true
+    },
+    "audit_impl_c512_vit_all_owned_fused_entry_720_v2": {
+      "label": "C512 与全局模块组合（融合入口）",
+      "packages": [
+        "P01",
+        "P03",
+        "P08",
+        "P11",
+        "P12"
+      ],
+      "legacy": [
+        [
+          "c512_qkv_library_720",
+          true
+        ],
+        [
+          "native_k8_720",
+          true
+        ],
+        [
+          "decoder_gather_unround_720",
+          true
+        ],
+        [
+          "c32_hidden_native_720",
+          true
+        ],
+        [
+          "c512_probability_unround_720",
+          true
+        ],
+        [
+          "c128_pairwise_720",
+          true
+        ],
+        [
+          "c128_dual_qkv_720",
+          false
+        ],
+        [
+          "c64_attention_project_720",
+          true
+        ],
+        [
+          "c128_attention_project_720",
+          true
+        ]
+      ],
+      "numeric": [
+        [
+          "branch_accum_families",
+          [
+            "c128"
+          ]
+        ],
+        [
+          "history_value",
+          "fp32_fractional"
+        ],
+        [
+          "front_noise",
+          "native_both"
+        ]
+      ],
+      "hooks": [
+        {
+          "module": "audit_vit_c512_720_v1",
+          "call": "installed",
+          "stage": "before_numeric",
+          "kwargs": {
+            "profile": "complete",
+            "before_numeric": true,
+            "denominator": "ordered_fused",
+            "vit_qkv_full_k": true,
+            "vit_projection_full_k": true,
+            "vit_exp_zero_constant": true,
+            "vit_norm_fma": true,
+            "vit_exp_fma": true,
+            "c512_qkv_backend": "library",
+            "global_dataflow": true,
+            "local_valid_queries": true,
+            "encoder_direct_projection": true,
+            "encoder_pool_final": true,
+            "use_front_pool_helper": false,
+            "c512_ffn_groups": true,
+            "vit_ffn": true,
+            "vit_fuse_entry": true,
+            "vit_contract_parts": 1,
+            "diagnostics": false,
+            "bm": 32,
+            "bn": 64
+          }
+        }
+      ],
+      "source_group": "c512-vit",
+      "source_profile": "c512-vit-all-owned-fused-entry-720-v2",
+      "pending_validation": true
+    },
+    "audit_impl_c512_vit_all_owned_native_qkv_720_v2": {
+      "label": "C512 与全局模块组合（原生输入投影）",
+      "packages": [
+        "P01",
+        "P03",
+        "P08",
+        "P11",
+        "P12"
+      ],
+      "legacy": [
+        [
+          "c512_qkv_library_720",
+          true
+        ],
+        [
+          "native_k8_720",
+          true
+        ],
+        [
+          "decoder_gather_unround_720",
+          true
+        ],
+        [
+          "c32_hidden_native_720",
+          true
+        ],
+        [
+          "c512_probability_unround_720",
+          true
+        ],
+        [
+          "c128_pairwise_720",
+          true
+        ],
+        [
+          "c128_dual_qkv_720",
+          false
+        ],
+        [
+          "c64_attention_project_720",
+          true
+        ],
+        [
+          "c128_attention_project_720",
+          true
+        ]
+      ],
+      "numeric": [
+        [
+          "branch_accum_families",
+          [
+            "c128"
+          ]
+        ],
+        [
+          "history_value",
+          "fp32_fractional"
+        ],
+        [
+          "front_noise",
+          "native_both"
+        ]
+      ],
+      "hooks": [
+        {
+          "module": "audit_vit_c512_720_v1",
+          "call": "installed",
+          "stage": "before_numeric",
+          "kwargs": {
+            "profile": "complete",
+            "before_numeric": true,
+            "denominator": "ordered_fused",
+            "vit_qkv_full_k": true,
+            "vit_projection_full_k": true,
+            "vit_exp_zero_constant": true,
+            "vit_norm_fma": true,
+            "vit_exp_fma": true,
+            "c512_qkv_backend": "native_dpas",
+            "global_dataflow": true,
+            "local_valid_queries": true,
+            "encoder_direct_projection": true,
+            "encoder_pool_final": true,
+            "use_front_pool_helper": false,
+            "c512_ffn_groups": true,
+            "vit_ffn": true,
+            "vit_fuse_entry": false,
+            "vit_contract_parts": 1,
+            "diagnostics": false,
+            "bm": 32,
+            "bn": 64
+          }
+        }
+      ],
+      "source_group": "c512-vit",
+      "source_profile": "c512-vit-all-owned-native-qkv-720-v2",
+      "pending_validation": true
+    },
+    "audit_impl_c512_vit_all_owned_small_tile_720_v2": {
+      "label": "C512 与全局模块组合（小分块）",
+      "packages": [
+        "P01",
+        "P03",
+        "P08",
+        "P11",
+        "P12"
+      ],
+      "legacy": [
+        [
+          "c512_qkv_library_720",
+          true
+        ],
+        [
+          "native_k8_720",
+          true
+        ],
+        [
+          "decoder_gather_unround_720",
+          true
+        ],
+        [
+          "c32_hidden_native_720",
+          true
+        ],
+        [
+          "c512_probability_unround_720",
+          true
+        ],
+        [
+          "c128_pairwise_720",
+          true
+        ],
+        [
+          "c128_dual_qkv_720",
+          false
+        ],
+        [
+          "c64_attention_project_720",
+          true
+        ],
+        [
+          "c128_attention_project_720",
+          true
+        ]
+      ],
+      "numeric": [
+        [
+          "branch_accum_families",
+          [
+            "c128"
+          ]
+        ],
+        [
+          "history_value",
+          "fp32_fractional"
+        ],
+        [
+          "front_noise",
+          "native_both"
+        ]
+      ],
+      "hooks": [
+        {
+          "module": "audit_vit_c512_720_v1",
+          "call": "installed",
+          "stage": "before_numeric",
+          "kwargs": {
+            "profile": "complete",
+            "before_numeric": true,
+            "denominator": "ordered_fused",
+            "vit_qkv_full_k": true,
+            "vit_projection_full_k": true,
+            "vit_exp_zero_constant": true,
+            "vit_norm_fma": true,
+            "vit_exp_fma": true,
+            "c512_qkv_backend": "library",
+            "global_dataflow": true,
+            "local_valid_queries": true,
+            "encoder_direct_projection": true,
+            "encoder_pool_final": true,
+            "use_front_pool_helper": false,
+            "c512_ffn_groups": true,
+            "vit_ffn": true,
+            "vit_fuse_entry": false,
+            "vit_contract_parts": 1,
+            "diagnostics": false,
+            "bm": 16,
+            "bn": 32
+          }
+        }
+      ],
+      "source_group": "c512-vit",
+      "source_profile": "c512-vit-all-owned-small-tile-720-v2",
+      "pending_validation": true
+    },
+    "audit_impl_c512_vit_all_owned_diagnostic_720_v2": {
+      "label": "C512 与全局模块诊断组合",
+      "packages": [
+        "P01",
+        "P03",
+        "P08",
+        "P11",
+        "P12"
+      ],
+      "legacy": [
+        [
+          "c512_qkv_library_720",
+          true
+        ],
+        [
+          "native_k8_720",
+          true
+        ],
+        [
+          "decoder_gather_unround_720",
+          true
+        ],
+        [
+          "c32_hidden_native_720",
+          true
+        ],
+        [
+          "c512_probability_unround_720",
+          true
+        ],
+        [
+          "c128_pairwise_720",
+          true
+        ],
+        [
+          "c128_dual_qkv_720",
+          false
+        ],
+        [
+          "c64_attention_project_720",
+          true
+        ],
+        [
+          "c128_attention_project_720",
+          true
+        ]
+      ],
+      "numeric": [
+        [
+          "branch_accum_families",
+          [
+            "c128"
+          ]
+        ],
+        [
+          "history_value",
+          "fp32_fractional"
+        ],
+        [
+          "front_noise",
+          "native_both"
+        ]
+      ],
+      "hooks": [
+        {
+          "module": "audit_vit_c512_720_v1",
+          "call": "installed",
+          "stage": "before_numeric",
+          "kwargs": {
+            "profile": "complete",
+            "before_numeric": true,
+            "denominator": "ordered_fused",
+            "vit_qkv_full_k": true,
+            "vit_projection_full_k": true,
+            "vit_exp_zero_constant": true,
+            "vit_norm_fma": true,
+            "vit_exp_fma": true,
+            "c512_qkv_backend": "library",
+            "global_dataflow": true,
+            "local_valid_queries": true,
+            "encoder_direct_projection": true,
+            "encoder_pool_final": true,
+            "use_front_pool_helper": false,
+            "c512_ffn_groups": true,
+            "vit_ffn": true,
+            "vit_fuse_entry": false,
+            "vit_contract_parts": 1,
+            "diagnostics": true,
+            "bm": 32,
+            "bn": 64
+          }
+        }
+      ],
+      "source_group": "c512-vit",
+      "source_profile": "c512-vit-all-owned-diagnostic-720-v2",
+      "pending_validation": true
+    },
+    "audit_impl_c512_vit_all_owned_front_pool_720_v2": {
+      "label": "C512 与输入降采样共同边界",
+      "packages": [
+        "P01",
+        "P03",
+        "P08",
+        "P11",
+        "P12",
+        "P13"
+      ],
+      "legacy": [
+        [
+          "c512_qkv_library_720",
+          true
+        ],
+        [
+          "native_k8_720",
+          true
+        ],
+        [
+          "decoder_gather_unround_720",
+          true
+        ],
+        [
+          "c32_hidden_native_720",
+          true
+        ],
+        [
+          "c512_probability_unround_720",
+          true
+        ],
+        [
+          "c128_pairwise_720",
+          true
+        ],
+        [
+          "c128_dual_qkv_720",
+          false
+        ],
+        [
+          "c64_attention_project_720",
+          true
+        ],
+        [
+          "c128_attention_project_720",
+          true
+        ]
+      ],
+      "numeric": [
+        [
+          "branch_accum_families",
+          [
+            "c128"
+          ]
+        ],
+        [
+          "history_value",
+          "fp32_fractional"
+        ],
+        [
+          "front_noise",
+          "native_both"
+        ]
+      ],
+      "hooks": [
+        {
+          "module": "audit_front_decoder_post_720_v1",
+          "call": "installed",
+          "stage": "before_numeric",
+          "kwargs": {
+            "merge_native": false,
+            "decoder_full_k": false,
+            "post_entry": false,
+            "post_entry_mlp": false,
+            "post_native_head": false,
+            "post_tail": false,
+            "stage_matrices": false,
+            "down_channels": [
+              512
+            ],
+            "up_channels": [],
+            "pre_average": false,
+            "pool_c512_transition": false
+          }
+        },
+        {
+          "module": "audit_vit_c512_720_v1",
+          "call": "installed",
+          "stage": "before_numeric",
+          "kwargs": {
+            "profile": "complete",
+            "before_numeric": true,
+            "denominator": "ordered_fused",
+            "vit_qkv_full_k": true,
+            "vit_projection_full_k": true,
+            "vit_exp_zero_constant": true,
+            "vit_norm_fma": true,
+            "vit_exp_fma": true,
+            "c512_qkv_backend": "library",
+            "global_dataflow": true,
+            "local_valid_queries": true,
+            "encoder_direct_projection": true,
+            "encoder_pool_final": true,
+            "use_front_pool_helper": true,
+            "c512_ffn_groups": true,
+            "vit_ffn": true,
+            "vit_fuse_entry": false,
+            "vit_contract_parts": 1,
+            "diagnostics": false,
+            "bm": 32,
+            "bn": 64
+          }
+        }
+      ],
+      "source_group": "c512-vit",
+      "source_profile": "c512-vit-all-owned-front-pool-720-v2",
+      "pending_validation": true
+    },
+    "audit_impl_fdp_p02_merges": {
+      "label": "解码合并原生计算",
+      "packages": [
+        "P02"
+      ],
+      "legacy": [
+        [
+          "c512_qkv_library_720",
+          true
+        ],
+        [
+          "native_k8_720",
+          true
+        ],
+        [
+          "decoder_gather_unround_720",
+          true
+        ],
+        [
+          "c32_hidden_native_720",
+          true
+        ],
+        [
+          "c512_probability_unround_720",
+          true
+        ],
+        [
+          "c128_pairwise_720",
+          true
+        ],
+        [
+          "c128_dual_qkv_720",
+          false
+        ],
+        [
+          "c64_attention_project_720",
+          true
+        ],
+        [
+          "c128_attention_project_720",
+          true
+        ]
+      ],
+      "numeric": [
+        [
+          "branch_accum_families",
+          [
+            "c128"
+          ]
+        ],
+        [
+          "history_value",
+          "fp32_fractional"
+        ],
+        [
+          "front_noise",
+          "native_both"
+        ]
+      ],
+      "hooks": [
+        {
+          "module": "audit_front_decoder_post_720_v1",
+          "call": "installed",
+          "stage": "before_numeric",
+          "kwargs": {
+            "merge_native": true,
+            "decoder_full_k": false,
+            "post_native_head": false,
+            "post_tail": false,
+            "stage_matrices": false,
+            "down_channels": [],
+            "up_channels": [],
+            "pre_average": false,
+            "native_style": false,
+            "front_controls": false,
+            "pool_c512_transition": true,
+            "post_entry_mode": "baseline",
+            "post_sigmoid": "table"
+          }
+        }
+      ],
+      "source_group": "front-decoder-post",
+      "source_profile": "fdp_p02_merges",
+      "pending_validation": true
+    },
+    "audit_impl_fdp_p02_post_entry": {
+      "label": "输出入口原生计算",
+      "packages": [
+        "P02"
+      ],
+      "legacy": [
+        [
+          "c512_qkv_library_720",
+          true
+        ],
+        [
+          "native_k8_720",
+          true
+        ],
+        [
+          "decoder_gather_unround_720",
+          true
+        ],
+        [
+          "c32_hidden_native_720",
+          true
+        ],
+        [
+          "c512_probability_unround_720",
+          true
+        ],
+        [
+          "c128_pairwise_720",
+          true
+        ],
+        [
+          "c128_dual_qkv_720",
+          false
+        ],
+        [
+          "c64_attention_project_720",
+          true
+        ],
+        [
+          "c128_attention_project_720",
+          true
+        ]
+      ],
+      "numeric": [
+        [
+          "branch_accum_families",
+          [
+            "c128"
+          ]
+        ],
+        [
+          "history_value",
+          "fp32_fractional"
+        ],
+        [
+          "front_noise",
+          "native_both"
+        ]
+      ],
+      "hooks": [
+        {
+          "module": "audit_front_decoder_post_720_v1",
+          "call": "installed",
+          "stage": "before_numeric",
+          "kwargs": {
+            "merge_native": false,
+            "decoder_full_k": false,
+            "post_native_head": false,
+            "post_tail": false,
+            "stage_matrices": false,
+            "down_channels": [],
+            "up_channels": [],
+            "pre_average": false,
+            "native_style": false,
+            "front_controls": false,
+            "pool_c512_transition": true,
+            "post_entry_mode": "native",
+            "post_sigmoid": "table"
+          }
+        }
+      ],
+      "source_group": "front-decoder-post",
+      "source_profile": "fdp_p02_post_entry",
+      "pending_validation": true
+    },
+    "audit_impl_fdp_p03_decoder_full_k": {
+      "label": "解码输入完整累加",
+      "packages": [
+        "P03"
+      ],
+      "legacy": [
+        [
+          "c512_qkv_library_720",
+          true
+        ],
+        [
+          "native_k8_720",
+          true
+        ],
+        [
+          "decoder_gather_unround_720",
+          true
+        ],
+        [
+          "c32_hidden_native_720",
+          true
+        ],
+        [
+          "c512_probability_unround_720",
+          true
+        ],
+        [
+          "c128_pairwise_720",
+          true
+        ],
+        [
+          "c128_dual_qkv_720",
+          false
+        ],
+        [
+          "c64_attention_project_720",
+          true
+        ],
+        [
+          "c128_attention_project_720",
+          true
+        ]
+      ],
+      "numeric": [
+        [
+          "branch_accum_families",
+          [
+            "c128"
+          ]
+        ],
+        [
+          "history_value",
+          "fp32_fractional"
+        ],
+        [
+          "front_noise",
+          "native_both"
+        ]
+      ],
+      "hooks": [
+        {
+          "module": "audit_front_decoder_post_720_v1",
+          "call": "installed",
+          "stage": "before_numeric",
+          "kwargs": {
+            "merge_native": false,
+            "decoder_full_k": true,
+            "post_native_head": false,
+            "post_tail": false,
+            "stage_matrices": false,
+            "down_channels": [],
+            "up_channels": [],
+            "pre_average": false,
+            "native_style": false,
+            "front_controls": false,
+            "pool_c512_transition": true,
+            "post_entry_mode": "baseline",
+            "post_sigmoid": "table"
+          }
+        }
+      ],
+      "source_group": "front-decoder-post",
+      "source_profile": "fdp_p03_decoder_full_k",
+      "pending_validation": true
+    },
+    "audit_impl_fdp_p06_native_tail": {
+      "label": "输出尾段原生计算",
+      "packages": [
+        "P06"
+      ],
+      "legacy": [
+        [
+          "c512_qkv_library_720",
+          true
+        ],
+        [
+          "native_k8_720",
+          true
+        ],
+        [
+          "decoder_gather_unround_720",
+          true
+        ],
+        [
+          "c32_hidden_native_720",
+          true
+        ],
+        [
+          "c512_probability_unround_720",
+          true
+        ],
+        [
+          "c128_pairwise_720",
+          true
+        ],
+        [
+          "c128_dual_qkv_720",
+          false
+        ],
+        [
+          "c64_attention_project_720",
+          true
+        ],
+        [
+          "c128_attention_project_720",
+          true
+        ]
+      ],
+      "numeric": [
+        [
+          "branch_accum_families",
+          [
+            "c128"
+          ]
+        ],
+        [
+          "history_value",
+          "fp32_fractional"
+        ],
+        [
+          "front_noise",
+          "native_both"
+        ]
+      ],
+      "hooks": [
+        {
+          "module": "audit_front_decoder_post_720_v1",
+          "call": "installed",
+          "stage": "before_numeric",
+          "kwargs": {
+            "merge_native": false,
+            "decoder_full_k": false,
+            "post_native_head": false,
+            "post_tail": true,
+            "stage_matrices": false,
+            "down_channels": [],
+            "up_channels": [],
+            "pre_average": false,
+            "native_style": false,
+            "front_controls": false,
+            "pool_c512_transition": true,
+            "post_entry_mode": "baseline",
+            "post_sigmoid": "native"
+          }
+        }
+      ],
+      "source_group": "front-decoder-post",
+      "source_profile": "fdp_p06_native_tail",
+      "pending_validation": true
+    },
+    "audit_impl_fdp_p06_native_style": {
+      "label": "风格原生计算",
+      "packages": [
+        "P06"
+      ],
+      "legacy": [
+        [
+          "c512_qkv_library_720",
+          true
+        ],
+        [
+          "native_k8_720",
+          true
+        ],
+        [
+          "decoder_gather_unround_720",
+          true
+        ],
+        [
+          "c32_hidden_native_720",
+          true
+        ],
+        [
+          "c512_probability_unround_720",
+          true
+        ],
+        [
+          "c128_pairwise_720",
+          true
+        ],
+        [
+          "c128_dual_qkv_720",
+          false
+        ],
+        [
+          "c64_attention_project_720",
+          true
+        ],
+        [
+          "c128_attention_project_720",
+          true
+        ],
+        [
+          "implementation_lazy_assets_720",
+          true
+        ]
+      ],
+      "numeric": [
+        [
+          "branch_accum_families",
+          [
+            "c128"
+          ]
+        ],
+        [
+          "history_value",
+          "fp32_fractional"
+        ],
+        [
+          "front_noise",
+          "native_both"
+        ]
+      ],
+      "hooks": [
+        {
+          "module": "audit_front_decoder_post_720_v1",
+          "call": "installed",
+          "stage": "before_numeric",
+          "kwargs": {
+            "merge_native": false,
+            "decoder_full_k": false,
+            "post_native_head": false,
+            "post_tail": false,
+            "stage_matrices": false,
+            "down_channels": [],
+            "up_channels": [],
+            "pre_average": false,
+            "native_style": true,
+            "front_controls": false,
+            "pool_c512_transition": true,
+            "post_entry_mode": "baseline",
+            "post_sigmoid": "table"
+          }
+        }
+      ],
+      "source_group": "front-decoder-post",
+      "source_profile": "fdp_p06_native_style",
+      "pending_validation": true
+    },
+    "audit_impl_fdp_p10_entry_mlp": {
+      "label": "输出入口与分支融合",
+      "packages": [
+        "P10"
+      ],
+      "legacy": [
+        [
+          "c512_qkv_library_720",
+          true
+        ],
+        [
+          "native_k8_720",
+          true
+        ],
+        [
+          "decoder_gather_unround_720",
+          true
+        ],
+        [
+          "c32_hidden_native_720",
+          true
+        ],
+        [
+          "c512_probability_unround_720",
+          true
+        ],
+        [
+          "c128_pairwise_720",
+          true
+        ],
+        [
+          "c128_dual_qkv_720",
+          false
+        ],
+        [
+          "c64_attention_project_720",
+          true
+        ],
+        [
+          "c128_attention_project_720",
+          true
+        ]
+      ],
+      "numeric": [
+        [
+          "branch_accum_families",
+          [
+            "c128"
+          ]
+        ],
+        [
+          "history_value",
+          "fp32_fractional"
+        ],
+        [
+          "front_noise",
+          "native_both"
+        ]
+      ],
+      "hooks": [
+        {
+          "module": "audit_front_decoder_post_720_v1",
+          "call": "installed",
+          "stage": "before_numeric",
+          "kwargs": {
+            "merge_native": false,
+            "decoder_full_k": false,
+            "post_native_head": false,
+            "post_tail": false,
+            "stage_matrices": false,
+            "down_channels": [],
+            "up_channels": [],
+            "pre_average": false,
+            "native_style": false,
+            "front_controls": false,
+            "pool_c512_transition": true,
+            "post_entry_mode": "native_mlp",
+            "post_sigmoid": "table"
+          }
+        }
+      ],
+      "source_group": "front-decoder-post",
+      "source_profile": "fdp_p10_entry_mlp",
+      "pending_validation": true
+    },
+    "audit_impl_fdp_p10_attention_native_head": {
+      "label": "输出注意力与输出头融合",
+      "packages": [
+        "P10"
+      ],
+      "legacy": [
+        [
+          "c512_qkv_library_720",
+          true
+        ],
+        [
+          "native_k8_720",
+          true
+        ],
+        [
+          "decoder_gather_unround_720",
+          true
+        ],
+        [
+          "c32_hidden_native_720",
+          true
+        ],
+        [
+          "c512_probability_unround_720",
+          true
+        ],
+        [
+          "c128_pairwise_720",
+          true
+        ],
+        [
+          "c128_dual_qkv_720",
+          false
+        ],
+        [
+          "c64_attention_project_720",
+          true
+        ],
+        [
+          "c128_attention_project_720",
+          true
+        ]
+      ],
+      "numeric": [
+        [
+          "branch_accum_families",
+          [
+            "c128"
+          ]
+        ],
+        [
+          "history_value",
+          "fp32_fractional"
+        ],
+        [
+          "front_noise",
+          "native_both"
+        ]
+      ],
+      "hooks": [
+        {
+          "module": "audit_front_decoder_post_720_v1",
+          "call": "installed",
+          "stage": "before_numeric",
+          "kwargs": {
+            "merge_native": false,
+            "decoder_full_k": false,
+            "post_native_head": true,
+            "post_tail": false,
+            "stage_matrices": false,
+            "down_channels": [],
+            "up_channels": [],
+            "pre_average": false,
+            "native_style": false,
+            "front_controls": false,
+            "pool_c512_transition": true,
+            "post_entry_mode": "baseline",
+            "post_sigmoid": "table"
+          }
+        }
+      ],
+      "source_group": "front-decoder-post",
+      "source_profile": "fdp_p10_attention_native_head",
+      "pending_validation": true
+    },
+    "audit_impl_fdp_p13_average": {
+      "label": "输入平均原生计算",
+      "packages": [
+        "P13"
+      ],
+      "legacy": [
+        [
+          "c512_qkv_library_720",
+          true
+        ],
+        [
+          "native_k8_720",
+          true
+        ],
+        [
+          "decoder_gather_unround_720",
+          true
+        ],
+        [
+          "c32_hidden_native_720",
+          true
+        ],
+        [
+          "c512_probability_unround_720",
+          true
+        ],
+        [
+          "c128_pairwise_720",
+          true
+        ],
+        [
+          "c128_dual_qkv_720",
+          false
+        ],
+        [
+          "c64_attention_project_720",
+          true
+        ],
+        [
+          "c128_attention_project_720",
+          true
+        ]
+      ],
+      "numeric": [
+        [
+          "branch_accum_families",
+          [
+            "c128"
+          ]
+        ],
+        [
+          "history_value",
+          "fp32_fractional"
+        ],
+        [
+          "front_noise",
+          "native_both"
+        ]
+      ],
+      "hooks": [
+        {
+          "module": "audit_front_decoder_post_720_v1",
+          "call": "installed",
+          "stage": "before_numeric",
+          "kwargs": {
+            "merge_native": false,
+            "decoder_full_k": false,
+            "post_native_head": false,
+            "post_tail": false,
+            "stage_matrices": false,
+            "down_channels": [],
+            "up_channels": [],
+            "pre_average": true,
+            "native_style": false,
+            "front_controls": false,
+            "pool_c512_transition": true,
+            "post_entry_mode": "baseline",
+            "post_sigmoid": "table"
+          }
+        }
+      ],
+      "source_group": "front-decoder-post",
+      "source_profile": "fdp_p13_average",
+      "pending_validation": true
+    },
+    "audit_impl_fdp_p13_down": {
+      "label": "降采样与投影融合",
+      "packages": [
+        "P13"
+      ],
+      "legacy": [
+        [
+          "c512_qkv_library_720",
+          true
+        ],
+        [
+          "native_k8_720",
+          true
+        ],
+        [
+          "decoder_gather_unround_720",
+          true
+        ],
+        [
+          "c32_hidden_native_720",
+          true
+        ],
+        [
+          "c512_probability_unround_720",
+          true
+        ],
+        [
+          "c128_pairwise_720",
+          true
+        ],
+        [
+          "c128_dual_qkv_720",
+          false
+        ],
+        [
+          "c64_attention_project_720",
+          true
+        ],
+        [
+          "c128_attention_project_720",
+          true
+        ]
+      ],
+      "numeric": [
+        [
+          "branch_accum_families",
+          [
+            "c128"
+          ]
+        ],
+        [
+          "history_value",
+          "fp32_fractional"
+        ],
+        [
+          "front_noise",
+          "native_both"
+        ]
+      ],
+      "hooks": [
+        {
+          "module": "audit_front_decoder_post_720_v1",
+          "call": "installed",
+          "stage": "before_numeric",
+          "kwargs": {
+            "merge_native": false,
+            "decoder_full_k": false,
+            "post_native_head": false,
+            "post_tail": false,
+            "stage_matrices": false,
+            "down_channels": [
+              32,
+              64,
+              128,
+              256,
+              512
+            ],
+            "up_channels": [],
+            "pre_average": false,
+            "native_style": false,
+            "front_controls": false,
+            "pool_c512_transition": true,
+            "post_entry_mode": "baseline",
+            "post_sigmoid": "table"
+          }
+        }
+      ],
+      "source_group": "front-decoder-post",
+      "source_profile": "fdp_p13_down",
+      "pending_validation": true
+    },
+    "audit_impl_fdp_p13_up": {
+      "label": "升采样投影原生计算",
+      "packages": [
+        "P13"
+      ],
+      "legacy": [
+        [
+          "c512_qkv_library_720",
+          true
+        ],
+        [
+          "native_k8_720",
+          true
+        ],
+        [
+          "decoder_gather_unround_720",
+          true
+        ],
+        [
+          "c32_hidden_native_720",
+          true
+        ],
+        [
+          "c512_probability_unround_720",
+          true
+        ],
+        [
+          "c128_pairwise_720",
+          true
+        ],
+        [
+          "c128_dual_qkv_720",
+          false
+        ],
+        [
+          "c64_attention_project_720",
+          true
+        ],
+        [
+          "c128_attention_project_720",
+          true
+        ]
+      ],
+      "numeric": [
+        [
+          "branch_accum_families",
+          [
+            "c128"
+          ]
+        ],
+        [
+          "history_value",
+          "fp32_fractional"
+        ],
+        [
+          "front_noise",
+          "native_both"
+        ]
+      ],
+      "hooks": [
+        {
+          "module": "audit_front_decoder_post_720_v1",
+          "call": "installed",
+          "stage": "before_numeric",
+          "kwargs": {
+            "merge_native": false,
+            "decoder_full_k": false,
+            "post_native_head": false,
+            "post_tail": false,
+            "stage_matrices": false,
+            "down_channels": [],
+            "up_channels": [
+              256,
+              128,
+              64,
+              32
+            ],
+            "pre_average": false,
+            "native_style": false,
+            "front_controls": false,
+            "pool_c512_transition": true,
+            "post_entry_mode": "baseline",
+            "post_sigmoid": "table"
+          }
+        }
+      ],
+      "source_group": "front-decoder-post",
+      "source_profile": "fdp_p13_up",
+      "pending_validation": true
+    },
+    "audit_impl_fdp_p14_controls": {
+      "label": "输入控制通道直接写入",
+      "packages": [
+        "P14"
+      ],
+      "legacy": [
+        [
+          "c512_qkv_library_720",
+          true
+        ],
+        [
+          "native_k8_720",
+          true
+        ],
+        [
+          "decoder_gather_unround_720",
+          true
+        ],
+        [
+          "c32_hidden_native_720",
+          true
+        ],
+        [
+          "c512_probability_unround_720",
+          true
+        ],
+        [
+          "c128_pairwise_720",
+          true
+        ],
+        [
+          "c128_dual_qkv_720",
+          false
+        ],
+        [
+          "c64_attention_project_720",
+          true
+        ],
+        [
+          "c128_attention_project_720",
+          true
+        ]
+      ],
+      "numeric": [
+        [
+          "branch_accum_families",
+          [
+            "c128"
+          ]
+        ],
+        [
+          "history_value",
+          "fp32_fractional"
+        ],
+        [
+          "front_noise",
+          "native_both"
+        ]
+      ],
+      "hooks": [
+        {
+          "module": "audit_front_decoder_post_720_v1",
+          "call": "installed",
+          "stage": "before_numeric",
+          "kwargs": {
+            "merge_native": false,
+            "decoder_full_k": false,
+            "post_native_head": false,
+            "post_tail": false,
+            "stage_matrices": false,
+            "down_channels": [],
+            "up_channels": [],
+            "pre_average": false,
+            "native_style": false,
+            "front_controls": true,
+            "pool_c512_transition": true,
+            "post_entry_mode": "baseline",
+            "post_sigmoid": "table"
+          }
+        }
+      ],
+      "source_group": "front-decoder-post",
+      "source_profile": "fdp_p14_controls",
+      "pending_validation": true
+    },
+    "audit_impl_fdp_p18_lazy_assets": {
+      "label": "按需风格资产与删除闲置噪声表",
+      "packages": [
+        "P18"
+      ],
+      "legacy": [
+        [
+          "c512_qkv_library_720",
+          true
+        ],
+        [
+          "native_k8_720",
+          true
+        ],
+        [
+          "decoder_gather_unround_720",
+          true
+        ],
+        [
+          "c32_hidden_native_720",
+          true
+        ],
+        [
+          "c512_probability_unround_720",
+          true
+        ],
+        [
+          "c128_pairwise_720",
+          true
+        ],
+        [
+          "c128_dual_qkv_720",
+          false
+        ],
+        [
+          "c64_attention_project_720",
+          true
+        ],
+        [
+          "c128_attention_project_720",
+          true
+        ],
+        [
+          "implementation_lazy_assets_720",
+          true
+        ]
+      ],
+      "numeric": [
+        [
+          "branch_accum_families",
+          [
+            "c128"
+          ]
+        ],
+        [
+          "history_value",
+          "fp32_fractional"
+        ],
+        [
+          "front_noise",
+          "native_both"
+        ]
+      ],
+      "hooks": [
+        {
+          "module": "audit_front_decoder_post_720_v1",
+          "call": "installed",
+          "stage": "before_numeric",
+          "kwargs": {
+            "merge_native": false,
+            "decoder_full_k": false,
+            "post_native_head": false,
+            "post_tail": false,
+            "stage_matrices": false,
+            "down_channels": [],
+            "up_channels": [],
+            "pre_average": false,
+            "native_style": true,
+            "front_controls": false,
+            "pool_c512_transition": true,
+            "post_entry_mode": "baseline",
+            "post_sigmoid": "table"
+          }
+        }
+      ],
+      "source_group": "front-decoder-post",
+      "source_profile": "fdp_p18_lazy_assets",
+      "pending_validation": true
+    },
+    "audit_impl_fdp_numeric_combo": {
+      "label": "解码与输出原生计算组合",
+      "packages": [
+        "P02",
+        "P03"
+      ],
+      "legacy": [
+        [
+          "c512_qkv_library_720",
+          true
+        ],
+        [
+          "native_k8_720",
+          true
+        ],
+        [
+          "decoder_gather_unround_720",
+          true
+        ],
+        [
+          "c32_hidden_native_720",
+          true
+        ],
+        [
+          "c512_probability_unround_720",
+          true
+        ],
+        [
+          "c128_pairwise_720",
+          true
+        ],
+        [
+          "c128_dual_qkv_720",
+          false
+        ],
+        [
+          "c64_attention_project_720",
+          true
+        ],
+        [
+          "c128_attention_project_720",
+          true
+        ]
+      ],
+      "numeric": [
+        [
+          "branch_accum_families",
+          [
+            "c128"
+          ]
+        ],
+        [
+          "history_value",
+          "fp32_fractional"
+        ],
+        [
+          "front_noise",
+          "native_both"
+        ]
+      ],
+      "hooks": [
+        {
+          "module": "audit_front_decoder_post_720_v1",
+          "call": "installed",
+          "stage": "before_numeric",
+          "kwargs": {
+            "merge_native": true,
+            "decoder_full_k": true,
+            "post_native_head": false,
+            "post_tail": false,
+            "stage_matrices": false,
+            "down_channels": [],
+            "up_channels": [],
+            "pre_average": false,
+            "native_style": false,
+            "front_controls": false,
+            "pool_c512_transition": true,
+            "post_entry_mode": "native",
+            "post_sigmoid": "table"
+          }
+        }
+      ],
+      "source_group": "front-decoder-post",
+      "source_profile": "fdp_numeric_combo",
+      "pending_validation": true
+    },
+    "audit_impl_fdp_post_combo": {
+      "label": "完整输出模块组合",
+      "packages": [
+        "P02",
+        "P06",
+        "P10",
+        "P18"
+      ],
+      "legacy": [
+        [
+          "c512_qkv_library_720",
+          true
+        ],
+        [
+          "native_k8_720",
+          true
+        ],
+        [
+          "decoder_gather_unround_720",
+          true
+        ],
+        [
+          "c32_hidden_native_720",
+          true
+        ],
+        [
+          "c512_probability_unround_720",
+          true
+        ],
+        [
+          "c128_pairwise_720",
+          true
+        ],
+        [
+          "c128_dual_qkv_720",
+          false
+        ],
+        [
+          "c64_attention_project_720",
+          true
+        ],
+        [
+          "c128_attention_project_720",
+          true
+        ],
+        [
+          "implementation_lazy_assets_720",
+          true
+        ]
+      ],
+      "numeric": [
+        [
+          "branch_accum_families",
+          [
+            "c128"
+          ]
+        ],
+        [
+          "history_value",
+          "fp32_fractional"
+        ],
+        [
+          "front_noise",
+          "native_both"
+        ]
+      ],
+      "hooks": [
+        {
+          "module": "audit_front_decoder_post_720_v1",
+          "call": "installed",
+          "stage": "before_numeric",
+          "kwargs": {
+            "merge_native": false,
+            "decoder_full_k": false,
+            "post_native_head": true,
+            "post_tail": true,
+            "stage_matrices": false,
+            "down_channels": [],
+            "up_channels": [],
+            "pre_average": false,
+            "native_style": true,
+            "front_controls": false,
+            "pool_c512_transition": true,
+            "post_entry_mode": "native_mlp",
+            "post_sigmoid": "native"
+          }
+        }
+      ],
+      "source_group": "front-decoder-post",
+      "source_profile": "fdp_post_combo",
+      "pending_validation": true
+    },
+    "audit_impl_fdp_all": {
+      "label": "输入、解码与输出完整组合",
+      "packages": [
+        "P02",
+        "P03",
+        "P06",
+        "P10",
+        "P13",
+        "P14",
+        "P18"
+      ],
+      "legacy": [
+        [
+          "c512_qkv_library_720",
+          true
+        ],
+        [
+          "native_k8_720",
+          true
+        ],
+        [
+          "decoder_gather_unround_720",
+          true
+        ],
+        [
+          "c32_hidden_native_720",
+          true
+        ],
+        [
+          "c512_probability_unround_720",
+          true
+        ],
+        [
+          "c128_pairwise_720",
+          true
+        ],
+        [
+          "c128_dual_qkv_720",
+          false
+        ],
+        [
+          "c64_attention_project_720",
+          true
+        ],
+        [
+          "c128_attention_project_720",
+          true
+        ],
+        [
+          "implementation_lazy_assets_720",
+          true
+        ]
+      ],
+      "numeric": [
+        [
+          "branch_accum_families",
+          [
+            "c128"
+          ]
+        ],
+        [
+          "history_value",
+          "fp32_fractional"
+        ],
+        [
+          "front_noise",
+          "native_both"
+        ]
+      ],
+      "hooks": [
+        {
+          "module": "audit_front_decoder_post_720_v1",
+          "call": "installed",
+          "stage": "before_numeric",
+          "kwargs": {
+            "merge_native": true,
+            "decoder_full_k": true,
+            "post_native_head": true,
+            "post_tail": true,
+            "stage_matrices": false,
+            "down_channels": [
+              32,
+              64,
+              128,
+              256,
+              512
+            ],
+            "up_channels": [
+              256,
+              128,
+              64,
+              32
+            ],
+            "pre_average": true,
+            "native_style": true,
+            "front_controls": true,
+            "pool_c512_transition": true,
+            "post_entry_mode": "native_mlp",
+            "post_sigmoid": "native"
+          }
+        }
+      ],
+      "source_group": "front-decoder-post",
+      "source_profile": "fdp_all",
+      "pending_validation": true
+    },
+    "audit_impl_fdp_all_with_p11_owner": {
+      "label": "输入、解码与输出组合（大通道接管边界）",
+      "packages": [
+        "P11"
+      ],
+      "legacy": [
+        [
+          "c512_qkv_library_720",
+          true
+        ],
+        [
+          "native_k8_720",
+          true
+        ],
+        [
+          "decoder_gather_unround_720",
+          true
+        ],
+        [
+          "c32_hidden_native_720",
+          true
+        ],
+        [
+          "c512_probability_unround_720",
+          true
+        ],
+        [
+          "c128_pairwise_720",
+          true
+        ],
+        [
+          "c128_dual_qkv_720",
+          false
+        ],
+        [
+          "c64_attention_project_720",
+          true
+        ],
+        [
+          "c128_attention_project_720",
+          true
+        ],
+        [
+          "implementation_lazy_assets_720",
+          true
+        ]
+      ],
+      "numeric": [
+        [
+          "branch_accum_families",
+          [
+            "c128"
+          ]
+        ],
+        [
+          "history_value",
+          "fp32_fractional"
+        ],
+        [
+          "front_noise",
+          "native_both"
+        ]
+      ],
+      "hooks": [
+        {
+          "module": "audit_front_decoder_post_720_v1",
+          "call": "installed",
+          "stage": "before_numeric",
+          "kwargs": {
+            "merge_native": true,
+            "decoder_full_k": true,
+            "post_native_head": true,
+            "post_tail": true,
+            "stage_matrices": false,
+            "down_channels": [
+              32,
+              64,
+              128,
+              256,
+              512
+            ],
+            "up_channels": [
+              256,
+              128,
+              64,
+              32
+            ],
+            "pre_average": true,
+            "native_style": true,
+            "front_controls": true,
+            "pool_c512_transition": false,
+            "post_entry_mode": "native_mlp",
+            "post_sigmoid": "native"
+          }
+        }
+      ],
+      "source_group": "front-decoder-post",
+      "source_profile": "fdp_all_with_p11_owner",
+      "pending_validation": true
+    },
+    "audit_impl_fdp_p13_down_with_p11_owner": {
+      "label": "降采样投影融合（大通道接管边界）",
+      "packages": [
+        "P11",
+        "P13"
+      ],
+      "legacy": [
+        [
+          "c512_qkv_library_720",
+          true
+        ],
+        [
+          "native_k8_720",
+          true
+        ],
+        [
+          "decoder_gather_unround_720",
+          true
+        ],
+        [
+          "c32_hidden_native_720",
+          true
+        ],
+        [
+          "c512_probability_unround_720",
+          true
+        ],
+        [
+          "c128_pairwise_720",
+          true
+        ],
+        [
+          "c128_dual_qkv_720",
+          false
+        ],
+        [
+          "c64_attention_project_720",
+          true
+        ],
+        [
+          "c128_attention_project_720",
+          true
+        ]
+      ],
+      "numeric": [
+        [
+          "branch_accum_families",
+          [
+            "c128"
+          ]
+        ],
+        [
+          "history_value",
+          "fp32_fractional"
+        ],
+        [
+          "front_noise",
+          "native_both"
+        ]
+      ],
+      "hooks": [
+        {
+          "module": "audit_front_decoder_post_720_v1",
+          "call": "installed",
+          "stage": "before_numeric",
+          "kwargs": {
+            "merge_native": false,
+            "decoder_full_k": false,
+            "post_native_head": false,
+            "post_tail": false,
+            "stage_matrices": false,
+            "down_channels": [
+              32,
+              64,
+              128,
+              256,
+              512
+            ],
+            "up_channels": [],
+            "pre_average": false,
+            "native_style": false,
+            "front_controls": false,
+            "pool_c512_transition": false,
+            "post_entry_mode": "baseline",
+            "post_sigmoid": "table"
+          }
+        }
+      ],
+      "source_group": "front-decoder-post",
+      "source_profile": "fdp_p13_down_with_p11_owner",
+      "pending_validation": true
+    },
+    "audit_impl_fdp_p06_fused_table_tail": {
+      "label": "输出尾段融合（保留曲线）",
+      "packages": [
+        "P06"
+      ],
+      "legacy": [
+        [
+          "c512_qkv_library_720",
+          true
+        ],
+        [
+          "native_k8_720",
+          true
+        ],
+        [
+          "decoder_gather_unround_720",
+          true
+        ],
+        [
+          "c32_hidden_native_720",
+          true
+        ],
+        [
+          "c512_probability_unround_720",
+          true
+        ],
+        [
+          "c128_pairwise_720",
+          true
+        ],
+        [
+          "c128_dual_qkv_720",
+          false
+        ],
+        [
+          "c64_attention_project_720",
+          true
+        ],
+        [
+          "c128_attention_project_720",
+          true
+        ]
+      ],
+      "numeric": [
+        [
+          "branch_accum_families",
+          [
+            "c128"
+          ]
+        ],
+        [
+          "history_value",
+          "fp32_fractional"
+        ],
+        [
+          "front_noise",
+          "native_both"
+        ]
+      ],
+      "hooks": [
+        {
+          "module": "audit_front_decoder_post_720_v1",
+          "call": "installed",
+          "stage": "before_numeric",
+          "kwargs": {
+            "merge_native": false,
+            "decoder_full_k": false,
+            "post_native_head": false,
+            "post_tail": true,
+            "stage_matrices": false,
+            "down_channels": [],
+            "up_channels": [],
+            "pre_average": false,
+            "native_style": false,
+            "front_controls": false,
+            "pool_c512_transition": true,
+            "post_entry_mode": "baseline",
+            "post_sigmoid": "table"
+          }
+        }
+      ],
+      "source_group": "front-decoder-post",
+      "source_profile": "fdp_p06_fused_table_tail",
+      "pending_validation": true
+    },
+    "audit_impl_history_bundle_control": {
+      "label": "共同冷检查对照",
+      "packages": [],
+      "legacy": [
+        [
+          "c512_qkv_library_720",
+          true
+        ],
+        [
+          "native_k8_720",
+          true
+        ],
+        [
+          "decoder_gather_unround_720",
+          true
+        ],
+        [
+          "c32_hidden_native_720",
+          true
+        ],
+        [
+          "c512_probability_unround_720",
+          true
+        ],
+        [
+          "c128_pairwise_720",
+          true
+        ],
+        [
+          "c128_dual_qkv_720",
+          false
+        ],
+        [
+          "c64_attention_project_720",
+          true
+        ],
+        [
+          "c128_attention_project_720",
+          true
+        ]
+      ],
+      "numeric": [
+        [
+          "branch_accum_families",
+          [
+            "c128"
+          ]
+        ],
+        [
+          "history_value",
+          "fp32_fractional"
+        ],
+        [
+          "front_noise",
+          "native_both"
+        ]
+      ],
+      "hooks": [
+        {
+          "module": "audit_history_host_720_v1",
+          "call": "installed",
+          "stage": "before_numeric",
+          "kwargs": {
+            "pixel_rgb": false,
+            "drop_normalized": false,
+            "fused_near": false,
+            "reuse_buffers": false,
+            "receipt_capacity": 64,
+            "direct_compiled_launch": false,
+            "input_summary": false,
+            "release_geometry_indices": false,
+            "release_retired_refs": false,
+            "component_front_input": false
+          }
+        }
+      ],
+      "source_group": "history-host-graph",
+      "source_profile": "history_bundle_control",
+      "pending_validation": true
+    },
+    "audit_impl_history_drop_normalized": {
+      "label": "删除闲置历史坐标写入",
+      "packages": [
+        "P05"
+      ],
+      "legacy": [
+        [
+          "c512_qkv_library_720",
+          true
+        ],
+        [
+          "native_k8_720",
+          true
+        ],
+        [
+          "decoder_gather_unround_720",
+          true
+        ],
+        [
+          "c32_hidden_native_720",
+          true
+        ],
+        [
+          "c512_probability_unround_720",
+          true
+        ],
+        [
+          "c128_pairwise_720",
+          true
+        ],
+        [
+          "c128_dual_qkv_720",
+          false
+        ],
+        [
+          "c64_attention_project_720",
+          true
+        ],
+        [
+          "c128_attention_project_720",
+          true
+        ]
+      ],
+      "numeric": [
+        [
+          "branch_accum_families",
+          [
+            "c128"
+          ]
+        ],
+        [
+          "history_value",
+          "fp32_fractional"
+        ],
+        [
+          "front_noise",
+          "native_both"
+        ]
+      ],
+      "hooks": [
+        {
+          "module": "audit_history_host_720_v1",
+          "call": "installed",
+          "stage": "before_numeric",
+          "kwargs": {
+            "pixel_rgb": false,
+            "drop_normalized": true,
+            "fused_near": false,
+            "reuse_buffers": false,
+            "receipt_capacity": 64,
+            "direct_compiled_launch": false,
+            "input_summary": false,
+            "release_geometry_indices": false,
+            "release_retired_refs": false,
+            "component_front_input": false
+          }
+        }
+      ],
+      "source_group": "history-host-graph",
+      "source_profile": "history_drop_normalized",
+      "pending_validation": true
+    },
+    "audit_impl_history_rgb_pixel": {
+      "label": "历史颜色直接像素采样",
+      "packages": [
+        "P05"
+      ],
+      "legacy": [
+        [
+          "c512_qkv_library_720",
+          true
+        ],
+        [
+          "native_k8_720",
+          true
+        ],
+        [
+          "decoder_gather_unround_720",
+          true
+        ],
+        [
+          "c32_hidden_native_720",
+          true
+        ],
+        [
+          "c512_probability_unround_720",
+          true
+        ],
+        [
+          "c128_pairwise_720",
+          true
+        ],
+        [
+          "c128_dual_qkv_720",
+          false
+        ],
+        [
+          "c64_attention_project_720",
+          true
+        ],
+        [
+          "c128_attention_project_720",
+          true
+        ]
+      ],
+      "numeric": [
+        [
+          "branch_accum_families",
+          [
+            "c128"
+          ]
+        ],
+        [
+          "history_value",
+          "fp32_fractional"
+        ],
+        [
+          "front_noise",
+          "native_both"
+        ]
+      ],
+      "hooks": [
+        {
+          "module": "audit_history_host_720_v1",
+          "call": "installed",
+          "stage": "before_numeric",
+          "kwargs": {
+            "pixel_rgb": true,
+            "drop_normalized": false,
+            "fused_near": false,
+            "reuse_buffers": false,
+            "receipt_capacity": 64,
+            "direct_compiled_launch": false,
+            "input_summary": false,
+            "release_geometry_indices": false,
+            "release_retired_refs": false,
+            "component_front_input": false
+          }
+        }
+      ],
+      "source_group": "history-host-graph",
+      "source_profile": "history_rgb_pixel",
+      "pending_validation": true
+    },
+    "audit_impl_history_native_inverse": {
+      "label": "历史权重原生倒数",
+      "packages": [
+        "P05"
+      ],
+      "legacy": [
+        [
+          "c512_qkv_library_720",
+          true
+        ],
+        [
+          "native_k8_720",
+          true
+        ],
+        [
+          "decoder_gather_unround_720",
+          true
+        ],
+        [
+          "c32_hidden_native_720",
+          true
+        ],
+        [
+          "c512_probability_unround_720",
+          true
+        ],
+        [
+          "c128_pairwise_720",
+          true
+        ],
+        [
+          "c128_dual_qkv_720",
+          false
+        ],
+        [
+          "c64_attention_project_720",
+          true
+        ],
+        [
+          "c128_attention_project_720",
+          true
+        ]
+      ],
+      "numeric": [
+        [
+          "branch_accum_families",
+          [
+            "c128"
+          ]
+        ],
+        [
+          "history_value",
+          "fp32_fractional"
+        ],
+        [
+          "front_noise",
+          "native_both"
+        ],
+        [
+          "history_reciprocal",
+          "native"
+        ]
+      ],
+      "hooks": [
+        {
+          "module": "audit_history_host_720_v1",
+          "call": "installed",
+          "stage": "before_numeric",
+          "kwargs": {
+            "pixel_rgb": false,
+            "drop_normalized": false,
+            "fused_near": false,
+            "reuse_buffers": false,
+            "receipt_capacity": 64,
+            "direct_compiled_launch": false,
+            "input_summary": false,
+            "release_geometry_indices": false,
+            "release_retired_refs": false,
+            "component_front_input": false
+          }
+        }
+      ],
+      "source_group": "history-host-graph",
+      "source_profile": "history_native_inverse",
+      "pending_validation": true
+    },
+    "audit_impl_history_native_dimensions": {
+      "label": "历史尺寸原生倒数",
+      "packages": [
+        "P05"
+      ],
+      "legacy": [
+        [
+          "c512_qkv_library_720",
+          true
+        ],
+        [
+          "native_k8_720",
+          true
+        ],
+        [
+          "decoder_gather_unround_720",
+          true
+        ],
+        [
+          "c32_hidden_native_720",
+          true
+        ],
+        [
+          "c512_probability_unround_720",
+          true
+        ],
+        [
+          "c128_pairwise_720",
+          true
+        ],
+        [
+          "c128_dual_qkv_720",
+          false
+        ],
+        [
+          "c64_attention_project_720",
+          true
+        ],
+        [
+          "c128_attention_project_720",
+          true
+        ]
+      ],
+      "numeric": [
+        [
+          "branch_accum_families",
+          [
+            "c128"
+          ]
+        ],
+        [
+          "history_value",
+          "fp32_fractional"
+        ],
+        [
+          "front_noise",
+          "native_both"
+        ],
+        [
+          "history_dimension_rcp",
+          "native"
+        ]
+      ],
+      "hooks": [
+        {
+          "module": "audit_history_host_720_v1",
+          "call": "installed",
+          "stage": "before_numeric",
+          "kwargs": {
+            "pixel_rgb": false,
+            "drop_normalized": false,
+            "fused_near": false,
+            "reuse_buffers": false,
+            "receipt_capacity": 64,
+            "direct_compiled_launch": false,
+            "input_summary": false,
+            "release_geometry_indices": false,
+            "release_retired_refs": false,
+            "component_front_input": false
+          }
+        }
+      ],
+      "source_group": "history-host-graph",
+      "source_profile": "history_native_dimensions",
+      "pending_validation": true
+    },
+    "audit_impl_history_direct_coordinates": {
+      "label": "历史直接像素坐标",
+      "packages": [
+        "P05"
+      ],
+      "legacy": [
+        [
+          "c512_qkv_library_720",
+          true
+        ],
+        [
+          "native_k8_720",
+          true
+        ],
+        [
+          "decoder_gather_unround_720",
+          true
+        ],
+        [
+          "c32_hidden_native_720",
+          true
+        ],
+        [
+          "c512_probability_unround_720",
+          true
+        ],
+        [
+          "c128_pairwise_720",
+          true
+        ],
+        [
+          "c128_dual_qkv_720",
+          false
+        ],
+        [
+          "c64_attention_project_720",
+          true
+        ],
+        [
+          "c128_attention_project_720",
+          true
+        ]
+      ],
+      "numeric": [
+        [
+          "branch_accum_families",
+          [
+            "c128"
+          ]
+        ],
+        [
+          "history_value",
+          "fp32_fractional"
+        ],
+        [
+          "front_noise",
+          "native_both"
+        ],
+        [
+          "history_coord",
+          "direct_pixel"
+        ]
+      ],
+      "hooks": [
+        {
+          "module": "audit_history_host_720_v1",
+          "call": "installed",
+          "stage": "before_numeric",
+          "kwargs": {
+            "pixel_rgb": false,
+            "drop_normalized": false,
+            "fused_near": false,
+            "reuse_buffers": false,
+            "receipt_capacity": 64,
+            "direct_compiled_launch": false,
+            "input_summary": false,
+            "release_geometry_indices": false,
+            "release_retired_refs": false,
+            "component_front_input": false
+          }
+        }
+      ],
+      "source_group": "history-host-graph",
+      "source_profile": "history_direct_coordinates",
+      "pending_validation": true
+    },
+    "audit_impl_history_fused_near": {
+      "label": "历史近整数采样融合",
+      "packages": [
+        "P05"
+      ],
+      "legacy": [
+        [
+          "c512_qkv_library_720",
+          true
+        ],
+        [
+          "native_k8_720",
+          true
+        ],
+        [
+          "decoder_gather_unround_720",
+          true
+        ],
+        [
+          "c32_hidden_native_720",
+          true
+        ],
+        [
+          "c512_probability_unround_720",
+          true
+        ],
+        [
+          "c128_pairwise_720",
+          true
+        ],
+        [
+          "c128_dual_qkv_720",
+          false
+        ],
+        [
+          "c64_attention_project_720",
+          true
+        ],
+        [
+          "c128_attention_project_720",
+          true
+        ]
+      ],
+      "numeric": [
+        [
+          "branch_accum_families",
+          [
+            "c128"
+          ]
+        ],
+        [
+          "history_value",
+          "fp32_all_paths"
+        ],
+        [
+          "front_noise",
+          "native_both"
+        ]
+      ],
+      "hooks": [
+        {
+          "module": "audit_history_host_720_v1",
+          "call": "installed",
+          "stage": "before_numeric",
+          "kwargs": {
+            "pixel_rgb": true,
+            "drop_normalized": false,
+            "fused_near": true,
+            "reuse_buffers": false,
+            "receipt_capacity": 64,
+            "direct_compiled_launch": false,
+            "input_summary": false,
+            "release_geometry_indices": false,
+            "release_retired_refs": false,
+            "component_front_input": false
+          }
+        }
+      ],
+      "source_group": "history-host-graph",
+      "source_profile": "history_fused_near",
+      "pending_validation": true
+    },
+    "audit_impl_history_input_summary": {
+      "label": "合并输入有效性检查",
+      "packages": [
+        "P15"
+      ],
+      "legacy": [
+        [
+          "c512_qkv_library_720",
+          true
+        ],
+        [
+          "native_k8_720",
+          true
+        ],
+        [
+          "decoder_gather_unround_720",
+          true
+        ],
+        [
+          "c32_hidden_native_720",
+          true
+        ],
+        [
+          "c512_probability_unround_720",
+          true
+        ],
+        [
+          "c128_pairwise_720",
+          true
+        ],
+        [
+          "c128_dual_qkv_720",
+          false
+        ],
+        [
+          "c64_attention_project_720",
+          true
+        ],
+        [
+          "c128_attention_project_720",
+          true
+        ]
+      ],
+      "numeric": [
+        [
+          "branch_accum_families",
+          [
+            "c128"
+          ]
+        ],
+        [
+          "history_value",
+          "fp32_fractional"
+        ],
+        [
+          "front_noise",
+          "native_both"
+        ]
+      ],
+      "hooks": [
+        {
+          "module": "audit_history_host_720_v1",
+          "call": "installed",
+          "stage": "before_numeric",
+          "kwargs": {
+            "pixel_rgb": false,
+            "drop_normalized": false,
+            "fused_near": false,
+            "reuse_buffers": false,
+            "receipt_capacity": 64,
+            "direct_compiled_launch": false,
+            "input_summary": true,
+            "release_geometry_indices": false,
+            "release_retired_refs": false,
+            "component_front_input": false
+          }
+        }
+      ],
+      "source_group": "history-host-graph",
+      "source_profile": "history_input_summary",
+      "pending_validation": true
+    },
+    "audit_impl_history_buffer_reuse": {
+      "label": "历史中间缓冲复用",
+      "packages": [
+        "P17"
+      ],
+      "legacy": [
+        [
+          "c512_qkv_library_720",
+          true
+        ],
+        [
+          "native_k8_720",
+          true
+        ],
+        [
+          "decoder_gather_unround_720",
+          true
+        ],
+        [
+          "c32_hidden_native_720",
+          true
+        ],
+        [
+          "c512_probability_unround_720",
+          true
+        ],
+        [
+          "c128_pairwise_720",
+          true
+        ],
+        [
+          "c128_dual_qkv_720",
+          false
+        ],
+        [
+          "c64_attention_project_720",
+          true
+        ],
+        [
+          "c128_attention_project_720",
+          true
+        ]
+      ],
+      "numeric": [
+        [
+          "branch_accum_families",
+          [
+            "c128"
+          ]
+        ],
+        [
+          "history_value",
+          "fp32_fractional"
+        ],
+        [
+          "front_noise",
+          "native_both"
+        ]
+      ],
+      "hooks": [
+        {
+          "module": "audit_history_host_720_v1",
+          "call": "installed",
+          "stage": "before_numeric",
+          "kwargs": {
+            "pixel_rgb": false,
+            "drop_normalized": false,
+            "fused_near": false,
+            "reuse_buffers": true,
+            "receipt_capacity": 64,
+            "direct_compiled_launch": false,
+            "input_summary": false,
+            "release_geometry_indices": false,
+            "release_retired_refs": false,
+            "component_front_input": false
+          }
+        }
+      ],
+      "source_group": "history-host-graph",
+      "source_profile": "history_buffer_reuse",
+      "pending_validation": true
+    },
+    "audit_impl_history_screened_launch": {
+      "label": "直接调用预编译采样核",
+      "packages": [
+        "P15"
+      ],
+      "legacy": [
+        [
+          "c512_qkv_library_720",
+          true
+        ],
+        [
+          "native_k8_720",
+          true
+        ],
+        [
+          "decoder_gather_unround_720",
+          true
+        ],
+        [
+          "c32_hidden_native_720",
+          true
+        ],
+        [
+          "c512_probability_unround_720",
+          true
+        ],
+        [
+          "c128_pairwise_720",
+          true
+        ],
+        [
+          "c128_dual_qkv_720",
+          false
+        ],
+        [
+          "c64_attention_project_720",
+          true
+        ],
+        [
+          "c128_attention_project_720",
+          true
+        ]
+      ],
+      "numeric": [
+        [
+          "branch_accum_families",
+          [
+            "c128"
+          ]
+        ],
+        [
+          "history_value",
+          "fp32_fractional"
+        ],
+        [
+          "front_noise",
+          "native_both"
+        ]
+      ],
+      "hooks": [
+        {
+          "module": "audit_history_host_720_v1",
+          "call": "installed",
+          "stage": "before_numeric",
+          "kwargs": {
+            "pixel_rgb": false,
+            "drop_normalized": false,
+            "fused_near": false,
+            "reuse_buffers": false,
+            "receipt_capacity": 64,
+            "direct_compiled_launch": true,
+            "input_summary": false,
+            "release_geometry_indices": false,
+            "release_retired_refs": false,
+            "component_front_input": false
+          }
+        }
+      ],
+      "source_group": "history-host-graph",
+      "source_profile": "history_screened_launch",
+      "pending_validation": true
+    },
+    "audit_impl_history_verified_retirement": {
+      "label": "历史资源及时退役",
+      "packages": [
+        "P18"
+      ],
+      "legacy": [
+        [
+          "c512_qkv_library_720",
+          true
+        ],
+        [
+          "native_k8_720",
+          true
+        ],
+        [
+          "decoder_gather_unround_720",
+          true
+        ],
+        [
+          "c32_hidden_native_720",
+          true
+        ],
+        [
+          "c512_probability_unround_720",
+          true
+        ],
+        [
+          "c128_pairwise_720",
+          true
+        ],
+        [
+          "c128_dual_qkv_720",
+          false
+        ],
+        [
+          "c64_attention_project_720",
+          true
+        ],
+        [
+          "c128_attention_project_720",
+          true
+        ]
+      ],
+      "numeric": [
+        [
+          "branch_accum_families",
+          [
+            "c128"
+          ]
+        ],
+        [
+          "history_value",
+          "fp32_fractional"
+        ],
+        [
+          "front_noise",
+          "native_both"
+        ]
+      ],
+      "hooks": [
+        {
+          "module": "audit_history_host_720_v1",
+          "call": "installed",
+          "stage": "before_numeric",
+          "kwargs": {
+            "pixel_rgb": false,
+            "drop_normalized": false,
+            "fused_near": false,
+            "reuse_buffers": false,
+            "receipt_capacity": 64,
+            "direct_compiled_launch": false,
+            "input_summary": false,
+            "release_geometry_indices": true,
+            "release_retired_refs": true,
+            "component_front_input": false
+          }
+        }
+      ],
+      "source_group": "history-host-graph",
+      "source_profile": "history_verified_retirement",
+      "pending_validation": true
+    },
+    "audit_impl_history_front_components": {
+      "label": "历史分量直接送入输入模块",
+      "packages": [
+        "P14"
+      ],
+      "legacy": [
+        [
+          "c512_qkv_library_720",
+          true
+        ],
+        [
+          "native_k8_720",
+          true
+        ],
+        [
+          "decoder_gather_unround_720",
+          true
+        ],
+        [
+          "c32_hidden_native_720",
+          true
+        ],
+        [
+          "c512_probability_unround_720",
+          true
+        ],
+        [
+          "c128_pairwise_720",
+          true
+        ],
+        [
+          "c128_dual_qkv_720",
+          false
+        ],
+        [
+          "c64_attention_project_720",
+          true
+        ],
+        [
+          "c128_attention_project_720",
+          true
+        ]
+      ],
+      "numeric": [
+        [
+          "branch_accum_families",
+          [
+            "c128"
+          ]
+        ],
+        [
+          "history_value",
+          "fp32_fractional"
+        ],
+        [
+          "front_noise",
+          "native_both"
+        ]
+      ],
+      "hooks": [
+        {
+          "module": "audit_history_host_720_v1",
+          "call": "installed",
+          "stage": "before_numeric",
+          "kwargs": {
+            "pixel_rgb": false,
+            "drop_normalized": false,
+            "fused_near": false,
+            "reuse_buffers": false,
+            "receipt_capacity": 64,
+            "direct_compiled_launch": false,
+            "input_summary": false,
+            "release_geometry_indices": false,
+            "release_retired_refs": false,
+            "component_front_input": true
+          }
+        }
+      ],
+      "source_group": "history-host-graph",
+      "source_profile": "history_front_components",
+      "pending_validation": true
+    },
+    "audit_impl_history_combined_direct": {
+      "label": "历史完整组合（直接坐标）",
+      "packages": [
+        "P05",
+        "P14",
+        "P15",
+        "P17",
+        "P18"
+      ],
+      "legacy": [
+        [
+          "c512_qkv_library_720",
+          true
+        ],
+        [
+          "native_k8_720",
+          true
+        ],
+        [
+          "decoder_gather_unround_720",
+          true
+        ],
+        [
+          "c32_hidden_native_720",
+          true
+        ],
+        [
+          "c512_probability_unround_720",
+          true
+        ],
+        [
+          "c128_pairwise_720",
+          true
+        ],
+        [
+          "c128_dual_qkv_720",
+          false
+        ],
+        [
+          "c64_attention_project_720",
+          true
+        ],
+        [
+          "c128_attention_project_720",
+          true
+        ]
+      ],
+      "numeric": [
+        [
+          "branch_accum_families",
+          [
+            "c128"
+          ]
+        ],
+        [
+          "history_value",
+          "fp32_all_paths"
+        ],
+        [
+          "front_noise",
+          "native_both"
+        ],
+        [
+          "history_reciprocal",
+          "native"
+        ],
+        [
+          "history_coord",
+          "direct_pixel"
+        ]
+      ],
+      "hooks": [
+        {
+          "module": "audit_history_host_720_v1",
+          "call": "installed",
+          "stage": "before_numeric",
+          "kwargs": {
+            "pixel_rgb": true,
+            "drop_normalized": true,
+            "fused_near": true,
+            "reuse_buffers": true,
+            "receipt_capacity": 64,
+            "direct_compiled_launch": true,
+            "input_summary": true,
+            "release_geometry_indices": true,
+            "release_retired_refs": true,
+            "component_front_input": true
+          }
+        }
+      ],
+      "source_group": "history-host-graph",
+      "source_profile": "history_combined_direct",
+      "pending_validation": true
+    },
+    "audit_impl_history_combined_native_dimensions": {
+      "label": "历史完整组合（尺寸倒数）",
+      "packages": [
+        "P05",
+        "P14",
+        "P15",
+        "P17",
+        "P18"
+      ],
+      "legacy": [
+        [
+          "c512_qkv_library_720",
+          true
+        ],
+        [
+          "native_k8_720",
+          true
+        ],
+        [
+          "decoder_gather_unround_720",
+          true
+        ],
+        [
+          "c32_hidden_native_720",
+          true
+        ],
+        [
+          "c512_probability_unround_720",
+          true
+        ],
+        [
+          "c128_pairwise_720",
+          true
+        ],
+        [
+          "c128_dual_qkv_720",
+          false
+        ],
+        [
+          "c64_attention_project_720",
+          true
+        ],
+        [
+          "c128_attention_project_720",
+          true
+        ]
+      ],
+      "numeric": [
+        [
+          "branch_accum_families",
+          [
+            "c128"
+          ]
+        ],
+        [
+          "history_value",
+          "fp32_all_paths"
+        ],
+        [
+          "front_noise",
+          "native_both"
+        ],
+        [
+          "history_reciprocal",
+          "native"
+        ],
+        [
+          "history_dimension_rcp",
+          "native"
+        ]
+      ],
+      "hooks": [
+        {
+          "module": "audit_history_host_720_v1",
+          "call": "installed",
+          "stage": "before_numeric",
+          "kwargs": {
+            "pixel_rgb": true,
+            "drop_normalized": true,
+            "fused_near": true,
+            "reuse_buffers": true,
+            "receipt_capacity": 64,
+            "direct_compiled_launch": true,
+            "input_summary": true,
+            "release_geometry_indices": true,
+            "release_retired_refs": true,
+            "component_front_input": true
+          }
+        }
+      ],
+      "source_group": "history-host-graph",
+      "source_profile": "history_combined_native_dimensions",
+      "pending_validation": true
+    },
+    "audit_impl_swin_all_diagnostic_known_spill": {
+      "label": "局部完整模块诊断：允许已测定的寄存器溢出",
+      "packages": [
+        "P04",
+        "P07",
+        "P08",
+        "P09"
+      ],
+      "legacy": [
+        [
+          "c512_qkv_library_720",
+          true
+        ],
+        [
+          "native_k8_720",
+          true
+        ],
+        [
+          "decoder_gather_unround_720",
+          true
+        ],
+        [
+          "c32_hidden_native_720",
+          true
+        ],
+        [
+          "c512_probability_unround_720",
+          true
+        ],
+        [
+          "c128_pairwise_720",
+          true
+        ],
+        [
+          "c128_dual_qkv_720",
+          false
+        ],
+        [
+          "c64_attention_project_720",
+          true
+        ],
+        [
+          "c128_attention_project_720",
+          true
+        ]
+      ],
+      "numeric": [
+        [
+          "branch_accum_families",
+          [
+            "c64",
+            "c128",
+            "c256"
+          ]
+        ],
+        [
+          "history_value",
+          "fp32_fractional"
+        ],
+        [
+          "front_noise",
+          "native_both"
+        ]
+      ],
+      "hooks": [
+        {
+          "module": "audit_swin_720_v1",
+          "call": "installed",
+          "stage": "before_numeric",
+          "kwargs": {
+            "mlp_wide": true,
+            "fuse_pad": true,
+            "qkv_wide": true,
+            "qk_norm": "fp32",
+            "denominator": "fp32",
+            "wide_score": true,
+            "wide_value": true,
+            "crop_queries": true,
+            "prefer_bm32": true,
+            "attention_families": [
+              32,
+              64,
+              128,
+              256
+            ],
+            "first_decoder32": true,
+            "wide_latent_spill_policy": "diagnostic_known_spill"
+          }
+        }
+      ],
+      "source_group": "Main-r10-reviewed-swin",
+      "source_profile": "main_swin_all_diagnostic_known_spill",
+      "pending_validation": true,
+      "diagnostic_only": true,
+      "zero_spill_qualified": false
+    },
+    "audit_impl_swin_retained_post_tail": {
+      "label": "局部模块：首个后处理尾段保留 K8",
+      "packages": [
+        "P04",
+        "P07",
+        "P08",
+        "P09"
+      ],
+      "legacy": [
+        [
+          "c512_qkv_library_720",
+          true
+        ],
+        [
+          "native_k8_720",
+          true
+        ],
+        [
+          "decoder_gather_unround_720",
+          true
+        ],
+        [
+          "c32_hidden_native_720",
+          true
+        ],
+        [
+          "c512_probability_unround_720",
+          true
+        ],
+        [
+          "c128_pairwise_720",
+          true
+        ],
+        [
+          "c128_dual_qkv_720",
+          false
+        ],
+        [
+          "c64_attention_project_720",
+          true
+        ],
+        [
+          "c128_attention_project_720",
+          true
+        ]
+      ],
+      "numeric": [
+        [
+          "branch_accum_families",
+          [
+            "c64",
+            "c128",
+            "c256"
+          ]
+        ],
+        [
+          "history_value",
+          "fp32_fractional"
+        ],
+        [
+          "front_noise",
+          "native_both"
+        ]
+      ],
+      "hooks": [
+        {
+          "module": "audit_swin_720_v1",
+          "call": "installed",
+          "stage": "before_numeric",
+          "kwargs": {
+            "mlp_wide": true,
+            "fuse_pad": true,
+            "qkv_wide": true,
+            "qk_norm": "fp32",
+            "denominator": "fp32",
+            "wide_score": true,
+            "wide_value": true,
+            "crop_queries": true,
+            "prefer_bm32": true,
+            "attention_families": [
+              32,
+              64,
+              128,
+              256
+            ],
+            "first_decoder32": false
+          }
+        }
+      ],
+      "source_group": "Main-r14-actual-tail-route-isolation",
+      "source_profile": "main_swin_retained_post_tail",
+      "pending_validation": true,
+      "coverage_limit": "decoder32.0.body MLP/QKV use the selected routes; its attention/project tail retains accepted K8"
+    }
+  },
+  "common_admission_hooks": [
+    {
+      "module": "audit_history_host_720_v1",
+      "call": "installed",
+      "stage": "before_numeric",
+      "kwargs": {
+        "pixel_rgb": false,
+        "drop_normalized": false,
+        "fused_near": false,
+        "reuse_buffers": false,
+        "receipt_capacity": 64,
+        "direct_compiled_launch": false,
+        "input_summary": false,
+        "release_geometry_indices": false,
+        "release_retired_refs": false,
+        "component_front_input": false
+      }
+    }
+  ],
+  "receipts": [
+    {
+      "group": "swin-mlp",
+      "profile_sha256": "2a080efcc9ca3d29d13185b37b7da835a46edb493b4ec7927a7ac5d7d6900be0",
+      "ready_sha256": "08ca1722f0151ab083d48d7d4607e5c2de69457386660a60a585ca66a531f6de"
+    },
+    {
+      "group": "c512-vit",
+      "profile_sha256": "42052f21e92702a20705e224dfcbabed4c19edeecfbbf04300f05a53eb55fa15",
+      "ready_sha256": "e42cce265f73d632c2006ca11b73983cd5ad63174caf7ef085f71f9c85cbca36"
+    },
+    {
+      "group": "front-decoder-post",
+      "profile_sha256": "03c04726e5807b6ecac93fbff1ffeaaeef8a3ba7b1c10dc13a4087e33c1c097b",
+      "ready_sha256": "48e39566c3828934e1b223e12ea26e65c98e60d4c4348de8f58e154027d2038c"
+    },
+    {
+      "group": "history-host-graph",
+      "profile_sha256": "40282616c530115b8d5bc0052a43447f33ec3fa98172bc9dd98c7cfd6628a252",
+      "ready_sha256": "7e197eeed7022b25e8e0354e0a2e7ac0067778b9850f96f7dc1e3d9ed3ffabb9"
+    }
+  ],
+  "GPU_qualified": false,
+  "game_writes": 0
+}

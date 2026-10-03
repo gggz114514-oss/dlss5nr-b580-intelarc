@@ -1,0 +1,70 @@
+{
+  "schema": "current720-fdp-repeat-main-review-v1",
+  "run_result": {
+    "path": "E:\\Codex-NR-Experiments\\cyberpunk-opt\\b580-full-implementation-v1-20261003\\luna\\phase2\\attempt-13-r9-e-fdp-bccb\\RESULTS.json",
+    "sha256": "c8da33eb22951fbbd03a27ce3061bb19ea880bb5f1b26bc139d62d93ed5d04e0"
+  },
+  "scope": "FullsizeGameModes.process offline; bridge/game excluded",
+  "order": [
+    "accepted_baseline",
+    "audit_impl_fdp_all",
+    "audit_impl_fdp_all",
+    "accepted_baseline"
+  ],
+  "runs": [
+    {
+      "arm": "accepted_baseline",
+      "mean_ms": 45.6001388974359,
+      "p95_ms": 46.15526,
+      "source": {
+        "path": "E:\\Codex-NR-Experiments\\cyberpunk-opt\\b580-full-implementation-v1-20261003\\luna\\phase2\\attempt-13-r9-e-fdp-bccb\\brackets\\audit_impl_fdp_all\\00-accepted_baseline\\readonly\\RESULT.json",
+        "sha256": "52e030a5f6bd2e9983eb78073db7eef1a445b5900838b7f897c72d7c3954bf3a",
+        "bytes": 4783086
+      }
+    },
+    {
+      "arm": "audit_impl_fdp_all",
+      "mean_ms": 43.60484105128205,
+      "p95_ms": 44.336146,
+      "source": {
+        "path": "E:\\Codex-NR-Experiments\\cyberpunk-opt\\b580-full-implementation-v1-20261003\\luna\\phase2\\attempt-13-r9-e-fdp-bccb\\brackets\\audit_impl_fdp_all\\01-audit_impl_fdp_all\\readonly\\RESULT.json",
+        "sha256": "10ed3dc0b7cf4b1bf4b50c77b19bb89de51620652a7ac99328ecdf128ce7cee4",
+        "bytes": 6300338
+      }
+    },
+    {
+      "arm": "audit_impl_fdp_all",
+      "mean_ms": 43.61593482051282,
+      "p95_ms": 44.176198,
+      "source": {
+        "path": "E:\\Codex-NR-Experiments\\cyberpunk-opt\\b580-full-implementation-v1-20261003\\luna\\phase2\\attempt-13-r9-e-fdp-bccb\\brackets\\audit_impl_fdp_all\\02-audit_impl_fdp_all\\readonly\\RESULT.json",
+        "sha256": "030a580e66d28dd657205e375c09d6618a1b1f1c2dda3c253b20a9d1204e940c",
+        "bytes": 6300170
+      }
+    },
+    {
+      "arm": "accepted_baseline",
+      "mean_ms": 45.22020964102564,
+      "p95_ms": 46.045885999999996,
+      "source": {
+        "path": "E:\\Codex-NR-Experiments\\cyberpunk-opt\\b580-full-implementation-v1-20261003\\luna\\phase2\\attempt-13-r9-e-fdp-bccb\\brackets\\audit_impl_fdp_all\\03-accepted_baseline\\readonly\\RESULT.json",
+        "sha256": "a4aff98f57dd1ba999b6d7f81973a876fe77d2660517db23fe01155e54a69187",
+        "bytes": 4782898
+      }
+    }
+  ],
+  "first_gain_ms": 1.9952978461538453,
+  "second_gain_ms": 1.6042748205128199,
+  "balanced_baseline_mean_ms": 45.410174269230765,
+  "balanced_candidate_mean_ms": 43.610387935897435,
+  "balanced_gain_ms": 1.79978633333333,
+  "balanced_gain_percent": 3.963398868858421,
+  "all_actual_sha_verified": true,
+  "readonly_cache_writes": 0,
+  "GPU_executed_by_Main": false,
+  "user_visual_review": false,
+  "game_deployed": false,
+  "game_frame_gain_ms": null,
+  "c512_new_candidate_status": "History actual callee/weight/table/constant ownership changed; failed before complete measurement",
+  "swin_new_candidate_status": "C128 wide latent all legal choices positive spills; failed preflight; fastest unknown"
+}

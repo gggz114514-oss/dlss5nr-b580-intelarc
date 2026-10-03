@@ -1,0 +1,22 @@
+{
+  "schema": "metrics-vectorized-existing-CPU-v1",
+  "python": {
+    "path": "C:\\Users\\gggz\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+    "sha256": "372c2eae555b344520bf147be0096e009069aeca4e7f78d6aecea6d53158056a",
+    "bytes": 107312
+  },
+  "numpy": {
+    "path": "C:\\Users\\gggz\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\Lib\\site-packages\\numpy\\__init__.py",
+    "sha256": "a1792c20af1146952a6dfce4c0daeb197b2832b23d27434a97544544c497742d",
+    "bytes": 27188,
+    "version": "2.3.5"
+  },
+  "worker_files": {
+    "metrics_common.py": "6cfb44e1baf533815961be0b53e722f865ac264b62e9cf090ea059fa20bf3501",
+    "metrics_vectorized.py": "ae38b0663318e8b9fa72808fae4d8703a83ed3ea317ba1faa189e36b57844779",
+    "metrics_cpu_api.py": "df689e4c2a3bcd9fe44ab4a85770e344d39437a83c9fac5262841a185fdab866",
+    "metrics_cpu_worker.py": "84f0677353b055915e4bc5c1197d4f29121707fce1fa5d107428e52b382b8106"
+  },
+  "GPU_runtime_imported": false,
+  "installed_packages_changed": false
+}

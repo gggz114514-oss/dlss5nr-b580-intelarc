@@ -1,0 +1,178 @@
+{
+  "schema": "current720-main-r13-parts-v1",
+  "rows": [
+    {
+      "arm": "audit_impl_c512_native_qkv_720_v2",
+      "status": "QUALIFIED_OFFLINE_SLOWER_DO_NOT_ADOPT",
+      "result": {
+        "path": "E:\\Codex-NR-Experiments\\cyberpunk-opt\\b580-full-implementation-v1-20261003\\luna\\phase2\\attempt-23-r13-e-native-qkv\\RESULTS.json",
+        "sha256": "39b24c6e9231a87280afdef1cd460e2eef36b0e446dc74dcce7fabb87e1cee2c"
+      },
+      "arms": {
+        "accepted_baseline": {
+          "result": {
+            "path": "E:\\Codex-NR-Experiments\\cyberpunk-opt\\b580-full-implementation-v1-20261003\\luna\\phase2\\attempt-23-r13-e-native-qkv\\accepted_baseline\\measurement\\readonly\\RESULT.json",
+            "sha256": "2d3ef7ada96ab1fb668a8d9100febd4793626b2bdfd404617d692227e8ee8092",
+            "bytes": 5038207
+          },
+          "mean_ms": 45.91593884615384,
+          "p95_ms": 46.681354,
+          "raw_body_mean_ms": 39.52276874
+        },
+        "audit_impl_c512_native_qkv_720_v2": {
+          "result": {
+            "path": "E:\\Codex-NR-Experiments\\cyberpunk-opt\\b580-full-implementation-v1-20261003\\luna\\phase2\\attempt-23-r13-e-native-qkv\\audit_impl_c512_native_qkv_720_v2\\measurement\\readonly\\RESULT.json",
+            "sha256": "e8774a446b19c7950398db1d6aa9d81863c2bdd12c08562f42c5a85b2cd27241",
+            "bytes": 6028772
+          },
+          "mean_ms": 47.540044076923074,
+          "p95_ms": 49.657292,
+          "raw_body_mean_ms": 40.022101039999995,
+          "actual_qkv_calls": {
+            "qkv.encoder512.0": 6,
+            "qkv.encoder512.1": 6,
+            "qkv.encoder512.2": 6,
+            "qkv.encoder512.3": 6,
+            "qkv.encoder512.4": 6,
+            "qkv.encoder512.5": 6,
+            "qkv.encoder512.6": 6,
+            "qkv.encoder512.7": 6,
+            "qkv.decoder512.0": 6,
+            "qkv.decoder512.1": 6,
+            "qkv.decoder512.2": 6,
+            "qkv.decoder512.3": 6,
+            "qkv.decoder512.4": 6,
+            "qkv.decoder512.5": 6,
+            "qkv.decoder512.6": 6,
+            "qkv.decoder512.7": 6
+          }
+        }
+      },
+      "gain_ms": -1.6241052307692296,
+      "cycle_deltas_ms": [
+        -1.1645353846153828,
+        -1.9727482307692303,
+        -1.7350320769230758
+      ],
+      "quality": {
+        "output": {
+          "finite": true,
+          "all_byte_identical": true,
+          "mae": 0.0,
+          "max_abs_error": 0.0,
+          "mse": 0.0,
+          "psnr_peak_1_db": null,
+          "psnr_zero_error": true,
+          "changed_pixels": 0,
+          "changed_values": 0
+        },
+        "history": {
+          "finite": true,
+          "all_byte_identical": true,
+          "mae": 0.0,
+          "max_abs_error": 0.0,
+          "mse": 0.0,
+          "psnr_peak_1_db": null,
+          "psnr_zero_error": true,
+          "changed_pixels": 0,
+          "changed_values": 0
+        }
+      },
+      "body_delta_ms": 0.49933229999999895,
+      "exclusive_CPU_conversion_cost_ms": null,
+      "limitation": "Body and full modes are separately measured; their difference is not an exclusive conversion timer"
+    },
+    {
+      "arm": "audit_impl_c512_ffn_complete_720_v2",
+      "status": "QUALIFIED_OFFLINE_SLOWER_DO_NOT_ADOPT",
+      "result": {
+        "path": "E:\\Codex-NR-Experiments\\cyberpunk-opt\\b580-full-implementation-v1-20261003\\luna\\phase2\\attempt-24-r13-e-c512-ffn\\RESULTS.json",
+        "sha256": "2936ab763cd7ebeeca9f5c6af16e30b0d039fdb519fa9ee9ed67f5e072d1f12b"
+      },
+      "arms": {
+        "accepted_baseline": {
+          "result": {
+            "path": "E:\\Codex-NR-Experiments\\cyberpunk-opt\\b580-full-implementation-v1-20261003\\luna\\phase2\\attempt-24-r13-e-c512-ffn\\accepted_baseline\\measurement\\readonly\\RESULT.json",
+            "sha256": "bd8afe06fbbc241cfc8c706af5fe09dd118110f37f01f66c566fc4fe24b5bdec",
+            "bytes": 5037958
+          },
+          "mean_ms": 46.23921615384615,
+          "p95_ms": 47.190782,
+          "raw_body_mean_ms": 39.83254784
+        },
+        "audit_impl_c512_ffn_complete_720_v2": {
+          "result": {
+            "path": "E:\\Codex-NR-Experiments\\cyberpunk-opt\\b580-full-implementation-v1-20261003\\luna\\phase2\\attempt-24-r13-e-c512-ffn\\audit_impl_c512_ffn_complete_720_v2\\measurement\\readonly\\RESULT.json",
+            "sha256": "d0d912015ab3122f7071910f66ef47ba69bc231dda113af572747a2b2c6ffbf0",
+            "bytes": 5271637
+          },
+          "mean_ms": 47.35723425641025,
+          "p95_ms": 48.385365,
+          "raw_body_mean_ms": 39.89638232
+        }
+      },
+      "gain_ms": -1.118018102564102,
+      "cycle_deltas_ms": [
+        -1.0786337692307686,
+        -1.0689461538461535,
+        -1.2064743846153843
+      ],
+      "quality": {
+        "output": {
+          "finite": true,
+          "all_byte_identical": true,
+          "mae": 0.0,
+          "max_abs_error": 0.0,
+          "mse": 0.0,
+          "psnr_peak_1_db": null,
+          "psnr_zero_error": true,
+          "changed_pixels": 0,
+          "changed_values": 0
+        },
+        "history": {
+          "finite": true,
+          "all_byte_identical": true,
+          "mae": 0.0,
+          "max_abs_error": 0.0,
+          "mse": 0.0,
+          "psnr_peak_1_db": null,
+          "psnr_zero_error": true,
+          "changed_pixels": 0,
+          "changed_values": 0
+        }
+      },
+      "body_delta_ms": 0.06383448000000413,
+      "exclusive_CPU_conversion_cost_ms": null,
+      "limitation": "Body and full modes are separately measured; their difference is not an exclusive conversion timer"
+    }
+  ],
+  "unmeasured_vit_ffn": {
+    "result": {
+      "path": "E:\\Codex-NR-Experiments\\cyberpunk-opt\\b580-full-implementation-v1-20261003\\luna\\phase2\\attempt-25-r13-e-vit-ffn\\RESULTS.json",
+      "sha256": "7d4559b283436b25c84948bbdf3da943f2fe11351a474443932638036bdf2db4"
+    },
+    "child": {
+      "path": "E:\\Codex-NR-Experiments\\cyberpunk-opt\\b580-full-implementation-v1-20261003\\luna\\phase2\\attempt-25-r13-e-vit-ffn\\accepted_baseline\\measurement\\readonly\\RESULT.json",
+      "sha256": "26251de5d8c33d26aab3c45d5cb3bf2818796a6ea9ea8084db2670ca5ccd8911",
+      "bytes": 3631366
+    },
+    "error": "Traceback (most recent call last):\n  File \"E:\\ComfyUI-aki-v3-IntelArc_20260722\\cyberpunk-b580-nr-opt\\artifacts\\b580-full-implementation-v1-20261003\\luna\\phase2-e\\gpu_worker.py\", line 208, in run\n    c.require(frame[role]['raw_sha256'] == result['frames'][ordinal][role]['raw_sha256'],\n    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n              'Warm sequence differs from matching cold sequence: ' + role)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"E:\\ComfyUI-aki-v3-IntelArc_20260722\\cyberpunk-b580-nr-opt\\artifacts\\b580-full-implementation-v1-20261003\\luna\\phase2-e\\runner_common.py\", line 57, in require\n    raise RuntimeError(message)\nRuntimeError: Warm sequence differs from matching cold sequence: output\n",
+    "failed_arm": "accepted_baseline",
+    "candidate_launched": false,
+    "speed_verdict": "UNKNOWN",
+    "implication": "Same-arm warm mismatch also occurs in the baseline; ScreenedLaunch cache is not established as the cause"
+  },
+  "source_fixes": {
+    "native_qkv_route": "actual 16 sites now run; no synthetic receipt",
+    "swin_post_tail_isolation": {
+      "path": "E:\\ComfyUI-aki-v3-IntelArc_20260722\\cyberpunk-b580-nr-opt\\artifacts\\b580-full-implementation-v1-20261003\\MAIN_SWIN_POST_ROUTE_ISOLATION_r14.json",
+      "sha256": "f73494c4b2d93dc331eee77f642e10d8a63afe90a4adb428819dac769fa6027b"
+    }
+  },
+  "isolated_diagnostics_runner": {
+    "path": "E:\\ComfyUI-aki-v3-IntelArc_20260722\\cyberpunk-b580-nr-opt\\artifacts\\b580-full-implementation-v1-20261003\\luna\\phase2-e-diagnostics\\READY.json",
+    "sha256": "62eada5ea7a1c5806952a1510baf7d570256cd5d3fe454cb269f06e12b61ddfc"
+  },
+  "actual_game_writes": 0,
+  "GPU_executed_by_this_script": false
+}

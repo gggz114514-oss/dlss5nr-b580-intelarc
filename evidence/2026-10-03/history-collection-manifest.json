@@ -1,0 +1,3380 @@
+{
+  "files": [
+    {
+      "path": "docs/history/DEVELOPMENT_HISTORY.md",
+      "original_sha256": "37f9fa6386ebe49f490ced610806b79329ce7e3cd2e3e30beb2bbc652d97ddbc",
+      "sha256": "37f9fa6386ebe49f490ced610806b79329ce7e3cd2e3e30beb2bbc652d97ddbc",
+      "bytes": 36719,
+      "byte_identical": true,
+      "reason": "CPU reviewed development history"
+    },
+    {
+      "path": "docs/history/CURRENT_BASELINE_EVIDENCE.md",
+      "original_sha256": "99587a563049567a7b5b90f27742a92cadd571c2cbc8b254ca5fbdc933d35bc8",
+      "sha256": "99587a563049567a7b5b90f27742a92cadd571c2cbc8b254ca5fbdc933d35bc8",
+      "bytes": 9841,
+      "byte_identical": true,
+      "reason": "CPU reviewed development history"
+    },
+    {
+      "path": "docs/history/REPRODUCIBILITY_GAPS.md",
+      "original_sha256": "58eb3cf4b5456d71484f03eeceaeee8625354e887cec0631eccb4a9cd8f01158",
+      "sha256": "58eb3cf4b5456d71484f03eeceaeee8625354e887cec0631eccb4a9cd8f01158",
+      "bytes": 8791,
+      "byte_identical": true,
+      "reason": "CPU reviewed development history"
+    },
+    {
+      "path": "docs/history/EXPERIMENT_INDEX.json",
+      "original_sha256": "7ccb8e459dc43ec4c470e1a9df2f0ada806042bd92b6fa2e60fb8da6971d1377",
+      "sha256": "8dddf330bcf1bef50c0462d4c76c8964952717a648277b77748a4fd9ce83e434",
+      "bytes": 2617195,
+      "byte_identical": false,
+      "reason": "CPU reviewed development history",
+      "derived": true
+    },
+    {
+      "path": "docs/history/PUBLIC_HISTORY_INDEX.json",
+      "original_sha256": "884c6827249f87350d93f8c4943ba004b0981fb470c4f384778b9a30cd12b567",
+      "sha256": "884c6827249f87350d93f8c4943ba004b0981fb470c4f384778b9a30cd12b567",
+      "bytes": 1320918,
+      "byte_identical": true,
+      "reason": "CPU reviewed development history"
+    },
+    {
+      "path": "docs/history/HISTORY_SOURCE_SELECTION.public.json",
+      "original_sha256": "7ee9a7a1e5ecbb5013c9c776b4dc23a7e4bd478c88d1f5b33a4a74099f6b72e7",
+      "sha256": "7ee9a7a1e5ecbb5013c9c776b4dc23a7e4bd478c88d1f5b33a4a74099f6b72e7",
+      "bytes": 811908,
+      "byte_identical": true,
+      "reason": "CPU reviewed development history"
+    },
+    {
+      "path": "docs/history/CURRENT_SOURCE_RECEIPTS.json",
+      "original_sha256": "e1dbaa7d8ea3a5385a52f4dd625969a960b1dfba16c60363ea98b816e4f1aa57",
+      "sha256": "e1dbaa7d8ea3a5385a52f4dd625969a960b1dfba16c60363ea98b816e4f1aa57",
+      "bytes": 6258,
+      "byte_identical": true,
+      "reason": "CPU reviewed development history"
+    },
+    {
+      "path": "history/original/experiment-E/cyberpunk-opt/amd-20261003-current720-reanalysis/upstream/src/LmxxfNrRuntime.cpp",
+      "original_sha256": "1ae22a3bb98e8368371acd227030f71693360dbbb13540a148a06d938ce77d41",
+      "sha256": "1ae22a3bb98e8368371acd227030f71693360dbbb13540a148a06d938ce77d41",
+      "bytes": 85268,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/cyberpunk-b580-nr-opt/DEFAULT_FAST_MODE_20260929.md",
+      "original_sha256": "25e980206e5fee56bfe626e55a89af029ca570bcc3679f8d37a064af9678aa21",
+      "sha256": "25e980206e5fee56bfe626e55a89af029ca570bcc3679f8d37a064af9678aa21",
+      "bytes": 1312,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/cyberpunk-b580-nr-opt/GENERIC_DLSS_PORT.md",
+      "original_sha256": "97b0a50dca07d4abb93cab4475a2050a4edf45d67d2b41f2c54962fafd508253",
+      "sha256": "97b0a50dca07d4abb93cab4475a2050a4edf45d67d2b41f2c54962fafd508253",
+      "bytes": 3210,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/cyberpunk-b580-nr-opt/LIVE_DLSS_IDENTITY_RELAY.md",
+      "original_sha256": "eac57de83ea24524149f38716b6efcefea22716e21755cf81f66c765dd3a0b34",
+      "sha256": "eac57de83ea24524149f38716b6efcefea22716e21755cf81f66c765dd3a0b34",
+      "bytes": 5403,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/cyberpunk-b580-nr-opt/LIVE_XESS_DIAGNOSTIC.md",
+      "original_sha256": "86e9381e1fa31abaa8b3818f5c4ae32169f233876349143656ef881e7ef1261d",
+      "sha256": "86e9381e1fa31abaa8b3818f5c4ae32169f233876349143656ef881e7ef1261d",
+      "bytes": 4390,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/cyberpunk-b580-nr-opt/STATUS.md",
+      "original_sha256": "9d7ca269ed3946db9efe589f5f036e63e427179e137a04367a5f91a116bbb129",
+      "sha256": "9d7ca269ed3946db9efe589f5f036e63e427179e137a04367a5f91a116bbb129",
+      "bytes": 39196,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/cyberpunk-b580-nr-opt/THREE_ROUTE_BRIDGES.md",
+      "original_sha256": "e12a2a8c583416a6e28434a3be7dae30aacc192d211f3649f64ee99c89af8086",
+      "sha256": "e12a2a8c583416a6e28434a3be7dae30aacc192d211f3649f64ee99c89af8086",
+      "bytes": 5542,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/cyberpunk-b580-nr-opt/artifacts/b580-full-implementation-v1-20261003/AMD_LATEST_MAIN_REVIEW.json",
+      "original_sha256": "28e123d151152c8eaf2254334944d00ac2620db73dbc1615a6d790ce16f0b651",
+      "sha256": "28e123d151152c8eaf2254334944d00ac2620db73dbc1615a6d790ce16f0b651",
+      "bytes": 2488,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/cyberpunk-b580-nr-opt/artifacts/b580-full-implementation-v1-20261003/C512_COMPLETE_MAIN_REVIEW.json",
+      "original_sha256": "f6e9570ce02b531869a66db888170d589ad62a080a00c4e26027b457f225666e",
+      "sha256": "f6e9570ce02b531869a66db888170d589ad62a080a00c4e26027b457f225666e",
+      "bytes": 3968,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/cyberpunk-b580-nr-opt/artifacts/b580-full-implementation-v1-20261003/FDP_CONDITIONAL_MAIN_REVIEW.json",
+      "original_sha256": "295db5bea5d254f01a5825c3b308901d556f33614473966daf057ac531190ff6",
+      "sha256": "295db5bea5d254f01a5825c3b308901d556f33614473966daf057ac531190ff6",
+      "bytes": 12750,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/cyberpunk-b580-nr-opt/artifacts/b580-full-implementation-v1-20261003/FDP_REPEAT_MAIN_REVIEW.json",
+      "original_sha256": "74bab26e7aebbccaec26095a29a101d49227ea16028d3bad37a9c118e7f886ef",
+      "sha256": "74bab26e7aebbccaec26095a29a101d49227ea16028d3bad37a9c118e7f886ef",
+      "bytes": 3133,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/cyberpunk-b580-nr-opt/artifacts/b580-full-implementation-v1-20261003/NATIVE_RAW2_MAIN_REVIEW.json",
+      "original_sha256": "0f183c189f7c4bfce61d33179e727ec4da73ee148cc0896e1a19ca3fc83caddb",
+      "sha256": "0f183c189f7c4bfce61d33179e727ec4da73ee148cc0896e1a19ca3fc83caddb",
+      "bytes": 1425,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/cyberpunk-b580-nr-opt/artifacts/b580-full-implementation-v1-20261003/R13_SPLIT_MODULE_MAIN_REVIEW.json",
+      "original_sha256": "90ae2072e45dc9996e80d3f46943ba8b0fa1dc30f7fb35a378bb886621c2d56c",
+      "sha256": "90ae2072e45dc9996e80d3f46943ba8b0fa1dc30f7fb35a378bb886621c2d56c",
+      "bytes": 8190,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/cyberpunk-b580-nr-opt/artifacts/b580-full-implementation-v1-20261003/R15_FULL_MODULE_MAIN_REVIEW.json",
+      "original_sha256": "9a59e914376d3e2cebca89a4466ae17309cf911f9c12e2d1603d7c70da67ceba",
+      "sha256": "9a59e914376d3e2cebca89a4466ae17309cf911f9c12e2d1603d7c70da67ceba",
+      "bytes": 19465,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/cyberpunk-b580-nr-opt/artifacts/b580-full-implementation-v1-20261003/R16_HOT_MAIN_REVIEW.json",
+      "original_sha256": "42051fdd2d6bc35605463435a118ba307fc441909469030bc7318e4999e99005",
+      "sha256": "42051fdd2d6bc35605463435a118ba307fc441909469030bc7318e4999e99005",
+      "bytes": 9751,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/cyberpunk-b580-nr-opt/artifacts/b580-full-implementation-v1-20261003/R18_SWIN_THROUGHPUT_MAIN_REVIEW.json",
+      "original_sha256": "abcfcac9a02e6b9593ebb8c9dad8b2ca8587d6edd872081a5e6e90bf75f10b6f",
+      "sha256": "abcfcac9a02e6b9593ebb8c9dad8b2ca8587d6edd872081a5e6e90bf75f10b6f",
+      "bytes": 245473,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/cyberpunk-b580-nr-opt/artifacts/b580-full-implementation-v1-20261003/R18_VIT_THROUGHPUT_MAIN_REVIEW.json",
+      "original_sha256": "22352d87eac1e52859fff33acdd12fd84a90b8f69c9c601f55666d04a56f1404",
+      "sha256": "22352d87eac1e52859fff33acdd12fd84a90b8f69c9c601f55666d04a56f1404",
+      "bytes": 7176,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/cyberpunk-b580-nr-opt/artifacts/b580-full-implementation-v1-20261003/TEST_PROGRESS_20261003.md",
+      "original_sha256": "07c038c8c35420906726445a8fbe8ed4ca8a471bda048824e20c3cbed711bc71",
+      "sha256": "07c038c8c35420906726445a8fbe8ed4ca8a471bda048824e20c3cbed711bc71",
+      "bytes": 5943,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/cyberpunk-b580-nr-opt/artifacts/b580-full-implementation-v1-20261003/WORK.json",
+      "original_sha256": "86990a7fcbc56a025b6055bf97528d22f0fc25aeb627f73fa3a697d5e404539b",
+      "sha256": "86990a7fcbc56a025b6055bf97528d22f0fc25aeb627f73fa3a697d5e404539b",
+      "bytes": 34122,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/cyberpunk-b580-nr-opt/artifacts/b580-full-implementation-v1-20261003/luna/phase2-e/gpu_worker.py",
+      "original_sha256": "2708450d12ab27e5e7854bbc40c045f9d1e50ffdb8581cbacdc65fb65027164b",
+      "sha256": "2708450d12ab27e5e7854bbc40c045f9d1e50ffdb8581cbacdc65fb65027164b",
+      "bytes": 27353,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/cyberpunk-b580-nr-opt/artifacts/b580-full-implementation-v1-20261003/luna/phase2-e/runner_common.py",
+      "original_sha256": "3477d9f103a0e6af906f298767ea39c3c359cab856102f5e980c6e3b1e234f47",
+      "sha256": "3477d9f103a0e6af906f298767ea39c3c359cab856102f5e980c6e3b1e234f47",
+      "bytes": 21044,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/cyberpunk-b580-nr-opt/artifacts/b580-full-implementation-v1-20261003/phase2-complete/revisions/r15/source/game/audit_history_host_720_v1.py",
+      "original_sha256": "ff76851e35e3be309e4829c116d42a3423725d3e3416e1101e750f5f4c131965",
+      "sha256": "ff76851e35e3be309e4829c116d42a3423725d3e3416e1101e750f5f4c131965",
+      "bytes": 12144,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/cyberpunk-b580-nr-opt/artifacts/b580-full-implementation-v1-20261003/phase2-complete/revisions/r15/source/game/audit_swin_720_kernels_v1.py",
+      "original_sha256": "2d35e2681b8e8e3e82543ecdab26bebe5375e516b53f71aa2a1009763123e99a",
+      "sha256": "2d35e2681b8e8e3e82543ecdab26bebe5375e516b53f71aa2a1009763123e99a",
+      "bytes": 16898,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/cyberpunk-b580-nr-opt/artifacts/b580-full-implementation-v1-20261003/phase2-complete/revisions/r15/source/game/audit_swin_720_v1.py",
+      "original_sha256": "375c7415102b676f317bbb8e1e2bfa0dab55ded092999606df12780c766ac4fb",
+      "sha256": "375c7415102b676f317bbb8e1e2bfa0dab55ded092999606df12780c766ac4fb",
+      "bytes": 62778,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/cyberpunk-b580-nr-opt/artifacts/b580-full-implementation-v1-20261003/phase2-complete/revisions/r15/source/game/audit_vit_native_dataflow_720_v1.py",
+      "original_sha256": "ee6dc78998085907b8bccb32f65bd9b01fbddefa6de24593abb5513915eabcc5",
+      "sha256": "ee6dc78998085907b8bccb32f65bd9b01fbddefa6de24593abb5513915eabcc5",
+      "bytes": 10316,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/cyberpunk-b580-nr-opt/artifacts/b580-full-implementation-v1-20261003/phase2-complete/revisions/r15/source/game/branch_accum_native_720_kernel_v1.py",
+      "original_sha256": "8aaab22c50dee2b26f8738e0117ffb192b0e1ceb94a3cb8081c7dda35c494b16",
+      "sha256": "8aaab22c50dee2b26f8738e0117ffb192b0e1ceb94a3cb8081c7dda35c494b16",
+      "bytes": 1448,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "experiments/2026-10-03/r18/source/game/audit_front_decoder_post_720_kernels_v1.py",
+      "original_sha256": "b504e4a8262f374a6a9ca194e0f4d1ad4f53a939203ac2ed9dc32edc10ba36dc",
+      "sha256": "b504e4a8262f374a6a9ca194e0f4d1ad4f53a939203ac2ed9dc32edc10ba36dc",
+      "bytes": 14903,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "experiments/2026-10-03/r18/source/game/audit_front_decoder_post_720_v1.py",
+      "original_sha256": "caf8b76cd2daa80d4be16e768083aead4f3b7465ab436eab0e037c87d2cf03fd",
+      "sha256": "caf8b76cd2daa80d4be16e768083aead4f3b7465ab436eab0e037c87d2cf03fd",
+      "bytes": 62509,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "experiments/2026-10-03/r18/source/game/audit_swin_720_kernels_v1.py",
+      "original_sha256": "201528637b4819cb6de6d1e3ead458aa7999ffbbf085afc4c32e36cf7c864a2a",
+      "sha256": "201528637b4819cb6de6d1e3ead458aa7999ffbbf085afc4c32e36cf7c864a2a",
+      "bytes": 24161,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "experiments/2026-10-03/r18/source/game/audit_vit_native_dataflow_720_v1.py",
+      "original_sha256": "ee6dc78998085907b8bccb32f65bd9b01fbddefa6de24593abb5513915eabcc5",
+      "sha256": "ee6dc78998085907b8bccb32f65bd9b01fbddefa6de24593abb5513915eabcc5",
+      "bytes": 10316,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/cyberpunk-b580-nr-opt/artifacts/b580-full-implementation-v1-20261003/reviews/amd-20261003-current720-reanalysis/REPORT.md",
+      "original_sha256": "e9758964014158bf17ffe99147a89e61dd68294606b9a4fb3d08281ccb845763",
+      "sha256": "e9758964014158bf17ffe99147a89e61dd68294606b9a4fb3d08281ccb845763",
+      "bytes": 53683,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/cyberpunk-b580-nr-opt/docs/BRIDGE_CPU_GPU_AND_OUTER_TIMING_20261001.md",
+      "original_sha256": "7aad467ead9e58cdf082f8dbf2cd035d2af7ab8326debd826a2104f327a03f49",
+      "sha256": "7aad467ead9e58cdf082f8dbf2cd035d2af7ab8326debd826a2104f327a03f49",
+      "bytes": 50511,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/cyberpunk-b580-nr-opt/docs/CPU_LIFECYCLE_20261001.md",
+      "original_sha256": "5be174a7e06e5d2d1b401c54829be04e609a66af8884af8737263e30af2da1bb",
+      "sha256": "5be174a7e06e5d2d1b401c54829be04e609a66af8884af8737263e30af2da1bb",
+      "bytes": 10114,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/cyberpunk-b580-nr-opt/docs/CURRENT_BACKEND_REAUDIT_20261003.md",
+      "original_sha256": "93e41c491ecf66298455d2ad5acbd8f91afd04276f26be97c62d43ee5b19c758",
+      "sha256": "93e41c491ecf66298455d2ad5acbd8f91afd04276f26be97c62d43ee5b19c758",
+      "bytes": 11036,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/cyberpunk-b580-nr-opt/docs/FULL_BACKEND_AUDIT_20261003.md",
+      "original_sha256": "646abce8772bd87cf3ff2e4f35f5ab4f0ec710651bb6f60987c951e756dc7cdd",
+      "sha256": "646abce8772bd87cf3ff2e4f35f5ab4f0ec710651bb6f60987c951e756dc7cdd",
+      "bytes": 10589,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/cyberpunk-b580-nr-opt/docs/INT8_NATIVE_AND_DATAFLOW_AUDIT_20261002.md",
+      "original_sha256": "63753d03ca1c0291fa3ebf92cb92debb47e012eb33c1d2c242aa8045a23f6997",
+      "sha256": "63753d03ca1c0291fa3ebf92cb92debb47e012eb33c1d2c242aa8045a23f6997",
+      "bytes": 10763,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/cyberpunk-b580-nr-opt/docs/LIVE_WEB_720_OPTIONS_20261001.md",
+      "original_sha256": "f58f1ca1c364e122e48af42c0dc9b6c547b5f4d4d50a23d9ae7604eb4adb0fe3",
+      "sha256": "f58f1ca1c364e122e48af42c0dc9b6c547b5f4d4d50a23d9ae7604eb4adb0fe3",
+      "bytes": 12866,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/cyberpunk-b580-nr-opt/docs/NUMERIC_COST_ATTRIBUTION_20261001.md",
+      "original_sha256": "f3f447d7e957f4866706b8729659eef38ede34769f20725269c7f2c5f108d0b7",
+      "sha256": "f3f447d7e957f4866706b8729659eef38ede34769f20725269c7f2c5f108d0b7",
+      "bytes": 25465,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/cyberpunk-b580-nr-opt/docs/PERIODIC_FLASH_20261001.md",
+      "original_sha256": "71df97ac2cb7e8246b5dd4fad447a1dd895aeb49d3ed3fc187f71750e803cf7c",
+      "sha256": "71df97ac2cb7e8246b5dd4fad447a1dd895aeb49d3ed3fc187f71750e803cf7c",
+      "bytes": 24620,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/cyberpunk-b580-nr-opt/docs/SERIAL_GPU_BRIDGE_SOURCE_INTEGRATION_20261002.md",
+      "original_sha256": "cbd1b862e7749f959dbf355084f4ddc02b35bf1b9464a71fac9d1e2aa7ebbf83",
+      "sha256": "cbd1b862e7749f959dbf355084f4ddc02b35bf1b9464a71fac9d1e2aa7ebbf83",
+      "bytes": 24130,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/cyberpunk-b580-nr-opt/include/nr_bridge.h",
+      "original_sha256": "c8969bfb2f0552f8644ee7e61e3a159bba6db8db12722a61dfb6b951b1f089ea",
+      "sha256": "c8969bfb2f0552f8644ee7e61e3a159bba6db8db12722a61dfb6b951b1f089ea",
+      "bytes": 6188,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/cyberpunk-b580-nr-opt/include/nr_contract.h",
+      "original_sha256": "487695db1c083fb27079e2c69814ca1ce0fc3e0cf13a77e1402af4a9ff8fa526",
+      "sha256": "487695db1c083fb27079e2c69814ca1ce0fc3e0cf13a77e1402af4a9ff8fa526",
+      "bytes": 981,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/cyberpunk-b580-nr-opt/src/asi.cpp",
+      "original_sha256": "2543c94aea2080634a1f3dd84987fb706dfdd9559cf788bfcaec542a23ff12b7",
+      "sha256": "2543c94aea2080634a1f3dd84987fb706dfdd9559cf788bfcaec542a23ff12b7",
+      "bytes": 68063,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/cyberpunk-b580-nr-opt/src/deferred_identity.cpp",
+      "original_sha256": "4509bf39dac87f9481ec9fc8d01e4a619b64e5c2f3d8ee93c1487b846655ffe7",
+      "sha256": "4509bf39dac87f9481ec9fc8d01e4a619b64e5c2f3d8ee93c1487b846655ffe7",
+      "bytes": 59674,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/cyberpunk-b580-nr-opt/src/nr_contract.cpp",
+      "original_sha256": "9c0a160d17f9af1257704fd5b163570adf741f4fc06948aee57ad956b5194367",
+      "sha256": "9c0a160d17f9af1257704fd5b163570adf741f4fc06948aee57ad956b5194367",
+      "bytes": 1933,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/cyberpunk-b580-nr-opt/src/nr_hdr_proxy.cpp",
+      "original_sha256": "1bac36dfdb54d1a4209a03a3adf70f95a20ff14329659dc5dda32382fba49f4c",
+      "sha256": "1bac36dfdb54d1a4209a03a3adf70f95a20ff14329659dc5dda32382fba49f4c",
+      "bytes": 29397,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/cyberpunk-b580-nr-opt/src/nr_sync_probe.cpp",
+      "original_sha256": "b204be3c6006d88e61d17096bf6cbd69d4f02c2791411f1da39ecc758110536d",
+      "sha256": "b204be3c6006d88e61d17096bf6cbd69d4f02c2791411f1da39ecc758110536d",
+      "bytes": 12254,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/cyberpunk-b580-nr-opt/tools/analyze_r11g11b10.py",
+      "original_sha256": "d7d4d996ea8db890a26c75e50c55f7dda65dc0d604ac41ddf3dce3d5c08fe0a5",
+      "sha256": "d7d4d996ea8db890a26c75e50c55f7dda65dc0d604ac41ddf3dce3d5c08fe0a5",
+      "bytes": 3306,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/cyberpunk-b580-nr-opt/tools/benchmark_gpu_bridge_combined_live_v2.py",
+      "original_sha256": "be4a3d54d828e0b80e7854667b9dababebab61b61cb9e41ef036e3c022d7fc81",
+      "sha256": "be4a3d54d828e0b80e7854667b9dababebab61b61cb9e41ef036e3c022d7fc81",
+      "bytes": 3542,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/cyberpunk-b580-nr-opt/tools/benchmark_gpu_handoff_serial_live_v2.py",
+      "original_sha256": "667669cb70d75bcd893087aa794052d102b76b7bb69f0e33fd2b05a68ebe8bbb",
+      "sha256": "667669cb70d75bcd893087aa794052d102b76b7bb69f0e33fd2b05a68ebe8bbb",
+      "bytes": 1621,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/cyberpunk-b580-nr-opt/tools/build_bridge_outer_timing_v1_cpu.py",
+      "original_sha256": "8dc409a5293d3a695abb5daf7a53787f86014ac3c13c5ddd22a276227648fc5b",
+      "sha256": "8dc409a5293d3a695abb5daf7a53787f86014ac3c13c5ddd22a276227648fc5b",
+      "bytes": 4975,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/cyberpunk-b580-nr-opt/tools/compare_validation_batch_720_v1.py",
+      "original_sha256": "4cdad1f9df2938479a53f22772f18602e3e63575b86d31481f872241c2c275f1",
+      "sha256": "4cdad1f9df2938479a53f22772f18602e3e63575b86d31481f872241c2c275f1",
+      "bytes": 16103,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/cyberpunk-b580-nr-opt/tools/install_bridge_resource_pool_trial_v1.py",
+      "original_sha256": "0c0c8b87ff6b149bb3d39a2f2acd92eb19d17028afa987baba6dbc87378fc62d",
+      "sha256": "0c0c8b87ff6b149bb3d39a2f2acd92eb19d17028afa987baba6dbc87378fc62d",
+      "bytes": 11019,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/cyberpunk-b580-nr-opt/tools/install_gpu_handoff_trial_v1.py",
+      "original_sha256": "c2391f28d8ce7cf58d4dd8ed6fb0a3d51611ff736c7f6035ea30ce8af07440f6",
+      "sha256": "c2391f28d8ce7cf58d4dd8ed6fb0a3d51611ff736c7f6035ea30ce8af07440f6",
+      "bytes": 7816,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/cyberpunk-b580-nr-opt/tools/review_int8_c128_saved_cost_cpu_20261002.py",
+      "original_sha256": "2daa54b01f4af8e6c915b200e2f2ea79392cfd8f4fe5f4767f48a6d5941695fb",
+      "sha256": "2daa54b01f4af8e6c915b200e2f2ea79392cfd8f4fe5f4767f48a6d5941695fb",
+      "bytes": 12463,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/cyberpunk-b580-nr-opt/tools/summarize_periodic_flash_capture_v2_cpu.py",
+      "original_sha256": "16a1fab73bdb812b49b423302d14900ae893f187e201cb3ee82671146cbb170a",
+      "sha256": "16a1fab73bdb812b49b423302d14900ae893f187e201cb3ee82671146cbb170a",
+      "bytes": 5671,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580-int8/INT8_FACE_COLOR_CAUSE_STATUS.md",
+      "original_sha256": "add225911b7afad34fe03cc6132023d822a3f464b2cf0d33f647116777512293",
+      "sha256": "add225911b7afad34fe03cc6132023d822a3f464b2cf0d33f647116777512293",
+      "bytes": 4706,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580-int8/INT8_FACE_REVIEW_STATUS.md",
+      "original_sha256": "69ceb4f6c63b20e817ab336fcdd7d2a90c568d1b68bbf27809db0fa0e88dfdf5",
+      "sha256": "69ceb4f6c63b20e817ab336fcdd7d2a90c568d1b68bbf27809db0fa0e88dfdf5",
+      "bytes": 4059,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580-int8/INT8_RANGE_REPAIR_STATUS.md",
+      "original_sha256": "88ab4de589dfc1e46bad12628b6e890c6c7bd2c4fef43635612eb07460f912ba",
+      "sha256": "88ab4de589dfc1e46bad12628b6e890c6c7bd2c4fef43635612eb07460f912ba",
+      "bytes": 4746,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580-int8/QUANTIZED_PROJECTION_STATUS.md",
+      "original_sha256": "60743e427e0f74441b7c3a7d416170a8959dc2ed21bd7ee0e36df3bfa09571ed",
+      "sha256": "60743e427e0f74441b7c3a7d416170a8959dc2ed21bd7ee0e36df3bfa09571ed",
+      "bytes": 7052,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580-int8/experimental/BATCHED_BRANCHES_STATUS.md",
+      "original_sha256": "abb42210a8d8159991ac99f26bc7ddc077445fe3f04bfac53f41a02321652d68",
+      "sha256": "abb42210a8d8159991ac99f26bc7ddc077445fe3f04bfac53f41a02321652d68",
+      "bytes": 8440,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580-int8/experimental/BLACKWOOD_XPU_FOLLOWUP.md",
+      "original_sha256": "b3678cf836bcedeebc35d406d2215edff68a9e38b1bbbbdc7d953e4afcbb8e12",
+      "sha256": "b3678cf836bcedeebc35d406d2215edff68a9e38b1bbbbdc7d953e4afcbb8e12",
+      "bytes": 5269,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580-int8/experimental/BLACKWOOD_XPU_REVIEW.md",
+      "original_sha256": "ea6a483086ae5c538b32f0545da42138449f0216a3944fd02309621c7150944d",
+      "sha256": "ea6a483086ae5c538b32f0545da42138449f0216a3944fd02309621c7150944d",
+      "bytes": 8626,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580-int8/experimental/C32_CUBIC_LUT_STATUS.md",
+      "original_sha256": "964e3e254b1184d94e3c0884813af6db6dcb4588bb9a0517a60e81eef1cfd0d3",
+      "sha256": "c5ea6638d087e3e609cb2c1c49c0cad6d84aaaeb6eb0952b8350ba9a3568c2d6",
+      "bytes": 5765,
+      "byte_identical": false,
+      "reason": "Selected original script or report, with source SHA",
+      "derived": true
+    },
+    {
+      "path": "history/original/nr-b580-int8/experimental/C32_TAIL_AND_COMPILER_STATUS.md",
+      "original_sha256": "2f606da7920b1ca9bd018448635f5253a347c32d92fc4049cc547c4dab24ffbd",
+      "sha256": "2f606da7920b1ca9bd018448635f5253a347c32d92fc4049cc547c4dab24ffbd",
+      "bytes": 6204,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580-int8/experimental/C32_WINDOW_FUSION_STATUS.md",
+      "original_sha256": "ccf5bd550e894901fdd62b9e791faded98b05bdf915f13a8ca4a350b74b4bb1d",
+      "sha256": "ccf5bd550e894901fdd62b9e791faded98b05bdf915f13a8ca4a350b74b4bb1d",
+      "bytes": 6056,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580-int8/experimental/C512_COMPACT_QUERY_STATUS.md",
+      "original_sha256": "cf3c41b029d7c7b20fedeabf6895943cb240af33ca16988a35c9f7d689d8f20b",
+      "sha256": "cf3c41b029d7c7b20fedeabf6895943cb240af33ca16988a35c9f7d689d8f20b",
+      "bytes": 8289,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580-int8/experimental/C512_HOST_COST_STATUS.md",
+      "original_sha256": "e7aa0a786b2ddebaca07705bd5dca8f87e9198879a74e6ca980cc855d32e2f10",
+      "sha256": "e7aa0a786b2ddebaca07705bd5dca8f87e9198879a74e6ca980cc855d32e2f10",
+      "bytes": 5367,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580-int8/experimental/C512_INT8_RANGE_STATUS.md",
+      "original_sha256": "43cddaf52170cb7fbb23512f7b104dc66e4dff38babfeb6693f35b5400791872",
+      "sha256": "43cddaf52170cb7fbb23512f7b104dc66e4dff38babfeb6693f35b5400791872",
+      "bytes": 6164,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580-int8/experimental/C512_QKV_DIRECT_DESIGN_V1.md",
+      "original_sha256": "aa9e9ed5bebd9e3ae59c26ea963c40a93fad492c92913dc87e2902bea95856a1",
+      "sha256": "aa9e9ed5bebd9e3ae59c26ea963c40a93fad492c92913dc87e2902bea95856a1",
+      "bytes": 4501,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580-int8/experimental/C512_QKV_INT8_DESIGN_V1.md",
+      "original_sha256": "7067a89315d2c7e016b88e451691948037dd258178729869b62f8fc5036a5ac7",
+      "sha256": "7067a89315d2c7e016b88e451691948037dd258178729869b62f8fc5036a5ac7",
+      "bytes": 5297,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580-int8/experimental/C512_QKV_INT8_FULL_DESIGN_V1.md",
+      "original_sha256": "6a12a0a2051edfc7d74d137c3627b2d75827c6b3a3dd1ff22138cf7848f9e338",
+      "sha256": "6a12a0a2051edfc7d74d137c3627b2d75827c6b3a3dd1ff22138cf7848f9e338",
+      "bytes": 4398,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580-int8/experimental/C512_UPSTREAM_PARTS_DESIGN_V1.md",
+      "original_sha256": "38b9805cc9475319c1f044d84e9b8a24d704b95c6d7c412acc705d7bbe074b32",
+      "sha256": "38b9805cc9475319c1f044d84e9b8a24d704b95c6d7c412acc705d7bbe074b32",
+      "bytes": 4877,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580-int8/experimental/C512_UPSTREAM_RESULT_V1.md",
+      "original_sha256": "f66c9d1d774251398c72650e578306058458f3ea11b0494b8fb01c12ab1965f0",
+      "sha256": "f66c9d1d774251398c72650e578306058458f3ea11b0494b8fb01c12ab1965f0",
+      "bytes": 3364,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580-int8/experimental/CACHE_LONG_VIDEO_STATUS.md",
+      "original_sha256": "c4af5c96a91697f89a6c40bc297d0ce12b19299836f2dff8f218df5cf9d20198",
+      "sha256": "c4af5c96a91697f89a6c40bc297d0ce12b19299836f2dff8f218df5cf9d20198",
+      "bytes": 4439,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580-int8/experimental/CROSS_OPERATOR_LAYOUT_NEXT.md",
+      "original_sha256": "4d3016d56f4069fedbbda6c60c4e3575f0005eb1c6fed8998feca7d2f34da1c4",
+      "sha256": "4d3016d56f4069fedbbda6c60c4e3575f0005eb1c6fed8998feca7d2f34da1c4",
+      "bytes": 2823,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580-int8/experimental/CURRENT_DENSE_TILING_STATUS.md",
+      "original_sha256": "27dddfdf69df48b5dc6f97e67f1ef5a8c2034eff1a073224b93a047487d06a3c",
+      "sha256": "27dddfdf69df48b5dc6f97e67f1ef5a8c2034eff1a073224b93a047487d06a3c",
+      "bytes": 8375,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580-int8/experimental/DECODER_GATHER_STATUS.md",
+      "original_sha256": "1492a098d076712b4f9be63c3c7567c845e842c9dafb40761ae8e572b403a5c1",
+      "sha256": "1492a098d076712b4f9be63c3c7567c845e842c9dafb40761ae8e572b403a5c1",
+      "bytes": 2318,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580-int8/experimental/DIS_BUDGET_STATUS.md",
+      "original_sha256": "7c8c16ded2623e8271d78db78b7a4ecb46d414aa797cf39c1410d845a9f1099a",
+      "sha256": "7c8c16ded2623e8271d78db78b7a4ecb46d414aa797cf39c1410d845a9f1099a",
+      "bytes": 3252,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580-int8/experimental/ESIMD_DENSE_STATUS.md",
+      "original_sha256": "22daab48305e9d71b1882b33ffc3c0f80af90f452165a0767e2638098d0a4c12",
+      "sha256": "22daab48305e9d71b1882b33ffc3c0f80af90f452165a0767e2638098d0a4c12",
+      "bytes": 6685,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580-int8/experimental/ESIMD_VIT_STATUS.md",
+      "original_sha256": "4b43fa837e5f6c77f9527e9ad5d6f121d6b44c266cb79d45097f5a6d9ea95759",
+      "sha256": "4b43fa837e5f6c77f9527e9ad5d6f121d6b44c266cb79d45097f5a6d9ea95759",
+      "bytes": 5207,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580-int8/experimental/FP8_EPILOGUE_ARCHITECTURE_STATUS.md",
+      "original_sha256": "a7ca9dee023a79b7cc217d1fd911564cd7649617db201e7208f15aa4bcb4a781",
+      "sha256": "a7ca9dee023a79b7cc217d1fd911564cd7649617db201e7208f15aa4bcb4a781",
+      "bytes": 7369,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580-int8/experimental/FP8_GRAPH_REWRITE_STATUS.md",
+      "original_sha256": "51e22824cc10a1e63d9d35f2a08e4dc03b13614ac2be111746ca6830c37114a5",
+      "sha256": "51e22824cc10a1e63d9d35f2a08e4dc03b13614ac2be111746ca6830c37114a5",
+      "bytes": 7557,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580-int8/experimental/FP8_INT8_FEASIBILITY_STATUS.md",
+      "original_sha256": "5324857a65feaafff2569e68f461ec6cc5b8b74797a75077db9479f6e43e4aed",
+      "sha256": "5324857a65feaafff2569e68f461ec6cc5b8b74797a75077db9479f6e43e4aed",
+      "bytes": 2152,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580-int8/experimental/FP8_PARTIAL_INT8_REPORT_FIX_STATUS.md",
+      "original_sha256": "1008ba2aec91808d93b0046cc6b24f75f409809f06a75a13f26dfc99a225bfc7",
+      "sha256": "1008ba2aec91808d93b0046cc6b24f75f409809f06a75a13f26dfc99a225bfc7",
+      "bytes": 2014,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580-int8/experimental/FP8_PARTIAL_INT8_RESULT_STATUS.md",
+      "original_sha256": "a85a97ce3b36e9a952c9a0e576b8f7a0e1d67cd327c0d3623eb3c34fd0c09d17",
+      "sha256": "a85a97ce3b36e9a952c9a0e576b8f7a0e1d67cd327c0d3623eb3c34fd0c09d17",
+      "bytes": 3100,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580-int8/experimental/FP8_PARTIAL_INT8_V1_COMPILE_STATUS.md",
+      "original_sha256": "413181d9bb13bc258c9cab98fb524d6533ce8809f2836a5ebbfa507d5c3ef2a8",
+      "sha256": "413181d9bb13bc258c9cab98fb524d6533ce8809f2836a5ebbfa507d5c3ef2a8",
+      "bytes": 1459,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580-int8/experimental/FUSED_HISTORY_SPEED_STATUS.md",
+      "original_sha256": "53ddcdbe226f123830cfa56f985ff3de22ee59e1c7002cbb6d50b43dc865b581",
+      "sha256": "53ddcdbe226f123830cfa56f985ff3de22ee59e1c7002cbb6d50b43dc865b581",
+      "bytes": 8817,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580-int8/experimental/FUSED_INT8_STATUS.md",
+      "original_sha256": "a4771d112719a0ec3349778230d9d92a4cad86463dc3c3b391cde5d182afae07",
+      "sha256": "a4771d112719a0ec3349778230d9d92a4cad86463dc3c3b391cde5d182afae07",
+      "bytes": 4158,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580-int8/experimental/FUSED_PIPELINE_STATUS.md",
+      "original_sha256": "2261211242ae43e93eac48067d594fa11e6a16bf7ee422613cd23f4b33713fb0",
+      "sha256": "2261211242ae43e93eac48067d594fa11e6a16bf7ee422613cd23f4b33713fb0",
+      "bytes": 6544,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580-int8/experimental/GRAPH_EXECUTION_STATUS.md",
+      "original_sha256": "34212087408842a298ad4c49d459a627455625e720997d8bbba177ce09abf65f",
+      "sha256": "34212087408842a298ad4c49d459a627455625e720997d8bbba177ce09abf65f",
+      "bytes": 5605,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580-int8/experimental/INT8_FFN_BODY_STATUS.md",
+      "original_sha256": "addd3e5fd1a26c1c821637ea9c93a43eb4eb51d7108a96055e86296aaf784348",
+      "sha256": "addd3e5fd1a26c1c821637ea9c93a43eb4eb51d7108a96055e86296aaf784348",
+      "bytes": 2228,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580-int8/experimental/INT8_FFN_CPU_STATUS.md",
+      "original_sha256": "eac57b16e58e6be9f0dff98c1cb920fa30c85bdfa8ec9a303b323bee5c5785c0",
+      "sha256": "eac57b16e58e6be9f0dff98c1cb920fa30c85bdfa8ec9a303b323bee5c5785c0",
+      "bytes": 2318,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580-int8/experimental/INT8_FFN_GPU_STATUS.md",
+      "original_sha256": "b3b3e9ab1cc0e6908ce900dd82fc8213cf0c29245da9559dc51ca259bb605bf3",
+      "sha256": "b3b3e9ab1cc0e6908ce900dd82fc8213cf0c29245da9559dc51ca259bb605bf3",
+      "bytes": 2182,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580-int8/experimental/INT8_FFN_NR_STATUS.md",
+      "original_sha256": "0b418b0b6af6c89363610c3383b334dac14b3ca8127bb394e66f7a5192a62a8d",
+      "sha256": "0b418b0b6af6c89363610c3383b334dac14b3ca8127bb394e66f7a5192a62a8d",
+      "bytes": 2619,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580-int8/experimental/K8_TILED_SPEED_STATUS.md",
+      "original_sha256": "8c5d9103e5611afe24f90e68d9d7d7d1cb697b39829599554f060d4990421eb1",
+      "sha256": "8c5d9103e5611afe24f90e68d9d7d7d1cb697b39829599554f060d4990421eb1",
+      "bytes": 6604,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580-int8/experimental/LAYOUT_CROP_STATUS.md",
+      "original_sha256": "c50ec2141e7f68342b88bc1babc1b179546c2846782c6db039835466e47433de",
+      "sha256": "c50ec2141e7f68342b88bc1babc1b179546c2846782c6db039835466e47433de",
+      "bytes": 3409,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580-int8/experimental/LONG_1080_AND_CONTROL_GRAPH_STATUS.md",
+      "original_sha256": "6d5428c5c51d8497f163a51015dafcb84f6f191f7a7360ba30c112080acd68f8",
+      "sha256": "6d5428c5c51d8497f163a51015dafcb84f6f191f7a7360ba30c112080acd68f8",
+      "bytes": 7718,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580-int8/experimental/NATIVE_CUBIC_STATUS.md",
+      "original_sha256": "f2897b4e448216139f9b06beeda8d7d117d17950fa088cded5b962d37beafe5a",
+      "sha256": "f2897b4e448216139f9b06beeda8d7d117d17950fa088cded5b962d37beafe5a",
+      "bytes": 8024,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580-int8/experimental/NATIVE_HALF_AND_PARITY_STATUS.md",
+      "original_sha256": "434bdeb3673e27f28e91d8cd300a870a283f8628f1b3e7a98cfabb9c69a7c163",
+      "sha256": "434bdeb3673e27f28e91d8cd300a870a283f8628f1b3e7a98cfabb9c69a7c163",
+      "bytes": 4312,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580-int8/experimental/PUBLICATION_STATUS.md",
+      "original_sha256": "8c4f854f1322a8a4a1a9d79921f667ec1bc4d45b51977d735ff77b5b798c6fbc",
+      "sha256": "8c4f854f1322a8a4a1a9d79921f667ec1bc4d45b51977d735ff77b5b798c6fbc",
+      "bytes": 3014,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580-int8/experimental/QKV_PACK_STATUS.md",
+      "original_sha256": "de41512a6327c0e0f9dec23c5a81c38b27a4420208f2dcb7e8a58b2090a230b7",
+      "sha256": "de41512a6327c0e0f9dec23c5a81c38b27a4420208f2dcb7e8a58b2090a230b7",
+      "bytes": 6318,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580-int8/experimental/RESIDUAL_SCALE_STATUS.md",
+      "original_sha256": "2a8089b82362bf49e9b589faad42c8e2cdd4036cc9a60f22da43b08a77af24e8",
+      "sha256": "2a8089b82362bf49e9b589faad42c8e2cdd4036cc9a60f22da43b08a77af24e8",
+      "bytes": 5597,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580-int8/experimental/ROI_AND_GPU_FLOW_REUSE_STATUS.md",
+      "original_sha256": "1e5a13c96576341d565fff3101663270a93c77e15f7394a4dea27877e963217d",
+      "sha256": "1e5a13c96576341d565fff3101663270a93c77e15f7394a4dea27877e963217d",
+      "bytes": 5606,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580-int8/experimental/SCHEDULED_FAST_STATUS.md",
+      "original_sha256": "374c06dbffb6666393728d46133e7cac3d5e9311054e34f90ce1c90442b837f7",
+      "sha256": "374c06dbffb6666393728d46133e7cac3d5e9311054e34f90ce1c90442b837f7",
+      "bytes": 6179,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580-int8/experimental/SHARED_GRAPH_STATUS.md",
+      "original_sha256": "ce33daf7d598ed0030a9068009f80f3503596a61626f6142b784b7cab89422fa",
+      "sha256": "ce33daf7d598ed0030a9068009f80f3503596a61626f6142b784b7cab89422fa",
+      "bytes": 7127,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580-int8/experimental/SHORT_FP8_STATUS.md",
+      "original_sha256": "2d7a270f10d610da869f597b3750711dcde9c5f1ea43264c22ee388428da115b",
+      "sha256": "2d7a270f10d610da869f597b3750711dcde9c5f1ea43264c22ee388428da115b",
+      "bytes": 5622,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580-int8/experimental/SMALL_GEOMETRY_STATUS.md",
+      "original_sha256": "ef3feba5f322a26cb6dcfb73233fdb2e3996279db86b831217f581e8d8caa754",
+      "sha256": "ef3feba5f322a26cb6dcfb73233fdb2e3996279db86b831217f581e8d8caa754",
+      "bytes": 4867,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580-int8/experimental/SPLIT_HEADS_STATUS.md",
+      "original_sha256": "c627ce12a9222110b7884c85fe952d6d3a522c317d9e73ca41203bf6fabd10cf",
+      "sha256": "c627ce12a9222110b7884c85fe952d6d3a522c317d9e73ca41203bf6fabd10cf",
+      "bytes": 5062,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580-int8/experimental/STATUS.md",
+      "original_sha256": "03a3a6159aced8c947d07f78f063461d05d252414ace451042858dc6e2e9e4ef",
+      "sha256": "03a3a6159aced8c947d07f78f063461d05d252414ace451042858dc6e2e9e4ef",
+      "bytes": 5927,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580-int8/experimental/VIT_ATTENTION64_STATUS.md",
+      "original_sha256": "e5cf5583163612ca9887bb6737f69d4c73cf018e3ed024a5b291a2f232de0b6b",
+      "sha256": "e5cf5583163612ca9887bb6737f69d4c73cf018e3ed024a5b291a2f232de0b6b",
+      "bytes": 8479,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580-int8/experimental/VIT_HEAD_LAYOUT_SCREEN_STATUS.md",
+      "original_sha256": "b226d8507f9c9667fc3e969fe70dcd5b144c4b7b893ef74415260235b59947fb",
+      "sha256": "b226d8507f9c9667fc3e969fe70dcd5b144c4b7b893ef74415260235b59947fb",
+      "bytes": 1950,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580-int8/experimental/VIT_PROJECTION_STATUS.md",
+      "original_sha256": "ecc05e85a9842e8a6fbec8d7fde78c98b5d4f9346b51af1b8ed5e41ae7451694",
+      "sha256": "263f09ae08a07aae3f1f0c1917be05d7ba0c288abff65de2354d8d1eb0d5efed",
+      "bytes": 6905,
+      "byte_identical": false,
+      "reason": "Selected original script or report, with source SHA",
+      "derived": true
+    },
+    {
+      "path": "history/original/nr-b580-int8/experimental/VIT_QKV_FUSION_STATUS.md",
+      "original_sha256": "c181d975847d5c62a1be9e546e04478a704841d0d9efbd286fa4f3024a9c6775",
+      "sha256": "c181d975847d5c62a1be9e546e04478a704841d0d9efbd286fa4f3024a9c6775",
+      "bytes": 8458,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580-int8/experimental/WIDE_MLP_LUT_STATUS.md",
+      "original_sha256": "dd1cd7d3ecb4c7e8a5cd5a627dd698331775ec2973003b9aec6efbf50dd6ea8f",
+      "sha256": "dd1cd7d3ecb4c7e8a5cd5a627dd698331775ec2973003b9aec6efbf50dd6ea8f",
+      "bytes": 6970,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580-int8/experimental/WINDOW_BLOCK_LAYOUT_STATUS.md",
+      "original_sha256": "ce334f7a0bfe835307f0e8dce4df0035620eb35a927434a359b3be932b81e967",
+      "sha256": "ce334f7a0bfe835307f0e8dce4df0035620eb35a927434a359b3be932b81e967",
+      "bytes": 7706,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580-int8/experimental/WINDOW_LAYOUT_STATUS.md",
+      "original_sha256": "2080e579d5957bc0efba3f6a9c5e53e6297d3fe40e92841d98a00cb2097b7195",
+      "sha256": "2080e579d5957bc0efba3f6a9c5e53e6297d3fe40e92841d98a00cb2097b7195",
+      "bytes": 7911,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580-int8/experimental/analyze_fp8_int8_tiles_v1.py",
+      "original_sha256": "ef6b0bb9f2c8ca4df34ea66dbdcb85795812d0c5d9128423643fa21f5773c1e5",
+      "sha256": "ef6b0bb9f2c8ca4df34ea66dbdcb85795812d0c5d9128423643fa21f5773c1e5",
+      "bytes": 12173,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580-int8/experimental/audit_batched_branches_v1.py",
+      "original_sha256": "bcfb6be375ce9ec85b3f99124688dd297a7a880c0d558798b097c6d254a3b60a",
+      "sha256": "bcfb6be375ce9ec85b3f99124688dd297a7a880c0d558798b097c6d254a3b60a",
+      "bytes": 8105,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580-int8/experimental/audit_c32_lut_v1.py",
+      "original_sha256": "40d5a674a45f26f450bfa4a3d04e1982dc9331e9f350b836a637a1d360546f3a",
+      "sha256": "40d5a674a45f26f450bfa4a3d04e1982dc9331e9f350b836a637a1d360546f3a",
+      "bytes": 9365,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580-int8/experimental/audit_c512_qkv_direct_v1.py",
+      "original_sha256": "ea11360af92eb8bc05f9065d3ad30e8dfda2f41f27d789d2cc8ceb872306debc",
+      "sha256": "ea11360af92eb8bc05f9065d3ad30e8dfda2f41f27d789d2cc8ceb872306debc",
+      "bytes": 8442,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580-int8/experimental/audit_decoder_gather_v1.py",
+      "original_sha256": "6797eb64aa8bd9d0eb7ef2e7e77a8ee37f2627b2c480cc23de93a7a0ded74057",
+      "sha256": "6797eb64aa8bd9d0eb7ef2e7e77a8ee37f2627b2c480cc23de93a7a0ded74057",
+      "bytes": 8293,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580-int8/experimental/audit_esimd_dense_v1.py",
+      "original_sha256": "186a61801540911726c0d84cb2a8fbe43c135808c38d9675536427efa24fc4c2",
+      "sha256": "186a61801540911726c0d84cb2a8fbe43c135808c38d9675536427efa24fc4c2",
+      "bytes": 9275,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580-int8/experimental/audit_esimd_vit_v1.py",
+      "original_sha256": "b4c6f003c3a30816f3d52752bd6851a56a65df81352e91b10a081ad524ff2f10",
+      "sha256": "b4c6f003c3a30816f3d52752bd6851a56a65df81352e91b10a081ad524ff2f10",
+      "bytes": 11871,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580-int8/experimental/audit_int8_face_color_v1.py",
+      "original_sha256": "19fb4b7b82cf07f41cb9dd59213fa72c8e0068606c883d14d2e7d47230ad6679",
+      "sha256": "19fb4b7b82cf07f41cb9dd59213fa72c8e0068606c883d14d2e7d47230ad6679",
+      "bytes": 4400,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580-int8/experimental/audit_native_half_fma_v1.py",
+      "original_sha256": "b99d0ec39e199c78b10cc31c44a887582482f4ea56757f980b3bc4c2dbf97dff",
+      "sha256": "b99d0ec39e199c78b10cc31c44a887582482f4ea56757f980b3bc4c2dbf97dff",
+      "bytes": 4265,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580-int8/experimental/audit_small_geometry_exact_v1.py",
+      "original_sha256": "2fd4d4188b5ab9a09399c589b682d13ea24ff42a49cdbbecfa8e324308734a03",
+      "sha256": "2fd4d4188b5ab9a09399c589b682d13ea24ff42a49cdbbecfa8e324308734a03",
+      "bytes": 3121,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580-int8/experimental/batched_branched_mlp_v1.py",
+      "original_sha256": "4a768835935ed2fa6d9876ca383925e5930daf009e2e91eb3d58d3fa1460cd08",
+      "sha256": "4a768835935ed2fa6d9876ca383925e5930daf009e2e91eb3d58d3fa1460cd08",
+      "bytes": 6082,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580-int8/experimental/benchmark_fp8_partial_int8_projection_v1.py",
+      "original_sha256": "1f06661af3b2568b34ff12386bb1b8de2b810245b3530046b0c84da5284d8a32",
+      "sha256": "1f06661af3b2568b34ff12386bb1b8de2b810245b3530046b0c84da5284d8a32",
+      "bytes": 11532,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580-int8/experimental/benchmark_fp8_partial_int8_projection_v3.py",
+      "original_sha256": "7463a8b7f8d3975f6965ebfba49ae20f0b29ba584171482d44db19b7ebb08f4c",
+      "sha256": "7463a8b7f8d3975f6965ebfba49ae20f0b29ba584171482d44db19b7ebb08f4c",
+      "bytes": 11994,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580-int8/experimental/benchmark_fused_shapes_v2.py",
+      "original_sha256": "4d8d18f602ed95714277824029328976d3e2954ea06b3955e50c66ce589e80cc",
+      "sha256": "4d8d18f602ed95714277824029328976d3e2954ea06b3955e50c66ce589e80cc",
+      "bytes": 5184,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580-int8/experimental/benchmark_quantized_projection_v2.py",
+      "original_sha256": "8c09bd1b520f745547f09c9db4682b2f811bfa7fca41aadbebffa7949276e2af",
+      "sha256": "8c09bd1b520f745547f09c9db4682b2f811bfa7fca41aadbebffa7949276e2af",
+      "bytes": 18883,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580-int8/experimental/benchmark_residual_scale_v1.py",
+      "original_sha256": "34f1fd873fe6a5369ec4e7f35f39ad0a84389e84666bbd0e54484be8cd0cd758",
+      "sha256": "34f1fd873fe6a5369ec4e7f35f39ad0a84389e84666bbd0e54484be8cd0cd758",
+      "bytes": 11991,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580-int8/experimental/benchmark_window_blocks_native_parity_v3.py",
+      "original_sha256": "9920ff425f01376fda18013706df38cea9cc2b14a66bbb46feff27a08157a3c3",
+      "sha256": "9920ff425f01376fda18013706df38cea9cc2b14a66bbb46feff27a08157a3c3",
+      "bytes": 16366,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580-int8/experimental/c32_chunk_layout_v2.py",
+      "original_sha256": "33e87284df1dd602a6c0b74d72c10bb7a9a495f6a07c8b0f1cc36da131147504",
+      "sha256": "33e87284df1dd602a6c0b74d72c10bb7a9a495f6a07c8b0f1cc36da131147504",
+      "bytes": 2420,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580-int8/experimental/c32_tail_adapter_v1.py",
+      "original_sha256": "abb7cff91f914520b1da8d5e217a1520486d565126b3d85590c6b31188e39a0b",
+      "sha256": "abb7cff91f914520b1da8d5e217a1520486d565126b3d85590c6b31188e39a0b",
+      "bytes": 3180,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580-int8/experimental/c512_qkv_direct_v1.py",
+      "original_sha256": "5059fdfadf7588aefbed6d54bd7576c94a2d32ee2830a1be40189a2d1b722275",
+      "sha256": "5059fdfadf7588aefbed6d54bd7576c94a2d32ee2830a1be40189a2d1b722275",
+      "bytes": 5074,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580-int8/experimental/c512_window_layout_scope_v1.py",
+      "original_sha256": "ef291b3025a0c297d7d6d9b2b627df1e5944c6f6529dfbe17579c15f6877138a",
+      "sha256": "ef291b3025a0c297d7d6d9b2b627df1e5944c6f6529dfbe17579c15f6877138a",
+      "bytes": 5680,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580-int8/experimental/capture_body_v1.py",
+      "original_sha256": "2f7fa28dd66a43cd20d0edaee28d09aaac034fe90b3865080ffc065d7397dfbb",
+      "sha256": "2f7fa28dd66a43cd20d0edaee28d09aaac034fe90b3865080ffc065d7397dfbb",
+      "bytes": 3623,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580-int8/experimental/compact_c512_qkv_pack_v1.py",
+      "original_sha256": "6e6e149a53397f773a233d97b1c436703805867d4328f654d7b419143120d02c",
+      "sha256": "6e6e149a53397f773a233d97b1c436703805867d4328f654d7b419143120d02c",
+      "bytes": 3699,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580-int8/experimental/compact_c512_qkv_stack_v1.py",
+      "original_sha256": "81e35c300dd09fb6f530ed855f97ffee83dd8e1e6f30c59a5c80855bc103dad5",
+      "sha256": "81e35c300dd09fb6f530ed855f97ffee83dd8e1e6f30c59a5c80855bc103dad5",
+      "bytes": 7367,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580-int8/experimental/current_dense_tiled_provider_v1.py",
+      "original_sha256": "649cc17020bf6d473ba080257c6b6465768eb6e937e73ce381f17e0322ae84c0",
+      "sha256": "649cc17020bf6d473ba080257c6b6465768eb6e937e73ce381f17e0322ae84c0",
+      "bytes": 3188,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580-int8/experimental/decoder_gather_merge_v1.py",
+      "original_sha256": "da55a8fa95e79808d737a8c76b1aa89fad36078ff10c9d9f1c190f5a3ae11e1a",
+      "sha256": "da55a8fa95e79808d737a8c76b1aa89fad36078ff10c9d9f1c190f5a3ae11e1a",
+      "bytes": 3763,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580-int8/experimental/diagnose_int8_face_color_v1.py",
+      "original_sha256": "8ce3f671da17222acc296afea3e1f41cba1155ec65b90b77a549cc6bbf717238",
+      "sha256": "8ce3f671da17222acc296afea3e1f41cba1155ec65b90b77a549cc6bbf717238",
+      "bytes": 14027,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580-int8/experimental/fast_matrices_v3.py",
+      "original_sha256": "6b80bbf2a509d5351fd5f503867f72d4fc723c319439e61cb2e590136bd46a06",
+      "sha256": "6b80bbf2a509d5351fd5f503867f72d4fc723c319439e61cb2e590136bd46a06",
+      "bytes": 7378,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580-int8/experimental/finish_int8_face480_v1.py",
+      "original_sha256": "d06e4e0c872aa650317fb41b193bad3534c513929ac1baf86c4f793db21a567c",
+      "sha256": "d06e4e0c872aa650317fb41b193bad3534c513929ac1baf86c4f793db21a567c",
+      "bytes": 10551,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580-int8/experimental/fp8_partial_int8_projection_v2.py",
+      "original_sha256": "76a4f489693f83b718548c5594641564f445307532c10c0f6041d594d04cb7b3",
+      "sha256": "76a4f489693f83b718548c5594641564f445307532c10c0f6041d594d04cb7b3",
+      "bytes": 3427,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580-int8/experimental/full_body_dataflow_v1.py",
+      "original_sha256": "c21906072f0c9489ae864b8c26fe597f273503d7c965f9db4d569bb290dec788",
+      "sha256": "c21906072f0c9489ae864b8c26fe597f273503d7c965f9db4d569bb290dec788",
+      "bytes": 2719,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580-int8/experimental/fused_activation_int8_v1.py",
+      "original_sha256": "54486d4e5810613a9a15eea1b6a405702423e68895cb87279f3fc904d082e390",
+      "sha256": "54486d4e5810613a9a15eea1b6a405702423e68895cb87279f3fc904d082e390",
+      "bytes": 2762,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580-int8/experimental/fused_branched_pairs_v2.py",
+      "original_sha256": "5b226bbb5931cc8b5c853be37795568c12e72134721765678524da598fffa7bb",
+      "sha256": "5b226bbb5931cc8b5c853be37795568c12e72134721765678524da598fffa7bb",
+      "bytes": 1007,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580-int8/experimental/fused_c32_attention_projection_v1.py",
+      "original_sha256": "110e6b968395c925442dc28f0686fdb81a15140abc09f1da9fc56cfc53b6c8fb",
+      "sha256": "110e6b968395c925442dc28f0686fdb81a15140abc09f1da9fc56cfc53b6c8fb",
+      "bytes": 3958,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580-int8/experimental/fused_c32_mlp_v1.py",
+      "original_sha256": "0f9807f9e8783c4a854377853abd4b95b8054c16254d0c60de05e03bad281804",
+      "sha256": "0f9807f9e8783c4a854377853abd4b95b8054c16254d0c60de05e03bad281804",
+      "bytes": 4217,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580-int8/experimental/fused_cached_matrices_v1.py",
+      "original_sha256": "550a2022258d45c5ea89fdd3dcd25fa1d63fe242db723db3ae87a860cbfc1597",
+      "sha256": "550a2022258d45c5ea89fdd3dcd25fa1d63fe242db723db3ae87a860cbfc1597",
+      "bytes": 1827,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580-int8/experimental/fused_cached_matrices_v2.py",
+      "original_sha256": "e7c3bc99a4fcef0659a3250e9e60667937aa0135670a4cbac45e20769c8eea80",
+      "sha256": "e7c3bc99a4fcef0659a3250e9e60667937aa0135670a4cbac45e20769c8eea80",
+      "bytes": 1924,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580-int8/experimental/fused_dynamic_front_v1.py",
+      "original_sha256": "37813197c7326041866b059d6874358914cac297700345f9ed4ab3db5209b552",
+      "sha256": "37813197c7326041866b059d6874358914cac297700345f9ed4ab3db5209b552",
+      "bytes": 6423,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580-int8/experimental/fused_graph_history_warp_v2.py",
+      "original_sha256": "1db533851bf5eae33c11aa5a4c7ec03fa580db39721c029e43ac96162b36f8ad",
+      "sha256": "1db533851bf5eae33c11aa5a4c7ec03fa580db39721c029e43ac96162b36f8ad",
+      "bytes": 2017,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580-int8/experimental/fused_head_layout_v1.py",
+      "original_sha256": "bdb21e2f496c7d43aef5a5af21c3599cb79008e68b4a31e64e1058c0381eff2d",
+      "sha256": "bdb21e2f496c7d43aef5a5af21c3599cb79008e68b4a31e64e1058c0381eff2d",
+      "bytes": 1959,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580-int8/experimental/fused_square_history_v2.py",
+      "original_sha256": "7648159f33430d087599895307e53674d7772925637137aaa18f9d24489da0a4",
+      "sha256": "7648159f33430d087599895307e53674d7772925637137aaa18f9d24489da0a4",
+      "bytes": 7153,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580-int8/experimental/fused_swin_core_v2.py",
+      "original_sha256": "aee5bc46a60104ad07523e27087b178ebb08c88d7adcfe0da26db8daf69d9298",
+      "sha256": "aee5bc46a60104ad07523e27087b178ebb08c88d7adcfe0da26db8daf69d9298",
+      "bytes": 4219,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580-int8/experimental/fused_swin_scheduling_v1.py",
+      "original_sha256": "a33c54b408810a7479548c09542e4578791f2e48aa7efe1359f2288c19b2c654",
+      "sha256": "a33c54b408810a7479548c09542e4578791f2e48aa7efe1359f2288c19b2c654",
+      "bytes": 1448,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580-int8/experimental/graph_front_v1.py",
+      "original_sha256": "d2b8a5f3cb913b71c836e8c2dc0a19cb34b0dbacf6a83851010d11a5a172f5de",
+      "sha256": "d2b8a5f3cb913b71c836e8c2dc0a19cb34b0dbacf6a83851010d11a5a172f5de",
+      "bytes": 5302,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580-int8/experimental/graph_front_v3.py",
+      "original_sha256": "bacf2c8acb00356c79d82b48c73954cf559254fec9d18ab6cca01663f1f05c25",
+      "sha256": "bacf2c8acb00356c79d82b48c73954cf559254fec9d18ab6cca01663f1f05c25",
+      "bytes": 1460,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580-int8/experimental/graph_front_v4.py",
+      "original_sha256": "bdd8ed34ee979608f445eb82e2094c8b1b04c3ed288ee5038949c1c52872ca5e",
+      "sha256": "bdd8ed34ee979608f445eb82e2094c8b1b04c3ed288ee5038949c1c52872ca5e",
+      "bytes": 3408,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580-int8/experimental/graph_front_v5.py",
+      "original_sha256": "8887facb3d98f91f6a068206698283b2865d895cbe7cdae366b0455939f3a6ec",
+      "sha256": "8887facb3d98f91f6a068206698283b2865d895cbe7cdae366b0455939f3a6ec",
+      "bytes": 2806,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580-int8/experimental/graph_front_v6.py",
+      "original_sha256": "3cf46091d2a44457975a95670aa317d6205e0ec9db4c5bc5acf4e70c9af7a052",
+      "sha256": "3cf46091d2a44457975a95670aa317d6205e0ec9db4c5bc5acf4e70c9af7a052",
+      "bytes": 389,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580-int8/experimental/graph_history_warp_v2.py",
+      "original_sha256": "f69fd9aa691985a19cf2ee7b1990068956292b53db84a86cc05fa2245fbe754c",
+      "sha256": "f69fd9aa691985a19cf2ee7b1990068956292b53db84a86cc05fa2245fbe754c",
+      "bytes": 1184,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580-int8/experimental/k8_tiled_provider_v1.py",
+      "original_sha256": "85e05e5fc47dbcef3d13aefddde2ca22212af56a72c0e77e454c292a294486b5",
+      "sha256": "85e05e5fc47dbcef3d13aefddde2ca22212af56a72c0e77e454c292a294486b5",
+      "bytes": 3198,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580-int8/experimental/native_half_cubic_v1.py",
+      "original_sha256": "4dfeaad7a27b69332dd33b29c12a8cc09f602ca757a8c9d73b7339398b19bcb2",
+      "sha256": "4dfeaad7a27b69332dd33b29c12a8cc09f602ca757a8c9d73b7339398b19bcb2",
+      "bytes": 703,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580-int8/experimental/native_half_head_layout_v1.py",
+      "original_sha256": "8f888e8368bab61802d6a5642c72f8a78e218c0630ac457485f8b78f1e899bd4",
+      "sha256": "8f888e8368bab61802d6a5642c72f8a78e218c0630ac457485f8b78f1e899bd4",
+      "bytes": 2724,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580-int8/experimental/nr256_selected_stack_v1.py",
+      "original_sha256": "7e4a60784114b74b9941b948e4f568547e41f1b091a6b9f8bdda8b4a4dd88db8",
+      "sha256": "7e4a60784114b74b9941b948e4f568547e41f1b091a6b9f8bdda8b4a4dd88db8",
+      "bytes": 2426,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580-int8/experimental/plan_fp8_epilogues_v1.py",
+      "original_sha256": "eaca0bcfca75f02e8fea9d8c2a8ba67e47d7650606575b065b8bab4af357227a",
+      "sha256": "eaca0bcfca75f02e8fea9d8c2a8ba67e47d7650606575b065b8bab4af357227a",
+      "bytes": 5139,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580-int8/experimental/qkv_head_layout_v1.py",
+      "original_sha256": "549cca70c993d8fb62bdbfbf3b0ab90d42d7710390e7824aab8353b5b688599e",
+      "sha256": "549cca70c993d8fb62bdbfbf3b0ab90d42d7710390e7824aab8353b5b688599e",
+      "bytes": 1979,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580-int8/experimental/repair_int8_ffn_range_v1.py",
+      "original_sha256": "232cd53522f3edaf6a8095d52fef9fed760303058b33906cc8227e853632e341",
+      "sha256": "232cd53522f3edaf6a8095d52fef9fed760303058b33906cc8227e853632e341",
+      "bytes": 25326,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580-int8/experimental/residual_scale_v1.py",
+      "original_sha256": "abd19fa2f418ad2dbdea164be2b45df5c0c9ace2a1ef3ea9895ddabce55e4262",
+      "sha256": "abd19fa2f418ad2dbdea164be2b45df5c0c9ace2a1ef3ea9895ddabce55e4262",
+      "bytes": 8250,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580-int8/experimental/review_int8_face480_v1.py",
+      "original_sha256": "6c96d45180eab5d911fe709df12f1a8a881c905df51498f3278986f289df38c8",
+      "sha256": "6c96d45180eab5d911fe709df12f1a8a881c905df51498f3278986f289df38c8",
+      "bytes": 13620,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580-int8/experimental/static_weight_cache_v2.py",
+      "original_sha256": "5a198b4f67201d8844a73abbd697e60799c3b6b03d4fd1dc298e7fe93725d825",
+      "sha256": "5a198b4f67201d8844a73abbd697e60799c3b6b03d4fd1dc298e7fe93725d825",
+      "bytes": 2170,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580-int8/experimental/strided_batched_v1.py",
+      "original_sha256": "c7e922c5514a678c2e258ad9a322ad163cb9b1d7dd118a7424342fb4ec483eaf",
+      "sha256": "c7e922c5514a678c2e258ad9a322ad163cb9b1d7dd118a7424342fb4ec483eaf",
+      "bytes": 3412,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580-int8/experimental/validate_exact_window_v1.py",
+      "original_sha256": "5e3de36a204b96ccd7d26bea747bec4f32915c882f58c2c4277281621b820147",
+      "sha256": "5e3de36a204b96ccd7d26bea747bec4f32915c882f58c2c4277281621b820147",
+      "bytes": 16374,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580-int8/experimental/validate_window_blocks_long1080_v3.py",
+      "original_sha256": "bd184ffa0a2e5f0c9d34c5c8ba1925d99bd34ff685086707e1ab59832edae9a1",
+      "sha256": "bd184ffa0a2e5f0c9d34c5c8ba1925d99bd34ff685086707e1ab59832edae9a1",
+      "bytes": 13598,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580-int8/experimental/vit_head_layout_scope_v1.py",
+      "original_sha256": "c0fb666561d076be985e86b32e929d23bef188d8778bed5de35e6aa51a579670",
+      "sha256": "c0fb666561d076be985e86b32e929d23bef188d8778bed5de35e6aa51a579670",
+      "bytes": 3589,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580-int8/experimental/window_layout_v1.py",
+      "original_sha256": "b344016a9ef2cd5fe33def2a070ecbcc1b3ab403fccf9e82604b5e555cba3346",
+      "sha256": "b344016a9ef2cd5fe33def2a070ecbcc1b3ab403fccf9e82604b5e555cba3346",
+      "bytes": 5998,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580-int8/product/FULL_GPU_COMFY_PLAN.md",
+      "original_sha256": "2ce6e1169a94c6f13ffa1ac018116fd8c7b2cca4e8be8d632f121854e41d833d",
+      "sha256": "2ce6e1169a94c6f13ffa1ac018116fd8c7b2cca4e8be8d632f121854e41d833d",
+      "bytes": 4396,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580-int8/product/README.md",
+      "original_sha256": "0bb0b320e101509f19b68c664f5ffbcf79f37c58703612d75dae3c4ceb1f27fe",
+      "sha256": "0bb0b320e101509f19b68c664f5ffbcf79f37c58703612d75dae3c4ceb1f27fe",
+      "bytes": 3075,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580-int8/product/STATUS.md",
+      "original_sha256": "6f0cfe278d8e869107a5fc1fd58e734a0e5ccafc25d588c47636dbdd73e0d409",
+      "sha256": "6f0cfe278d8e869107a5fc1fd58e734a0e5ccafc25d588c47636dbdd73e0d409",
+      "bytes": 19135,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580-int8/product/comfy/nodes.py",
+      "original_sha256": "e8cae06ded89be9b34cccd0b7ef7216dcc41e29e71d722807cb59a8f777c8df2",
+      "sha256": "e8cae06ded89be9b34cccd0b7ef7216dcc41e29e71d722807cb59a8f777c8df2",
+      "bytes": 4489,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580-int8/product/comfy/runner.py",
+      "original_sha256": "33d4755ef1969eaba784414e68d4009f11ec85490323fad65c1e2ed4f16e8dc2",
+      "sha256": "33d4755ef1969eaba784414e68d4009f11ec85490323fad65c1e2ed4f16e8dc2",
+      "bytes": 8607,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580-int8/product/comfy/smoke_node_v1.py",
+      "original_sha256": "3e2160c801b1e8b8478c6b44494ca07dcaa1d8ab44650bf0cf015b078c0cd15f",
+      "sha256": "3e2160c801b1e8b8478c6b44494ca07dcaa1d8ab44650bf0cf015b078c0cd15f",
+      "bytes": 1278,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580-int8/product/nr_exact_controls_candidate_v1.py",
+      "original_sha256": "07a3b8e1898255f5e19c55f386dc42fe1510ee29d9ff9dae1c8390e766f9fd3a",
+      "sha256": "07a3b8e1898255f5e19c55f386dc42fe1510ee29d9ff9dae1c8390e766f9fd3a",
+      "bytes": 1890,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580-int8/product/nr_runtime_v1.py",
+      "original_sha256": "eb32070cbbc9977f8b8114abd019a000c471d5af1b9d77ad9cd56ee185f3240d",
+      "sha256": "eb32070cbbc9977f8b8114abd019a000c471d5af1b9d77ad9cd56ee185f3240d",
+      "bytes": 7300,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580-int8/product/precompile/fast_cached_runtime_v1.py",
+      "original_sha256": "57bc7e6602b5e7bc1075cc5c6d0b39e41025eccc4da23d453d8c746cc73d6917",
+      "sha256": "57bc7e6602b5e7bc1075cc5c6d0b39e41025eccc4da23d453d8c746cc73d6917",
+      "bytes": 2845,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580/ALLANMENG_XPU_REVIEW.md",
+      "original_sha256": "0c3809992e1d98c16ab7c527059d72a7961ab55371aad45e12a5690d686f2661",
+      "sha256": "0c3809992e1d98c16ab7c527059d72a7961ab55371aad45e12a5690d686f2661",
+      "bytes": 6184,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580/ATTENTION_WEIGHTS_SPEED_STATUS.md",
+      "original_sha256": "b0161cfb81102c0b5f2d7f1129360232181ebe922b460006bd3b7337e8c031dd",
+      "sha256": "b0161cfb81102c0b5f2d7f1129360232181ebe922b460006bd3b7337e8c031dd",
+      "bytes": 5599,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580/BACKEND_BRANCHES.md",
+      "original_sha256": "cef3e1978b90bcfebe257bbb1a5933f88a6c44ad58ad4ac5fecd53fcbfe0b80b",
+      "sha256": "cef3e1978b90bcfebe257bbb1a5933f88a6c44ad58ad4ac5fecd53fcbfe0b80b",
+      "bytes": 1970,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580/C32_BATCH_AND_FP16_XMX_STATUS.md",
+      "original_sha256": "093925b46ba2cc35f5f9d2ec5ec00ed22fb543672d6f19b7b4966e326b0d84a5",
+      "sha256": "093925b46ba2cc35f5f9d2ec5ec00ed22fb543672d6f19b7b4966e326b0d84a5",
+      "bytes": 4156,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580/C32_NORMALIZATION_SPEED_STATUS.md",
+      "original_sha256": "12cb18c5c6633fb96c245ccba487bb42a75eb69a697504126d950bb1e8113441",
+      "sha256": "12cb18c5c6633fb96c245ccba487bb42a75eb69a697504126d950bb1e8113441",
+      "bytes": 5466,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580/COMMUNITY_INT8_AND_REUSE.md",
+      "original_sha256": "2152e27d10e283c4e895ceeaf054e21ab67905f30208ad11fde05599c09665aa",
+      "sha256": "2152e27d10e283c4e895ceeaf054e21ab67905f30208ad11fde05599c09665aa",
+      "bytes": 3801,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580/CONTROL_BACKEND_STATUS.md",
+      "original_sha256": "ffb6e9e43a3a423e75f98421a2ed47795c423767f1a0bfe1662b5e2b7da8bafc",
+      "sha256": "ffb6e9e43a3a423e75f98421a2ed47795c423767f1a0bfe1662b5e2b7da8bafc",
+      "bytes": 8995,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580/DEPTH_REFERENCE_STATUS.md",
+      "original_sha256": "6556d2103139812b66507857c809adb1bd20bb376cf51dac68c677e5d9b5f550",
+      "sha256": "6556d2103139812b66507857c809adb1bd20bb376cf51dac68c677e5d9b5f550",
+      "bytes": 2192,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580/DIMENSION_BACKEND_STATUS.md",
+      "original_sha256": "6b80139dbb981234c1a33a39d0eb5a8c43beaa7e4bd19af9614fd64be6267d1c",
+      "sha256": "6b80139dbb981234c1a33a39d0eb5a8c43beaa7e4bd19af9614fd64be6267d1c",
+      "bytes": 4738,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580/EXACT_FAST_OPTIMIZATION_REUSE_AUDIT.md",
+      "original_sha256": "7c634bf4786e7d5c065cd21fdc293a53518f2d138282b713974a67f061640e3f",
+      "sha256": "7c634bf4786e7d5c065cd21fdc293a53518f2d138282b713974a67f061640e3f",
+      "bytes": 18384,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580/EXACT_INT8_EXECUTION_PROBE.md",
+      "original_sha256": "987d497bfe7892702912e1f13e80c8aa8de59b4aa57f3b6fcd473cf7a5dead55",
+      "sha256": "987d497bfe7892702912e1f13e80c8aa8de59b4aa57f3b6fcd473cf7a5dead55",
+      "bytes": 11478,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580/EXACT_OPTIMIZATION_MIGRATION_STATUS.md",
+      "original_sha256": "ceace43446392825ad025a8521bf5e5b054d7c93e7631aebfcaf41c715e9c961",
+      "sha256": "ceace43446392825ad025a8521bf5e5b054d7c93e7631aebfcaf41c715e9c961",
+      "bytes": 22572,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580/EXACT_SEMANTIC_COST_AUDIT.md",
+      "original_sha256": "2cf0ca468412676e7966e55b0d020aa5c20df0814075b3c90f2dadbe011f854a",
+      "sha256": "2cf0ca468412676e7966e55b0d020aa5c20df0814075b3c90f2dadbe011f854a",
+      "bytes": 4629,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580/FULL_INT32_ARITHMETIC_STATUS.md",
+      "original_sha256": "1be43c67ed6c031344b0e6502d6e7d9a9793c83084f1a6d8df32123b4a7fa478",
+      "sha256": "1be43c67ed6c031344b0e6502d6e7d9a9793c83084f1a6d8df32123b4a7fa478",
+      "bytes": 5601,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580/GPU_RESOURCE_INTEROP_STATUS.md",
+      "original_sha256": "5ff5337457ef1e89e631abe22baeaf773b2a59c0101e4cc9eda96cb5c84fd7d9",
+      "sha256": "5ff5337457ef1e89e631abe22baeaf773b2a59c0101e4cc9eda96cb5c84fd7d9",
+      "bytes": 6682,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580/HALF_FMA_FUSION_STATUS.md",
+      "original_sha256": "730449023db410eb3a74f684d34f93edb61ef6e9cb124508d0b35b9fce24a8b2",
+      "sha256": "730449023db410eb3a74f684d34f93edb61ef6e9cb124508d0b35b9fce24a8b2",
+      "bytes": 3483,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580/HALF_FMA_STATUS.md",
+      "original_sha256": "51ef28dfa27b40bfe12d1b19614d3c368e3297cdd55d9af3045f3eea8f4091f0",
+      "sha256": "51ef28dfa27b40bfe12d1b19614d3c368e3297cdd55d9af3045f3eea8f4091f0",
+      "bytes": 2851,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580/INT8_XMX_DIAGNOSIS.md",
+      "original_sha256": "1a5f2351bf74849d306f1a4a17f2e97bb9e93d3d8d6a11a40f107bf81075303d",
+      "sha256": "1a5f2351bf74849d306f1a4a17f2e97bb9e93d3d8d6a11a40f107bf81075303d",
+      "bytes": 5115,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580/INTEGER_SUBGROUP_SPEED_STATUS.md",
+      "original_sha256": "1fd0d142157ac1a74a988a7f6f7bf3a89ee63563b9865eae44b9b33a2e6255cd",
+      "sha256": "1fd0d142157ac1a74a988a7f6f7bf3a89ee63563b9865eae44b9b33a2e6255cd",
+      "bytes": 3523,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580/MAGPIE_RESIDUAL_REVIEW.md",
+      "original_sha256": "08f5b29bcc7faab8dee23a8b9f824340be75f581f252914bd47b60c1d80c759f",
+      "sha256": "08f5b29bcc7faab8dee23a8b9f824340be75f581f252914bd47b60c1d80c759f",
+      "bytes": 5375,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580/NORMALIZED_MOTION_STATUS.md",
+      "original_sha256": "c0aabbf100f4734e872a505569c4af7cc3ba7df2e934af3f8eb925faa9348729",
+      "sha256": "c0aabbf100f4734e872a505569c4af7cc3ba7df2e934af3f8eb925faa9348729",
+      "bytes": 6643,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580/NR_CONTROLS_FUNCTIONAL_STATUS.md",
+      "original_sha256": "9e615ffe25940ddcb683f864c928e42123e4aebdbd3270ad4b566227028af2e1",
+      "sha256": "9e615ffe25940ddcb683f864c928e42123e4aebdbd3270ad4b566227028af2e1",
+      "bytes": 11612,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580/OPTISCALER_INTEGRATION_STATUS.md",
+      "original_sha256": "1b9af14129a60dd32a42818546858b34bc725f4f95e87894abd01374803ae228",
+      "sha256": "1b9af14129a60dd32a42818546858b34bc725f4f95e87894abd01374803ae228",
+      "bytes": 6643,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580/PRE_BACKEND_STATUS.md",
+      "original_sha256": "c519e16b861d8a42a9588ef5f5580abca2c1e6978f36da78382f50823ddba646",
+      "sha256": "c519e16b861d8a42a9588ef5f5580abca2c1e6978f36da78382f50823ddba646",
+      "bytes": 11167,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580/QUALITY_PERFORMANCE_ACCEPTANCE.md",
+      "original_sha256": "0d18cdd4500d813fb0d9010d53312f86dd9be4991fe9fe9c296ad151c251c816",
+      "sha256": "0d18cdd4500d813fb0d9010d53312f86dd9be4991fe9fe9c296ad151c251c816",
+      "bytes": 2393,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580/README.md",
+      "original_sha256": "fade395f9a0b5f46410684d918236dfb33ffc0969e9baa11deef3769ab9a79fd",
+      "sha256": "63ccc841857a253896fb98150def5a0ac457313e94e185d6ae1787cff325c6b5",
+      "bytes": 33800,
+      "byte_identical": false,
+      "reason": "Selected original script or report, with source SHA",
+      "derived": true
+    },
+    {
+      "path": "history/original/nr-b580/RESET_BACKEND_STATUS.md",
+      "original_sha256": "46018a0d2484a930c6695c941abdee355e5886b4067d0c83b6c19a831c55f941",
+      "sha256": "46018a0d2484a930c6695c941abdee355e5886b4067d0c83b6c19a831c55f941",
+      "bytes": 2431,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580/SPEED_OPTIMIZATION_STATUS.md",
+      "original_sha256": "44032018a49bad94d603de2045ac4071928f1208a1b100e579a55924851eaeaa",
+      "sha256": "44032018a49bad94d603de2045ac4071928f1208a1b100e579a55924851eaeaa",
+      "bytes": 32483,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580/TEMPORAL_BACKEND_STATUS.md",
+      "original_sha256": "c7bdb63ba633f5e461b5c1a8a90891362ad575f98a8244b64f976c4738300642",
+      "sha256": "c7bdb63ba633f5e461b5c1a8a90891362ad575f98a8244b64f976c4738300642",
+      "bytes": 3018,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580/UZBEKUNKNOWN_PORT_REVIEW_20260923.md",
+      "original_sha256": "d6107532074ca6f2c01e859c93154027a2d90e972bf8b7d9b726c312b358567c",
+      "sha256": "d6107532074ca6f2c01e859c93154027a2d90e972bf8b7d9b726c312b358567c",
+      "bytes": 6493,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580/VIDEO_FIXTURE_CORRECTION.md",
+      "original_sha256": "44876eb83645a1d62f4200a678a7802c274efd499138a0224dc12004bb0ef605",
+      "sha256": "44876eb83645a1d62f4200a678a7802c274efd499138a0224dc12004bb0ef605",
+      "bytes": 1838,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580/XMX_ABLATION_AND_INTEGER_PRODUCTS_STATUS.md",
+      "original_sha256": "70ef613d7049362be57e6b7d57b7bb150e2ddc9c16d1d1321db9408f842d0e17",
+      "sha256": "70ef613d7049362be57e6b7d57b7bb150e2ddc9c16d1d1321db9408f842d0e17",
+      "bytes": 4121,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580/backend/nr_backend/attention.py",
+      "original_sha256": "dbdf6440272e85d0f24d63a859f47831bb353ed8a9364ca74c1b796fb2ad729e",
+      "sha256": "dbdf6440272e85d0f24d63a859f47831bb353ed8a9364ca74c1b796fb2ad729e",
+      "bytes": 9312,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580/backend/nr_backend/c32_block.py",
+      "original_sha256": "678fa0a50ac4a0020f5b14f573420ef7f5a61620405f639b2cd37ef20fd5ef9f",
+      "sha256": "678fa0a50ac4a0020f5b14f573420ef7f5a61620405f639b2cd37ef20fd5ef9f",
+      "bytes": 2987,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580/backend/nr_backend/style.py",
+      "original_sha256": "e7f30be3fa1face787049588d0a00245da33ea80d81aa47c9607aced8692d17a",
+      "sha256": "e7f30be3fa1face787049588d0a00245da33ea80d81aa47c9607aced8692d17a",
+      "bytes": 10732,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580/backend/nr_backend/triton_attention_exp.py",
+      "original_sha256": "5ec5eb86a3d26ffb48899307c3dac2b1f8ee1603ad99946f3945f4c3db18d7dd",
+      "sha256": "5ec5eb86a3d26ffb48899307c3dac2b1f8ee1603ad99946f3945f4c3db18d7dd",
+      "bytes": 2130,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580/backend/nr_backend/triton_attention_normalize.py",
+      "original_sha256": "9a7a91f13d485392b8b3b4045600cd15633903532266c058cda7e50c1ab439cc",
+      "sha256": "9a7a91f13d485392b8b3b4045600cd15633903532266c058cda7e50c1ab439cc",
+      "bytes": 3241,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580/backend/nr_backend/triton_attention_weights.py",
+      "original_sha256": "2bff6b4fe6b80425887c655ae695af032ee82fbd3ac3d848a14beff433e11213",
+      "sha256": "2bff6b4fe6b80425887c655ae695af032ee82fbd3ac3d848a14beff433e11213",
+      "bytes": 3502,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580/backend/nr_backend/triton_fp8.py",
+      "original_sha256": "7858160bba3f4c135fa53f097e406b904e5493e88cb4cdc6a7f3a95f0fac4cae",
+      "sha256": "7858160bba3f4c135fa53f097e406b904e5493e88cb4cdc6a7f3a95f0fac4cae",
+      "bytes": 1743,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580/backend/nr_backend/triton_math.py",
+      "original_sha256": "1cc5a1e0a031362b3990de23eb34ff3aeec18b458dbe5eef05d841d4af1c401a",
+      "sha256": "1cc5a1e0a031362b3990de23eb34ff3aeec18b458dbe5eef05d841d4af1c401a",
+      "bytes": 8010,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580/reference/Check-ReferenceReady.ps1",
+      "original_sha256": "1c673d69bdb652d4f3cfc9e4478fdf1e33552f257cbd15c36aa9cb45d1c3fb92",
+      "sha256": "1c673d69bdb652d4f3cfc9e4478fdf1e33552f257cbd15c36aa9cb45d1c3fb92",
+      "bytes": 2083,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580/reference/Invoke-InteractiveSmoke.ps1",
+      "original_sha256": "f2d1e27dc15ddfb1667fdc16e6d360b0be4d260ec951b29318c40fac22574766",
+      "sha256": "1cd31d292a49f07fa8a0448ee9bb30dbe8edf35b6591325772c6ed33c1b5703e",
+      "bytes": 2973,
+      "byte_identical": false,
+      "reason": "Selected original script or report, with source SHA",
+      "derived": true
+    },
+    {
+      "path": "history/original/nr-b580/reference/Invoke-Reference.ps1",
+      "original_sha256": "a3cb154683becf600e27dab508526e69da095200e8599641dbffeff6d8ab3436",
+      "sha256": "e771c28568f60e6203a02eb0dc449822c6b9126db5e50783065fd856ebe62a71",
+      "bytes": 3941,
+      "byte_identical": false,
+      "reason": "Selected original script or report, with source SHA",
+      "derived": true
+    },
+    {
+      "path": "history/original/nr-b580/reference/Run-NrSmoke.ps1",
+      "original_sha256": "1fb8a026dbd736ff0d0043bd385b73786109caff61ce43a34720d9f4308c0b9f",
+      "sha256": "1fb8a026dbd736ff0d0043bd385b73786109caff61ce43a34720d9f4308c0b9f",
+      "bytes": 5257,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580/reference/a_insitu_v1/RESULT.md",
+      "original_sha256": "b2e2968e8556885f042ddf20433336fbde2fec4c99aff377966a20f3397d493c",
+      "sha256": "b2e2968e8556885f042ddf20433336fbde2fec4c99aff377966a20f3397d493c",
+      "bytes": 12642,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580/reference/a_insitu_v1/a_insitu_entry_v1.py",
+      "original_sha256": "8a2ec06e2f006a29c9b7ff80361b845bc76558afe48deaee95cbd7fb3b858aac",
+      "sha256": "8a2ec06e2f006a29c9b7ff80361b845bc76558afe48deaee95cbd7fb3b858aac",
+      "bytes": 15113,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580/reference/a_insitu_v1/a_insitu_report_v1.py",
+      "original_sha256": "95db4b95e207f91c8ee130d00ae72f2c9d47160ec3d89904060230be7a207bbf",
+      "sha256": "95db4b95e207f91c8ee130d00ae72f2c9d47160ec3d89904060230be7a207bbf",
+      "bytes": 23368,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580/reference/a_recheck_v1/RESULT.md",
+      "original_sha256": "9e6f4cb6518db3b397b2bf49ef31f04edb9b47df981aa6065e8ee54c806895b4",
+      "sha256": "f101691f210606d3b9a41562ad39f4468220d4db260c9587cffdad482e86327c",
+      "bytes": 10664,
+      "byte_identical": false,
+      "reason": "Selected original script or report, with source SHA",
+      "derived": true
+    },
+    {
+      "path": "history/original/nr-b580/reference/a_recheck_v1/a_recheck_v1.py",
+      "original_sha256": "a8a254b7bf7109d6655c494a89fa7acb487e70ba5f372798f081570d2f5b63fa",
+      "sha256": "53b70f081252f8f4d6ec9a6f1bdc9ec21179be8706338125f46c9a352e30bbfa",
+      "bytes": 14472,
+      "byte_identical": false,
+      "reason": "Selected original script or report, with source SHA",
+      "derived": true
+    },
+    {
+      "path": "history/original/nr-b580/reference/allmerge_land_v1/RESULT.md",
+      "original_sha256": "109eade871ed18ae186a41feb5067629da163c3a69cc8bdd26a3e377377f542e",
+      "sha256": "109eade871ed18ae186a41feb5067629da163c3a69cc8bdd26a3e377377f542e",
+      "bytes": 13547,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580/reference/analyze_arena_snapshots.py",
+      "original_sha256": "63b531b96862a6266bebc44ae4c87ad4991a7194e6d93d3a9677bc34f4c51ea4",
+      "sha256": "63b531b96862a6266bebc44ae4c87ad4991a7194e6d93d3a9677bc34f4c51ea4",
+      "bytes": 4620,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580/reference/analyze_depth_captures.py",
+      "original_sha256": "5030443c82d39db0af41b16c7a5ea2fd7aa1f3205a42bc8b4e8722fbcd866dc9",
+      "sha256": "5030443c82d39db0af41b16c7a5ea2fd7aa1f3205a42bc8b4e8722fbcd866dc9",
+      "bytes": 6341,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580/reference/attention_normalize_main_gate_v1.py",
+      "original_sha256": "2d7df122164f11c83fb315aa4e43bb08814c0bbc276ab2f068f44b66de54c4b2",
+      "sha256": "2d7df122164f11c83fb315aa4e43bb08814c0bbc276ab2f068f44b66de54c4b2",
+      "bytes": 3563,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580/reference/attention_weights_main_gate_v1.py",
+      "original_sha256": "0a79fee66e5e4850f6e92f0b12ffd4b9f049ba6ccb1858bff8fd9d46c0a98cdf",
+      "sha256": "0a79fee66e5e4850f6e92f0b12ffd4b9f049ba6ccb1858bff8fd9d46c0a98cdf",
+      "bytes": 3549,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580/reference/audit_full_nr_tiled_v1.py",
+      "original_sha256": "31c958014e0788d067d04d2576d7265e522348597364afa576d2d7d86c54a1be",
+      "sha256": "31c958014e0788d067d04d2576d7265e522348597364afa576d2d7d86c54a1be",
+      "bytes": 4838,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580/reference/benchmark_exact_k8_candidate_v1.py",
+      "original_sha256": "4b17b69a629535124e65c39c352aabf615dd1aa58cec9e989d7cf4d8d5fa1dfe",
+      "sha256": "4b17b69a629535124e65c39c352aabf615dd1aa58cec9e989d7cf4d8d5fa1dfe",
+      "bytes": 3439,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580/reference/benchmark_exact_shortfp8_candidate_v1.py",
+      "original_sha256": "90ce20f663210db7a251377b1b491a5a6319d4577fe415661ecfd45223d56fec",
+      "sha256": "90ce20f663210db7a251377b1b491a5a6319d4577fe415661ecfd45223d56fec",
+      "bytes": 3515,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580/reference/benchmark_exact_shortfp8_candidate_v2.py",
+      "original_sha256": "c4fb0bc1ef237b0988139ab5c06a601115289d24c11730561bbc5a31b45604f7",
+      "sha256": "c4fb0bc1ef237b0988139ab5c06a601115289d24c11730561bbc5a31b45604f7",
+      "bytes": 4630,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580/reference/community/magpie-review-v1/src/Magpie.Core/DLSSNRFilter.cpp",
+      "original_sha256": "67d8b574b8d669565e3b0402902637775763300fc981b3c8c5357b586972ff3b",
+      "sha256": "67d8b574b8d669565e3b0402902637775763300fc981b3c8c5357b586972ff3b",
+      "bytes": 92016,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580/reference/corr_strip_v1/MECHANISM-e4m3.md",
+      "original_sha256": "59621ea207113dcf48d5956306dc1852ae0014f323ebb1d3cd8b32ff2ceb9698",
+      "sha256": "59621ea207113dcf48d5956306dc1852ae0014f323ebb1d3cd8b32ff2ceb9698",
+      "bytes": 5578,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580/reference/corr_strip_v1/RESULT.md",
+      "original_sha256": "f130d2de963d2dcdea826db9e73b55dfe2037014e8f290c201ea880ec3d17d7b",
+      "sha256": "f130d2de963d2dcdea826db9e73b55dfe2037014e8f290c201ea880ec3d17d7b",
+      "bytes": 13454,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580/reference/corr_strip_v1/corr_strip_cvt_probe_v1.py",
+      "original_sha256": "0e2b8172928d0ba20e3738bed8bd01fc9e40c1ec09dec7908218b3a375a43381",
+      "sha256": "0e2b8172928d0ba20e3738bed8bd01fc9e40c1ec09dec7908218b3a375a43381",
+      "bytes": 20431,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580/reference/corr_strip_v1/corr_strip_entry_v1.py",
+      "original_sha256": "4d515de28aed2669a25a1dcb3a9088449f5692908308774e5be36c0f5df88c12",
+      "sha256": "4d515de28aed2669a25a1dcb3a9088449f5692908308774e5be36c0f5df88c12",
+      "bytes": 18634,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580/reference/corr_strip_v1/corr_strip_manifest_v1.py",
+      "original_sha256": "4d6f4b6a1597fc7f9f21521355ae74e0e23d106430d7005737fcb53a67f2bb34",
+      "sha256": "4d6f4b6a1597fc7f9f21521355ae74e0e23d106430d7005737fcb53a67f2bb34",
+      "bytes": 16143,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580/reference/corr_strip_v1/corr_strip_nat_v1.py",
+      "original_sha256": "003e5b881e438d88b9d9d87e0eb50ea763452c9bb18790b4fa51c9fc6087cfc5",
+      "sha256": "003e5b881e438d88b9d9d87e0eb50ea763452c9bb18790b4fa51c9fc6087cfc5",
+      "bytes": 20131,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580/reference/corr_strip_v1/corr_strip_parcompile_v1.py",
+      "original_sha256": "f0c2dbd3eed3542644d4a1bc9287b18742d5b2bce9fb587144e4c8a5f4136ff0",
+      "sha256": "f0c2dbd3eed3542644d4a1bc9287b18742d5b2bce9fb587144e4c8a5f4136ff0",
+      "bytes": 23476,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580/reference/corr_strip_v1/restore_from_recycle_v1.py",
+      "original_sha256": "253741045eff2fad2e96edb313262cd756703124cf15ba6015e2b436d1da9e81",
+      "sha256": "253741045eff2fad2e96edb313262cd756703124cf15ba6015e2b436d1da9e81",
+      "bytes": 12820,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580/reference/dense_ab_v1/RESULT.md",
+      "original_sha256": "8da247283c9d50a953992b1c3ee5181090575cfcd0729b693d50547c26c5ad55",
+      "sha256": "8da247283c9d50a953992b1c3ee5181090575cfcd0729b693d50547c26c5ad55",
+      "bytes": 14024,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580/reference/dense_ab_v1/dense_ab_entry_v1.py",
+      "original_sha256": "4ad3930e7e0f73f54db83aee6bad88231710ebe1f2cdb44a110e84a3a2ecb63b",
+      "sha256": "4ad3930e7e0f73f54db83aee6bad88231710ebe1f2cdb44a110e84a3a2ecb63b",
+      "bytes": 15268,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580/reference/dense_ab_v1/dense_ab_zip_v1.py",
+      "original_sha256": "b0e604963b0e5b104df36a73e30d76482abf52d0b43226c144a5fe7b61ff774f",
+      "sha256": "b0e604963b0e5b104df36a73e30d76482abf52d0b43226c144a5fe7b61ff774f",
+      "bytes": 16084,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580/reference/development-archive-20261003/SOURCE_EXTRACTION_LOCAL.json",
+      "original_sha256": "61710452a8fffe21ca362a8be3a5e4eabfe36c1640bbf7b7e4bd26b471d187ca",
+      "sha256": "61710452a8fffe21ca362a8be3a5e4eabfe36c1640bbf7b7e4bd26b471d187ca",
+      "bytes": 598,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "current/runtime/game/front_noise_native_720_v1.py",
+      "original_sha256": "1cbab6d625b6de721d6011ea806adc5551a4e0c8152151e2dfe8f467f915c04f",
+      "sha256": "1cbab6d625b6de721d6011ea806adc5551a4e0c8152151e2dfe8f467f915c04f",
+      "bytes": 13978,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "current/runtime/game/history_value_native_720_v1.py",
+      "original_sha256": "e600f591d315d949a7ab6aaa14498b537648101be39be3e2c60fa0ce8be7dbdf",
+      "sha256": "e600f591d315d949a7ab6aaa14498b537648101be39be3e2c60fa0ce8be7dbdf",
+      "bytes": 33173,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "current/runtime/game/nr_game_controlled_model.py",
+      "original_sha256": "12477f3ed5999b714af5dd4a2f7b8c9dcb0b2962f84ed3b270f7c111a850a7ff",
+      "sha256": "12477f3ed5999b714af5dd4a2f7b8c9dcb0b2962f84ed3b270f7c111a850a7ff",
+      "bytes": 5555,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "current/runtime/game/nr_game_fullsize.py",
+      "original_sha256": "2178bdca1ed5bc84ddc78b337ba4e37d5750059397bea091955e51f02d7d94fa",
+      "sha256": "2178bdca1ed5bc84ddc78b337ba4e37d5750059397bea091955e51f02d7d94fa",
+      "bytes": 48862,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "current/runtime/game/nr_game_history_fused.py",
+      "original_sha256": "6e4f73ce30a29ffe3366abe558dbb1ef204726a10a1facab2487f1ff7d48e1f0",
+      "sha256": "6e4f73ce30a29ffe3366abe558dbb1ef204726a10a1facab2487f1ff7d48e1f0",
+      "bytes": 1755,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "current/runtime/game/nr_game_pre_xess_host.py",
+      "original_sha256": "97982805d388eedad2c6c256c325fa2cb009f6316cca1b7dcbc877b4f0bd7338",
+      "sha256": "97982805d388eedad2c6c256c325fa2cb009f6316cca1b7dcbc877b4f0bd7338",
+      "bytes": 29986,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "current/runtime/game/numeric_cleanup_options_720_v1.py",
+      "original_sha256": "15d6820857d325fb8c6932be08556d1c86b1f1a60bb98c2db74f5cfd534ce68f",
+      "sha256": "15d6820857d325fb8c6932be08556d1c86b1f1a60bb98c2db74f5cfd534ce68f",
+      "bytes": 7190,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "current/runtime/game/numeric_cleanup_suite_720_v1.py",
+      "original_sha256": "4dfa514ed6172adc8c9756725bca9923163d9956f836215713f86c14f32cfb67",
+      "sha256": "4dfa514ed6172adc8c9756725bca9923163d9956f836215713f86c14f32cfb67",
+      "bytes": 17006,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "current/runtime/game/re4_session_v1.py",
+      "original_sha256": "050a55eb7a9f5c146e1f040a6f5f4d953a8f7c89e2f12e1c79d333d7ef94e7d4",
+      "sha256": "050a55eb7a9f5c146e1f040a6f5f4d953a8f7c89e2f12e1c79d333d7ef94e7d4",
+      "bytes": 12370,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "evidence/2026-10-03/current-source-manifest.json",
+      "original_sha256": "300c800581be650ea019529b6c41f76e7adfe71410b0f4eea19511f6c6503166",
+      "sha256": "300c800581be650ea019529b6c41f76e7adfe71410b0f4eea19511f6c6503166",
+      "bytes": 180740,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580/reference/face_compare_v1/RESULT.md",
+      "original_sha256": "135db3412ee333cce1fddaf2ab0ab560f31f0972ca6d48b6cbef1095063c961b",
+      "sha256": "135db3412ee333cce1fddaf2ab0ab560f31f0972ca6d48b6cbef1095063c961b",
+      "bytes": 15134,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580/reference/fp8fast_v1/RESULT.md",
+      "original_sha256": "c91c71efe3a16a25ecea5be77d6ce0c77e4eb68e26b052308600f98512a918cd",
+      "sha256": "c91c71efe3a16a25ecea5be77d6ce0c77e4eb68e26b052308600f98512a918cd",
+      "bytes": 14389,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580/reference/fp_fusion_v1/RESULT.md",
+      "original_sha256": "817057fa14302916f982c530806404e029a344f028daae3aa67ab7b13e04c627",
+      "sha256": "817057fa14302916f982c530806404e029a344f028daae3aa67ab7b13e04c627",
+      "bytes": 19887,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580/reference/fullchain_timing_v1/RESULT.md",
+      "original_sha256": "d40e64bc1a4ddc931dabe6170818f3bb0d9927a91a69824bb8d34c58b85f0cd1",
+      "sha256": "d40e64bc1a4ddc931dabe6170818f3bb0d9927a91a69824bb8d34c58b85f0cd1",
+      "bytes": 26567,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580/reference/fullsize_rows_v1/RESULT.md",
+      "original_sha256": "531c3723443fd8209b4d4e5dd3b5d48841a6911ac2fc6c808e5b48c1313face7",
+      "sha256": "531c3723443fd8209b4d4e5dd3b5d48841a6911ac2fc6c808e5b48c1313face7",
+      "bytes": 180209,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580/reference/fuse_group_v1/RESULT.md",
+      "original_sha256": "780b328b9c8a9a55cf9e7b1ae9518ae7bfcfaa25879216640b04a3d33e31769b",
+      "sha256": "780b328b9c8a9a55cf9e7b1ae9518ae7bfcfaa25879216640b04a3d33e31769b",
+      "bytes": 16978,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580/reference/fuse_group_v1/fuse_group_html_v1.py",
+      "original_sha256": "85e6e29e502d7bf5ef050ab59e216aaabfa2a45465eb948baf7862bc20debc9d",
+      "sha256": "85e6e29e502d7bf5ef050ab59e216aaabfa2a45465eb948baf7862bc20debc9d",
+      "bytes": 11917,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580/reference/gpu_lease_nr.py",
+      "original_sha256": "615bcc40559bd6275443ab4935ed2f9b535cabf2b27c673048029005d2b2ba0b",
+      "sha256": "615bcc40559bd6275443ab4935ed2f9b535cabf2b27c673048029005d2b2ba0b",
+      "bytes": 6390,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580/reference/graph_replay_480x864_abba_v1_20260923/RESULT.md",
+      "original_sha256": "7f8d08e4f3bce2d9d3687a026d6dfcb2b14e40cd670d1f3074a0a1e62a3a2c42",
+      "sha256": "7f8d08e4f3bce2d9d3687a026d6dfcb2b14e40cd670d1f3074a0a1e62a3a2c42",
+      "bytes": 7662,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580/reference/handover_v3/HANDOVER_v3.md",
+      "original_sha256": "21d465fc99fc44b3c11618d3516efed1f64b5a86d2c51fd824433ae4c2fda718",
+      "sha256": "21d465fc99fc44b3c11618d3516efed1f64b5a86d2c51fd824433ae4c2fda718",
+      "bytes": 29743,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580/reference/hires_three_way_v1/RESULT.md",
+      "original_sha256": "ac7924b25c17e5c899cdfc19245472e439ba08b88ef188c131dbc8328aea1e8f",
+      "sha256": "ac7924b25c17e5c899cdfc19245472e439ba08b88ef188c131dbc8328aea1e8f",
+      "bytes": 12609,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580/reference/int8_upside_v1/RESULT.md",
+      "original_sha256": "31668c32ae81f0ea931bde5e7f0e3074cf7bd8d9fbff6c00417beb88421feeb8",
+      "sha256": "31668c32ae81f0ea931bde5e7f0e3074cf7bd8d9fbff6c00417beb88421feeb8",
+      "bytes": 21864,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580/reference/integration/optiscaler-nr-source-v1/OptiScaler/shaders/dlssnr/DlssNr_Dx12.cpp",
+      "original_sha256": "1af15833a911cb2b3e7dd97959da51b73c853836d1930a3325376c350a4981ab",
+      "sha256": "1af15833a911cb2b3e7dd97959da51b73c853836d1930a3325376c350a4981ab",
+      "bytes": 134390,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580/reference/k8_fp16_xmx_land_v1/RESULT.md",
+      "original_sha256": "22eb8aa16190641b8805eca7c955647d2d6d997dbe173888bf5b1efc880fd917",
+      "sha256": "22eb8aa16190641b8805eca7c955647d2d6d997dbe173888bf5b1efc880fd917",
+      "bytes": 10900,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580/reference/kernel_split_v1/RESULT.md",
+      "original_sha256": "aee2146fe3723a3d0a769896b0fc364d226f563a10ce1254a890fb4f5b9681c1",
+      "sha256": "aee2146fe3723a3d0a769896b0fc364d226f563a10ce1254a890fb4f5b9681c1",
+      "bytes": 17452,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580/reference/kernel_split_v1/kernel_split_entry_v1.py",
+      "original_sha256": "758de4bf7001cad8bcb2eecdd755bf1d2d16fb220a972aef03de24dd918eda89",
+      "sha256": "758de4bf7001cad8bcb2eecdd755bf1d2d16fb220a972aef03de24dd918eda89",
+      "bytes": 17045,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580/reference/materials_v1/materials_entry_v1.py",
+      "original_sha256": "82146bc51259cde7004ef9247d8072234699ce4961a8b4a7e1f51cb86bbdc2d7",
+      "sha256": "82146bc51259cde7004ef9247d8072234699ce4961a8b4a7e1f51cb86bbdc2d7",
+      "bytes": 18934,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580/reference/merge_survey_v1/RESULT.md",
+      "original_sha256": "aa0c6ef1e686b44559c755673ac1e4e069fe29ddb1e0a19f16ac5dc2e8fa678d",
+      "sha256": "aa0c6ef1e686b44559c755673ac1e4e069fe29ddb1e0a19f16ac5dc2e8fa678d",
+      "bytes": 21010,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580/reference/motion_scope_land_v1/RESULT.md",
+      "original_sha256": "e4c79674709c1d9273190f88acf76210b4d7e26791a55263aeb1d8ef168311a5",
+      "sha256": "e4c79674709c1d9273190f88acf76210b4d7e26791a55263aeb1d8ef168311a5",
+      "bytes": 14529,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580/reference/motion_scope_land_v1/motion_scope_land_cpu_check_v1.py",
+      "original_sha256": "6420427c4899ea91297dfb1544e7f8cffa3301f10576179db47510703dd69bb1",
+      "sha256": "6420427c4899ea91297dfb1544e7f8cffa3301f10576179db47510703dd69bb1",
+      "bytes": 14296,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580/reference/motion_scope_land_v1/motion_scope_land_derive_exact_v1.py",
+      "original_sha256": "6b8b27e84cbff005885f8bcf3935a278f497ba5f20016ac7be5baebfdf8d4de7",
+      "sha256": "6b8b27e84cbff005885f8bcf3935a278f497ba5f20016ac7be5baebfdf8d4de7",
+      "bytes": 6220,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580/reference/motion_scope_land_v1/motion_scope_land_gate_probe_v1.py",
+      "original_sha256": "e538b9d1b764215e93a95164a57cba5de25959cc842f18b8754409b0309b6929",
+      "sha256": "e538b9d1b764215e93a95164a57cba5de25959cc842f18b8754409b0309b6929",
+      "bytes": 5744,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580/reference/motion_scope_land_v1/motion_scope_land_summary_v1.py",
+      "original_sha256": "0f1f1928dca62c651724379bc55791645c083bb02dc4ae4d6f8dd2027c009662",
+      "sha256": "0f1f1928dca62c651724379bc55791645c083bb02dc4ae4d6f8dd2027c009662",
+      "bytes": 9322,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580/reference/motion_scope_v1/motion_scope_cuts_v1.py",
+      "original_sha256": "a3c18969404aa97b2c3678c27df4f894da996f9566483f8ed97d70b3c7d46104",
+      "sha256": "a3c18969404aa97b2c3678c27df4f894da996f9566483f8ed97d70b3c7d46104",
+      "bytes": 21343,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580/reference/optigaze240_v1/RESULT.md",
+      "original_sha256": "363c524095a9083df83e4151ab305a06840e6c7f6b82f2317ab74590b334cfa6",
+      "sha256": "363c524095a9083df83e4151ab305a06840e6c7f6b82f2317ab74590b334cfa6",
+      "bytes": 963,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580/reference/optigaze240_v1/adapter.py",
+      "original_sha256": "c05535a1505bbc574123ee7d2fcc7bed91a9afad8bdeb06c5b75f4b6e7793fe0",
+      "sha256": "c05535a1505bbc574123ee7d2fcc7bed91a9afad8bdeb06c5b75f4b6e7793fe0",
+      "bytes": 8451,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580/reference/optigaze240_v1/launch.py",
+      "original_sha256": "305874414b31883809760d9b723082692bc538adb3bb94c09d88e360cc7f7954",
+      "sha256": "305874414b31883809760d9b723082692bc538adb3bb94c09d88e360cc7f7954",
+      "bytes": 1036,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580/reference/optigaze240_v1/run_video.py",
+      "original_sha256": "d74b0f925ddc9ffdd939fdb8be8d92b632ceefff8fa72326faebc5a372abf585",
+      "sha256": "d74b0f925ddc9ffdd939fdb8be8d92b632ceefff8fa72326faebc5a372abf585",
+      "bytes": 13538,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580/reference/optigaze360_fractional_warp_v1/README.md",
+      "original_sha256": "6bc9551e62e0ba0ab132abd3d04b1bcc0d6891058009dced354f03d40a8a514d",
+      "sha256": "6bc9551e62e0ba0ab132abd3d04b1bcc0d6891058009dced354f03d40a8a514d",
+      "bytes": 3405,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580/reference/optigaze360_graph_video_v1/README.md",
+      "original_sha256": "f70a496d8717d511b73184686fc5907b880853550ee1a05a6380dbd1560b3722",
+      "sha256": "f70a496d8717d511b73184686fc5907b880853550ee1a05a6380dbd1560b3722",
+      "bytes": 4436,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580/reference/optigaze360_v1/README.md",
+      "original_sha256": "8ee7a3ba444d553bf5cd8415823f48196668949e6ca6f3a087ee2ce7f60c2e48",
+      "sha256": "8ee7a3ba444d553bf5cd8415823f48196668949e6ca6f3a087ee2ce7f60c2e48",
+      "bytes": 3761,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580/reference/optigaze360_v1/adapter.py",
+      "original_sha256": "4f7263c2dfeeb8073485a887fa0d1c75d740531ad682ba18e04fe1ad5fac334c",
+      "sha256": "4f7263c2dfeeb8073485a887fa0d1c75d740531ad682ba18e04fe1ad5fac334c",
+      "bytes": 8690,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580/reference/optigaze360_v1/graph_ab_probe.py",
+      "original_sha256": "b9c4572e5e045df5e822cc3a4e5eb491f7542f565d5d6beaf7e83ad527fe4950",
+      "sha256": "b9c4572e5e045df5e822cc3a4e5eb491f7542f565d5d6beaf7e83ad527fe4950",
+      "bytes": 4258,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580/reference/optigaze_resolution_slider_v1/README.md",
+      "original_sha256": "99ae850f24464b91432db982c7038d7683001ed90551d30820cdaf2ea7914a6b",
+      "sha256": "99ae850f24464b91432db982c7038d7683001ed90551d30820cdaf2ea7914a6b",
+      "bytes": 4379,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580/reference/optigaze_resolution_slider_v1/runtime.py",
+      "original_sha256": "67af6405e6933cddba5119476bdfc4cdb1f77457120cca72c92470bedd88d00b",
+      "sha256": "67af6405e6933cddba5119476bdfc4cdb1f77457120cca72c92470bedd88d00b",
+      "bytes": 1961,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580/reference/padguard_land_v1/RESULT.md",
+      "original_sha256": "34cdda3b3da27da492ebb2ff8c41b9735d1768703a8744b62f6ba9890412791e",
+      "sha256": "34cdda3b3da27da492ebb2ff8c41b9735d1768703a8744b62f6ba9890412791e",
+      "bytes": 10640,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580/reference/prepfast_v1/RESULT.md",
+      "original_sha256": "edaaa2ecca9d7e46b863d34f58b04656993f90eb791f44b1884943326656d564",
+      "sha256": "edaaa2ecca9d7e46b863d34f58b04656993f90eb791f44b1884943326656d564",
+      "bytes": 31449,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580/reference/probe_int8_digits_cpu_v1.py",
+      "original_sha256": "131c0599b525efd919b906cb340a442c8a7692b9dba4dd830a382bc90f422f1b",
+      "sha256": "131c0599b525efd919b906cb340a442c8a7692b9dba4dd830a382bc90f422f1b",
+      "bytes": 7315,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580/reference/probe_int8_remainder_cpu_v1.py",
+      "original_sha256": "b0a6322a9b4c364d4594769142fee9aeaf099c638d575545170fed831a7dd02a",
+      "sha256": "b0a6322a9b4c364d4594769142fee9aeaf099c638d575545170fed831a7dd02a",
+      "bytes": 6311,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580/reference/probe_int8_tile_groups_cpu_v1.py",
+      "original_sha256": "d1cc5bdeff0f73f346f0793edd20301893ae92926d49ce0a7c457aeb17df716e",
+      "sha256": "d1cc5bdeff0f73f346f0793edd20301893ae92926d49ce0a7c457aeb17df716e",
+      "bytes": 7049,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580/reference/probe_pre_pool_layout.py",
+      "original_sha256": "a385862d80741f2112365cb93ce16602fb8e804cb132e72db2e883e835222cfd",
+      "sha256": "a385862d80741f2112365cb93ce16602fb8e804cb132e72db2e883e835222cfd",
+      "bytes": 2848,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580/reference/pure_int8_screen_v1/RESULT.md",
+      "original_sha256": "4c7c0778f080fc701d7396442741e4e5362fb596d69ece819290c1645ee1d54e",
+      "sha256": "4c7c0778f080fc701d7396442741e4e5362fb596d69ece819290c1645ee1d54e",
+      "bytes": 5147,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580/reference/qkvcache_land_v1/RESULT.md",
+      "original_sha256": "10c00f22b4fd54a00361d1ce919b4f96c30fe9344af3f7094561c3d0ab66c648",
+      "sha256": "10c00f22b4fd54a00361d1ce919b4f96c30fe9344af3f7094561c3d0ab66c648",
+      "bytes": 20870,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580/reference/quanttrim_land_v1/RESULT.md",
+      "original_sha256": "36b8376e422e41ac162257cdc6f241c5b929e421ae9dabf74aadbaf2673fed0b",
+      "sha256": "36b8376e422e41ac162257cdc6f241c5b929e421ae9dabf74aadbaf2673fed0b",
+      "bytes": 17843,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580/reference/run_int8_digits_gpu_v1.py",
+      "original_sha256": "482e7ed07045a882506b98eeb4827ad1108555c0893048a811c90a0b4cd04997",
+      "sha256": "482e7ed07045a882506b98eeb4827ad1108555c0893048a811c90a0b4cd04997",
+      "bytes": 8265,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580/reference/selectfast_v1/RESULT.md",
+      "original_sha256": "8030f8289ab52caacf9280b3f1bd4cf2e19a5334c1640a61bf41be9c44e9759f",
+      "sha256": "8030f8289ab52caacf9280b3f1bd4cf2e19a5334c1640a61bf41be9c44e9759f",
+      "bytes": 15446,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580/reference/syncfast_v1/RESULT.md",
+      "original_sha256": "e12af7b37cc687e834a71ab534dd5efc9eea208133ef267f08ac93e5ced43d2f",
+      "sha256": "e12af7b37cc687e834a71ab534dd5efc9eea208133ef267f08ac93e5ced43d2f",
+      "bytes": 15605,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580/reference/tailsplit_v1/RESULT.md",
+      "original_sha256": "3be343292e107df490ebc54cfba916b871578bf57dd04be93b639027749f8cc3",
+      "sha256": "3be343292e107df490ebc54cfba916b871578bf57dd04be93b639027749f8cc3",
+      "bytes": 11051,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580/reference/validate_controls_restart_cache_v1.py",
+      "original_sha256": "6d5c0e7aa48934859ab03a134f4ec56135dc24a81c6571c5210f4e1c28828518",
+      "sha256": "6d5c0e7aa48934859ab03a134f4ec56135dc24a81c6571c5210f4e1c28828518",
+      "bytes": 4363,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580/reference/w8a8_chain_v1/RESULT.md",
+      "original_sha256": "7e91856e8e9569b3cefefe8a0f4f0d57f22b2a5fd8b889056603266ad6108fc5",
+      "sha256": "7e91856e8e9569b3cefefe8a0f4f0d57f22b2a5fd8b889056603266ad6108fc5",
+      "bytes": 5703,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580/reference/w8a8_chain_v1/chain_kernels.py",
+      "original_sha256": "6238fb93d4fbd85513f808081067d35fccdaf2bb95443b1139319f9cbaf37e6f",
+      "sha256": "6238fb93d4fbd85513f808081067d35fccdaf2bb95443b1139319f9cbaf37e6f",
+      "bytes": 8234,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580/reference/w8a8_chain_v1/pipeline.py",
+      "original_sha256": "1d12ce7362ca78f0e0a2906066b01082af821d90d2e435fae3a82b59513a8a8c",
+      "sha256": "1d12ce7362ca78f0e0a2906066b01082af821d90d2e435fae3a82b59513a8a8c",
+      "bytes": 6757,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580/reference/w8a8_dataflow_v1/RESULT.md",
+      "original_sha256": "43eb49d4b587c83992ba3b9e6ead323c5c6627b52857a750780e45caaaa11828",
+      "sha256": "43eb49d4b587c83992ba3b9e6ead323c5c6627b52857a750780e45caaaa11828",
+      "bytes": 1986,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/nr-b580/reference/w8a8_peak_gap_v1/RESULT.md",
+      "original_sha256": "597f414df411d977249812ac4cac87f400075ff05adcb8af73d2d08e9361a28d",
+      "sha256": "597f414df411d977249812ac4cac87f400075ff05adcb8af73d2d08e9361a28d",
+      "bytes": 1713,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/re8-b580-nr-xess/BUILD.md",
+      "original_sha256": "b5f512ad57ee6feec4bc3dbfb6c2218501a92f8b584cb538c443bba3e49f3621",
+      "sha256": "b5f512ad57ee6feec4bc3dbfb6c2218501a92f8b584cb538c443bba3e49f3621",
+      "bytes": 2431,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/re8-b580-nr-xess/Install.bat",
+      "original_sha256": "cc1ae84c24b1c3dc87682319c5cc63d0582e919a5402f1b82902a3fb98794183",
+      "sha256": "cc1ae84c24b1c3dc87682319c5cc63d0582e919a5402f1b82902a3fb98794183",
+      "bytes": 213,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/re8-b580-nr-xess/Install.ps1",
+      "original_sha256": "9d204f98ca9ade9de91862c2a16f2ab3a3cc1c3324db8aeb70d1c3f0b533050c",
+      "sha256": "9d204f98ca9ade9de91862c2a16f2ab3a3cc1c3324db8aeb70d1c3f0b533050c",
+      "bytes": 8794,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/re8-b580-nr-xess/README.md",
+      "original_sha256": "f188c6db4a359187de23bbf0ba81466c2413b6e89a58f4e91455d59e9459f714",
+      "sha256": "f188c6db4a359187de23bbf0ba81466c2413b6e89a58f4e91455d59e9459f714",
+      "bytes": 6303,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/re8-b580-nr-xess/Restore.bat",
+      "original_sha256": "e98146a8f8d04279bec8ff07a951143c874132c475e9e752027981ae98706e08",
+      "sha256": "e98146a8f8d04279bec8ff07a951143c874132c475e9e752027981ae98706e08",
+      "bytes": 156,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/re8-b580-nr-xess/Restore.ps1",
+      "original_sha256": "4d0c6bf04a1cf61da2d4b1ac490bd987b21800011f104c34cf4a320e73673c9a",
+      "sha256": "4d0c6bf04a1cf61da2d4b1ac490bd987b21800011f104c34cf4a320e73673c9a",
+      "bytes": 3868,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/re8-b580-nr-xess/THIRD_PARTY.md",
+      "original_sha256": "624c082c24887122fa300bd2bc1ccb83b5635f601df068eb8bdd7717362d606a",
+      "sha256": "624c082c24887122fa300bd2bc1ccb83b5635f601df068eb8bdd7717362d606a",
+      "bytes": 1225,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/re8-b580-nr-xess/VALIDATION.md",
+      "original_sha256": "8642b481ba4ef283991b74ce576cfbc22749f201209d47d63e9d1d83b00361ca",
+      "sha256": "8642b481ba4ef283991b74ce576cfbc22749f201209d47d63e9d1d83b00361ca",
+      "bytes": 2015,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/re8-b580-nr-xess/docs/AMD_INFERENCE_STRUCTURE_MAP_20260927.md",
+      "original_sha256": "4009bcf57d37f35378735ee2e5d0b13252f340662d86bedd70d09c06257e53a5",
+      "sha256": "4009bcf57d37f35378735ee2e5d0b13252f340662d86bedd70d09c06257e53a5",
+      "bytes": 18181,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/re8-b580-nr-xess/docs/AMD_INSPIRED_NR_OPTIMIZATION_20260926.md",
+      "original_sha256": "64aad587d0f1c499f89132a7572166d37f68ef593945f5f36e889c4eeb9eb4a4",
+      "sha256": "64aad587d0f1c499f89132a7572166d37f68ef593945f5f36e889c4eeb9eb4a4",
+      "bytes": 26084,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/re8-b580-nr-xess/docs/C128_QKV_DIRECT_ONE_RESULT_20260927.md",
+      "original_sha256": "b93fec3523fed742844d95500f3f71a0ea789d990d0b533907a40ac047d855ef",
+      "sha256": "b93fec3523fed742844d95500f3f71a0ea789d990d0b533907a40ac047d855ef",
+      "bytes": 6629,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/re8-b580-nr-xess/docs/C256_QKV_DIRECT_RESULT_20260927.md",
+      "original_sha256": "fb3544fc16fd561f57d629933b7502228791f04ff9c6f3092db535b4cd6bda43",
+      "sha256": "fb3544fc16fd561f57d629933b7502228791f04ff9c6f3092db535b4cd6bda43",
+      "bytes": 3515,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/re8-b580-nr-xess/docs/C512_QKV_ROW_REUSE_RESULT_20260927.md",
+      "original_sha256": "21ded5269e0bfbc105b4636334b13a1d88fb55d6deea86f486a43ec3d48bf832",
+      "sha256": "21ded5269e0bfbc105b4636334b13a1d88fb55d6deea86f486a43ec3d48bf832",
+      "bytes": 1406,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/re8-b580-nr-xess/docs/C512_WINDOW_PROJECTION_RESULT_20260928.md",
+      "original_sha256": "2b1f6884b170d3cb526ca4060fea8a9719e8753c9c55a858c9b6451385881e33",
+      "sha256": "2b1f6884b170d3cb526ca4060fea8a9719e8753c9c55a858c9b6451385881e33",
+      "bytes": 1661,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/re8-b580-nr-xess/docs/COMPUTE_VS_MOVEMENT_V2_20260927.md",
+      "original_sha256": "5b973889377151e2cb36185ed44a185a062f295bd8da00bfbbd123db5c40c806",
+      "sha256": "5b973889377151e2cb36185ed44a185a062f295bd8da00bfbbd123db5c40c806",
+      "bytes": 4701,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/re8-b580-nr-xess/docs/COMPUTE_VS_TRANSFER_20260925.md",
+      "original_sha256": "0d41c960b43844c80e0c1655ff89b2746268f92bbc1e6c35e621d6a010fd2fa6",
+      "sha256": "0d41c960b43844c80e0c1655ff89b2746268f92bbc1e6c35e621d6a010fd2fa6",
+      "bytes": 9381,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/re8-b580-nr-xess/docs/FAST_FP8_C128_NEXT_STEP_20260927.md",
+      "original_sha256": "206341aa4a870b30cf3c607e515b75b7ceb6bed81cce67bc46e4523286b571f4",
+      "sha256": "206341aa4a870b30cf3c607e515b75b7ceb6bed81cce67bc46e4523286b571f4",
+      "bytes": 6367,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/re8-b580-nr-xess/docs/FAST_FP8_REMOVAL_ABLATION_20260927.md",
+      "original_sha256": "2b33a2d81518f13e99376e9eff4a876f3357c575a53000a2ea53146eb12369b1",
+      "sha256": "2b33a2d81518f13e99376e9eff4a876f3357c575a53000a2ea53146eb12369b1",
+      "bytes": 9705,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/re8-b580-nr-xess/docs/FINAL_STRUCTURE_BATCH_RESULT_20260928.md",
+      "original_sha256": "efa6e4d55e34cefee8a421fad6c46794dd5833d2b61aac8f92d3979e014ec8a6",
+      "sha256": "efa6e4d55e34cefee8a421fad6c46794dd5833d2b61aac8f92d3979e014ec8a6",
+      "bytes": 3531,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/re8-b580-nr-xess/docs/GAME_PADDING_GEOMETRY_AUDIT_20260927.md",
+      "original_sha256": "a37d4e448cc4a85fbdaaaccd14816a0f2f3117160c3f08c111f6d618e642a9f2",
+      "sha256": "a37d4e448cc4a85fbdaaaccd14816a0f2f3117160c3f08c111f6d618e642a9f2",
+      "bytes": 4401,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/re8-b580-nr-xess/docs/GAME_THREE_MODE_FUSIONS_RESULT_20260927.md",
+      "original_sha256": "ab5bfa83a53701a174eb88ef1c0defe1b8d2939ed9adddec38e728caad99acd8",
+      "sha256": "ab5bfa83a53701a174eb88ef1c0defe1b8d2939ed9adddec38e728caad99acd8",
+      "bytes": 7902,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/re8-b580-nr-xess/docs/GRAPH_STAGE_PROFILING_20260925.md",
+      "original_sha256": "3534a23dfddea9b1bc2a82fe4d78fe49a893580b83cf3ed2c4db1dd215383133",
+      "sha256": "3534a23dfddea9b1bc2a82fe4d78fe49a893580b83cf3ed2c4db1dd215383133",
+      "bytes": 12668,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/re8-b580-nr-xess/docs/POST_ATTENTION_K8_COMBO_RESULT_20260927.md",
+      "original_sha256": "c536f804ba4d7013d2acbd026610c813ea72be67fe86790f04ba58c45c6ac444",
+      "sha256": "c536f804ba4d7013d2acbd026610c813ea72be67fe86790f04ba58c45c6ac444",
+      "bytes": 5136,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/re8-b580-nr-xess/docs/PRE_ATTENTION_TAIL_RESULT_20260927.md",
+      "original_sha256": "e30de1fc134dc8f97134c8ee99ae9fb3f2d72f3fab1d934b5e6bc71dcd9400bf",
+      "sha256": "e30de1fc134dc8f97134c8ee99ae9fb3f2d72f3fab1d934b5e6bc71dcd9400bf",
+      "bytes": 1659,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/re8-b580-nr-xess/docs/RE8_BRIDGE_FRAME_GAP_20260927.md",
+      "original_sha256": "2334a21ed1ccf0d80568821442ecbdeb2a15ac4438034100bb667699d9118e4f",
+      "sha256": "2334a21ed1ccf0d80568821442ecbdeb2a15ac4438034100bb667699d9118e4f",
+      "bytes": 2472,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/re8-b580-nr-xess/docs/RE8_FP8_ROUNDING_NEXT_EXPERIMENT_20260927.md",
+      "original_sha256": "fc2d94c06f22a50304de798b59cc9027e448267be4d1950b7673a060547263d2",
+      "sha256": "fc2d94c06f22a50304de798b59cc9027e448267be4d1950b7673a060547263d2",
+      "bytes": 2785,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/re8-b580-nr-xess/docs/STEADY_GRAPH_COPY_20260925.md",
+      "original_sha256": "76c1067399f30373df958b4e00db1f3f972596afde1deba5f18786bb8e8f3207",
+      "sha256": "76c1067399f30373df958b4e00db1f3f972596afde1deba5f18786bb8e8f3207",
+      "bytes": 6282,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/re8-b580-nr-xess/docs/VIT_ATTENTION192_RESULT_20260927.md",
+      "original_sha256": "0ab5d26d2838dd2ef55168d8242120b3c329041786a7c4ebf66f03109071af65",
+      "sha256": "0ab5d26d2838dd2ef55168d8242120b3c329041786a7c4ebf66f03109071af65",
+      "bytes": 2022,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/re8-b580-nr-xess/game/c32_activation_unrounded_v1.py",
+      "original_sha256": "7ca279225bb77d3cede5d59ed729dea514b4f7415ef7877a2ea815ddc65fffa9",
+      "sha256": "7ca279225bb77d3cede5d59ed729dea514b4f7415ef7877a2ea815ddc65fffa9",
+      "bytes": 4299,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/re8-b580-nr-xess/game/pre_attention_unrounded_v1.py",
+      "original_sha256": "a3b7c03d1a9c6bd3dc3206e0cfd8b6fa80c945b99deaaf77185f5bbe4c38abcb",
+      "sha256": "a3b7c03d1a9c6bd3dc3206e0cfd8b6fa80c945b99deaaf77185f5bbe4c38abcb",
+      "bytes": 3374,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/re8-b580-nr-xess/native/nr_texture_bridge_re8_v1.cpp",
+      "original_sha256": "ea6639a623bb9ce44615b9217cd465345ea85593b34eda7e959c53f5ef79fbf7",
+      "sha256": "ea6639a623bb9ce44615b9217cd465345ea85593b34eda7e959c53f5ef79fbf7",
+      "bytes": 27016,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/re8-b580-nr-xess/tools/analyze_c32_face_video_diff_v1.py",
+      "original_sha256": "7623f50fb2942954abef2196f088bf6db6279f139d9af63a6791470e6bb6f2ae",
+      "sha256": "7623f50fb2942954abef2196f088bf6db6279f139d9af63a6791470e6bb6f2ae",
+      "bytes": 4827,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/re8-b580-nr-xess/tools/analyze_vtune_task_traffic.py",
+      "original_sha256": "c58687eedb1db95ae89bf8e31ce95b3d363e98c67366200e0c145236ca6363ae",
+      "sha256": "c58687eedb1db95ae89bf8e31ce95b3d363e98c67366200e0c145236ca6363ae",
+      "bytes": 14633,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/re8-b580-nr-xess/tools/benchmark_c128_qkv_direct_one_full_v1.py",
+      "original_sha256": "efea37394994aa5f8e8a14e792452952f84fc3b829c4df5f32ffd8fec1ca35bb",
+      "sha256": "efea37394994aa5f8e8a14e792452952f84fc3b829c4df5f32ffd8fec1ca35bb",
+      "bytes": 8469,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/re8-b580-nr-xess/tools/benchmark_c32_activation_unrounded_v1.py",
+      "original_sha256": "6d369b866ded92f6aac2b5bf4af5aa4cd1ae7eca77911c0710a66391f5f43e9b",
+      "sha256": "6d369b866ded92f6aac2b5bf4af5aa4cd1ae7eca77911c0710a66391f5f43e9b",
+      "bytes": 9873,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/re8-b580-nr-xess/tools/benchmark_pre_attention_unrounded_v1.py",
+      "original_sha256": "469c3f465f850c981a005d1dcfd1c04be79f390c2b1dcfa0a4f57ab3a571b47a",
+      "sha256": "469c3f465f850c981a005d1dcfd1c04be79f390c2b1dcfa0a4f57ab3a571b47a",
+      "bytes": 9855,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/re8-b580-nr-xess/tools/check_c128_qkv_direct_pack_one_v1.py",
+      "original_sha256": "45b39b324e9813c6fa45988b66a0dcc69a42c0fa7d308225e90001205ed2df22",
+      "sha256": "45b39b324e9813c6fa45988b66a0dcc69a42c0fa7d308225e90001205ed2df22",
+      "bytes": 7198,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/re8-b580-nr-xess/tools/check_fp8_idempotence.py",
+      "original_sha256": "46b09e59f4c1b8150f8e166ad0869c8e2f822821c653f2116c3b955ed32dc464",
+      "sha256": "46b09e59f4c1b8150f8e166ad0869c8e2f822821c653f2116c3b955ed32dc464",
+      "bytes": 1604,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/re8-b580-nr-xess/tools/probe_c128_c256_qkv_boundary_v1.py",
+      "original_sha256": "725588772d638c66b72559545c0b2a9f21ca8184289f1437b9bccf84cf1ee611",
+      "sha256": "725588772d638c66b72559545c0b2a9f21ca8184289f1437b9bccf84cf1ee611",
+      "bytes": 7947,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/re8-b580-nr-xess/tools/smoke_runtime.py",
+      "original_sha256": "d40a4ea0b77f38d24cd558c55fc1419faf2f8ff36d66815e9fc6e5291d8e13ee",
+      "sha256": "d40a4ea0b77f38d24cd558c55fc1419faf2f8ff36d66815e9fc6e5291d8e13ee",
+      "bytes": 49323,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/re8-b580-nr-xess/tools/stage_c128_direct_game_20260927.ps1",
+      "original_sha256": "9438d1fc769e63ca8754a80558aed86174b437bf7e10c3a018001a628cabda40",
+      "sha256": "9438d1fc769e63ca8754a80558aed86174b437bf7e10c3a018001a628cabda40",
+      "bytes": 4362,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/re8-b580-nr-xess/tools/summarize_vtune_tasks.py",
+      "original_sha256": "a230cb569d565ffc45aa623f7a56efa7bfe3dfd908ac67b59cdec8210df8bd11",
+      "sha256": "a230cb569d565ffc45aa623f7a56efa7bfe3dfd908ac67b59cdec8210df8bd11",
+      "bytes": 2945,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "history/original/re8-b580-nr-xess/tools/verify_c128_direct_video_bytes_v1.py",
+      "original_sha256": "d939c1e081c098cfe3850b3c71c6977d69d02ee0eed761dd27be8c2ef771e96a",
+      "sha256": "d939c1e081c098cfe3850b3c71c6977d69d02ee0eed761dd27be8c2ef771e96a",
+      "bytes": 11575,
+      "byte_identical": true,
+      "reason": "Selected original script or report, with source SHA"
+    },
+    {
+      "path": "references/amd-9ec7415/hip/boundary_fast.hip",
+      "original_sha256": "a2c1175ac23bbeab1b0c9e687f041bee95555fc40ae59ef7b7a46a2b688c80fb",
+      "sha256": "a2c1175ac23bbeab1b0c9e687f041bee95555fc40ae59ef7b7a46a2b688c80fb",
+      "bytes": 4063,
+      "byte_identical": true,
+      "reason": "Fixed AMD implementation reference, MIT"
+    },
+    {
+      "path": "references/amd-9ec7415/hip/boundary_reference.hip",
+      "original_sha256": "c6174b506a04707895813a550eb25f29bdbdb19165d5c80086e7bc08191d0e45",
+      "sha256": "c6174b506a04707895813a550eb25f29bdbdb19165d5c80086e7bc08191d0e45",
+      "bytes": 4472,
+      "byte_identical": true,
+      "reason": "Fixed AMD implementation reference, MIT"
+    },
+    {
+      "path": "references/amd-9ec7415/hip/build-modules.ps1",
+      "original_sha256": "91df5ab02296a38c73b42c74fbc71282d89838b03e54fbb9ad9469efb78c1ecf",
+      "sha256": "91df5ab02296a38c73b42c74fbc71282d89838b03e54fbb9ad9469efb78c1ecf",
+      "bytes": 16100,
+      "byte_identical": true,
+      "reason": "Fixed AMD implementation reference, MIT"
+    },
+    {
+      "path": "references/amd-9ec7415/hip/c32_fast.hip",
+      "original_sha256": "f0bb5782fafb386814666841f3a2a98c5758473d57fa056a45bbbafb871874c7",
+      "sha256": "f0bb5782fafb386814666841f3a2a98c5758473d57fa056a45bbbafb871874c7",
+      "bytes": 8076,
+      "byte_identical": true,
+      "reason": "Fixed AMD implementation reference, MIT"
+    },
+    {
+      "path": "references/amd-9ec7415/hip/c32_fast_attention.hip",
+      "original_sha256": "58312cb57c94f2460543bb98eaad8fa76d7d32937412c315a8b62aa93b2305bd",
+      "sha256": "58312cb57c94f2460543bb98eaad8fa76d7d32937412c315a8b62aa93b2305bd",
+      "bytes": 7744,
+      "byte_identical": true,
+      "reason": "Fixed AMD implementation reference, MIT"
+    },
+    {
+      "path": "references/amd-9ec7415/hip/c32_fused_attention_packed.hip",
+      "original_sha256": "053bd79ff3569a726774018ff2574c2a7ba5148ea5bb75d05fb3afd8c176c70a",
+      "sha256": "053bd79ff3569a726774018ff2574c2a7ba5148ea5bb75d05fb3afd8c176c70a",
+      "bytes": 7374,
+      "byte_identical": true,
+      "reason": "Fixed AMD implementation reference, MIT"
+    },
+    {
+      "path": "references/amd-9ec7415/hip/c32_fused_ffn_attention.hip",
+      "original_sha256": "8e2ca7f87a472729d089733c181ca20d0f3bfe54c8233eb24e4e2486494e0f80",
+      "sha256": "8e2ca7f87a472729d089733c181ca20d0f3bfe54c8233eb24e4e2486494e0f80",
+      "bytes": 50559,
+      "byte_identical": true,
+      "reason": "Fixed AMD implementation reference, MIT"
+    },
+    {
+      "path": "references/amd-9ec7415/hip/c32_reference.hip",
+      "original_sha256": "0e51c8962f8f98b5a116a47c9dc6fbb48e1a419768378971817cd428b1f7962a",
+      "sha256": "0e51c8962f8f98b5a116a47c9dc6fbb48e1a419768378971817cd428b1f7962a",
+      "bytes": 7696,
+      "byte_identical": true,
+      "reason": "Fixed AMD implementation reference, MIT"
+    },
+    {
+      "path": "references/amd-9ec7415/hip/c32_tiled.hip",
+      "original_sha256": "2e4c768ef88789c28147713c6e334f2405b5153c29240a1a63816db5b5bdf4b1",
+      "sha256": "2e4c768ef88789c28147713c6e334f2405b5153c29240a1a63816db5b5bdf4b1",
+      "bytes": 6502,
+      "byte_identical": true,
+      "reason": "Fixed AMD implementation reference, MIT"
+    },
+    {
+      "path": "references/amd-9ec7415/hip/c32_wmma.hip",
+      "original_sha256": "85d284bb9284815dbff60b02dfb8c4ece91676f0e3e8fea326ec14b15b0cdeb7",
+      "sha256": "85d284bb9284815dbff60b02dfb8c4ece91676f0e3e8fea326ec14b15b0cdeb7",
+      "bytes": 8462,
+      "byte_identical": true,
+      "reason": "Fixed AMD implementation reference, MIT"
+    },
+    {
+      "path": "references/amd-9ec7415/hip/c512_head_group.inc",
+      "original_sha256": "0ee51d5124132e363ddb447b6d2d200e6d5dbec6cf65b1ee7db3cb7cbd89d50c",
+      "sha256": "0ee51d5124132e363ddb447b6d2d200e6d5dbec6cf65b1ee7db3cb7cbd89d50c",
+      "bytes": 1115,
+      "byte_identical": true,
+      "reason": "Fixed AMD implementation reference, MIT"
+    },
+    {
+      "path": "references/amd-9ec7415/hip/c512_m32_deep.inc",
+      "original_sha256": "10c99eafd12ce7f0cdf71a1445e93e816ffd188c677e8dca104d07ead414c3fd",
+      "sha256": "10c99eafd12ce7f0cdf71a1445e93e816ffd188c677e8dca104d07ead414c3fd",
+      "bytes": 24087,
+      "byte_identical": true,
+      "reason": "Fixed AMD implementation reference, MIT"
+    },
+    {
+      "path": "references/amd-9ec7415/hip/c512_m32_mh.inc",
+      "original_sha256": "abf776ca81bcb15b27b14fe74505e6bb85e097618c1a808513e2ac1738fc35e5",
+      "sha256": "abf776ca81bcb15b27b14fe74505e6bb85e097618c1a808513e2ac1738fc35e5",
+      "bytes": 2725,
+      "byte_identical": true,
+      "reason": "Fixed AMD implementation reference, MIT"
+    },
+    {
+      "path": "references/amd-9ec7415/hip/c512_qkv_attention_compact.inc",
+      "original_sha256": "983b7f240b403ec7e52bc8f422e18a92c52a87b87a579b238686833ec90e72ee",
+      "sha256": "983b7f240b403ec7e52bc8f422e18a92c52a87b87a579b238686833ec90e72ee",
+      "bytes": 14884,
+      "byte_identical": true,
+      "reason": "Fixed AMD implementation reference, MIT"
+    },
+    {
+      "path": "references/amd-9ec7415/hip/c512_qkv_attention_fused.inc",
+      "original_sha256": "63927afbbc6ff9f8fc47691446635d7fbb28c5ecf8d468771712b723c3111f80",
+      "sha256": "63927afbbc6ff9f8fc47691446635d7fbb28c5ecf8d468771712b723c3111f80",
+      "bytes": 6882,
+      "byte_identical": true,
+      "reason": "Fixed AMD implementation reference, MIT"
+    },
+    {
+      "path": "references/amd-9ec7415/hip/deep_fast.hip",
+      "original_sha256": "1b1bb2fdce5573e164662d32052e987e3761559f27aef561ad0836693e26ee5e",
+      "sha256": "1b1bb2fdce5573e164662d32052e987e3761559f27aef561ad0836693e26ee5e",
+      "bytes": 104633,
+      "byte_identical": true,
+      "reason": "Fixed AMD implementation reference, MIT"
+    },
+    {
+      "path": "references/amd-9ec7415/hip/deep_reference.hip",
+      "original_sha256": "3cef9e826f094292c58eab22e045b12f8990fc5c9b445ea5cbb77a8399985817",
+      "sha256": "3cef9e826f094292c58eab22e045b12f8990fc5c9b445ea5cbb77a8399985817",
+      "bytes": 11021,
+      "byte_identical": true,
+      "reason": "Fixed AMD implementation reference, MIT"
+    },
+    {
+      "path": "references/amd-9ec7415/hip/deep_wmma.hip",
+      "original_sha256": "8af42fdd0d8af1b7d9936a5b3d41248fd71cd307a2d3ca105c09588d144f0251",
+      "sha256": "8af42fdd0d8af1b7d9936a5b3d41248fd71cd307a2d3ca105c09588d144f0251",
+      "bytes": 7422,
+      "byte_identical": true,
+      "reason": "Fixed AMD implementation reference, MIT"
+    },
+    {
+      "path": "references/amd-9ec7415/hip/HIP-API-LICENSE.txt",
+      "original_sha256": "4db88bf492a399b4b9c97588055dc0eed308ad469dd7f34583331c846747362b",
+      "sha256": "4db88bf492a399b4b9c97588055dc0eed308ad469dd7f34583331c846747362b",
+      "bytes": 1120,
+      "byte_identical": true,
+      "reason": "Fixed AMD implementation reference, MIT"
+    },
+    {
+      "path": "references/amd-9ec7415/hip/multihead_fast.hip",
+      "original_sha256": "cb4f7ba0b86aa9a62fd3a616ffa1eb4b5e7e284441c0fe8e2fe3bb70a92f0d1e",
+      "sha256": "cb4f7ba0b86aa9a62fd3a616ffa1eb4b5e7e284441c0fe8e2fe3bb70a92f0d1e",
+      "bytes": 17032,
+      "byte_identical": true,
+      "reason": "Fixed AMD implementation reference, MIT"
+    },
+    {
+      "path": "references/amd-9ec7415/hip/multihead_fast_padded.hip",
+      "original_sha256": "a6a0eb63bdcf36399c4d541872eeb6a85840c662b1922d420e4f6624ca4a687e",
+      "sha256": "a6a0eb63bdcf36399c4d541872eeb6a85840c662b1922d420e4f6624ca4a687e",
+      "bytes": 110143,
+      "byte_identical": true,
+      "reason": "Fixed AMD implementation reference, MIT"
+    },
+    {
+      "path": "references/amd-9ec7415/hip/multihead_fused_attention.hip",
+      "original_sha256": "fefdad828fc14599d1ec8bcd078ac25f6f9e8fc2978b51025b0ec10a841a5c64",
+      "sha256": "fefdad828fc14599d1ec8bcd078ac25f6f9e8fc2978b51025b0ec10a841a5c64",
+      "bytes": 55068,
+      "byte_identical": true,
+      "reason": "Fixed AMD implementation reference, MIT"
+    },
+    {
+      "path": "references/amd-9ec7415/hip/multihead_reference.hip",
+      "original_sha256": "309098096aea3339b4108d1f8fd30e3ba96bec29475636f2d719fad99137fd41",
+      "sha256": "309098096aea3339b4108d1f8fd30e3ba96bec29475636f2d719fad99137fd41",
+      "bytes": 11585,
+      "byte_identical": true,
+      "reason": "Fixed AMD implementation reference, MIT"
+    },
+    {
+      "path": "references/amd-9ec7415/hip/multihead_tiled.hip",
+      "original_sha256": "ccb574dee241b36231042ac045dd97c5cf422969af87e8f0ba4bd74999c3c527",
+      "sha256": "ccb574dee241b36231042ac045dd97c5cf422969af87e8f0ba4bd74999c3c527",
+      "bytes": 8696,
+      "byte_identical": true,
+      "reason": "Fixed AMD implementation reference, MIT"
+    },
+    {
+      "path": "references/amd-9ec7415/hip/multihead_wmma.hip",
+      "original_sha256": "11eed9c9ea445743584531c69b447ce6f6ab4c986fea342494b18784bdd58551",
+      "sha256": "11eed9c9ea445743584531c69b447ce6f6ab4c986fea342494b18784bdd58551",
+      "bytes": 9941,
+      "byte_identical": true,
+      "reason": "Fixed AMD implementation reference, MIT"
+    },
+    {
+      "path": "references/amd-9ec7415/hip/prefix_fast.hip",
+      "original_sha256": "90d6f8c2b773ff5db0da1e5881637bf7947bfad62f1dd9a93d093e36dae94057",
+      "sha256": "90d6f8c2b773ff5db0da1e5881637bf7947bfad62f1dd9a93d093e36dae94057",
+      "bytes": 9597,
+      "byte_identical": true,
+      "reason": "Fixed AMD implementation reference, MIT"
+    },
+    {
+      "path": "references/amd-9ec7415/hip/prefix_reference.hip",
+      "original_sha256": "3518512dde5cfa661dfd363d380a53ebeb48ed653f5185e24ed43e1ca398f928",
+      "sha256": "3518512dde5cfa661dfd363d380a53ebeb48ed653f5185e24ed43e1ca398f928",
+      "bytes": 3130,
+      "byte_identical": true,
+      "reason": "Fixed AMD implementation reference, MIT"
+    },
+    {
+      "path": "references/amd-9ec7415/hip/README.md",
+      "original_sha256": "356ba27bb404cfac42aeaf612486ae17b902728606cd060c55bb8dc824501e36",
+      "sha256": "356ba27bb404cfac42aeaf612486ae17b902728606cd060c55bb8dc824501e36",
+      "bytes": 10390,
+      "byte_identical": true,
+      "reason": "Fixed AMD implementation reference, MIT"
+    },
+    {
+      "path": "references/amd-9ec7415/hip/swin_persistent.inc",
+      "original_sha256": "4d38279a47e54d64a1e7889749efa0b8a34585f5bec3cd235ad8e8ef3f2c225b",
+      "sha256": "4d38279a47e54d64a1e7889749efa0b8a34585f5bec3cd235ad8e8ef3f2c225b",
+      "bytes": 6917,
+      "byte_identical": true,
+      "reason": "Fixed AMD implementation reference, MIT"
+    },
+    {
+      "path": "references/amd-9ec7415/hip/vit_stream.inc",
+      "original_sha256": "124f9285c310363ebfdbd32b35950c16ff38a30b0038e9f25315d6022234c746",
+      "sha256": "124f9285c310363ebfdbd32b35950c16ff38a30b0038e9f25315d6022234c746",
+      "bytes": 14236,
+      "byte_identical": true,
+      "reason": "Fixed AMD implementation reference, MIT"
+    },
+    {
+      "path": "references/amd-9ec7415/hip/vit_wide_deep.inc",
+      "original_sha256": "196ac380dae4e45be7cc823bd2213ebeeb9454032476be63af17c4ebcd8b15d1",
+      "sha256": "196ac380dae4e45be7cc823bd2213ebeeb9454032476be63af17c4ebcd8b15d1",
+      "bytes": 2549,
+      "byte_identical": true,
+      "reason": "Fixed AMD implementation reference, MIT"
+    },
+    {
+      "path": "references/amd-9ec7415/hip/wave_owned_attention_exports.inc",
+      "original_sha256": "f19a4b73d057a262bde0e5c7b49cdb71c5b15c065685c6fa98e0be1ed370f101",
+      "sha256": "f19a4b73d057a262bde0e5c7b49cdb71c5b15c065685c6fa98e0be1ed370f101",
+      "bytes": 598,
+      "byte_identical": true,
+      "reason": "Fixed AMD implementation reference, MIT"
+    },
+    {
+      "path": "references/amd-9ec7415/hip/wave_owned_attention_setup.inc",
+      "original_sha256": "ff38a828b3adaed7bf21e14d415d9e123a94a5e8c2b236cff0bb5a5eeedb7238",
+      "sha256": "ff38a828b3adaed7bf21e14d415d9e123a94a5e8c2b236cff0bb5a5eeedb7238",
+      "bytes": 2431,
+      "byte_identical": true,
+      "reason": "Fixed AMD implementation reference, MIT"
+    },
+    {
+      "path": "references/amd-9ec7415/hip/wave_owned_c32.inc",
+      "original_sha256": "f9dc97b8392f50948543f6e670f8908728dad79024b284a9c0b40bed3377056f",
+      "sha256": "f9dc97b8392f50948543f6e670f8908728dad79024b284a9c0b40bed3377056f",
+      "bytes": 43286,
+      "byte_identical": true,
+      "reason": "Fixed AMD implementation reference, MIT"
+    },
+    {
+      "path": "references/amd-9ec7415/hip/wave_owned_mh.inc",
+      "original_sha256": "45c8394c6de531eed591b00270a34fd720aca8d4320d8035391851e7456433e0",
+      "sha256": "45c8394c6de531eed591b00270a34fd720aca8d4320d8035391851e7456433e0",
+      "bytes": 49089,
+      "byte_identical": true,
+      "reason": "Fixed AMD implementation reference, MIT"
+    },
+    {
+      "path": "references/amd-9ec7415/hip/wave_pointwise.hip",
+      "original_sha256": "3e4109d74b26468afa39c8f5e38ab63cf9ffedec9ef99347f6b270c8e0fee866",
+      "sha256": "3e4109d74b26468afa39c8f5e38ab63cf9ffedec9ef99347f6b270c8e0fee866",
+      "bytes": 2545,
+      "byte_identical": true,
+      "reason": "Fixed AMD implementation reference, MIT"
+    },
+    {
+      "path": "references/amd-9ec7415/LICENSE",
+      "original_sha256": "ab181e59a43e92ae66881f1e85135f38bf467cf1ca0957878c649b4be3d8ea1a",
+      "sha256": "ab181e59a43e92ae66881f1e85135f38bf467cf1ca0957878c649b4be3d8ea1a",
+      "bytes": 1082,
+      "byte_identical": true,
+      "reason": "AMD original MIT license"
+    },
+    {
+      "path": "current/native/LICENSE",
+      "original_sha256": "230184f60bae2feaf244f10a8bac053c8ff33a183bcc365b4d8b876d2b7f4809",
+      "sha256": "230184f60bae2feaf244f10a8bac053c8ff33a183bcc365b4d8b876d2b7f4809",
+      "bytes": 35823,
+      "byte_identical": true,
+      "reason": "Original GPL-3.0 native helper license"
+    },
+    {
+      "path": "licenses/OPTISCALER_GPL3.txt",
+      "original_sha256": "230184f60bae2feaf244f10a8bac053c8ff33a183bcc365b4d8b876d2b7f4809",
+      "sha256": "230184f60bae2feaf244f10a8bac053c8ff33a183bcc365b4d8b876d2b7f4809",
+      "bytes": 35823,
+      "byte_identical": true,
+      "reason": "Original OptiScaler GPL-3.0 license"
+    },
+    {
+      "path": "licenses/RE8_THIRD_PARTY.md",
+      "original_sha256": "624c082c24887122fa300bd2bc1ccb83b5635f601df068eb8bdd7717362d606a",
+      "sha256": "624c082c24887122fa300bd2bc1ccb83b5635f601df068eb8bdd7717362d606a",
+      "bytes": 1225,
+      "byte_identical": true,
+      "reason": "Original asset and dependency notices"
+    },
+    {
+      "path": "licenses/DETOURS_MIT.txt",
+      "source_url": "https://raw.githubusercontent.com/microsoft/Detours/main/LICENSE.md",
+      "sha256": "b301808b732cfaa60df2b4b422d78cd97d2a15058b207e7e33f0535ba5170dd6",
+      "bytes": 1099,
+      "reason": "Actual upstream license text; not a bundled implementation"
+    },
+    {
+      "path": "licenses/MINHOOK_LICENSE.txt",
+      "source_url": "https://raw.githubusercontent.com/TsudaKageyu/minhook/master/LICENSE.txt",
+      "sha256": "d5c2224982b0b95a16b098a561335fa93f3eaf4d0aa964b7843edb986df78dc8",
+      "bytes": 4365,
+      "reason": "Actual upstream license text; not a bundled implementation"
+    },
+    {
+      "path": "licenses/LEVEL_ZERO_MIT.txt",
+      "source_url": "https://raw.githubusercontent.com/oneapi-src/level-zero/master/LICENSE",
+      "sha256": "f2e82047a47ca742088331ae2bc85b97949ed1e97dfa057cdafd03e8709fc0a2",
+      "bytes": 1079,
+      "reason": "Actual upstream license text; not a bundled implementation"
+    },
+    {
+      "path": "licenses/TRITON_MIT.txt",
+      "source_url": "https://raw.githubusercontent.com/triton-lang/triton/main/LICENSE",
+      "sha256": "92640fb97222fd0a698ff28ce0c3782c172623f8d6c609b557636a80f28fb946",
+      "bytes": 1132,
+      "reason": "Actual upstream license text; not a bundled implementation"
+    }
+  ],
+  "omitted": [
+    {
+      "source_alias": "@experiments-D/nr-b580/reference/research/blackwood-review-v1/omni-xpu-kernel/omni_xpu_kernel/csrc/bmg_kernel_policy.h",
+      "original_sha256": "7fd527686144a32ecf7e392ee78c1adb1a4e4c2beeef40a0fefcbe64a83a74e8",
+      "proposed_path": "history/original/experiment-D/nr-b580/reference/research/blackwood-review-v1/omni-xpu-kernel/omni_xpu_kernel/csrc/bmg_kernel_policy.h",
+      "reason": "Third-party source not relicensed; upstream citation retained"
+    },
+    {
+      "source_alias": "@experiments-D/nr-b580/reference/research/blackwood-review-v1/omni-xpu-kernel/omni_xpu_kernel/csrc/device_utils.h",
+      "original_sha256": "1dd45e2e7dc2603ad186a59df8580b03e664a985ea5c76b0b8a63b4b4b751664",
+      "proposed_path": "history/original/experiment-D/nr-b580/reference/research/blackwood-review-v1/omni-xpu-kernel/omni_xpu_kernel/csrc/device_utils.h",
+      "reason": "Third-party source not relicensed; upstream citation retained"
+    },
+    {
+      "source_alias": "@project/nr-b580/reference/community/allanmeng-review-v1/upstream-Aila/tests/ops/Bnb4BitLinearKernelTests.cpp",
+      "original_sha256": "fc7126f4b5357ab70a8212dcac2afc9dd8741a4513d6cb89e19224788a64630f",
+      "proposed_path": "history/original/nr-b580/reference/community/allanmeng-review-v1/upstream-Aila/tests/ops/Bnb4BitLinearKernelTests.cpp",
+      "reason": "Third-party source not relicensed; upstream citation retained"
+    }
+  ]
+}

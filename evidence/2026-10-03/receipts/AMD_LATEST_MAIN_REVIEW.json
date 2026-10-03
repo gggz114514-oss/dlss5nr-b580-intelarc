@@ -1,0 +1,55 @@
+{
+  "schema": "main-amd-latest-research-review-v1",
+  "upstream_fixed_SHA": "9ec741522d267c4d2365af53081716fb2943068a",
+  "artifacts": [
+    {
+      "path": "${WORKSPACE}\\cyberpunk-b580-nr-opt\\artifacts\\b580-full-implementation-v1-20261003\\reviews\\amd-20261003-current720-reanalysis\\REPORT.md",
+      "sha256": "e9758964014158bf17ffe99147a89e61dd68294606b9a4fb3d08281ccb845763",
+      "bytes": 53683
+    },
+    {
+      "path": "${WORKSPACE}\\cyberpunk-b580-nr-opt\\artifacts\\b580-full-implementation-v1-20261003\\reviews\\amd-20261003-current720-reanalysis\\PLAN.json",
+      "sha256": "05b3ff102e8d37d5b882acfe94ae9dc9f2d3ce25012f7597ecda567cfa19324f",
+      "bytes": 41808
+    },
+    {
+      "path": "${WORKSPACE}\\cyberpunk-b580-nr-opt\\artifacts\\b580-full-implementation-v1-20261003\\reviews\\amd-20261003-current720-reanalysis\\EVIDENCE.json",
+      "sha256": "ae0fe9c3317d0ccb94094f9049eebdc8e214178368d13c900459ac2055cc36fe",
+      "bytes": 77247
+    },
+    {
+      "path": "${WORKSPACE}\\cyberpunk-b580-nr-opt\\artifacts\\b580-full-implementation-v1-20261003\\reviews\\amd-20261003-current720-reanalysis\\UPSTREAM_METADATA.json",
+      "sha256": "ae0c82be7844965197f4f9e6c122828294c6a6451e8068b332107f5cc2022a93",
+      "bytes": 84282
+    }
+  ],
+  "current_baseline": {
+    "path": "${WORKSPACE}\\cyberpunk-b580-nr-opt\\artifacts\\b580-full-implementation-v1-20261003\\phase2-complete\\PHASE2-r18.json",
+    "sha256": "699ee05cf1008610a4772dfeebe6398d7099c7c1ed141cbbaa91967da0a05f7f",
+    "bytes": 375817
+  },
+  "accepted_constructor_unchanged_from_research": true,
+  "new_proposal_count": 6,
+  "ranking": [
+    "N1",
+    "N2",
+    "N3",
+    "N4",
+    "N5",
+    "N6"
+  ],
+  "main_verified_c512_padding_MAC": {
+    "before_rows": 19712,
+    "after_rows": 15360,
+    "removed_rows": 4352,
+    "removed_MAC": 3422552064
+  },
+  "speed_qualification": "Author archived AMD figures, not independently rerun; B580 proposals unmeasured",
+  "preserved": "Full K, actual motion/history/control, 720p and frame count",
+  "native_fast_math_allowed": true,
+  "permanent_4060_byte_gate": false,
+  "existing_scope": "Existing accepted C512+K8/all6 and GPU bridge features are not claimed as new discoveries",
+  "game_writes": 0,
+  "GPU_executed": false,
+  "status": "RESEARCH_REVIEWED_NEW_MODULE_PLANS_READY"
+}

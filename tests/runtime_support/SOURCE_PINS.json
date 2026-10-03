@@ -1,0 +1,9 @@
+{
+  "schema": "nr-release-runtime-support-v1",
+  "provenance": "byte-identical installed portable runtime bootstrap source; no GPU imports during CPU development",
+  "files": {
+    "fast_cached_runtime_v1.py": "099d3aa0ce08d0ea44e960d0a6dbfb618bdf4db82218edb41b009be1f2c8f1f9",
+    "portable_cache.py": "ded302f54505ad822f348ea82048a361bfa6fec833c1835902b07260cfa45db2",
+    "runtime_environment.py": "2ff6f699e35c6d355d3bed403e186e2c6cc17784908c0c477600761f877df293"
+  }
+}

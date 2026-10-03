@@ -1,0 +1,74 @@
+{
+  "GPU_executed": false,
+  "SYCL_helpers_rebuilt": false,
+  "WindowsSDKVersion": "10.0.26100.0\\",
+  "artifacts": [
+    {
+      "bytes": 164864,
+      "configuration": "default",
+      "file": "CyberpunkNRBridge.asi",
+      "sha256": "124889c3a80f6f7bd68705605f01dd7c619f51b59d5ede215d8db4d15ae2e749"
+    },
+    {
+      "bytes": 243200,
+      "configuration": "live",
+      "file": "CyberpunkNRBridge.asi",
+      "sha256": "4092457ac2408a1d117710216b8d34aebec58010796d1a0ffbe654280a856a6b"
+    }
+  ],
+  "binary_deployed": false,
+  "build_configuration": "Release",
+  "changes": [
+    {
+      "original_sha256": "2543c94aea2080634a1f3dd84987fb706dfdd9559cf788bfcaec542a23ff12b7",
+      "path": "src/asi.cpp",
+      "prepared_sha256": "0acff87ec0eaf50c4c39b04b6eb60e00500f68ef55e33fc625b0b37a45ff13d0",
+      "reason": "default-build conditional scope declaration"
+    }
+  ],
+  "compiler_tools_version": "14.44.35207",
+  "cpu_tests": {
+    "passed": 5,
+    "selected": [
+      "nr_color_state_proof_tests",
+      "nr_gpu_handoff_cpu_tests",
+      "nr_offline_tests",
+      "nr_record_timing_tests",
+      "nr_sync_probe_tests"
+    ]
+  },
+  "default_build_completed": true,
+  "full_local_evidence_sha256": "90b7dd70f2e1995fc69f8b24a4e47c1cbea5bfe5e54ec563572fa63d81ed61f6",
+  "generator": "Ninja",
+  "historical_binary_identity_proven": false,
+  "kind": "CPU_BUILD",
+  "live_build_completed": true,
+  "live_flags": {
+    "NRB_DEFERRED_IDENTITY_TEST": true,
+    "NRB_DLSS_COLOR_STATE_PROOF_V1": true,
+    "NRB_LIVE_NR_TEST": true,
+    "NRB_MULTI_ROUTE_LIVE": true,
+    "NRB_TAIL_ORDER_PROBE": true,
+    "NRB_XESS_IDENTITY_TEST": true
+  },
+  "live_preprocessing_proof": {
+    "identical": true,
+    "method": "MSVC /EP, source-root path normalization, discard empty lines/line-edge whitespace only",
+    "normalized_text_bytes": 5189589,
+    "original_sha256": "fb73630b2e3069eda29b055948d8cfbbfb48a981150c67577a2b7f90683ccd3e",
+    "prepared_sha256": "fb73630b2e3069eda29b055948d8cfbbfb48a981150c67577a2b7f90683ccd3e"
+  },
+  "original_source_modified": false,
+  "parallel_jobs": 16,
+  "preparation_tool": "tools/prepare_bridge_build.py",
+  "preparation_tool_sha256": "0f5a1f3df10f034aef7e681f281e6920984e1fe1621f44c5ffe01da42ae5d06d",
+  "prepared_source_inventory_sha256": "2a3e2aef2cc8632b4a85b0d1b3cf318ce946163e01974f9e0165224e49eaae7b",
+  "schema": "public-authored-bridge-cpu-build-receipt-v2",
+  "sdk_git_sha": "7534ad00bf9e590eedb99e8dd9fd8c89dae3654f",
+  "sdk_worktree_clean": true,
+  "source_files": 162,
+  "source_inventory_sha256": "954a419b64baf6020dcee23b9e9571336f8d484a5a9a9fcd610380dd2fef115a",
+  "source_manifest": "evidence/2026-10-03/current-source-manifest.json",
+  "source_manifest_sha256": "300c800581be650ea019529b6c41f76e7adfe71410b0f4eea19511f6c6503166",
+  "status": "PASS"
+}

@@ -1,0 +1,678 @@
+{
+  "schema": "published-measurement-index-v1",
+  "attempts": [
+    {
+      "attempt": "attempt-13-r9-e-fdp-bccb",
+      "storage": "e",
+      "scope": "offline FullsizeGameModes.process, not game/bridge/Present",
+      "result_path": "evidence/2026-10-03/performance/e-attempt-13-r9-e-fdp-bccb/RESULTS.json",
+      "result_original_sha256": "c8da33eb22951fbbd03a27ce3061bb19ea880bb5f1b26bc139d62d93ed5d04e0",
+      "result_sha256": "be281ac7befe97373e6f2fb45b136065061813bea2bc730d0523738d8fbe1dd6",
+      "measurements": [
+        {
+          "path": "evidence/2026-10-03/performance/e-attempt-13-r9-e-fdp-bccb/accepted_baseline/measurement/readonly/RESULT.json",
+          "sha256": "64a6b6411b791757f0e25173142f6b4b079b0cda8071789efa637c6a54754cb1",
+          "original_sha256": "0b697b105c6a36d5e330150060b247e0dcc58e74d543be553fbff0f94dd38dfb"
+        },
+        {
+          "path": "evidence/2026-10-03/performance/e-attempt-13-r9-e-fdp-bccb/audit_impl_fdp_all/measurement/readonly/RESULT.json",
+          "sha256": "26ffd710a97f369812c43e2abd560d6c4ad5d7925e963ba52defbb1fa8300da6",
+          "original_sha256": "c63f16e259c9fc949063f2cd980637015a9256a3e258c2f24fd84c182bf547d4"
+        },
+        {
+          "path": "evidence/2026-10-03/performance/e-attempt-13-r9-e-fdp-bccb/brackets/audit_impl_fdp_all/00-accepted_baseline/readonly/RESULT.json",
+          "sha256": "696d17166db9dbe64d396e755270db3a25ad02a8f9cc857beab62d77e559ab9c",
+          "original_sha256": "52e030a5f6bd2e9983eb78073db7eef1a445b5900838b7f897c72d7c3954bf3a"
+        },
+        {
+          "path": "evidence/2026-10-03/performance/e-attempt-13-r9-e-fdp-bccb/brackets/audit_impl_fdp_all/01-audit_impl_fdp_all/readonly/RESULT.json",
+          "sha256": "ae58fbf1689eb42a08b59c1d634848e85bd5f21a684b9168e0134814aecd1411",
+          "original_sha256": "10ed3dc0b7cf4b1bf4b50c77b19bb89de51620652a7ac99328ecdf128ce7cee4"
+        },
+        {
+          "path": "evidence/2026-10-03/performance/e-attempt-13-r9-e-fdp-bccb/brackets/audit_impl_fdp_all/02-audit_impl_fdp_all/readonly/RESULT.json",
+          "sha256": "46d9193e101adcab2f7cffaa7d454d6df8cb0d4a7126bde905723918f9e57dd0",
+          "original_sha256": "030a580e66d28dd657205e375c09d6618a1b1f1c2dda3c253b20a9d1204e940c"
+        },
+        {
+          "path": "evidence/2026-10-03/performance/e-attempt-13-r9-e-fdp-bccb/brackets/audit_impl_fdp_all/03-accepted_baseline/readonly/RESULT.json",
+          "sha256": "78d7b0e759e3b3a4e168969b9f0ae8255855af1247a0213f413a8086081e55f3",
+          "original_sha256": "a4aff98f57dd1ba999b6d7f81973a876fe77d2660517db23fe01155e54a69187"
+        }
+      ]
+    },
+    {
+      "attempt": "attempt-14-r9-e-c512-native",
+      "storage": "e",
+      "scope": "offline FullsizeGameModes.process, not game/bridge/Present",
+      "result_path": "evidence/2026-10-03/performance/e-attempt-14-r9-e-c512-native/RESULTS.json",
+      "result_original_sha256": "4b0c7eb339a519846b9baec3521c172e63214b84045f143d847b63e518073210",
+      "result_sha256": "b98a8c22acb83bf5ae67b795a050caaec1d7237e5c1485a231174a972c638f98",
+      "measurements": [
+        {
+          "path": "evidence/2026-10-03/performance/e-attempt-14-r9-e-c512-native/accepted_baseline/measurement/readonly/RESULT.json",
+          "sha256": "bf594ef20cd79eff837c3b9e162a417b367ffa0e225e036ceecac418de6d786c",
+          "original_sha256": "d0e4e40a52a94ba0e6b512b6bacc0867b0707b6767a7e6bfdd333cb90d1c42f6"
+        }
+      ]
+    },
+    {
+      "attempt": "attempt-15-r9-e-swin",
+      "storage": "e",
+      "scope": "offline FullsizeGameModes.process, not game/bridge/Present",
+      "result_path": "evidence/2026-10-03/performance/e-attempt-15-r9-e-swin/RESULTS.json",
+      "result_original_sha256": "a60bd282890003a47a2632167788671f4d061087dc611b0756cded19f6200dbc",
+      "result_sha256": "b48794fd84507c55f5d6bc7ba776c40f96e5208e8d4b7744aa3790c0b20215a8",
+      "measurements": [
+        {
+          "path": "evidence/2026-10-03/performance/e-attempt-15-r9-e-swin/accepted_baseline/measurement/readonly/RESULT.json",
+          "sha256": "e311a1d57c1cbe0b0bf467d008f4d7e6a52b7adc6895b5f552f9f4ea7cc7bf14",
+          "original_sha256": "dc62571d482c2e2e103c826be97d1733a3596bfd744eb2c8a26e0289544f439b"
+        }
+      ]
+    },
+    {
+      "attempt": "attempt-16-r9-e-style1",
+      "storage": "e",
+      "scope": "offline FullsizeGameModes.process, not game/bridge/Present",
+      "result_path": "evidence/2026-10-03/performance/e-attempt-16-r9-e-style1/RESULTS.json",
+      "result_original_sha256": "4401b9aab375033975e029041fae8e47c642e9015da2dd7062a350a01a71085d",
+      "result_sha256": "c502679f500908a1bb7e2b87a5928e3548e90879600752d8e5401003d0460ed7",
+      "measurements": []
+    },
+    {
+      "attempt": "attempt-16b-r9-e-style1",
+      "storage": "e",
+      "scope": "offline FullsizeGameModes.process, not game/bridge/Present",
+      "result_path": "evidence/2026-10-03/performance/e-attempt-16b-r9-e-style1/RESULTS.json",
+      "result_original_sha256": "db01b8dc7ff69d4a09ab6df3bb6204f38d5e7137f19a5ac366e69023d94952d0",
+      "result_sha256": "cbc3e09c1a65830d938fcac2eddaccc6eeea1c4bd4b44bf8f3cec49928643fd2",
+      "measurements": [
+        {
+          "path": "evidence/2026-10-03/performance/e-attempt-16b-r9-e-style1/condition_style1_curve_audit_impl_fdp_all/measurement/readonly/RESULT.json",
+          "sha256": "6886f8877a9f5ee7a03bba20bcaaa2f97b933e1c8393a42f08e0c4ec1eda9db3",
+          "original_sha256": "b3d0ab060ca8ef0b8bf2801fadee4ae5f4a516f015ddfb6af295de607a96631c"
+        },
+        {
+          "path": "evidence/2026-10-03/performance/e-attempt-16b-r9-e-style1/condition_style1_curve_baseline/measurement/readonly/RESULT.json",
+          "sha256": "905bae59430930059455087b0fd15e7c1d43cd6df77d31bae678003d2bd336ef",
+          "original_sha256": "0a64db3f194568bc10c0331de81caad48f589136130147d9fc4f3a760fb75559"
+        }
+      ]
+    },
+    {
+      "attempt": "attempt-17-r9-e-style2",
+      "storage": "e",
+      "scope": "offline FullsizeGameModes.process, not game/bridge/Present",
+      "result_path": "evidence/2026-10-03/performance/e-attempt-17-r9-e-style2/RESULTS.json",
+      "result_original_sha256": "f3009066b4edda35f0d62dfdce856a6cf74ae3087d9fa465082cba3f63fcbc06",
+      "result_sha256": "b898aa2f8a455623a416cc00d7969ea940d830a2a0cafef5ac46c6db77f94c08",
+      "measurements": [
+        {
+          "path": "evidence/2026-10-03/performance/e-attempt-17-r9-e-style2/condition_style2_curve_audit_impl_fdp_all/measurement/readonly/RESULT.json",
+          "sha256": "5bac4e3786cdd6a1e6bba3570e3579f717eb4953d1d889cc3753a4f6a7b48290",
+          "original_sha256": "3be3f3c7892a4a2cad5eb951a714c5e1f0f889af28eafbe0223f26ab05ad8934"
+        },
+        {
+          "path": "evidence/2026-10-03/performance/e-attempt-17-r9-e-style2/condition_style2_curve_baseline/measurement/readonly/RESULT.json",
+          "sha256": "73d63d85315272593531df7d835d078e430501faa2ac975c5197abce05529d9b",
+          "original_sha256": "ff4f0c7c6f228d73430711f69f079b74c376dcd2764b61622393b150dde78879"
+        }
+      ]
+    },
+    {
+      "attempt": "attempt-18-r9-e-cpu-dispatch",
+      "storage": "e",
+      "scope": "offline FullsizeGameModes.process, not game/bridge/Present",
+      "result_path": "evidence/2026-10-03/performance/e-attempt-18-r9-e-cpu-dispatch/RESULTS.json",
+      "result_original_sha256": "1c04c4213b9d93b59eb0c5926adb3951e407f6eee6baa9437ed5beb8d41f7dfb",
+      "result_sha256": "7b8ea41adda13762ef3429498e7309e24e10f95556e24a7a9ffd9e2561af07df",
+      "measurements": [
+        {
+          "path": "evidence/2026-10-03/performance/e-attempt-18-r9-e-cpu-dispatch/accepted_baseline/measurement/readonly/RESULT.json",
+          "sha256": "5b8f822699d70ce5202edd33430bcb1d1a2b0bd2fa005bf1400db097a5b3ab71",
+          "original_sha256": "0517e4f0f84b907230c98e4bc5351bf2c23ba649a879b46ba7be79f6406a47ba"
+        }
+      ]
+    },
+    {
+      "attempt": "attempt-19-r10-e-c512-native-owner",
+      "storage": "e",
+      "scope": "offline FullsizeGameModes.process, not game/bridge/Present",
+      "result_path": "evidence/2026-10-03/performance/e-attempt-19-r10-e-c512-native-owner/RESULTS.json",
+      "result_original_sha256": "4b84b86e8a71454531cbfe8de6d7eb66490f93c566e0b81b9c7636a1852c55e2",
+      "result_sha256": "2f9a0a1149699615d78d1ad7908119868202a260fa3f950a0c144d5938f1f10a",
+      "measurements": [
+        {
+          "path": "evidence/2026-10-03/performance/e-attempt-19-r10-e-c512-native-owner/accepted_baseline/measurement/readonly/RESULT.json",
+          "sha256": "f893307e0755b1f72496f0feedf03653f462fd8b2b2bc13874291ed092e631d3",
+          "original_sha256": "46550e8804e65a748a0cb89f4973183b84eb2bc56813455c2f47b74f7b4dc29a"
+        }
+      ]
+    },
+    {
+      "attempt": "attempt-20-r10-e-c512-ffn-stream",
+      "storage": "e",
+      "scope": "offline FullsizeGameModes.process, not game/bridge/Present",
+      "result_path": "evidence/2026-10-03/performance/e-attempt-20-r10-e-c512-ffn-stream/RESULTS.json",
+      "result_original_sha256": "efe56e4b32c04610c003c19731e39873c18fc9d3ab9b820306bfb026c942b26f",
+      "result_sha256": "c30d35c1b570f70dde9dd34dadea52ecc6033b16eef5f528319aea7c960bf525",
+      "measurements": [
+        {
+          "path": "evidence/2026-10-03/performance/e-attempt-20-r10-e-c512-ffn-stream/accepted_baseline/measurement/readonly/RESULT.json",
+          "sha256": "5be7096dc945b59e084cf57f338437fcac4497d16466b75c6709f87d9c84a842",
+          "original_sha256": "28082c562bc8eee473357f2c748e82abf5c6f59c9ffb3008027533c4318d511d"
+        },
+        {
+          "path": "evidence/2026-10-03/performance/e-attempt-20-r10-e-c512-ffn-stream/audit_impl_c512_vit_all_owned_fused_entry_720_v2/measurement/readonly/RESULT.json",
+          "sha256": "e9fc698f4e227eb919ac901921bf646ed21d0ff8557eb8c3bb4297a59d3ec9d9",
+          "original_sha256": "0efca1e8de3902fc32e56215aca76487e6eb58887b3db13d11a8b544763d59db"
+        }
+      ]
+    },
+    {
+      "attempt": "attempt-21-r10-e-swin-N32",
+      "storage": "e",
+      "scope": "offline FullsizeGameModes.process, not game/bridge/Present",
+      "result_path": "evidence/2026-10-03/performance/e-attempt-21-r10-e-swin-N32/RESULTS.json",
+      "result_original_sha256": "bd8a637ab2ce541bcbf22982c1b022d5ef259317caefd66ec3571e6801e7ae0f",
+      "result_sha256": "566d215aaa711a45736de47af93e80f5e2ebafe4fe20c15fc7a09a38b04369d9",
+      "measurements": [
+        {
+          "path": "evidence/2026-10-03/performance/e-attempt-21-r10-e-swin-N32/accepted_baseline/measurement/readonly/RESULT.json",
+          "sha256": "57bef5c0085224ac84f11e765b430f32d0fc9dc5ed5c6d93810c6cb5aa6fa51a",
+          "original_sha256": "db43675de4b9c480cd2e7bcdfd4b5c3ef3a24d38063e60d48603a92f25b131ee"
+        }
+      ]
+    },
+    {
+      "attempt": "attempt-23-r13-e-native-qkv",
+      "storage": "e",
+      "scope": "offline FullsizeGameModes.process, not game/bridge/Present",
+      "result_path": "evidence/2026-10-03/performance/e-attempt-23-r13-e-native-qkv/RESULTS.json",
+      "result_original_sha256": "39b24c6e9231a87280afdef1cd460e2eef36b0e446dc74dcce7fabb87e1cee2c",
+      "result_sha256": "61d7dc7905bacc402473078dd2e715343eebbe467a7fb55dffe07102b3730928",
+      "measurements": [
+        {
+          "path": "evidence/2026-10-03/performance/e-attempt-23-r13-e-native-qkv/accepted_baseline/measurement/readonly/RESULT.json",
+          "sha256": "d50b090fcb700d829f9626fe8f675e0598bd42e2fb08181cf5ed0e2ee929dcb4",
+          "original_sha256": "2d3ef7ada96ab1fb668a8d9100febd4793626b2bdfd404617d692227e8ee8092"
+        },
+        {
+          "path": "evidence/2026-10-03/performance/e-attempt-23-r13-e-native-qkv/audit_impl_c512_native_qkv_720_v2/measurement/readonly/RESULT.json",
+          "sha256": "2bf87c48a38197789da7e54e49ab649786c785c4599a3791889c42b547f43782",
+          "original_sha256": "e8774a446b19c7950398db1d6aa9d81863c2bdd12c08562f42c5a85b2cd27241"
+        }
+      ]
+    },
+    {
+      "attempt": "attempt-24-r13-e-c512-ffn",
+      "storage": "e",
+      "scope": "offline FullsizeGameModes.process, not game/bridge/Present",
+      "result_path": "evidence/2026-10-03/performance/e-attempt-24-r13-e-c512-ffn/RESULTS.json",
+      "result_original_sha256": "2936ab763cd7ebeeca9f5c6af16e30b0d039fdb519fa9ee9ed67f5e072d1f12b",
+      "result_sha256": "cd880e2ca3299baa6cd608f456c9fefc954a71bec3ab66603ae8e5c289062215",
+      "measurements": [
+        {
+          "path": "evidence/2026-10-03/performance/e-attempt-24-r13-e-c512-ffn/accepted_baseline/measurement/readonly/RESULT.json",
+          "sha256": "bc855810dff66418d3d83a234c3220bb8f956d2132651791061048e46f38e8a4",
+          "original_sha256": "bd8afe06fbbc241cfc8c706af5fe09dd118110f37f01f66c566fc4fe24b5bdec"
+        },
+        {
+          "path": "evidence/2026-10-03/performance/e-attempt-24-r13-e-c512-ffn/audit_impl_c512_ffn_complete_720_v2/measurement/readonly/RESULT.json",
+          "sha256": "8706ceebcd95416656d749e173197a9f8d228e4be6b8a071dfe23ad0f9fcde97",
+          "original_sha256": "d0d912015ab3122f7071910f66ef47ba69bc231dda113af572747a2b2c6ffbf0"
+        }
+      ]
+    },
+    {
+      "attempt": "attempt-25-r13-e-vit-ffn",
+      "storage": "e",
+      "scope": "offline FullsizeGameModes.process, not game/bridge/Present",
+      "result_path": "evidence/2026-10-03/performance/e-attempt-25-r13-e-vit-ffn/RESULTS.json",
+      "result_original_sha256": "7d4559b283436b25c84948bbdf3da943f2fe11351a474443932638036bdf2db4",
+      "result_sha256": "26f00d12f4e3b9ce71553eca5434809ad20ec2f47779534db4d2cd41e292dcb2",
+      "measurements": [
+        {
+          "path": "evidence/2026-10-03/performance/e-attempt-25-r13-e-vit-ffn/accepted_baseline/measurement/readonly/RESULT.json",
+          "sha256": "d96fc8981cf34d027358c5df25ffa640e031aa3125df78f4f0bccab6ba40307f",
+          "original_sha256": "26251de5d8c33d26aab3c45d5cb3bf2818796a6ea9ea8084db2670ca5ccd8911"
+        }
+      ]
+    },
+    {
+      "attempt": "attempt-26-r13-e-c512-encoder",
+      "storage": "e",
+      "scope": "offline FullsizeGameModes.process, not game/bridge/Present",
+      "result_path": "evidence/2026-10-03/performance/e-attempt-26-r13-e-c512-encoder/RESULTS.json",
+      "result_original_sha256": "e5cb8aaeebe02fd3c94732473300beccbf919a2983a66b6a90d4a393c656a052",
+      "result_sha256": "cc083a1d54297507932ef25bbebcb29534e37152a42d679d114d6fbf5202d2af",
+      "measurements": [
+        {
+          "path": "evidence/2026-10-03/performance/e-attempt-26-r13-e-c512-encoder/accepted_baseline/measurement/readonly/RESULT.json",
+          "sha256": "5e47cb1e9b74612f4acf46ce033523dabe7a37ea5147def8513471cb07f4d29c",
+          "original_sha256": "0357a894ad00e402cbba53d81a6f94e7b572563c7c761b957383c3c8082b385a"
+        },
+        {
+          "path": "evidence/2026-10-03/performance/e-attempt-26-r13-e-c512-encoder/audit_impl_c512_encoder_complete_720_v2/measurement/readonly/RESULT.json",
+          "sha256": "4577d4de03e0ba6da23850add955cf81d2e228df6036b95a5cb93c37bd6cd1dc",
+          "original_sha256": "f3e16d18cf065e158c1f720ffd59305c7df09529adfd966b9c9d000f95738da9"
+        }
+      ]
+    },
+    {
+      "attempt": "attempt-27-r13-e-history-failure-diagnostics",
+      "storage": "e",
+      "scope": "offline FullsizeGameModes.process, not game/bridge/Present",
+      "result_path": "evidence/2026-10-03/performance/e-attempt-27-r13-e-history-failure-diagnostics/RESULTS.json",
+      "result_original_sha256": "f3ad5fd6378d4b9073d005295b983ca002343b3fcd10a146af051d100ff7a749",
+      "result_sha256": "f0101f839090f8102d1ff890675304871de5a336010c834d2f1f75323b1a65ad",
+      "measurements": [
+        {
+          "path": "evidence/2026-10-03/performance/e-attempt-27-r13-e-history-failure-diagnostics/accepted_baseline/measurement/readonly/RESULT.json",
+          "sha256": "ed84be34eec403bebd63ea409244a7c508f73f8a46a6549745395bc1f01eaf34",
+          "original_sha256": "f9e166fe50e1f0880990ddb2076aa9fa841830005532a4253ab3626f30bb842a"
+        },
+        {
+          "path": "evidence/2026-10-03/performance/e-attempt-27-r13-e-history-failure-diagnostics/audit_impl_history_screened_launch/measurement/readonly/RESULT.json",
+          "sha256": "863ec57b646fe05f8c62a14adc2ddabb1a0a6200033307206b80025c60a651e6",
+          "original_sha256": "a766a61a1aadb0d4b2ba2fc029aa516b6af2503ed0df40792801a49b7c1a5f95"
+        }
+      ]
+    },
+    {
+      "attempt": "attempt-28-r14-e-swin-retained-post",
+      "storage": "e",
+      "scope": "offline FullsizeGameModes.process, not game/bridge/Present",
+      "result_path": "evidence/2026-10-03/performance/e-attempt-28-r14-e-swin-retained-post/RESULTS.json",
+      "result_original_sha256": "922e61280f908dfc7f56135e82cd28ea640e1d06722d258732e943a0709ad884",
+      "result_sha256": "226e8a9edefd583b41f44cab9f8079be2e622328481bcbce78393ef5dd56134b",
+      "measurements": [
+        {
+          "path": "evidence/2026-10-03/performance/e-attempt-28-r14-e-swin-retained-post/accepted_baseline/measurement/readonly/RESULT.json",
+          "sha256": "5c29153282d15232cf6fb712f64dfc19f1ca9232e8ef630fef2a23441c1535c6",
+          "original_sha256": "0dac8fb3770925c76c7f999ada42ac13892ef6d7038bf0f0f2ed43e2401dc452"
+        }
+      ]
+    },
+    {
+      "attempt": "attempt-29-r15-e-swin-full",
+      "storage": "e",
+      "scope": "offline FullsizeGameModes.process, not game/bridge/Present",
+      "result_path": "evidence/2026-10-03/performance/e-attempt-29-r15-e-swin-full/RESULTS.json",
+      "result_original_sha256": "f3541332ab46b4d816e45a1630a395702c61c771ed9f739e08067d151791711b",
+      "result_sha256": "c828db59a8135f3f9f13f1c9717c7ae145a366f0b71826097005c7ef99ca9bc0",
+      "measurements": [
+        {
+          "path": "evidence/2026-10-03/performance/e-attempt-29-r15-e-swin-full/accepted_baseline/measurement/readonly/RESULT.json",
+          "sha256": "4d5b005a26591c2dd68d24b8bc59d24bb12f42d4b59f6bbe3305ba231d9df6f0",
+          "original_sha256": "bc21f506e9b610b9d3145a0c8d5dac150a35e8dec67a756d9d87bee6f11c27b8"
+        },
+        {
+          "path": "evidence/2026-10-03/performance/e-attempt-29-r15-e-swin-full/audit_impl_swin_all/measurement/readonly/RESULT.json",
+          "sha256": "62c5958e97865e2c748c610562558838a963a6b236ad8763f1d329b4b3c92a16",
+          "original_sha256": "c036274a8ab04c4f059ea3577046d46b62339652bbc457e5536b20cdbdf12973"
+        }
+      ]
+    },
+    {
+      "attempt": "attempt-30-r15-e-vit-ffn",
+      "storage": "e",
+      "scope": "offline FullsizeGameModes.process, not game/bridge/Present",
+      "result_path": "evidence/2026-10-03/performance/e-attempt-30-r15-e-vit-ffn/RESULTS.json",
+      "result_original_sha256": "43dfe26c26b9b70909dce6ec6f26988f4b1ec3b42f7b9f3d48da20af065ca902",
+      "result_sha256": "d47b0d6daed757a48a5afe66dc05cabad414017b51e1b66689631329db3d98a5",
+      "measurements": [
+        {
+          "path": "evidence/2026-10-03/performance/e-attempt-30-r15-e-vit-ffn/accepted_baseline/measurement/readonly/RESULT.json",
+          "sha256": "9527071ea205dd0e2e4a593d54ecde0bed2fccd71f4127ad71bf8dca4416d335",
+          "original_sha256": "f802fd29d10c56a50649e2bdf9d623c9638642f5eedbb084822ab9df90f433ed"
+        },
+        {
+          "path": "evidence/2026-10-03/performance/e-attempt-30-r15-e-vit-ffn/audit_impl_vit_ffn_complete_720_v2/measurement/readonly/RESULT.json",
+          "sha256": "8601baa29a05b4286d03993839a70499730a53ff2fda52d6a05d268e3baabedf",
+          "original_sha256": "4210723a4d46fb6780ba846e43f7ee8b48b815d72a09980266ac72dc35dddf87"
+        }
+      ]
+    },
+    {
+      "attempt": "attempt-31-r16-e-c512-ffn-hot",
+      "storage": "e",
+      "scope": "offline FullsizeGameModes.process, not game/bridge/Present",
+      "result_path": "evidence/2026-10-03/performance/e-attempt-31-r16-e-c512-ffn-hot/RESULTS.json",
+      "result_original_sha256": "9c59155e6dfc6a2789cf3f3b0b8f9fdee1642327b4276549758e2fd1522dfa6d",
+      "result_sha256": "fabfa913e0c5986de4fc8b6eb85306998d482f3e947091a63078bb6150a8c60a",
+      "measurements": [
+        {
+          "path": "evidence/2026-10-03/performance/e-attempt-31-r16-e-c512-ffn-hot/audit_impl_c512_ffn_hot_admission_720_v3/measurement/readonly/RESULT.json",
+          "sha256": "1c2614cbaf3235134273c60b11c916a5ada5519f8331b2aa85057d9adb2fbc6a",
+          "original_sha256": "c9dd8e631555cbdd39cdcab1e67efc416d65bf4b66bd9939102cde8ba9f24e6d"
+        },
+        {
+          "path": "evidence/2026-10-03/performance/e-attempt-31-r16-e-c512-ffn-hot/audit_impl_c512_ffn_hot_control_720_v3/measurement/readonly/RESULT.json",
+          "sha256": "27242f4c28236b6e38e0ad79c90934c4ef3b9e426473a9d713a501412902db30",
+          "original_sha256": "a8f9fb9a945ada7ae8a1313aa74656e206fe6d6ac4d00da3ed82f6e7db703974"
+        }
+      ]
+    },
+    {
+      "attempt": "attempt-32-r16-e-c512-encoder-hot",
+      "storage": "e",
+      "scope": "offline FullsizeGameModes.process, not game/bridge/Present",
+      "result_path": "evidence/2026-10-03/performance/e-attempt-32-r16-e-c512-encoder-hot/RESULTS.json",
+      "result_original_sha256": "39bf74bea8c4325f59e2b965f86026f8cad72e3ccde18080494d50c0f7b2161a",
+      "result_sha256": "f685ab4f640e9c2c46b9450a7a610c676a59cbc34eeba9f9c17dcd438053e275",
+      "measurements": [
+        {
+          "path": "evidence/2026-10-03/performance/e-attempt-32-r16-e-c512-encoder-hot/audit_impl_c512_encoder_hot_admission_720_v3/measurement/readonly/RESULT.json",
+          "sha256": "130a4da904a91d7e6e9d438d0e1ad821b8174c91e1d1510a0de805727e0576b4",
+          "original_sha256": "ec60954a3a016d8e0e3ee03c60af9a2e8cceb43a0fc259abcae5f13f0dc08006"
+        },
+        {
+          "path": "evidence/2026-10-03/performance/e-attempt-32-r16-e-c512-encoder-hot/audit_impl_c512_encoder_hot_control_720_v3/measurement/readonly/RESULT.json",
+          "sha256": "a4728a41eddbcf10a787a360f03a63ca2c07c7aa3d4f99a8bfdaf24046767feb",
+          "original_sha256": "65be923ce5aaa0ca5534b9e18b8c30e42e96cee228b98b702d545046bf82ff04"
+        }
+      ]
+    },
+    {
+      "attempt": "attempt-33-r17-e-vit-rowonce-p4",
+      "storage": "e",
+      "scope": "offline FullsizeGameModes.process, not game/bridge/Present",
+      "result_path": "evidence/2026-10-03/performance/e-attempt-33-r17-e-vit-rowonce-p4/RESULTS.json",
+      "result_original_sha256": "d3865b60e079f8c103d3591a553b8466282a482e8841b0e8127048ea30fd1d31",
+      "result_sha256": "ef1cd0dea1fc1d981c5d4a37a1d2e50bff11294aa0ead8d6c723950dfa851550",
+      "measurements": [
+        {
+          "path": "evidence/2026-10-03/performance/e-attempt-33-r17-e-vit-rowonce-p4/accepted_baseline/measurement/readonly/RESULT.json",
+          "sha256": "cb5c0d33ec345ceeee4e37198734bdfce09dd841a09bb30ad6d78c11864e58b3",
+          "original_sha256": "b70bd58eab150ff24734f4f9a5a0de396a4ebadcc71af38606d9b35c57c4cac7"
+        }
+      ]
+    },
+    {
+      "attempt": "attempt-35-r18-e-vit-rowonce-p4",
+      "storage": "e",
+      "scope": "offline FullsizeGameModes.process, not game/bridge/Present",
+      "result_path": "evidence/2026-10-03/performance/e-attempt-35-r18-e-vit-rowonce-p4/RESULTS.json",
+      "result_original_sha256": "4901def2a34d5daf49b2d91c9b54a64de64524ea5d7b1d9c7163aab6e51764b7",
+      "result_sha256": "5f8f11d6a50443ebd4dbc121dc3f7c9d8f6ec6b896d70cc6d9cf88e707f77c49",
+      "measurements": [
+        {
+          "path": "evidence/2026-10-03/performance/e-attempt-35-r18-e-vit-rowonce-p4/accepted_baseline/measurement/readonly/RESULT.json",
+          "sha256": "0fa8db448bd092e08a88a1aa7da4137dc3a23751e5f528afbc13ce5005691c96",
+          "original_sha256": "577bba204e365c93f6f61f3578362c73661fadc8902430bd6502bf01e3d9c781"
+        },
+        {
+          "path": "evidence/2026-10-03/performance/e-attempt-35-r18-e-vit-rowonce-p4/audit_impl_vit_ffn_rowonce_bk64_p4_720_v1/measurement/readonly/RESULT.json",
+          "sha256": "7589e6229aea1b434bcd6908569abc4e8de4b2cc2747227a8db77e6307f80597",
+          "original_sha256": "1e8aee78dbbabbe254be8046c41db00f5a626f4e13b67f25dbb90d838003151e"
+        }
+      ]
+    },
+    {
+      "attempt": "attempt-36-r18-e-vit-rowonce-full",
+      "storage": "e",
+      "scope": "offline FullsizeGameModes.process, not game/bridge/Present",
+      "result_path": "evidence/2026-10-03/performance/e-attempt-36-r18-e-vit-rowonce-full/RESULTS.json",
+      "result_original_sha256": "c756c4e0dcebfbbadd71031e4b5f13a6d968422a9bd296ee73f8cabc9979682c",
+      "result_sha256": "4eb01a8cc198dc22702f2e061f3f15aee5e0c108dc25353655f90f35810b9301",
+      "measurements": [
+        {
+          "path": "evidence/2026-10-03/performance/e-attempt-36-r18-e-vit-rowonce-full/accepted_baseline/measurement/readonly/RESULT.json",
+          "sha256": "4a9bb01ae4c06a94b378cf4a1f3a3123b9dd578f7e7fdd4846ddbc1cfa95497b",
+          "original_sha256": "b8e77a41133b0ac603d7bf64b768f377324e2aa75a527f80d59066df38f4ce3f"
+        },
+        {
+          "path": "evidence/2026-10-03/performance/e-attempt-36-r18-e-vit-rowonce-full/audit_impl_vit_ffn_rowonce_bk64_full_720_v1/measurement/readonly/RESULT.json",
+          "sha256": "390b73e9e599b6faeeb0a8f68fed48d0d21babea4c6755328a7fa9a4c336054a",
+          "original_sha256": "7a56f2c5cb1863c1a64c1a6f4d33c698a015fe243f70f10d7b48e63ab6b3f5a7"
+        }
+      ]
+    },
+    {
+      "attempt": "attempt-37-r18-e-swin-c64-serial",
+      "storage": "e",
+      "scope": "offline FullsizeGameModes.process, not game/bridge/Present",
+      "result_path": "evidence/2026-10-03/performance/e-attempt-37-r18-e-swin-c64-serial/RESULTS.json",
+      "result_original_sha256": "ff223375772b24488557635f5a84076c02feff8f3eaaf46f6391b80cb75b4343",
+      "result_sha256": "1508b511a0cd6ed4d06df976a605f2a5afe8f0247e8db3536c68eed66f1fb585",
+      "measurements": [
+        {
+          "path": "evidence/2026-10-03/performance/e-attempt-37-r18-e-swin-c64-serial/accepted_baseline/measurement/readonly/RESULT.json",
+          "sha256": "99b1204e360672cec448571348dadb384ab2a38ccd06c09d987daa0a23da8c31",
+          "original_sha256": "0c7052e412c2791e80a522400d7210ca7d76b0fe16ebacad34bf9982b4db4abf"
+        },
+        {
+          "path": "evidence/2026-10-03/performance/e-attempt-37-r18-e-swin-c64-serial/audit_impl_swin_c64_serial_720_v3/measurement/readonly/RESULT.json",
+          "sha256": "6c272b890071fb3cc80b5b04844646383d73cb38d6b705160f2029cfb0b054a8",
+          "original_sha256": "2adfe83fa840779596e0a0d4f9a1741cec46f680221c6dd334273d92bef08e19"
+        }
+      ]
+    },
+    {
+      "attempt": "attempt-38-r18-e-swin-c256-split",
+      "storage": "e",
+      "scope": "offline FullsizeGameModes.process, not game/bridge/Present",
+      "result_path": "evidence/2026-10-03/performance/e-attempt-38-r18-e-swin-c256-split/RESULTS.json",
+      "result_original_sha256": "f9ba27204b5d4b4523d3622cf7c7c96695eb965eb6d90f58eb4f93deef98dd65",
+      "result_sha256": "0c668ce17b47971ca921edbae5295afde49eda695269e7b22aef66042bc4695e",
+      "measurements": [
+        {
+          "path": "evidence/2026-10-03/performance/e-attempt-38-r18-e-swin-c256-split/accepted_baseline/measurement/readonly/RESULT.json",
+          "sha256": "c313eb966526e834f9537f58ec1b34845afef25103411b06befd8e004ddec9c7",
+          "original_sha256": "771289ca48af315ff56ad145316f2d6599cfe25e83687d14e4d391ebf7b09956"
+        }
+      ]
+    },
+    {
+      "attempt": "attempt-38b-r18-e-swin-c256-split",
+      "storage": "e",
+      "scope": "offline FullsizeGameModes.process, not game/bridge/Present",
+      "result_path": "evidence/2026-10-03/performance/e-attempt-38b-r18-e-swin-c256-split/RESULTS.json",
+      "result_original_sha256": "31eaf4389b8bd052a0ddf069e9c14649f5977bf451d27c31bf3787f1a81af97d",
+      "result_sha256": "4c891da92726cf4488f38b950bb28ee613dbed934e2bbdcbb0ace0f98fff00e0",
+      "measurements": [
+        {
+          "path": "evidence/2026-10-03/performance/e-attempt-38b-r18-e-swin-c256-split/accepted_baseline/measurement/readonly/RESULT.json",
+          "sha256": "fbc011c0f2c4269f31aebe81f3d87eba44305c76dce376fd8345cb90b9a7bab5",
+          "original_sha256": "6f53daaffe91ba8cb867ac4b6dd4cde6ed94f9bebe78bdc3c7d9f83452a99fab"
+        },
+        {
+          "path": "evidence/2026-10-03/performance/e-attempt-38b-r18-e-swin-c256-split/audit_impl_swin_c256_split_tail_720_v3/measurement/readonly/RESULT.json",
+          "sha256": "8be0393176b81da968924026ead10c9238f5cd846477ff9c14df10d8f085fe15",
+          "original_sha256": "24266eed541f582732754236a89399fa4f2109fdc37688156ab5e70d63c2d6a8"
+        }
+      ]
+    },
+    {
+      "attempt": "attempt-39-r18-e-swin-combined",
+      "storage": "e",
+      "scope": "offline FullsizeGameModes.process, not game/bridge/Present",
+      "result_path": "evidence/2026-10-03/performance/e-attempt-39-r18-e-swin-combined/RESULTS.json",
+      "result_original_sha256": "e1ce4767cb4111d091889ed78f2188d84c5bc1e4b095bba2074b3affd95ac38b",
+      "result_sha256": "196fe3b1c73d600fa2e36df0a8f489ca6c5c296991569ff40a00233b805a0e33",
+      "measurements": [
+        {
+          "path": "evidence/2026-10-03/performance/e-attempt-39-r18-e-swin-combined/accepted_baseline/measurement/readonly/RESULT.json",
+          "sha256": "550932448d845c99e84abf97eeb15fcec2bc8958485a064736774e48cb84f17b",
+          "original_sha256": "29fc7ddf56e86c98ec3de01ca668d8f9b7eaf83d0429bddacb5655425ae305d1"
+        },
+        {
+          "path": "evidence/2026-10-03/performance/e-attempt-39-r18-e-swin-combined/audit_impl_swin_c64_serial_c256_split_720_v3/measurement/readonly/RESULT.json",
+          "sha256": "5c27199cea538a8485204e738cd39a56a5fa85a9fd11460e2b6a2979722a2a14",
+          "original_sha256": "7da84633ccdbf32d0fef361e751f99c1751e219ff1d96703bbf9b3de35ca41f0"
+        }
+      ]
+    },
+    {
+      "attempt": "attempt-02-r4-full-groups",
+      "storage": "d",
+      "scope": "offline FullsizeGameModes.process, not game/bridge/Present",
+      "result_path": "evidence/2026-10-03/performance/d-attempt-02-r4-full-groups/RESULTS.json",
+      "result_original_sha256": "b143f103bab4755259038918523ecef5f767244f1e1f72d37f41f4d232dbd166",
+      "result_sha256": "613ee94b8224b7e6d8143225407872c04587eb6cc7592eb9ab5370b5a8b407aa",
+      "measurements": []
+    },
+    {
+      "attempt": "attempt-03-r4-runner3-full-groups",
+      "storage": "d",
+      "scope": "offline FullsizeGameModes.process, not game/bridge/Present",
+      "result_path": "evidence/2026-10-03/performance/d-attempt-03-r4-runner3-full-groups/RESULTS.json",
+      "result_original_sha256": "013212da0b90d109b57b8ec52875bf3724ad633ad91172d9a9e0d76534165faa",
+      "result_sha256": "52717143233b08f05d95e280034a843e6a0f5b2577ca10f42aa27506dd2477c0",
+      "measurements": [
+        {
+          "path": "evidence/2026-10-03/performance/d-attempt-03-r4-runner3-full-groups/accepted_baseline/measurement/readonly/RESULT.json",
+          "sha256": "a8dbe5e2f70c8c81994f51a192d84dbb62250e2cc501da5fe594b594ddba82f3",
+          "original_sha256": "ae41987070aff34d91df68cf3236d06d8b695292426352c5853c6209c0bc3dd3"
+        }
+      ]
+    },
+    {
+      "attempt": "attempt-04-r4-independent-groups",
+      "storage": "d",
+      "scope": "offline FullsizeGameModes.process, not game/bridge/Present",
+      "result_path": "evidence/2026-10-03/performance/d-attempt-04-r4-independent-groups/RESULTS.json",
+      "result_original_sha256": "76866578997c4d85b83e06d9b24af068712ba530e036e244211cc8348caab67a",
+      "result_sha256": "dc0b4be4d6cf98878052e5e56934918f4c9e042995eb069e92ad5bc9ba0986d4",
+      "measurements": [
+        {
+          "path": "evidence/2026-10-03/performance/d-attempt-04-r4-independent-groups/accepted_baseline/measurement/readonly/RESULT.json",
+          "sha256": "85e7df02386d98b4479f5e50ff0b7ba64a75d761f8985ab1429c0a7698755a91",
+          "original_sha256": "1207946b4d93ccf3d4511c0974c663df5d8f949d692fda1cc6f82399bbf66449"
+        }
+      ]
+    },
+    {
+      "attempt": "attempt-05-r4-c512-history",
+      "storage": "d",
+      "scope": "offline FullsizeGameModes.process, not game/bridge/Present",
+      "result_path": "evidence/2026-10-03/performance/d-attempt-05-r4-c512-history/RESULTS.json",
+      "result_original_sha256": "e35f523cd7759dc7cbd01989a08cf93fc852b460fe0a245182c41eb6b0ba3c82",
+      "result_sha256": "468913ba0ef6e48f8c24fc9b0eb0237856db5f6f3fbae4ae95f52e44b1362ac3",
+      "measurements": [
+        {
+          "path": "evidence/2026-10-03/performance/d-attempt-05-r4-c512-history/accepted_baseline/measurement/readonly/RESULT.json",
+          "sha256": "ba81aafb0cabbdf68d3b2f05dea6ce814a9d782af9fff26b2d1cc59670fc1b78",
+          "original_sha256": "3ddb7cb9ed941b9a9421e66663d8b4452bf779ffb7e781ac88f1ad670c388612"
+        }
+      ]
+    },
+    {
+      "attempt": "attempt-06-r6-history-front",
+      "storage": "d",
+      "scope": "offline FullsizeGameModes.process, not game/bridge/Present",
+      "result_path": "evidence/2026-10-03/performance/d-attempt-06-r6-history-front/RESULTS.json",
+      "result_original_sha256": "343414f178ae0706419a69f2f61bfee75c2fac53ed13427607f7090b3dd895a6",
+      "result_sha256": "7f43c0162a6d45d6adc692f66e0836b6ba62632485e89526cae5d63c6be4fd92",
+      "measurements": [
+        {
+          "path": "evidence/2026-10-03/performance/d-attempt-06-r6-history-front/accepted_baseline/measurement/readonly/RESULT.json",
+          "sha256": "782fc9643f2f7ee7484ca629c9c0c0d6fc7c67579d5d69b9981f648bcaf65d55",
+          "original_sha256": "4149ca61950f4aaf20c69541e7c11da45b56ac3ae85fec673a757840e06f787e"
+        },
+        {
+          "path": "evidence/2026-10-03/performance/d-attempt-06-r6-history-front/audit_impl_history_combined_direct/measurement/readonly/RESULT.json",
+          "sha256": "8456683d56d200aaaeffb7479b1b6d25eaecb5117c56dd510adf9d161b7419ac",
+          "original_sha256": "94f77989ea8386e64768ff01bd120fb77baef4872703ab070307eb720cfad5eb"
+        }
+      ]
+    },
+    {
+      "attempt": "attempt-07-r6-swin",
+      "storage": "d",
+      "scope": "offline FullsizeGameModes.process, not game/bridge/Present",
+      "result_path": "evidence/2026-10-03/performance/d-attempt-07-r6-swin/RESULTS.json",
+      "result_original_sha256": "a239a69bf31fd5ec130a96b3af6e1476210b6c65c4f0530aa710e55cd3436661",
+      "result_sha256": "23431c8ddd20cf594ac4366b9187216694047f290a071f616ccef9d80a4b209f",
+      "measurements": [
+        {
+          "path": "evidence/2026-10-03/performance/d-attempt-07-r6-swin/accepted_baseline/measurement/readonly/RESULT.json",
+          "sha256": "d5a6314b5161c9ccec77ff81af109c8d29c51cc68a1a1cf93fca8c5b48fedd3a",
+          "original_sha256": "89c664ef86302ca9614a7a68c8da6bd2ed82a0d6209e96fb0710389319420b36"
+        }
+      ]
+    },
+    {
+      "attempt": "attempt-08-r7-front-runner4",
+      "storage": "d",
+      "scope": "offline FullsizeGameModes.process, not game/bridge/Present",
+      "result_path": "evidence/2026-10-03/performance/d-attempt-08-r7-front-runner4/RESULTS.json",
+      "result_original_sha256": "60c5010a0c3b79780595ffdca67546ab9c34f94df4ec90811e01c721bed5165e",
+      "result_sha256": "59478e52263b6c4012897d1268c04b30a218d5114ab7832ff3129ed574de946d",
+      "measurements": [
+        {
+          "path": "evidence/2026-10-03/performance/d-attempt-08-r7-front-runner4/accepted_baseline/measurement/readonly/RESULT.json",
+          "sha256": "7b6b5a485e324c11728cb8b5610a496f7a607e4a676680ec4008bab031fcdb3f",
+          "original_sha256": "1191ccf7293067a0a06e5dcc8e92d1c25f9d687270248502d77586d8f495e9e0"
+        }
+      ]
+    },
+    {
+      "attempt": "attempt-09-r7-c512-runner4",
+      "storage": "d",
+      "scope": "offline FullsizeGameModes.process, not game/bridge/Present",
+      "result_path": "evidence/2026-10-03/performance/d-attempt-09-r7-c512-runner4/RESULTS.json",
+      "result_original_sha256": "97355c5c8d10dfd9f091748af498f2d7c0fdcf2dde12868b529a2eb1e86429b2",
+      "result_sha256": "dd4c814ac2af20fa1c8e8aee9fbe1b8926378fcc32d4f01f3b8afae01e6c253b",
+      "measurements": [
+        {
+          "path": "evidence/2026-10-03/performance/d-attempt-09-r7-c512-runner4/accepted_baseline/measurement/readonly/RESULT.json",
+          "sha256": "49e2f904da133a6f8c3db0949b8cb0722b30daa4cf2ad02ad66c36f082e8977e",
+          "original_sha256": "f015a2e3d997ac94bef1f41f33a7f96c65fd6ed7d76259e7e56ce6b287b97f15"
+        }
+      ]
+    },
+    {
+      "attempt": "attempt-10-r8-front-runner4",
+      "storage": "d",
+      "scope": "offline FullsizeGameModes.process, not game/bridge/Present",
+      "result_path": "evidence/2026-10-03/performance/d-attempt-10-r8-front-runner4/RESULTS.json",
+      "result_original_sha256": "8b4415f05bca96ce03dfb353955319fec8f56c545edd9f65ff8285bbd3b08aa9",
+      "result_sha256": "fb38e8ea3cfbb50c019ab4fe51ad037ac7e7b2b72d29de5ce42b72f80119ddad",
+      "measurements": [
+        {
+          "path": "evidence/2026-10-03/performance/d-attempt-10-r8-front-runner4/accepted_baseline/measurement/readonly/RESULT.json",
+          "sha256": "7903cf8155c5a8724b4ef2157975011b0da4e4d26ca5b9090ca89a09741b7612",
+          "original_sha256": "9a8fbe48ca862b5827074ac44a7b2ce21e972bbcff695f4e8141a802e39890f2"
+        }
+      ]
+    },
+    {
+      "attempt": "attempt-11-r8-c512-native-runner4-execution",
+      "storage": "d",
+      "scope": "offline FullsizeGameModes.process, not game/bridge/Present",
+      "result_path": "evidence/2026-10-03/performance/d-attempt-11-r8-c512-native-runner4-execution/RESULTS.json",
+      "result_original_sha256": "3a4455755f4a149e8981cefe208d3bffb2c4a5c911d893dc7582700b69c8a58a",
+      "result_sha256": "ca483641051dc5f6e422e71f50b23c021afb257a2b33c7ce2875e8f267a03cca",
+      "measurements": [
+        {
+          "path": "evidence/2026-10-03/performance/d-attempt-11-r8-c512-native-runner4-execution/accepted_baseline/measurement/readonly/RESULT.json",
+          "sha256": "e01a0b12b4c340ab1875b1ad43328fd4536aeb4f48728005f23c843aec0d4fb8",
+          "original_sha256": "3ebea2be606b2767966a2f782950c8c0d88fed15816beeb01d8d3fb7eaab326d"
+        }
+      ]
+    },
+    {
+      "attempt": "attempt-12-r9-fdp-runner4",
+      "storage": "d",
+      "scope": "offline FullsizeGameModes.process, not game/bridge/Present",
+      "result_path": "evidence/2026-10-03/performance/d-attempt-12-r9-fdp-runner4/RESULTS.json",
+      "result_original_sha256": "cac2ab604c7876d4be8357128652e36e84bef32d60e230f3d44c9622ce3b5830",
+      "result_sha256": "f3204446d2bec7a1e64d825232eb7ea734f8f476ab18d5a370a6b3223f174fa2",
+      "measurements": [
+        {
+          "path": "evidence/2026-10-03/performance/d-attempt-12-r9-fdp-runner4/accepted_baseline/measurement/readonly/RESULT.json",
+          "sha256": "952a88f19cb3409d15831383066a80c58236e3ca1b97a59a3c7e98132c62a1db",
+          "original_sha256": "be8a4b75e4f3a654886f7804317d1576490c1404405e4bcdc6d017c63abdfaa1"
+        },
+        {
+          "path": "evidence/2026-10-03/performance/d-attempt-12-r9-fdp-runner4/audit_impl_fdp_all/measurement/readonly/RESULT.json",
+          "sha256": "b6b9625fda9ed88abdc01638890c612fa3c41718ee19539295bfb9c9973102cb",
+          "original_sha256": "8ab68883138c6f079c17e451aa07b4bb4b5c4dc6c9496456f70bc0ccf78db19f"
+        }
+      ]
+    }
+  ]
+}

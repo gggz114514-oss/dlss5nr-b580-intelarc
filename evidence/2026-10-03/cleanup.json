@@ -1,0 +1,23 @@
+{
+  "schema": "nr-verified-historical-cleanup-v1",
+  "started_utc": "2026-10-03T13:48:10.8226772Z",
+  "finished_utc": "2026-10-03T13:49:04.1030647Z",
+  "removed_files": 63367,
+  "logical_bytes": 30041860773,
+  "drive_free_before": 9762828288,
+  "drive_free_after": 39926185984,
+  "free_space_delta": 30163357696,
+  "expected_files": 63367,
+  "completed": true,
+  "current_game_changed": false,
+  "current_cache_changed": false,
+  "recursive_directory_deletion": false,
+  "original_source_reports_models_and_reference_data_retained": true,
+  "whitelist_sha256": "20d84b1a6f7da61b1338c568086243304110bdbd3e50cfb74dd980d3e08f6f55",
+  "recommendation_scope": "Two all-zero failed placeholders and exact retained duplicates in seven obsolete installation/extraction test roots",
+  "retained_scope": "original scripts, reports, source, weights, private media, frozen4060 references, current installed runtime and current E measurement/cache",
+  "d_free_gib_before": 9.092342376708984,
+  "d_free_gib_after": 37.18415832519531,
+  "observed_free_delta_gib": 28.091815948486328,
+  "execution_script_sha256": "306cde9c575804d7022f199e6b4d1e30a6519b01a6da8e02b53e167181dbfb43"
+}

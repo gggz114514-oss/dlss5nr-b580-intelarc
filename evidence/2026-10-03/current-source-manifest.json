@@ -1,0 +1,4027 @@
+{
+  "schema": "installed-current-source-manifest-v1",
+  "created_date": "2026-10-03",
+  "accepted_profile": "720p/c512_k8/all6/unrounded/fused-real-motion/graph-replay",
+  "game_user_accepted_frame_ms": [
+    55,
+    60
+  ],
+  "source_is_installed_runtime": true,
+  "bridge_source_to_binary_match_verified": false,
+  "files": [
+    {
+      "path": "current/bridge/CMakeLists.txt",
+      "source_id": "cyberpunk-bridge-source/CMakeLists.txt",
+      "bytes": 12238,
+      "sha256": "f32c3b137824c719b73f533d358a310d1c67f0b57011c70a4bde92fcbe3e33e3",
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/game/cyberpunk_nr_adapter.py",
+      "source_id": "cyberpunk-bridge-source/game/cyberpunk_nr_adapter.py",
+      "sha256": "22da70eebf71a1692a2a5a372f220014a66ab13e659394b8a16de0352cacadeb",
+      "bytes": 21588,
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/game/cyberpunk_nr_web.py",
+      "source_id": "cyberpunk-bridge-source/game/cyberpunk_nr_web.py",
+      "sha256": "0da630ec90247fb68aafa2544193265031699a5f238be912a4c9e2b917c8a693",
+      "bytes": 24727,
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/game/nr_numeric_cost_meter_v1.py",
+      "source_id": "cyberpunk-bridge-source/game/nr_numeric_cost_meter_v1.py",
+      "sha256": "a26ff8e39c92f283160185bcbaea780a31e2b5305b551ef5a31839596d1a3283",
+      "bytes": 12559,
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/game/periodic_flash_snapshot_v1.py",
+      "source_id": "cyberpunk-bridge-source/game/periodic_flash_snapshot_v1.py",
+      "sha256": "d5445797f863ac47c0c250bd5ed46c00a02ba8b53defc09f8f3788427017818d",
+      "bytes": 7496,
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/game/periodic_flash_snapshot_v2.py",
+      "source_id": "cyberpunk-bridge-source/game/periodic_flash_snapshot_v2.py",
+      "sha256": "a65476351a7e51e35fa4913d66407149a017f2ffdc791148f582640be7a1f16a",
+      "bytes": 21001,
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/include/nr_bridge.h",
+      "source_id": "cyberpunk-bridge-source/include/nr_bridge.h",
+      "bytes": 6188,
+      "sha256": "c8969bfb2f0552f8644ee7e61e3a159bba6db8db12722a61dfb6b951b1f089ea",
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/include/nr_contract.h",
+      "source_id": "cyberpunk-bridge-source/include/nr_contract.h",
+      "bytes": 981,
+      "sha256": "487695db1c083fb27079e2c69814ca1ce0fc3e0cf13a77e1402af4a9ff8fa526",
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/include/nr_core.h",
+      "source_id": "cyberpunk-bridge-source/include/nr_core.h",
+      "bytes": 451,
+      "sha256": "8f6effd7cc63b56c14faff6e4862a1e93eabbb57d33fb8c9f79f78ad47297694",
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/include/nr_diag.h",
+      "source_id": "cyberpunk-bridge-source/include/nr_diag.h",
+      "bytes": 1166,
+      "sha256": "4f685edc5e23f536914951be29a4c1a5165bf71d126a72770c2dc9ff71efd8d2",
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/include/nr_gpu_handoff_api.h",
+      "source_id": "cyberpunk-bridge-source/include/nr_gpu_handoff_api.h",
+      "bytes": 3190,
+      "sha256": "f4571f153d6c966cdf370c349913334bc082009a0dfc07ded6e6e89cfa7e2ffb",
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/include/nr_hdr_resource_pool_api.h",
+      "source_id": "cyberpunk-bridge-source/include/nr_hdr_resource_pool_api.h",
+      "bytes": 804,
+      "sha256": "2f927e7187cd440eef2d5ca26d9f311ac4afa78837d0daf7f4296a394b83c64f",
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/include/nr_identity.h",
+      "source_id": "cyberpunk-bridge-source/include/nr_identity.h",
+      "bytes": 1781,
+      "sha256": "6b509bd2e2ebf2e62b44bdf4eccb716d8a10a1549767d10d1bc33a39675b02c0",
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/include/nr_python.h",
+      "source_id": "cyberpunk-bridge-source/include/nr_python.h",
+      "bytes": 3083,
+      "sha256": "7c488a4aa1753f069fb6591960819542ed31bc002d51a3e40a3c62fd2f3fc32e",
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/include/nr_route_adapters.h",
+      "source_id": "cyberpunk-bridge-source/include/nr_route_adapters.h",
+      "bytes": 466,
+      "sha256": "13fb972602c875f20bc99558b10e8a5ab127d203b9679cfc83770d9b9a1085b6",
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/include/nr_sync_probe.h",
+      "source_id": "cyberpunk-bridge-source/include/nr_sync_probe.h",
+      "bytes": 8372,
+      "sha256": "2c2e25f5dad2abba17c012809ebedbb9eea9fc0f9cd8f5fbfbfed08f9844f8da",
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/python/cyberpunk_nr_adapter.py",
+      "source_id": "installed-plugins/cyberpunk_nr_adapter.py",
+      "bytes": 21588,
+      "sha256": "22da70eebf71a1692a2a5a372f220014a66ab13e659394b8a16de0352cacadeb",
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/python/cyberpunk_nr_web.py",
+      "source_id": "installed-plugins/cyberpunk_nr_web.py",
+      "bytes": 24727,
+      "sha256": "0da630ec90247fb68aafa2544193265031699a5f238be912a4c9e2b917c8a693",
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/python/nr_hdr_proxy.hlsl",
+      "source_id": "installed-plugins/nr_hdr_proxy.hlsl",
+      "bytes": 1830,
+      "sha256": "5aabd2fda6062983a8976a888ad90ec692997ce653dd8637489efa564fcae5ad",
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/python/nr_numeric_cost_meter_v1.py",
+      "source_id": "installed-plugins/nr_numeric_cost_meter_v1.py",
+      "bytes": 12559,
+      "sha256": "a26ff8e39c92f283160185bcbaea780a31e2b5305b551ef5a31839596d1a3283",
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/shaders/nr_hdr_proxy.hlsl",
+      "source_id": "cyberpunk-bridge-source/shaders/nr_hdr_proxy.hlsl",
+      "sha256": "5aabd2fda6062983a8976a888ad90ec692997ce653dd8637489efa564fcae5ad",
+      "bytes": 1830,
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/src/asi.cpp",
+      "source_id": "cyberpunk-bridge-source/src/asi.cpp",
+      "bytes": 68063,
+      "sha256": "2543c94aea2080634a1f3dd84987fb706dfdd9559cf788bfcaec542a23ff12b7",
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/src/deferred_identity.cpp",
+      "source_id": "cyberpunk-bridge-source/src/deferred_identity.cpp",
+      "bytes": 59674,
+      "sha256": "4509bf39dac87f9481ec9fc8d01e4a619b64e5c2f3d8ee93c1487b846655ffe7",
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/src/deferred_identity.h",
+      "source_id": "cyberpunk-bridge-source/src/deferred_identity.h",
+      "bytes": 2290,
+      "sha256": "3dd23acf52cc62b68aa9c4f351e7b7a3b881f7756681decb836a3d42ecaa86f2",
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/src/generic_dlss_probe.cpp",
+      "source_id": "cyberpunk-bridge-source/src/generic_dlss_probe.cpp",
+      "bytes": 6581,
+      "sha256": "ab499103da4f54f0ebb1b1c8bc831c1377e34487290123da3b78b2b6fe02027a",
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/src/nr_contract.cpp",
+      "source_id": "cyberpunk-bridge-source/src/nr_contract.cpp",
+      "bytes": 1933,
+      "sha256": "9c0a160d17f9af1257704fd5b163570adf741f4fc06948aee57ad956b5194367",
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/src/nr_core.cpp",
+      "source_id": "cyberpunk-bridge-source/src/nr_core.cpp",
+      "bytes": 4982,
+      "sha256": "ef136dc6e3fa07441024900a17b7aa3720cf28cd166835a5f96fbb1a536681de",
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/src/nr_diag.cpp",
+      "source_id": "cyberpunk-bridge-source/src/nr_diag.cpp",
+      "bytes": 5049,
+      "sha256": "4c0cba271eeb167cb78b1d7071870c43c507bd5b336f6cea10ec71a8a78ed728",
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/src/nr_gpu_handoff.cpp",
+      "source_id": "cyberpunk-bridge-source/src/nr_gpu_handoff.cpp",
+      "bytes": 8425,
+      "sha256": "0ba577029b5ab79af64d917db444f5478e8d0326b01a69974cb09f0e2849bb28",
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/src/nr_gpu_handoff.h",
+      "source_id": "cyberpunk-bridge-source/src/nr_gpu_handoff.h",
+      "bytes": 781,
+      "sha256": "b6898d17dd0e1d4dc35a51ea55c48fbd7f390386080cbdc7549ebb240f2af958",
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/src/nr_gpu_handoff_reuse.h",
+      "source_id": "cyberpunk-bridge-source/src/nr_gpu_handoff_reuse.h",
+      "bytes": 922,
+      "sha256": "23adeedbf06c8fa0b830e42be85213cd5b125187572534f82062e05b630d4ada",
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/src/nr_hdr_proxy.cpp",
+      "source_id": "cyberpunk-bridge-source/src/nr_hdr_proxy.cpp",
+      "bytes": 29397,
+      "sha256": "1bac36dfdb54d1a4209a03a3adf70f95a20ff14329659dc5dda32382fba49f4c",
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/src/nr_hdr_proxy.h",
+      "source_id": "cyberpunk-bridge-source/src/nr_hdr_proxy.h",
+      "bytes": 6306,
+      "sha256": "d0f80bdbfda2d6d097acaaf461bf17306056849472fd9aebc7318dd058303650",
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/src/nr_hdr_resource_pool.h",
+      "source_id": "cyberpunk-bridge-source/src/nr_hdr_resource_pool.h",
+      "bytes": 16633,
+      "sha256": "07eefa76c01d531e879c0dec93552033f3b3e9e6f8642673464d727d23f097eb",
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/src/nr_ngx_adapter.cpp",
+      "source_id": "cyberpunk-bridge-source/src/nr_ngx_adapter.cpp",
+      "bytes": 3685,
+      "sha256": "7b2a6d77e0e1c49319b823ce6f2ec4310ee5f22d377e1ad03502fdf84c136dcf",
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/src/nr_one_frame_readback.cpp",
+      "source_id": "cyberpunk-bridge-source/src/nr_one_frame_readback.cpp",
+      "bytes": 7717,
+      "sha256": "7363db869e2372bc0539150a0811a15d26acb34069fe9754b4a7d58531f73f44",
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/src/nr_one_frame_readback.h",
+      "source_id": "cyberpunk-bridge-source/src/nr_one_frame_readback.h",
+      "bytes": 768,
+      "sha256": "6ec73975d99bf80d723e333ade2f1a047067f78db7478d861a6989122be3be91",
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/src/nr_python.cpp",
+      "source_id": "cyberpunk-bridge-source/src/nr_python.cpp",
+      "bytes": 11039,
+      "sha256": "202db7cc0b61b3ec6fe031b3614cec89475a0f995f60f560a4152ea17251c76b",
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/src/nr_record_timing.h",
+      "source_id": "cyberpunk-bridge-source/src/nr_record_timing.h",
+      "bytes": 1849,
+      "sha256": "3767a67e18cc0042c88db1c541c1e4e6eca6f2a04e4bf175d2b30236963fa0fd",
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/src/nr_sync_probe.cpp",
+      "source_id": "cyberpunk-bridge-source/src/nr_sync_probe.cpp",
+      "bytes": 12254,
+      "sha256": "b204be3c6006d88e61d17096bf6cbd69d4f02c2791411f1da39ecc758110536d",
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/src/nr_tail_probe.cpp",
+      "source_id": "cyberpunk-bridge-source/src/nr_tail_probe.cpp",
+      "bytes": 9257,
+      "sha256": "cbfd88008fb40be3e1414755da23f74b6a17f0800e80c5438631cea1d3262500",
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/src/nr_tail_probe.h",
+      "source_id": "cyberpunk-bridge-source/src/nr_tail_probe.h",
+      "bytes": 1903,
+      "sha256": "efdd4083019141b77a396319b26427c5753103cb41ef98e43e2f4255972b55c6",
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/src/periodic_flash_native_diag.h",
+      "source_id": "cyberpunk-bridge-source/src/periodic_flash_native_diag.h",
+      "bytes": 8388,
+      "sha256": "e4658b519c1051786dd504f4ca2f66ee427ef92a29c87cf671c64f62173638bf",
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/src/routes/dlss.cpp",
+      "source_id": "cyberpunk-bridge-source/src/routes/dlss.cpp",
+      "bytes": 471,
+      "sha256": "82b470b2bc5f6f7bb99f57a296e8464808658cefd4fadf5e01fe567e5ef6fddd",
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/src/routes/dlss_identity.cpp",
+      "source_id": "cyberpunk-bridge-source/src/routes/dlss_identity.cpp",
+      "bytes": 3670,
+      "sha256": "d80a8c1584e198f0296d3c9e35947f65d442d340e0a1aaae657233195c1d77a7",
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/src/routes/fsr.cpp",
+      "source_id": "cyberpunk-bridge-source/src/routes/fsr.cpp",
+      "bytes": 789,
+      "sha256": "9b50c31d6516fe188b6299666d329807f3922f426f8340dd00e69d06b1e0e727",
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/src/routes/xess.cpp",
+      "source_id": "cyberpunk-bridge-source/src/routes/xess.cpp",
+      "bytes": 542,
+      "sha256": "85c0703e58b4be476ff9998b57f5b7c4923f36c0adb00142e3521ef2b2eaaba2",
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/src/xess_identity.cpp",
+      "source_id": "cyberpunk-bridge-source/src/xess_identity.cpp",
+      "bytes": 4920,
+      "sha256": "4d4ffe84792b0b1e948819c3671243c9055e8363e9c61da3c64e81f8a12b2061",
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/src/xess_identity.h",
+      "source_id": "cyberpunk-bridge-source/src/xess_identity.h",
+      "bytes": 533,
+      "sha256": "7b74f991676ab76bb3ac688b99262949c71bfdb07ad7236e201c13973ab39c6b",
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/tests/adapter_smoke.py",
+      "source_id": "cyberpunk-bridge-source/tests/adapter_smoke.py",
+      "sha256": "3117d7c71bea7d6fafabf4697be6570515657b8f3b112626fdd33efbb2aaf3f2",
+      "bytes": 2180,
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/tests/generic_probe_smoke.cpp",
+      "source_id": "cyberpunk-bridge-source/tests/generic_probe_smoke.cpp",
+      "sha256": "a823545c87d0819a61243d15b57a8157f4ecfa43c263e4dcff2c2b77cb769c92",
+      "bytes": 3312,
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/tests/gpu_handoff_cpu.cpp",
+      "source_id": "cyberpunk-bridge-source/tests/gpu_handoff_cpu.cpp",
+      "sha256": "88ee1893872a4ffbec1c863aeb2dfe94383a05006b2bdda14ae856a8da18d2a2",
+      "bytes": 10128,
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/tests/gpu_handoff_host_cpu.py",
+      "source_id": "cyberpunk-bridge-source/tests/gpu_handoff_host_cpu.py",
+      "sha256": "4382f64e545ddc3a736c4a13f2875548af30cf9d40aaff22b1cc4419e10576b3",
+      "bytes": 11170,
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/tests/hdr_proxy_motion_gpu.cpp",
+      "source_id": "cyberpunk-bridge-source/tests/hdr_proxy_motion_gpu.cpp",
+      "sha256": "16155502e3c430e6f0bbb89c4ede4a0b8e942fa59780a87477a5cf56c6aed978",
+      "bytes": 13901,
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/tests/hdr_proxy_shader.cpp",
+      "source_id": "cyberpunk-bridge-source/tests/hdr_proxy_shader.cpp",
+      "sha256": "20d0b7876ec589b112f6fc2a44707509179157ba32942b40bd418ae9badd25c0",
+      "bytes": 993,
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/tests/hdr_resource_pool_controls_cpu.cpp",
+      "source_id": "cyberpunk-bridge-source/tests/hdr_resource_pool_controls_cpu.cpp",
+      "sha256": "85a1a18575946e938f5e1fc60d9cce398a4f40c2e06006febace673d0be7f6d1",
+      "bytes": 2114,
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/tests/hdr_resource_pool_cpu.cpp",
+      "source_id": "cyberpunk-bridge-source/tests/hdr_resource_pool_cpu.cpp",
+      "sha256": "02dd176057ce2b91edd18dd504f9482d84a4ac76b6c584d7c555808b29081cbd",
+      "bytes": 16710,
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/tests/hdr_resource_pool_gpu.cpp",
+      "source_id": "cyberpunk-bridge-source/tests/hdr_resource_pool_gpu.cpp",
+      "sha256": "be4c39eacabd03cf8309619b03966c744556e06d2a24f7caaea1386237552d6f",
+      "bytes": 18760,
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/tests/hook_smoke.cpp",
+      "source_id": "cyberpunk-bridge-source/tests/hook_smoke.cpp",
+      "sha256": "603dd61d6126c87af98385805a3cc7a1c58ad4f7b2a98cdda246f777208f8431",
+      "bytes": 5761,
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/tests/mock_optiscaler.cpp",
+      "source_id": "cyberpunk-bridge-source/tests/mock_optiscaler.cpp",
+      "sha256": "4bffcef7742d9342015d54bab07f500e81f8688a3c74b23d80dc5a081569aed3",
+      "bytes": 861,
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/tests/mock_streamline.cpp",
+      "source_id": "cyberpunk-bridge-source/tests/mock_streamline.cpp",
+      "sha256": "135f85fcb109be49e2167317622280884159b18194fdbdf2f8b6f45d9f0ceb2f",
+      "bytes": 840,
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/tests/offline.cpp",
+      "source_id": "cyberpunk-bridge-source/tests/offline.cpp",
+      "sha256": "574db5b1ef9213993640bb08f0bc4c86cfeb7b4316cf32bcd6f5bc579d42adf4",
+      "bytes": 9612,
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/tests/pixel_probe_smoke.py",
+      "source_id": "cyberpunk-bridge-source/tests/pixel_probe_smoke.py",
+      "sha256": "19dea817018a00dd477605c32a85515d7e8b995e3bfb0401dc134c3d5f929173",
+      "bytes": 1138,
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/tests/re8_panel_smoke.py",
+      "source_id": "cyberpunk-bridge-source/tests/re8_panel_smoke.py",
+      "sha256": "2505f83f4f58b3cd0420138cd9b66ec3ad368feec9c02aa2ea6e26ca692f683b",
+      "bytes": 5651,
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/tests/record_timing_cpu.cpp",
+      "source_id": "cyberpunk-bridge-source/tests/record_timing_cpu.cpp",
+      "sha256": "6a09528dbf904cb005b750707a8ab18b594d36beffe5248aab4f2a4cf198fe9b",
+      "bytes": 1807,
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/tests/sl_smoke.cpp",
+      "source_id": "cyberpunk-bridge-source/tests/sl_smoke.cpp",
+      "sha256": "d251496c379a293f7b383ea1573b6822259d8a72281d4e3c0b0f0f61ee03a652",
+      "bytes": 3391,
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/tests/state_proof_cpu.cpp",
+      "source_id": "cyberpunk-bridge-source/tests/state_proof_cpu.cpp",
+      "sha256": "c9460d81f7ea545d14390849c84f13afdf915c2c530a8065b3081036abcd23e3",
+      "bytes": 17742,
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/tests/sync_probe.cpp",
+      "source_id": "cyberpunk-bridge-source/tests/sync_probe.cpp",
+      "sha256": "498ac586fbe19a7c54b7c627cd72727da566ab68b2f165565dd73c0493e76425",
+      "bytes": 3730,
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/tests/tail_probe.cpp",
+      "source_id": "cyberpunk-bridge-source/tests/tail_probe.cpp",
+      "sha256": "05d1aa2558f2ebbf9d927638f33f243bab1d4fd54022f805c56ace60a81962c6",
+      "bytes": 8884,
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/tests/web_smoke.py",
+      "source_id": "cyberpunk-bridge-source/tests/web_smoke.py",
+      "sha256": "e5e9b52f7b162f9a31de02ca856288bfb157874c58c329b85933a277e7519946",
+      "bytes": 3213,
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/tools/analyze_r11g11b10.py",
+      "source_id": "cyberpunk-bridge-source/tools/analyze_r11g11b10.py",
+      "sha256": "d7d4d996ea8db890a26c75e50c55f7dda65dc0d604ac41ddf3dce3d5c08fe0a5",
+      "bytes": 3306,
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/tools/apply_front_cache_supplement_v1.py",
+      "source_id": "cyberpunk-bridge-source/tools/apply_front_cache_supplement_v1.py",
+      "sha256": "68f2247464c62a31c952fdc4fc7bd5f8ed2321de601fd8a99f30025a0dba4162",
+      "bytes": 7540,
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/tools/benchmark_gpu_bridge_combined_live_v2.py",
+      "source_id": "cyberpunk-bridge-source/tools/benchmark_gpu_bridge_combined_live_v2.py",
+      "sha256": "be4a3d54d828e0b80e7854667b9dababebab61b61cb9e41ef036e3c022d7fc81",
+      "bytes": 3542,
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/tools/benchmark_gpu_handoff_live_v1.py",
+      "source_id": "cyberpunk-bridge-source/tools/benchmark_gpu_handoff_live_v1.py",
+      "sha256": "3636d8eebeb879e001ccbbdb459d4fb49dbec9a3f1b8be16a72c915454db7396",
+      "bytes": 18858,
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/tools/benchmark_gpu_handoff_serial_live_v2.py",
+      "source_id": "cyberpunk-bridge-source/tools/benchmark_gpu_handoff_serial_live_v2.py",
+      "sha256": "667669cb70d75bcd893087aa794052d102b76b7bb69f0e33fd2b05a68ebe8bbb",
+      "bytes": 1621,
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/tools/benchmark_live_web_720_v1.py",
+      "source_id": "cyberpunk-bridge-source/tools/benchmark_live_web_720_v1.py",
+      "sha256": "5ce4418b201bc5263dd7d19387308c7265d51da7e5465760b85ac76fc7182b31",
+      "bytes": 17459,
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/tools/build_bridge_outer_timing_v1_cpu.py",
+      "source_id": "cyberpunk-bridge-source/tools/build_bridge_outer_timing_v1_cpu.py",
+      "sha256": "8dc409a5293d3a695abb5daf7a53787f86014ac3c13c5ddd22a276227648fc5b",
+      "bytes": 4975,
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/tools/build_bridge_pool_byte_probe_v2_cpu.py",
+      "source_id": "cyberpunk-bridge-source/tools/build_bridge_pool_byte_probe_v2_cpu.py",
+      "sha256": "dfb1e63b372eb9de610b9b8845cac5315d41f44876479b4e00eced0ac4160896",
+      "bytes": 5215,
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/tools/build_flash_startup_shadow_v1_cpu.py",
+      "source_id": "cyberpunk-bridge-source/tools/build_flash_startup_shadow_v1_cpu.py",
+      "sha256": "9873bba8b21e426c02b5948d5851acdc76271d0b8b29dc52dd59a459010520b7",
+      "bytes": 7998,
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/tools/build_periodic_flash_diag_v2_cpu.py",
+      "source_id": "cyberpunk-bridge-source/tools/build_periodic_flash_diag_v2_cpu.py",
+      "sha256": "1fd700edf1d27404613b9104eb5d310fa9851db0f035e2c498d17764b5efc25d",
+      "bytes": 27707,
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/tools/build_periodic_flash_state_proof_v1_native_cpu.py",
+      "source_id": "cyberpunk-bridge-source/tools/build_periodic_flash_state_proof_v1_native_cpu.py",
+      "sha256": "d6b40ba17d09795346511af291dcd2f43463e11e13d9a843e4311ae016b854b2",
+      "bytes": 2748,
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/tools/build_terminal_sidecar_nomimmax_cpu_20261002.py",
+      "source_id": "cyberpunk-bridge-source/tools/build_terminal_sidecar_nomimmax_cpu_20261002.py",
+      "sha256": "ccc04921b57b8ca3c4998d42ae5919327fc7224ea71ad209c2cc96eeabde36b0",
+      "bytes": 1669,
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/tools/capture_periodic_flash_diag_v2_cpu.py",
+      "source_id": "cyberpunk-bridge-source/tools/capture_periodic_flash_diag_v2_cpu.py",
+      "sha256": "7a7685af7366d06999992d6f40610183c7a457042873f8f353dcbdaa1da8f332",
+      "bytes": 6048,
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/tools/check_canonical_installed_reuse_720_v1.py",
+      "source_id": "cyberpunk-bridge-source/tools/check_canonical_installed_reuse_720_v1.py",
+      "sha256": "8d0d18b25de05e1d30f568fc5a94786fb511270f8ad59bbd706ec4b0ff6dc179",
+      "bytes": 11206,
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/tools/compare_lifecycle_audit_720_v1.py",
+      "source_id": "cyberpunk-bridge-source/tools/compare_lifecycle_audit_720_v1.py",
+      "sha256": "c880d49380a36361659396f1028184a3c5be34ec18f802920a7f41887cca24dc",
+      "bytes": 50898,
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/tools/compare_lifecycle_audit_720_v6.py",
+      "source_id": "cyberpunk-bridge-source/tools/compare_lifecycle_audit_720_v6.py",
+      "sha256": "a3f70e619e70238db9aae4f34d0b1f8bfce90604bfce0c6ec0812bb12510ca78",
+      "bytes": 59183,
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/tools/compare_live_numeric_cost_720_v1.py",
+      "source_id": "cyberpunk-bridge-source/tools/compare_live_numeric_cost_720_v1.py",
+      "sha256": "77c86e89fdf289b1a8477b6dfc35d48e10ec3c57427c3166b4c0b56efd109cc4",
+      "bytes": 10919,
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/tools/compare_validation_batch_720_v1.py",
+      "source_id": "cyberpunk-bridge-source/tools/compare_validation_batch_720_v1.py",
+      "sha256": "4cdad1f9df2938479a53f22772f18602e3e63575b86d31481f872241c2c275f1",
+      "bytes": 16103,
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/tools/compose_native_math_candidates_v1_cpu.py",
+      "source_id": "cyberpunk-bridge-source/tools/compose_native_math_candidates_v1_cpu.py",
+      "sha256": "c0b3d6a492611dd4774879df02091bb3dcfc795b4aaef44b049654e1d832cbcf",
+      "bytes": 8807,
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/tools/freeze_installed_validation_flash_720_v1.py",
+      "source_id": "cyberpunk-bridge-source/tools/freeze_installed_validation_flash_720_v1.py",
+      "sha256": "3b433a81d364889a984d77225f1d6f308b2338c131c9b7102545469b93ba7dea",
+      "bytes": 5436,
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/tools/install_bridge_cache_trial_v1.py",
+      "source_id": "cyberpunk-bridge-source/tools/install_bridge_cache_trial_v1.py",
+      "sha256": "64c8449c942594e3cb9e826ebdb08c9e8d705c3a3ed064d74322822844970bc9",
+      "bytes": 6185,
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/tools/install_bridge_resource_pool_trial_v1.py",
+      "source_id": "cyberpunk-bridge-source/tools/install_bridge_resource_pool_trial_v1.py",
+      "sha256": "0c0c8b87ff6b149bb3d39a2f2acd92eb19d17028afa987baba6dbc87378fc62d",
+      "bytes": 11019,
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/tools/install_flash_alias_state_v2_cpu.py",
+      "source_id": "cyberpunk-bridge-source/tools/install_flash_alias_state_v2_cpu.py",
+      "sha256": "6ede86005350bbbccfe704c8a284179d34495c8dc48cb34621882fc3b0437845",
+      "bytes": 800,
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/tools/install_flash_cp_default_v5_cpu.py",
+      "source_id": "cyberpunk-bridge-source/tools/install_flash_cp_default_v5_cpu.py",
+      "sha256": "b93aeff849dff0635ad900ba957acea1d98dabc13c45485f6e42ffd4b334dd82",
+      "bytes": 806,
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/tools/install_flash_list_state_v3_cpu.py",
+      "source_id": "cyberpunk-bridge-source/tools/install_flash_list_state_v3_cpu.py",
+      "sha256": "9e583aecffb824752edf04da60c67991b55049cad50a2172aca6c96e441f0478",
+      "bytes": 801,
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/tools/install_flash_local_decl_v4_cpu.py",
+      "source_id": "cyberpunk-bridge-source/tools/install_flash_local_decl_v4_cpu.py",
+      "sha256": "6314d56c373cc7bbe947aa4e75ab05cfa309f557347cb3f6f401b7103802044d",
+      "bytes": 803,
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/tools/install_flash_startup_shadow_v1_cpu.py",
+      "source_id": "cyberpunk-bridge-source/tools/install_flash_startup_shadow_v1_cpu.py",
+      "sha256": "f2dde63d005c0f9eb2d9fd957748a4482bfbd428a73a06fb51566f4e24697209",
+      "bytes": 3584,
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/tools/install_gpu_handoff_trial_v1.py",
+      "source_id": "cyberpunk-bridge-source/tools/install_gpu_handoff_trial_v1.py",
+      "sha256": "c2391f28d8ce7cf58d4dd8ed6fb0a3d51611ff736c7f6035ea30ce8af07440f6",
+      "bytes": 7816,
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/tools/install_gpu_owner_transfer_trial_v1.py",
+      "source_id": "cyberpunk-bridge-source/tools/install_gpu_owner_transfer_trial_v1.py",
+      "sha256": "12eb0729ecbcf40adedac30030a8530a29918da6c351aed418011dd332ce6188",
+      "bytes": 6455,
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/tools/install_gpu_serial_handoff_trial_v2.py",
+      "source_id": "cyberpunk-bridge-source/tools/install_gpu_serial_handoff_trial_v2.py",
+      "sha256": "0fc4f2d873dadea2d2579d493ae017e43bbb11196ee41d309644b60d15654e28",
+      "bytes": 6489,
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/tools/install_live_cost_meter_v1.py",
+      "source_id": "cyberpunk-bridge-source/tools/install_live_cost_meter_v1.py",
+      "sha256": "c59e2d08ee9d0cdf7e543982b40b492d315d1468f214d0ca31bb149436b14a75",
+      "bytes": 3558,
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/tools/install_periodic_flash_state_proof_v1_cpu.py",
+      "source_id": "cyberpunk-bridge-source/tools/install_periodic_flash_state_proof_v1_cpu.py",
+      "sha256": "cc2cc9e4ae0e784011295bc805ee79e4ca0d1effd4dd2fef4707750d610f9a93",
+      "bytes": 4479,
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/tools/install_periodic_flash_v2.py",
+      "source_id": "cyberpunk-bridge-source/tools/install_periodic_flash_v2.py",
+      "sha256": "3f2883c3b1f9f652d57a603bd8ff905a2bbddb085816274aa74501118c18d34c",
+      "bytes": 6256,
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/tools/install_validation_batch_720_v1.py",
+      "source_id": "cyberpunk-bridge-source/tools/install_validation_batch_720_v1.py",
+      "sha256": "fff9e3f65242b533d7648fa136a71e52e2b259a59009077812a3d730fe219dd4",
+      "bytes": 5943,
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/tools/launch_gpu_handoff_trial_v1.ps1",
+      "source_id": "cyberpunk-bridge-source/tools/launch_gpu_handoff_trial_v1.ps1",
+      "sha256": "231cc6e6c8370c6dd44ae70fcacfe53303b6c590d253575843f35f869af6d661",
+      "bytes": 2714,
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/tools/measure_hdr_shader_compile_cpu_20261001.py",
+      "source_id": "cyberpunk-bridge-source/tools/measure_hdr_shader_compile_cpu_20261001.py",
+      "sha256": "2919bc603ed9694d10b009f15349be1ef30e2bf39895388d006090b91f2dddef",
+      "bytes": 5587,
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/tools/prepare_bridge_cache_integration_v1_cpu.py",
+      "source_id": "cyberpunk-bridge-source/tools/prepare_bridge_cache_integration_v1_cpu.py",
+      "sha256": "3f6809f7941ee43673400f6137aa8a650eb3264cd734f8f1177c1ea6fe703ae7",
+      "bytes": 13038,
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/tools/prepare_bridge_outer_timing_v1_cpu.py",
+      "source_id": "cyberpunk-bridge-source/tools/prepare_bridge_outer_timing_v1_cpu.py",
+      "sha256": "2404786b7a92adc0363f3af3ea5acf0bfcbd9fbf1bf56a59c2f806e7a8222024",
+      "bytes": 12399,
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/tools/prepare_bridge_resource_pool_web_v1_cpu.py",
+      "source_id": "cyberpunk-bridge-source/tools/prepare_bridge_resource_pool_web_v1_cpu.py",
+      "sha256": "0e52f7c33ea57bacbf5e02782d7ec35b04a492615dc0c72e12cd1d8d5f80fdcb",
+      "bytes": 9282,
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/tools/prepare_dx12_xpu_fence_probe_v2_cpu.py",
+      "source_id": "cyberpunk-bridge-source/tools/prepare_dx12_xpu_fence_probe_v2_cpu.py",
+      "sha256": "7e47d137158c2314dcbbc14818425260cbf94249f2cf820be128b9a88d69039f",
+      "bytes": 6618,
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/tools/prepare_dx12_xpu_fence_probe_v3_cpu.py",
+      "source_id": "cyberpunk-bridge-source/tools/prepare_dx12_xpu_fence_probe_v3_cpu.py",
+      "sha256": "bcaa8afe5f7f18e9e4113429a7229ef58215028fe1a48a6729308ec928a99c7b",
+      "bytes": 5607,
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/tools/prepare_dx12_xpu_fence_probe_v4_cpu.py",
+      "source_id": "cyberpunk-bridge-source/tools/prepare_dx12_xpu_fence_probe_v4_cpu.py",
+      "sha256": "bca42cedbbf2d5305437311b59464be08255f39260dd5bc97056f3f0e6bc4bda",
+      "bytes": 4967,
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/tools/prepare_dx12_xpu_fence_probe_v5_cpu.py",
+      "source_id": "cyberpunk-bridge-source/tools/prepare_dx12_xpu_fence_probe_v5_cpu.py",
+      "sha256": "ed5daefe99528398850b67a6b5213b764688e5eab84dc2b828990a439c4910a8",
+      "bytes": 4293,
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/tools/prepare_dx12_xpu_fence_probe_v6_cpu.py",
+      "source_id": "cyberpunk-bridge-source/tools/prepare_dx12_xpu_fence_probe_v6_cpu.py",
+      "sha256": "9e52fbb47cc6f0d5fd60d4587d9d2c528bf78d12a3663f1790e9bfd21862e888",
+      "bytes": 4161,
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/tools/prepare_flash_alias_state_v2_cpu.py",
+      "source_id": "cyberpunk-bridge-source/tools/prepare_flash_alias_state_v2_cpu.py",
+      "sha256": "646f27f6c67365ef1a6b63950700e7610cea47ea31b27cc2aad3d5c48f8e0561",
+      "bytes": 8250,
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/tools/prepare_flash_cp_default_v5_cpu.py",
+      "source_id": "cyberpunk-bridge-source/tools/prepare_flash_cp_default_v5_cpu.py",
+      "sha256": "51646001216eabaa7efd8de59ac4dd584d1cbaa95142611e581698259ffacf42",
+      "bytes": 7489,
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/tools/prepare_flash_list_state_v3_cpu.py",
+      "source_id": "cyberpunk-bridge-source/tools/prepare_flash_list_state_v3_cpu.py",
+      "sha256": "891de280ee55213bd17e65afe0be986d200ceb63af6f32c3edd3c97b205b4c51",
+      "bytes": 9382,
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/tools/prepare_flash_local_decl_v4_cpu.py",
+      "source_id": "cyberpunk-bridge-source/tools/prepare_flash_local_decl_v4_cpu.py",
+      "sha256": "2b783608342a7e6322ab2a3d9386d2e649e375856183ee4d40049caee997100b",
+      "bytes": 8569,
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/tools/prepare_flash_startup_shadow_v1_cpu.py",
+      "source_id": "cyberpunk-bridge-source/tools/prepare_flash_startup_shadow_v1_cpu.py",
+      "sha256": "c84312d31d573845fca0e51c2496e2b2ea16ea98524276f23da60c8f11da4621",
+      "bytes": 8569,
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/tools/prepare_live_web_sweep_v1.py",
+      "source_id": "cyberpunk-bridge-source/tools/prepare_live_web_sweep_v1.py",
+      "sha256": "0a190889fc168c76e948db544f19576e48e2e57b119874cbd51420ffac276434",
+      "bytes": 3473,
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/tools/prepare_native_batch_common_v7_20261001.py",
+      "source_id": "cyberpunk-bridge-source/tools/prepare_native_batch_common_v7_20261001.py",
+      "sha256": "969bed9708a945c6ac89d5f7bc10f9ca04b1d510c399e811730b820bc3c3677c",
+      "bytes": 11882,
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/tools/prepare_periodic_flash_diag_v2_cpu.py",
+      "source_id": "cyberpunk-bridge-source/tools/prepare_periodic_flash_diag_v2_cpu.py",
+      "sha256": "061516f1c577049424a3f75e30a7f3f7169088f56b597942bc4acbbf6fdcf41d",
+      "bytes": 10938,
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/tools/prepare_periodic_flash_state_proof_build_v1_cpu.py",
+      "source_id": "cyberpunk-bridge-source/tools/prepare_periodic_flash_state_proof_build_v1_cpu.py",
+      "sha256": "90d8367208f77f47a10d5f01d55f08836077d8b59b609e6a05f7ae0c616b8149",
+      "bytes": 2060,
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/tools/prepare_reference_slow_profiles_720_v1.py",
+      "source_id": "cyberpunk-bridge-source/tools/prepare_reference_slow_profiles_720_v1.py",
+      "sha256": "55d2cb50d499bf9ee07ed1e60f30638b559b479fd5086c9b9452c05c1f4800ed",
+      "bytes": 38292,
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/tools/prepare_serial_gpu_handoff_v2_cpu.py",
+      "source_id": "cyberpunk-bridge-source/tools/prepare_serial_gpu_handoff_v2_cpu.py",
+      "sha256": "47b46c28f1b4514cef755ecb215b45845f019c58bfb796b44e6502b977791794",
+      "bytes": 2027,
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/tools/preview_captured_frame.py",
+      "source_id": "cyberpunk-bridge-source/tools/preview_captured_frame.py",
+      "sha256": "5ea59a04d981a707f9ce16855d3d2ffd39d40f404a832d31fb62423ce2dce870",
+      "bytes": 5235,
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/tools/promote_bridge_cache_source_v1_cpu.py",
+      "source_id": "cyberpunk-bridge-source/tools/promote_bridge_cache_source_v1_cpu.py",
+      "sha256": "1491fe8f88eb16794183749e1e939fd22ef7cf7e75b119d7864e164a0f7e4a5b",
+      "bytes": 6077,
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/tools/promote_lifecycle_source_20261001.py",
+      "source_id": "cyberpunk-bridge-source/tools/promote_lifecycle_source_20261001.py",
+      "sha256": "7fce558937a621c4ef46c94de981cf9cd5e1f843d1d60d7375847c0777b6e05f",
+      "bytes": 7124,
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/tools/promote_native_flash_default_cpu.py",
+      "source_id": "cyberpunk-bridge-source/tools/promote_native_flash_default_cpu.py",
+      "sha256": "727b11fcf847afed30c7ba8c03a9b4bea4c2e521ceb14fff2ab4bbe0108a7c1f",
+      "bytes": 4428,
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/tools/promote_serial_gpu_bridge_source_v2_cpu.py",
+      "source_id": "cyberpunk-bridge-source/tools/promote_serial_gpu_bridge_source_v2_cpu.py",
+      "sha256": "2148e868d3f9ee47d4371450de6547113a7fcf0b75f9f77942a3965361db8bad",
+      "bytes": 38986,
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/tools/repair_game_handoff_wrapper_v1.py",
+      "source_id": "cyberpunk-bridge-source/tools/repair_game_handoff_wrapper_v1.py",
+      "sha256": "07e7a31f3d9f5ba6e1e17980613a6bf05e486de095d467e53b3bbe26df10fd25",
+      "bytes": 6290,
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/tools/review_bridge_cache_pairs_cpu_v1.py",
+      "source_id": "cyberpunk-bridge-source/tools/review_bridge_cache_pairs_cpu_v1.py",
+      "sha256": "7ce9cea959ee7d5ff42850f6c49881d8f20fb4f9f7e4b2cfab281f775fb2d89e",
+      "bytes": 5199,
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/tools/review_bridge_processing_samples_cpu.py",
+      "source_id": "cyberpunk-bridge-source/tools/review_bridge_processing_samples_cpu.py",
+      "sha256": "9a1435426c0030834fb3371dfd40cc443e2327fdc018ec562d7718fab54aacdf",
+      "bytes": 3631,
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/tools/review_combined_bridge_live_cpu.py",
+      "source_id": "cyberpunk-bridge-source/tools/review_combined_bridge_live_cpu.py",
+      "sha256": "9015d47e3598a2864a55c1099f788f125b18827854394300cbb1e722a0b26dd4",
+      "bytes": 4706,
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/tools/review_combined_bridge_web_cpu.py",
+      "source_id": "cyberpunk-bridge-source/tools/review_combined_bridge_web_cpu.py",
+      "sha256": "0fb372d41957e056efff48784291b7948caae90ff4a870e03d422770917a4325",
+      "bytes": 3428,
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/tools/review_completed_bridge_pair_cpu.py",
+      "source_id": "cyberpunk-bridge-source/tools/review_completed_bridge_pair_cpu.py",
+      "sha256": "8e7bfee5138925e3c9c976bd04fff432bc5db51fbeec3049e632288f88a5f02e",
+      "bytes": 4515,
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/tools/review_gpu_handoff_coupling_cpu.py",
+      "source_id": "cyberpunk-bridge-source/tools/review_gpu_handoff_coupling_cpu.py",
+      "sha256": "f2a3cb6bfb8e16024819af747cdcb8d16b39e65d34219da3ef5c4b28ffd9299f",
+      "bytes": 5763,
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/tools/review_gpu_handoff_product_probe_cpu.py",
+      "source_id": "cyberpunk-bridge-source/tools/review_gpu_handoff_product_probe_cpu.py",
+      "sha256": "fa6459372adabc1e6e731aaa79ac8c93519322232130d432204c661ba4921c19",
+      "bytes": 5769,
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/tools/review_gpu_handoff_v6_cpu.py",
+      "source_id": "cyberpunk-bridge-source/tools/review_gpu_handoff_v6_cpu.py",
+      "sha256": "aad4221b74343a975fbfc3d5e37a2b9c22f561356697e8b816db7bbddef8d379",
+      "bytes": 4157,
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/tools/review_gpu_owner_transfer_cpu.py",
+      "source_id": "cyberpunk-bridge-source/tools/review_gpu_owner_transfer_cpu.py",
+      "sha256": "4106ff17cc7ad7c159c514770098c150468ee031d677a13283f6fc310ad218c3",
+      "bytes": 9664,
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/tools/review_gpu_serial_handoff_cpu_v2.py",
+      "source_id": "cyberpunk-bridge-source/tools/review_gpu_serial_handoff_cpu_v2.py",
+      "sha256": "335f2c9438b242acf342d3758e3a3a7bfb51ec1cda46bb64336ec50c56c31411",
+      "bytes": 6007,
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/tools/review_int8_c128_cost_graph_cpu_20261002.py",
+      "source_id": "cyberpunk-bridge-source/tools/review_int8_c128_cost_graph_cpu_20261002.py",
+      "sha256": "74fb9696ecc239ffa6ff57ab384bd64da2f1ae3160c43cb78e1efb3d481e49c0",
+      "bytes": 7709,
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/tools/review_int8_c128_saved_cost_cpu_20261002.py",
+      "source_id": "cyberpunk-bridge-source/tools/review_int8_c128_saved_cost_cpu_20261002.py",
+      "sha256": "2daa54b01f4af8e6c915b200e2f2ea79392cfd8f4fe5f4767f48a6d5941695fb",
+      "bytes": 12463,
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/tools/review_owned_mlp_reports_cpu.py",
+      "source_id": "cyberpunk-bridge-source/tools/review_owned_mlp_reports_cpu.py",
+      "sha256": "c4362968195d651170cb3d4a82215f887985fe5f95d24fbb9e638f5c1886d3e2",
+      "bytes": 3743,
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/tools/review_serial_bridge_live_v2_cpu.py",
+      "source_id": "cyberpunk-bridge-source/tools/review_serial_bridge_live_v2_cpu.py",
+      "sha256": "c682efdb0863524ac719c0e03a95eb6ba140d7b51a932ddfe1ba8e722847137b",
+      "bytes": 6236,
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/tools/review_vit_compiled_work_v4_cpu_20261002.py",
+      "source_id": "cyberpunk-bridge-source/tools/review_vit_compiled_work_v4_cpu_20261002.py",
+      "sha256": "93b014b48cc482afd3da35e5c598de947c57e21a8aa19b69e17f8d020c638873",
+      "bytes": 7904,
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/tools/review_vit_fullbody_v4_cpu_20261002.py",
+      "source_id": "cyberpunk-bridge-source/tools/review_vit_fullbody_v4_cpu_20261002.py",
+      "sha256": "c7cb6e2859fc99c1de1e667d23956c7baece7a6c457dedb7732e0054fa13ecc5",
+      "bytes": 4207,
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/tools/review_vit_native_local_cpu.py",
+      "source_id": "cyberpunk-bridge-source/tools/review_vit_native_local_cpu.py",
+      "sha256": "cd561dca547f5e92c53a88aab24f8679e7d2eb460328960225b11f568b4784a5",
+      "bytes": 4073,
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/tools/seed_installed_baseline_cache_720_v1.py",
+      "source_id": "cyberpunk-bridge-source/tools/seed_installed_baseline_cache_720_v1.py",
+      "sha256": "6934290940fc425a3b8e4515e9f7e8ef64b8ab8838384dc580f5001079142c56",
+      "bytes": 6633,
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/tools/stage_periodic_flash_v2_native.py",
+      "source_id": "cyberpunk-bridge-source/tools/stage_periodic_flash_v2_native.py",
+      "sha256": "d8a1026caf6dc25af8eb03276ba39cabe186b853cd7f65b649abc8a5b2a877ad",
+      "bytes": 3663,
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/tools/stage_reviewed_periodic_flash_state_proof_v1_cpu.py",
+      "source_id": "cyberpunk-bridge-source/tools/stage_reviewed_periodic_flash_state_proof_v1_cpu.py",
+      "sha256": "9f1a65646f98e6e2f4b2fb388259627469de19799f9f56361367c89e1f0d31e9",
+      "bytes": 4595,
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/tools/summarize_lifecycle_pair_20261001.py",
+      "source_id": "cyberpunk-bridge-source/tools/summarize_lifecycle_pair_20261001.py",
+      "sha256": "2fadeb764ba0b2c5b5a08b46369a40d3bf682ac0ea619989c3154b1899dbf2af",
+      "bytes": 3706,
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/tools/summarize_periodic_flash_capture_v2_cpu.py",
+      "source_id": "cyberpunk-bridge-source/tools/summarize_periodic_flash_capture_v2_cpu.py",
+      "sha256": "16a1fab73bdb812b49b423302d14900ae893f187e201cb3ee82671146cbb170a",
+      "bytes": 5671,
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/tools/sweep_live_web_720_v1.py",
+      "source_id": "cyberpunk-bridge-source/tools/sweep_live_web_720_v1.py",
+      "sha256": "b65010e960dda7ff31bfddb141fdc6e094732c0848be39fe3c367fc3e7ff6837",
+      "bytes": 18528,
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/tools/test_capture_periodic_flash_diag_v2_cpu.py",
+      "source_id": "cyberpunk-bridge-source/tools/test_capture_periodic_flash_diag_v2_cpu.py",
+      "sha256": "76e0480d8680d33a70bc85bad28530fbc85640ae9bcacca6a576f58499c7e2ca",
+      "bytes": 3016,
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/tools/test_front_missing_cache_diag_cpu_v1.py",
+      "source_id": "cyberpunk-bridge-source/tools/test_front_missing_cache_diag_cpu_v1.py",
+      "sha256": "2873167eba9b7e64db23a76626f55a9ba7454908399fcf261109f328f54d77f4",
+      "bytes": 8005,
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/tools/test_numeric_cost_meter_cpu_v1.py",
+      "source_id": "cyberpunk-bridge-source/tools/test_numeric_cost_meter_cpu_v1.py",
+      "sha256": "f78e25d24552c661d05d0ee881fd3363d5eb709c15c815ed5348c5f1157e1d3a",
+      "bytes": 7222,
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/tools/test_periodic_flash_diag_cpu_v2.py",
+      "source_id": "cyberpunk-bridge-source/tools/test_periodic_flash_diag_cpu_v2.py",
+      "sha256": "6018665ac45b6d59935c3de5b6252e908a71d90340c52cc1fb6809e66c860e12",
+      "bytes": 32320,
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/tools/test_periodic_flash_native_diag_cpu_v1.py",
+      "source_id": "cyberpunk-bridge-source/tools/test_periodic_flash_native_diag_cpu_v1.py",
+      "sha256": "1f87667683ee2c220248df3c8a199b9176d5fb6daa469ae91e022045be2e16e2",
+      "bytes": 12607,
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/tools/test_periodic_flash_snapshot_cpu_v1.py",
+      "source_id": "cyberpunk-bridge-source/tools/test_periodic_flash_snapshot_cpu_v1.py",
+      "sha256": "2fb03d831440ed24bc49cdbefcda6dbc6c6f9ff01621dca26670df315ce3d988",
+      "bytes": 10201,
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/tools/test_validation_batch_adapter_cpu_v1.py",
+      "source_id": "cyberpunk-bridge-source/tools/test_validation_batch_adapter_cpu_v1.py",
+      "sha256": "805d6c15afdf0b3864cd1379e6b3c38679d53eb5b066ee2c0a188a0fec8158ea",
+      "bytes": 24457,
+      "byte_identical": true
+    },
+    {
+      "path": "current/bridge/tools/trace_gpu_handoff_capability_live_v1.py",
+      "source_id": "cyberpunk-bridge-source/tools/trace_gpu_handoff_capability_live_v1.py",
+      "sha256": "225bcccac1ff1a2b13ba57e74cc42a6c5b15b9b859abb444780193238efd4996",
+      "bytes": 3926,
+      "byte_identical": true
+    },
+    {
+      "path": "current/native/nr_gpu_handoff_lease.h",
+      "source_id": "reviewed-native-helper/nr_gpu_handoff_lease.h",
+      "sha256": "cb3cb7f0f4ce3539f02c47d286dd1245359b67491b5d73bd07f979f3f7067eaa",
+      "bytes": 3295,
+      "byte_identical": true
+    },
+    {
+      "path": "current/native/nr_texture_bridge_re8_v1.cpp",
+      "source_id": "reviewed-native-helper/nr_texture_bridge_re8_v1.cpp",
+      "sha256": "e45f5af965912d47b4781672b8e06ab8d0808352a134ec646b342e76416b2ee1",
+      "bytes": 48617,
+      "byte_identical": true
+    },
+    {
+      "path": "current/native/nr_texture_bridge_v1.h",
+      "source_id": "reviewed-native-helper/nr_texture_bridge_v1.h",
+      "sha256": "ca02d7e1e97054a1808c72833df1ea7de24a116638a61c0add1b3018ba4d7623",
+      "bytes": 6004,
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/exact/backend/nr_backend/__init__.py",
+      "source_id": "installed-runtime/exact/backend/nr_backend/__init__.py",
+      "bytes": 1396,
+      "sha256": "b204ddf407fd6210e4d88c95beb66f4afc6272ed0556d2632832e2eb49c2bbc5",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/exact/backend/nr_backend/attention.py",
+      "source_id": "installed-runtime/exact/backend/nr_backend/attention.py",
+      "bytes": 9312,
+      "sha256": "dbdf6440272e85d0f24d63a859f47831bb353ed8a9364ca74c1b796fb2ad729e",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/exact/backend/nr_backend/c32_block.py",
+      "source_id": "installed-runtime/exact/backend/nr_backend/c32_block.py",
+      "bytes": 2964,
+      "sha256": "6083c1c3dbd2b01900524c927a4bf872486cec8ef72f6c2c103ce11636ac5e0f",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/exact/backend/nr_backend/controlled_temporal.py",
+      "source_id": "installed-runtime/exact/backend/nr_backend/controlled_temporal.py",
+      "bytes": 8144,
+      "sha256": "68c01b39069de34f1be81717adc5666a29ff9dd469948dace9f1992138357beb",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/exact/backend/nr_backend/decoder.py",
+      "source_id": "installed-runtime/exact/backend/nr_backend/decoder.py",
+      "bytes": 4336,
+      "sha256": "a851e67007ff1d07c7e3377a5fb5eabba33dee11e61f030b36eac75cead3ff03",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/exact/backend/nr_backend/execution.py",
+      "source_id": "installed-runtime/exact/backend/nr_backend/execution.py",
+      "bytes": 1167,
+      "sha256": "8fbfe06ff6bcd94011da4ec4038a9735ada672dd90df2ff793417344fd045462",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/exact/backend/nr_backend/executor.py",
+      "source_id": "installed-runtime/exact/backend/nr_backend/executor.py",
+      "bytes": 5581,
+      "sha256": "ea9c3a757c4172b31b47b1288c97bfa2d75bb08620e07ab0bdc6f933bbcb3f24",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/exact/backend/nr_backend/exposure.py",
+      "source_id": "installed-runtime/exact/backend/nr_backend/exposure.py",
+      "bytes": 1247,
+      "sha256": "3528f52cc027af480570917a58e2dd57c083dc432a822c475286f03730238673",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/exact/backend/nr_backend/front.py",
+      "source_id": "installed-runtime/exact/backend/nr_backend/front.py",
+      "bytes": 6284,
+      "sha256": "d52cc097c9894345e6177bf17385f9d8ca3b0522d70d00667813e365a9b1ab2b",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/exact/backend/nr_backend/intensity_temporal.py",
+      "source_id": "installed-runtime/exact/backend/nr_backend/intensity_temporal.py",
+      "bytes": 2237,
+      "sha256": "105cf1777821c3b9947f4261c528afd9eef1f8cd0b351ae83b6493841c6404fc",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/exact/backend/nr_backend/live_temporal.py",
+      "source_id": "installed-runtime/exact/backend/nr_backend/live_temporal.py",
+      "bytes": 2710,
+      "sha256": "8ee4454329dd3e6958990b1611588f92ab23581cd49bea7123600a547321fd2d",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/exact/backend/nr_backend/local_temporal.py",
+      "source_id": "installed-runtime/exact/backend/nr_backend/local_temporal.py",
+      "bytes": 1599,
+      "sha256": "1c0cc8436a812833eef23c5c197a5f8a7532ab3d785a3f86445d06e769bc7978",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/exact/backend/nr_backend/multihead_block.py",
+      "source_id": "installed-runtime/exact/backend/nr_backend/multihead_block.py",
+      "bytes": 7677,
+      "sha256": "f5fcd992b236f322699dd5086f9ca025382b71d1afe08a766f6967842ce7b23f",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/exact/backend/nr_backend/noise.py",
+      "source_id": "installed-runtime/exact/backend/nr_backend/noise.py",
+      "bytes": 1975,
+      "sha256": "1bfdfbdcd883aa2e8db35fae52b158f541d6f094de66282c1ca81175b8500707",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/exact/backend/nr_backend/post.py",
+      "source_id": "installed-runtime/exact/backend/nr_backend/post.py",
+      "bytes": 4597,
+      "sha256": "a8c4551e6816ae57233c55929091b660b37ad23dc2f2afce33e3cede2e67cc04",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/exact/backend/nr_backend/pre_block.py",
+      "source_id": "installed-runtime/exact/backend/nr_backend/pre_block.py",
+      "bytes": 3002,
+      "sha256": "06fc9e27fec003f126b0cba9a83ab8233b641c4f374e6867648538184a287fe9",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/exact/backend/nr_backend/pre_mlp.py",
+      "source_id": "installed-runtime/exact/backend/nr_backend/pre_mlp.py",
+      "bytes": 4854,
+      "sha256": "0a7c96897076c4225eb24f54eae7f7a6f40627a456fe6491fa731151dc7a9648",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/exact/backend/nr_backend/reciprocal.py",
+      "source_id": "installed-runtime/exact/backend/nr_backend/reciprocal.py",
+      "bytes": 2500,
+      "sha256": "b150d33db7b3fcde300fef118bf2a1d874dd8fe510e40d2941d30a43ae6aee28",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/exact/backend/nr_backend/sampling.py",
+      "source_id": "installed-runtime/exact/backend/nr_backend/sampling.py",
+      "bytes": 8802,
+      "sha256": "e95228c1743bdb5013d3c3b68cbb85fae315c6deeb913b6c4a057c76d2ed89f8",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/exact/backend/nr_backend/sigmoid.py",
+      "source_id": "installed-runtime/exact/backend/nr_backend/sigmoid.py",
+      "bytes": 1280,
+      "sha256": "567bed0fc4d908a941db4fea03d3b019b37a5db16279e82baec594cc84282d2c",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/exact/backend/nr_backend/split_block.py",
+      "source_id": "installed-runtime/exact/backend/nr_backend/split_block.py",
+      "bytes": 4271,
+      "sha256": "aa74edd66b323ad12ce1d9e4425b7baee8ad93823bd8ec864d6f32e638c5c49c",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/exact/backend/nr_backend/style.py",
+      "source_id": "installed-runtime/exact/backend/nr_backend/style.py",
+      "bytes": 10732,
+      "sha256": "e7f30be3fa1face787049588d0a00245da33ea80d81aa47c9607aced8692d17a",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/exact/backend/nr_backend/styled_temporal.py",
+      "source_id": "installed-runtime/exact/backend/nr_backend/styled_temporal.py",
+      "bytes": 2775,
+      "sha256": "ef7d09ae01a603146251d86a755b905cc3eb547cd24112790794d702ea2c798b",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/exact/backend/nr_backend/temporal.py",
+      "source_id": "installed-runtime/exact/backend/nr_backend/temporal.py",
+      "bytes": 8160,
+      "sha256": "35c1c1d5c1475ac0e3385dfa76f0e1020109a376a1d233a64e6c2a1036ca1828",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/exact/backend/nr_backend/tensor_math.py",
+      "source_id": "installed-runtime/exact/backend/nr_backend/tensor_math.py",
+      "bytes": 10605,
+      "sha256": "75835d42a26f462952f1ae3e911d54e300b163f9ce5b4392e35033b2e0667f04",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/exact/backend/nr_backend/triton_attention_exp.py",
+      "source_id": "installed-runtime/exact/backend/nr_backend/triton_attention_exp.py",
+      "bytes": 2130,
+      "sha256": "5ec5eb86a3d26ffb48899307c3dac2b1f8ee1603ad99946f3945f4c3db18d7dd",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/exact/backend/nr_backend/triton_attention_normalize.py",
+      "source_id": "installed-runtime/exact/backend/nr_backend/triton_attention_normalize.py",
+      "bytes": 3241,
+      "sha256": "9a7a91f13d485392b8b3b4045600cd15633903532266c058cda7e50c1ab439cc",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/exact/backend/nr_backend/triton_attention_weights.py",
+      "source_id": "installed-runtime/exact/backend/nr_backend/triton_attention_weights.py",
+      "bytes": 3502,
+      "sha256": "2bff6b4fe6b80425887c655ae695af032ee82fbd3ac3d848a14beff433e11213",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/exact/backend/nr_backend/triton_cubic_fp8.py",
+      "source_id": "installed-runtime/exact/backend/nr_backend/triton_cubic_fp8.py",
+      "bytes": 2124,
+      "sha256": "a07ff170676e4fde75ebe8ecf7b89ccebb0cfa1335cc01f3321c68e784439b35",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/exact/backend/nr_backend/triton_fp8.py",
+      "source_id": "installed-runtime/exact/backend/nr_backend/triton_fp8.py",
+      "bytes": 1743,
+      "sha256": "7858160bba3f4c135fa53f097e406b904e5493e88cb4cdc6a7f3a95f0fac4cae",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/exact/backend/nr_backend/triton_half_fma.py",
+      "source_id": "installed-runtime/exact/backend/nr_backend/triton_half_fma.py",
+      "bytes": 2476,
+      "sha256": "ab97f3b30565c338b1d2e838cb0b921eb52f6420cddfb00b4fcd6d7413aae764",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/exact/backend/nr_backend/triton_math.py",
+      "source_id": "installed-runtime/exact/backend/nr_backend/triton_math.py",
+      "bytes": 8010,
+      "sha256": "1cc5a1e0a031362b3990de23eb34ff3aeec18b458dbe5eef05d841d4af1c401a",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/exact/backend/nr_backend/ui.py",
+      "source_id": "installed-runtime/exact/backend/nr_backend/ui.py",
+      "bytes": 2308,
+      "sha256": "dcb08e58e7a9105a00fff291eddd274cbee3dbd403d19d79373e15a2eccb016f",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/exact/backend/nr_backend/vit_block.py",
+      "source_id": "installed-runtime/exact/backend/nr_backend/vit_block.py",
+      "bytes": 5165,
+      "sha256": "d6d7c30208ffe94990eb60d47e882d0945d94316fb842891616d6c1d390e1b4d",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/exact/backend/nr_backend/weights.py",
+      "source_id": "installed-runtime/exact/backend/nr_backend/weights.py",
+      "bytes": 1255,
+      "sha256": "54297a9a436378545e6545254531d30ee02c989059e74dfa302a301c650946cf",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/exact/model-assets/noise-sm89-v2/manifest.json",
+      "source_id": "installed-runtime/exact/model-assets/noise-sm89-v2/manifest.json",
+      "bytes": 656,
+      "sha256": "0147999f7efa2d8ef7932c522077df57dbd05dddc01ab346699aec1acc1ac662",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/exact/model-assets/reciprocal-dimensions-sm89-v1/manifest.json",
+      "source_id": "installed-runtime/exact/model-assets/reciprocal-dimensions-sm89-v1/manifest.json",
+      "bytes": 421,
+      "sha256": "31a6b05fc4d201f14a122b39943235c01f0a5c45ad1ab37c8e184df4e323ef51",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/exact/model-assets/reciprocal-sm89-v1/manifest.json",
+      "source_id": "installed-runtime/exact/model-assets/reciprocal-sm89-v1/manifest.json",
+      "bytes": 429,
+      "sha256": "8603fe8de84ccee4ec2f14b7f920015b28a49bc0d85f5d66cd35e2bac3e959f2",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/exact/model-assets/sigmoid-sm89-v1/manifest.json",
+      "source_id": "installed-runtime/exact/model-assets/sigmoid-sm89-v1/manifest.json",
+      "bytes": 392,
+      "sha256": "95282a826f2e45a241c8bc101ad1a05d93a7f98c4cfd51eeca2f39c8e2a6364a",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/exact/model-assets/style-sm89-v1/manifest.json",
+      "source_id": "installed-runtime/exact/model-assets/style-sm89-v1/manifest.json",
+      "bytes": 1981,
+      "sha256": "f423356b682d38c47bcc7c35839b238f9e5ae6deed07a96042f68cb1e29c533a",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/experimental/fp8_unround_overlay/baseline-sha256.txt",
+      "source_id": "installed-runtime/experimental/fp8_unround_overlay/baseline-sha256.txt",
+      "bytes": 2832,
+      "sha256": "5ba661cb8373ed25b37a325fce486879e045d6aa250faee0ddc617b775dfe38e",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/experimental/fp8_unround_overlay/bootstrap.py",
+      "source_id": "installed-runtime/experimental/fp8_unround_overlay/bootstrap.py",
+      "bytes": 3802,
+      "sha256": "b03f50a1473f8be2d9d59fd3b875459d1fc36f7aaa7ec3f345654400185373c7",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/experimental/fp8_unround_overlay/changed-files.txt",
+      "source_id": "installed-runtime/experimental/fp8_unround_overlay/changed-files.txt",
+      "bytes": 7431,
+      "sha256": "2aa85d6368b4389143f353407a8ecf09ac93986e87e14116fe8e1fbd56005f99",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/experimental/fp8_unround_overlay/modules-baseline-sha256.txt",
+      "source_id": "installed-runtime/experimental/fp8_unround_overlay/modules-baseline-sha256.txt",
+      "bytes": 9777,
+      "sha256": "23c6a5564eb165337e40874a186bf270d5ad9421f1a93751124691c596c3bff6",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/experimental/fp8_unround_overlay/modules/batched_branched_mlp_v1.py",
+      "source_id": "installed-runtime/experimental/fp8_unround_overlay/modules/batched_branched_mlp_v1.py",
+      "bytes": 6427,
+      "sha256": "4ecfc24bfc7cf9488953265cfd1a82ce42d5bd138c0674a4abf02ac8f776f6af",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/experimental/fp8_unround_overlay/modules/batched_branched_mlp_v2.py",
+      "source_id": "installed-runtime/experimental/fp8_unround_overlay/modules/batched_branched_mlp_v2.py",
+      "bytes": 932,
+      "sha256": "077ee397b477b7bbe63b9bf35169d08f57659cd9fb965498509c9a2d31f11207",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/experimental/fp8_unround_overlay/modules/c32_chunk_layout_v2.py",
+      "source_id": "installed-runtime/experimental/fp8_unround_overlay/modules/c32_chunk_layout_v2.py",
+      "bytes": 2737,
+      "sha256": "c27cb5aaec1733050fc01dc879ccd8abf586f0c314f1b51cb8b62629d0695e95",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/experimental/fp8_unround_overlay/modules/c512_int8_ffn_gpu_v1.py",
+      "source_id": "installed-runtime/experimental/fp8_unround_overlay/modules/c512_int8_ffn_gpu_v1.py",
+      "bytes": 9952,
+      "sha256": "7958d885f357fa4413404f9c70f16987fd4a25ee35633cdf6533288978f13ff0",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/experimental/fp8_unround_overlay/modules/c512_int8_ffn_oracle_v1.py",
+      "source_id": "installed-runtime/experimental/fp8_unround_overlay/modules/c512_int8_ffn_oracle_v1.py",
+      "bytes": 4317,
+      "sha256": "6aeb627126b6c5dd3f8bd94fcdb5765167399bdbbe977b1eedb3bf4b44b2646c",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/experimental/fp8_unround_overlay/modules/c512_int8_full_stack_v1.py",
+      "source_id": "installed-runtime/experimental/fp8_unround_overlay/modules/c512_int8_full_stack_v1.py",
+      "bytes": 11070,
+      "sha256": "2cb2835b27238805468b32164294ef4125ebcc30f915b12ea57f412990cba335",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/experimental/fp8_unround_overlay/modules/c512_quad_dispatch_v1.py",
+      "source_id": "installed-runtime/experimental/fp8_unround_overlay/modules/c512_quad_dispatch_v1.py",
+      "bytes": 4110,
+      "sha256": "12bf81e4fe5647245a56202cec1337d1360717991bcb3ef322474654b06dfca8",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/experimental/fp8_unround_overlay/modules/c512_quad_queries_v2.py",
+      "source_id": "installed-runtime/experimental/fp8_unround_overlay/modules/c512_quad_queries_v2.py",
+      "bytes": 2919,
+      "sha256": "8f4ba17aa517035a581f3fd2c512dd2dcf154c092b66fbff329f16c99a7a5bb4",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/experimental/fp8_unround_overlay/modules/c512_quad_query_stack_v1.py",
+      "source_id": "installed-runtime/experimental/fp8_unround_overlay/modules/c512_quad_query_stack_v1.py",
+      "bytes": 5849,
+      "sha256": "bd619a6bcc092b8ef9bee044f0d44804b85d27fb787cfc5ea7d81dc0071ee2e6",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/experimental/fp8_unround_overlay/modules/c512_window_layout_scope_v1.py",
+      "source_id": "installed-runtime/experimental/fp8_unround_overlay/modules/c512_window_layout_scope_v1.py",
+      "bytes": 5680,
+      "sha256": "ef291b3025a0c297d7d6d9b2b627df1e5944c6f6529dfbe17579c15f6877138a",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/experimental/fp8_unround_overlay/modules/c512_window_projection_v1.py",
+      "source_id": "installed-runtime/experimental/fp8_unround_overlay/modules/c512_window_projection_v1.py",
+      "bytes": 3273,
+      "sha256": "4dc8b03d2e0cbd135596cf19b53769671cb74c9e0c159cc83d733455a2b394e6",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/experimental/fp8_unround_overlay/modules/capture_body_v1.py",
+      "source_id": "installed-runtime/experimental/fp8_unround_overlay/modules/capture_body_v1.py",
+      "bytes": 3623,
+      "sha256": "2f7fa28dd66a43cd20d0edaee28d09aaac034fe90b3865080ffc065d7397dfbb",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/experimental/fp8_unround_overlay/modules/compact_c512_qkv_pack_v1.py",
+      "source_id": "installed-runtime/experimental/fp8_unround_overlay/modules/compact_c512_qkv_pack_v1.py",
+      "bytes": 3699,
+      "sha256": "6e6e149a53397f773a233d97b1c436703805867d4328f654d7b419143120d02c",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/experimental/fp8_unround_overlay/modules/compact_c512_qkv_stack_v1.py",
+      "source_id": "installed-runtime/experimental/fp8_unround_overlay/modules/compact_c512_qkv_stack_v1.py",
+      "bytes": 7367,
+      "sha256": "81e35c300dd09fb6f530ed855f97ffee83dd8e1e6f30c59a5c80855bc103dad5",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/experimental/fp8_unround_overlay/modules/compressed_arrays_v1.py",
+      "source_id": "installed-runtime/experimental/fp8_unround_overlay/modules/compressed_arrays_v1.py",
+      "bytes": 1405,
+      "sha256": "d9b8f5273d475774975359b5db86ef1ab04da49d034924830e226b6f4974cd8b",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/experimental/fp8_unround_overlay/modules/cubic_half_lut_constant_v1.py",
+      "source_id": "installed-runtime/experimental/fp8_unround_overlay/modules/cubic_half_lut_constant_v1.py",
+      "bytes": 2247,
+      "sha256": "55854e12300417807230ec06192181a8854be3b5a68ca1257fb335e4cb391044",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/experimental/fp8_unround_overlay/modules/cubic_half_table_kernel_v1.py",
+      "source_id": "installed-runtime/experimental/fp8_unround_overlay/modules/cubic_half_table_kernel_v1.py",
+      "bytes": 914,
+      "sha256": "fb6f64fcf92c9fd3758a91b924399e4b7be81699e84466f2982b06ee8ae76fd2",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/experimental/fp8_unround_overlay/modules/cubic_lut_constant_v1.py",
+      "source_id": "installed-runtime/experimental/fp8_unround_overlay/modules/cubic_lut_constant_v1.py",
+      "bytes": 2429,
+      "sha256": "1c2b4ef3a43124f42e11078ef74cbab661cdcd71ab64cfbdb28881676d361afe",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/experimental/fp8_unround_overlay/modules/current_dense_tiled_provider_v1.py",
+      "source_id": "installed-runtime/experimental/fp8_unround_overlay/modules/current_dense_tiled_provider_v1.py",
+      "bytes": 3188,
+      "sha256": "649cc17020bf6d473ba080257c6b6465768eb6e937e73ce381f17e0322ae84c0",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/experimental/fp8_unround_overlay/modules/decoder_gather_merge_v1.py",
+      "source_id": "installed-runtime/experimental/fp8_unround_overlay/modules/decoder_gather_merge_v1.py",
+      "bytes": 3889,
+      "sha256": "1ed7305df7432f3c3a400567a9be064126e912e76080bf11468c9bdab73d580d",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/experimental/fp8_unround_overlay/modules/decoder_gather_scope_v1.py",
+      "source_id": "installed-runtime/experimental/fp8_unround_overlay/modules/decoder_gather_scope_v1.py",
+      "bytes": 5992,
+      "sha256": "c0a420b80151a0d253be26d84fe6a211f836613a9beb207441acbb0f02af4521",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/experimental/fp8_unround_overlay/modules/dense_tiles_v1.py",
+      "source_id": "installed-runtime/experimental/fp8_unround_overlay/modules/dense_tiles_v1.py",
+      "bytes": 2141,
+      "sha256": "172fe50a1d6e61366ac6b33c6505c932b15fcc74edc4dd02cffb42c18dc94f11",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/experimental/fp8_unround_overlay/modules/face480_residual_scale_v1.py",
+      "source_id": "installed-runtime/experimental/fp8_unround_overlay/modules/face480_residual_scale_v1.py",
+      "bytes": 2129,
+      "sha256": "b18a74a857aeca8feb6404f797b9bf1bd66b7f64f3f0d0e0b6ece27be5a691d0",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/experimental/fp8_unround_overlay/modules/fast_matrices_v3.py",
+      "source_id": "installed-runtime/experimental/fp8_unround_overlay/modules/fast_matrices_v3.py",
+      "bytes": 7378,
+      "sha256": "6b80bbf2a509d5351fd5f503867f72d4fc723c319439e61cb2e590136bd46a06",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/experimental/fp8_unround_overlay/modules/fork_fp8_jit_v2.py",
+      "source_id": "installed-runtime/experimental/fp8_unround_overlay/modules/fork_fp8_jit_v2.py",
+      "bytes": 5383,
+      "sha256": "94c2e7d626d618f3954eab66102269f7a986beb19dcaecd251387b4dff29e6b9",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/experimental/fp8_unround_overlay/modules/fp8_graph_rewrite_v1.py",
+      "source_id": "installed-runtime/experimental/fp8_unround_overlay/modules/fp8_graph_rewrite_v1.py",
+      "bytes": 4052,
+      "sha256": "947e0b810d2b6cc9564a10c1ea37829bdff0d2c410940fa44ee112dd2d17a118",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/experimental/fp8_unround_overlay/modules/fused_activation_int8_v1.py",
+      "source_id": "installed-runtime/experimental/fp8_unround_overlay/modules/fused_activation_int8_v1.py",
+      "bytes": 2762,
+      "sha256": "54486d4e5810613a9a15eea1b6a405702423e68895cb87279f3fc904d082e390",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/experimental/fp8_unround_overlay/modules/fused_branched_mlp_v1.py",
+      "source_id": "installed-runtime/experimental/fp8_unround_overlay/modules/fused_branched_mlp_v1.py",
+      "bytes": 3630,
+      "sha256": "e0cb29c88016df3f427806987c0cdb1a15cd94617c7526fbc1fa797e4b2d854d",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/experimental/fp8_unround_overlay/modules/fused_branched_pairs_v1.py",
+      "source_id": "installed-runtime/experimental/fp8_unround_overlay/modules/fused_branched_pairs_v1.py",
+      "bytes": 2369,
+      "sha256": "0eeee74e7c832f1c6e1294f12e8c91289c8f4cb3132db8c5bd2013391e437a57",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/experimental/fp8_unround_overlay/modules/fused_c32_mlp_lut_v1.py",
+      "source_id": "installed-runtime/experimental/fp8_unround_overlay/modules/fused_c32_mlp_lut_v1.py",
+      "bytes": 4309,
+      "sha256": "84dee3ec7d74ad9da2d4ef4fc284caad94e342cdfb0ee03b18f35b1a89716c3e",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/experimental/fp8_unround_overlay/modules/fused_c32_mlp_v1.py",
+      "source_id": "installed-runtime/experimental/fp8_unround_overlay/modules/fused_c32_mlp_v1.py",
+      "bytes": 4592,
+      "sha256": "dd65b85ca41d7dbe2621ca9502222422aff2277a6e9d588674afce2daed342c2",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/experimental/fp8_unround_overlay/modules/fused_c32_projection_native_half_v1.py",
+      "source_id": "installed-runtime/experimental/fp8_unround_overlay/modules/fused_c32_projection_native_half_v1.py",
+      "bytes": 6417,
+      "sha256": "1e16fed8a7587cc0fbd168c637122f593c9b4de67efce7c53898b4b94d87dd6f",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/experimental/fp8_unround_overlay/modules/fused_c32_projection_pack_v1.py",
+      "source_id": "installed-runtime/experimental/fp8_unround_overlay/modules/fused_c32_projection_pack_v1.py",
+      "bytes": 5913,
+      "sha256": "53b94ea2071f4c35b8e120b3858f18bc4acd6544b326acfcb8f8deab906893dd",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/experimental/fp8_unround_overlay/modules/fused_c32_qkv_scatter_v2.py",
+      "source_id": "installed-runtime/experimental/fp8_unround_overlay/modules/fused_c32_qkv_scatter_v2.py",
+      "bytes": 4748,
+      "sha256": "59fd6b729066a81c916f3f80d4fea1666fb7109ff6581cd01be68cd64312b059",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/experimental/fp8_unround_overlay/modules/fused_cached_matrices_v1.py",
+      "source_id": "installed-runtime/experimental/fp8_unround_overlay/modules/fused_cached_matrices_v1.py",
+      "bytes": 1827,
+      "sha256": "550a2022258d45c5ea89fdd3dcd25fa1d63fe242db723db3ae87a860cbfc1597",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/experimental/fp8_unround_overlay/modules/fused_cached_matrices_v2.py",
+      "source_id": "installed-runtime/experimental/fp8_unround_overlay/modules/fused_cached_matrices_v2.py",
+      "bytes": 1924,
+      "sha256": "e7c3bc99a4fcef0659a3250e9e60667937aa0135670a4cbac45e20769c8eea80",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/experimental/fp8_unround_overlay/modules/fused_dynamic_front_v1.py",
+      "source_id": "installed-runtime/experimental/fp8_unround_overlay/modules/fused_dynamic_front_v1.py",
+      "bytes": 6423,
+      "sha256": "37813197c7326041866b059d6874358914cac297700345f9ed4ab3db5209b552",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/experimental/fp8_unround_overlay/modules/fused_graph_history_warp_v2.py",
+      "source_id": "installed-runtime/experimental/fp8_unround_overlay/modules/fused_graph_history_warp_v2.py",
+      "bytes": 2017,
+      "sha256": "1db533851bf5eae33c11aa5a4c7ec03fa580db39721c029e43ac96162b36f8ad",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/experimental/fp8_unround_overlay/modules/fused_head_layout_v1.py",
+      "source_id": "installed-runtime/experimental/fp8_unround_overlay/modules/fused_head_layout_v1.py",
+      "bytes": 1959,
+      "sha256": "bdb21e2f496c7d43aef5a5af21c3599cb79008e68b4a31e64e1058c0381eff2d",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/experimental/fp8_unround_overlay/modules/fused_mlp_pair_v1.py",
+      "source_id": "installed-runtime/experimental/fp8_unround_overlay/modules/fused_mlp_pair_v1.py",
+      "bytes": 2316,
+      "sha256": "e4b0a34c1450f62c534a8208862fe32feea79c6291acc8bc03450006aadf01c4",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/experimental/fp8_unround_overlay/modules/fused_qkv_pack_native_half_v1.py",
+      "source_id": "installed-runtime/experimental/fp8_unround_overlay/modules/fused_qkv_pack_native_half_v1.py",
+      "bytes": 4799,
+      "sha256": "781b3e59eb695da0f0f994f2a1ef8aa01da70c45a68056afc4629592d7c70d63",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/experimental/fp8_unround_overlay/modules/fused_qkv_pack_v1.py",
+      "source_id": "installed-runtime/experimental/fp8_unround_overlay/modules/fused_qkv_pack_v1.py",
+      "bytes": 4560,
+      "sha256": "54affa972d35f43c452adf6da3ad8ac19355ffe6db37fc6e927a52d6f76b0450",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/experimental/fp8_unround_overlay/modules/fused_split_ffwd_v1.py",
+      "source_id": "installed-runtime/experimental/fp8_unround_overlay/modules/fused_split_ffwd_v1.py",
+      "bytes": 4163,
+      "sha256": "5eeaea3543d9ea1aed4962f21c9ba7e098d15394833b3bda2f45d2621c8cdd37",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/experimental/fp8_unround_overlay/modules/fused_split_ffwd_v2.py",
+      "source_id": "installed-runtime/experimental/fp8_unround_overlay/modules/fused_split_ffwd_v2.py",
+      "bytes": 1065,
+      "sha256": "4b90dbf02f7cba8523433b3d228e8a916b88826da3a48bac0c13acfef377373a",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/experimental/fp8_unround_overlay/modules/fused_square_history_v2.py",
+      "source_id": "installed-runtime/experimental/fp8_unround_overlay/modules/fused_square_history_v2.py",
+      "bytes": 7153,
+      "sha256": "7648159f33430d087599895307e53674d7772925637137aaa18f9d24489da0a4",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/experimental/fp8_unround_overlay/modules/fused_swin_core_native_half_v1.py",
+      "source_id": "installed-runtime/experimental/fp8_unround_overlay/modules/fused_swin_core_native_half_v1.py",
+      "bytes": 4545,
+      "sha256": "8cb85569804301c1348a320d0aff0c18dcc3831ef7b5a5cb870f23dbf1f0c0f3",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/experimental/fp8_unround_overlay/modules/fused_swin_core_v2.py",
+      "source_id": "installed-runtime/experimental/fp8_unround_overlay/modules/fused_swin_core_v2.py",
+      "bytes": 4219,
+      "sha256": "aee5bc46a60104ad07523e27087b178ebb08c88d7adcfe0da26db8daf69d9298",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/experimental/fp8_unround_overlay/modules/fused_swin_heads_native_half_v1.py",
+      "source_id": "installed-runtime/experimental/fp8_unround_overlay/modules/fused_swin_heads_native_half_v1.py",
+      "bytes": 2246,
+      "sha256": "cbf05d3431180f3f74f416c2a16ca55ad0814995551b3d2f26e9fdedc68520e7",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/experimental/fp8_unround_overlay/modules/fused_swin_heads_v1.py",
+      "source_id": "installed-runtime/experimental/fp8_unround_overlay/modules/fused_swin_heads_v1.py",
+      "bytes": 2155,
+      "sha256": "e6e2ebe4561d0f672f8c32e63b304b58b3dc301cb78ba23ac50d31b0ec363c89",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/experimental/fp8_unround_overlay/modules/fused_swin_native_half_v1.py",
+      "source_id": "installed-runtime/experimental/fp8_unround_overlay/modules/fused_swin_native_half_v1.py",
+      "bytes": 1718,
+      "sha256": "056ee6760d55d2ee1f88fc759ea5a6fbc530a5abcb9fb3ad81fd4c14165df374",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/experimental/fp8_unround_overlay/modules/fused_vit_attention64_adapter_v2.py",
+      "source_id": "installed-runtime/experimental/fp8_unround_overlay/modules/fused_vit_attention64_adapter_v2.py",
+      "bytes": 2686,
+      "sha256": "eca934341717243024e92ece167d28ec377e185f5e045fce40c0c8a503de59d0",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/experimental/fp8_unround_overlay/modules/fused_vit_attention64_v2.py",
+      "source_id": "installed-runtime/experimental/fp8_unround_overlay/modules/fused_vit_attention64_v2.py",
+      "bytes": 4755,
+      "sha256": "1717b0a563a2e153491ea321b0eaf7ea0903274d4598b317f82849ddb30d55f1",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/experimental/fp8_unround_overlay/modules/fused_vit_projection_v1.py",
+      "source_id": "installed-runtime/experimental/fp8_unround_overlay/modules/fused_vit_projection_v1.py",
+      "bytes": 3936,
+      "sha256": "344e8b77ff8e0cbc3c5fe77e62e736340c96d908764afe8ebfa91bfde3bdc276",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/experimental/fp8_unround_overlay/modules/fused_vit_projection_v2.py",
+      "source_id": "installed-runtime/experimental/fp8_unround_overlay/modules/fused_vit_projection_v2.py",
+      "bytes": 3415,
+      "sha256": "f617c6c8ba328fe4f511445b4456e9cc717e302594ef5b7cecf1b8c93e196392",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/experimental/fp8_unround_overlay/modules/fused_vit_projection_v3.py",
+      "source_id": "installed-runtime/experimental/fp8_unround_overlay/modules/fused_vit_projection_v3.py",
+      "bytes": 1006,
+      "sha256": "e236e8c849c5eb3234865c221a0b065d25f284fbf330d739c1ca9754236ac479",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/experimental/fp8_unround_overlay/modules/fused_vit_qkv_v1.py",
+      "source_id": "installed-runtime/experimental/fp8_unround_overlay/modules/fused_vit_qkv_v1.py",
+      "bytes": 5664,
+      "sha256": "763de1c71cf59d32530888363feb6a82bc6107e6ca9c992ce7ab0696c8c2a946",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/experimental/fp8_unround_overlay/modules/graph_front_v1.py",
+      "source_id": "installed-runtime/experimental/fp8_unround_overlay/modules/graph_front_v1.py",
+      "bytes": 5302,
+      "sha256": "d2b8a5f3cb913b71c836e8c2dc0a19cb34b0dbacf6a83851010d11a5a172f5de",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/experimental/fp8_unround_overlay/modules/graph_front_v2.py",
+      "source_id": "installed-runtime/experimental/fp8_unround_overlay/modules/graph_front_v2.py",
+      "bytes": 674,
+      "sha256": "09471129801447263272c596708d4ce0d5b1e059621db35afab7490df6055725",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/experimental/fp8_unround_overlay/modules/graph_front_v3.py",
+      "source_id": "installed-runtime/experimental/fp8_unround_overlay/modules/graph_front_v3.py",
+      "bytes": 1460,
+      "sha256": "bacf2c8acb00356c79d82b48c73954cf559254fec9d18ab6cca01663f1f05c25",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/experimental/fp8_unround_overlay/modules/graph_front_v4.py",
+      "source_id": "installed-runtime/experimental/fp8_unround_overlay/modules/graph_front_v4.py",
+      "bytes": 3408,
+      "sha256": "bdd8ed34ee979608f445eb82e2094c8b1b04c3ed288ee5038949c1c52872ca5e",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/experimental/fp8_unround_overlay/modules/graph_front_v5.py",
+      "source_id": "installed-runtime/experimental/fp8_unround_overlay/modules/graph_front_v5.py",
+      "bytes": 2806,
+      "sha256": "8887facb3d98f91f6a068206698283b2865d895cbe7cdae366b0455939f3a6ec",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/experimental/fp8_unround_overlay/modules/graph_front_v6.py",
+      "source_id": "installed-runtime/experimental/fp8_unround_overlay/modules/graph_front_v6.py",
+      "bytes": 389,
+      "sha256": "3cf46091d2a44457975a95670aa317d6205e0ec9db4c5bc5acf4e70c9af7a052",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/experimental/fp8_unround_overlay/modules/graph_history_warp_v1.py",
+      "source_id": "installed-runtime/experimental/fp8_unround_overlay/modules/graph_history_warp_v1.py",
+      "bytes": 4497,
+      "sha256": "8d09af40d2b94f6de119b192da3f8f25ead63394573793105b07a0e741a5752c",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/experimental/fp8_unround_overlay/modules/graph_history_warp_v2.py",
+      "source_id": "installed-runtime/experimental/fp8_unround_overlay/modules/graph_history_warp_v2.py",
+      "bytes": 1184,
+      "sha256": "f69fd9aa691985a19cf2ee7b1990068956292b53db84a86cc05fa2245fbe754c",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/experimental/fp8_unround_overlay/modules/immutable_artifacts_v1.py",
+      "source_id": "installed-runtime/experimental/fp8_unround_overlay/modules/immutable_artifacts_v1.py",
+      "bytes": 1314,
+      "sha256": "02dc66bb4d3afad6508d692c5c418c63d0a8531687fb1d76239dfba0c1f5cdff",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/experimental/fp8_unround_overlay/modules/int8_ffn_body_scope_v1.py",
+      "source_id": "installed-runtime/experimental/fp8_unround_overlay/modules/int8_ffn_body_scope_v1.py",
+      "bytes": 7682,
+      "sha256": "0f86e5405c88c1372d31f417ae70365b87b43d6ba5e40f10ca693cdadd5da90c",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/experimental/fp8_unround_overlay/modules/int8_ffn_calibrated_stack_v1.py",
+      "source_id": "installed-runtime/experimental/fp8_unround_overlay/modules/int8_ffn_calibrated_stack_v1.py",
+      "bytes": 1694,
+      "sha256": "ef95614575a85abeeda4cddaff952f50bec4e6644883706aae3d7d4781307648",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/experimental/fp8_unround_overlay/modules/int8_ffn_nr_stack_v1.py",
+      "source_id": "installed-runtime/experimental/fp8_unround_overlay/modules/int8_ffn_nr_stack_v1.py",
+      "bytes": 4623,
+      "sha256": "27f649ff92116741fef44810073fe5e9ea61e9e752da038ed243f74045421a1a",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/experimental/fp8_unround_overlay/modules/int8_ffn_segment_gpu_v1.py",
+      "source_id": "installed-runtime/experimental/fp8_unround_overlay/modules/int8_ffn_segment_gpu_v1.py",
+      "bytes": 6895,
+      "sha256": "82ee900dba50758671362a3993bc6c8ace39c28d773169404d851d775e42cfce",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/experimental/fp8_unround_overlay/modules/int8_ffn_segment_oracle_v1.py",
+      "source_id": "installed-runtime/experimental/fp8_unround_overlay/modules/int8_ffn_segment_oracle_v1.py",
+      "bytes": 4719,
+      "sha256": "bbedbbd262add2cb2b0ada37a17e5a462d077ec5af0fdb227d2d17d932134e78",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/experimental/fp8_unround_overlay/modules/k8_tiled_provider_v1.py",
+      "source_id": "installed-runtime/experimental/fp8_unround_overlay/modules/k8_tiled_provider_v1.py",
+      "bytes": 1440,
+      "sha256": "7229000e86cc702fd5b7c70c9844b3d24616632d81a83d4bd0c69f5116c61183",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/experimental/fp8_unround_overlay/modules/layout_crop_stack_v1.py",
+      "source_id": "installed-runtime/experimental/fp8_unround_overlay/modules/layout_crop_stack_v1.py",
+      "bytes": 2553,
+      "sha256": "bf9cdfee232ed8ca9d1d184a8e9f93a8e1de4124495da462fc6e956b51bbd1b8",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/experimental/fp8_unround_overlay/modules/native_callback_v2.py",
+      "source_id": "installed-runtime/experimental/fp8_unround_overlay/modules/native_callback_v2.py",
+      "bytes": 3069,
+      "sha256": "82a4e5c4c33c18cdcff7d681b6b2e43bb7ebbe595ee34b3719d9b94e0c241cda",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/experimental/fp8_unround_overlay/modules/native_cubic_adapters_v1.py",
+      "source_id": "installed-runtime/experimental/fp8_unround_overlay/modules/native_cubic_adapters_v1.py",
+      "bytes": 3995,
+      "sha256": "756a0a6978401dbe24aedc250296aab7b3265d9be0911aa61818ec5f58ded348",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/experimental/fp8_unround_overlay/modules/native_cubic_batched_v1.py",
+      "source_id": "installed-runtime/experimental/fp8_unround_overlay/modules/native_cubic_batched_v1.py",
+      "bytes": 6211,
+      "sha256": "5ef13a9b26fa560e6a75c9b27172422a44d73053c8ac2fea042db6cb719c8b55",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/experimental/fp8_unround_overlay/modules/native_cubic_c32_v1.py",
+      "source_id": "installed-runtime/experimental/fp8_unround_overlay/modules/native_cubic_c32_v1.py",
+      "bytes": 4242,
+      "sha256": "a39eabcd4fa7d9409811706576958575b277e144f666ae8eb00cf83a8be8df04",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/experimental/fp8_unround_overlay/modules/native_cubic_split_v1.py",
+      "source_id": "installed-runtime/experimental/fp8_unround_overlay/modules/native_cubic_split_v1.py",
+      "bytes": 4189,
+      "sha256": "6ba6b4de4a515ae947c1b6a932c8be79b9a9df20d1ee3c4303c83a93127e40d4",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/experimental/fp8_unround_overlay/modules/native_half_attention_fma_v1.py",
+      "source_id": "installed-runtime/experimental/fp8_unround_overlay/modules/native_half_attention_fma_v1.py",
+      "bytes": 496,
+      "sha256": "5d37caf41f58a97da1e7c5a0c67601b5500f8dfed08e6128008130849e590691",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/experimental/fp8_unround_overlay/modules/native_half_cubic_v1.py",
+      "source_id": "installed-runtime/experimental/fp8_unround_overlay/modules/native_half_cubic_v1.py",
+      "bytes": 810,
+      "sha256": "d16a331f3a9d294d6e440104f6a5f681f81def067a72f1c7f8d46a9cbf33cdda",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/experimental/fp8_unround_overlay/modules/native_half_head_layout_v1.py",
+      "source_id": "installed-runtime/experimental/fp8_unround_overlay/modules/native_half_head_layout_v1.py",
+      "bytes": 3040,
+      "sha256": "a60e349f1ac0e9f235d5d22e99e2a66ed5b077f557031e0bac8d7b9131dc4054",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/experimental/fp8_unround_overlay/modules/nr256_product_stack_v1.py",
+      "source_id": "installed-runtime/experimental/fp8_unround_overlay/modules/nr256_product_stack_v1.py",
+      "bytes": 976,
+      "sha256": "552b8730e8f24e233f6dd8156c06322388cbdd8b5d3b2eda8a3e2779ad26c965",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/experimental/fp8_unround_overlay/modules/nr256_selected_stack_v1.py",
+      "source_id": "installed-runtime/experimental/fp8_unround_overlay/modules/nr256_selected_stack_v1.py",
+      "bytes": 2995,
+      "sha256": "4cb3fc3965faa3f125535a6026249c0edf50b42d2b1a35f6bfd94c83c86f961e",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/experimental/fp8_unround_overlay/modules/nr256_selected_stack_v2.py",
+      "source_id": "installed-runtime/experimental/fp8_unround_overlay/modules/nr256_selected_stack_v2.py",
+      "bytes": 710,
+      "sha256": "2931ec48f7f17ae48bf76e438c170000c1900b0783d20de9f13f4f35c47bb574",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/experimental/fp8_unround_overlay/modules/nr256_selected_stack_v3.py",
+      "source_id": "installed-runtime/experimental/fp8_unround_overlay/modules/nr256_selected_stack_v3.py",
+      "bytes": 570,
+      "sha256": "ab1ee2d2e485d4bc0d25c5e413d2d37f63041b5a1c7e661fef41b8c3996db7ac",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/experimental/fp8_unround_overlay/modules/nr256_selected_stack_v4.py",
+      "source_id": "installed-runtime/experimental/fp8_unround_overlay/modules/nr256_selected_stack_v4.py",
+      "bytes": 370,
+      "sha256": "a1fdc5bfa799d9f2a62edb3ad06585a84ee2db0127a1135774a1a7b48e5f4938",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/experimental/fp8_unround_overlay/modules/nr_exact_runtime_v1.py",
+      "source_id": "installed-runtime/experimental/fp8_unround_overlay/modules/nr_exact_runtime_v1.py",
+      "bytes": 3928,
+      "sha256": "e7321dc37b02c7f61ad540134ca5eec22c33fd5b7809f0c6198bbd2332199069",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/experimental/fp8_unround_overlay/modules/nr_runtime_v1.py",
+      "source_id": "installed-runtime/experimental/fp8_unround_overlay/modules/nr_runtime_v1.py",
+      "bytes": 4994,
+      "sha256": "dbc23f3562ed4a56fecb29593b9529a22a63672613e72e2c2cade2973f29342c",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/experimental/fp8_unround_overlay/modules/nr_texture_bridge_v1.py",
+      "source_id": "installed-runtime/experimental/fp8_unround_overlay/modules/nr_texture_bridge_v1.py",
+      "bytes": 19212,
+      "sha256": "83b1b33f056dfad1fec28e78dfe6daf17414c0b443ddd886c480c491bbc0bb7b",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/experimental/fp8_unround_overlay/modules/post_region_scope_v1.py",
+      "source_id": "installed-runtime/experimental/fp8_unround_overlay/modules/post_region_scope_v1.py",
+      "bytes": 3617,
+      "sha256": "2a777c3dafcece0bfce03a63611b6c4d19e280fe6fd3a32bebad25954758cfb0",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/experimental/fp8_unround_overlay/modules/projected_head_layout_v1.py",
+      "source_id": "installed-runtime/experimental/fp8_unround_overlay/modules/projected_head_layout_v1.py",
+      "bytes": 287,
+      "sha256": "bd663bfd573f38ce113edc778fa998513fb6968378f86d96e59433dfb3c8179b",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/experimental/fp8_unround_overlay/modules/qkv_head_layout_v1.py",
+      "source_id": "installed-runtime/experimental/fp8_unround_overlay/modules/qkv_head_layout_v1.py",
+      "bytes": 1979,
+      "sha256": "549cca70c993d8fb62bdbfbf3b0ab90d42d7710390e7824aab8353b5b688599e",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/experimental/fp8_unround_overlay/modules/quantization_dataflow_v1.py",
+      "source_id": "installed-runtime/experimental/fp8_unround_overlay/modules/quantization_dataflow_v1.py",
+      "bytes": 7460,
+      "sha256": "c3cc91598f8378592cd8ea950ab32bfbab63f1b7997fcbfc7000518795912bd9",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/experimental/fp8_unround_overlay/modules/residual_scale_v1.py",
+      "source_id": "installed-runtime/experimental/fp8_unround_overlay/modules/residual_scale_v1.py",
+      "bytes": 8250,
+      "sha256": "abd19fa2f418ad2dbdea164be2b45df5c0c9ace2a1ef3ea9895ddabce55e4262",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/experimental/fp8_unround_overlay/modules/shared_model_buffers_v1.py",
+      "source_id": "installed-runtime/experimental/fp8_unround_overlay/modules/shared_model_buffers_v1.py",
+      "bytes": 1874,
+      "sha256": "8a8038e1a2df876d3190e4a948abe7acf80f449a3135131572a92ef7f624d804",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/experimental/fp8_unround_overlay/modules/short_fp8_graph_v1.py",
+      "source_id": "installed-runtime/experimental/fp8_unround_overlay/modules/short_fp8_graph_v1.py",
+      "bytes": 3525,
+      "sha256": "aece5ef7a8f9ef0c6aa682ba551b1b4db6f4dc60ca7de1b003ea0e8749de6ba7",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/experimental/fp8_unround_overlay/modules/short_fp8_v1.py",
+      "source_id": "installed-runtime/experimental/fp8_unround_overlay/modules/short_fp8_v1.py",
+      "bytes": 1430,
+      "sha256": "2f4fc9a8081ec5a9ac880ae0ca6e57d24d22a3bafc82a3ec96652069690219c0",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/experimental/fp8_unround_overlay/modules/short_fp8_v2.py",
+      "source_id": "installed-runtime/experimental/fp8_unround_overlay/modules/short_fp8_v2.py",
+      "bytes": 1430,
+      "sha256": "87689784555ca97f4799f7dc865524c9fca4443ba1114d6219a5b17b1d19e7fb",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/experimental/fp8_unround_overlay/modules/spill_preflight_v1.py",
+      "source_id": "installed-runtime/experimental/fp8_unround_overlay/modules/spill_preflight_v1.py",
+      "bytes": 1102,
+      "sha256": "74ce04f648c09c851d7f169332bc35110586d2c6632aa904d4e351289027798d",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/experimental/fp8_unround_overlay/modules/static_weight_cache_v1.py",
+      "source_id": "installed-runtime/experimental/fp8_unround_overlay/modules/static_weight_cache_v1.py",
+      "bytes": 3379,
+      "sha256": "cddb51c57b7c4413478d75adade1c27aac73b7fa19eefd5e4867adc64e0f3981",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/experimental/fp8_unround_overlay/modules/static_weight_cache_v2.py",
+      "source_id": "installed-runtime/experimental/fp8_unround_overlay/modules/static_weight_cache_v2.py",
+      "bytes": 2170,
+      "sha256": "5a198b4f67201d8844a73abbd697e60799c3b6b03d4fd1dc298e7fe93725d825",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/experimental/fp8_unround_overlay/modules/strided_batched_v1.py",
+      "source_id": "installed-runtime/experimental/fp8_unround_overlay/modules/strided_batched_v1.py",
+      "bytes": 3412,
+      "sha256": "c7e922c5514a678c2e258ad9a322ad163cb9b1d7dd118a7424342fb4ec483eaf",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/experimental/fp8_unround_overlay/modules/strided_batched_v2.py",
+      "source_id": "installed-runtime/experimental/fp8_unround_overlay/modules/strided_batched_v2.py",
+      "bytes": 684,
+      "sha256": "bce3a3e437b2feab00891c4cc98276fdb036cf8c88a575bb4947fcf5974675fc",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/experimental/fp8_unround_overlay/modules/swin_scheduling_v1.py",
+      "source_id": "installed-runtime/experimental/fp8_unround_overlay/modules/swin_scheduling_v1.py",
+      "bytes": 2740,
+      "sha256": "bdc8f3db6ad2688bf7d7135ead0cfb94f217105bd8e507c6cd47be8e9a7a428e",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/experimental/fp8_unround_overlay/modules/vit_head_layout_scope_v1.py",
+      "source_id": "installed-runtime/experimental/fp8_unround_overlay/modules/vit_head_layout_scope_v1.py",
+      "bytes": 3589,
+      "sha256": "c0fb666561d076be985e86b32e929d23bef188d8778bed5de35e6aa51a579670",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/experimental/fp8_unround_overlay/modules/vit_head_major_projection_v1.py",
+      "source_id": "installed-runtime/experimental/fp8_unround_overlay/modules/vit_head_major_projection_v1.py",
+      "bytes": 2358,
+      "sha256": "40ac2d84af465b9f0e393e2edd18f1efcf54b61b58f0fa1075880c1423f68e14",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/experimental/fp8_unround_overlay/modules/window_block_attention_v3.py",
+      "source_id": "installed-runtime/experimental/fp8_unround_overlay/modules/window_block_attention_v3.py",
+      "bytes": 2776,
+      "sha256": "9e62f65752701916c62c2e23e73cfc5545d94f0ad6c076c8f26306577e8bcc1d",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/experimental/fp8_unround_overlay/modules/window_block_projection_v3.py",
+      "source_id": "installed-runtime/experimental/fp8_unround_overlay/modules/window_block_projection_v3.py",
+      "bytes": 3737,
+      "sha256": "15c0ee0bc464d322b82eb6ec4c1da0d907bb0d177a1fab206b0bb784c6b11aa7",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/experimental/fp8_unround_overlay/modules/window_blocks_v3.py",
+      "source_id": "installed-runtime/experimental/fp8_unround_overlay/modules/window_blocks_v3.py",
+      "bytes": 5066,
+      "sha256": "6aebbf4352aa615bdfcdab2696b65e1149d18beb8eadd7588ebd9a4791e269b1",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/experimental/fp8_unround_overlay/modules/window_layout_v1.py",
+      "source_id": "installed-runtime/experimental/fp8_unround_overlay/modules/window_layout_v1.py",
+      "bytes": 5998,
+      "sha256": "b344016a9ef2cd5fe33def2a070ecbcc1b3ab403fccf9e82604b5e555cba3346",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/experimental/fp8_unround_overlay/nr_backend/__init__.py",
+      "source_id": "installed-runtime/experimental/fp8_unround_overlay/nr_backend/__init__.py",
+      "bytes": 1396,
+      "sha256": "b204ddf407fd6210e4d88c95beb66f4afc6272ed0556d2632832e2eb49c2bbc5",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/experimental/fp8_unround_overlay/nr_backend/attention.py",
+      "source_id": "installed-runtime/experimental/fp8_unround_overlay/nr_backend/attention.py",
+      "bytes": 10008,
+      "sha256": "db67828fecec5c48e120a564163b72503b73a4fcd7efb674cadbaf671b1d8841",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/experimental/fp8_unround_overlay/nr_backend/c32_block.py",
+      "source_id": "installed-runtime/experimental/fp8_unround_overlay/nr_backend/c32_block.py",
+      "bytes": 3018,
+      "sha256": "9db0b43e87e0e5e9362db936081fa639f36caf300f98b329977698887dd7d312",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/experimental/fp8_unround_overlay/nr_backend/controlled_temporal.py",
+      "source_id": "installed-runtime/experimental/fp8_unround_overlay/nr_backend/controlled_temporal.py",
+      "bytes": 8144,
+      "sha256": "68c01b39069de34f1be81717adc5666a29ff9dd469948dace9f1992138357beb",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/experimental/fp8_unround_overlay/nr_backend/decoder.py",
+      "source_id": "installed-runtime/experimental/fp8_unround_overlay/nr_backend/decoder.py",
+      "bytes": 4650,
+      "sha256": "7f0e368e9791c78b2758938dd40ffe92fd357262ff9c296b6f43a2b3f95e4cde",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/experimental/fp8_unround_overlay/nr_backend/execution.py",
+      "source_id": "installed-runtime/experimental/fp8_unround_overlay/nr_backend/execution.py",
+      "bytes": 1167,
+      "sha256": "8fbfe06ff6bcd94011da4ec4038a9735ada672dd90df2ff793417344fd045462",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/experimental/fp8_unround_overlay/nr_backend/executor.py",
+      "source_id": "installed-runtime/experimental/fp8_unround_overlay/nr_backend/executor.py",
+      "bytes": 5581,
+      "sha256": "ea9c3a757c4172b31b47b1288c97bfa2d75bb08620e07ab0bdc6f933bbcb3f24",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/experimental/fp8_unround_overlay/nr_backend/exposure.py",
+      "source_id": "installed-runtime/experimental/fp8_unround_overlay/nr_backend/exposure.py",
+      "bytes": 1247,
+      "sha256": "3528f52cc027af480570917a58e2dd57c083dc432a822c475286f03730238673",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/experimental/fp8_unround_overlay/nr_backend/front.py",
+      "source_id": "installed-runtime/experimental/fp8_unround_overlay/nr_backend/front.py",
+      "bytes": 6284,
+      "sha256": "d52cc097c9894345e6177bf17385f9d8ca3b0522d70d00667813e365a9b1ab2b",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/experimental/fp8_unround_overlay/nr_backend/intensity_temporal.py",
+      "source_id": "installed-runtime/experimental/fp8_unround_overlay/nr_backend/intensity_temporal.py",
+      "bytes": 2237,
+      "sha256": "105cf1777821c3b9947f4261c528afd9eef1f8cd0b351ae83b6493841c6404fc",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/experimental/fp8_unround_overlay/nr_backend/live_temporal.py",
+      "source_id": "installed-runtime/experimental/fp8_unround_overlay/nr_backend/live_temporal.py",
+      "bytes": 2710,
+      "sha256": "8ee4454329dd3e6958990b1611588f92ab23581cd49bea7123600a547321fd2d",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/experimental/fp8_unround_overlay/nr_backend/local_temporal.py",
+      "source_id": "installed-runtime/experimental/fp8_unround_overlay/nr_backend/local_temporal.py",
+      "bytes": 1599,
+      "sha256": "1c0cc8436a812833eef23c5c197a5f8a7532ab3d785a3f86445d06e769bc7978",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/experimental/fp8_unround_overlay/nr_backend/multihead_block.py",
+      "source_id": "installed-runtime/experimental/fp8_unround_overlay/nr_backend/multihead_block.py",
+      "bytes": 8021,
+      "sha256": "12cac3afe285c68ae248a9f0a560421ba5be8a2c902afc8a505f80da6571290d",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/experimental/fp8_unround_overlay/nr_backend/noise.py",
+      "source_id": "installed-runtime/experimental/fp8_unround_overlay/nr_backend/noise.py",
+      "bytes": 1975,
+      "sha256": "1bfdfbdcd883aa2e8db35fae52b158f541d6f094de66282c1ca81175b8500707",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/experimental/fp8_unround_overlay/nr_backend/post.py",
+      "source_id": "installed-runtime/experimental/fp8_unround_overlay/nr_backend/post.py",
+      "bytes": 4800,
+      "sha256": "c506e1b32c32d7adb70ed79eee8a1e5920922c86666c960904d7afda05ecee4c",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/experimental/fp8_unround_overlay/nr_backend/pre_block.py",
+      "source_id": "installed-runtime/experimental/fp8_unround_overlay/nr_backend/pre_block.py",
+      "bytes": 3156,
+      "sha256": "db033069852d5d40148caf127829e579e54424587981b3829ad47be651cc3d31",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/experimental/fp8_unround_overlay/nr_backend/pre_mlp.py",
+      "source_id": "installed-runtime/experimental/fp8_unround_overlay/nr_backend/pre_mlp.py",
+      "bytes": 5166,
+      "sha256": "7c19fb5a6fc055bbca14b0401aaf36e94ebee52e4add37ea2153e1847f4652ba",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/experimental/fp8_unround_overlay/nr_backend/reciprocal.py",
+      "source_id": "installed-runtime/experimental/fp8_unround_overlay/nr_backend/reciprocal.py",
+      "bytes": 2500,
+      "sha256": "b150d33db7b3fcde300fef118bf2a1d874dd8fe510e40d2941d30a43ae6aee28",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/experimental/fp8_unround_overlay/nr_backend/sampling.py",
+      "source_id": "installed-runtime/experimental/fp8_unround_overlay/nr_backend/sampling.py",
+      "bytes": 8802,
+      "sha256": "e95228c1743bdb5013d3c3b68cbb85fae315c6deeb913b6c4a057c76d2ed89f8",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/experimental/fp8_unround_overlay/nr_backend/sigmoid.py",
+      "source_id": "installed-runtime/experimental/fp8_unround_overlay/nr_backend/sigmoid.py",
+      "bytes": 1280,
+      "sha256": "567bed0fc4d908a941db4fea03d3b019b37a5db16279e82baec594cc84282d2c",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/experimental/fp8_unround_overlay/nr_backend/split_block.py",
+      "source_id": "installed-runtime/experimental/fp8_unround_overlay/nr_backend/split_block.py",
+      "bytes": 4393,
+      "sha256": "22c1cdc01fd149219e28558fb4fda05041926edaf4d18fe33ceff15d68280c8d",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/experimental/fp8_unround_overlay/nr_backend/style.py",
+      "source_id": "installed-runtime/experimental/fp8_unround_overlay/nr_backend/style.py",
+      "bytes": 10732,
+      "sha256": "e7f30be3fa1face787049588d0a00245da33ea80d81aa47c9607aced8692d17a",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/experimental/fp8_unround_overlay/nr_backend/styled_temporal.py",
+      "source_id": "installed-runtime/experimental/fp8_unround_overlay/nr_backend/styled_temporal.py",
+      "bytes": 2775,
+      "sha256": "ef7d09ae01a603146251d86a755b905cc3eb547cd24112790794d702ea2c798b",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/experimental/fp8_unround_overlay/nr_backend/temporal.py",
+      "source_id": "installed-runtime/experimental/fp8_unround_overlay/nr_backend/temporal.py",
+      "bytes": 8160,
+      "sha256": "35c1c1d5c1475ac0e3385dfa76f0e1020109a376a1d233a64e6c2a1036ca1828",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/experimental/fp8_unround_overlay/nr_backend/tensor_math.py",
+      "source_id": "installed-runtime/experimental/fp8_unround_overlay/nr_backend/tensor_math.py",
+      "bytes": 10605,
+      "sha256": "75835d42a26f462952f1ae3e911d54e300b163f9ce5b4392e35033b2e0667f04",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/experimental/fp8_unround_overlay/nr_backend/triton_attention_exp.py",
+      "source_id": "installed-runtime/experimental/fp8_unround_overlay/nr_backend/triton_attention_exp.py",
+      "bytes": 2130,
+      "sha256": "5ec5eb86a3d26ffb48899307c3dac2b1f8ee1603ad99946f3945f4c3db18d7dd",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/experimental/fp8_unround_overlay/nr_backend/triton_attention_normalize.py",
+      "source_id": "installed-runtime/experimental/fp8_unround_overlay/nr_backend/triton_attention_normalize.py",
+      "bytes": 3241,
+      "sha256": "9a7a91f13d485392b8b3b4045600cd15633903532266c058cda7e50c1ab439cc",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/experimental/fp8_unround_overlay/nr_backend/triton_attention_weights.py",
+      "source_id": "installed-runtime/experimental/fp8_unround_overlay/nr_backend/triton_attention_weights.py",
+      "bytes": 3712,
+      "sha256": "0e75817665d55a8cafd342b5f6d81c20b6a3ac5dc0cd2592327fd1467273fa97",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/experimental/fp8_unround_overlay/nr_backend/triton_cubic_fp8.py",
+      "source_id": "installed-runtime/experimental/fp8_unround_overlay/nr_backend/triton_cubic_fp8.py",
+      "bytes": 2272,
+      "sha256": "12127e4103e29dbd5670ab19a1405e2b77a53c09f6d39796d082694a1dd424eb",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/experimental/fp8_unround_overlay/nr_backend/triton_fp8.py",
+      "source_id": "installed-runtime/experimental/fp8_unround_overlay/nr_backend/triton_fp8.py",
+      "bytes": 1743,
+      "sha256": "7858160bba3f4c135fa53f097e406b904e5493e88cb4cdc6a7f3a95f0fac4cae",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/experimental/fp8_unround_overlay/nr_backend/triton_half_fma.py",
+      "source_id": "installed-runtime/experimental/fp8_unround_overlay/nr_backend/triton_half_fma.py",
+      "bytes": 2476,
+      "sha256": "ab97f3b30565c338b1d2e838cb0b921eb52f6420cddfb00b4fcd6d7413aae764",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/experimental/fp8_unround_overlay/nr_backend/triton_math.py",
+      "source_id": "installed-runtime/experimental/fp8_unround_overlay/nr_backend/triton_math.py",
+      "bytes": 8010,
+      "sha256": "1cc5a1e0a031362b3990de23eb34ff3aeec18b458dbe5eef05d841d4af1c401a",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/experimental/fp8_unround_overlay/nr_backend/ui.py",
+      "source_id": "installed-runtime/experimental/fp8_unround_overlay/nr_backend/ui.py",
+      "bytes": 2308,
+      "sha256": "dcb08e58e7a9105a00fff291eddd274cbee3dbd403d19d79373e15a2eccb016f",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/experimental/fp8_unround_overlay/nr_backend/unround_policy.py",
+      "source_id": "installed-runtime/experimental/fp8_unround_overlay/nr_backend/unround_policy.py",
+      "bytes": 4241,
+      "sha256": "87bf4ba9b9f60e8c10173dc8498d54e23e3387dee0a4485fae08db21dedda827",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/experimental/fp8_unround_overlay/nr_backend/vit_block.py",
+      "source_id": "installed-runtime/experimental/fp8_unround_overlay/nr_backend/vit_block.py",
+      "bytes": 5281,
+      "sha256": "b7f8a992d04f3c5eceb4daf007b3153178f818ccb376fbb219aea0364469d4d5",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/experimental/fp8_unround_overlay/nr_backend/weights.py",
+      "source_id": "installed-runtime/experimental/fp8_unround_overlay/nr_backend/weights.py",
+      "bytes": 1255,
+      "sha256": "54297a9a436378545e6545254531d30ee02c989059e74dfa302a301c650946cf",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/fast/backend/nr_backend/__init__.py",
+      "source_id": "installed-runtime/fast/backend/nr_backend/__init__.py",
+      "bytes": 1396,
+      "sha256": "b204ddf407fd6210e4d88c95beb66f4afc6272ed0556d2632832e2eb49c2bbc5",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/fast/backend/nr_backend/attention.py",
+      "source_id": "installed-runtime/fast/backend/nr_backend/attention.py",
+      "bytes": 9312,
+      "sha256": "dbdf6440272e85d0f24d63a859f47831bb353ed8a9364ca74c1b796fb2ad729e",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/fast/backend/nr_backend/c32_block.py",
+      "source_id": "installed-runtime/fast/backend/nr_backend/c32_block.py",
+      "bytes": 2964,
+      "sha256": "6083c1c3dbd2b01900524c927a4bf872486cec8ef72f6c2c103ce11636ac5e0f",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/fast/backend/nr_backend/controlled_temporal.py",
+      "source_id": "installed-runtime/fast/backend/nr_backend/controlled_temporal.py",
+      "bytes": 8144,
+      "sha256": "68c01b39069de34f1be81717adc5666a29ff9dd469948dace9f1992138357beb",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/fast/backend/nr_backend/decoder.py",
+      "source_id": "installed-runtime/fast/backend/nr_backend/decoder.py",
+      "bytes": 4336,
+      "sha256": "a851e67007ff1d07c7e3377a5fb5eabba33dee11e61f030b36eac75cead3ff03",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/fast/backend/nr_backend/execution.py",
+      "source_id": "installed-runtime/fast/backend/nr_backend/execution.py",
+      "bytes": 1167,
+      "sha256": "8fbfe06ff6bcd94011da4ec4038a9735ada672dd90df2ff793417344fd045462",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/fast/backend/nr_backend/executor.py",
+      "source_id": "installed-runtime/fast/backend/nr_backend/executor.py",
+      "bytes": 5581,
+      "sha256": "ea9c3a757c4172b31b47b1288c97bfa2d75bb08620e07ab0bdc6f933bbcb3f24",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/fast/backend/nr_backend/exposure.py",
+      "source_id": "installed-runtime/fast/backend/nr_backend/exposure.py",
+      "bytes": 1247,
+      "sha256": "3528f52cc027af480570917a58e2dd57c083dc432a822c475286f03730238673",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/fast/backend/nr_backend/front.py",
+      "source_id": "installed-runtime/fast/backend/nr_backend/front.py",
+      "bytes": 6284,
+      "sha256": "d52cc097c9894345e6177bf17385f9d8ca3b0522d70d00667813e365a9b1ab2b",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/fast/backend/nr_backend/intensity_temporal.py",
+      "source_id": "installed-runtime/fast/backend/nr_backend/intensity_temporal.py",
+      "bytes": 2237,
+      "sha256": "105cf1777821c3b9947f4261c528afd9eef1f8cd0b351ae83b6493841c6404fc",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/fast/backend/nr_backend/live_temporal.py",
+      "source_id": "installed-runtime/fast/backend/nr_backend/live_temporal.py",
+      "bytes": 2710,
+      "sha256": "8ee4454329dd3e6958990b1611588f92ab23581cd49bea7123600a547321fd2d",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/fast/backend/nr_backend/local_temporal.py",
+      "source_id": "installed-runtime/fast/backend/nr_backend/local_temporal.py",
+      "bytes": 1599,
+      "sha256": "1c0cc8436a812833eef23c5c197a5f8a7532ab3d785a3f86445d06e769bc7978",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/fast/backend/nr_backend/multihead_block.py",
+      "source_id": "installed-runtime/fast/backend/nr_backend/multihead_block.py",
+      "bytes": 7677,
+      "sha256": "f5fcd992b236f322699dd5086f9ca025382b71d1afe08a766f6967842ce7b23f",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/fast/backend/nr_backend/noise.py",
+      "source_id": "installed-runtime/fast/backend/nr_backend/noise.py",
+      "bytes": 1975,
+      "sha256": "1bfdfbdcd883aa2e8db35fae52b158f541d6f094de66282c1ca81175b8500707",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/fast/backend/nr_backend/post.py",
+      "source_id": "installed-runtime/fast/backend/nr_backend/post.py",
+      "bytes": 4597,
+      "sha256": "a8c4551e6816ae57233c55929091b660b37ad23dc2f2afce33e3cede2e67cc04",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/fast/backend/nr_backend/pre_block.py",
+      "source_id": "installed-runtime/fast/backend/nr_backend/pre_block.py",
+      "bytes": 3002,
+      "sha256": "06fc9e27fec003f126b0cba9a83ab8233b641c4f374e6867648538184a287fe9",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/fast/backend/nr_backend/pre_mlp.py",
+      "source_id": "installed-runtime/fast/backend/nr_backend/pre_mlp.py",
+      "bytes": 4854,
+      "sha256": "0a7c96897076c4225eb24f54eae7f7a6f40627a456fe6491fa731151dc7a9648",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/fast/backend/nr_backend/reciprocal.py",
+      "source_id": "installed-runtime/fast/backend/nr_backend/reciprocal.py",
+      "bytes": 2500,
+      "sha256": "b150d33db7b3fcde300fef118bf2a1d874dd8fe510e40d2941d30a43ae6aee28",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/fast/backend/nr_backend/sampling.py",
+      "source_id": "installed-runtime/fast/backend/nr_backend/sampling.py",
+      "bytes": 8802,
+      "sha256": "e95228c1743bdb5013d3c3b68cbb85fae315c6deeb913b6c4a057c76d2ed89f8",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/fast/backend/nr_backend/sigmoid.py",
+      "source_id": "installed-runtime/fast/backend/nr_backend/sigmoid.py",
+      "bytes": 1280,
+      "sha256": "567bed0fc4d908a941db4fea03d3b019b37a5db16279e82baec594cc84282d2c",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/fast/backend/nr_backend/split_block.py",
+      "source_id": "installed-runtime/fast/backend/nr_backend/split_block.py",
+      "bytes": 4271,
+      "sha256": "aa74edd66b323ad12ce1d9e4425b7baee8ad93823bd8ec864d6f32e638c5c49c",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/fast/backend/nr_backend/style.py",
+      "source_id": "installed-runtime/fast/backend/nr_backend/style.py",
+      "bytes": 10732,
+      "sha256": "e7f30be3fa1face787049588d0a00245da33ea80d81aa47c9607aced8692d17a",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/fast/backend/nr_backend/styled_temporal.py",
+      "source_id": "installed-runtime/fast/backend/nr_backend/styled_temporal.py",
+      "bytes": 2775,
+      "sha256": "ef7d09ae01a603146251d86a755b905cc3eb547cd24112790794d702ea2c798b",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/fast/backend/nr_backend/temporal.py",
+      "source_id": "installed-runtime/fast/backend/nr_backend/temporal.py",
+      "bytes": 8160,
+      "sha256": "35c1c1d5c1475ac0e3385dfa76f0e1020109a376a1d233a64e6c2a1036ca1828",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/fast/backend/nr_backend/tensor_math.py",
+      "source_id": "installed-runtime/fast/backend/nr_backend/tensor_math.py",
+      "bytes": 10605,
+      "sha256": "75835d42a26f462952f1ae3e911d54e300b163f9ce5b4392e35033b2e0667f04",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/fast/backend/nr_backend/triton_attention_exp.py",
+      "source_id": "installed-runtime/fast/backend/nr_backend/triton_attention_exp.py",
+      "bytes": 2130,
+      "sha256": "5ec5eb86a3d26ffb48899307c3dac2b1f8ee1603ad99946f3945f4c3db18d7dd",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/fast/backend/nr_backend/triton_attention_normalize.py",
+      "source_id": "installed-runtime/fast/backend/nr_backend/triton_attention_normalize.py",
+      "bytes": 3241,
+      "sha256": "9a7a91f13d485392b8b3b4045600cd15633903532266c058cda7e50c1ab439cc",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/fast/backend/nr_backend/triton_attention_weights.py",
+      "source_id": "installed-runtime/fast/backend/nr_backend/triton_attention_weights.py",
+      "bytes": 3502,
+      "sha256": "2bff6b4fe6b80425887c655ae695af032ee82fbd3ac3d848a14beff433e11213",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/fast/backend/nr_backend/triton_cubic_fp8.py",
+      "source_id": "installed-runtime/fast/backend/nr_backend/triton_cubic_fp8.py",
+      "bytes": 2124,
+      "sha256": "a07ff170676e4fde75ebe8ecf7b89ccebb0cfa1335cc01f3321c68e784439b35",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/fast/backend/nr_backend/triton_fp8.py",
+      "source_id": "installed-runtime/fast/backend/nr_backend/triton_fp8.py",
+      "bytes": 1743,
+      "sha256": "7858160bba3f4c135fa53f097e406b904e5493e88cb4cdc6a7f3a95f0fac4cae",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/fast/backend/nr_backend/triton_half_fma.py",
+      "source_id": "installed-runtime/fast/backend/nr_backend/triton_half_fma.py",
+      "bytes": 2476,
+      "sha256": "ab97f3b30565c338b1d2e838cb0b921eb52f6420cddfb00b4fcd6d7413aae764",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/fast/backend/nr_backend/triton_math.py",
+      "source_id": "installed-runtime/fast/backend/nr_backend/triton_math.py",
+      "bytes": 8010,
+      "sha256": "1cc5a1e0a031362b3990de23eb34ff3aeec18b458dbe5eef05d841d4af1c401a",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/fast/backend/nr_backend/ui.py",
+      "source_id": "installed-runtime/fast/backend/nr_backend/ui.py",
+      "bytes": 2308,
+      "sha256": "dcb08e58e7a9105a00fff291eddd274cbee3dbd403d19d79373e15a2eccb016f",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/fast/backend/nr_backend/vit_block.py",
+      "source_id": "installed-runtime/fast/backend/nr_backend/vit_block.py",
+      "bytes": 5165,
+      "sha256": "d6d7c30208ffe94990eb60d47e882d0945d94316fb842891616d6c1d390e1b4d",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/fast/backend/nr_backend/weights.py",
+      "source_id": "installed-runtime/fast/backend/nr_backend/weights.py",
+      "bytes": 1255,
+      "sha256": "54297a9a436378545e6545254531d30ee02c989059e74dfa302a301c650946cf",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/game/branch_accum_native_720_kernel_v1.py",
+      "source_id": "installed-runtime/game/branch_accum_native_720_kernel_v1.py",
+      "bytes": 1448,
+      "sha256": "8aaab22c50dee2b26f8738e0117ffb192b0e1ceb94a3cb8081c7dda35c494b16",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/game/branch_accum_native_720_v1.py",
+      "source_id": "installed-runtime/game/branch_accum_native_720_v1.py",
+      "bytes": 24998,
+      "sha256": "23b2d7764b14ac5cfaffc496aced02b7b6576e26685827ab513b1ff71f2996a8",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/game/branched_mlp_pairwise_720_v1.py",
+      "source_id": "installed-runtime/game/branched_mlp_pairwise_720_v1.py",
+      "bytes": 12643,
+      "sha256": "3ba35f667b29a9d42600efbd1e358161062debc0f1a220fe95acae1a7238cd97",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/game/branched_mlp_pairwise_family_720_v1.py",
+      "source_id": "installed-runtime/game/branched_mlp_pairwise_family_720_v1.py",
+      "bytes": 4778,
+      "sha256": "97d54497814e647ea099b6d8e27c19a4081fc0423616c873c5c9eaa1658f6bc6",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/game/c128_attention_project_family_720_v1.py",
+      "source_id": "installed-runtime/game/c128_attention_project_family_720_v1.py",
+      "bytes": 7808,
+      "sha256": "d8b1f703fed9758b86867e34e2e0a8cb12cd4b2b6466e00fc199048c4401cdf6",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/game/c128_attention_project_fused_720_v1.py",
+      "source_id": "installed-runtime/game/c128_attention_project_fused_720_v1.py",
+      "bytes": 5085,
+      "sha256": "6d3b039d105b3313c3e4fc9a26ee09712744bae96e966a706efbb1256f6e4a27",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/game/c128_qkv_direct_pack_all_v1.py",
+      "source_id": "installed-runtime/game/c128_qkv_direct_pack_all_v1.py",
+      "bytes": 5615,
+      "sha256": "92cd77d2166e77572fb7f386affdafcc82d7e46287bb675458c82b4cebb57b6f",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/game/c128_qkv_direct_pack_one_v1.py",
+      "source_id": "installed-runtime/game/c128_qkv_direct_pack_one_v1.py",
+      "bytes": 7883,
+      "sha256": "c740f326f59b21709483dfbfdfeb3aa7160c0c04f36db420958671e0ff647f96",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/game/c256_qkv_direct_pack_all_v1.py",
+      "source_id": "installed-runtime/game/c256_qkv_direct_pack_all_v1.py",
+      "bytes": 5753,
+      "sha256": "d123bf1173501cb3ebf38e47dadce5ea76eb4c90b5eacf4a9d24b35bc174c68e",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/game/c256_qkv_direct_pack_one_v1.py",
+      "source_id": "installed-runtime/game/c256_qkv_direct_pack_one_v1.py",
+      "bytes": 8185,
+      "sha256": "a723ca0584bc4ac2be8e560f55784203ba5f023263f584173c4a77c83aeb68b6",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/game/c32_hidden_native_720_v1.py",
+      "source_id": "installed-runtime/game/c32_hidden_native_720_v1.py",
+      "bytes": 7403,
+      "sha256": "217e17cb3dd4be7201220b92257a2a84d5a34e493a5e5307dd4fd2dbdd68f6b7",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/game/c32_repeated_tail_fusion_v1.py",
+      "source_id": "installed-runtime/game/c32_repeated_tail_fusion_v1.py",
+      "bytes": 3570,
+      "sha256": "dff24998a8be35726cf21ee3a2add7c794de48ba662180e18ef74193330142fc",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/game/c512_int8_ffn_rows_v1.py",
+      "source_id": "installed-runtime/game/c512_int8_ffn_rows_v1.py",
+      "bytes": 7822,
+      "sha256": "2fdfa2c0a6160b5b31cc240740299366c1448fb7fb32ff5a39958e38257096bb",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/game/c512_k8_joint_scope_720_v1.py",
+      "source_id": "installed-runtime/game/c512_k8_joint_scope_720_v1.py",
+      "bytes": 2609,
+      "sha256": "4621cda4df3426cd6898ace624432b148ea17f77e5374b2cd5be9b22812c2ca5",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/game/c512_probability_unround_kernel_v1.py",
+      "source_id": "installed-runtime/game/c512_probability_unround_kernel_v1.py",
+      "bytes": 2495,
+      "sha256": "741aded55dac9283737ff5bf30eed42456a6a470188621e7caf17c14c7e32899",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/game/c512_probability_unround_scope_v1.py",
+      "source_id": "installed-runtime/game/c512_probability_unround_scope_v1.py",
+      "bytes": 7103,
+      "sha256": "11583d92aea0aaa8517f5ff36d5c6040400852e420f4449e69eb39df116eb6d9",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/game/c512_qkv_library_16_v1.py",
+      "source_id": "installed-runtime/game/c512_qkv_library_16_v1.py",
+      "bytes": 2419,
+      "sha256": "67ed1c4e3865a3435c2f618491d4420f517235e1b5d66a9edb05f8fb393a0d00",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/game/c512_window_projection_game_v1.py",
+      "source_id": "installed-runtime/game/c512_window_projection_game_v1.py",
+      "bytes": 6927,
+      "sha256": "ef827f3eff8967310223e48d8aebdf0df143ce3920994717b241d8474baa1a94",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/game/c64_attention_project_family_720_v1.py",
+      "source_id": "installed-runtime/game/c64_attention_project_family_720_v1.py",
+      "bytes": 7747,
+      "sha256": "3b8884626eda7778e7d0baab77d535309d38b2f6119ffb6b94db0fca1377937c",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/game/c64_attention_project_fused_720_v1.py",
+      "source_id": "installed-runtime/game/c64_attention_project_fused_720_v1.py",
+      "bytes": 5145,
+      "sha256": "25a9d390a08739100217b661e93fde46da22a0cc0f1729628801f0badce8e2b6",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/game/c64_qkv_direct_pack_all_v1.py",
+      "source_id": "installed-runtime/game/c64_qkv_direct_pack_all_v1.py",
+      "bytes": 5922,
+      "sha256": "9546acc44c346fcc69fcca7d598d21873915e37062c699fca56fbbc6bbfaabd0",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/game/c64_qkv_direct_pack_v2.py",
+      "source_id": "installed-runtime/game/c64_qkv_direct_pack_v2.py",
+      "bytes": 8006,
+      "sha256": "1710714076ca6a2f6a92741cf7e0901f069188c528ac4a6c9d94d23f9ca2242e",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/game/decoder_input_full_k_720_kernel_v1.py",
+      "source_id": "installed-runtime/game/decoder_input_full_k_720_kernel_v1.py",
+      "bytes": 1231,
+      "sha256": "0d23eb587a3b6a3034ef38566a35146ef60f2abf6cb3840686867a4de980f700",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/game/decoder_input_full_k_720_v1.py",
+      "source_id": "installed-runtime/game/decoder_input_full_k_720_v1.py",
+      "bytes": 51625,
+      "sha256": "04d4c9503fd2964728b9e7481eac978628289f1d617fcc7c6bf2c450eca0c06b",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/game/decoder_merge_native_fma_720_v1.py",
+      "source_id": "installed-runtime/game/decoder_merge_native_fma_720_v1.py",
+      "bytes": 8565,
+      "sha256": "0d33f45e2535bdb824b38b0f591c7f78b380f626b9a1b44ebf8a4cadd9e49bc0",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/game/decoder_merge_native_fma_kernel_720_v1.py",
+      "source_id": "installed-runtime/game/decoder_merge_native_fma_kernel_720_v1.py",
+      "bytes": 4478,
+      "sha256": "bb199c80dea4172ea2f892cdf37253847cfba024f471aadad32dbde2d5d14bb4",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/game/decoder_merge_unround_720_v1.py",
+      "source_id": "installed-runtime/game/decoder_merge_unround_720_v1.py",
+      "bytes": 7684,
+      "sha256": "4a086fc025a0f8ab0e3a75511ba12b5d104685a4abe39fe9d4b1409937416359",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/game/front_noise_native_720_kernel_v1.py",
+      "source_id": "installed-runtime/game/front_noise_native_720_kernel_v1.py",
+      "bytes": 4245,
+      "sha256": "3a56bff8dace4d2bbd7e7020a28ee692a841d538901dd8b2bdafb0854d213f9b",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/game/front_noise_native_720_v1.py",
+      "source_id": "installed-runtime/game/front_noise_native_720_v1.py",
+      "bytes": 13978,
+      "sha256": "1cbab6d625b6de721d6011ea806adc5551a4e0c8152151e2dfe8f467f915c04f",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/game/front_route_dispatch_720_v1.py",
+      "source_id": "installed-runtime/game/front_route_dispatch_720_v1.py",
+      "bytes": 11172,
+      "sha256": "c13e63656ff985c9091897187da5e81ce76e2c9afbee5d3ba1816a451fc9174d",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/game/fullsize_session_v1.py",
+      "source_id": "installed-runtime/game/fullsize_session_v1.py",
+      "bytes": 13096,
+      "sha256": "ff475dba5fe6f55073600906d81eddbe3df31e1d75764997fc6ad19d6ffb5cfb",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/game/fused.py",
+      "source_id": "installed-runtime/game/fused.py",
+      "bytes": 11087,
+      "sha256": "14df7f80a39c99f877993afdb878c701de832b427ca763b9fc3934745361e647",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/game/history_front_compact_720_v1.py",
+      "source_id": "installed-runtime/game/history_front_compact_720_v1.py",
+      "bytes": 6438,
+      "sha256": "0d1086869a74a6b24c7ff7e02c6caf9b855aee6ea341347414c3447333f306db",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/game/history_numeric_suite_720_v1.py",
+      "source_id": "installed-runtime/game/history_numeric_suite_720_v1.py",
+      "bytes": 72810,
+      "sha256": "61ea7824a495a8665061a08cd0b5579b2014460fb1198840bbe791473c26d1af",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/game/history_numeric_suite_720_v1_kernel.py",
+      "source_id": "installed-runtime/game/history_numeric_suite_720_v1_kernel.py",
+      "bytes": 10596,
+      "sha256": "98c91d5b203d0ddd4d624e14cdf5472d5b4a3b7cbb2bef3e3216e5e2b1dc81e9",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/game/history_value_native_720_v1.py",
+      "source_id": "installed-runtime/game/history_value_native_720_v1.py",
+      "bytes": 33173,
+      "sha256": "e600f591d315d949a7ab6aaa14498b537648101be39be3e2c60fa0ce8be7dbdf",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/game/int8_ffn_segment_rows_v1.py",
+      "source_id": "installed-runtime/game/int8_ffn_segment_rows_v1.py",
+      "bytes": 8254,
+      "sha256": "1d15f014ef5c17805cd2a5ee0146b520aad876022aec61138df647f9243bfd20",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/game/native_k8_active_720_v1.py",
+      "source_id": "installed-runtime/game/native_k8_active_720_v1.py",
+      "bytes": 3611,
+      "sha256": "e3362da7c8d499e99b7a0ab86c1ea3d95d0127aff2883a826f9e939b7f04acb9",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/game/native_k8_fp16_v1.py",
+      "source_id": "installed-runtime/game/native_k8_fp16_v1.py",
+      "bytes": 4631,
+      "sha256": "45296adf5e43d9caf857a1a292eb162224c5125c26bad13e0a4c986d2121716e",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/game/native_rtz_evidence_720_v1.py",
+      "source_id": "installed-runtime/game/native_rtz_evidence_720_v1.py",
+      "bytes": 14505,
+      "sha256": "1f5e2d1d9a59857e9a8938626fe2a5b4156db501b9ece9343ddd9617936f638b",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/game/nr_game_controlled_model.py",
+      "source_id": "installed-runtime/game/nr_game_controlled_model.py",
+      "bytes": 5555,
+      "sha256": "12477f3ed5999b714af5dd4a2f7b8c9dcb0b2962f84ed3b270f7c111a850a7ff",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/game/nr_game_controls.py",
+      "source_id": "installed-runtime/game/nr_game_controls.py",
+      "bytes": 55247,
+      "sha256": "9ba18ac2256fa4459050d5cd98d5376afdf3466f15f187958ae87dee7ed72df2",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/game/nr_game_fullsize.py",
+      "source_id": "installed-runtime/game/nr_game_fullsize.py",
+      "bytes": 48862,
+      "sha256": "2178bdca1ed5bc84ddc78b337ba4e37d5750059397bea091955e51f02d7d94fa",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/game/nr_game_history_fused.py",
+      "source_id": "installed-runtime/game/nr_game_history_fused.py",
+      "bytes": 1755,
+      "sha256": "6e4f73ce30a29ffe3366abe558dbb1ef204726a10a1facab2487f1ff7d48e1f0",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/game/nr_game_pre_xess_host.py",
+      "source_id": "installed-runtime/game/nr_game_pre_xess_host.py",
+      "bytes": 29986,
+      "sha256": "97982805d388eedad2c6c256c325fa2cb009f6316cca1b7dcbc877b4f0bd7338",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/game/nr_gpu_handoff_host_v1.py",
+      "source_id": "installed-runtime/game/nr_gpu_handoff_host_v1.py",
+      "bytes": 10089,
+      "sha256": "53fd5ab81bb3d9b0b98f5d56def9eb80b6d99881c24cb241c4bf80e81aeeec40",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/game/nr_temporal_diagnostics_v1.py",
+      "source_id": "installed-runtime/game/nr_temporal_diagnostics_v1.py",
+      "bytes": 4057,
+      "sha256": "e85e2ddbc2b311242e702c585eefc9f4299aec06a687ef443e764d968c574913",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/game/nr_texture_bridge_v1.py",
+      "source_id": "installed-runtime/game/nr_texture_bridge_v1.py",
+      "bytes": 19212,
+      "sha256": "83b1b33f056dfad1fec28e78dfe6daf17414c0b443ddd886c480c491bbc0bb7b",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/game/numeric_cleanup_options_720_v1.py",
+      "source_id": "installed-runtime/game/numeric_cleanup_options_720_v1.py",
+      "bytes": 7190,
+      "sha256": "15d6820857d325fb8c6932be08556d1c86b1f1a60bb98c2db74f5cfd534ce68f",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/game/numeric_cleanup_suite_720_v1.py",
+      "source_id": "installed-runtime/game/numeric_cleanup_suite_720_v1.py",
+      "bytes": 17006,
+      "sha256": "4dfa514ed6172adc8c9756725bca9923163d9956f836215713f86c14f32cfb67",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/game/numeric_frame_validation_720_v1.py",
+      "source_id": "installed-runtime/game/numeric_frame_validation_720_v1.py",
+      "bytes": 16729,
+      "sha256": "4fa60be08404196b46424cdc3cb6769a2e94ad017cb597d39e8d337e72b2a561",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/game/numeric_game_profiles_720_v1.py",
+      "source_id": "installed-runtime/game/numeric_game_profiles_720_v1.py",
+      "bytes": 12438,
+      "sha256": "56aaa3045bba8c67575d456069d432517b6ff296881ec9ee29aec95e2bc8e5fc",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/game/numeric_model_forward_720_v1.py",
+      "source_id": "installed-runtime/game/numeric_model_forward_720_v1.py",
+      "bytes": 4474,
+      "sha256": "afac9ad9b3dde34615fa1b934ba9f97e3ff53150fa209ad992ce2651f602eaf2",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/game/periodic_flash_snapshot_v2.py",
+      "source_id": "installed-runtime/game/periodic_flash_snapshot_v2.py",
+      "bytes": 21001,
+      "sha256": "a65476351a7e51e35fa4913d66407149a017f2ffdc791148f582640be7a1f16a",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/game/post_attention_fusion_v1.py",
+      "source_id": "installed-runtime/game/post_attention_fusion_v1.py",
+      "bytes": 6527,
+      "sha256": "39c4d3ba7f92e9dbcfa281fc85dd2a4909fc4a7162994abdb6d93cbce6ac03d2",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/game/post_attention_k8_combined_v1.py",
+      "source_id": "installed-runtime/game/post_attention_k8_combined_v1.py",
+      "bytes": 4016,
+      "sha256": "8444a14eda43e1b5ea2409a28c1066ab60b1e8a1684bc522fa0908a5e52aec4c",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/game/post_entry_mlp_fusion_v1.py",
+      "source_id": "installed-runtime/game/post_entry_mlp_fusion_v1.py",
+      "bytes": 9830,
+      "sha256": "5b476bfb019b80f4196d2d844d5a0eebe73c94a10072a1e03227d49b4e21e7d6",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/game/post_entry_native_fma_720_v1.py",
+      "source_id": "installed-runtime/game/post_entry_native_fma_720_v1.py",
+      "bytes": 4829,
+      "sha256": "b5942ae42c31d1a28f375c0d85c8adad3ff230180b66e19a3612b8e54ddbd3b0",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/game/post_k8_strided_v1.py",
+      "source_id": "installed-runtime/game/post_k8_strided_v1.py",
+      "bytes": 6153,
+      "sha256": "a2ef03449ebab64298d40571f1b809a0a313608274860207c7b73b50cc742131",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/game/post_numeric_suite_720_kernel_v1.py",
+      "source_id": "installed-runtime/game/post_numeric_suite_720_kernel_v1.py",
+      "bytes": 2512,
+      "sha256": "0c5e1f0867fda8d3e22fd30fcdeabcfdbf114a6354a86baea6c3e36875c03186",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/game/post_numeric_suite_720_v1.py",
+      "source_id": "installed-runtime/game/post_numeric_suite_720_v1.py",
+      "bytes": 87177,
+      "sha256": "2ea32fbac33f15014743dc955eff33d9776e8460e6db4cf65ba3cf6c71f1b9dc",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/game/pre_attention_tail_fusion_v1.py",
+      "source_id": "installed-runtime/game/pre_attention_tail_fusion_v1.py",
+      "bytes": 3201,
+      "sha256": "bdd0ae81b74d79975eae364432ac2a5e858be023ff04073f4674e9c4a0b50a24",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/game/re4_session_v1.py",
+      "source_id": "installed-runtime/game/re4_session_v1.py",
+      "bytes": 12370,
+      "sha256": "050a55eb7a9f5c146e1f040a6f5f4d953a8f7c89e2f12e1c79d333d7ef94e7d4",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/game/replay_lifecycle_audit_base_720_v1.py",
+      "source_id": "installed-runtime/game/replay_lifecycle_audit_base_720_v1.py",
+      "bytes": 18127,
+      "sha256": "786fb0e6f4d739d60b2cc66c6c7c69035be135c877992456d5a3d4c086acd836",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/game/replay_lifecycle_audit_rest_720_v1.py",
+      "source_id": "installed-runtime/game/replay_lifecycle_audit_rest_720_v1.py",
+      "bytes": 24941,
+      "sha256": "18dacfa456ebc382b8b064ac9ea094ecbfff8855116aad6c4874da9f01056040",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/game/replay_lifecycle_graph_constants_720_v1.py",
+      "source_id": "installed-runtime/game/replay_lifecycle_graph_constants_720_v1.py",
+      "bytes": 5692,
+      "sha256": "f98d823229d74a54aaee51b5c4df1d6d3cb18bd4259d20150e9487e7b16a2e1f",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/game/rows_fscache_guard_v1.py",
+      "source_id": "installed-runtime/game/rows_fscache_guard_v1.py",
+      "bytes": 6671,
+      "sha256": "83dbb2b0be90438b3fefecec6564bea6a2d82c237474bfd6098ec4a533a2ba05",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/game/rows_paths_v1.py",
+      "source_id": "installed-runtime/game/rows_paths_v1.py",
+      "bytes": 10729,
+      "sha256": "22125484f0fbdd23e0149fea5c3990517ae0a698792663329eeeb54c543b0d4b",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/game/rows_scopes_v1.py",
+      "source_id": "installed-runtime/game/rows_scopes_v1.py",
+      "bytes": 11453,
+      "sha256": "877c2a1df684e105b547fbba987a541bbe3590799ae526bb763ca0708668cba0",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/game/three_structure_combo_v1.py",
+      "source_id": "installed-runtime/game/three_structure_combo_v1.py",
+      "bytes": 9267,
+      "sha256": "26bb35571cad1e0f79da11186be7b28071c4830028b902d22af912a2fd5b4808",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/game/vit_head_dataflow_720_v1.py",
+      "source_id": "installed-runtime/game/vit_head_dataflow_720_v1.py",
+      "bytes": 10273,
+      "sha256": "55944f60e223c4ba5d1a848f38eb8fb76a3b353e0da11b92ef9f6063bf726884",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/game/vit_native_fma_720_v1.py",
+      "source_id": "installed-runtime/game/vit_native_fma_720_v1.py",
+      "bytes": 34988,
+      "sha256": "bba9060775904ce6b5de40478054abf755f1009d6e5956946fbb8f712812fde1",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/game/vit_numeric_suite_720_v1.py",
+      "source_id": "installed-runtime/game/vit_numeric_suite_720_v1.py",
+      "bytes": 78830,
+      "sha256": "f9d5950c39b54d9d4d37d78dbc4cbd18049610ded7dec0ce1b375e91723e6fce",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/game/vit_numeric_suite_720_v1_kernels.py",
+      "source_id": "installed-runtime/game/vit_numeric_suite_720_v1_kernels.py",
+      "bytes": 3746,
+      "sha256": "c540997ce70ca75b7bff17304946e811fa409ea94bd999fc0ecd0811022eb95a",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/game/vit_projection_single_accum_720_v1.py",
+      "source_id": "installed-runtime/game/vit_projection_single_accum_720_v1.py",
+      "bytes": 10385,
+      "sha256": "6378b81031a254d0625a448610ad7fe171ca880e10a22b646e4266727f76ab9f",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/modules/batched_branched_mlp_v1.py",
+      "source_id": "installed-runtime/modules/batched_branched_mlp_v1.py",
+      "bytes": 6077,
+      "sha256": "441b8e71a4a967024c61617f41ff95c9b28ace09103f0bcd0f579d9a1cd433ea",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/modules/batched_branched_mlp_v2.py",
+      "source_id": "installed-runtime/modules/batched_branched_mlp_v2.py",
+      "bytes": 932,
+      "sha256": "077ee397b477b7bbe63b9bf35169d08f57659cd9fb965498509c9a2d31f11207",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/modules/c32_chunk_layout_v2.py",
+      "source_id": "installed-runtime/modules/c32_chunk_layout_v2.py",
+      "bytes": 2737,
+      "sha256": "c27cb5aaec1733050fc01dc879ccd8abf586f0c314f1b51cb8b62629d0695e95",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/modules/c512_int8_ffn_gpu_v1.py",
+      "source_id": "installed-runtime/modules/c512_int8_ffn_gpu_v1.py",
+      "bytes": 9952,
+      "sha256": "7958d885f357fa4413404f9c70f16987fd4a25ee35633cdf6533288978f13ff0",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/modules/c512_int8_ffn_oracle_v1.py",
+      "source_id": "installed-runtime/modules/c512_int8_ffn_oracle_v1.py",
+      "bytes": 4317,
+      "sha256": "6aeb627126b6c5dd3f8bd94fcdb5765167399bdbbe977b1eedb3bf4b44b2646c",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/modules/c512_int8_full_stack_v1.py",
+      "source_id": "installed-runtime/modules/c512_int8_full_stack_v1.py",
+      "bytes": 10871,
+      "sha256": "fa47c53600a7203db5fb73c43f45b16bd9bd71ce17c9373d18c65bd04fcb7de4",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/modules/c512_quad_dispatch_v1.py",
+      "source_id": "installed-runtime/modules/c512_quad_dispatch_v1.py",
+      "bytes": 4110,
+      "sha256": "12bf81e4fe5647245a56202cec1337d1360717991bcb3ef322474654b06dfca8",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/modules/c512_quad_queries_v2.py",
+      "source_id": "installed-runtime/modules/c512_quad_queries_v2.py",
+      "bytes": 2919,
+      "sha256": "8f4ba17aa517035a581f3fd2c512dd2dcf154c092b66fbff329f16c99a7a5bb4",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/modules/c512_quad_query_stack_v1.py",
+      "source_id": "installed-runtime/modules/c512_quad_query_stack_v1.py",
+      "bytes": 5849,
+      "sha256": "bd619a6bcc092b8ef9bee044f0d44804b85d27fb787cfc5ea7d81dc0071ee2e6",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/modules/c512_window_layout_scope_v1.py",
+      "source_id": "installed-runtime/modules/c512_window_layout_scope_v1.py",
+      "bytes": 5680,
+      "sha256": "ef291b3025a0c297d7d6d9b2b627df1e5944c6f6529dfbe17579c15f6877138a",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/modules/c512_window_projection_v1.py",
+      "source_id": "installed-runtime/modules/c512_window_projection_v1.py",
+      "bytes": 3273,
+      "sha256": "4dc8b03d2e0cbd135596cf19b53769671cb74c9e0c159cc83d733455a2b394e6",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/modules/capture_body_v1.py",
+      "source_id": "installed-runtime/modules/capture_body_v1.py",
+      "bytes": 3623,
+      "sha256": "2f7fa28dd66a43cd20d0edaee28d09aaac034fe90b3865080ffc065d7397dfbb",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/modules/compact_c512_qkv_pack_v1.py",
+      "source_id": "installed-runtime/modules/compact_c512_qkv_pack_v1.py",
+      "bytes": 3699,
+      "sha256": "6e6e149a53397f773a233d97b1c436703805867d4328f654d7b419143120d02c",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/modules/compact_c512_qkv_stack_v1.py",
+      "source_id": "installed-runtime/modules/compact_c512_qkv_stack_v1.py",
+      "bytes": 7367,
+      "sha256": "81e35c300dd09fb6f530ed855f97ffee83dd8e1e6f30c59a5c80855bc103dad5",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/modules/compressed_arrays_v1.py",
+      "source_id": "installed-runtime/modules/compressed_arrays_v1.py",
+      "bytes": 1405,
+      "sha256": "d9b8f5273d475774975359b5db86ef1ab04da49d034924830e226b6f4974cd8b",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/modules/cubic_lut_constant_v1.py",
+      "source_id": "installed-runtime/modules/cubic_lut_constant_v1.py",
+      "bytes": 2277,
+      "sha256": "5067bc1e01a6cdf146f4f0b90c21d73310b9a2780f3a247aa3292f7b4ca3e7e6",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/modules/current_dense_tiled_provider_v1.py",
+      "source_id": "installed-runtime/modules/current_dense_tiled_provider_v1.py",
+      "bytes": 3188,
+      "sha256": "649cc17020bf6d473ba080257c6b6465768eb6e937e73ce381f17e0322ae84c0",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/modules/decoder_gather_merge_v1.py",
+      "source_id": "installed-runtime/modules/decoder_gather_merge_v1.py",
+      "bytes": 3763,
+      "sha256": "da55a8fa95e79808d737a8c76b1aa89fad36078ff10c9d9f1c190f5a3ae11e1a",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/modules/decoder_gather_scope_v1.py",
+      "source_id": "installed-runtime/modules/decoder_gather_scope_v1.py",
+      "bytes": 4756,
+      "sha256": "2f6c69c3676339b016c01050f03dec9cd9c3e42762a1b1678d2207e32092f8d4",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/modules/dense_tiles_v1.py",
+      "source_id": "installed-runtime/modules/dense_tiles_v1.py",
+      "bytes": 2141,
+      "sha256": "172fe50a1d6e61366ac6b33c6505c932b15fcc74edc4dd02cffb42c18dc94f11",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/modules/face480_residual_scale_v1.py",
+      "source_id": "installed-runtime/modules/face480_residual_scale_v1.py",
+      "bytes": 2129,
+      "sha256": "b18a74a857aeca8feb6404f797b9bf1bd66b7f64f3f0d0e0b6ece27be5a691d0",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/modules/fast_matrices_v3.py",
+      "source_id": "installed-runtime/modules/fast_matrices_v3.py",
+      "bytes": 7378,
+      "sha256": "6b80bbf2a509d5351fd5f503867f72d4fc723c319439e61cb2e590136bd46a06",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/modules/fork_fp8_jit_v2.py",
+      "source_id": "installed-runtime/modules/fork_fp8_jit_v2.py",
+      "bytes": 5383,
+      "sha256": "94c2e7d626d618f3954eab66102269f7a986beb19dcaecd251387b4dff29e6b9",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/modules/fp8_graph_rewrite_v1.py",
+      "source_id": "installed-runtime/modules/fp8_graph_rewrite_v1.py",
+      "bytes": 4052,
+      "sha256": "947e0b810d2b6cc9564a10c1ea37829bdff0d2c410940fa44ee112dd2d17a118",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/modules/fused_activation_int8_v1.py",
+      "source_id": "installed-runtime/modules/fused_activation_int8_v1.py",
+      "bytes": 2762,
+      "sha256": "54486d4e5810613a9a15eea1b6a405702423e68895cb87279f3fc904d082e390",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/modules/fused_branched_mlp_v1.py",
+      "source_id": "installed-runtime/modules/fused_branched_mlp_v1.py",
+      "bytes": 3528,
+      "sha256": "f18e1ce187ffa42379998f49854110737d2df94c145717df4e1c0cf171972e6c",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/modules/fused_branched_pairs_v1.py",
+      "source_id": "installed-runtime/modules/fused_branched_pairs_v1.py",
+      "bytes": 2369,
+      "sha256": "0eeee74e7c832f1c6e1294f12e8c91289c8f4cb3132db8c5bd2013391e437a57",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/modules/fused_c32_mlp_lut_v1.py",
+      "source_id": "installed-runtime/modules/fused_c32_mlp_lut_v1.py",
+      "bytes": 3770,
+      "sha256": "62e0277e6b8a09a932985233e90eec14838f7ed7a3053b37ab8a847ebf59af94",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/modules/fused_c32_mlp_v1.py",
+      "source_id": "installed-runtime/modules/fused_c32_mlp_v1.py",
+      "bytes": 4217,
+      "sha256": "0f9807f9e8783c4a854377853abd4b95b8054c16254d0c60de05e03bad281804",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/modules/fused_c32_projection_native_half_v1.py",
+      "source_id": "installed-runtime/modules/fused_c32_projection_native_half_v1.py",
+      "bytes": 6015,
+      "sha256": "8310f1512bef10cbe3fe70f76c18772caf6806b1f1d3d322aa87c81ca586004f",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/modules/fused_c32_projection_pack_v1.py",
+      "source_id": "installed-runtime/modules/fused_c32_projection_pack_v1.py",
+      "bytes": 5913,
+      "sha256": "53b94ea2071f4c35b8e120b3858f18bc4acd6544b326acfcb8f8deab906893dd",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/modules/fused_c32_qkv_scatter_v2.py",
+      "source_id": "installed-runtime/modules/fused_c32_qkv_scatter_v2.py",
+      "bytes": 4748,
+      "sha256": "59fd6b729066a81c916f3f80d4fea1666fb7109ff6581cd01be68cd64312b059",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/modules/fused_cached_matrices_v1.py",
+      "source_id": "installed-runtime/modules/fused_cached_matrices_v1.py",
+      "bytes": 1827,
+      "sha256": "550a2022258d45c5ea89fdd3dcd25fa1d63fe242db723db3ae87a860cbfc1597",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/modules/fused_cached_matrices_v2.py",
+      "source_id": "installed-runtime/modules/fused_cached_matrices_v2.py",
+      "bytes": 1924,
+      "sha256": "e7c3bc99a4fcef0659a3250e9e60667937aa0135670a4cbac45e20769c8eea80",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/modules/fused_dynamic_front_v1.py",
+      "source_id": "installed-runtime/modules/fused_dynamic_front_v1.py",
+      "bytes": 6423,
+      "sha256": "37813197c7326041866b059d6874358914cac297700345f9ed4ab3db5209b552",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/modules/fused_graph_history_warp_v2.py",
+      "source_id": "installed-runtime/modules/fused_graph_history_warp_v2.py",
+      "bytes": 2017,
+      "sha256": "1db533851bf5eae33c11aa5a4c7ec03fa580db39721c029e43ac96162b36f8ad",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/modules/fused_head_layout_v1.py",
+      "source_id": "installed-runtime/modules/fused_head_layout_v1.py",
+      "bytes": 1959,
+      "sha256": "bdb21e2f496c7d43aef5a5af21c3599cb79008e68b4a31e64e1058c0381eff2d",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/modules/fused_mlp_pair_v1.py",
+      "source_id": "installed-runtime/modules/fused_mlp_pair_v1.py",
+      "bytes": 2316,
+      "sha256": "e4b0a34c1450f62c534a8208862fe32feea79c6291acc8bc03450006aadf01c4",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/modules/fused_qkv_pack_native_half_v1.py",
+      "source_id": "installed-runtime/modules/fused_qkv_pack_native_half_v1.py",
+      "bytes": 4662,
+      "sha256": "989a01ed29d1d61c251a7d0b65361d69d5a30793640a3ee4baffa8eba30a7849",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/modules/fused_qkv_pack_v1.py",
+      "source_id": "installed-runtime/modules/fused_qkv_pack_v1.py",
+      "bytes": 4560,
+      "sha256": "54affa972d35f43c452adf6da3ad8ac19355ffe6db37fc6e927a52d6f76b0450",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/modules/fused_split_ffwd_v1.py",
+      "source_id": "installed-runtime/modules/fused_split_ffwd_v1.py",
+      "bytes": 3941,
+      "sha256": "b22c2c02cc5bb388cf5ff3a9108f59c427e43e2dbac9da58d3d149fe5cc6d9aa",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/modules/fused_split_ffwd_v2.py",
+      "source_id": "installed-runtime/modules/fused_split_ffwd_v2.py",
+      "bytes": 1065,
+      "sha256": "4b90dbf02f7cba8523433b3d228e8a916b88826da3a48bac0c13acfef377373a",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/modules/fused_square_history_v2.py",
+      "source_id": "installed-runtime/modules/fused_square_history_v2.py",
+      "bytes": 7153,
+      "sha256": "7648159f33430d087599895307e53674d7772925637137aaa18f9d24489da0a4",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/modules/fused_swin_core_native_half_v1.py",
+      "source_id": "installed-runtime/modules/fused_swin_core_native_half_v1.py",
+      "bytes": 4321,
+      "sha256": "9d42dc06d0d22564a37cc8f98882e5206e156ea108de0eb621845f0e90ab3a05",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/modules/fused_swin_core_v2.py",
+      "source_id": "installed-runtime/modules/fused_swin_core_v2.py",
+      "bytes": 4219,
+      "sha256": "aee5bc46a60104ad07523e27087b178ebb08c88d7adcfe0da26db8daf69d9298",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/modules/fused_swin_heads_native_half_v1.py",
+      "source_id": "installed-runtime/modules/fused_swin_heads_native_half_v1.py",
+      "bytes": 2246,
+      "sha256": "cbf05d3431180f3f74f416c2a16ca55ad0814995551b3d2f26e9fdedc68520e7",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/modules/fused_swin_heads_v1.py",
+      "source_id": "installed-runtime/modules/fused_swin_heads_v1.py",
+      "bytes": 2155,
+      "sha256": "e6e2ebe4561d0f672f8c32e63b304b58b3dc301cb78ba23ac50d31b0ec363c89",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/modules/fused_swin_native_half_v1.py",
+      "source_id": "installed-runtime/modules/fused_swin_native_half_v1.py",
+      "bytes": 1539,
+      "sha256": "d6312d04fce4ad266ed91c9b2bd5a5ff0d7d2c75e04589727e01d1c637206c20",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/modules/fused_vit_attention64_adapter_v2.py",
+      "source_id": "installed-runtime/modules/fused_vit_attention64_adapter_v2.py",
+      "bytes": 2479,
+      "sha256": "224dec0c32874765d46917b837765936640ec56c9ad06520635cc1c9294345df",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/modules/fused_vit_attention64_v2.py",
+      "source_id": "installed-runtime/modules/fused_vit_attention64_v2.py",
+      "bytes": 4590,
+      "sha256": "820e5509e05fdeccfcbd74a94de761a6b216b687de940e578cf9943f54ef7f18",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/modules/fused_vit_projection_v1.py",
+      "source_id": "installed-runtime/modules/fused_vit_projection_v1.py",
+      "bytes": 3936,
+      "sha256": "344e8b77ff8e0cbc3c5fe77e62e736340c96d908764afe8ebfa91bfde3bdc276",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/modules/fused_vit_projection_v2.py",
+      "source_id": "installed-runtime/modules/fused_vit_projection_v2.py",
+      "bytes": 3415,
+      "sha256": "f617c6c8ba328fe4f511445b4456e9cc717e302594ef5b7cecf1b8c93e196392",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/modules/fused_vit_projection_v3.py",
+      "source_id": "installed-runtime/modules/fused_vit_projection_v3.py",
+      "bytes": 1006,
+      "sha256": "e236e8c849c5eb3234865c221a0b065d25f284fbf330d739c1ca9754236ac479",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/modules/fused_vit_qkv_v1.py",
+      "source_id": "installed-runtime/modules/fused_vit_qkv_v1.py",
+      "bytes": 5523,
+      "sha256": "8b83cc7724c23ed1a4fc727155af0c1ef5d27cf2ea4ad95b7c0143e55ae0d190",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/modules/graph_front_v1.py",
+      "source_id": "installed-runtime/modules/graph_front_v1.py",
+      "bytes": 5302,
+      "sha256": "d2b8a5f3cb913b71c836e8c2dc0a19cb34b0dbacf6a83851010d11a5a172f5de",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/modules/graph_front_v2.py",
+      "source_id": "installed-runtime/modules/graph_front_v2.py",
+      "bytes": 674,
+      "sha256": "09471129801447263272c596708d4ce0d5b1e059621db35afab7490df6055725",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/modules/graph_front_v3.py",
+      "source_id": "installed-runtime/modules/graph_front_v3.py",
+      "bytes": 1460,
+      "sha256": "bacf2c8acb00356c79d82b48c73954cf559254fec9d18ab6cca01663f1f05c25",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/modules/graph_front_v4.py",
+      "source_id": "installed-runtime/modules/graph_front_v4.py",
+      "bytes": 3408,
+      "sha256": "bdd8ed34ee979608f445eb82e2094c8b1b04c3ed288ee5038949c1c52872ca5e",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/modules/graph_front_v5.py",
+      "source_id": "installed-runtime/modules/graph_front_v5.py",
+      "bytes": 2806,
+      "sha256": "8887facb3d98f91f6a068206698283b2865d895cbe7cdae366b0455939f3a6ec",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/modules/graph_front_v6.py",
+      "source_id": "installed-runtime/modules/graph_front_v6.py",
+      "bytes": 389,
+      "sha256": "3cf46091d2a44457975a95670aa317d6205e0ec9db4c5bc5acf4e70c9af7a052",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/modules/graph_history_warp_v1.py",
+      "source_id": "installed-runtime/modules/graph_history_warp_v1.py",
+      "bytes": 4497,
+      "sha256": "8d09af40d2b94f6de119b192da3f8f25ead63394573793105b07a0e741a5752c",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/modules/graph_history_warp_v2.py",
+      "source_id": "installed-runtime/modules/graph_history_warp_v2.py",
+      "bytes": 1184,
+      "sha256": "f69fd9aa691985a19cf2ee7b1990068956292b53db84a86cc05fa2245fbe754c",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/modules/immutable_artifacts_v1.py",
+      "source_id": "installed-runtime/modules/immutable_artifacts_v1.py",
+      "bytes": 1314,
+      "sha256": "02dc66bb4d3afad6508d692c5c418c63d0a8531687fb1d76239dfba0c1f5cdff",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/modules/int8_ffn_body_scope_v1.py",
+      "source_id": "installed-runtime/modules/int8_ffn_body_scope_v1.py",
+      "bytes": 7682,
+      "sha256": "0f86e5405c88c1372d31f417ae70365b87b43d6ba5e40f10ca693cdadd5da90c",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/modules/int8_ffn_calibrated_stack_v1.py",
+      "source_id": "installed-runtime/modules/int8_ffn_calibrated_stack_v1.py",
+      "bytes": 1694,
+      "sha256": "ef95614575a85abeeda4cddaff952f50bec4e6644883706aae3d7d4781307648",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/modules/int8_ffn_nr_stack_v1.py",
+      "source_id": "installed-runtime/modules/int8_ffn_nr_stack_v1.py",
+      "bytes": 4623,
+      "sha256": "27f649ff92116741fef44810073fe5e9ea61e9e752da038ed243f74045421a1a",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/modules/int8_ffn_segment_gpu_v1.py",
+      "source_id": "installed-runtime/modules/int8_ffn_segment_gpu_v1.py",
+      "bytes": 6895,
+      "sha256": "82ee900dba50758671362a3993bc6c8ace39c28d773169404d851d775e42cfce",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/modules/int8_ffn_segment_oracle_v1.py",
+      "source_id": "installed-runtime/modules/int8_ffn_segment_oracle_v1.py",
+      "bytes": 4719,
+      "sha256": "bbedbbd262add2cb2b0ada37a17e5a462d077ec5af0fdb227d2d17d932134e78",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/modules/k8_tiled_provider_v1.py",
+      "source_id": "installed-runtime/modules/k8_tiled_provider_v1.py",
+      "bytes": 1440,
+      "sha256": "7229000e86cc702fd5b7c70c9844b3d24616632d81a83d4bd0c69f5116c61183",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/modules/layout_crop_stack_v1.py",
+      "source_id": "installed-runtime/modules/layout_crop_stack_v1.py",
+      "bytes": 2553,
+      "sha256": "bf9cdfee232ed8ca9d1d184a8e9f93a8e1de4124495da462fc6e956b51bbd1b8",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/modules/native_callback_v2.py",
+      "source_id": "installed-runtime/modules/native_callback_v2.py",
+      "bytes": 3069,
+      "sha256": "82a4e5c4c33c18cdcff7d681b6b2e43bb7ebbe595ee34b3719d9b94e0c241cda",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/modules/native_cubic_adapters_v1.py",
+      "source_id": "installed-runtime/modules/native_cubic_adapters_v1.py",
+      "bytes": 3750,
+      "sha256": "9b20e6b3f0388f76d5e0ecd4d7adb549f0e094ad7df4d9f40e10cf319a9df0d3",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/modules/native_cubic_batched_v1.py",
+      "source_id": "installed-runtime/modules/native_cubic_batched_v1.py",
+      "bytes": 5988,
+      "sha256": "9a17715b688ba42504a586e838699ee83563091991b10a028b7c7706892f8dc3",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/modules/native_cubic_c32_v1.py",
+      "source_id": "installed-runtime/modules/native_cubic_c32_v1.py",
+      "bytes": 3821,
+      "sha256": "4eabe9ec6684cd0f2525c9e29fa8d4209fa91e6262fc38f0faafd5190dc46e66",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/modules/native_cubic_split_v1.py",
+      "source_id": "installed-runtime/modules/native_cubic_split_v1.py",
+      "bytes": 3873,
+      "sha256": "b297719515e31fcd24c144bdf02b2bcf3ca932141147cc164b573bebc9140f32",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/modules/native_half_attention_fma_v1.py",
+      "source_id": "installed-runtime/modules/native_half_attention_fma_v1.py",
+      "bytes": 496,
+      "sha256": "5d37caf41f58a97da1e7c5a0c67601b5500f8dfed08e6128008130849e590691",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/modules/native_half_cubic_v1.py",
+      "source_id": "installed-runtime/modules/native_half_cubic_v1.py",
+      "bytes": 703,
+      "sha256": "4dfeaad7a27b69332dd33b29c12a8cc09f602ca757a8c9d73b7339398b19bcb2",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/modules/native_half_head_layout_v1.py",
+      "source_id": "installed-runtime/modules/native_half_head_layout_v1.py",
+      "bytes": 2719,
+      "sha256": "227515fa109ab1d47c9c0df0e64380877ed5f4bc504f7ba3ce4171a5ec9f36c2",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/modules/nr256_product_stack_v1.py",
+      "source_id": "installed-runtime/modules/nr256_product_stack_v1.py",
+      "bytes": 926,
+      "sha256": "863da3375e222e7c74d57362c02cc993e54d5f3d36f75c97273b15b9dd926b3a",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/modules/nr256_selected_stack_v1.py",
+      "source_id": "installed-runtime/modules/nr256_selected_stack_v1.py",
+      "bytes": 2426,
+      "sha256": "7e4a60784114b74b9941b948e4f568547e41f1b091a6b9f8bdda8b4a4dd88db8",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/modules/nr256_selected_stack_v2.py",
+      "source_id": "installed-runtime/modules/nr256_selected_stack_v2.py",
+      "bytes": 710,
+      "sha256": "2931ec48f7f17ae48bf76e438c170000c1900b0783d20de9f13f4f35c47bb574",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/modules/nr256_selected_stack_v3.py",
+      "source_id": "installed-runtime/modules/nr256_selected_stack_v3.py",
+      "bytes": 570,
+      "sha256": "ab1ee2d2e485d4bc0d25c5e413d2d37f63041b5a1c7e661fef41b8c3996db7ac",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/modules/nr256_selected_stack_v4.py",
+      "source_id": "installed-runtime/modules/nr256_selected_stack_v4.py",
+      "bytes": 370,
+      "sha256": "a1fdc5bfa799d9f2a62edb3ad06585a84ee2db0127a1135774a1a7b48e5f4938",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/modules/nr_exact_runtime_v1.py",
+      "source_id": "installed-runtime/modules/nr_exact_runtime_v1.py",
+      "bytes": 3928,
+      "sha256": "e7321dc37b02c7f61ad540134ca5eec22c33fd5b7809f0c6198bbd2332199069",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/modules/nr_runtime_v1.py",
+      "source_id": "installed-runtime/modules/nr_runtime_v1.py",
+      "bytes": 4994,
+      "sha256": "dbc23f3562ed4a56fecb29593b9529a22a63672613e72e2c2cade2973f29342c",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/modules/nr_texture_bridge_v1.py",
+      "source_id": "installed-runtime/modules/nr_texture_bridge_v1.py",
+      "bytes": 7247,
+      "sha256": "a3c3269aceb9c6f47cd5cb5e2610c0521b2160951d02973fe18ec7680ef98c96",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/modules/post_region_scope_v1.py",
+      "source_id": "installed-runtime/modules/post_region_scope_v1.py",
+      "bytes": 3617,
+      "sha256": "2a777c3dafcece0bfce03a63611b6c4d19e280fe6fd3a32bebad25954758cfb0",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/modules/projected_head_layout_v1.py",
+      "source_id": "installed-runtime/modules/projected_head_layout_v1.py",
+      "bytes": 287,
+      "sha256": "bd663bfd573f38ce113edc778fa998513fb6968378f86d96e59433dfb3c8179b",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/modules/qkv_head_layout_v1.py",
+      "source_id": "installed-runtime/modules/qkv_head_layout_v1.py",
+      "bytes": 1979,
+      "sha256": "549cca70c993d8fb62bdbfbf3b0ab90d42d7710390e7824aab8353b5b688599e",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/modules/quantization_dataflow_v1.py",
+      "source_id": "installed-runtime/modules/quantization_dataflow_v1.py",
+      "bytes": 7460,
+      "sha256": "c3cc91598f8378592cd8ea950ab32bfbab63f1b7997fcbfc7000518795912bd9",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/modules/residual_scale_v1.py",
+      "source_id": "installed-runtime/modules/residual_scale_v1.py",
+      "bytes": 8250,
+      "sha256": "abd19fa2f418ad2dbdea164be2b45df5c0c9ace2a1ef3ea9895ddabce55e4262",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/modules/shared_model_buffers_v1.py",
+      "source_id": "installed-runtime/modules/shared_model_buffers_v1.py",
+      "bytes": 1874,
+      "sha256": "8a8038e1a2df876d3190e4a948abe7acf80f449a3135131572a92ef7f624d804",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/modules/short_fp8_graph_v1.py",
+      "source_id": "installed-runtime/modules/short_fp8_graph_v1.py",
+      "bytes": 3525,
+      "sha256": "aece5ef7a8f9ef0c6aa682ba551b1b4db6f4dc60ca7de1b003ea0e8749de6ba7",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/modules/short_fp8_v1.py",
+      "source_id": "installed-runtime/modules/short_fp8_v1.py",
+      "bytes": 1430,
+      "sha256": "2f4fc9a8081ec5a9ac880ae0ca6e57d24d22a3bafc82a3ec96652069690219c0",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/modules/short_fp8_v2.py",
+      "source_id": "installed-runtime/modules/short_fp8_v2.py",
+      "bytes": 1430,
+      "sha256": "87689784555ca97f4799f7dc865524c9fca4443ba1114d6219a5b17b1d19e7fb",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/modules/spill_preflight_v1.py",
+      "source_id": "installed-runtime/modules/spill_preflight_v1.py",
+      "bytes": 1102,
+      "sha256": "74ce04f648c09c851d7f169332bc35110586d2c6632aa904d4e351289027798d",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/modules/static_weight_cache_v1.py",
+      "source_id": "installed-runtime/modules/static_weight_cache_v1.py",
+      "bytes": 3379,
+      "sha256": "cddb51c57b7c4413478d75adade1c27aac73b7fa19eefd5e4867adc64e0f3981",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/modules/static_weight_cache_v2.py",
+      "source_id": "installed-runtime/modules/static_weight_cache_v2.py",
+      "bytes": 2170,
+      "sha256": "5a198b4f67201d8844a73abbd697e60799c3b6b03d4fd1dc298e7fe93725d825",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/modules/strided_batched_v1.py",
+      "source_id": "installed-runtime/modules/strided_batched_v1.py",
+      "bytes": 3412,
+      "sha256": "c7e922c5514a678c2e258ad9a322ad163cb9b1d7dd118a7424342fb4ec483eaf",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/modules/strided_batched_v2.py",
+      "source_id": "installed-runtime/modules/strided_batched_v2.py",
+      "bytes": 684,
+      "sha256": "bce3a3e437b2feab00891c4cc98276fdb036cf8c88a575bb4947fcf5974675fc",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/modules/swin_scheduling_v1.py",
+      "source_id": "installed-runtime/modules/swin_scheduling_v1.py",
+      "bytes": 2740,
+      "sha256": "bdc8f3db6ad2688bf7d7135ead0cfb94f217105bd8e507c6cd47be8e9a7a428e",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/modules/vit_head_layout_scope_v1.py",
+      "source_id": "installed-runtime/modules/vit_head_layout_scope_v1.py",
+      "bytes": 3589,
+      "sha256": "c0fb666561d076be985e86b32e929d23bef188d8778bed5de35e6aa51a579670",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/modules/vit_head_major_projection_v1.py",
+      "source_id": "installed-runtime/modules/vit_head_major_projection_v1.py",
+      "bytes": 2358,
+      "sha256": "40ac2d84af465b9f0e393e2edd18f1efcf54b61b58f0fa1075880c1423f68e14",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/modules/window_block_attention_v3.py",
+      "source_id": "installed-runtime/modules/window_block_attention_v3.py",
+      "bytes": 2599,
+      "sha256": "c279c421edbcdad2cf8ee11bba7ec6c8c0519a78fff52641001bea7d32cb3129",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/modules/window_block_projection_v3.py",
+      "source_id": "installed-runtime/modules/window_block_projection_v3.py",
+      "bytes": 3737,
+      "sha256": "15c0ee0bc464d322b82eb6ec4c1da0d907bb0d177a1fab206b0bb784c6b11aa7",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/modules/window_blocks_v3.py",
+      "source_id": "installed-runtime/modules/window_blocks_v3.py",
+      "bytes": 4721,
+      "sha256": "2bbcede512b430dce23d8ee51b88f5ceb9d5d168ff74b77dbf75636b9091c0ac",
+      "byte_identical": true
+    },
+    {
+      "path": "current/runtime/modules/window_layout_v1.py",
+      "source_id": "installed-runtime/modules/window_layout_v1.py",
+      "bytes": 5998,
+      "sha256": "b344016a9ef2cd5fe33def2a070ecbcc1b3ab403fccf9e82604b5e555cba3346",
+      "byte_identical": true
+    }
+  ],
+  "excluded": [
+    "model weights and calibration arrays",
+    "game and vendor binaries",
+    "private GPU Block/DIS implementation",
+    "Triton binary cache",
+    "raw media"
+  ],
+  "GPU_executed": false,
+  "installed_runtime_source_files": 406,
+  "note": "Runtime source is installed byte identity; bridge source is separately pinned authored source, not an asserted reproducible vendor binary build.",
+  "historical_bridge_build_provenance": {
+    "ASI_input_count": 69,
+    "staged_input_matches": 68,
+    "helper_source_pins_verified": true,
+    "binary_bit_identical_rebuild_performed": false,
+    "note": "Historical build-input SHA identity is distinct from a new binary rebuild."
+  }
+}

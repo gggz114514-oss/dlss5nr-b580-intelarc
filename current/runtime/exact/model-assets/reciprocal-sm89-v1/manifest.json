@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "domain_count": 1835008,
+  "input_bits_start": 1064828928,
+  "input_bits_end_exclusive": 1066663936,
+  "input_interval": "[0.96875,1.15625)",
+  "output": "Original SM89 MUFU.RCP FP32 output",
+  "files": {"reciprocal.f32.bin": "22af04fd9ac7f1a0345e6f3fbbb0060aeff3e8a1373516872b4772e7926386f6"},
+  "reference": "reference/results/reciprocal-v1/validation.json",
+  "contains_image_or_model_activations": false
+}

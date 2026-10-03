@@ -1,0 +1,53 @@
+{
+  "scope": "Fixed SF-v2 styles with dynamic local tone; complete scalar domains, no image or model activations",
+  "curve_domain": "All 15361 positive half [0,1] encodings, separate RGB columns",
+  "reciprocal_domain": "All 2^23 mantissas; exponent reconstruction validated independently in positive normal [2^-126,2]",
+  "roundtrip_domain": "All 1056964609 positive normal FP32 encodings in [2^-126,1]",
+  "roundtrip_stats": {
+    "count": 1056964609,
+    "equal_to_input": 38870907,
+    "exception_count": 0,
+    "min_delta": -2,
+    "max_delta": 89,
+    "start_bits": 8388608,
+    "end_bits_exclusive": 1065353217
+  },
+  "reference_module_sha256": "0a0d12de5f5ecee455746f56dbe6a836fa4918bb1dfa4e65025f10d4a161dac0",
+  "files": [
+    {
+      "name": "curve-style1.rgb32f.bin",
+      "bytes": 184332,
+      "sha256": "8078b564d0838fd68aa6680f990f8e60a872f1e881c57130600d5666118c1a5c"
+    },
+    {
+      "name": "curve-style2.rgb32f.bin",
+      "bytes": 184332,
+      "sha256": "7c373336c6d34c7d4343c365cd4b364b1c5a9be6c23d1e8a244996330d056b7d"
+    },
+    {
+      "name": "reciprocal-mantissa.f32.bin",
+      "bytes": 33554432,
+      "sha256": "c408381446132e07fa5581e930dc33fb790bea7ec4276ef3621e322df2492a55"
+    },
+    {
+      "name": "saturation-roundtrip.delta.i8.bin",
+      "bytes": 1056964609,
+      "sha256": "5e7195f445e0694d746a882c80b3ea28432f17b535fda0ec041eac3453913b7d"
+    },
+    {
+      "name": "exposure.runs.u32x2.bin",
+      "bytes": 6710888,
+      "sha256": "11183662a4b164ad499da0b07854f332899d40a39e2e86255174a61313e42c82"
+    }
+  ],
+  "exposure_domain": "All 1036831950 FP32 encodings from -0 through -float32(0.1); native EX2 output encoded as constant runs",
+  "exposure_stats": {
+    "count": 1036831950,
+    "run_count": 838861,
+    "increases": 0,
+    "minimum_output_bits": 1064229696,
+    "maximum_output_bits": 1065353216,
+    "start_bits": 2147483648,
+    "end_bits_exclusive": 3184315598
+  }
+}

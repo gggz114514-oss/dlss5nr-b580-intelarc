@@ -1,0 +1,37 @@
+{
+  "schema": "main-native-raw2-fixture-review-v1",
+  "cases": [
+    {
+      "result": {
+        "path": "${EXPERIMENTS_E}\\cyberpunk-opt\\b580-full-implementation-v1-20261003\\reviews\\native-host-r15-e-stage7\\raw-stage2\\runs\\raw-prepare-01\\RESULT.json",
+        "sha256": "a8b81dd0f8781912765c35005472ccfb07ea0ff230850b7f7090324a48f17dbc",
+        "bytes": 49732
+      },
+      "status": "FIXTURE_PASSED_UNQUALIFIED",
+      "frames": 2,
+      "actual_hdr_pack_export": true,
+      "raw_byte_identity": true,
+      "consumer_retirement_checked": true,
+      "model_executed": false,
+      "game_executed": false,
+      "Present_measured": false
+    },
+    {
+      "result": {
+        "path": "${EXPERIMENTS_E}\\cyberpunk-opt\\b580-full-implementation-v1-20261003\\reviews\\native-host-r15-e-stage7\\raw-stage2\\runs\\raw-verify-01\\RESULT.json",
+        "sha256": "e8421d062236df234d97cbd335422701338c228fc04ecc9b2704c55aa40935e2",
+        "bytes": 49694
+      },
+      "status": "FIXTURE_PASSED_UNQUALIFIED",
+      "frames": 2,
+      "actual_hdr_pack_export": true,
+      "raw_byte_identity": true,
+      "consumer_retirement_checked": true,
+      "model_executed": false,
+      "game_executed": false,
+      "Present_measured": false
+    }
+  ],
+  "qualification": "actual two-frame raw HDR native fixture only; no model/game claim",
+  "low_GPU_authorized": false
+}

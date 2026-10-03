@@ -1,0 +1,143 @@
+{
+  "schema": "nr-public-gpu-reproduction-review-v1",
+  "date": "2026-10-03",
+  "status": "completed_public_synthetic_offline",
+  "gpu_executed": true,
+  "result_scope": "Portable public current720 workflow on synthetic fixed-seed input; accepted run plus one-repeat matched FDP pair. No game, bridge, private video, or publication/deployment action.",
+  "source_identity": {
+    "current_source_manifest_sha256": "300c800581be650ea019529b6c41f76e7adfe71410b0f4eea19511f6c6503166",
+    "current_source_files": 571,
+    "r18_registry_sha256": "a3c202f03e6f0e954367c266b26e4d45d05ce4bbff18f060a671c2d8cbe058a2",
+    "r18_source_files": 260,
+    "gpu_reproduction_source_sha256": "0607d9906afe0a10f65065f997b286793196bf190bc3dacb99af6c23c3892620",
+    "change_summary": "Only torch.__version__ metadata was explicitly converted with str(...) at capture; strict report serialization remains unchanged. No model/kernel source changed."
+  },
+  "public_assets": {
+    "manifest_sha256": "29d575983a7b6d3454ec8455c7a156bca2ef7e70fbd997902649effec813be2b",
+    "files": 527,
+    "bytes": 1911922809,
+    "profile_arrays": 56
+  },
+  "accepted_current720": {
+    "completed": true,
+    "fixed_frames": 13,
+    "cycles": 5,
+    "capture_routes": 2,
+    "initial_replay_routes": 11,
+    "graph_entries": 2,
+    "graph_replays": 78,
+    "finite_outputs": 13,
+    "finite_histories": 13,
+    "same_arm_precompile_readonly_byte_identical": true,
+    "retirement_verified": true,
+    "fresh_readonly_keys": 137,
+    "readonly_hits": 137,
+    "readonly_write_attempts": 0,
+    "cache_inventory_unchanged": true,
+    "full_process_xpu_ms": {
+      "samples": 39,
+      "mean": 45.33026576923077,
+      "median": 45.258854
+    },
+    "raw_body_xpu_ms": {
+      "samples": 50,
+      "mean": 39.07745624,
+      "median": 39.0923175
+    },
+    "result_sha256": {
+      "precompile": "d93c8b304ab685709fae4686b9e3a993c61dde0426fd4f6bfbbe8d953ec30af2",
+      "readonly": "29d1fb7206d5d43d08ca2caaca0c780a2955460998fff31013af6b14caeff096"
+    }
+  },
+  "matched_fdp_pair_repeats_1": {
+    "completed": true,
+    "status": "OFFLINE_PAIR_COMPLETE_QUALITY_GAME_UNQUALIFIED",
+    "fixed_frames": 13,
+    "per_arm_cycles": 3,
+    "same_arm_precompile_readonly_byte_identical": true,
+    "finite_outputs_and_histories": true,
+    "retirement_verified": true,
+    "initial_capture_routes_per_arm": 2,
+    "initial_replay_routes_per_arm": 11,
+    "graph_entries_per_arm": 2,
+    "graph_replays_per_arm": 52,
+    "readonly_write_attempts_per_arm": 0,
+    "cache_inventory_unchanged_per_arm": true,
+    "readonly_keys_and_hits": {
+      "accepted_baseline": {
+        "keys": 139,
+        "hits": 139
+      },
+      "audit_impl_fdp_all": {
+        "keys": 161,
+        "hits": 161
+      }
+    },
+    "full_process_xpu_ms": {
+      "accepted_baseline_mean": 47.580809230769226,
+      "fdp_mean": 44.671582615384615,
+      "delta_fdp_minus_baseline": -2.909226615384611,
+      "samples_per_arm": 13
+    },
+    "raw_body_xpu_ms": {
+      "accepted_baseline_mean": 40.06668956,
+      "fdp_mean": 38.28353234,
+      "delta_fdp_minus_baseline": -1.78315722,
+      "samples_per_arm": 50
+    },
+    "paired_numerics": {
+      "all_finite": true,
+      "mean_mae": 0.0002585152419883641,
+      "worst_frame_mae": 0.00030657895185329297,
+      "maximum_absolute_error": 0.0047607421875,
+      "mean_psnr_db": 68.5732393819876,
+      "minimum_psnr_db": 67.67343646558183,
+      "quality_threshold_applied": false
+    },
+    "performance_qualified": false,
+    "result_sha256": {
+      "pair_result": "8038755cd6d029c2704d7afe48b52015020c797b268d75133f2b62b00dd4b0be",
+      "pair_summary": "63d864d7386dcacb0e9bef242b5508784086da504cd03a50f2f3745fa5f1c46e",
+      "baseline_precompile": "74ea305df2419ef0d1dbb58dc61474184070c8b890b3b279d6c227ee9de52f3b",
+      "baseline_readonly": "9de2ce45b79cd1eb7986dd1e257f3442ac6fe3fb66ae6632de2e23370c2855f5",
+      "fdp_precompile": "bba0a548b5a320d12a9b0289e5eb5f5a87bc94dc64203959ad85e1eccde4ebd9",
+      "fdp_readonly": "eb8c4540db835dcbe300c200df046ccd2ae0f2720b4f2355fc0062f7ad1ecaaa"
+    }
+  },
+  "initial_receipt_failure": {
+    "cause": "Strict durable result serializer rejected TorchVersion while writing the final result after GPU precompile completed.",
+    "actual_gpu_precompile_executed": true,
+    "preserved_frames_and_histories": 13,
+    "stack_sha256": "0ecee4bd1becc65a403630980b41dd52fe98d598eb8e510514e8fd6f142cb982",
+    "repair": "Explicit built-in str conversion for the captured torch version; no serializer relaxation.",
+    "fallback_flag_note": "The initial fallback receipt reported GPU_executed=false because result serialization failed after GPU precompile; it does not indicate that GPU execution was absent."
+  },
+  "verification": {
+    "cpu_tests": {
+      "run": 13,
+      "passed": 13,
+      "failures": 0,
+      "errors": 0,
+      "tensor_libraries_imported": false
+    },
+    "current_source_files_validated": 571,
+    "source_validation_passed": true,
+    "asset_files_validated": 527,
+    "profile_arrays_validated": 56,
+    "receipt_sha256": "5db2e89c76134701ee8a0f9f1784ad5b591f054da2433d8f40c9d67e7ae17813",
+    "receipt_relative_path": "../public-review/PUBLIC_GPU_REPRODUCTION_RECEIPT.json",
+    "ready_sha256": "da31b237b40f06a145acfb4aca3fbd46e0598f3b3801761435436b27560402ae",
+    "ready_relative_path": "../../tests/READY.json",
+    "ready_validation_pending": [],
+    "game_started": false,
+    "game_fps_claimed": false,
+    "output_arrays_included": false,
+    "absolute_private_paths_included": false
+  },
+  "limits": [
+    "Synthetic offline input only.",
+    "Single-repeat FDP timings are descriptive; no repeatable performance qualification.",
+    "No private-video quality or human visual review.",
+    "No NVIDIA/4060 byte-identity, native game bridge, or game FPS qualification."
+  ]
+}

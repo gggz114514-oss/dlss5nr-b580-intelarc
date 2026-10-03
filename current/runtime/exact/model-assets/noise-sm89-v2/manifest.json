@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "domain_count": 16777216,
+  "domain": "u=(i+1)*2^-24, i=0..16777215",
+  "files": {
+    "cos.f32.bin": "7d8dcbe4eb9e0000dd9bf4a6b5d9efbddca680865f6ade603712ac0e48e28dd7",
+    "radius.f32.bin": "6af0bb7f5183a671c98cb151a1f94195ddf43c8f854a7636c5c3b29f077bb306",
+    "sin.f32.bin": "89c3f9840bf647ca8d3a0a06b1f1691fb85bb6a32ac58324213abe7b33acfa10"
+  },
+  "generator_exe_sha256": "547C09CF5A80BAE37BE6784E3C0E2AFA55D3B094AEAE4262B0202B01E55BE06B",
+  "native_instructions_sha256": "63acfec19b787a0466571e01bd600b50496ee8dec0584c99e9f3f69be68b420b",
+  "scope": "complete scalar domain, no image-specific or seed-specific values"
+}

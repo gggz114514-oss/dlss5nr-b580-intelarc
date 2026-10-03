@@ -1,0 +1,131 @@
+{
+  "schema": "nr-current-source-receipts-v1",
+  "cutoff_date": "2026-10-03",
+  "observed_at_utc": "2026-10-03T13:37:33.205849+00:00",
+  "receipts": [
+    {
+      "path": "E:\\ComfyUI-aki-v3-IntelArc_20260722\\cyberpunk-b580-nr-opt\\artifacts\\b580-full-implementation-v1-20261003\\BASELINE.json",
+      "source_alias": "@project/cyberpunk-b580-nr-opt/artifacts/b580-full-implementation-v1-20261003/BASELINE.json",
+      "bytes": 141638,
+      "sha256": "47f436de03c00b35c3c6f735db3e7f2a8691ebdd826f52eb9111940121b1dd3b",
+      "status": "read_and_hashed"
+    },
+    {
+      "path": "E:\\ComfyUI-aki-v3-IntelArc_20260722\\cyberpunk-b580-nr-opt\\artifacts\\b580-full-implementation-v1-20261003\\phase2-complete\\PHASE2-r18.json",
+      "source_alias": "@project/cyberpunk-b580-nr-opt/artifacts/b580-full-implementation-v1-20261003/phase2-complete/PHASE2-r18.json",
+      "bytes": 375817,
+      "sha256": "699ee05cf1008610a4772dfeebe6398d7099c7c1ed141cbbaa91967da0a05f7f",
+      "status": "read_and_hashed"
+    },
+    {
+      "path": "E:\\ComfyUI-aki-v3-IntelArc_20260722\\cyberpunk-b580-nr-opt\\artifacts\\b580-full-coverage-audit-v2-20261003\\RUNTIME_SCOPE_720.json",
+      "source_alias": "@project/cyberpunk-b580-nr-opt/artifacts/b580-full-coverage-audit-v2-20261003/RUNTIME_SCOPE_720.json",
+      "bytes": 9261,
+      "sha256": "83c14cad54e28461e39a25515bebb30a769ab9372c0ab32114e9dcb7c97397de",
+      "status": "read_and_hashed"
+    },
+    {
+      "path": "E:\\ComfyUI-aki-v3-IntelArc_20260722\\nr-b580\\reference\\development-archive-20261003\\SOURCE_EXTRACTION_LOCAL.json",
+      "source_alias": "@project/nr-b580/reference/development-archive-20261003/SOURCE_EXTRACTION_LOCAL.json",
+      "bytes": 598,
+      "sha256": "61710452a8fffe21ca362a8be3a5e4eabfe36c1640bbf7b7e4bd26b471d187ca",
+      "status": "read_and_hashed"
+    },
+    {
+      "path": "E:\\ComfyUI-aki-v3-IntelArc_20260722\\nr-b580\\reference\\development-archive-20261003\\release-staging\\evidence\\2026-10-03\\current-source-manifest.json",
+      "source_alias": "@release/evidence/2026-10-03/current-source-manifest.json",
+      "bytes": 180740,
+      "sha256": "300c800581be650ea019529b6c41f76e7adfe71410b0f4eea19511f6c6503166",
+      "status": "read_and_hashed"
+    },
+    {
+      "path": "E:\\ComfyUI-aki-v3-IntelArc_20260722\\nr-b580\\reference\\development-archive-20261003\\release-staging\\evidence\\2026-10-03\\extracted-source-manifest.json",
+      "source_alias": "@release/evidence/2026-10-03/extracted-source-manifest.json",
+      "bytes": 230879,
+      "sha256": "3b26beabefcf22e5b5dbca82eb9d8f2bdf7cc319eda3dd911875d2a56ebcdff8",
+      "status": "read_and_hashed"
+    },
+    {
+      "path": "D:\\Codex-NR-Experiments\\cyberpunk-opt\\gpu-handoff-serial-owner-v2-20261002\\source-integration-v2\\MAIN_CANONICAL_SOURCE_RECEIPT.json",
+      "source_alias": "@experiments-D/cyberpunk-opt/gpu-handoff-serial-owner-v2-20261002/source-integration-v2/MAIN_CANONICAL_SOURCE_RECEIPT.json",
+      "bytes": 6071,
+      "sha256": "1701e0769354368a5e6ec185d981897dea6f7c8175349d35f335154de7a6e19e",
+      "status": "read_and_hashed"
+    },
+    {
+      "path": "D:\\Codex-NR-Experiments\\cyberpunk-opt\\gpu-handoff-serial-owner-v2-20261002\\cpu-build-03\\CPU_BUILD_RECEIPT.json",
+      "source_alias": "@experiments-D/cyberpunk-opt/gpu-handoff-serial-owner-v2-20261002/cpu-build-03/CPU_BUILD_RECEIPT.json",
+      "bytes": 32556,
+      "sha256": "2f5b8e21b07fa829a3a7bd487c0e26f77bd27c855da996139c5d1a1586bbcdbd",
+      "status": "read_and_hashed"
+    }
+  ],
+  "accepted_experiment_baseline": {
+    "constructor": {
+      "controlled": true,
+      "graph_capture_policy": "all",
+      "combo_modes": [
+        480,
+        540,
+        720
+      ],
+      "c512_qkv_library_720": true,
+      "native_k8_720": true,
+      "decoder_gather_unround_720": true,
+      "c32_hidden_native_720": true,
+      "c512_probability_unround_720": true,
+      "c128_pairwise_720": true,
+      "c128_dual_qkv_720": false,
+      "c64_attention_project_720": true,
+      "c128_attention_project_720": true,
+      "numeric_cleanup_720": {
+        "branch_accum_families": [
+          "c128"
+        ],
+        "history_value": "fp32_fractional",
+        "front_noise": "native_both"
+      },
+      "implementation_hooks_720": [
+        {
+          "module": "audit_history_host_720_v1",
+          "kwargs": {
+            "component_front_input": false,
+            "direct_compiled_launch": false,
+            "drop_normalized": false,
+            "fused_near": false,
+            "input_summary": false,
+            "pixel_rgb": false,
+            "receipt_capacity": 64,
+            "release_geometry_indices": false,
+            "release_retired_refs": false,
+            "reuse_buffers": false
+          },
+          "stage": "before_numeric",
+          "call": "installed"
+        }
+      ]
+    },
+    "numeric_identity": "numeric-cleanup-720-v1:85549e9c272011a4ed4974a4d341f3e28280723afe3dabf29c9dd0d9af043938",
+    "selectors": [],
+    "packages": [],
+    "baseline": true,
+    "label": "现役计算＋共同冷检查"
+  },
+  "local_release_stage_recheck": {
+    "matching_current_files": 571,
+    "failures": [],
+    "current_manifest_files": 571,
+    "installed_runtime_source_files": 406,
+    "count_note": "initial extraction receipt449 current/260 r18; current-source manifest later extended with authored sources; do not label all extended files installed runtime",
+    "scope": "worker hashes stage against main extraction manifest, does not access G or assert binary/source build identity"
+  },
+  "main_reported_actual_source_extraction": {
+    "current_files": 449,
+    "r18_candidate_files": 260,
+    "runtime_byte_identity": "main's per-file manifest assertion; worker independently rehashed local staged copies"
+  },
+  "bridge_accepted_trial_build_sha256": "12fe0f89f183e614c3e989a15de05c1f3b85601b9a4d7d0cf26096508a149309",
+  "bridge_scope": "trial build pin; canonical recompiled binary and installed binary are separate receipts; no blanket equivalence",
+  "GPU_executed_by_history_worker": false,
+  "actual_game_runtime_read_by_history_worker": false
+}

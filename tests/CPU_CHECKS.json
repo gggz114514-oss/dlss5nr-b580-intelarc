@@ -1,0 +1,10 @@
+{
+  "schema": "nr-release-cpu-tests-v1",
+  "tests_run": 13,
+  "failures": 0,
+  "errors": 0,
+  "passed": true,
+  "GPU_executed": false,
+  "Tensor_libraries_imported": false,
+  "retained_fixture_directory": "external CPU scratch (path omitted)"
+}
